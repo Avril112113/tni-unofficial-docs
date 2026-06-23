@@ -1,3 +1,10 @@
 h2, a {
 	scroll-margin-top: 25vh; 
 }
+
+.table-wrapper table thead {
+	line-height: 0;
+}
+.table-wrapper {
+	width: fit-content;
+}
