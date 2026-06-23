@@ -57,7 +57,7 @@ GENERATED FOR TNI VERSION 0.11.2
 [WORM ANNOYING_MORRIS](#worm-annoying_morris)  
 [WORM HUSH](#worm-hush)
 
-## tena-employee-db  
+## tena-employee-db<a name="tena-employee-db"></a>  
 **CPU:** 3 **MEM:** 7 **SIZE:** 8  
   
 **Description:**  
@@ -72,7 +72,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [](#), [HR Officer](users.md/#hr-officer)  
   
   
-## blobdb  
+## blobdb<a name="blobdb"></a>  
 **CPU:** 4 **MEM:** 3 **SIZE:** 5  
   
 **Description:**  
@@ -81,7 +81,7 @@ Production is limited to 5 compatible uses on the device's use stack.
   
   
   
-## tena-meter-db  
+## tena-meter-db<a name="tena-meter-db"></a>  
 **CPU:** 5 **MEM:** 3 **SIZE:** 6  
   
 **Description:**  
@@ -96,7 +96,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [ten-bill-server](#ten-bill-server), [Meter Reader I](users.md/#meter-reader-i)  
   
   
-## hypervisor-server  
+## hypervisor-server<a name="hypervisor-server"></a>  
 **CPU:** 20 **MEM:** 10 **SIZE:** 8  
   
 **Description:**  
@@ -112,7 +112,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Morning Technician](users.md/#morning-technician), [Night Technician](users.md/#night-technician), [Normal Technician](users.md/#normal-technician)  
   
   
-## log-server  
+## log-server<a name="log-server"></a>  
 **CPU:** 5 **MEM:** 9 **SIZE:** 16  
   
 **Description:**  
@@ -128,7 +128,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [ten-scada-server](#ten-scada-server), [Morning Technician](users.md/#morning-technician), [Night Technician](users.md/#night-technician), [Normal Technician](users.md/#normal-technician), [IT Service](users.md/#it-service)  
   
   
-## ten-bill-server  
+## ten-bill-server<a name="ten-bill-server"></a>  
 **CPU:** 3 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
@@ -144,7 +144,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Billing Officer](users.md/#billing-officer)  
   
   
-## complaint-server2  
+## complaint-server2<a name="complaint-server2"></a>  
 **CPU:** 5 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
@@ -160,7 +160,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Customer Officer](users.md/#customer-officer), [Partner Gateway](users.md/#partner-gateway), [Public Gateway](users.md/#public-gateway), [Public Gateway](users.md/#public-gateway)  
   
   
-## ten-public-portal  
+## ten-public-portal<a name="ten-public-portal"></a>  
 **CPU:** 3 **MEM:** 3 **SIZE:** 4  
   
 **Description:**  
@@ -176,7 +176,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Partner Gateway](users.md/#partner-gateway), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer)  
   
   
-## oauth-serv  
+## oauth-serv<a name="oauth-serv"></a>  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
   
 **Description:**  
@@ -190,7 +190,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocks:** [padu_v2](#padu_v2)  
   
   
-## tmp-collabpoint1  
+## tmp-collabpoint1<a name="tmp-collabpoint1"></a>  
 **CPU:** 5 **MEM:** 7 **SIZE:** 5  
   
 **Description:**  
@@ -206,7 +206,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Billing Officer](users.md/#billing-officer), [Analytics Officer](users.md/#analytics-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Legal Officer](users.md/#legal-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
   
-## tena-calc-server  
+## tena-calc-server<a name="tena-calc-server"></a>  
 **CPU:** 15 **MEM:** 8 **SIZE:** 4  
   
 **Description:**  
@@ -223,7 +223,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Analytics Officer](users.md/#analytics-officer), [R&D Engineer](users.md/#r&d-engineer)  
   
   
-## tena-gis-server  
+## tena-gis-server<a name="tena-gis-server"></a>  
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
@@ -238,7 +238,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [maintenance-server](#maintenance-server), [Planning Officer](users.md/#planning-officer)  
   
   
-## tena-staff-portal  
+## tena-staff-portal<a name="tena-staff-portal"></a>  
 **CPU:** 5 **MEM:** 3 **SIZE:** 9  
   
 **Description:**  
@@ -254,7 +254,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Normal Technician](users.md/#normal-technician), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
   
-## maintenance-server  
+## maintenance-server<a name="maintenance-server"></a>  
 **CPU:** 3 **MEM:** 5 **SIZE:** 7  
   
 **Description:**  
@@ -270,7 +270,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector)  
   
   
-## ten-scada-server  
+## ten-scada-server<a name="ten-scada-server"></a>  
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
@@ -286,7 +286,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [tena-calc-server](#tena-calc-server), [Field Inspector](users.md/#field-inspector), [Grid Officer](users.md/#grid-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Night Grid Officer](users.md/#night-grid-officer)  
   
   
-## tena-mail  
+## tena-mail<a name="tena-mail"></a>  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
   
 **Description:**  
@@ -300,7 +300,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocks:** [padu_v2](#padu_v2)  
   
   
-## print-server  
+## print-server<a name="print-server"></a>  
 **CPU:** 2 **MEM:** 1 **SIZE:** 4  
   
 **Description:**  
@@ -311,7 +311,7 @@ Production is limited to 10 compatible uses on the device's use stack.
 **Unlocked By:** [Customer Officer](users.md/#customer-officer), [Finance Officer](users.md/#finance-officer), [HR Officer](users.md/#hr-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
   
-## ubbt  
+## ubbt<a name="ubbt"></a>  
 **CPU:** 4 **MEM:** 4 **SIZE:** 6  
   
 **Description:**  
@@ -326,7 +326,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **<span style="color:DarkKhaki;">Produces:</span>** 4 support-bots <span style="color:gray;">(limited by 4)</span>  
   
   
-## padu_v1  
+## padu_v1<a name="padu_v1"></a>  
 **CPU:** 1 **MEM:** 2 **SIZE:** 4  
   
 **Description:**  
@@ -336,7 +336,7 @@ Production is limited to 2 compatible uses on the device's use stack.
 **Unlocked By:** [dns-server](#dns-server), [sun-dns](#sun-dns), [kea](#kea), [HR Officer](users.md/#hr-officer), [Partner Gateway](users.md/#partner-gateway), [Cloud Service](users.md/#cloud-service), [Tenabolt Retail](users.md/#tenabolt-retail), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway)  
   
   
-## padu_v2  
+## padu_v2<a name="padu_v2"></a>  
 **CPU:** 2 **MEM:** 4 **SIZE:** 8  
   
 **Description:**  
@@ -348,7 +348,7 @@ Production is limited to 2 compatible uses on the device's use stack.
 **Unlocked By:** [hypervisor-server](#hypervisor-server), [log-server](#log-server), [ten-bill-server](#ten-bill-server), [complaint-server2](#complaint-server2), [ten-public-portal](#ten-public-portal), [oauth-serv](#oauth-serv), [tmp-collabpoint1](#tmp-collabpoint1), [tena-calc-server](#tena-calc-server), [tena-staff-portal](#tena-staff-portal), [maintenance-server](#maintenance-server), [ten-scada-server](#ten-scada-server), [tena-mail](#tena-mail), [mailer](#mailer), [Partner Gateway](users.md/#partner-gateway), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway)  
   
   
-## padu_v3  
+## padu_v3<a name="padu_v3"></a>  
 **CPU:** 4 **MEM:** 6 **SIZE:** 12  
   
 **Description:**  
@@ -359,7 +359,7 @@ Production is limited to 4 compatible uses on the device's use stack.
   
   
   
-## poems-db  
+## poems-db<a name="poems-db"></a>  
 **CPU:** 4 **MEM:** 4 **SIZE:** 6  
   
 **Description:**  
@@ -368,7 +368,7 @@ Production is limited to 4 compatible uses on the device's use stack.
   
   
   
-## decentro-collector  
+## decentro-collector<a name="decentro-collector"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -382,7 +382,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [](#)  
   
   
-## decentro-node  
+## decentro-node<a name="decentro-node"></a>  
 **CPU:** 24 **MEM:** 12 **SIZE:** 6  
   
 **Description:**  
@@ -392,7 +392,7 @@ Production is limited to 10 compatible uses on the device's use stack.
 **Unlocked By:** [](#)  
   
   
-## decentro-wallet  
+## decentro-wallet<a name="decentro-wallet"></a>  
 **CPU:** 1 **MEM:** 2 **SIZE:** 2  
   
 **Description:**  
@@ -404,7 +404,7 @@ This program stores up to 10 'access-p2p-currency' compatible uses per free stor
 **Modifiers:** 8  
   
   
-## dns-server  
+## dns-server<a name="dns-server"></a>  
 **CPU:** 4 **MEM:** 3 **SIZE:** 2+1=3  
   
 **Description:**  
@@ -421,7 +421,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Modifiers:** 5  
   
   
-## dns-lite  
+## dns-lite<a name="dns-lite"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1+1=2  
   
 **Description:**  
@@ -432,7 +432,7 @@ Production is limited to 3 compatible uses on the device's use stack.
 **Modifiers:** 5  
   
   
-## sun-dns  
+## sun-dns<a name="sun-dns"></a>  
 **CPU:** 10 **MEM:** 6 **SIZE:** 8+1=9  
   
 **Description:**  
@@ -448,7 +448,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Modifiers:** 5  
   
   
-## dnsmasq  
+## dnsmasq<a name="dnsmasq"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1+1=2  
   
 **Description:**  
@@ -459,7 +459,7 @@ Production is limited to 3 compatible uses on the device's use stack.
 **Modifiers:** 6  
   
   
-## kea  
+## kea<a name="kea"></a>  
 **CPU:** 6 **MEM:** 5 **SIZE:** 6+1=7  
   
 **Description:**  
@@ -476,7 +476,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Modifiers:** 6  
   
   
-## dnsspam  
+## dnsspam<a name="dnsspam"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -486,7 +486,7 @@ DNS load test software.
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 reply-dns-queries  
   
   
-## nop  
+## nop<a name="nop"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -494,7 +494,7 @@ Generic program.
   
   
   
-## netpeeker  
+## netpeeker<a name="netpeeker"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -503,7 +503,7 @@ Remote debugger.
 **Modifiers:** 0  
   
   
-## tnbmon  
+## tnbmon<a name="tnbmon"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -511,7 +511,7 @@ Power meter firmware.
   
   
   
-## bladeos  
+## bladeos<a name="bladeos"></a>  
 **CPU:** 2 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -520,7 +520,7 @@ Network switch firmware.
 **Modifiers:** 1  
   
   
-## firewatcher  
+## firewatcher<a name="firewatcher"></a>  
 **CPU:** 4 **MEM:** 1 **SIZE:** 1+1=2  
   
 **Description:**  
@@ -529,7 +529,7 @@ Firewall operating system; performs packet filtering.
 **Modifiers:** 4  
   
   
-## hakernel  
+## hakernel<a name="hakernel"></a>  
 **CPU:** 4 **MEM:** 2 **SIZE:** 1+1=2  
   
 **Description:**  
@@ -538,7 +538,7 @@ HA-enabled port grouping kernel.
 **Modifiers:** 2, 7  
   
   
-## riserswfirm  
+## riserswfirm<a name="riserswfirm"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -547,7 +547,7 @@ Riser switch firmware.
 **Modifiers:** 1  
   
   
-## lbrr  
+## lbrr<a name="lbrr"></a>  
 **CPU:** 2 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -556,7 +556,7 @@ Round-robin network load balancer.
 **Modifiers:** 11  
   
   
-## vlanfirm  
+## vlanfirm<a name="vlanfirm"></a>  
 **CPU:** 2 **MEM:** 2 **SIZE:** 1+1=2  
   
 **Description:**  
@@ -565,7 +565,7 @@ Managed switch firmware.
 **Modifiers:** 10, 12  
   
   
-## mbox  
+## mbox<a name="mbox"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1+1=2  
   
 **Description:**  
@@ -576,7 +576,7 @@ Allows packet mangling/translation. Install on a device to make it a network mid
 **Modifiers:** 13  
   
   
-## rtkernel  
+## rtkernel<a name="rtkernel"></a>  
 **CPU:** 4 **MEM:** 1 **SIZE:** 1+1=2  
   
 **Description:**  
@@ -585,7 +585,7 @@ Packet routing program.
 **Modifiers:** 2  
   
   
-## vrout3  
+## vrout3<a name="vrout3"></a>  
 **CPU:** 4 **MEM:** 1 **SIZE:** 2+2=4  
   
 **Description:**  
@@ -594,7 +594,7 @@ Packet routing with VLAN subinterfaces.
 **Modifiers:** 2, 10  
   
   
-## wirerat  
+## wirerat<a name="wirerat"></a>  
 **CPU:** 2 **MEM:** 2 **SIZE:** 1  
   
 **Description:**  
@@ -604,7 +604,7 @@ Production is limited to 4 compatible uses per device's installed memory.
 **Modifiers:** 3, 1  
   
   
-## printer_edge  
+## printer_edge<a name="printer_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -617,7 +617,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **<span style="color:DarkKhaki;">Produces:</span>** 1 print-image, print-text <span style="color:gray;">(limited by TARGET_TOTAL_CPU)</span>  
   
   
-## print-server  
+## print-server<a name="print-server"></a>  
 **CPU:** 5 **MEM:** 3 **SIZE:** 5  
   
 **Description:**  
@@ -629,7 +629,7 @@ Production is limited to 13 compatible uses on the device's use stack.
 **Unlocked By:** [Billing Officer](users.md/#billing-officer), [Analytics Officer](users.md/#analytics-officer), [Grid Officer](users.md/#grid-officer), [Legal Officer](users.md/#legal-officer)  
   
   
-## gitcoffee  
+## gitcoffee<a name="gitcoffee"></a>  
 **CPU:** 4 **MEM:** 2 **SIZE:** 4  
   
 **Description:**  
@@ -643,7 +643,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [](#), [](#)  
   
   
-## cctv_edge  
+## cctv_edge<a name="cctv_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -656,7 +656,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **<span style="color:DarkKhaki;">Produces:</span>** 1 stream-live-video <span style="color:gray;">(limited by TARGET_TOTAL_CPU)</span>  
   
   
-## rtsp-diva-r  
+## rtsp-diva-r<a name="rtsp-diva-r"></a>  
 **CPU:** 6 **MEM:** 4 **SIZE:** 10  
   
 **Description:**  
@@ -668,7 +668,7 @@ Production is limited to 13 compatible uses on the device's use stack.
 **Unlocked By:** [Loyal Worker](users.md/#loyal-worker), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor)  
   
   
-## cctv_edge  
+## cctv_edge<a name="cctv_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -681,7 +681,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **<span style="color:DarkKhaki;">Produces:</span>** 1 stream-live-video <span style="color:gray;">(limited by 1)</span>  
   
   
-## mailer  
+## mailer<a name="mailer"></a>  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
   
 **Description:**  
@@ -696,7 +696,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [complaint-server2](#complaint-server2), [](#), [](#), [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
   
-## vonet_edge  
+## vonet_edge<a name="vonet_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
 **Description:**  
@@ -709,7 +709,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **<span style="color:DarkKhaki;">Produces:</span>** 1 stream-voice <span style="color:gray;">(limited by TARGET_TOTAL_CPU)</span>  
   
   
-## voip-server  
+## voip-server<a name="voip-server"></a>  
 **CPU:** 5 **MEM:** 2 **SIZE:** 5  
   
 **Description:**  
@@ -721,7 +721,7 @@ Production is limited to 10 compatible uses on the device's use stack.
 **Unlocked By:** [](#), [Media Maniac](users.md/#media-maniac), [Vocal Connector](users.md/#vocal-connector), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Private Dweller](users.md/#private-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scifi Movie Director](users.md/#scifi-movie-director), [Audio Lover](users.md/#audio-lover), [Scientific Professor](users.md/#scientific-professor), [Decentro Farmer](users.md/#decentro-farmer), [Home Chef](users.md/#home-chef), [Lifestyle Blogger](users.md/#lifestyle-blogger), [Digital Salesman](users.md/#digital-salesman), [Night Chatter](users.md/#night-chatter), [Pet Lover](users.md/#pet-lover), [Secondhand Buyer](users.md/#secondhand-buyer), [Vocal Connector](users.md/#vocal-connector), [Patient Professor](users.md/#patient-professor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Malicious User](users.md/#malicious-user), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Recycling Center](users.md/#recycling-center), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Cheap Kitchen](users.md/#cheap-kitchen), [Premium Kitchen](users.md/#premium-kitchen), [Horror Director](users.md/#horror-director), [Ads Agency](users.md/#ads-agency), [Research Hub](users.md/#research-hub), [Surveillance Hub](users.md/#surveillance-hub), [Normal Associate](users.md/#normal-associate), [Sales Officer](users.md/#sales-officer), [Professional Gamer](users.md/#professional-gamer), [Binge Watcher](users.md/#binge-watcher), [Jazz Lover](users.md/#jazz-lover), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Semiconductor Hub](users.md/#semiconductor-hub)  
   
   
-## WORM ANNOYING_MORRIS  
+## WORM ANNOYING_MORRIS<a name="worm-annoying_morris"></a>  
 **CPU:** 0 **MEM:** 0 **SIZE:** 0  
   
 **Description:**  
@@ -730,7 +730,7 @@ ANNOYING_MORRIS spreads itself across routers and servers using traffic types ra
 **Vulnerable Devices:** NETWORK_ROUTER, COMPUTE_SERVER  
   
   
-## WORM HUSH  
+## WORM HUSH<a name="worm-hush"></a>  
 **CPU:** 0 **MEM:** 0 **SIZE:** 0  
   
 **Description:**  

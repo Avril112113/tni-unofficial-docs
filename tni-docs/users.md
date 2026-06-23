@@ -154,7 +154,7 @@ GENERATED FOR TNI VERSION 0.11.2
 [Antivirus Nexus](#antivirus-nexus)  
 [Privacy Hub](#privacy-hub)
 
-## Media Maniac  
+## Media Maniac<a name="media-maniac"></a>  
 **Description:**  
 A tower dweller who just loves to browse media content.  
   
@@ -168,7 +168,7 @@ A tower dweller who just loves to browse media content.
   **<span style="color:LightGray;">Subjects:</span>** addictive  
   
   
-## Net Nester  
+## Net Nester<a name="net-nester"></a>  
 **Description:**  
 A humble tower dweller who just wants to go online.  
   
@@ -182,7 +182,7 @@ A humble tower dweller who just wants to go online.
   **<span style="color:LightGray;">Subjects:</span>** news-update, political  
   
   
-## Vocal Connector  
+## Vocal Connector<a name="vocal-connector"></a>  
 **Description:**  
 A tower dweller who just loves to voice message to their peers.  
   
@@ -193,7 +193,7 @@ A tower dweller who just loves to voice message to their peers.
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Feed Signal  
+## Feed Signal<a name="feed-signal"></a>  
 **Description:**  
 A media company that hosts their site on-premise.  
   
@@ -205,7 +205,7 @@ A media company that hosts their site on-premise.
   a media platform  
   
   
-## WireSync News  
+## WireSync News<a name="wiresync-news"></a>  
 **Description:**  
 A news company that hosts their site on-premise.  
   
@@ -220,7 +220,7 @@ A news company that hosts their site on-premise.
   a simple text-based forum  
   
   
-## Sync News  
+## Sync News<a name="sync-news"></a>  
 **Description:**  
 A news company that hosts their site on-premise.  
   
@@ -235,7 +235,7 @@ A news company that hosts their site on-premise.
   a simple text-based forum  
   
   
-## Sync News  
+## Sync News<a name="sync-news"></a>  
 **Description:**  
 A news company that hosts their site on-premise.  
   
@@ -247,7 +247,7 @@ A news company that hosts their site on-premise.
   text-based political news site  
   
   
-## Bobby Tester  
+## Bobby Tester<a name="bobby-tester"></a>  
 **Description:**  
 Bobby tester  
   
@@ -261,7 +261,7 @@ Bobby tester
   **<span style="color:LightGray;">Subjects:</span>** news-update  
   
   
-## tester debbie  
+## tester debbie<a name="tester-debbie"></a>  
 **Description:**  
 a humble tower dweller who just wants to go online  
   
@@ -273,7 +273,7 @@ a humble tower dweller who just wants to go online
   **<span style="color:DarkKhaki;">Produces:</span>** access-p2p-currency  
   
   
-## tester ellie  
+## tester ellie<a name="tester-ellie"></a>  
 **Description:**  
 a humble tower dweller who just wants to go online  
   
@@ -288,7 +288,7 @@ a humble tower dweller who just wants to go online
   decentro currency network facilitator  
   
   
-## Loyal Worker  
+## Loyal Worker<a name="loyal-worker"></a>  
 **Description:**  
 A skilled all-rounder who takes on almost every professional work in the tower and somehow nails them all. They stick to the same producer for online service unless there is a better option.  
   
@@ -329,7 +329,7 @@ A skilled all-rounder who takes on almost every professional work in the tower a
   **<span style="color:DarkKhaki;">Produces:</span>** access-p2p-currency  
   
   
-## Casual Dweller  
+## Casual Dweller<a name="casual-dweller"></a>  
 **Description:**  
 An individual who seamlessly integrates online activities into their daily routine, easily satisfied as long as they can stay connected.  
   
@@ -366,7 +366,7 @@ An individual who seamlessly integrates online activities into their daily routi
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction  
   
   
-## Casual Glancer  
+## Casual Glancer<a name="casual-glancer"></a>  
 **Description:**  
 An individual who briefly checks the latest online content with low network traffic, often browsing headlines from main sites.  
   
@@ -395,7 +395,7 @@ An individual who briefly checks the latest online content with low network traf
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction  
   
   
-## Religious Dweller  
+## Religious Dweller<a name="religious-dweller"></a>  
 **Description:**  
 An individual who dedicates time to intentionally seeking spiritual knowledge for deeper religious understanding and personal spiritual growth.  
   
@@ -422,7 +422,7 @@ An individual who dedicates time to intentionally seeking spiritual knowledge fo
   **<span style="color:PapayaWhip;">Consumes:</span>** ( store-text or store-image or store-video ) and not tunnel-vpn-traffic  
   
   
-## Scientific Researcher  
+## Scientific Researcher<a name="scientific-researcher"></a>  
 **Description:**  
 An individual who dedicates time to methodically examining empirical evidence and scientific literature, employing critical thinking and analytical frameworks.  
   
@@ -450,7 +450,7 @@ An individual who dedicates time to methodically examining empirical evidence an
   **<span style="color:PapayaWhip;">Consumes:</span>** ( store-text or store-image or store-video ) and not tunnel-vpn-traffic  
   
   
-## Social Dweller  
+## Social Dweller<a name="social-dweller"></a>  
 **Description:**  
 An individual who mostly online to socialize, and easily fulfil as long as they can online.  
   
@@ -490,7 +490,7 @@ An individual who mostly online to socialize, and easily fulfil as long as they 
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction  
   
   
-## Digital Minimalist  
+## Digital Minimalist<a name="digital-minimalist"></a>  
 **Description:**  
 An individual who only goes online for basic networking needs, and easily fulfills them as long as they can get online.  
   
@@ -512,7 +512,7 @@ An individual who only goes online for basic networking needs, and easily fulfil
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction  
   
   
-## Digital Detoxer  
+## Digital Detoxer<a name="digital-detoxer"></a>  
 **Description:**  
 An individual who intentionally limits online/social media time; perhaps only checks messages at set times.  
   
@@ -538,7 +538,7 @@ An individual who intentionally limits online/social media time; perhaps only ch
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction  
   
   
-## Cozy Foodie  
+## Cozy Foodie<a name="cozy-foodie"></a>  
 **Description:**  
 A dedicated homebody who finds joy in the kitchen, constantly experimenting with flavors and sharing favorite recipes with the world.  
   
@@ -567,7 +567,7 @@ A dedicated homebody who finds joy in the kitchen, constantly experimenting with
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction  
   
   
-## Night Dweller  
+## Night Dweller<a name="night-dweller"></a>  
 **Description:**  
 A night owl who seamlessly integrates online activities into their daily routine, easily satisfied as long as they can stay connected.  
   
@@ -607,7 +607,7 @@ A night owl who seamlessly integrates online activities into their daily routine
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction  
   
   
-## Private Dweller  
+## Private Dweller<a name="private-dweller"></a>  
 **Description:**  
 An intensely private individual who carefully guards personal information and maintains strict boundaries around their digital footprint.  
   
@@ -619,7 +619,7 @@ An intensely private individual who carefully guards personal information and ma
   **<span style="color:LightGray;">Subjects:</span>** exclusive, surveillance  
   
   
-## Full-time Coder  
+## Full-time Coder<a name="full-time-coder"></a>  
 **Description:**  
 A software engineer who writes code exclusively for game studio 24/7.  
   
@@ -633,7 +633,7 @@ A software engineer who writes code exclusively for game studio 24/7.
   **<span style="color:PapayaWhip;">Consumes:</span>** read-text  
   
   
-## Conservative Leader  
+## Conservative Leader<a name="conservative-leader"></a>  
 **Description:**  
 An individual who is a passionate conservative activist who continuously shares advertisements with fellow tower residents.  
   
@@ -647,7 +647,7 @@ An individual who is a passionate conservative activist who continuously shares 
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Liberal Announcer  
+## Liberal Announcer<a name="liberal-announcer"></a>  
 **Description:**  
 An individual who is a passionate liberal activist who continuously shares progressive advertisements, campaigns, and political content with fellow tower residents. They use high-bandwidth connections to distribute their ideology through frequent posting.  
   
@@ -661,7 +661,7 @@ An individual who is a passionate liberal activist who continuously shares progr
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Capitalistic Announcer  
+## Capitalistic Announcer<a name="capitalistic-announcer"></a>  
 **Description:**  
 An individual who is a passionate capitalistic activist who continuously shares advertisements with fellow tower residents.  
   
@@ -675,7 +675,7 @@ An individual who is a passionate capitalistic activist who continuously shares 
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Scifi Movie Director  
+## Scifi Movie Director<a name="scifi-movie-director"></a>  
 **Description:**  
 A movie director who produces movie content on video subscription platform  
   
@@ -693,7 +693,7 @@ A movie director who produces movie content on video subscription platform
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Audio Lover  
+## Audio Lover<a name="audio-lover"></a>  
 **Description:**  
 A audio lover who stream content on audio-streaming subscription platform.  
   
@@ -710,7 +710,7 @@ A audio lover who stream content on audio-streaming subscription platform.
   **<span style="color:LightGray;">Subjects:</span>** music  
   
   
-## Scientific Professor  
+## Scientific Professor<a name="scientific-professor"></a>  
 **Description:**  
 An individual who requires background tasks like large cloud backups, or data processing for their scientific research. They are very passionate to work in research lab.  
   
@@ -724,7 +724,7 @@ An individual who requires background tasks like large cloud backups, or data pr
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Decentro Farmer  
+## Decentro Farmer<a name="decentro-farmer"></a>  
 **Description:**  
 A tech-savvy individual who dedicates their computing resources and time to decentro mining and is a low bandwidth user.   
   
@@ -740,7 +740,7 @@ A tech-savvy individual who dedicates their computing resources and time to dece
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Home Chef  
+## Home Chef<a name="home-chef"></a>  
 **Description:**  
 A tower dweller who just loves to view food related website and is a low bandwidth user.  
   
@@ -754,7 +754,7 @@ A tower dweller who just loves to view food related website and is a low bandwid
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Lifestyle Blogger  
+## Lifestyle Blogger<a name="lifestyle-blogger"></a>  
 **Description:**  
 A creative and low bandwidth user who regularly publishes detailed reviews about lifestyle products and shares their preferences.  
   
@@ -768,7 +768,7 @@ A creative and low bandwidth user who regularly publishes detailed reviews about
   **<span style="color:LightGray;">Subjects:</span>** blogging  
   
   
-## Digital Salesman  
+## Digital Salesman<a name="digital-salesman"></a>  
 **Description:**  
 A persistent digital salesperson who floods inboxes with unwanted emails.  
   
@@ -783,7 +783,7 @@ A persistent digital salesperson who floods inboxes with unwanted emails.
   **<span style="color:PapayaWhip;">Consumes:</span>** read-text  
   
   
-## Night Chatter  
+## Night Chatter<a name="night-chatter"></a>  
 **Description:**  
 A low bandwidth tower dweller who just loves to hang out virtually with friends while gaming or just chatting.  
   
@@ -799,7 +799,7 @@ A low bandwidth tower dweller who just loves to hang out virtually with friends 
   **<span style="color:LightGray;">Subjects:</span>** b2c, gaming  
   
   
-## Pet Lover  
+## Pet Lover<a name="pet-lover"></a>  
 **Description:**  
 A low bandwidth tower dweller who just loves to watch pet web content.  
   
@@ -813,7 +813,7 @@ A low bandwidth tower dweller who just loves to watch pet web content.
   **<span style="color:LightGray;">Subjects:</span>** pet  
   
   
-## Secondhand Buyer  
+## Secondhand Buyer<a name="secondhand-buyer"></a>  
 **Description:**  
 A low bandwidth cost-conscious shopper who purchases secondhand and cheap items to stretch their budget.  
   
@@ -827,7 +827,7 @@ A low bandwidth cost-conscious shopper who purchases secondhand and cheap items 
   **<span style="color:LightGray;">Subjects:</span>** b2c, cheap, supplies  
   
   
-## Vocal Connector  
+## Vocal Connector<a name="vocal-connector"></a>  
 **Description:**  
 A low bandwidth tower dweller who just loves to voice message to their peers.  
   
@@ -838,7 +838,7 @@ A low bandwidth tower dweller who just loves to voice message to their peers.
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Patient Professor  
+## Patient Professor<a name="patient-professor"></a>  
 **Description:**  
 An individual who requires background tasks like large cloud backups, or data processing for their scientific research. They require high frequency/volume, but tolerant of interruptions as long as it completes eventually.  
   
@@ -866,7 +866,7 @@ An individual who requires background tasks like large cloud backups, or data pr
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Tower Worker  
+## Tower Worker<a name="tower-worker"></a>  
 **Description:**  
 A skilled all-rounder who takes on almost every professional work in the tower and somehow nails them all.  
   
@@ -909,7 +909,7 @@ A skilled all-rounder who takes on almost every professional work in the tower a
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction  
   
   
-## Freelance Worker  
+## Freelance Worker<a name="freelance-worker"></a>  
 **Description:**  
 A freelance skilled all-rounder who takes on almost every job in the tower and somehow nails them all.  
   
@@ -956,7 +956,7 @@ A freelance skilled all-rounder who takes on almost every job in the tower and s
   **<span style="color:LightGray;">Subjects:</span>** fixed-deposit, intertower  
   
   
-## Neighbour Helper  
+## Neighbour Helper<a name="neighbour-helper"></a>  
 **Description:**  
 A tower dweller who helps their neighbors with different tasks when they have free time.  
   
@@ -1001,7 +1001,7 @@ A tower dweller who helps their neighbors with different tasks when they have fr
   **<span style="color:LightGray;">Subjects:</span>** gambling  
   
   
-## Strategic Investor  
+## Strategic Investor<a name="strategic-investor"></a>  
 **Description:**  
 An investor who spreads investments across multiple asset classes and markets while maintaining a successful professional career.  
   
@@ -1023,7 +1023,7 @@ An investor who spreads investments across multiple asset classes and markets wh
   **<span style="color:DarkKhaki;">Produces:</span>** access-p2p-currency  
   
   
-## Heavy Viewer  
+## Heavy Viewer<a name="heavy-viewer"></a>  
 **Description:**  
 A dedicated viewer who maintains near-constant streaming activity throughout the day, prioritizing connection stability to ensure uninterrupted enjoyment of movies and digital content.  
   
@@ -1053,7 +1053,7 @@ A dedicated viewer who maintains near-constant streaming activity throughout the
   **<span style="color:LightGray;">Subjects:</span>** movie  
   
   
-## Stability Seeker  
+## Stability Seeker<a name="stability-seeker"></a>  
 **Description:**  
 An individual heavily reliant on constant, stable connection for work or critical services, but not necessarily using massive bandwidth constantly.  
   
@@ -1080,7 +1080,7 @@ An individual heavily reliant on constant, stable connection for work or critica
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
   
   
-## Greedy Dweller  
+## Greedy Dweller<a name="greedy-dweller"></a>  
 **Description:**  
 A greedy individual who seamlessly integrates online activities into their daily routine.  
   
@@ -1125,7 +1125,7 @@ A greedy individual who seamlessly integrates online activities into their daily
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-live-video and verify-user  
   
   
-## Greedy Gambler  
+## Greedy Gambler<a name="greedy-gambler"></a>  
 **Description:**  
 A greedy individual who hunts for the next big win and places bets on everything from sports to random events.  
   
@@ -1157,7 +1157,7 @@ A greedy individual who hunts for the next big win and places bets on everything
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Digital Hoarder  
+## Digital Hoarder<a name="digital-hoarder"></a>  
 **Description:**  
 An individual who never deletes digital files. Takes tons of photos/videos, archives everything.   
   
@@ -1192,7 +1192,7 @@ An individual who never deletes digital files. Takes tons of photos/videos, arch
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Wealthy Dweller  
+## Wealthy Dweller<a name="wealthy-dweller"></a>  
 **Description:**  
 Someone who only goes for the best and always chooses luxury services  
   
@@ -1227,7 +1227,7 @@ Someone who only goes for the best and always chooses luxury services
   **<span style="color:LightGray;">Subjects:</span>** freelance  
   
   
-## Greedy Streamer  
+## Greedy Streamer<a name="greedy-streamer"></a>  
 **Description:**  
 A greedy individual who rarely leaves the apartment, relies heavily on the internet for entertainment and essentials.  
   
@@ -1256,7 +1256,7 @@ A greedy individual who rarely leaves the apartment, relies heavily on the inter
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction  
   
   
-## Tech Adopter  
+## Tech Adopter<a name="tech-adopter"></a>  
 **Description:**  
 A greedy individual who always has the latest technology gadgets. Immediately tries new high-bandwidth services and applications.  
   
@@ -1291,7 +1291,7 @@ A greedy individual who always has the latest technology gadgets. Immediately tr
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-live-video and verify-user  
   
   
-## Day Learner  
+## Day Learner<a name="day-learner"></a>  
 **Description:**  
 An individual who is obsessed with professional development and online certifications. Their require high bandwidth regularly as they stream lectures, download course materials, and participate in virtual workshops during day time.  
   
@@ -1321,7 +1321,7 @@ An individual who is obsessed with professional development and online certifica
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
   
   
-## Night Learner  
+## Night Learner<a name="night-learner"></a>  
 **Description:**  
 An individual who attends online classes exclusively in evening hours after work, requiring high bandwidth to stream lectures, download course materials, and participate in virtual workshops during nighttime.  
   
@@ -1351,7 +1351,7 @@ An individual who attends online classes exclusively in evening hours after work
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
   
   
-## Software Engineer  
+## Software Engineer<a name="software-engineer"></a>  
 **Description:**  
 A 24/7 software engineer who requires high bandwidth for both continuous coding work and heavy personal internet usage.  
   
@@ -1392,7 +1392,7 @@ A 24/7 software engineer who requires high bandwidth for both continuous coding 
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-live-video and verify-user  
   
   
-## Malicious User  
+## Malicious User<a name="malicious-user"></a>  
 **Description:**  
 A tower dweller who scraps text content and spreads worms to the network.  
   
@@ -1407,7 +1407,7 @@ A tower dweller who scraps text content and spreads worms to the network.
   **<span style="color:PapayaWhip;">Consumes:</span>** read-text  
   
   
-## Minimum Spender  
+## Minimum Spender<a name="minimum-spender"></a>  
 **Description:**  
 A cost-conscious consumer who actively seeks out free services, discounts, and budget options while being reluctant to spend on premium features.  
   
@@ -1437,7 +1437,7 @@ A cost-conscious consumer who actively seeks out free services, discounts, and b
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Pavillion Tower  
+## Pavillion Tower<a name="pavillion-tower"></a>  
 **Description:**  
 Internet exchange points are neighbouring buildings that exchange services with the current tower.  
   
@@ -1453,7 +1453,7 @@ Internet exchange points are neighbouring buildings that exchange services with 
   Step outside the tower. Your only portal to global travel, international goods, and the world beyond!  
   
   
-## Gateway Tower  
+## Gateway Tower<a name="gateway-tower"></a>  
 **Description:**  
 Internet exchange points are neighbouring buildings that exchange services with the current tower.  
   
@@ -1471,7 +1471,7 @@ Internet exchange points are neighbouring buildings that exchange services with 
   Safe, predictable growth for your money.  
   
   
-## WhiteHat Tower  
+## WhiteHat Tower<a name="whitehat-tower"></a>  
 **Description:**  
 Internet exchange points are neighbouring buildings that exchange services with the current tower.  
   
@@ -1487,7 +1487,7 @@ Internet exchange points are neighbouring buildings that exchange services with 
   host private ethical hacking workshop  
   
   
-## Kanban Central  
+## Kanban Central<a name="kanban-central"></a>  
 **Description:**  
 A kanban platform that empowers users to create customizable boards for planning, tracking, and managing projects of any type.   
   
@@ -1505,7 +1505,7 @@ A kanban platform that empowers users to create customizable boards for planning
   experience enhanced project efficiency with our premium business kanban service - invite your team and organization to streamline project management.  
   
   
-## Booking Hub  
+## Booking Hub<a name="booking-hub"></a>  
 **Description:**  
 A flexible travel provider that offers standalone or combined bookings for flights and accommodations.  
   
@@ -1526,7 +1526,7 @@ A flexible travel provider that offers standalone or combined bookings for fligh
   offer unbeatable travel packages to the public with the most affordable rates and exclusive deals - book now before these limited-time offers expire!  
   
   
-## Full Campus  
+## Full Campus<a name="full-campus"></a>  
 **Description:**  
 Digital classroom requiring consistent full day bandwidth for synchronized learning experiences across multiple time zones.  
   
@@ -1547,7 +1547,7 @@ Digital classroom requiring consistent full day bandwidth for synchronized learn
   join our comprehensive online university platform offering accredited degree programs designed for working professionals and students.  
   
   
-## Night Campus  
+## Night Campus<a name="night-campus"></a>  
 **Description:**  
 Digital classroom requiring consistent night time bandwidth for synchronized learning experiences across multiple time zones.  
   
@@ -1566,7 +1566,7 @@ Digital classroom requiring consistent night time bandwidth for synchronized lea
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
   
   
-## Recycling Center  
+## Recycling Center<a name="recycling-center"></a>  
 **Description:**  
 A budget-friendly e-commerce seller specializing in refurbished electronics and upcycled goods, providing basic transaction services through their online storefront.  
   
@@ -1584,7 +1584,7 @@ A budget-friendly e-commerce seller specializing in refurbished electronics and 
   offers unbeatable prices on used devices for tower residents with exclusive bulk discounts.  
   
   
-## Game Studios  
+## Game Studios<a name="game-studios"></a>  
 **Description:**  
 An indie gaming studios that hosts their development workspace on-premise.  
   
@@ -1605,7 +1605,7 @@ An indie gaming studios that hosts their development workspace on-premise.
   An internal development workspace for hired coders, plus a secure login site where gamers can view game releases.  
   
   
-## Tech Center  
+## Tech Center<a name="tech-center"></a>  
 **Description:**  
 An online shopping platform which provides high-quality servers, switches, and networking equipment for home tech setups.  
   
@@ -1627,7 +1627,7 @@ An online shopping platform which provides high-quality servers, switches, and n
   let's buy high-quality servers, switches, and networking equipment for home tech setups.  
   
   
-## All Supplies Center  
+## All Supplies Center<a name="all-supplies-center"></a>  
 **Description:**  
 Tech and office supply store offering computers, networking equipment, printers, and administrative essentials - your one-stop shop for all business and home office technology needs.  
   
@@ -1649,7 +1649,7 @@ Tech and office supply store offering computers, networking equipment, printers,
   we are your one-stop shop for all business and home office technology needs.  
   
   
-## Horror Studios  
+## Horror Studios<a name="horror-studios"></a>  
 **Description:**  
 An indie gaming studios which specialises in horror games and hosts their development workspace on-premise.  
   
@@ -1667,7 +1667,7 @@ An indie gaming studios which specialises in horror games and hosts their develo
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Travel Agency  
+## Travel Agency<a name="travel-agency"></a>  
 **Description:**  
 A travel agency that create one-stop vacation packages by leveraging relationships with airlines, hotels, and local tour operators.  
   
@@ -1686,7 +1686,7 @@ A travel agency that create one-stop vacation packages by leveraging relationshi
   book your dream vacation with our curated high-end travel deals.  
   
   
-## Cheap Kitchen  
+## Cheap Kitchen<a name="cheap-kitchen"></a>  
 **Description:**  
 A cheap restaurant that operates through delivery apps, optimizing its menu and operations for efficient online food delivery.  
   
@@ -1704,7 +1704,7 @@ A cheap restaurant that operates through delivery apps, optimizing its menu and 
   food review community where people can share and read restaurant reviews.  
   
   
-## Helper Central  
+## Helper Central<a name="helper-central"></a>  
 **Description:**  
 A community job board where residents can post small tasks and hire neighbors for help - earn extra income while supporting your tower community.  
   
@@ -1725,7 +1725,7 @@ A community job board where residents can post small tasks and hire neighbors fo
   Post small tasks and hire neighbors for help, or earn extra income by accepting tasks to support your tower community.  
   
   
-## Go Delivery Hub  
+## Go Delivery Hub<a name="go-delivery-hub"></a>  
 **Description:**  
 A pioneering technology company offering an all-in-one super-app that seamlessly integrates ride-hailing, food delivery, and digital payment services online.  
   
@@ -1744,7 +1744,7 @@ A pioneering technology company offering an all-in-one super-app that seamlessly
   food delivery platform  
   
   
-## Cyber Mall  
+## Cyber Mall<a name="cyber-mall"></a>  
 **Description:**  
 An e-commerce platform where multiple merchants sell various products, offering customers a wide selection of items from different sellers in one convenient location.  
   
@@ -1764,7 +1764,7 @@ An e-commerce platform where multiple merchants sell various products, offering 
   we are online marketplace platform hosting multiple e-commerce sellers.  
   
   
-## Database Hub  
+## Database Hub<a name="database-hub"></a>  
 **Description:**  
 A subscription database-as-a-service platform which provide managed database service to small data company.  
   
@@ -1785,7 +1785,7 @@ A subscription database-as-a-service platform which provide managed database ser
   access a managed database without the need to set up physical hardware or manage database software.  
   
   
-## Game Marketplace  
+## Game Marketplace<a name="game-marketplace"></a>  
 **Description:**  
 A digital distribution service platform which releases games.  
   
@@ -1806,7 +1806,7 @@ A digital distribution service platform which releases games.
   free to post your own games and play others' creations.  
   
   
-## Film Sphere  
+## Film Sphere<a name="film-sphere"></a>  
 **Description:**  
 A subscription video streaming service platform which release movie and entertainment show.  
   
@@ -1827,7 +1827,7 @@ A subscription video streaming service platform which release movie and entertai
   we are movie platform where users can upload and watch films - share your videos or discover new content from our community of creators.  
   
   
-## Premium Kitchen  
+## Premium Kitchen<a name="premium-kitchen"></a>  
 **Description:**  
 A premium restaurant that operates through delivery apps, optimizing its menu and operations for efficient online food delivery.  
   
@@ -1845,7 +1845,7 @@ A premium restaurant that operates through delivery apps, optimizing its menu an
   food review community where people can share and read restaurant reviews.  
   
   
-## Telemedicine Hub  
+## Telemedicine Hub<a name="telemedicine-hub"></a>  
 **Description:**  
 A convenient healthcare platform connecting patients with licensed physicians for virtual consultations, medical advice, and prescriptions from any location.  
   
@@ -1866,7 +1866,7 @@ A convenient healthcare platform connecting patients with licensed physicians fo
   online medical consultation platform connecting patients with licensed healthcare professionals for virtual appointments.  
   
   
-## Blogger Hub  
+## Blogger Hub<a name="blogger-hub"></a>  
 **Description:**  
 A platform where individuals showcase their diverse perspectives through personalized blogs and interactive community engagement. They expect more visitors than usual.  
   
@@ -1882,7 +1882,7 @@ A platform where individuals showcase their diverse perspectives through persona
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Book Club  
+## Book Club<a name="book-club"></a>  
 **Description:**  
 An interactive community platform by tower residents that brings book enthusiasts together for meaningful connections around shared literary passions.  
   
@@ -1898,7 +1898,7 @@ An interactive community platform by tower residents that brings book enthusiast
   **<span style="color:PapayaWhip;">Consumes:</span>** update-software  
   
   
-## Cloud Hub  
+## Cloud Hub<a name="cloud-hub"></a>  
 **Description:**  
 A software-as-a-service (SaaS) provider company that hosts their cloud storage service. They expect more visitors than usual.  
   
@@ -1913,7 +1913,7 @@ A software-as-a-service (SaaS) provider company that hosts their cloud storage s
   we provide cloud storage service offering reliable online backup and file sharing.  
   
   
-## Data Nexus  
+## Data Nexus<a name="data-nexus"></a>  
 **Description:**  
 An international data company that hosts their workspace on-premise and hire more freelancer.  
   
@@ -1934,7 +1934,7 @@ An international data company that hosts their workspace on-premise and hire mor
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Data Hub  
+## Data Hub<a name="data-hub"></a>  
 **Description:**  
 An international data company that hosts their workspace on-premise, and hire permanent staff.  
   
@@ -1952,7 +1952,7 @@ An international data company that hosts their workspace on-premise, and hire pe
   **<span style="color:LightGray;">Subjects:</span>** b2b, project-planning  
   
   
-## Econ News  
+## Econ News<a name="econ-news"></a>  
 **Description:**  
 An economics news company that hosts their site on-premise (focus mainly on economics news)  
   
@@ -1968,7 +1968,7 @@ An economics news company that hosts their site on-premise (focus mainly on econ
   **<span style="color:PapayaWhip;">Consumes:</span>** ( store-text or store-image or store-video ) and not tunnel-vpn-traffic  
   
   
-## Indie Studios  
+## Indie Studios<a name="indie-studios"></a>  
 **Description:**  
 An indie gaming studios that hosts their development workspace on-premise, and hire mostly freelancers.  
   
@@ -1986,7 +1986,7 @@ An indie gaming studios that hosts their development workspace on-premise, and h
   **<span style="color:PapayaWhip;">Consumes:</span>** update-software  
   
   
-## Free Kanban Central  
+## Free Kanban Central<a name="free-kanban-central"></a>  
 **Description:**  
 A kanban platform that empowers users to create customizable boards for planning, tracking, and managing projects of any type.   
   
@@ -2002,7 +2002,7 @@ A kanban platform that empowers users to create customizable boards for planning
   **<span style="color:PapayaWhip;">Consumes:</span>** update-software  
   
   
-## Horror Director  
+## Horror Director<a name="horror-director"></a>  
 **Description:**  
 A comedy movie director who produces movie content on video subscription platform  
   
@@ -2017,7 +2017,7 @@ A comedy movie director who produces movie content on video subscription platfor
   **<span style="color:LightGray;">Subjects:</span>** b2c, horror, movie  
   
   
-## Media Hub  
+## Media Hub<a name="media-hub"></a>  
 **Description:**  
 A media company that hosts their site on-premise.  
   
@@ -2033,7 +2033,7 @@ A media company that hosts their site on-premise.
   **<span style="color:PapayaWhip;">Consumes:</span>** ( store-text or store-image or store-video ) and not tunnel-vpn-traffic  
   
   
-## Music Sphere  
+## Music Sphere<a name="music-sphere"></a>  
 **Description:**  
 An music streaming company that provide music streaming from musician.  
   
@@ -2049,7 +2049,7 @@ An music streaming company that provide music streaming from musician.
   **<span style="color:PapayaWhip;">Consumes:</span>** ( store-text or store-image or store-video ) and not tunnel-vpn-traffic  
   
   
-## Audio Sphere  
+## Audio Sphere<a name="audio-sphere"></a>  
 **Description:**  
 An podcast streaming company that provide podcast streaming from podcasters.  
   
@@ -2066,7 +2066,7 @@ An podcast streaming company that provide podcast streaming from podcasters.
   **<span style="color:PapayaWhip;">Consumes:</span>** update-software  
   
   
-## Political News  
+## Political News<a name="political-news"></a>  
 **Description:**  
 An official political news company that hosts their site on-premise.  
   
@@ -2080,7 +2080,7 @@ An official political news company that hosts their site on-premise.
   **<span style="color:PapayaWhip;">Consumes:</span>** ( store-text or store-image or store-video ) and not tunnel-vpn-traffic  
   
   
-## Religious Hub  
+## Religious Hub<a name="religious-hub"></a>  
 **Description:**  
 A platform where individuals deepen their spiritual journey through sacred text studies, religious discourse, and faith-based resources.  
   
@@ -2097,7 +2097,7 @@ A platform where individuals deepen their spiritual journey through sacred text 
   **<span style="color:LightGray;">Subjects:</span>** news-update  
   
   
-## Scientific News  
+## Scientific News<a name="scientific-news"></a>  
 **Description:**  
 A scientific news company that hosts their site on-premise.  
   
@@ -2113,7 +2113,7 @@ A scientific news company that hosts their site on-premise.
   **<span style="color:PapayaWhip;">Consumes:</span>** post-text and verify-user  
   
   
-## Tower Portal  
+## Tower Portal<a name="tower-portal"></a>  
 **Description:**  
 All-in-one community portal connecting residents, staff, and service providers through a unified platform.  
   
@@ -2133,7 +2133,7 @@ All-in-one community portal connecting residents, staff, and service providers t
   **<span style="color:PapayaWhip;">Consumes:</span>** print-image or print-text  
   
   
-## Socialite Hub  
+## Socialite Hub<a name="socialite-hub"></a>  
 **Description:**  
 A social media company that hosts media content from influencer and other content creator.  
   
@@ -2150,7 +2150,7 @@ A social media company that hosts media content from influencer and other conten
   **<span style="color:LightGray;">Subjects:</span>** news-update  
   
   
-## Finance Hub  
+## Finance Hub<a name="finance-hub"></a>  
 **Description:**  
 A bank which enable transaction within tower. Require always on and consistent network services.  
   
@@ -2170,7 +2170,7 @@ A bank which enable transaction within tower. Require always on and consistent n
   **<span style="color:PapayaWhip;">Consumes:</span>** print-image or print-text  
   
   
-## Chatter Hive  
+## Chatter Hive<a name="chatter-hive"></a>  
 **Description:**  
 A instant-messaging company that allows user to chat with each other at real time.  
   
@@ -2185,7 +2185,7 @@ A instant-messaging company that allows user to chat with each other at real tim
   let's chat with your loved ones instantly.  
   
   
-## Mail Hub  
+## Mail Hub<a name="mail-hub"></a>  
 **Description:**  
 A basic email service provider who has consistent low bandwidth usage, and enable residents to read and send email.   
   
@@ -2203,7 +2203,7 @@ A basic email service provider who has consistent low bandwidth usage, and enabl
   let's read incoming messages and compose responses when necessary.  
   
   
-## Software Nexus  
+## Software Nexus<a name="software-nexus"></a>  
 **Description:**  
 A software company that provides software updates for their client.  
   
@@ -2219,7 +2219,7 @@ A software company that provides software updates for their client.
   **<span style="color:PapayaWhip;">Consumes:</span>** print-image or print-text  
   
   
-## Utilities Sphere  
+## Utilities Sphere<a name="utilities-sphere"></a>  
 **Description:**  
 An integrated utility management ecosystem streamlining resource monitoring, usage optimization, and payment processing for all building services and infrastructure. This company often expects more visitors.  
   
@@ -2239,7 +2239,7 @@ An integrated utility management ecosystem streamlining resource monitoring, usa
   **<span style="color:PapayaWhip;">Consumes:</span>** print-image or print-text  
   
   
-## Ads Agency  
+## Ads Agency<a name="ads-agency"></a>  
 **Description:**  
 This advertisement company specializes in promoting ideological campaigns for political associations, offering cost-effective broadcasting services.  
   
@@ -2253,7 +2253,7 @@ This advertisement company specializes in promoting ideological campaigns for po
   host ideological advertisement  
   
   
-## Research Hub  
+## Research Hub<a name="research-hub"></a>  
 **Description:**  
 A place which provides comprehensive resources, collaboration tools, and expert support for academics, scientists, and researchers to conduct studies and share findings.  
   
@@ -2267,7 +2267,7 @@ A place which provides comprehensive resources, collaboration tools, and expert 
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Surveillance Hub  
+## Surveillance Hub<a name="surveillance-hub"></a>  
 **Description:**  
 An one-stop cctv service provider who enables their subscribers to view cctv footages at real-time.  
   
@@ -2279,7 +2279,7 @@ An one-stop cctv service provider who enables their subscribers to view cctv foo
   allow users to store surveillance data with the utmost privacy settings.  
   
   
-## Daily Refresher  
+## Daily Refresher<a name="daily-refresher"></a>  
 **Description:**  
 a humble tower dweller who just wants to go online  
   
@@ -2296,7 +2296,7 @@ a humble tower dweller who just wants to go online
   **<span style="color:PapayaWhip;">Consumes:</span>** print-image or print-text  
   
   
-## Billing Officer  
+## Billing Officer<a name="billing-officer"></a>  
 **Description:**  
 An associate who manages customer billing operations.   
   
@@ -2322,7 +2322,7 @@ They reconcil meter usage against issued bills, identifying discrepancies, and f
   **<span style="color:LightGray;">Subjects:</span>** professional, support, corporate  
   
   
-## Customer Officer  
+## Customer Officer<a name="customer-officer"></a>  
 **Description:**  
 Serves as the frontline point of contact between Tenabolt and its customers.   
   
@@ -2343,7 +2343,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   **<span style="color:PapayaWhip;">Consumes:</span>** read-complaint and store-complaint  
   
   
-## Analytics Officer  
+## Analytics Officer<a name="analytics-officer"></a>  
 **Description:**  
 A data analyst who identified amount of illegal non-revenue electric supply from the company  
   
@@ -2367,7 +2367,7 @@ A data analyst who identified amount of illegal non-revenue electric supply from
   **<span style="color:DarkKhaki;">Produces:</span>** post-inspection-report  
   
   
-## Distribution Officer  
+## Distribution Officer<a name="distribution-officer"></a>  
 **Description:**  
 A staff who monitors the distribution network for faults, demand anomalies, and operational issues.  
   
@@ -2383,7 +2383,7 @@ A staff who monitors the distribution network for faults, demand anomalies, and 
   **<span style="color:DarkKhaki;">Produces:</span>** accept-repair-instruction  
   
   
-## Field Inspector  
+## Field Inspector<a name="field-inspector"></a>  
 **Description:**  
 A field technician who performs on-site inspection, maintenance, and repair of grid infrastructure including power plant assets, distribution lines, and customer meters.  
   
@@ -2405,7 +2405,7 @@ A field technician who performs on-site inspection, maintenance, and repair of g
   **<span style="color:PapayaWhip;">Consumes:</span>** post-inspection-report  
   
   
-## Finance Officer  
+## Finance Officer<a name="finance-officer"></a>  
 **Description:**  
 A finance who manages the company's financial operations including approving expenditures, processing vendor payments, and closing work claims.  
   
@@ -2424,7 +2424,7 @@ A finance who manages the company's financial operations including approving exp
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-workorder-claim or read-expansion-budget )  
   
   
-## Grid Officer  
+## Grid Officer<a name="grid-officer"></a>  
 **Description:**  
 A grid control operator who monitors and controls power plant switching to balance supply against live customer demand.  
   
@@ -2444,7 +2444,7 @@ A grid control operator who monitors and controls power plant switching to balan
   **<span style="color:DarkKhaki;">Produces:</span>** read-operation-data  
   
   
-## HR Officer  
+## HR Officer<a name="hr-officer"></a>  
 **Description:**  
 Responsible for maintaining employee records, processing leave approvals, tracking certifications, and running payroll cycles.  
   
@@ -2473,7 +2473,7 @@ Responsible for maintaining employee records, processing leave approvals, tracki
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Legal Officer  
+## Legal Officer<a name="legal-officer"></a>  
 **Description:**  
 A lawyer who defends TenaBolt against legal suits and regulatory penalties.  
   
@@ -2492,7 +2492,7 @@ A lawyer who defends TenaBolt against legal suits and regulatory penalties.
   **<span style="color:PapayaWhip;">Consumes:</span>** upload-file or download-file  
   
   
-## Meter Reader I  
+## Meter Reader I<a name="meter-reader-i"></a>  
 **Description:**  
 a meter reader who uploads electrical meter reading.  
   
@@ -2508,7 +2508,7 @@ a meter reader who uploads electrical meter reading.
   **<span style="color:DarkKhaki;">Produces:</span>** read-meter-reading  
   
   
-## Morning Grid Officer  
+## Morning Grid Officer<a name="morning-grid-officer"></a>  
 **Description:**  
 A grid control operator who monitors and controls power plant switching to balance supply against live customer demand.  
   
@@ -2528,7 +2528,7 @@ A grid control operator who monitors and controls power plant switching to balan
   **<span style="color:DarkKhaki;">Produces:</span>** read-operation-data  
   
   
-## Morning Technician  
+## Morning Technician<a name="morning-technician"></a>  
 **Description:**  
 a humble technician who resolve complaints in the morning.  
   
@@ -2552,7 +2552,7 @@ a humble technician who resolve complaints in the morning.
   **<span style="color:PapayaWhip;">Consumes:</span>** provision-vm  
   
   
-## Night Grid Officer  
+## Night Grid Officer<a name="night-grid-officer"></a>  
 **Description:**  
 A grid control operator who monitors and controls power plant switching to balance supply against live customer demand.  
   
@@ -2572,7 +2572,7 @@ A grid control operator who monitors and controls power plant switching to balan
   **<span style="color:DarkKhaki;">Produces:</span>** read-operation-data  
   
   
-## Night Associate  
+## Night Associate<a name="night-associate"></a>  
 **Description:**  
 a humble staff who just wants to visit company application  
   
@@ -2583,7 +2583,7 @@ a humble staff who just wants to visit company application
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Night Technician  
+## Night Technician<a name="night-technician"></a>  
 **Description:**  
 a humble technician who resolve complaints  
   
@@ -2609,7 +2609,7 @@ a humble technician who resolve complaints
   **<span style="color:PapayaWhip;">Consumes:</span>** provision-vm  
   
   
-## Normal Associate  
+## Normal Associate<a name="normal-associate"></a>  
 **Description:**  
 a humble tenabolt staff who just wants to do work  
   
@@ -2630,7 +2630,7 @@ a humble tenabolt staff who just wants to do work
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Normal Technician  
+## Normal Technician<a name="normal-technician"></a>  
 **Description:**  
 a humble technician who resolve complaints  
   
@@ -2654,7 +2654,7 @@ a humble technician who resolve complaints
   **<span style="color:PapayaWhip;">Consumes:</span>** provision-vm  
   
   
-## Partner Gateway  
+## Partner Gateway<a name="partner-gateway"></a>  
 **Description:**  
 Represents outbound internet traffic from Tenabolt to its third-party service providers.  
   
@@ -2672,7 +2672,7 @@ Represents outbound internet traffic from Tenabolt to its third-party service pr
   Enables staff to access dashboards, retrieve external data, and publish outputs to cloud services.  
   
   
-## Planning Officer  
+## Planning Officer<a name="planning-officer"></a>  
 **Description:**  
 A capital planning manager who oversees site identification, budget proposals, and infrastructure expansion projects.  
   
@@ -2692,7 +2692,7 @@ A capital planning manager who oversees site identification, budget proposals, a
   **<span style="color:DarkKhaki;">Produces:</span>** read-expansion-budget  
   
   
-## Cloud Service  
+## Cloud Service<a name="cloud-service"></a>  
 **Description:**  
 A third-party cloud service provider. Hosts external SaaS platforms and data services.  
   
@@ -2706,7 +2706,7 @@ Switched off by IT staff during non-working hour to save cost.
   Enables staff to access dashboards, retrieve external data, and publish outputs to cloud services.  
   
   
-## Tenabolt Retail  
+## Tenabolt Retail<a name="tenabolt-retail"></a>  
 **Description:**  
 A third-party retail platform that facilitates the sale and distribution of Tenabolt devices to the public.  
   
@@ -2718,7 +2718,7 @@ A third-party retail platform that facilitates the sale and distribution of Tena
   allows e-commerce department to manage sales.  
   
   
-## People Operations  
+## People Operations<a name="people-operations"></a>  
 **Description:**  
 A third party service provider who handles employee records, onboarding, and workforce administration.  
   
@@ -2733,7 +2733,7 @@ A third party service provider who handles employee records, onboarding, and wor
   allows human resource to manage staff records, and staff to manage their own leave, payslips, and other staff-related applications.  
   
   
-## IT Service  
+## IT Service<a name="it-service"></a>  
 **Description:**  
 IT Service Management software hosted by another IT technician in Tenabolt.  
   
@@ -2752,7 +2752,7 @@ Only operates during working hours.
   allows staff to submit it tickets  
   
   
-## Public Gateway  
+## Public Gateway<a name="public-gateway"></a>  
 **Description:**  
 Represents incoming internet traffic to Tenabolt's public-facing services.  
   
@@ -2772,7 +2772,7 @@ Represents incoming internet traffic to Tenabolt's public-facing services.
   **<span style="color:PapayaWhip;">Consumes:</span>** read-text  
   
   
-## PR Officer  
+## PR Officer<a name="pr-officer"></a>  
 **Description:**  
 Manages Tenabolt's public image and communications. Responsible for publishing company news, outage updates, and official announcements to keep the public informed.  
   
@@ -2791,7 +2791,7 @@ Manages Tenabolt's public image and communications. Responsible for publishing c
   **<span style="color:PapayaWhip;">Consumes:</span>** post-news-updates  
   
   
-## R&D Engineer  
+## R&D Engineer<a name="r&d-engineer"></a>  
 **Description:**  
 An R&D engineer who works towards more sustainable and effective energy sources, specialising in nuclear reactor modelling and calculation.  
   
@@ -2814,7 +2814,7 @@ An R&D engineer who works towards more sustainable and effective energy sources,
   **<span style="color:DarkKhaki;">Produces:</span>** read-tenabolt-calculation  
   
   
-## Sales Officer  
+## Sales Officer<a name="sales-officer"></a>  
 **Description:**  
 Manages Tenabolt's product listings and sales channels on third-party retail platforms.  
   
@@ -2838,7 +2838,7 @@ Manages Tenabolt's product listings and sales channels on third-party retail pla
   **<span style="color:LightGray;">Subjects:</span>** official, b2c, high-tech  
   
   
-## AI Researcher  
+## AI Researcher<a name="ai-researcher"></a>  
 **Description:**  
 A researcher who designs, develops, and studies artificial intelligence systems to advance the field through research, experimentation  
   
@@ -2854,7 +2854,7 @@ A researcher who designs, develops, and studies artificial intelligence systems 
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Chips Designer  
+## Chips Designer<a name="chips-designer"></a>  
 **Description:**  
 A highly specialized engineer who designs the architectural blueprints and detailed circuit layouts for microprocessors, memory chips, and other semiconductor devices  
   
@@ -2868,7 +2868,7 @@ A highly specialized engineer who designs the architectural blueprints and detai
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Professional Gamer  
+## Professional Gamer<a name="professional-gamer"></a>  
 **Description:**  
 A professional e-sports streamer broadcasting live gameplay on gaming platforms, entertaining viewers with competitive gaming content.  
   
@@ -2883,7 +2883,7 @@ A professional e-sports streamer broadcasting live gameplay on gaming platforms,
   **<span style="color:PapayaWhip;">Consumes:</span>** ( read-text or post-text ) and verify-user  
   
   
-## Binge Watcher  
+## Binge Watcher<a name="binge-watcher"></a>  
 **Description:**  
 An individual who watches multiple movies lasting several hours without breaks in a single sitting.  
   
@@ -2900,7 +2900,7 @@ An individual who watches multiple movies lasting several hours without breaks i
   **<span style="color:LightGray;">Subjects:</span>** movie  
   
   
-## Jazz Lover  
+## Jazz Lover<a name="jazz-lover"></a>  
 **Description:**  
 A tower dweller who loves jazz music and enjoys listening to various jazz artists.  
   
@@ -2914,7 +2914,7 @@ A tower dweller who loves jazz music and enjoys listening to various jazz artist
   **<span style="color:LightGray;">Subjects:</span>** music, jazz  
   
   
-## Indoor Dweller  
+## Indoor Dweller<a name="indoor-dweller"></a>  
 **Description:**  
 A home-based person who handles work, shopping, and household tasks online. They stick to familiar websites unless better options appear.  
   
@@ -2950,7 +2950,7 @@ A home-based person who handles work, shopping, and household tasks online. They
   **<span style="color:LightGray;">Subjects:</span>** privacy  
   
   
-## Patient Dweller  
+## Patient Dweller<a name="patient-dweller"></a>  
 **Description:**  
 An individual who requires background tasks like large cloud backups, or data processing, but tolerant of interruptions as long as it completes eventually.   
   
@@ -2976,7 +2976,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:PapayaWhip;">Consumes:</span>** ( store-text or store-image or store-video ) and not tunnel-vpn-traffic  
   
   
-## Satellite Tower  
+## Satellite Tower<a name="satellite-tower"></a>  
 **Description:**  
 Internet exchange points are neighbouring buildings that exchange services with the current tower.    
   
@@ -2994,7 +2994,7 @@ Internet exchange points are neighbouring buildings that exchange services with 
   host memes forum  
   
   
-## Satellite Tower  
+## Satellite Tower<a name="satellite-tower"></a>  
 **Description:**  
 Internet exchange points are neighbouring buildings that exchange services with the current tower.    
   
@@ -3012,7 +3012,7 @@ Internet exchange points are neighbouring buildings that exchange services with 
   host memes forum  
   
   
-## Relax Tower  
+## Relax Tower<a name="relax-tower"></a>  
 **Description:**  
 Internet exchange points are neighbouring buildings that exchange services with the current tower.    
   
@@ -3030,7 +3030,7 @@ Internet exchange points are neighbouring buildings that exchange services with 
   host lofi music channel  
   
   
-## Animation Sphere  
+## Animation Sphere<a name="animation-sphere"></a>  
 **Description:**  
 A large-scale film production facility that serves as the central hub for animated content.  
   
@@ -3050,7 +3050,7 @@ A large-scale film production facility that serves as the central hub for animat
   **<span style="color:PapayaWhip;">Consumes:</span>** update-software  
   
   
-## Animation Studios  
+## Animation Studios<a name="animation-studios"></a>  
 **Description:**  
 A creative production company that specializes in developing and producing animated content.  
   
@@ -3071,7 +3071,7 @@ A creative production company that specializes in developing and producing anima
   host freelance workspace  
   
   
-## Central Mart  
+## Central Mart<a name="central-mart"></a>  
 **Description:**  
 A centralized mart that enables multiple household stores to create their own digital storefronts while providing integrated delivery and logistics services to connect local grocers.  
   
@@ -3092,7 +3092,7 @@ A centralized mart that enables multiple household stores to create their own di
   **<span style="color:PapayaWhip;">Consumes:</span>** update-software  
   
   
-## ESport Hub  
+## ESport Hub<a name="esport-hub"></a>  
 **Description:**  
 A E-sport streaming platform that employs professional gamers to broadcast live gameplay and provides viewers with access to watch these live gaming streams.  
   
@@ -3110,7 +3110,7 @@ A E-sport streaming platform that employs professional gamers to broadcast live 
   hires professional gamers to broadcast live gameplay and provides viewers with access to watch these live gaming streams.  
   
   
-## Happy Grocery  
+## Happy Grocery<a name="happy-grocery"></a>  
 **Description:**  
 A retail establishment that sells food products, beverages, and household essentials for daily consumption.  
   
@@ -3135,7 +3135,7 @@ A retail establishment that sells food products, beverages, and household essent
   host e-commerce site  
   
   
-## Inventory Hub  
+## Inventory Hub<a name="inventory-hub"></a>  
 **Description:**  
 An inventory management software company which automatically tracks, manages, and optimizes their clients' product inventory across multiple sales channels.  
   
@@ -3153,7 +3153,7 @@ An inventory management software company which automatically tracks, manages, an
   **<span style="color:PapayaWhip;">Consumes:</span>** update-software  
   
   
-## Semiconductor Hub  
+## Semiconductor Hub<a name="semiconductor-hub"></a>  
 **Description:**  
 A place which provides comprehensive resources, collaboration tools, and expert support for academics, scientists, and researchers to conduct studies and share findings.  
   
@@ -3167,7 +3167,7 @@ A place which provides comprehensive resources, collaboration tools, and expert 
   host confidential research work  
   
   
-## Sound Studios  
+## Sound Studios<a name="sound-studios"></a>  
 **Description:**  
 A specialized audio production facility that produces high-quality audio content for various media and entertainment projects.  
   
@@ -3182,7 +3182,7 @@ A specialized audio production facility that produces high-quality audio content
   **<span style="color:LightGray;">Subjects:</span>** animation, movie  
   
   
-## Transfer Hub  
+## Transfer Hub<a name="transfer-hub"></a>  
 **Description:**  
   
   
@@ -3194,7 +3194,7 @@ A specialized audio production facility that produces high-quality audio content
   file transfer site  
   
   
-## Professional Club  
+## Professional Club<a name="professional-club"></a>  
 **Description:**  
 An online discussion forum that requires users to verify their professional credentials before gaining access to view content or participate in discussions  
   
@@ -3211,7 +3211,7 @@ An online discussion forum that requires users to verify their professional cred
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Meeting Hub  
+## Meeting Hub<a name="meeting-hub"></a>  
 **Description:**  
 Cloud-based platforms that enable high-quality video meetings, webinars, and real-time collaboration through secure, scalable communication technology for businesses, education, and personal use.  
   
@@ -3226,7 +3226,7 @@ Cloud-based platforms that enable high-quality video meetings, webinars, and rea
   enabling real-time meetings  
   
   
-## Antivirus Nexus  
+## Antivirus Nexus<a name="antivirus-nexus"></a>  
 **Description:**  
 A software company that provides antivirus software updates for their client.  
   
@@ -3244,7 +3244,7 @@ A software company that provides antivirus software updates for their client.
   **<span style="color:PapayaWhip;">Consumes:</span>** stream-voice  
   
   
-## Privacy Hub  
+## Privacy Hub<a name="privacy-hub"></a>  
 **Description:**  
 A software company that releases software updates which protect personal information and anonymity for their clients  
   
