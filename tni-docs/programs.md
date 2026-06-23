@@ -1,61 +1,63 @@
 # Programs
 GENERATED FOR TNI VERSION 0.11.2
 
-[tena-employee-db](#tena-employee-db)  
-[blobdb](#blobdb)  
-[tena-meter-db](#tena-meter-db)  
-[hypervisor-server](#hypervisor-server)  
-[log-server](#log-server)  
-[ten-bill-server](#ten-bill-server)  
-[complaint-server2](#complaint-server2)  
-[ten-public-portal](#ten-public-portal)  
-[oauth-serv](#oauth-serv)  
-[tmp-collabpoint1](#tmp-collabpoint1)  
-[tena-calc-server](#tena-calc-server)  
-[tena-gis-server](#tena-gis-server)  
-[tena-staff-portal](#tena-staff-portal)  
-[maintenance-server](#maintenance-server)  
-[ten-scada-server](#ten-scada-server)  
-[tena-mail](#tena-mail)  
-[print-server](#print-server)  
-[ubbt](#ubbt)  
-[padu_v1](#padu_v1)  
-[padu_v2](#padu_v2)  
-[padu_v3](#padu_v3)  
-[poems-db](#poems-db)  
-[decentro-collector](#decentro-collector)  
-[decentro-node](#decentro-node)  
-[decentro-wallet](#decentro-wallet)  
-[dns-server](#dns-server)  
-[dns-lite](#dns-lite)  
-[sun-dns](#sun-dns)  
-[dnsmasq](#dnsmasq)  
-[kea](#kea)  
-[dnsspam](#dnsspam)  
-[nop](#nop)  
-[netpeeker](#netpeeker)  
-[tnbmon](#tnbmon)  
-[bladeos](#bladeos)  
-[firewatcher](#firewatcher)  
-[hakernel](#hakernel)  
-[riserswfirm](#riserswfirm)  
-[lbrr](#lbrr)  
-[vlanfirm](#vlanfirm)  
-[mbox](#mbox)  
-[rtkernel](#rtkernel)  
-[vrout3](#vrout3)  
-[wirerat](#wirerat)  
-[printer_edge](#printer_edge)  
-[print-server](#print-server)  
-[gitcoffee](#gitcoffee)  
-[cctv_edge](#cctv_edge)  
-[rtsp-diva-r](#rtsp-diva-r)  
-[cctv_edge](#cctv_edge)  
-[mailer](#mailer)  
-[vonet_edge](#vonet_edge)  
-[voip-server](#voip-server)  
-[WORM ANNOYING_MORRIS](#worm-annoying_morris)  
-[WORM HUSH](#worm-hush)
+|   |   |  
+|---|---|  
+|[tena-employee-db](#tena-employee-db)|[`tcp/3306`](#tena-employee-db)|  
+|[blobdb](#blobdb)||  
+|[tena-meter-db](#tena-meter-db)|[`tcp/3306`](#tena-meter-db)|  
+|[hypervisor-server](#hypervisor-server)|[`tcp/5432`](#hypervisor-server)|  
+|[log-server](#log-server)|[`tcp/3306`](#log-server)|  
+|[ten-bill-server](#ten-bill-server)|[`tcp/5432`](#ten-bill-server)|  
+|[complaint-server2](#complaint-server2)|[`tcp/25`](#complaint-server2)|  
+|[ten-public-portal](#ten-public-portal)|[`tcp/5432`](#ten-public-portal)|  
+|[oauth-serv](#oauth-serv)|[`tcp/5432`](#oauth-serv)|  
+|[tmp-collabpoint1](#tmp-collabpoint1)|[`tcp/5432`](#tmp-collabpoint1)|  
+|[tena-calc-server](#tena-calc-server)|[`tcp/3306`](#tena-calc-server)|  
+|[tena-gis-server](#tena-gis-server)|[`tcp/5432`](#tena-gis-server)|  
+|[tena-staff-portal](#tena-staff-portal)|[`tcp/5432`](#tena-staff-portal)|  
+|[maintenance-server](#maintenance-server)|[`tcp/5432`](#maintenance-server)|  
+|[ten-scada-server](#ten-scada-server)|[`tcp/5432`](#ten-scada-server)|  
+|[tena-mail](#tena-mail)|[`tcp/5432`](#tena-mail)|  
+|[print-server](#print-server)||  
+|[ubbt](#ubbt)|[`udp/6343`](#ubbt)|  
+|[padu_v1](#padu_v1)||  
+|[padu_v2](#padu_v2)||  
+|[padu_v3](#padu_v3)||  
+|[poems-db](#poems-db)||  
+|[decentro-collector](#decentro-collector)|[`tcp/8333`](#decentro-collector)|  
+|[decentro-node](#decentro-node)||  
+|[decentro-wallet](#decentro-wallet)||  
+|[dns-server](#dns-server)|[`tcp/3306`](#dns-server)|  
+|[dns-lite](#dns-lite)||  
+|[sun-dns](#sun-dns)|[`tcp/3306`](#sun-dns)|  
+|[dnsmasq](#dnsmasq)||  
+|[kea](#kea)|[`tcp/3306`](#kea)|  
+|[dnsspam](#dnsspam)|[`udp/53`](#dnsspam)|  
+|[nop](#nop)||  
+|[netpeeker](#netpeeker)||  
+|[tnbmon](#tnbmon)||  
+|[bladeos](#bladeos)||  
+|[firewatcher](#firewatcher)||  
+|[hakernel](#hakernel)||  
+|[riserswfirm](#riserswfirm)||  
+|[lbrr](#lbrr)||  
+|[vlanfirm](#vlanfirm)||  
+|[mbox](#mbox)||  
+|[rtkernel](#rtkernel)||  
+|[vrout3](#vrout3)||  
+|[wirerat](#wirerat)||  
+|[printer_edge](#printer_edge)|[`tcp/631`](#printer_edge)|  
+|[print-server](#print-server)||  
+|[gitcoffee](#gitcoffee)|[`tcp/5432`](#gitcoffee)|  
+|[cctv_edge](#cctv_edge)|[`udp/554`](#cctv_edge)|  
+|[rtsp-diva-r](#rtsp-diva-r)||  
+|[cctv_edge](#cctv_edge)|[`tcp/554`](#cctv_edge)|  
+|[mailer](#mailer)|[`tcp/5432`](#mailer)|  
+|[vonet_edge](#vonet_edge)|[`udp/5060`](#vonet_edge)|  
+|[voip-server](#voip-server)||  
+|[WORM ANNOYING_MORRIS](#worm-annoying_morris)|[`tcp/51#`](#worm-annoying_morris)|  
+|[WORM HUSH](#worm-hush)|[`udp/5060`](#worm-hush)|
 
 ## tena-employee-db<a name="tena-employee-db"></a>  
 **CPU:** 3 **MEM:** 7 **SIZE:** 8  
