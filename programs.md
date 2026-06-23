@@ -60,14 +60,10 @@ GENERATED FOR TNI VERSION 0.11.2
 **CPU:** 3 **MEM:** 7 **SIZE:** 8  
   
 **Description:**  
-Stores employee data.   
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 store-text and store-image  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 read-employee-data, post-employee-data <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 store-text and store-image  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 read-employee-data, post-employee-data (limited by 8)  
 **Unlocked By:** [](#), [HR Officer](users.md/#hr-officer)  
   
   
@@ -84,14 +80,10 @@ Production is limited to 5 compatible uses on the device's use stack.
 **CPU:** 5 **MEM:** 3 **SIZE:** 6  
   
 **Description:**  
-Allow meter reader to stores meter reading data.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 store-text and store-image  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 post-meter-reading <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 store-text and store-image  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 post-meter-reading (limited by 8)  
 **Unlocked By:** [ten-bill-server](#ten-bill-server), [Meter Reader I](users.md/#meter-reader-i)  
   
   
@@ -99,14 +91,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 20 **MEM:** 10 **SIZE:** 8  
   
 **Description:**  
-Provisions and allocates virtual compute resources for monitoring and scaling.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 15 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 4 store-text  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 provision-vm <span style="color:gray;">(limited by 15)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 4 store-text  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 15 provision-vm (limited by 15)  
 **Unlocks:** [padu_v2](#padu_v2)  
 **Unlocked By:** [Morning Technician](users.md/#morning-technician), [Night Technician](users.md/#night-technician), [Normal Technician](users.md/#normal-technician)  
   
@@ -115,14 +103,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 5 **MEM:** 9 **SIZE:** 16  
   
 **Description:**  
-Event log storage. Records and searches system activity.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 15 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 store-text  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 query-log-entry, store-log-entry <span style="color:gray;">(limited by 15)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 store-text  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 15 query-log-entry, store-log-entry (limited by 15)  
 **Unlocks:** [padu_v2](#padu_v2)  
 **Unlocked By:** [ten-scada-server](#ten-scada-server), [Morning Technician](users.md/#morning-technician), [Night Technician](users.md/#night-technician), [Normal Technician](users.md/#normal-technician), [IT Service](users.md/#it-service)  
   
@@ -131,14 +115,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 3 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
-Enables Billing Staff to generate and post invoices to residents based on recorded consumption data.  
-<span style="color:red;">Requires meter readings submitted by Meter Readers.</span>  
   
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 read-meter-reading  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 post-invoice, verify-user <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 read-meter-reading  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 post-invoice, verify-user (limited by 8)  
 **Unlocks:** [padu_v2](#padu_v2), [tena-meter-db](#tena-meter-db)  
 **Unlocked By:** [Billing Officer](users.md/#billing-officer)  
   
@@ -147,14 +127,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 5 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
-Allows customers to submit complaints and customer service to manage and respond to tickets.  
-<span style="color:red;">Requires access to a running mail server</span>.  
   
-Produce target's use stack limit is 15 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 2 ( read-text and post-text and verify-user )  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 read-complaint, post-complaint, store-complaint <span style="color:gray;">(limited by 15)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 2 ( read-text and post-text and verify-user )  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 15 read-complaint, post-complaint, store-complaint (limited by 15)  
 **Unlocks:** [padu_v2](#padu_v2), [mailer](#mailer)  
 **Unlocked By:** [Customer Officer](users.md/#customer-officer), [Partner Gateway](users.md/#partner-gateway), [Public Gateway](users.md/#public-gateway), [Public Gateway](users.md/#public-gateway)  
   
@@ -163,14 +139,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 3 **MEM:** 3 **SIZE:** 4  
   
 **Description:**  
-Publishes outage updates and company news for public viewing.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 2 store-text and store-image  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 post-news-updates, read-news-updates <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 2 store-text and store-image  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 post-news-updates, read-news-updates (limited by 8)  
 **Unlocks:** [padu_v2](#padu_v2)  
 **Unlocked By:** [Partner Gateway](users.md/#partner-gateway), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer)  
   
@@ -184,8 +156,8 @@ Allows staff to login to internal portal.
 Produce target's use stack limit is 15 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 store-text and store-image  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 verify-user <span style="color:gray;">(limited by 15)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 store-text and store-image  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 15 verify-user (limited by 15)  
 **Unlocks:** [padu_v2](#padu_v2)  
   
   
@@ -193,14 +165,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 5 **MEM:** 7 **SIZE:** 5  
   
 **Description:**  
-Allows media sharing among staff.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 25 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 store-text and store-image  
-**<span style="color:DarkKhaki;">Produces:</span>** 25 download-file, upload-file <span style="color:gray;">(limited by 25)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 store-text and store-image  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 25 download-file, upload-file (limited by 25)  
 **Unlocks:** [padu_v2](#padu_v2)  
 **Unlocked By:** [Billing Officer](users.md/#billing-officer), [Analytics Officer](users.md/#analytics-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Legal Officer](users.md/#legal-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
@@ -209,15 +177,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 15 **MEM:** 8 **SIZE:** 4  
   
 **Description:**  
-Serve as nuclear plant calculation application. Engineers run simulations and save models.  
-<span style="color:red;">Requiring grid officer to perform scada operations.</span>  
   
   
-Produce target's use stack limit is 10 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
-  
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 read-operation-data  
-**<span style="color:DarkKhaki;">Produces:</span>** 10 verify-user, run-tenabolt-simulation, store-tenabolt-model <span style="color:gray;">(limited by 10)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 read-operation-data  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 10 verify-user, run-tenabolt-simulation, store-tenabolt-model (limited by 10)  
 **Unlocks:** [padu_v2](#padu_v2), [ten-scada-server](#ten-scada-server)  
 **Unlocked By:** [Analytics Officer](users.md/#analytics-officer), [R&D Engineer](users.md/#r&d-engineer)  
   
@@ -226,14 +189,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
-Serve as Geographic information system. Maps grid infrastructure, customer zones, and candidate sites for expansion.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 store-text and store-image  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 verify-user, store-geospatial-data, read-geospatial-data <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 store-text and store-image  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 verify-user, store-geospatial-data, read-geospatial-data (limited by 8)  
 **Unlocked By:** [maintenance-server](#maintenance-server), [Planning Officer](users.md/#planning-officer)  
   
   
@@ -241,14 +200,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 5 **MEM:** 3 **SIZE:** 9  
   
 **Description:**  
-Serve landing page for staff internally for company resources and announcement.   
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 ( store-text or store-image )  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 post-news-updates, read-news-updates, verify-user <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 ( store-text or store-image )  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 post-news-updates, read-news-updates, verify-user (limited by 8)  
 **Unlocks:** [padu_v2](#padu_v2)  
 **Unlocked By:** [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Normal Technician](users.md/#normal-technician), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
@@ -263,8 +218,8 @@ Coordinates field work orders for grid equipment.
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 ( verify-user and store-geospatial-data and read-geospatial-data )  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 post-repair-workorder <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 ( verify-user and store-geospatial-data and read-geospatial-data )  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 post-repair-workorder (limited by 8)  
 **Unlocks:** [padu_v2](#padu_v2), [tena-gis-server](#tena-gis-server)  
 **Unlocked By:** [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector)  
   
@@ -273,14 +228,10 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
   
 **Description:**  
-Serve as real-time supervisory control and data acquisition system for grid operations.  
-<span style="color:red;">Requires access to a running log server</span>.  
   
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 2 store-log-entry  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 verify-user, adjust-tenabolt-setpoint <span style="color:gray;">(limited by 8)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 2 store-log-entry  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 8 verify-user, adjust-tenabolt-setpoint (limited by 8)  
 **Unlocks:** [padu_v2](#padu_v2), [log-server](#log-server)  
 **Unlocked By:** [tena-calc-server](#tena-calc-server), [Field Inspector](users.md/#field-inspector), [Grid Officer](users.md/#grid-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Night Grid Officer](users.md/#night-grid-officer)  
   
@@ -294,8 +245,8 @@ Provides exchange email usages to users.
 Produce target's use stack limit is 15 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 store-text and store-image  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 read-text, post-text, post-image, view-image, verify-user <span style="color:gray;">(limited by 15)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 store-text and store-image  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 15 read-text, post-text, post-image, view-image, verify-user (limited by 15)  
 **Unlocks:** [padu_v2](#padu_v2)  
   
   
@@ -314,15 +265,10 @@ Production is limited to 10 compatible uses on the device's use stack.
 **CPU:** 4 **MEM:** 4 **SIZE:** 6  
   
 **Description:**  
-Analyzes user traffic behavior from a network tap to support botnet operations.  
   
-<span style="color:red;">Requires access to a network tap with user traffic</span>.  
   
-Produce target's use stack limit is 4 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
-  
-**<span style="color:PapayaWhip;">Consumes:</span>** 4 inspect-user-packets  
-**<span style="color:DarkKhaki;">Produces:</span>** 4 support-bots <span style="color:gray;">(limited by 4)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 4 inspect-user-packets  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 4 support-bots (limited by 4)  
   
   
 ## padu_v1  
@@ -376,8 +322,8 @@ Collects decentro currencies over the network and accumulate them on the install
 Produce target's use stack limit is 6 compatible uses per target's free memory.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 access-p2p-currency  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 access-p2p-currency <span style="color:gray;">(limited by TARGET_FREE_MEMORY)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 access-p2p-currency  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 1 access-p2p-currency (limited by TARGET_FREE_MEMORY)  
 **Unlocked By:** [](#)  
   
   
@@ -407,14 +353,10 @@ This program stores up to 10 'access-p2p-currency' compatible uses per free stor
 **CPU:** 4 **MEM:** 3 **SIZE:** 2+1=3  
   
 **Description:**  
-Replies network-addresses to DNS queries.   
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 20 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 store-text  
-**<span style="color:DarkKhaki;">Produces:</span>** 20 reply-dns-queries <span style="color:gray;">(limited by 20)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 store-text  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 20 reply-dns-queries (limited by 20)  
 **Unlocks:** [padu_v1](#padu_v1)  
 **Unlocked By:** [Media Maniac](users.md/#media-maniac), [Feed Signal](users.md/#feed-signal), [WireSync News](users.md/#wiresync-news), [Loyal Worker](users.md/#loyal-worker), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scientific Professor](users.md/#scientific-professor), [Patient Professor](users.md/#patient-professor), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Kanban Central](users.md/#kanban-central), [Booking Hub](users.md/#booking-hub), [Full Campus](users.md/#full-campus), [Night Campus](users.md/#night-campus), [Game Studios](users.md/#game-studios), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Horror Studios](users.md/#horror-studios), [Travel Agency](users.md/#travel-agency), [Cheap Kitchen](users.md/#cheap-kitchen), [Database Hub](users.md/#database-hub), [Game Marketplace](users.md/#game-marketplace), [Film Sphere](users.md/#film-sphere), [Premium Kitchen](users.md/#premium-kitchen), [Telemedicine Hub](users.md/#telemedicine-hub), [Blogger Hub](users.md/#blogger-hub), [Book Club](users.md/#book-club), [Data Nexus](users.md/#data-nexus), [Data Hub](users.md/#data-hub), [Econ News](users.md/#econ-news), [Indie Studios](users.md/#indie-studios), [Free Kanban Central](users.md/#free-kanban-central), [Media Hub](users.md/#media-hub), [Music Sphere](users.md/#music-sphere), [Audio Sphere](users.md/#audio-sphere), [Political News](users.md/#political-news), [Religious Hub](users.md/#religious-hub), [Scientific News](users.md/#scientific-news), [Socialite Hub](users.md/#socialite-hub), [Finance Hub](users.md/#finance-hub), [Chatter Hive](users.md/#chatter-hive), [Mail Hub](users.md/#mail-hub), [Ads Agency](users.md/#ads-agency), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Cloud Service](users.md/#cloud-service), [Tenabolt Retail](users.md/#tenabolt-retail), [People Operations](users.md/#people-operations), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer), [AI Researcher](users.md/#ai-researcher), [Chips Designer](users.md/#chips-designer), [Professional Gamer](users.md/#professional-gamer), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Animation Sphere](users.md/#animation-sphere), [Animation Studios](users.md/#animation-studios), [Central Mart](users.md/#central-mart), [ESport Hub](users.md/#esport-hub), [Happy Grocery](users.md/#happy-grocery), [Inventory Hub](users.md/#inventory-hub), [Transfer Hub](users.md/#transfer-hub), [Meeting Hub](users.md/#meeting-hub), [Antivirus Nexus](users.md/#antivirus-nexus), [Privacy Hub](users.md/#privacy-hub)  
 **Modifiers:** 5  
@@ -435,14 +377,10 @@ Production is limited to 3 compatible uses on the device's use stack.
 **CPU:** 10 **MEM:** 6 **SIZE:** 8+1=9  
   
 **Description:**  
-Enterprise grade DNS server.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 40 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 store-text  
-**<span style="color:DarkKhaki;">Produces:</span>** 40 reply-dns-queries <span style="color:gray;">(limited by 40)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 store-text  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 40 reply-dns-queries (limited by 40)  
 **Unlocks:** [padu_v1](#padu_v1)  
 **Modifiers:** 5  
   
@@ -462,15 +400,10 @@ Production is limited to 3 compatible uses on the device's use stack.
 **CPU:** 6 **MEM:** 5 **SIZE:** 6+1=7  
   
 **Description:**  
-Automatically assigns network addresses and designated DNS server to network devices.  
   
-<span style="color:red;">Requires access to a running text storage program</span>.  
   
-Produce target's use stack limit is 15 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
-  
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 store-text  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 reply-dhcp-request <span style="color:gray;">(limited by 15)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 store-text  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 15 reply-dhcp-request (limited by 15)  
 **Unlocks:** [padu_v1](#padu_v1)  
 **Modifiers:** 6  
   
@@ -482,7 +415,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 DNS load test software.  
   
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 reply-dns-queries  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 reply-dns-queries  
   
   
 ## nop  
@@ -612,8 +545,8 @@ printer firmware.
 Produce target's use stack limit is 1 compatible uses per target's installed CPU.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 accept-printer-connection  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 print-image, print-text <span style="color:gray;">(limited by TARGET_TOTAL_CPU)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 accept-printer-connection  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 1 print-image, print-text (limited by TARGET_TOTAL_CPU)  
   
   
 ## print-server  
@@ -637,8 +570,8 @@ open-source software repository. Supports software-updates requests.
 Produce target's use stack limit is 16 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 2 store-text  
-**<span style="color:DarkKhaki;">Produces:</span>** 16 read-text, update-software <span style="color:gray;">(limited by 16)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 2 store-text  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 16 read-text, update-software (limited by 16)  
 **Unlocked By:** [](#), [](#)  
   
   
@@ -651,8 +584,8 @@ cctv camera firmware
 Produce target's use stack limit is 1 compatible uses per target's installed CPU.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 accept-cctv-camera-connection  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 stream-live-video <span style="color:gray;">(limited by TARGET_TOTAL_CPU)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 accept-cctv-camera-connection  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 1 stream-live-video (limited by TARGET_TOTAL_CPU)  
   
   
 ## rtsp-diva-r  
@@ -676,8 +609,8 @@ cctv camera firmware
 Produce target's use stack limit is 1 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 accept-cctv-monitor-connection  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 stream-live-video <span style="color:gray;">(limited by 1)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 accept-cctv-monitor-connection  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 1 stream-live-video (limited by 1)  
   
   
 ## mailer  
@@ -689,8 +622,8 @@ Provides exchange email usages to users.
 Produce target's use stack limit is 15 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 3 ( store-text and store-image )  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 read-text, post-text, verify-user <span style="color:gray;">(limited by 15)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 3 ( store-text and store-image )  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 15 read-text, post-text, verify-user (limited by 15)  
 **Unlocks:** [padu_v2](#padu_v2)  
 **Unlocked By:** [complaint-server2](#complaint-server2), [](#), [](#), [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
@@ -704,8 +637,8 @@ VOIP phone firmware.
 Produce target's use stack limit is 1 compatible uses per target's installed CPU.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 accept-voip-phone-connection  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 stream-voice <span style="color:gray;">(limited by TARGET_TOTAL_CPU)</span>  
+**$\color{PapayaWhip}{\textsf{Consumes:}}$** 1 accept-voip-phone-connection  
+**$\color{DarkKhaki}{\textsf{Produces:}}$** 1 stream-voice (limited by TARGET_TOTAL_CPU)  
   
   
 ## voip-server  
