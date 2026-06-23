@@ -59,6 +59,7 @@ GENERATED FOR TNI VERSION 0.11.2
 
 ## tena-employee-db<a name="tena-employee-db"></a>  
 **CPU:** 3 **MEM:** 7 **SIZE:** 8  
+**Traffic:** `tcp/3306` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 Stores employee data.   
@@ -83,6 +84,7 @@ Production is limited to 5 compatible uses on the device's use stack.
   
 ## tena-meter-db<a name="tena-meter-db"></a>  
 **CPU:** 5 **MEM:** 3 **SIZE:** 6  
+**Traffic:** `tcp/3306` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 Allow meter reader to stores meter reading data.  
@@ -98,6 +100,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## hypervisor-server<a name="hypervisor-server"></a>  
 **CPU:** 20 **MEM:** 10 **SIZE:** 8  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Provisions and allocates virtual compute resources for monitoring and scaling.  
@@ -114,6 +117,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## log-server<a name="log-server"></a>  
 **CPU:** 5 **MEM:** 9 **SIZE:** 16  
+**Traffic:** `tcp/3306` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Event log storage. Records and searches system activity.  
@@ -130,6 +134,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## ten-bill-server<a name="ten-bill-server"></a>  
 **CPU:** 3 **MEM:** 9 **SIZE:** 3  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Enables Billing Staff to generate and post invoices to residents based on recorded consumption data.  
@@ -146,6 +151,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## complaint-server2<a name="complaint-server2"></a>  
 **CPU:** 5 **MEM:** 9 **SIZE:** 3  
+**Traffic:** `tcp/25` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Allows customers to submit complaints and customer service to manage and respond to tickets.  
@@ -162,6 +168,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## ten-public-portal<a name="ten-public-portal"></a>  
 **CPU:** 3 **MEM:** 3 **SIZE:** 4  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Publishes outage updates and company news for public viewing.  
@@ -178,6 +185,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## oauth-serv<a name="oauth-serv"></a>  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Allows staff to login to internal portal.  
@@ -192,6 +200,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## tmp-collabpoint1<a name="tmp-collabpoint1"></a>  
 **CPU:** 5 **MEM:** 7 **SIZE:** 5  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Allows media sharing among staff.  
@@ -208,6 +217,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## tena-calc-server<a name="tena-calc-server"></a>  
 **CPU:** 15 **MEM:** 8 **SIZE:** 4  
+**Traffic:** `tcp/3306` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Serve as nuclear plant calculation application. Engineers run simulations and save models.  
@@ -225,6 +235,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## tena-gis-server<a name="tena-gis-server"></a>  
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Serve as Geographic information system. Maps grid infrastructure, customer zones, and candidate sites for expansion.  
@@ -240,6 +251,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## tena-staff-portal<a name="tena-staff-portal"></a>  
 **CPU:** 5 **MEM:** 3 **SIZE:** 9  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Serve landing page for staff internally for company resources and announcement.   
@@ -256,6 +268,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## maintenance-server<a name="maintenance-server"></a>  
 **CPU:** 3 **MEM:** 5 **SIZE:** 7  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Serve to manages physical asset maintenance schedules and fault history.   
@@ -272,6 +285,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## ten-scada-server<a name="ten-scada-server"></a>  
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Serve as real-time supervisory control and data acquisition system for grid operations.  
@@ -288,6 +302,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## tena-mail<a name="tena-mail"></a>  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">3</span>bw  
   
 **Description:**  
 Provides exchange email usages to users.  
@@ -313,6 +328,7 @@ Production is limited to 10 compatible uses on the device's use stack.
   
 ## ubbt<a name="ubbt"></a>  
 **CPU:** 4 **MEM:** 4 **SIZE:** 6  
+**Traffic:** `udp/6343` for <span style="color:Salmon;">2</span>bw  
   
 **Description:**  
 Analyzes user traffic behavior from a network tap to support botnet operations.  
@@ -370,6 +386,7 @@ Production is limited to 4 compatible uses on the device's use stack.
   
 ## decentro-collector<a name="decentro-collector"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**Traffic:** `tcp/8333` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 Collects decentro currencies over the network and accumulate them on the installed device.  
@@ -406,6 +423,7 @@ This program stores up to 10 'access-p2p-currency' compatible uses per free stor
   
 ## dns-server<a name="dns-server"></a>  
 **CPU:** 4 **MEM:** 3 **SIZE:** 2+1=3  
+**Traffic:** `tcp/3306` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 Replies network-addresses to DNS queries.   
@@ -434,6 +452,7 @@ Production is limited to 3 compatible uses on the device's use stack.
   
 ## sun-dns<a name="sun-dns"></a>  
 **CPU:** 10 **MEM:** 6 **SIZE:** 8+1=9  
+**Traffic:** `tcp/3306` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 Enterprise grade DNS server.  
@@ -461,6 +480,7 @@ Production is limited to 3 compatible uses on the device's use stack.
   
 ## kea<a name="kea"></a>  
 **CPU:** 6 **MEM:** 5 **SIZE:** 6+1=7  
+**Traffic:** `tcp/3306` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 Automatically assigns network addresses and designated DNS server to network devices.  
@@ -478,6 +498,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## dnsspam<a name="dnsspam"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**Traffic:** `udp/53` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 DNS load test software.  
@@ -607,6 +628,7 @@ Production is limited to 4 compatible uses per device's installed memory.
 ## printer_edge<a name="printer_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:LightCoral;">Required Hardware:</span>** PRINTER  
+**Traffic:** `tcp/631` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 printer firmware.  
@@ -632,6 +654,7 @@ Production is limited to 13 compatible uses on the device's use stack.
   
 ## gitcoffee<a name="gitcoffee"></a>  
 **CPU:** 4 **MEM:** 2 **SIZE:** 4  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 open-source software repository. Supports software-updates requests.  
@@ -647,6 +670,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## cctv_edge<a name="cctv_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:LightCoral;">Required Hardware:</span>** CCTV  
+**Traffic:** `udp/554` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 cctv camera firmware  
@@ -672,6 +696,7 @@ Production is limited to 13 compatible uses on the device's use stack.
   
 ## cctv_edge<a name="cctv_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**Traffic:** `tcp/554` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 cctv camera firmware  
@@ -685,6 +710,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## mailer<a name="mailer"></a>  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
+**Traffic:** `tcp/5432` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 Provides exchange email usages to users.  
@@ -701,6 +727,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## vonet_edge<a name="vonet_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:LightCoral;">Required Hardware:</span>** PHONE  
+**Traffic:** `udp/5060` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 VOIP phone firmware.  
@@ -726,6 +753,7 @@ Production is limited to 10 compatible uses on the device's use stack.
   
 ## WORM ANNOYING_MORRIS<a name="worm-annoying_morris"></a>  
 **CPU:** 0 **MEM:** 0 **SIZE:** 0  
+**Traffic:** `tcp/51#` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 ANNOYING_MORRIS spreads itself across routers and servers using traffic types ranging from TCP/510 to TCP/519. It doesn't do any harm to its targets but wastes the bandwidth of the devices it traverses.  
@@ -735,6 +763,7 @@ ANNOYING_MORRIS spreads itself across routers and servers using traffic types ra
   
 ## WORM HUSH<a name="worm-hush"></a>  
 **CPU:** 0 **MEM:** 0 **SIZE:** 0  
+**Traffic:** `udp/5060` for <span style="color:Salmon;">1</span>bw  
   
 **Description:**  
 HUSH targets VOIP phones and servers using SIP traffic (UDP/5060). Upon infection, it silently erases all other programs installed on the device.  
