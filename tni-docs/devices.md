@@ -1,5 +1,6 @@
 # Devices
 GENERATED FOR TNI VERSION 0.11.2
+
 [Zodianet Beam Router](#zodianet-beam-router)  
 [Zodianet Spine Router](#zodianet-spine-router)  
 [MacroHard NLB2](#macrohard-nlb2)  
