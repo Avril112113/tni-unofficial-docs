@@ -76,9 +76,9 @@ GENERATED FOR TNI VERSION 0.11.2
 [Blade12](#blade12)
 
 ## Zodianet Beam Router<a name="zodianet-beam-router"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 450  
-**Watts:** 138 **Price:** 3700  
-**Port Counts:** 4x FIBER_OPTIC_SC, 2x B_3PIN  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `450`  
+**Watts:** 138w **Price:** $3700  
+**Port Counts:** 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
   
 **Description:**  
 4-port core router.  
@@ -93,9 +93,9 @@ High bandwidth router for core networking.
   
   
 ## Zodianet Spine Router<a name="zodianet-spine-router"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 250  
-**Watts:** 78 **Price:** 1200  
-**Port Counts:** 3x FIBER_OPTIC_SC, 2x B_3PIN  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `250`  
+**Watts:** 78w **Price:** $1200  
+**Port Counts:** 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
   
 **Description:**  
 3-port core router.  
@@ -110,9 +110,9 @@ High bandwidth router for core networking.
   
   
 ## MacroHard NLB2<a name="macrohard-nlb2"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 80  
-**Watts:** 83 **Price:** 350  
-**Port Counts:** 4x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `80`  
+**Watts:** 83w **Price:** $350  
+**Port Counts:** 4x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 2-2 hardware-based round-robin network load balancer.  
@@ -127,9 +127,9 @@ Traffic from either front ports are alternated between the back ports.
   
   
 ## Debugger Alice<a name="debugger-alice"></a>  
-**CPU:** 1 **MEM:** 1 **SIZE:** 1 **BW/t:** 12  
-**Watts:** 33 **Price:** 1000  
-**Port Counts:** 2x RJ45, 1x B_3PIN  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `12`  
+**Watts:** 33w **Price:** $1000  
+**Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 2-port ethernet remote debugger.  
@@ -140,9 +140,9 @@ Not rack mountable.
   
   
 ## DNS UDP/53 Load Tester<a name="dns-udp/53-load-tester"></a>  
-**CPU:** 1 **MEM:** 1 **SIZE:** 1 **BW/t:** 6  
-**Watts:** 203 **Price:** 1000  
-**Port Counts:** 1x RJ45, 1x B_3PIN  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6`  
+**Watts:** 203w **Price:** $1000  
+**Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 1-port ethernet load tester. Blasts UDP/53 DNS query traffic.  
@@ -153,9 +153,9 @@ Not rack mountable.
   
   
 ## LoadTester Bob<a name="loadtester-bob"></a>  
-**CPU:** 1 **MEM:** 1 **SIZE:** 1 **BW/t:** 6  
-**Watts:** 203 **Price:** 1000  
-**Port Counts:** 1x RJ45, 1x B_3PIN  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6`  
+**Watts:** 203w **Price:** $1000  
+**Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 1-port ethernet load tester.  
@@ -166,9 +166,9 @@ Not rack mountable.
   
   
 ## Dvergar<a name="dvergar"></a>  
-**CPU:** 24 **MEM:** 16 **SIZE:** 8 **BW/t:** 40  
-**Watts:** 523 **Price:** 1100  
-**Port Counts:** 1x RJ45, 1x B_3PIN  
+**CPU:** `24` **MEM:** `16` **SIZE:** `8` **BW/t:** `40`  
+**Watts:** 523w **Price:** $1100  
+**Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 Decentro mining rig.  
@@ -184,9 +184,9 @@ Provides Decentro transaction verification to the p2p currency network.
   
   
 ## golonys-cinco<a name="golonys-cinco"></a>  
-**CPU:** 1 **MEM:** 1 **SIZE:** 1 **BW/t:** 6  
-**Watts:** 13 **Price:** 400  
-**Port Counts:** 5x SATA35_SLOT, 1x RJ45, 1x B_3PIN  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6`  
+**Watts:** 13w **Price:** $400  
+**Port Counts:** 5x `SATA35_SLOT`, 1x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 1-port network storage device.  
@@ -200,9 +200,9 @@ Comes with 5 SATA 3.5" expansion slots.
   
   
 ## ICC1<a name="icc1"></a>  
-**CPU:** 1 **MEM:** 2 **SIZE:** 2 **BW/t:** 6  
-**Watts:** 19 **Price:** 160  
-**Port Counts:** 1x RJ45, 1x SATA35_SLOT, 1x B_3PIN  
+**CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6`  
+**Watts:** 19w **Price:** $160  
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `B_3PIN`  
   
 **Description:**  
 1-port modular computing unit.  
@@ -216,9 +216,9 @@ Homelab equipment.
   
   
 ## Bastion 5E<a name="bastion-5e"></a>  
-**CPU:** 6 **MEM:** 6 **SIZE:** 5 **BW/t:** 384  
-**Watts:** 387 **Price:** 3000  
-**Port Counts:** 4x RJ45, 1x A_USB, 1x B_3PIN  
+**CPU:** `6` **MEM:** `6` **SIZE:** `5` **BW/t:** `384`  
+**Watts:** 387w **Price:** $3000  
+**Port Counts:** 4x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
   
 **Description:**  
 Top of the line enterprise grade network firewall.  
@@ -232,9 +232,9 @@ Mountable on 930px racks.
   
   
 ## EthTapper<a name="ethtapper"></a>  
-**CPU:** 2 **MEM:** 2 **SIZE:** 1 **BW/t:** 18  
-**Watts:** 12 **Price:** 300  
-**Port Counts:** 3x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `2` **SIZE:** `1` **BW/t:** `18`  
+**Watts:** 12w **Price:** $300  
+**Port Counts:** 3x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 Ethernet in-line network tap with port-mirroring capabilities. Produces packet traffic captures.  
@@ -248,9 +248,9 @@ Not rack mountable.
   
   
 ## FireWatch CP4E<a name="firewatch-cp4e"></a>  
-**CPU:** 6 **MEM:** 4 **SIZE:** 3 **BW/t:** 160  
-**Watts:** 163 **Price:** 1500  
-**Port Counts:** 4x RJ45, 1x A_USB, 1x B_3PIN  
+**CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `160`  
+**Watts:** 163w **Price:** $1500  
+**Port Counts:** 4x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
   
 **Description:**  
 Ethernet in-line network traffic monitoring and filtering system.  
@@ -264,9 +264,9 @@ Mountable on 500px racks.
   
   
 ## FireWatch ES4A<a name="firewatch-es4a"></a>  
-**CPU:** 6 **MEM:** 3 **SIZE:** 3 **BW/t:** 52  
-**Watts:** 55 **Price:** 550  
-**Port Counts:** 1x FIBER_OPTIC_SC, 2x RJ45, 1x A_USB, 1x B_3PIN  
+**CPU:** `6` **MEM:** `3` **SIZE:** `3` **BW/t:** `52`  
+**Watts:** 55w **Price:** $550  
+**Port Counts:** 1x `FIBER_OPTIC_SC`, 2x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
   
 **Description:**  
 Mixed medium in-line network traffic monitoring and filtering system.  
@@ -280,9 +280,9 @@ Mountable on 500px racks.
   
   
 ## Duplex 1C<a name="duplex-1c"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 18  
-**Watts:** 7 **Price:** 60  
-**Port Counts:** 1x RJ45, 1x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `18`  
+**Watts:** 7w **Price:** $60  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Duplex (bidirectional) media converter.  
@@ -296,9 +296,9 @@ Not rack mountable.
   
   
 ## Duplex 3C<a name="duplex-3c"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 54  
-**Watts:** 8 **Price:** 240  
-**Port Counts:** 1x RJ45, 1x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `54`  
+**Watts:** 8w **Price:** $240  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Duplex (bidirectional) media converter.  
@@ -312,9 +312,9 @@ Not rack mountable.
   
   
 ## Simplex 452F 1C<a name="simplex-452f-1c"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 30  
-**Watts:** 9 **Price:** 40  
-**Port Counts:** 1x RJ45, 1x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `30`  
+**Watts:** 9w **Price:** $40  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 RJ45 to Fiber optic SC simplex (unidirection) media converter.  
@@ -328,9 +328,9 @@ Not rack mountable.
   
   
 ## Simplex 452F 3C<a name="simplex-452f-3c"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 90  
-**Watts:** 12 **Price:** 160  
-**Port Counts:** 1x RJ45, 1x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `90`  
+**Watts:** 12w **Price:** $160  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 RJ45 to Fiber optic SC simplex (unidirection) media converter.  
@@ -344,9 +344,9 @@ Not rack mountable.
   
   
 ## Simplex SC245 1C<a name="simplex-sc245-1c"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 30  
-**Watts:** 9 **Price:** 40  
-**Port Counts:** 1x RJ45, 1x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `30`  
+**Watts:** 9w **Price:** $40  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Fiber optic SC to RJ45 simplex (unidirection) media converter.  
@@ -360,9 +360,9 @@ Not rack mountable.
   
   
 ## Simplex SC245 3C<a name="simplex-sc245-3c"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 90  
-**Watts:** 12 **Price:** 160  
-**Port Counts:** 1x RJ45, 1x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `90`  
+**Watts:** 12w **Price:** $160  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Fiber optic SC to RJ45 simplex (unidirection) media converter.  
@@ -376,9 +376,9 @@ Not rack mountable.
   
   
 ## Duplex RJ45 1R<a name="duplex-rj45-1r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 12  
-**Watts:** 6 **Price:** 50  
-**Port Counts:** 2x RJ45, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `12`  
+**Watts:** 6w **Price:** $50  
+**Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
   
 **Description:**  
 RJ45 bidirectional media repeater.  
@@ -392,9 +392,9 @@ Not rack mountable.
   
   
 ## Duplex RJ45 3R<a name="duplex-rj45-3r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 36  
-**Watts:** 7 **Price:** 200  
-**Port Counts:** 2x RJ45, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `36`  
+**Watts:** 7w **Price:** $200  
+**Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
   
 **Description:**  
 RJ45 bidirectional media repeater.  
@@ -408,9 +408,9 @@ Not rack mountable.
   
   
 ## Duplex SC 1R<a name="duplex-sc-1r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 24  
-**Watts:** 8 **Price:** 50  
-**Port Counts:** 2x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `24`  
+**Watts:** 8w **Price:** $50  
+**Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Fiber optic SC bidirectional media repeater.  
@@ -424,9 +424,9 @@ Not rack mountable.
   
   
 ## Duplex SC 3R<a name="duplex-sc-3r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 72  
-**Watts:** 10 **Price:** 200  
-**Port Counts:** 2x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `72`  
+**Watts:** 10w **Price:** $200  
+**Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Fiber optic SC bidirectional media repeater.  
@@ -440,9 +440,9 @@ Not rack mountable.
   
   
 ## Simplex RJ45 1R<a name="simplex-rj45-1r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 20  
-**Watts:** 7 **Price:** 30  
-**Port Counts:** 2x RJ45, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `20`  
+**Watts:** 7w **Price:** $30  
+**Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
   
 **Description:**  
 RJ45 unidirectional media repeater.  
@@ -456,9 +456,9 @@ Not rack mountable.
   
   
 ## Simplex RJ45 3R<a name="simplex-rj45-3r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 60  
-**Watts:** 9 **Price:** 120  
-**Port Counts:** 2x RJ45, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `60`  
+**Watts:** 9w **Price:** $120  
+**Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
   
 **Description:**  
 RJ45 unidirectional media repeater.  
@@ -472,9 +472,9 @@ Not rack mountable.
   
   
 ## Simplex SC 1R<a name="simplex-sc-1r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 40  
-**Watts:** 11 **Price:** 30  
-**Port Counts:** 2x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `40`  
+**Watts:** 11w **Price:** $30  
+**Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Fiber optic SC unidirectional media repeater.  
@@ -488,9 +488,9 @@ Not rack mountable.
   
   
 ## Simplex SC 3R<a name="simplex-sc-3r"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 120  
-**Watts:** 15 **Price:** 120  
-**Port Counts:** 2x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `120`  
+**Watts:** 15w **Price:** $120  
+**Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 Fiber optic SC unidirectional media repeater.  
@@ -504,9 +504,9 @@ Not rack mountable.
   
   
 ## Momento Entries Monitor<a name="momento-entries-monitor"></a>  
-**CPU:** 0 **MEM:** 0 **SIZE:** 0 **BW/t:** 1  
-**Watts:** 13 **Price:** 500  
-**Port Counts:** 1x B_3PIN  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
+**Watts:** 13w **Price:** $500  
+**Port Counts:** 1x `B_3PIN`  
   
 **Description:**  
 Extra monitor which displays all the DNS-entries mapping, network address assignments and device location.  
@@ -515,9 +515,9 @@ Not rack mountable.
   
   
 ## Population Stats Monitor<a name="population-stats-monitor"></a>  
-**CPU:** 0 **MEM:** 0 **SIZE:** 0 **BW/t:** 1  
-**Watts:** 13 **Price:** 1  
-**Port Counts:** 1x B_3PIN  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
+**Watts:** 13w **Price:** $1  
+**Port Counts:** 1x `B_3PIN`  
   
 **Description:**  
 Extra monitor displaying the total population count in the tower, available for sale.  
@@ -526,9 +526,9 @@ Not rack mountable.
   
   
 ## Satiety Stats Monitor<a name="satiety-stats-monitor"></a>  
-**CPU:** 0 **MEM:** 0 **SIZE:** 0 **BW/t:** 1  
-**Watts:** 13 **Price:** 500  
-**Port Counts:** 1x B_3PIN  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
+**Watts:** 13w **Price:** $500  
+**Port Counts:** 1x `B_3PIN`  
   
 **Description:**  
 Extra monitor displaying resident satiety levels, available for sale.  
@@ -537,9 +537,9 @@ Not rack mountable.
   
   
 ## Surveyor Monitor<a name="surveyor-monitor"></a>  
-**CPU:** 0 **MEM:** 0 **SIZE:** 0 **BW/t:** 1  
-**Watts:** 13 **Price:** 1  
-**Port Counts:** 1x B_3PIN  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
+**Watts:** 13w **Price:** $1  
+**Port Counts:** 1x `B_3PIN`  
   
 **Description:**  
 Extra monitor which can be used to monitor the users under your internet service's purview  
@@ -548,9 +548,9 @@ Not rack mountable.
   
   
 ## Top Issue Monitor<a name="top-issue-monitor"></a>  
-**CPU:** 0 **MEM:** 0 **SIZE:** 0 **BW/t:** 1  
-**Watts:** 13 **Price:** 300  
-**Port Counts:** 1x B_3PIN  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
+**Watts:** 13w **Price:** $300  
+**Port Counts:** 1x `B_3PIN`  
   
 **Description:**  
 Extra monitor displaying top floor issues, available for sale.  
@@ -559,9 +559,9 @@ Not rack mountable.
   
   
 ## Visitor Stats Monitor<a name="visitor-stats-monitor"></a>  
-**CPU:** 0 **MEM:** 0 **SIZE:** 0 **BW/t:** 1  
-**Watts:** 13 **Price:** 300  
-**Port Counts:** 1x B_3PIN  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
+**Watts:** 13w **Price:** $300  
+**Port Counts:** 1x `B_3PIN`  
   
 **Description:**  
 Extra monitor displaying visitor count by domain name, available for sale.  
@@ -570,9 +570,9 @@ Not rack mountable.
   
   
 ## Disco Kilo<a name="disco-kilo"></a>  
-**CPU:** 5 **MEM:** 2 **SIZE:** 6 **BW/t:** 120  
-**Watts:** 42 **Price:** 1230  
-**Port Counts:** 6x RJ45, 4x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `120`  
+**Watts:** 42w **Price:** $1230  
+**Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 10-port mixed media network capable router.  
@@ -587,9 +587,9 @@ Allows VLAN subinterfaces.
   
   
 ## Disco Kilo 2G<a name="disco-kilo-2g"></a>  
-**CPU:** 5 **MEM:** 2 **SIZE:** 6 **BW/t:** 180  
-**Watts:** 67 **Price:** 1500  
-**Port Counts:** 6x RJ45, 4x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `180`  
+**Watts:** 67w **Price:** $1500  
+**Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 10-port mixed media network capable router.  
@@ -604,9 +604,9 @@ Allows VLAN subinterfaces. Improved BW performance.
   
   
 ## Disco Kilo 3G<a name="disco-kilo-3g"></a>  
-**CPU:** 5 **MEM:** 2 **SIZE:** 6 **BW/t:** 240  
-**Watts:** 111 **Price:** 1950  
-**Port Counts:** 6x RJ45, 4x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `240`  
+**Watts:** 111w **Price:** $1950  
+**Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 10-port mixed media network capable router.  
@@ -621,9 +621,9 @@ Allows VLAN subinterfaces. Improved BW performance.
   
   
 ## Disco Micro<a name="disco-micro"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 125  
-**Watts:** 41 **Price:** 600  
-**Port Counts:** 5x RJ45, 5x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `125`  
+**Watts:** 41w **Price:** $600  
+**Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 10-port mixed media network router.  
@@ -638,9 +638,9 @@ Suitable for small businesses.
   
   
 ## Disco Micro 2G<a name="disco-micro-2g"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 162  
-**Watts:** 47 **Price:** 950  
-**Port Counts:** 5x RJ45, 5x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `162`  
+**Watts:** 47w **Price:** $950  
+**Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 10-port mixed media network router.  
@@ -655,9 +655,9 @@ Improved performance and maximum throughput.
   
   
 ## Disco Micro 3G<a name="disco-micro-3g"></a>  
-**CPU:** 8 **MEM:** 2 **SIZE:** 4 **BW/t:** 175  
-**Watts:** 50 **Price:** 1300  
-**Port Counts:** 5x RJ45, 5x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `175`  
+**Watts:** 50w **Price:** $1300  
+**Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 10-port mixed media network router.  
@@ -672,9 +672,9 @@ Mountable on 500px racks.
   
   
 ## Disco Milli<a name="disco-milli"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 80  
-**Watts:** 27 **Price:** 325  
-**Port Counts:** 8x RJ45, 1x B_3PIN  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `80`  
+**Watts:** 27w **Price:** $325  
+**Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 8-port ethernet network router.  
@@ -689,9 +689,9 @@ Economical model for medium sized enterprises.
   
   
 ## Disco Milli 2G<a name="disco-milli-2g"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 112  
-**Watts:** 30 **Price:** 500  
-**Port Counts:** 8x RJ45, 1x B_3PIN  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `112`  
+**Watts:** 30w **Price:** $500  
+**Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 8-port ethernet network router.  
@@ -706,9 +706,9 @@ Economical model for medium sized enterprises.
   
   
 ## Disco Milli 3G<a name="disco-milli-3g"></a>  
-**CPU:** 8 **MEM:** 2 **SIZE:** 4 **BW/t:** 160  
-**Watts:** 41 **Price:** 800  
-**Port Counts:** 8x RJ45, 1x B_3PIN  
+**CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `160`  
+**Watts:** 41w **Price:** $800  
+**Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 8-port ethernet network router.  
@@ -723,9 +723,9 @@ Economical model for medium sized enterprises. High-availability support.
   
   
 ## Disco Milli 4G<a name="disco-milli-4g"></a>  
-**CPU:** 8 **MEM:** 2 **SIZE:** 4 **BW/t:** 240  
-**Watts:** 60 **Price:** 1150  
-**Port Counts:** 8x RJ45, 1x B_3PIN  
+**CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `240`  
+**Watts:** 60w **Price:** $1150  
+**Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 8-port ethernet network router.  
@@ -740,9 +740,9 @@ Economical model for medium sized enterprises. High-availability support.
   
   
 ## Disco Nano<a name="disco-nano"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 60  
-**Watts:** 21 **Price:** 220  
-**Port Counts:** 2x FIBER_OPTIC_SC, 3x RJ45, 1x DC_JACK  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `60`  
+**Watts:** 21w **Price:** $220  
+**Port Counts:** 2x `FIBER_OPTIC_SC`, 3x `RJ45`, 1x `DC_JACK`  
   
 **Description:**  
 5-port mixed-media network router. Small form factor suitable for routing on the edge.  
@@ -757,9 +757,9 @@ Uses DC power.
   
   
 ## Disco Nano2G<a name="disco-nano2g"></a>  
-**CPU:** 4 **MEM:** 1 **SIZE:** 2 **BW/t:** 65  
-**Watts:** 23 **Price:** 180  
-**Port Counts:** 2x RJ45, 2x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `65`  
+**Watts:** 23w **Price:** $180  
+**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 4-port mixed-media network router. 2nd generation edge routing device with even smaller form factor. Less is more.  
@@ -774,9 +774,9 @@ Uses DC power.
   
   
 ## Disco Nano3H<a name="disco-nano3h"></a>  
-**CPU:** 8 **MEM:** 2 **SIZE:** 4 **BW/t:** 75  
-**Watts:** 26 **Price:** 450  
-**Port Counts:** 2x RJ45, 2x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `75`  
+**Watts:** 26w **Price:** $450  
+**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 4-port mixed-media network router. 3rd generation edge routing device with high availability support.  
@@ -791,9 +791,9 @@ Uses DC power.
   
   
 ## Test Router<a name="test-router"></a>  
-**CPU:** 8 **MEM:** 4 **SIZE:** 4 **BW/t:** 125  
-**Watts:** 41 **Price:** 1  
-**Port Counts:** 5x RJ45, 5x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `8` **MEM:** `4` **SIZE:** `4` **BW/t:** `125`  
+**Watts:** 41w **Price:** $1  
+**Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 10-port mixed media network router.  
@@ -808,9 +808,9 @@ Suitable for small businesses.
   
   
 ## Savannah Aardvark<a name="savannah-aardvark"></a>  
-**CPU:** 10 **MEM:** 10 **SIZE:** 5 **BW/t:** 65  
-**Watts:** 293 **Price:** 4500  
-**Port Counts:** 2x RJ45, 1x FIBER_OPTIC_SC, 2x SATA35_SLOT, 2x B_3PIN  
+**CPU:** `10` **MEM:** `10` **SIZE:** `5` **BW/t:** `65`  
+**Watts:** 293w **Price:** $4500  
+**Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
   
 **Description:**  
 3-port general computing server.  
@@ -824,9 +824,9 @@ Mountable on 500px racks.
   
   
 ## Savannah Gazelle<a name="savannah-gazelle"></a>  
-**CPU:** 6 **MEM:** 6 **SIZE:** 6 **BW/t:** 24  
-**Watts:** 108 **Price:** 2200  
-**Port Counts:** 2x RJ45, 2x B_3PIN  
+**CPU:** `6` **MEM:** `6` **SIZE:** `6` **BW/t:** `24`  
+**Watts:** 108w **Price:** $2200  
+**Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
   
 **Description:**  
 2-port general computing server.  
@@ -840,9 +840,9 @@ The gazelle is a durable device that is designed to last long in high load condi
   
   
 ## Savannah Meerkat<a name="savannah-meerkat"></a>  
-**CPU:** 4 **MEM:** 4 **SIZE:** 4 **BW/t:** 16  
-**Watts:** 62 **Price:** 950  
-**Port Counts:** 2x RJ45, 1x B_3PIN  
+**CPU:** `4` **MEM:** `4` **SIZE:** `4` **BW/t:** `16`  
+**Watts:** 62w **Price:** $950  
+**Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 2-port general computing server.  
@@ -856,9 +856,9 @@ Scalable compute.
   
   
 ## Savannah Wildebeest<a name="savannah-wildebeest"></a>  
-**CPU:** 16 **MEM:** 16 **SIZE:** 8 **BW/t:** 104  
-**Watts:** 423 **Price:** 6800  
-**Port Counts:** 2x RJ45, 1x FIBER_OPTIC_SC, 2x SATA35_SLOT, 2x B_3PIN  
+**CPU:** `16` **MEM:** `16` **SIZE:** `8` **BW/t:** `104`  
+**Watts:** 423w **Price:** $6800  
+**Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
   
 **Description:**  
 3-port general computing server.  
@@ -872,9 +872,9 @@ Mountable on 500px racks.
   
   
 ## MacroHard Boulder SRV<a name="macrohard-boulder-srv"></a>  
-**CPU:** 4 **MEM:** 4 **SIZE:** 6 **BW/t:** 16  
-**Watts:** 72 **Price:** 450  
-**Port Counts:** 2x RJ45, 1x B_3PIN  
+**CPU:** `4` **MEM:** `4` **SIZE:** `6` **BW/t:** `16`  
+**Watts:** 72w **Price:** $450  
+**Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 2-port general computing server.  
@@ -888,9 +888,9 @@ Suitable for small businesses.
   
   
 ## MacroHard Boulder++ SRV<a name="macrohard-boulder++-srv"></a>  
-**CPU:** 6 **MEM:** 10 **SIZE:** 10 **BW/t:** 48  
-**Watts:** 312 **Price:** 1400  
-**Port Counts:** 3x RJ45, 2x B_3PIN  
+**CPU:** `6` **MEM:** `10` **SIZE:** `10` **BW/t:** `48`  
+**Watts:** 312w **Price:** $1400  
+**Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
   
 **Description:**  
 3-port general computing server.  
@@ -904,9 +904,9 @@ High performance model with extra bandwidth.
   
   
 ## MacroHard Boulder+ SRV<a name="macrohard-boulder+-srv"></a>  
-**CPU:** 6 **MEM:** 8 **SIZE:** 8 **BW/t:** 28  
-**Watts:** 161 **Price:** 850  
-**Port Counts:** 2x RJ45, 2x B_3PIN  
+**CPU:** `6` **MEM:** `8` **SIZE:** `8` **BW/t:** `28`  
+**Watts:** 161w **Price:** $850  
+**Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
   
 **Description:**  
 2-port general computing server.  
@@ -920,9 +920,9 @@ High performance model.
   
   
 ## MacroHard Ledge Three SRV<a name="macrohard-ledge-three-srv"></a>  
-**CPU:** 24 **MEM:** 16 **SIZE:** 4 **BW/t:** 208  
-**Watts:** 1125 **Price:** 3200  
-**Port Counts:** 2x SATA35_SLOT, 4x FIBER_OPTIC_SC, 2x B_3PIN  
+**CPU:** `24` **MEM:** `16` **SIZE:** `4` **BW/t:** `208`  
+**Watts:** 1125w **Price:** $3200  
+**Port Counts:** 2x `SATA35_SLOT`, 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
   
 **Description:**  
 4-port high bandwidth computing server.  
@@ -936,9 +936,9 @@ Fiber enabled compute server.
   
   
 ## MacroHard Ledge Two SRV<a name="macrohard-ledge-two-srv"></a>  
-**CPU:** 24 **MEM:** 14 **SIZE:** 4 **BW/t:** 150  
-**Watts:** 973 **Price:** 2100  
-**Port Counts:** 2x SATA35_SLOT, 3x FIBER_OPTIC_SC, 2x B_3PIN  
+**CPU:** `24` **MEM:** `14` **SIZE:** `4` **BW/t:** `150`  
+**Watts:** 973w **Price:** $2100  
+**Port Counts:** 2x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
   
 **Description:**  
 3-port high bandwidth computing server.  
@@ -952,9 +952,9 @@ Fiber enabled compute server.
   
   
 ## MacroHard Megalith SRV<a name="macrohard-megalith-srv"></a>  
-**CPU:** 32 **MEM:** 16 **SIZE:** 4 **BW/t:** 240  
-**Watts:** 1223 **Price:** 3800  
-**Port Counts:** 5x RJ45, 6x SATA35_SLOT, 2x B_3PIN  
+**CPU:** `32` **MEM:** `16` **SIZE:** `4` **BW/t:** `240`  
+**Watts:** 1223w **Price:** $3800  
+**Port Counts:** 5x `RJ45`, 6x `SATA35_SLOT`, 2x `B_3PIN`  
   
 **Description:**  
 5-port high performance computing server.  
@@ -968,9 +968,9 @@ Comes with 6 SATA 3.5" expansion slot.
   
   
 ## MacroHard Monolith SRV<a name="macrohard-monolith-srv"></a>  
-**CPU:** 16 **MEM:** 10 **SIZE:** 4 **BW/t:** 52  
-**Watts:** 429 **Price:** 1680  
-**Port Counts:** 2x RJ45, 2x SATA35_SLOT, 2x B_3PIN  
+**CPU:** `16` **MEM:** `10` **SIZE:** `4` **BW/t:** `52`  
+**Watts:** 429w **Price:** $1680  
+**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
   
 **Description:**  
 2-port general computing server.  
@@ -984,9 +984,9 @@ Comes with 2 SATA 3.5" expansion slot
   
   
 ## Avex Secretary<a name="avex-secretary"></a>  
-**CPU:** 23 **MEM:** 13 **SIZE:** 10 **BW/t:** 168  
-**Watts:** 953 **Price:** 3150  
-**Port Counts:** 2x RJ45, 2x FIBER_OPTIC_SC, 2x SATA35_SLOT, 2x B_3PIN  
+**CPU:** `23` **MEM:** `13` **SIZE:** `10` **BW/t:** `168`  
+**Watts:** 953w **Price:** $3150  
+**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
   
 **Description:**  
 4-port high-performance compute server  
@@ -1002,9 +1002,9 @@ Spacious and efficient. Perfect for businesses with growing data needs.
   
   
 ## Avex Skua<a name="avex-skua"></a>  
-**CPU:** 12 **MEM:** 16 **SIZE:** 4 **BW/t:** 90  
-**Watts:** 723 **Price:** 3000  
-**Port Counts:** 2x RJ45, 2x SATA35_SLOT, 1x FIBER_OPTIC_SC, 2x B_3PIN  
+**CPU:** `12` **MEM:** `16` **SIZE:** `4` **BW/t:** `90`  
+**Watts:** 723w **Price:** $3000  
+**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
   
 **Description:**  
 3-port high-memory performance server  
@@ -1020,9 +1020,9 @@ Powerful and responsive. Perfect for businesses with intensive operations.
   
   
 ## Avex Sparrow<a name="avex-sparrow"></a>  
-**CPU:** 3 **MEM:** 4 **SIZE:** 8 **BW/t:** 21  
-**Watts:** 88 **Price:** 1100  
-**Port Counts:** 3x RJ45, 1x B_3PIN  
+**CPU:** `3` **MEM:** `4` **SIZE:** `8` **BW/t:** `21`  
+**Watts:** 88w **Price:** $1100  
+**Port Counts:** 3x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 3-port entry-level server  
@@ -1036,9 +1036,9 @@ Compact and cost-efficient. Perfect for businesses in early deployment
   
   
 ## Avex Starling<a name="avex-starling"></a>  
-**CPU:** 7 **MEM:** 6 **SIZE:** 7 **BW/t:** 39  
-**Watts:** 191 **Price:** 1150  
-**Port Counts:** 3x RJ45, 2x B_3PIN  
+**CPU:** `7` **MEM:** `6` **SIZE:** `7` **BW/t:** `39`  
+**Watts:** 191w **Price:** $1150  
+**Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
   
 **Description:**  
 3-port balanced compute server  
@@ -1052,9 +1052,9 @@ Balanced and dependable. Perfect for businesses in steady expansion.
   
   
 ## Avex Swallow<a name="avex-swallow"></a>  
-**CPU:** 4 **MEM:** 8 **SIZE:** 12 **BW/t:** 38  
-**Watts:** 200 **Price:** 3000  
-**Port Counts:** 2x RJ45, 2x SATA35_SLOT, 1x FIBER_OPTIC_SC, 2x B_3PIN  
+**CPU:** `4` **MEM:** `8` **SIZE:** `12` **BW/t:** `38`  
+**Watts:** 200w **Price:** $3000  
+**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
   
 **Description:**  
 3-port high-capacity storage server  
@@ -1070,9 +1070,9 @@ Spacious and efficient. Perfect for businesses with growing data needs.
   
   
 ## Test Server<a name="test-server"></a>  
-**CPU:** 32 **MEM:** 32 **SIZE:** 32 **BW/t:** 50  
-**Watts:** 703 **Price:** 700  
-**Port Counts:** 2x RJ45, 2x B_3PIN  
+**CPU:** `32` **MEM:** `32` **SIZE:** `32` **BW/t:** `50`  
+**Watts:** 703w **Price:** $700  
+**Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
   
 **Description:**  
 2-port general computing server.  
@@ -1086,9 +1086,9 @@ High performance model.
   
   
 ## Blade88<a name="blade88"></a>  
-**CPU:** 2 **MEM:** 2 **SIZE:** 2 **BW/t:** 336  
-**Watts:** 37 **Price:** 1088  
-**Port Counts:** 8x FIBER_OPTIC_SC, 8x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `336`  
+**Watts:** 37w **Price:** $1088  
+**Port Counts:** 8x `FIBER_OPTIC_SC`, 8x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 16-port mixed media network managed switch. Supports VLAN port tagging.  
@@ -1103,9 +1103,9 @@ This device is well sought after in the second hand market.
   
   
 ## Blade15<a name="blade15"></a>  
-**CPU:** 2 **MEM:** 2 **SIZE:** 2 **BW/t:** 270  
-**Watts:** 43 **Price:** 815  
-**Port Counts:** 15x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `270`  
+**Watts:** 43w **Price:** $815  
+**Port Counts:** 15x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 15-port ethernet managed network switch. Supports VLAN port tagging.  
@@ -1120,9 +1120,9 @@ More ports at a cheaper price.
   
   
 ## Blade1515<a name="blade1515"></a>  
-**CPU:** 2 **MEM:** 2 **SIZE:** 2 **BW/t:** 630  
-**Watts:** 84 **Price:** 1815  
-**Port Counts:** 15x FIBER_OPTIC_SC, 15x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `630`  
+**Watts:** 84w **Price:** $1815  
+**Port Counts:** 15x `FIBER_OPTIC_SC`, 15x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 30-port mixed media network switch.   
@@ -1138,9 +1138,9 @@ Enterprise grade equipment.
   
   
 ## Blade5<a name="blade5"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 25  
-**Watts:** 6 **Price:** 100  
-**Port Counts:** 5x RJ45, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `25`  
+**Watts:** 6w **Price:** $100  
+**Port Counts:** 5x `RJ45`, 1x `DC_JACK`  
   
 **Description:**  
 5-port ethernet network switch.  
@@ -1155,9 +1155,9 @@ Suitable for entry-level networks.
   
   
 ## Blade4<a name="blade4"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 36  
-**Watts:** 7 **Price:** 100  
-**Port Counts:** 4x FIBER_OPTIC_SC, 1x DC_JACK  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `36`  
+**Watts:** 7w **Price:** $100  
+**Port Counts:** 4x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
   
 **Description:**  
 4-port fiber-optic network switch.  
@@ -1171,9 +1171,9 @@ Mountable on 500px racks.
   
   
 ## Blade66<a name="blade66"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 88  
-**Watts:** 12 **Price:** 466  
-**Port Counts:** 6x FIBER_OPTIC_SC, 6x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `88`  
+**Watts:** 12w **Price:** $466  
+**Port Counts:** 6x `FIBER_OPTIC_SC`, 6x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 12-port mixed media network switch.  
@@ -1187,9 +1187,9 @@ Mountable on 930px racks.
   
   
 ## Blade10<a name="blade10"></a>  
-**CPU:** 2 **MEM:** 1 **SIZE:** 1 **BW/t:** 50  
-**Watts:** 8 **Price:** 230  
-**Port Counts:** 10x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `50`  
+**Watts:** 8w **Price:** $230  
+**Port Counts:** 10x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 10-port ethernet network switch.  
@@ -1203,9 +1203,9 @@ Mountable on 500px racks.
   
   
 ## Blade30<a name="blade30"></a>  
-**CPU:** 2 **MEM:** 2 **SIZE:** 2 **BW/t:** 540  
-**Watts:** 89 **Price:** 1630  
-**Port Counts:** 30x RJ45, 1x B_3PIN  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `540`  
+**Watts:** 89w **Price:** $1630  
+**Port Counts:** 30x `RJ45`, 1x `B_3PIN`  
   
 **Description:**  
 30-port ethernet managed network switch. Supports VLAN port tagging.  
@@ -1220,9 +1220,9 @@ Enterprise grade equipment. Consumes high power to support throughput.
   
   
 ## Blade12<a name="blade12"></a>  
-**CPU:** 2 **MEM:** 2 **SIZE:** 2 **BW/t:** 288  
-**Watts:** 32 **Price:** 712  
-**Port Counts:** 12x FIBER_OPTIC_SC, 1x B_3PIN  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `288`  
+**Watts:** 32w **Price:** $712  
+**Port Counts:** 12x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
   
 **Description:**  
 12-port fiber-optic managed network switch. Supports VLAN port tagging.  
