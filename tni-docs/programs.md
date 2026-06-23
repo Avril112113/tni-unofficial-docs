@@ -606,6 +606,7 @@ Production is limited to 4 compatible uses per device's installed memory.
   
 ## printer_edge<a name="printer_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**<span style="color:LightCoral;">Required Hardware:</span>** PRINTER  
   
 **Description:**  
 printer firmware.  
@@ -645,6 +646,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## cctv_edge<a name="cctv_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**<span style="color:LightCoral;">Required Hardware:</span>** CCTV  
   
 **Description:**  
 cctv camera firmware  
@@ -698,6 +700,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## vonet_edge<a name="vonet_edge"></a>  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**<span style="color:LightCoral;">Required Hardware:</span>** PHONE  
   
 **Description:**  
 VOIP phone firmware.  
