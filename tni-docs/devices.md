@@ -1,81 +1,16 @@
+---
+nav_order: 2
+---
+
 # Devices
+{: .no_toc }
 GENERATED FOR TNI VERSION 0.11.2
 
-[Zodianet Beam Router](#zodianet-beam-router)  
-[Zodianet Spine Router](#zodianet-spine-router)  
-[MacroHard NLB2](#macrohard-nlb2)  
-[Debugger Alice](#debugger-alice)  
-[DNS UDP/53 Load Tester](#dns-udp/53-load-tester)  
-[LoadTester Bob](#loadtester-bob)  
-[Dvergar](#dvergar)  
-[golonys-cinco](#golonys-cinco)  
-[ICC1](#icc1)  
-[Bastion 5E](#bastion-5e)  
-[EthTapper](#ethtapper)  
-[FireWatch CP4E](#firewatch-cp4e)  
-[FireWatch ES4A](#firewatch-es4a)  
-[Duplex 1C](#duplex-1c)  
-[Duplex 3C](#duplex-3c)  
-[Simplex 452F 1C](#simplex-452f-1c)  
-[Simplex 452F 3C](#simplex-452f-3c)  
-[Simplex SC245 1C](#simplex-sc245-1c)  
-[Simplex SC245 3C](#simplex-sc245-3c)  
-[Duplex RJ45 1R](#duplex-rj45-1r)  
-[Duplex RJ45 3R](#duplex-rj45-3r)  
-[Duplex SC 1R](#duplex-sc-1r)  
-[Duplex SC 3R](#duplex-sc-3r)  
-[Simplex RJ45 1R](#simplex-rj45-1r)  
-[Simplex RJ45 3R](#simplex-rj45-3r)  
-[Simplex SC 1R](#simplex-sc-1r)  
-[Simplex SC 3R](#simplex-sc-3r)  
-[Momento Entries Monitor](#momento-entries-monitor)  
-[Population Stats Monitor](#population-stats-monitor)  
-[Satiety Stats Monitor](#satiety-stats-monitor)  
-[Surveyor Monitor](#surveyor-monitor)  
-[Top Issue Monitor](#top-issue-monitor)  
-[Visitor Stats Monitor](#visitor-stats-monitor)  
-[Disco Kilo](#disco-kilo)  
-[Disco Kilo 2G](#disco-kilo-2g)  
-[Disco Kilo 3G](#disco-kilo-3g)  
-[Disco Micro](#disco-micro)  
-[Disco Micro 2G](#disco-micro-2g)  
-[Disco Micro 3G](#disco-micro-3g)  
-[Disco Milli](#disco-milli)  
-[Disco Milli 2G](#disco-milli-2g)  
-[Disco Milli 3G](#disco-milli-3g)  
-[Disco Milli 4G](#disco-milli-4g)  
-[Disco Nano](#disco-nano)  
-[Disco Nano2G](#disco-nano2g)  
-[Disco Nano3H](#disco-nano3h)  
-[Test Router](#test-router)  
-[Savannah Aardvark](#savannah-aardvark)  
-[Savannah Gazelle](#savannah-gazelle)  
-[Savannah Meerkat](#savannah-meerkat)  
-[Savannah Wildebeest](#savannah-wildebeest)  
-[MacroHard Boulder SRV](#macrohard-boulder-srv)  
-[MacroHard Boulder++ SRV](#macrohard-boulder++-srv)  
-[MacroHard Boulder+ SRV](#macrohard-boulder+-srv)  
-[MacroHard Ledge Three SRV](#macrohard-ledge-three-srv)  
-[MacroHard Ledge Two SRV](#macrohard-ledge-two-srv)  
-[MacroHard Megalith SRV](#macrohard-megalith-srv)  
-[MacroHard Monolith SRV](#macrohard-monolith-srv)  
-[Avex Secretary](#avex-secretary)  
-[Avex Skua](#avex-skua)  
-[Avex Sparrow](#avex-sparrow)  
-[Avex Starling](#avex-starling)  
-[Avex Swallow](#avex-swallow)  
-[Test Server](#test-server)  
-[Blade88](#blade88)  
-[Blade15](#blade15)  
-[Blade1515](#blade1515)  
-[Blade5](#blade5)  
-[Blade4](#blade4)  
-[Blade66](#blade66)  
-[Blade10](#blade10)  
-[Blade30](#blade30)  
-[Blade12](#blade12)
+- TOC
+{:toc}
 
-## Zodianet Beam Router<a name="zodianet-beam-router"></a>  
+
+## Zodianet Beam Router  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `450`  
 **Watts:** 138w **Price:** $3700  
 **Port Counts:** 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
@@ -92,7 +27,7 @@ High bandwidth router for core networking.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## Zodianet Spine Router<a name="zodianet-spine-router"></a>  
+## Zodianet Spine Router  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `250`  
 **Watts:** 78w **Price:** $1200  
 **Port Counts:** 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
@@ -109,7 +44,7 @@ High bandwidth router for core networking.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## MacroHard NLB2<a name="macrohard-nlb2"></a>  
+## MacroHard NLB2  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `80`  
 **Watts:** 83w **Price:** $350  
 **Port Counts:** 4x `RJ45`, 1x `B_3PIN`  
@@ -126,7 +61,7 @@ Traffic from either front ports are alternated between the back ports.
 **Installed Programs:** [lbrr](programs.md/#lbrr)  
   
   
-## Debugger Alice<a name="debugger-alice"></a>  
+## Debugger Alice  
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `12`  
 **Watts:** 33w **Price:** $1000  
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
@@ -139,7 +74,7 @@ Not rack mountable.
 **Installed Programs:** [netpeeker](programs.md/#netpeeker)  
   
   
-## DNS UDP/53 Load Tester<a name="dns-udp/53-load-tester"></a>  
+## DNS UDP/53 Load Tester  
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6`  
 **Watts:** 203w **Price:** $1000  
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
@@ -152,7 +87,7 @@ Not rack mountable.
 **Installed Programs:** [dnsspam](programs.md/#dnsspam)  
   
   
-## LoadTester Bob<a name="loadtester-bob"></a>  
+## LoadTester Bob  
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6`  
 **Watts:** 203w **Price:** $1000  
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
@@ -165,7 +100,7 @@ Not rack mountable.
 **Installed Programs:** [dnsspam](programs.md/#dnsspam), [loadtester2](programs.md/#loadtester2)  
   
   
-## Dvergar<a name="dvergar"></a>  
+## Dvergar  
 **CPU:** `24` **MEM:** `16` **SIZE:** `8` **BW/t:** `40`  
 **Watts:** 523w **Price:** $1100  
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
@@ -183,7 +118,7 @@ Provides Decentro transaction verification to the p2p currency network.
 **Installed Programs:** [decentro-node](programs.md/#decentro-node)  
   
   
-## golonys-cinco<a name="golonys-cinco"></a>  
+## golonys-cinco  
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6`  
 **Watts:** 13w **Price:** $400  
 **Port Counts:** 5x `SATA35_SLOT`, 1x `RJ45`, 1x `B_3PIN`  
@@ -199,7 +134,7 @@ Comes with 5 SATA 3.5" expansion slots.
   
   
   
-## ICC1<a name="icc1"></a>  
+## ICC1  
 **CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6`  
 **Watts:** 19w **Price:** $160  
 **Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `B_3PIN`  
@@ -215,7 +150,7 @@ Homelab equipment.
   
   
   
-## Bastion 5E<a name="bastion-5e"></a>  
+## Bastion 5E  
 **CPU:** `6` **MEM:** `6` **SIZE:** `5` **BW/t:** `384`  
 **Watts:** 387w **Price:** $3000  
 **Port Counts:** 4x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
@@ -231,7 +166,7 @@ Mountable on 930px racks.
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
   
   
-## EthTapper<a name="ethtapper"></a>  
+## EthTapper  
 **CPU:** `2` **MEM:** `2` **SIZE:** `1` **BW/t:** `18`  
 **Watts:** 12w **Price:** $300  
 **Port Counts:** 3x `RJ45`, 1x `B_3PIN`  
@@ -247,7 +182,7 @@ Not rack mountable.
 **Installed Programs:** [wirerat](programs.md/#wirerat)  
   
   
-## FireWatch CP4E<a name="firewatch-cp4e"></a>  
+## FireWatch CP4E  
 **CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `160`  
 **Watts:** 163w **Price:** $1500  
 **Port Counts:** 4x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
@@ -263,7 +198,7 @@ Mountable on 500px racks.
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
   
   
-## FireWatch ES4A<a name="firewatch-es4a"></a>  
+## FireWatch ES4A  
 **CPU:** `6` **MEM:** `3` **SIZE:** `3` **BW/t:** `52`  
 **Watts:** 55w **Price:** $550  
 **Port Counts:** 1x `FIBER_OPTIC_SC`, 2x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
@@ -279,7 +214,7 @@ Mountable on 500px racks.
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
   
   
-## Duplex 1C<a name="duplex-1c"></a>  
+## Duplex 1C  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `18`  
 **Watts:** 7w **Price:** $60  
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -295,7 +230,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Duplex 3C<a name="duplex-3c"></a>  
+## Duplex 3C  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `54`  
 **Watts:** 8w **Price:** $240  
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -311,7 +246,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex 452F 1C<a name="simplex-452f-1c"></a>  
+## Simplex 452F 1C  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `30`  
 **Watts:** 9w **Price:** $40  
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -327,7 +262,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex 452F 3C<a name="simplex-452f-3c"></a>  
+## Simplex 452F 3C  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `90`  
 **Watts:** 12w **Price:** $160  
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -343,7 +278,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex SC245 1C<a name="simplex-sc245-1c"></a>  
+## Simplex SC245 1C  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `30`  
 **Watts:** 9w **Price:** $40  
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -359,7 +294,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex SC245 3C<a name="simplex-sc245-3c"></a>  
+## Simplex SC245 3C  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `90`  
 **Watts:** 12w **Price:** $160  
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -375,7 +310,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Duplex RJ45 1R<a name="duplex-rj45-1r"></a>  
+## Duplex RJ45 1R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `12`  
 **Watts:** 6w **Price:** $50  
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
@@ -391,7 +326,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Duplex RJ45 3R<a name="duplex-rj45-3r"></a>  
+## Duplex RJ45 3R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `36`  
 **Watts:** 7w **Price:** $200  
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
@@ -407,7 +342,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Duplex SC 1R<a name="duplex-sc-1r"></a>  
+## Duplex SC 1R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `24`  
 **Watts:** 8w **Price:** $50  
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -423,7 +358,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Duplex SC 3R<a name="duplex-sc-3r"></a>  
+## Duplex SC 3R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `72`  
 **Watts:** 10w **Price:** $200  
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -439,7 +374,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex RJ45 1R<a name="simplex-rj45-1r"></a>  
+## Simplex RJ45 1R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `20`  
 **Watts:** 7w **Price:** $30  
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
@@ -455,7 +390,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex RJ45 3R<a name="simplex-rj45-3r"></a>  
+## Simplex RJ45 3R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `60`  
 **Watts:** 9w **Price:** $120  
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
@@ -471,7 +406,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex SC 1R<a name="simplex-sc-1r"></a>  
+## Simplex SC 1R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `40`  
 **Watts:** 11w **Price:** $30  
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -487,7 +422,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Simplex SC 3R<a name="simplex-sc-3r"></a>  
+## Simplex SC 3R  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `120`  
 **Watts:** 15w **Price:** $120  
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -503,7 +438,7 @@ Not rack mountable.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Momento Entries Monitor<a name="momento-entries-monitor"></a>  
+## Momento Entries Monitor  
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
 **Watts:** 13w **Price:** $500  
 **Port Counts:** 1x `B_3PIN`  
@@ -514,7 +449,7 @@ Not rack mountable.
   
   
   
-## Population Stats Monitor<a name="population-stats-monitor"></a>  
+## Population Stats Monitor  
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
 **Watts:** 13w **Price:** $1  
 **Port Counts:** 1x `B_3PIN`  
@@ -525,7 +460,7 @@ Not rack mountable.
   
   
   
-## Satiety Stats Monitor<a name="satiety-stats-monitor"></a>  
+## Satiety Stats Monitor  
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
 **Watts:** 13w **Price:** $500  
 **Port Counts:** 1x `B_3PIN`  
@@ -536,7 +471,7 @@ Not rack mountable.
   
   
   
-## Surveyor Monitor<a name="surveyor-monitor"></a>  
+## Surveyor Monitor  
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
 **Watts:** 13w **Price:** $1  
 **Port Counts:** 1x `B_3PIN`  
@@ -547,7 +482,7 @@ Not rack mountable.
   
   
   
-## Top Issue Monitor<a name="top-issue-monitor"></a>  
+## Top Issue Monitor  
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
 **Watts:** 13w **Price:** $300  
 **Port Counts:** 1x `B_3PIN`  
@@ -558,7 +493,7 @@ Not rack mountable.
   
   
   
-## Visitor Stats Monitor<a name="visitor-stats-monitor"></a>  
+## Visitor Stats Monitor  
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1`  
 **Watts:** 13w **Price:** $300  
 **Port Counts:** 1x `B_3PIN`  
@@ -569,7 +504,7 @@ Not rack mountable.
   
   
   
-## Disco Kilo<a name="disco-kilo"></a>  
+## Disco Kilo  
 **CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `120`  
 **Watts:** 42w **Price:** $1230  
 **Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
@@ -586,7 +521,7 @@ Allows VLAN subinterfaces.
 **Installed Programs:** [vrout3](programs.md/#vrout3)  
   
   
-## Disco Kilo 2G<a name="disco-kilo-2g"></a>  
+## Disco Kilo 2G  
 **CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `180`  
 **Watts:** 67w **Price:** $1500  
 **Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
@@ -603,7 +538,7 @@ Allows VLAN subinterfaces. Improved BW performance.
 **Installed Programs:** [vrout3](programs.md/#vrout3)  
   
   
-## Disco Kilo 3G<a name="disco-kilo-3g"></a>  
+## Disco Kilo 3G  
 **CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `240`  
 **Watts:** 111w **Price:** $1950  
 **Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
@@ -620,7 +555,7 @@ Allows VLAN subinterfaces. Improved BW performance.
 **Installed Programs:** [vrout3](programs.md/#vrout3)  
   
   
-## Disco Micro<a name="disco-micro"></a>  
+## Disco Micro  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `125`  
 **Watts:** 41w **Price:** $600  
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
@@ -637,7 +572,7 @@ Suitable for small businesses.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## Disco Micro 2G<a name="disco-micro-2g"></a>  
+## Disco Micro 2G  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `162`  
 **Watts:** 47w **Price:** $950  
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
@@ -654,7 +589,7 @@ Improved performance and maximum throughput.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## Disco Micro 3G<a name="disco-micro-3g"></a>  
+## Disco Micro 3G  
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `175`  
 **Watts:** 50w **Price:** $1300  
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
@@ -671,7 +606,7 @@ Mountable on 500px racks.
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
   
   
-## Disco Milli<a name="disco-milli"></a>  
+## Disco Milli  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `80`  
 **Watts:** 27w **Price:** $325  
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
@@ -688,7 +623,7 @@ Economical model for medium sized enterprises.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## Disco Milli 2G<a name="disco-milli-2g"></a>  
+## Disco Milli 2G  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `112`  
 **Watts:** 30w **Price:** $500  
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
@@ -705,7 +640,7 @@ Economical model for medium sized enterprises.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## Disco Milli 3G<a name="disco-milli-3g"></a>  
+## Disco Milli 3G  
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `160`  
 **Watts:** 41w **Price:** $800  
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
@@ -722,7 +657,7 @@ Economical model for medium sized enterprises. High-availability support.
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
   
   
-## Disco Milli 4G<a name="disco-milli-4g"></a>  
+## Disco Milli 4G  
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `240`  
 **Watts:** 60w **Price:** $1150  
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
@@ -739,7 +674,7 @@ Economical model for medium sized enterprises. High-availability support.
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
   
   
-## Disco Nano<a name="disco-nano"></a>  
+## Disco Nano  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `60`  
 **Watts:** 21w **Price:** $220  
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 3x `RJ45`, 1x `DC_JACK`  
@@ -756,7 +691,7 @@ Uses DC power.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## Disco Nano2G<a name="disco-nano2g"></a>  
+## Disco Nano2G  
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `65`  
 **Watts:** 23w **Price:** $180  
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -773,7 +708,7 @@ Uses DC power.
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
   
   
-## Disco Nano3H<a name="disco-nano3h"></a>  
+## Disco Nano3H  
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `75`  
 **Watts:** 26w **Price:** $450  
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -790,7 +725,7 @@ Uses DC power.
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
   
   
-## Test Router<a name="test-router"></a>  
+## Test Router  
 **CPU:** `8` **MEM:** `4` **SIZE:** `4` **BW/t:** `125`  
 **Watts:** 41w **Price:** $1  
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
@@ -807,7 +742,7 @@ Suitable for small businesses.
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
   
   
-## Savannah Aardvark<a name="savannah-aardvark"></a>  
+## Savannah Aardvark  
 **CPU:** `10` **MEM:** `10` **SIZE:** `5` **BW/t:** `65`  
 **Watts:** 293w **Price:** $4500  
 **Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
@@ -823,7 +758,7 @@ Mountable on 500px racks.
   
   
   
-## Savannah Gazelle<a name="savannah-gazelle"></a>  
+## Savannah Gazelle  
 **CPU:** `6` **MEM:** `6` **SIZE:** `6` **BW/t:** `24`  
 **Watts:** 108w **Price:** $2200  
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
@@ -839,7 +774,7 @@ The gazelle is a durable device that is designed to last long in high load condi
   
   
   
-## Savannah Meerkat<a name="savannah-meerkat"></a>  
+## Savannah Meerkat  
 **CPU:** `4` **MEM:** `4` **SIZE:** `4` **BW/t:** `16`  
 **Watts:** 62w **Price:** $950  
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
@@ -855,7 +790,7 @@ Scalable compute.
   
   
   
-## Savannah Wildebeest<a name="savannah-wildebeest"></a>  
+## Savannah Wildebeest  
 **CPU:** `16` **MEM:** `16` **SIZE:** `8` **BW/t:** `104`  
 **Watts:** 423w **Price:** $6800  
 **Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
@@ -871,7 +806,7 @@ Mountable on 500px racks.
   
   
   
-## MacroHard Boulder SRV<a name="macrohard-boulder-srv"></a>  
+## MacroHard Boulder SRV  
 **CPU:** `4` **MEM:** `4` **SIZE:** `6` **BW/t:** `16`  
 **Watts:** 72w **Price:** $450  
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
@@ -887,7 +822,7 @@ Suitable for small businesses.
   
   
   
-## MacroHard Boulder++ SRV<a name="macrohard-boulder++-srv"></a>  
+## MacroHard Boulder++ SRV  
 **CPU:** `6` **MEM:** `10` **SIZE:** `10` **BW/t:** `48`  
 **Watts:** 312w **Price:** $1400  
 **Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
@@ -903,7 +838,7 @@ High performance model with extra bandwidth.
   
   
   
-## MacroHard Boulder+ SRV<a name="macrohard-boulder+-srv"></a>  
+## MacroHard Boulder+ SRV  
 **CPU:** `6` **MEM:** `8` **SIZE:** `8` **BW/t:** `28`  
 **Watts:** 161w **Price:** $850  
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
@@ -919,7 +854,7 @@ High performance model.
   
   
   
-## MacroHard Ledge Three SRV<a name="macrohard-ledge-three-srv"></a>  
+## MacroHard Ledge Three SRV  
 **CPU:** `24` **MEM:** `16` **SIZE:** `4` **BW/t:** `208`  
 **Watts:** 1125w **Price:** $3200  
 **Port Counts:** 2x `SATA35_SLOT`, 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
@@ -935,7 +870,7 @@ Fiber enabled compute server.
   
   
   
-## MacroHard Ledge Two SRV<a name="macrohard-ledge-two-srv"></a>  
+## MacroHard Ledge Two SRV  
 **CPU:** `24` **MEM:** `14` **SIZE:** `4` **BW/t:** `150`  
 **Watts:** 973w **Price:** $2100  
 **Port Counts:** 2x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
@@ -951,7 +886,7 @@ Fiber enabled compute server.
   
   
   
-## MacroHard Megalith SRV<a name="macrohard-megalith-srv"></a>  
+## MacroHard Megalith SRV  
 **CPU:** `32` **MEM:** `16` **SIZE:** `4` **BW/t:** `240`  
 **Watts:** 1223w **Price:** $3800  
 **Port Counts:** 5x `RJ45`, 6x `SATA35_SLOT`, 2x `B_3PIN`  
@@ -967,7 +902,7 @@ Comes with 6 SATA 3.5" expansion slot.
   
   
   
-## MacroHard Monolith SRV<a name="macrohard-monolith-srv"></a>  
+## MacroHard Monolith SRV  
 **CPU:** `16` **MEM:** `10` **SIZE:** `4` **BW/t:** `52`  
 **Watts:** 429w **Price:** $1680  
 **Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
@@ -983,7 +918,7 @@ Comes with 2 SATA 3.5" expansion slot
   
   
   
-## Avex Secretary<a name="avex-secretary"></a>  
+## Avex Secretary  
 **CPU:** `23` **MEM:** `13` **SIZE:** `10` **BW/t:** `168`  
 **Watts:** 953w **Price:** $3150  
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
@@ -1001,7 +936,7 @@ Spacious and efficient. Perfect for businesses with growing data needs.
   
   
   
-## Avex Skua<a name="avex-skua"></a>  
+## Avex Skua  
 **CPU:** `12` **MEM:** `16` **SIZE:** `4` **BW/t:** `90`  
 **Watts:** 723w **Price:** $3000  
 **Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
@@ -1019,7 +954,7 @@ Powerful and responsive. Perfect for businesses with intensive operations.
   
   
   
-## Avex Sparrow<a name="avex-sparrow"></a>  
+## Avex Sparrow  
 **CPU:** `3` **MEM:** `4` **SIZE:** `8` **BW/t:** `21`  
 **Watts:** 88w **Price:** $1100  
 **Port Counts:** 3x `RJ45`, 1x `B_3PIN`  
@@ -1035,7 +970,7 @@ Compact and cost-efficient. Perfect for businesses in early deployment
   
   
   
-## Avex Starling<a name="avex-starling"></a>  
+## Avex Starling  
 **CPU:** `7` **MEM:** `6` **SIZE:** `7` **BW/t:** `39`  
 **Watts:** 191w **Price:** $1150  
 **Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
@@ -1051,7 +986,7 @@ Balanced and dependable. Perfect for businesses in steady expansion.
   
   
   
-## Avex Swallow<a name="avex-swallow"></a>  
+## Avex Swallow  
 **CPU:** `4` **MEM:** `8` **SIZE:** `12` **BW/t:** `38`  
 **Watts:** 200w **Price:** $3000  
 **Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
@@ -1069,7 +1004,7 @@ Spacious and efficient. Perfect for businesses with growing data needs.
   
   
   
-## Test Server<a name="test-server"></a>  
+## Test Server  
 **CPU:** `32` **MEM:** `32` **SIZE:** `32` **BW/t:** `50`  
 **Watts:** 703w **Price:** $700  
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
@@ -1085,7 +1020,7 @@ High performance model.
   
   
   
-## Blade88<a name="blade88"></a>  
+## Blade88  
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `336`  
 **Watts:** 37w **Price:** $1088  
 **Port Counts:** 8x `FIBER_OPTIC_SC`, 8x `RJ45`, 1x `B_3PIN`  
@@ -1102,7 +1037,7 @@ This device is well sought after in the second hand market.
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
   
   
-## Blade15<a name="blade15"></a>  
+## Blade15  
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `270`  
 **Watts:** 43w **Price:** $815  
 **Port Counts:** 15x `RJ45`, 1x `B_3PIN`  
@@ -1119,7 +1054,7 @@ More ports at a cheaper price.
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
   
   
-## Blade1515<a name="blade1515"></a>  
+## Blade1515  
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `630`  
 **Watts:** 84w **Price:** $1815  
 **Port Counts:** 15x `FIBER_OPTIC_SC`, 15x `RJ45`, 1x `B_3PIN`  
@@ -1137,7 +1072,7 @@ Enterprise grade equipment.
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
   
   
-## Blade5<a name="blade5"></a>  
+## Blade5  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `25`  
 **Watts:** 6w **Price:** $100  
 **Port Counts:** 5x `RJ45`, 1x `DC_JACK`  
@@ -1154,7 +1089,7 @@ Suitable for entry-level networks.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Blade4<a name="blade4"></a>  
+## Blade4  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `36`  
 **Watts:** 7w **Price:** $100  
 **Port Counts:** 4x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
@@ -1170,7 +1105,7 @@ Mountable on 500px racks.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Blade66<a name="blade66"></a>  
+## Blade66  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `88`  
 **Watts:** 12w **Price:** $466  
 **Port Counts:** 6x `FIBER_OPTIC_SC`, 6x `RJ45`, 1x `B_3PIN`  
@@ -1186,7 +1121,7 @@ Mountable on 930px racks.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Blade10<a name="blade10"></a>  
+## Blade10  
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `50`  
 **Watts:** 8w **Price:** $230  
 **Port Counts:** 10x `RJ45`, 1x `B_3PIN`  
@@ -1202,7 +1137,7 @@ Mountable on 500px racks.
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
   
   
-## Blade30<a name="blade30"></a>  
+## Blade30  
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `540`  
 **Watts:** 89w **Price:** $1630  
 **Port Counts:** 30x `RJ45`, 1x `B_3PIN`  
@@ -1219,7 +1154,7 @@ Enterprise grade equipment. Consumes high power to support throughput.
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
   
   
-## Blade12<a name="blade12"></a>  
+## Blade12  
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `288`  
 **Watts:** 32w **Price:** $712  
 **Port Counts:** 12x `FIBER_OPTIC_SC`, 1x `B_3PIN`  

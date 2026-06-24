@@ -22,3 +22,13 @@ h2, a {
 		max-width: 60rem;
 	}
 }
+
+.nav-list-item:has(button[aria-label="Proposals submenu"]) {
+    > .nav-list {
+        display: block !important;
+    }
+
+    > .nav-list-expander {
+        display: none !important;
+    }
+}
