@@ -12,6 +12,7 @@ GENERATED FOR TNI VERSION 0.11.2
 
 ## Media Maniac  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A tower dweller who just loves to browse media content.  
   
@@ -29,6 +30,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Net Nester  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A humble tower dweller who just wants to go online.  
   
@@ -46,6 +48,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Vocal Connector  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A tower dweller who just loves to voice message to their peers.  
   
@@ -59,6 +62,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Feed Signal  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A media company that hosts their site on-premise.  
   
@@ -73,6 +77,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## WireSync News  
 **Grace Days:** 8  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A news company that hosts their site on-premise.  
   
@@ -91,6 +96,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Sync News  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A news company that hosts their site on-premise.  
   
@@ -109,6 +115,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Sync News  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A news company that hosts their site on-premise.  
   
@@ -123,6 +130,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Bobby Tester  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Bobby tester  
   
@@ -141,6 +149,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## tester debbie  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** a humble tower dweller who just wants to go online  
   
@@ -155,6 +164,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## tester ellie  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** a humble tower dweller who just wants to go online  
   
@@ -173,6 +183,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Loyal Worker  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A skilled all-rounder who takes on almost every professional work in the tower and somehow nails them all. They stick to the same producer for online service unless there is a better option.  
   
@@ -225,6 +236,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Casual Dweller  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 21:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(87% of the time)</span>  
   
 **Description:** An individual who seamlessly integrates online activities into their daily routine, easily satisfied as long as they can stay connected.  
   
@@ -274,6 +286,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Casual Glancer  
 **Grace Days:** 10  
+**Online Times:** 06:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(50% of the time)</span>  
   
 **Description:** An individual who briefly checks the latest online content with low network traffic, often browsing headlines from main sites.  
   
@@ -312,6 +325,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Religious Dweller  
 **Grace Days:** 10  
+**Online Times:** 05:00 to 23:01 <span style="color:gray;font-size:85%;white-space:nowrap;">(75% of the time)</span>  
   
 **Description:** An individual who dedicates time to intentionally seeking spiritual knowledge for deeper religious understanding and personal spiritual growth.  
   
@@ -347,6 +361,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Scientific Researcher  
 **Grace Days:** 10  
+**Online Times:** 05:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(79% of the time)</span>  
   
 **Description:** An individual who dedicates time to methodically examining empirical evidence and scientific literature, employing critical thinking and analytical frameworks.  
   
@@ -383,6 +398,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Social Dweller  
 **Grace Days:** 10  
+**Online Times:** 01:55 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(92% of the time)</span>  
   
 **Description:** An individual who mostly online to socialize, and easily fulfil as long as they can online.  
   
@@ -436,6 +452,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Digital Minimalist  
 **Grace Days:** 10  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** An individual who only goes online for basic networking needs, and easily fulfills them as long as they can get online.  
   
@@ -465,6 +482,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Digital Detoxer  
 **Grace Days:** 10  
+**Online Times:** 12:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** An individual who intentionally limits online/social media time; perhaps only checks messages at set times.  
   
@@ -499,6 +517,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Cozy Foodie  
 **Grace Days:** 10  
+**Online Times:** 08:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(41% of the time)</span>  
   
 **Description:** A dedicated homebody who finds joy in the kitchen, constantly experimenting with flavors and sharing favorite recipes with the world.  
   
@@ -537,6 +556,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Night Dweller  
 **Grace Days:** 10  
+**Online Times:** 16:05 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(32% of the time)</span>  
   
 **Description:** A night owl who seamlessly integrates online activities into their daily routine, easily satisfied as long as they can stay connected.  
   
@@ -590,6 +610,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Private Dweller  
 **Grace Days:** 10  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** An intensely private individual who carefully guards personal information and maintains strict boundaries around their digital footprint.  
   
@@ -604,6 +625,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Full-time Coder  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A software engineer who writes code exclusively for game studio 24/7.  
   
@@ -622,6 +644,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Conservative Leader  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An individual who is a passionate conservative activist who continuously shares advertisements with fellow tower residents.  
   
@@ -639,6 +662,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Liberal Announcer  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An individual who is a passionate liberal activist who continuously shares progressive advertisements, campaigns, and political content with fellow tower residents. They use high-bandwidth connections to distribute their ideology through frequent posting.  
   
@@ -656,6 +680,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Capitalistic Announcer  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An individual who is a passionate capitalistic activist who continuously shares advertisements with fellow tower residents.  
   
@@ -673,6 +698,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Scifi Movie Director  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A movie director who produces movie content on video subscription platform  
   
@@ -695,6 +721,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Audio Lover  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A audio lover who stream content on audio-streaming subscription platform.  
   
@@ -716,6 +743,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Scientific Professor  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** An individual who requires background tasks like large cloud backups, or data processing for their scientific research. They are very passionate to work in research lab.  
   
@@ -733,6 +761,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Decentro Farmer  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A tech-savvy individual who dedicates their computing resources and time to decentro mining and is a low bandwidth user.   
   
@@ -753,6 +782,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Home Chef  
 **Grace Days:** 10  
+**Online Times:** 02:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(91% of the time)</span>  
   
 **Description:** A tower dweller who just loves to view food related website and is a low bandwidth user.  
   
@@ -770,6 +800,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Lifestyle Blogger  
 **Grace Days:** 10  
+**Online Times:** 02:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(91% of the time)</span>  
   
 **Description:** A creative and low bandwidth user who regularly publishes detailed reviews about lifestyle products and shares their preferences.  
   
@@ -787,6 +818,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Digital Salesman  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 21:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(87% of the time)</span>  
   
 **Description:** A persistent digital salesperson who floods inboxes with unwanted emails.  
   
@@ -807,6 +839,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Night Chatter  
 **Grace Days:** 3  
+**Online Times:** 21:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(12% of the time)</span>  
   
 **Description:** A low bandwidth tower dweller who just loves to hang out virtually with friends while gaming or just chatting.  
   
@@ -827,6 +860,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Pet Lover  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(75% of the time)</span>  
   
 **Description:** A low bandwidth tower dweller who just loves to watch pet web content.  
   
@@ -844,6 +878,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Secondhand Buyer  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 21:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(87% of the time)</span>  
   
 **Description:** A low bandwidth cost-conscious shopper who purchases secondhand and cheap items to stretch their budget.  
   
@@ -861,6 +896,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Vocal Connector  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 21:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(87% of the time)</span>  
   
 **Description:** A low bandwidth tower dweller who just loves to voice message to their peers.  
   
@@ -874,6 +910,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Patient Professor  
 **Grace Days:** 10  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** An individual who requires background tasks like large cloud backups, or data processing for their scientific research. They require high frequency/volume, but tolerant of interruptions as long as it completes eventually.  
   
@@ -910,6 +947,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Tower Worker  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 22:48 <span style="color:gray;font-size:85%;white-space:nowrap;">(95% of the time)</span>  
   
 **Description:** A skilled all-rounder who takes on almost every professional work in the tower and somehow nails them all.  
   
@@ -965,6 +1003,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Freelance Worker  
 **Grace Days:** 10  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** A freelance skilled all-rounder who takes on almost every job in the tower and somehow nails them all.  
   
@@ -1025,6 +1064,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Neighbour Helper  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 23:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(95% of the time)</span>  
   
 **Description:** A tower dweller who helps their neighbors with different tasks when they have free time.  
   
@@ -1082,6 +1122,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Strategic Investor  
 **Grace Days:** 10  
+**Online Times:** 12:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(50% of the time)</span>  
   
 **Description:** An investor who spreads investments across multiple asset classes and markets while maintaining a successful professional career.  
   
@@ -1110,6 +1151,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Heavy Viewer  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A dedicated viewer who maintains near-constant streaming activity throughout the day, prioritizing connection stability to ensure uninterrupted enjoyment of movies and digital content.  
   
@@ -1149,6 +1191,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Stability Seeker  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An individual heavily reliant on constant, stable connection for work or critical services, but not necessarily using massive bandwidth constantly.  
   
@@ -1184,6 +1227,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Greedy Dweller  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(75% of the time)</span>  
   
 **Description:** A greedy individual who seamlessly integrates online activities into their daily routine.  
   
@@ -1245,6 +1289,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Greedy Gambler  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(62% of the time)</span>  
   
 **Description:** A greedy individual who hunts for the next big win and places bets on everything from sports to random events.  
   
@@ -1287,6 +1332,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Digital Hoarder  
 **Grace Days:** 5  
+**Online Times:** 02:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(91% of the time)</span>  
   
 **Description:** An individual who never deletes digital files. Takes tons of photos/videos, archives everything.   
   
@@ -1334,6 +1380,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Wealthy Dweller  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** Someone who only goes for the best and always chooses luxury services  
   
@@ -1379,6 +1426,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Greedy Streamer  
 **Grace Days:** 5  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** A greedy individual who rarely leaves the apartment, relies heavily on the internet for entertainment and essentials.  
   
@@ -1417,6 +1465,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Tech Adopter  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A greedy individual who always has the latest technology gadgets. Immediately tries new high-bandwidth services and applications.  
   
@@ -1465,6 +1514,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Day Learner  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** An individual who is obsessed with professional development and online certifications. Their require high bandwidth regularly as they stream lectures, download course materials, and participate in virtual workshops during day time.  
   
@@ -1504,6 +1554,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Night Learner  
 **Grace Days:** 5  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** An individual who attends online classes exclusively in evening hours after work, requiring high bandwidth to stream lectures, download course materials, and participate in virtual workshops during nighttime.  
   
@@ -1543,6 +1594,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Software Engineer  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A 24/7 software engineer who requires high bandwidth for both continuous coding work and heavy personal internet usage.  
   
@@ -1599,6 +1651,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Malicious User  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A tower dweller who scraps text content and spreads worms to the network.  
   
@@ -1618,6 +1671,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Minimum Spender  
 **Grace Days:** 5  
+**Online Times:** 06:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(50% of the time)</span>  
   
 **Description:** A cost-conscious consumer who actively seeks out free services, discounts, and budget options while being reluctant to spend on premium features.  
   
@@ -1658,6 +1712,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Pavillion Tower  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Internet exchange points are neighbouring buildings that exchange services with the current tower.  
   
@@ -1678,6 +1733,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Gateway Tower  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Internet exchange points are neighbouring buildings that exchange services with the current tower.  
   
@@ -1701,6 +1757,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## WhiteHat Tower  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Internet exchange points are neighbouring buildings that exchange services with the current tower.  
   
@@ -1721,6 +1778,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Kanban Central  
 **Grace Days:** 3  
+**Online Times:** 02:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(91% of the time)</span>  
   
 **Description:** A kanban platform that empowers users to create customizable boards for planning, tracking, and managing projects of any type.   
   
@@ -1744,6 +1802,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Booking Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A flexible travel provider that offers standalone or combined bookings for flights and accommodations.  
   
@@ -1771,6 +1830,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Full Campus  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Digital classroom requiring consistent full day bandwidth for synchronized learning experiences across multiple time zones.  
   
@@ -1798,6 +1858,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Night Campus  
 **Grace Days:** 3  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** Digital classroom requiring consistent night time bandwidth for synchronized learning experiences across multiple time zones.  
   
@@ -1822,6 +1883,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Recycling Center  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A budget-friendly e-commerce seller specializing in refurbished electronics and upcycled goods, providing basic transaction services through their online storefront.  
   
@@ -1845,6 +1907,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Game Studios  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An indie gaming studios that hosts their development workspace on-premise.  
   
@@ -1871,6 +1934,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Tech Center  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An online shopping platform which provides high-quality servers, switches, and networking equipment for home tech setups.  
   
@@ -1899,6 +1963,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## All Supplies Center  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Tech and office supply store offering computers, networking equipment, printers, and administrative essentials - your one-stop shop for all business and home office technology needs.  
   
@@ -1927,6 +1992,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Horror Studios  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An indie gaming studios which specialises in horror games and hosts their development workspace on-premise.  
   
@@ -1949,6 +2015,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Travel Agency  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A travel agency that create one-stop vacation packages by leveraging relationships with airlines, hotels, and local tour operators.  
   
@@ -1973,6 +2040,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Cheap Kitchen  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A cheap restaurant that operates through delivery apps, optimizing its menu and operations for efficient online food delivery.  
   
@@ -1995,6 +2063,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Helper Central  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A community job board where residents can post small tasks and hire neighbors for help - earn extra income while supporting your tower community.  
   
@@ -2022,6 +2091,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Go Delivery Hub  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A pioneering technology company offering an all-in-one super-app that seamlessly integrates ride-hailing, food delivery, and digital payment services online.  
   
@@ -2046,6 +2116,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Cyber Mall  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An e-commerce platform where multiple merchants sell various products, offering customers a wide selection of items from different sellers in one convenient location.  
   
@@ -2072,6 +2143,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Database Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A subscription database-as-a-service platform which provide managed database service to small data company.  
   
@@ -2099,6 +2171,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Game Marketplace  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A digital distribution service platform which releases games.  
   
@@ -2126,6 +2199,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Film Sphere  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A subscription video streaming service platform which release movie and entertainment show.  
   
@@ -2153,6 +2227,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Premium Kitchen  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A premium restaurant that operates through delivery apps, optimizing its menu and operations for efficient online food delivery.  
   
@@ -2175,6 +2250,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Telemedicine Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A convenient healthcare platform connecting patients with licensed physicians for virtual consultations, medical advice, and prescriptions from any location.  
   
@@ -2202,6 +2278,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Blogger Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A platform where individuals showcase their diverse perspectives through personalized blogs and interactive community engagement. They expect more visitors than usual.  
   
@@ -2222,6 +2299,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Book Club  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An interactive community platform by tower residents that brings book enthusiasts together for meaningful connections around shared literary passions.  
   
@@ -2242,6 +2320,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Cloud Hub  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A software-as-a-service (SaaS) provider company that hosts their cloud storage service. They expect more visitors than usual.  
   
@@ -2261,6 +2340,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Data Nexus  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An international data company that hosts their workspace on-premise and hire more freelancer.  
   
@@ -2288,6 +2368,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Data Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An international data company that hosts their workspace on-premise, and hire permanent staff.  
   
@@ -2311,6 +2392,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Econ News  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An economics news company that hosts their site on-premise (focus mainly on economics news)  
   
@@ -2331,6 +2413,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Indie Studios  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An indie gaming studios that hosts their development workspace on-premise, and hire mostly freelancers.  
   
@@ -2353,6 +2436,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Free Kanban Central  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A kanban platform that empowers users to create customizable boards for planning, tracking, and managing projects of any type.   
   
@@ -2373,6 +2457,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Horror Director  
 **Grace Days:** 10  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** A comedy movie director who produces movie content on video subscription platform  
   
@@ -2391,6 +2476,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Media Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A media company that hosts their site on-premise.  
   
@@ -2411,6 +2497,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Music Sphere  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An music streaming company that provide music streaming from musician.  
   
@@ -2431,6 +2518,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Audio Sphere  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An podcast streaming company that provide podcast streaming from podcasters.  
   
@@ -2452,6 +2540,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Political News  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An official political news company that hosts their site on-premise.  
   
@@ -2469,6 +2558,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Religious Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A platform where individuals deepen their spiritual journey through sacred text studies, religious discourse, and faith-based resources.  
   
@@ -2490,6 +2580,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Scientific News  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A scientific news company that hosts their site on-premise.  
   
@@ -2510,6 +2601,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Tower Portal  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** All-in-one community portal connecting residents, staff, and service providers through a unified platform.  
   
@@ -2536,6 +2628,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Socialite Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A social media company that hosts media content from influencer and other content creator.  
   
@@ -2557,6 +2650,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Finance Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A bank which enable transaction within tower. Require always on and consistent network services.  
   
@@ -2583,6 +2677,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Chatter Hive  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A instant-messaging company that allows user to chat with each other at real time.  
   
@@ -2602,6 +2697,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Mail Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A basic email service provider who has consistent low bandwidth usage, and enable residents to read and send email.   
   
@@ -2625,6 +2721,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Software Nexus  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A software company that provides software updates for their client.  
   
@@ -2645,6 +2742,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Utilities Sphere  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An integrated utility management ecosystem streamlining resource monitoring, usage optimization, and payment processing for all building services and infrastructure. This company often expects more visitors.  
   
@@ -2671,6 +2769,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Ads Agency  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** This advertisement company specializes in promoting ideological campaigns for political associations, offering cost-effective broadcasting services.  
   
@@ -2688,6 +2787,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Research Hub  
 **Grace Days:** 10  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A place which provides comprehensive resources, collaboration tools, and expert support for academics, scientists, and researchers to conduct studies and share findings.  
   
@@ -2705,6 +2805,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Surveillance Hub  
 **Grace Days:** 10  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** An one-stop cctv service provider who enables their subscribers to view cctv footages at real-time.  
   
@@ -2719,6 +2820,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Daily Refresher  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** a humble tower dweller who just wants to go online  
   
@@ -2741,6 +2843,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 ## Billing Officer  
 **Grace Days:** 4  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** An associate who manages customer billing operations.   
   
@@ -2774,6 +2877,7 @@ They reconcil meter usage against issued bills, identifying discrepancies, and f
   
 ## Customer Officer  
 **Grace Days:** 4  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Serves as the frontline point of contact between Tenabolt and its customers.   
   
@@ -2801,6 +2905,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Analytics Officer  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A data analyst who identified amount of illegal non-revenue electric supply from the company  
   
@@ -2832,6 +2937,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Distribution Officer  
 **Grace Days:** 6  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A staff who monitors the distribution network for faults, demand anomalies, and operational issues.  
   
@@ -2852,6 +2958,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Field Inspector  
 **Grace Days:** 7  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A field technician who performs on-site inspection, maintenance, and repair of grid infrastructure including power plant assets, distribution lines, and customer meters.  
   
@@ -2881,6 +2988,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Finance Officer  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A finance who manages the company's financial operations including approving expenditures, processing vendor payments, and closing work claims.  
   
@@ -2906,6 +3014,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Grid Officer  
 **Grace Days:** 8  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A grid control operator who monitors and controls power plant switching to balance supply against live customer demand.  
   
@@ -2932,6 +3041,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## HR Officer  
 **Grace Days:** 3  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** Responsible for maintaining employee records, processing leave approvals, tracking certifications, and running payroll cycles.  
   
@@ -2970,6 +3080,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Legal Officer  
 **Grace Days:** 3  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A lawyer who defends TenaBolt against legal suits and regulatory penalties.  
   
@@ -2995,6 +3106,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Meter Reader I  
 **Grace Days:** 3  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** a meter reader who uploads electrical meter reading.  
   
@@ -3015,6 +3127,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Morning Grid Officer  
 **Grace Days:** 8  
+**Online Times:** 00:00 to 09:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A grid control operator who monitors and controls power plant switching to balance supply against live customer demand.  
   
@@ -3041,6 +3154,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Morning Technician  
 **Grace Days:** 8  
+**Online Times:** 00:00 to 09:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** a humble technician who resolve complaints in the morning.  
   
@@ -3073,6 +3187,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Night Grid Officer  
 **Grace Days:** 8  
+**Online Times:** 12:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(50% of the time)</span>  
   
 **Description:** A grid control operator who monitors and controls power plant switching to balance supply against live customer demand.  
   
@@ -3099,6 +3214,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Night Associate  
 **Grace Days:** 5  
+**Online Times:** 12:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(50% of the time)</span>  
   
 **Description:** a humble staff who just wants to visit company application  
   
@@ -3112,6 +3228,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Night Technician  
 **Grace Days:** 7  
+**Online Times:** 18:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(25% of the time)</span>  
   
 **Description:** a humble technician who resolve complaints  
   
@@ -3147,6 +3264,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Normal Associate  
 **Grace Days:** 6  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** a humble tenabolt staff who just wants to do work  
   
@@ -3175,6 +3293,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Normal Technician  
 **Grace Days:** 7  
+**Online Times:** 09:00 to 21:36 <span style="color:gray;font-size:85%;white-space:nowrap;">(52% of the time)</span>  
   
 **Description:** a humble technician who resolve complaints  
   
@@ -3207,6 +3326,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Partner Gateway  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Represents outbound internet traffic from Tenabolt to its third-party service providers.  
   
@@ -3230,6 +3350,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Planning Officer  
 **Grace Days:** 7  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A capital planning manager who oversees site identification, budget proposals, and infrastructure expansion projects.  
   
@@ -3256,6 +3377,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 ## Cloud Service  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A third-party cloud service provider. Hosts external SaaS platforms and data services.  
   
@@ -3272,6 +3394,7 @@ Switched off by IT staff during non-working hour to save cost.
   
 ## Tenabolt Retail  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A third-party retail platform that facilitates the sale and distribution of Tenabolt devices to the public.  
   
@@ -3286,6 +3409,7 @@ Switched off by IT staff during non-working hour to save cost.
   
 ## People Operations  
 **Grace Days:** 3  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A third party service provider who handles employee records, onboarding, and workforce administration.  
   
@@ -3305,6 +3429,7 @@ Switched off by IT staff during non-working hour to save cost.
   
 ## IT Service  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** IT Service Management software hosted by another IT technician in Tenabolt.  
   
@@ -3329,6 +3454,7 @@ Only operates during working hours.
   
 ## Public Gateway  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Represents incoming internet traffic to Tenabolt's public-facing services.  
   
@@ -3356,6 +3482,7 @@ Only operates during working hours.
   
 ## PR Officer  
 **Grace Days:** 3  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** Manages Tenabolt's public image and communications. Responsible for publishing company news, outage updates, and official announcements to keep the public informed.  
   
@@ -3381,6 +3508,7 @@ Only operates during working hours.
   
 ## R&D Engineer  
 **Grace Days:** 10  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** An R&D engineer who works towards more sustainable and effective energy sources, specialising in nuclear reactor modelling and calculation.  
   
@@ -3411,6 +3539,7 @@ Only operates during working hours.
   
 ## Sales Officer  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** Manages Tenabolt's product listings and sales channels on third-party retail platforms.  
   
@@ -3443,6 +3572,7 @@ Only operates during working hours.
   
 ## AI Researcher  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A researcher who designs, develops, and studies artificial intelligence systems to advance the field through research, experimentation  
   
@@ -3463,6 +3593,7 @@ Only operates during working hours.
   
 ## Chips Designer  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A highly specialized engineer who designs the architectural blueprints and detailed circuit layouts for microprocessors, memory chips, and other semiconductor devices  
   
@@ -3480,6 +3611,7 @@ Only operates during working hours.
   
 ## Professional Gamer  
 **Grace Days:** 5  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A professional e-sports streamer broadcasting live gameplay on gaming platforms, entertaining viewers with competitive gaming content.  
   
@@ -3498,6 +3630,7 @@ Only operates during working hours.
   
 ## Binge Watcher  
 **Grace Days:** 10  
+**Online Times:** 02:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(91% of the time)</span>  
   
 **Description:** An individual who watches multiple movies lasting several hours without breaks in a single sitting.  
   
@@ -3520,6 +3653,7 @@ Only operates during working hours.
   
 ## Jazz Lover  
 **Grace Days:** 10  
+**Online Times:** 02:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(91% of the time)</span>  
   
 **Description:** A tower dweller who loves jazz music and enjoys listening to various jazz artists.  
   
@@ -3537,6 +3671,7 @@ Only operates during working hours.
   
 ## Indoor Dweller  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 21:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(87% of the time)</span>  
   
 **Description:** A home-based person who handles work, shopping, and household tasks online. They stick to familiar websites unless better options appear.  
   
@@ -3584,6 +3719,7 @@ Only operates during working hours.
   
 ## Patient Dweller  
 **Grace Days:** 10  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** An individual who requires background tasks like large cloud backups, or data processing, but tolerant of interruptions as long as it completes eventually.   
   
@@ -3617,6 +3753,7 @@ They stick to familiar websites unless better options appear.
   
 ## Satellite Tower  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Internet exchange points are neighbouring buildings that exchange services with the current tower.    
   
@@ -3640,6 +3777,7 @@ They stick to familiar websites unless better options appear.
   
 ## Satellite Tower  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Internet exchange points are neighbouring buildings that exchange services with the current tower.    
   
@@ -3663,6 +3801,7 @@ They stick to familiar websites unless better options appear.
   
 ## Relax Tower  
 **Grace Days:** 5  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Internet exchange points are neighbouring buildings that exchange services with the current tower.    
   
@@ -3686,6 +3825,7 @@ They stick to familiar websites unless better options appear.
   
 ## Animation Sphere  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A large-scale film production facility that serves as the central hub for animated content.  
   
@@ -3712,6 +3852,7 @@ They stick to familiar websites unless better options appear.
   
 ## Animation Studios  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A creative production company that specializes in developing and producing animated content.  
   
@@ -3738,6 +3879,7 @@ They stick to familiar websites unless better options appear.
   
 ## Central Mart  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A centralized mart that enables multiple household stores to create their own digital storefronts while providing integrated delivery and logistics services to connect local grocers.  
   
@@ -3765,6 +3907,7 @@ They stick to familiar websites unless better options appear.
   
 ## ESport Hub  
 **Grace Days:** 3  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
   
 **Description:** A E-sport streaming platform that employs professional gamers to broadcast live gameplay and provides viewers with access to watch these live gaming streams.  
   
@@ -3788,6 +3931,7 @@ They stick to familiar websites unless better options appear.
   
 ## Happy Grocery  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A retail establishment that sells food products, beverages, and household essentials for daily consumption.  
   
@@ -3820,6 +3964,7 @@ They stick to familiar websites unless better options appear.
   
 ## Inventory Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An inventory management software company which automatically tracks, manages, and optimizes their clients' product inventory across multiple sales channels.  
   
@@ -3843,6 +3988,7 @@ They stick to familiar websites unless better options appear.
   
 ## Semiconductor Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A place which provides comprehensive resources, collaboration tools, and expert support for academics, scientists, and researchers to conduct studies and share findings.  
   
@@ -3860,6 +4006,7 @@ They stick to familiar websites unless better options appear.
   
 ## Sound Studios  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A specialized audio production facility that produces high-quality audio content for various media and entertainment projects.  
   
@@ -3878,6 +4025,7 @@ They stick to familiar websites unless better options appear.
   
 ## Transfer Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:**   
   
@@ -3892,6 +4040,7 @@ They stick to familiar websites unless better options appear.
   
 ## Professional Club  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** An online discussion forum that requires users to verify their professional credentials before gaining access to view content or participate in discussions  
   
@@ -3914,6 +4063,7 @@ They stick to familiar websites unless better options appear.
   
 ## Meeting Hub  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** Cloud-based platforms that enable high-quality video meetings, webinars, and real-time collaboration through secure, scalable communication technology for businesses, education, and personal use.  
   
@@ -3933,6 +4083,7 @@ They stick to familiar websites unless better options appear.
   
 ## Antivirus Nexus  
 **Grace Days:** 3  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A software company that provides antivirus software updates for their client.  
   
@@ -3956,6 +4107,7 @@ They stick to familiar websites unless better options appear.
   
 ## Privacy Hub  
 **Grace Days:** 10  
+**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
   
 **Description:** A software company that releases software updates which protect personal information and anonymity for their clients  
   
