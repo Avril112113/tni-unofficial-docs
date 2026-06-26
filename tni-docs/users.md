@@ -4,7 +4,7 @@ nav_order: 3
 
 # Users
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.2
+GENERATED FOR TNI VERSION 0.11.3
 
 - TOC
 {:toc}
@@ -2818,29 +2818,6 @@ GENERATED FOR TNI VERSION 0.11.2
   **Description:** allow users to store surveillance data with the utmost privacy settings.  
   
   
-## Daily Refresher  
-**Grace Days:** 10  
-**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
-  
-**Description:** a humble tower dweller who just wants to go online  
-  
-**Unlocks:**   
-  
-**Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO BUSINESS PARTNER** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
-  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
-  **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
-  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
-  **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 100% @ `udp/554` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
-  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
-  **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 100% @ `tcp/631` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
-  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
-  **<span style="color:PapayaWhip;">Consumes:</span>** `print-image or print-text`  
-  
-  
 ## Billing Officer  
 **Grace Days:** 4  
 **Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
@@ -2849,7 +2826,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 They reconcil meter usage against issued bills, identifying discrepancies, and flagging anomalies for investigation.  
   
-**Unlocks:** [ten-bill-server](programs.md/#ten-bill-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1)  
+**Unlocks:** [ten-bill-server](programs.md/#ten-bill-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3084,7 +3061,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 **Description:** A lawyer who defends TenaBolt against legal suits and regulatory penalties.  
   
-**Unlocks:** [dns-server](programs.md/#dns-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [mailer](programs.md/#mailer)  
+**Unlocks:** [dns-server](programs.md/#dns-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [mailer](programs.md/#mailer), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  

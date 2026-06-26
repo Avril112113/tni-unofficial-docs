@@ -5,7 +5,7 @@ parent: Proposals
 
 # Proposals for Tenabolt Prometheus
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.2
+GENERATED FOR TNI VERSION 0.11.3
 
 - TOC
 {:toc}
@@ -127,6 +127,44 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Unlock day:** 5  
 **Lore:** Money solves problems  
 **Description:** SLA breaches no longer ends the game, but comes with a financial penalty of 3000 per breach. Adds a recurring premium cost of 300 per day.  
+  
+  
+## PADU development funding  
+**Price:** $300  
+**Unlock day:** 0  
+**Unlocks:** [padu_v3](programs.md/#padu_v3)  
+**Lore:** Everyone's favorite database.  
+**Description:** Fund the development of the software 'padu_v3' at cost of 300.
+
+program name: padu_v3
+program type: producer
+produce output: 4 store-text, store-image, store-audio, store-video per tick
+cpu load: 4
+install size (code+data): 12 + 0 = 12
+memory size: 6
+description:
+Primary aggregation data unit. Supports text, image, audio and video storage.
+
+Improved disk handling algorithm.
+Production is limited to 4 compatible uses on the device's use stack.  
+  
+  
+## Poems DB  
+**Price:** $200  
+**Unlock day:** 0  
+**Unlocks:** [poems-db](programs.md/#poems-db)  
+**Lore:** A DB just for the text chads.  
+**Description:** Fund the development of the software 'poems-db' at cost of 200.
+
+program name: poems-db
+program type: producer
+produce output: 4 store-text per tick
+cpu load: 4
+install size (code+data): 6 + 0 = 6
+memory size: 4
+description:
+Based text-based database. Supports text storage usage.
+Production is limited to 4 compatible uses on the device's use stack.  
   
   
 ## Refurbhut investment  

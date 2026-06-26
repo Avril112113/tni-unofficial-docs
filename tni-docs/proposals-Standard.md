@@ -5,7 +5,7 @@ parent: Proposals
 
 # Proposals for Standard
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.2
+GENERATED FOR TNI VERSION 0.11.3
 
 - TOC
 {:toc}

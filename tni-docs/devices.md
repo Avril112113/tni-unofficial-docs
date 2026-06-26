@@ -4,7 +4,7 @@ nav_order: 2
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.2
+GENERATED FOR TNI VERSION 0.11.3
 
 - TOC
 {:toc}
@@ -920,7 +920,7 @@ Comes with 2 SATA 3.5" expansion slot
   
 ## Avex Secretary  
 **CPU:** `23` **MEM:** `13` **SIZE:** `10` **BW/t:** `168`  
-**Watts:** 953w **Price:** $3150  
+**Watts:** 953w **Price:** $5150  
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
   
 **Description:**  

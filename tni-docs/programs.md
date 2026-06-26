@@ -4,7 +4,7 @@ nav_order: 1
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.2
+GENERATED FOR TNI VERSION 0.11.3
 
 - TOC
 {:toc}
@@ -18,7 +18,7 @@ GENERATED FOR TNI VERSION 0.11.2
   
 **Description:**  
 Stores employee data.   
-<span style="color:red;">Requires access to a running text storage program</span>.  
+<span style="color:red;">Requires access to a running text and image storage program</span>.  
   
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
@@ -45,7 +45,7 @@ Production is limited to 5 compatible uses on the device's use stack.
   
 **Description:**  
 Allow meter reader to stores meter reading data.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
+<span style="color:red;">Requires access to a running text and image storage program</span>.  
   
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
@@ -129,7 +129,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 **Description:**  
 Publishes outage updates and company news for public viewing.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
+<span style="color:red;">Requires access to a running text and image storage program</span>.  
   
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
@@ -161,7 +161,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 **Description:**  
 Allows media sharing among staff.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
+<span style="color:red;">Requires access to a running text and image storage program</span>.  
   
 Produce target's use stack limit is 25 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
@@ -196,7 +196,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 **Description:**  
 Serve as Geographic information system. Maps grid infrastructure, customer zones, and candidate sites for expansion.  
-<span style="color:red;">Requires access to a running text storage program</span>.  
+<span style="color:red;">Requires access to a running text and image storage program</span>.  
   
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
@@ -212,7 +212,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 **Description:**  
 Serve landing page for staff internally for company resources and announcement.   
-<span style="color:red;">Requires access to a running text storage program</span>.  
+<span style="color:red;">Requires access to a running text or image storage program</span>.  
   
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
@@ -280,7 +280,7 @@ Support printing services.
 Allows printer to be connected to produce print-text and print-image uses.  
 Production is limited to 10 compatible uses on the device's use stack.  
   
-**Unlocked By:** [Customer Officer](users.md/#customer-officer), [Finance Officer](users.md/#finance-officer), [HR Officer](users.md/#hr-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
+**Unlocked By:** [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
   
   
 ## ubbt  
@@ -336,7 +336,7 @@ Primary aggregation data unit. Supports text, image, audio and video storage.
 Improved disk handling algorithm.  
 Production is limited to 4 compatible uses on the device's use stack.  
   
-**Unlocked By:** [Standard/PADU development funding](proposals-Standard.md/#padu-development-funding)  
+**Unlocked By:** [Tenabolt Prometheus/PADU development funding](proposals-Tenabolt%20Prometheus.md/#padu-development-funding), [Standard/PADU development funding](proposals-Standard.md/#padu-development-funding)  
   
   
 ## poems-db  
@@ -348,7 +348,7 @@ Production is limited to 4 compatible uses on the device's use stack.
 Based text-based database. Supports text storage usage.  
 Production is limited to 4 compatible uses on the device's use stack.  
   
-**Unlocked By:** [Standard/Poems DB](proposals-Standard.md/#poems-db)  
+**Unlocked By:** [Tenabolt Prometheus/Poems DB](proposals-Tenabolt%20Prometheus.md/#poems-db), [Standard/Poems DB](proposals-Standard.md/#poems-db)  
   
   
 ## decentro-collector  
@@ -630,18 +630,17 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
   
   
-## print-server  
+## print-server2  
 **CPU:** 5 **MEM:** 3 **SIZE:** 5  
-**<span style="color:DarkKhaki;">Produces:</span>** 13 `accept-printer-connection` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 13)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 20 `accept-printer-connection` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
   
   
 **Description:**  
 Support printing services.  
   
 Allows printer to be connected to produce print-text and print-image uses.  
-Production is limited to 13 compatible uses on the device's use stack.  
+Production is limited to 20 compatible uses on the device's use stack.  
   
-**Unlocked By:** [Billing Officer](users.md/#billing-officer), [Analytics Officer](users.md/#analytics-officer), [Grid Officer](users.md/#grid-officer), [Legal Officer](users.md/#legal-officer)  
   
   
 ## gitcoffee  
