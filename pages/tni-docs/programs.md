@@ -1,5 +1,7 @@
 ---
 nav_order: 1
+parent: Data
+permalink: /data/programs
 ---
 
 # Programs

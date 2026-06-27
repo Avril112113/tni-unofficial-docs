@@ -1,0 +1,52 @@
+---
+layout: page
+title: Device's Programs Calculator
+parent: Tools
+permalink: /tools/DeviceCalc
+---
+<!-- Web Awesome is included in the head in pages\_includes\head_custom.html -->
+
+<style>
+	.show_data_loaded {
+		display: none;
+	}
+
+	wa-menu-item[active],
+	wa-dropdown-item[active] {
+		background-color: var(--wa-color-neutral-100, #f4f4f5);
+		color: var(--wa-color-neutral-900, #09090b);
+		outline: none;
+	}
+
+	/* Optional: If you want to show a clear focus ring matching Web Awesome's theme styling */
+	wa-menu-item[active]::part(base) {
+		box-shadow: 0 0 0 3px var(--wa-color-primary-200, rgba(14, 165, 233, 0.4));
+	}
+</style>
+<script type="module" src="./index.js" base-url="{{ '/' | relative_url }}"></script>
+
+
+<h1>This is work in progress!</h1>
+<p>I couldn't be bothered to remove it from the git commit.</p>
+<p>
+	This will be where you can calculate programs installed on devices. <br>
+	Including the use stack and throughputs (assuming no routing issues).
+</p>
+<h1></h1>
+
+
+<div id="loading_data">
+	<p id="loading_data_status">Loading data...</p>
+	<wa-spinner id="loading_data_spinner"></wa-spinner>
+</div>
+
+
+<div class="show_data_loaded wa-cloak">
+	<!-- Annoyingly, Web Awesome has the combobox behind a subscription :/ -->
+	<wa-dropdown id="device-select" class="my-combobox populate_dropdown_data_devices">
+		<wa-input slot="trigger" placeholder="Type to search devices..." with-clear>
+			<wa-icon name="chevron-down" slot="suffix"></wa-icon>
+		</wa-input>
+	</wa-dropdown>
+	<p id="dbg_selected_device"></p>
+</div>

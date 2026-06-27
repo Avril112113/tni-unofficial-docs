@@ -1,6 +1,7 @@
 ---
 title: Tenabolt Prometheus
 parent: Proposals
+permalink: /data/proposals/Tenabolt Prometheus
 ---
 
 # Proposals for Tenabolt Prometheus

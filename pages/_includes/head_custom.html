@@ -1,0 +1,14 @@
+{% if page.layout == "page" %}
+	<link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.9.0/styles/webawesome.css" />
+	<script type="module" src="https://ka-f.webawesome.com/webawesome@3.9.0/webawesome.loader.js"></script>
+
+	<script type="module" src="{{ '/assets/js/my-combobox.js' | relative_url }}"></script>
+
+	<script>
+        window.SiteConfig = {
+            baseUrl: "{{ site.baseurl }}",
+            dataUrl: "{{ '/data.json' | relative_url }}",
+        };
+        document.documentElement.classList.add('wa-dark');
+    </script>
+{% endif %}

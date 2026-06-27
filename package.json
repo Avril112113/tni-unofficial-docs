@@ -1,0 +1,13 @@
+{
+  "name": "tni-unofficial-docs",
+  "version": "0.0.1",
+  "description": "[https://avril112113.github.io/tni-unofficial-docs](https://avril112113.github.io/tni-unofficial-docs)",
+  "author": "Avril112113",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@awesome.me/webawesome": "^3.9.0"
+  }
+}

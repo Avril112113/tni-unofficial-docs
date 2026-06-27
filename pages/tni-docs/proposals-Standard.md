@@ -1,6 +1,7 @@
 ---
 title: Standard
 parent: Proposals
+permalink: /data/proposals/Standard
 ---
 
 # Proposals for Standard

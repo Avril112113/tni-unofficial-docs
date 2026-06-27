@@ -1,5 +1,7 @@
 ---
 nav_order: 2
+parent: Data
+permalink: /data/devices
 ---
 
 # Devices

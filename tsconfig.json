@@ -1,0 +1,36 @@
+{
+	// Visit https://aka.ms/tsconfig to read more about this file
+	"compilerOptions": {
+		"rootDir": ".",
+
+		"module": "es2022",
+		"target": "es2024",
+		"lib": ["DOM", "DOM.Iterable", "ES2022"],
+		"types": [],
+
+		"moduleResolution": "bundler",
+
+		"sourceMap": true,
+
+		"strict": true,
+		"strictNullChecks": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitOverride": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true,
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+	},
+	"include": [
+		"assets/js/**/*.ts",
+		"pages/**/*.ts",
+		"types/**/*.ts",
+		"node_modules/**/*.d.ts"
+	],
+	"exclude": [
+		"_site",
+		".jekyll-cache",
+		"node_modules"
+	]
+}

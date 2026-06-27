@@ -4,9 +4,13 @@ baseurl: "/tni-unofficial-docs"
 url: "https://avril112113.github.io"
 github_username: Avril112113
 
-remote_theme: just-the-docs/just-the-docs
+source: pages
+
+# remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 plugins:
   - jekyll-include-cache
+
 
 color_scheme: dark
 

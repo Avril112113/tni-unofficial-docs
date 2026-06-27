@@ -1,0 +1,1 @@
+Generate `./pages/tni-docs` from a python script and `data.json` instead of the data collector in GDScript.
