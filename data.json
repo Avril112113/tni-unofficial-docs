@@ -40,6 +40,19 @@
 			"NETWORK_LOAD_BALANCER",
 			"NETWORK_STORAGE"
 		],
+		"DeviceUnit.ExtraDescriptionType": [
+			"NODESCRIPT",
+			"BW_PER_TICK",
+			"CMSBW_BASIC",
+			"POWER_SUPPLY",
+			"CABLE_O_MATIC"
+		],
+		"DeviceUnit.MountType": [
+			"NA",
+			"R500",
+			"R930",
+			"R630"
+		],
 		"TraversalConsume.ProductTarget": [
 			"SOURCE",
 			"DESTINATION"
@@ -60,18 +73,6 @@
 			"LIMITED_BY_TARGET_TOTAL_CPU",
 			"LIMITED_BY_TARGET_TOTAL_STORAGE"
 		],
-		"UserTraversal.ProductTarget": [
-			"SOURCE",
-			"DESTINATION"
-		],
-		"UserTraversal.ConversionPolicy": [
-			"SKIP_CONSUME_ON_HOST_IF_LIMIT_REACHED",
-			"ALWAYS_CONSUME_REGARDLESS_OF_PRODUCE_LIMIT"
-		],
-		"UserTraversal.ConsumptionPolicy": [
-			"ALL_OR_NOTHING",
-			"FRAGMENTED_USE_ALLOWED"
-		],
 		"UserTraversal.HostSelMethod": [
 			"UNIFORM_RANDOM",
 			"USER_REPEATS_MODULO",
@@ -84,13 +85,6 @@
 		"LogicControllerUser.PaymentCalculationMethod": [
 			"USAGE_FULFILMENT_TODAY",
 			"LOWEST_SATIETY_TODAY"
-		],
-		"DeviceUnit.ExtraDescriptionType": [
-			"NODESCRIPT",
-			"BW_PER_TICK",
-			"CMSBW_BASIC",
-			"POWER_SUPPLY",
-			"CABLE_O_MATIC"
 		]
 	},
 	"programs": {
@@ -9704,7 +9698,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/media_system/social_media/use/browse_video_post.tscn"
@@ -9731,7 +9725,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/comment/use/read_and_comment.tscn",
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/read_any_news.tscn"
@@ -9757,7 +9751,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
 			]
@@ -9782,7 +9776,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/social_media/use/host_video_streaming.tscn"
 			]
@@ -9807,7 +9801,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/host_news_reading.tscn",
 				"graph_network_simulation/programs/early_access/text_based/comment/use/host_text_forum.tscn"
@@ -9831,7 +9825,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/host_news_reading.tscn",
 				"graph_network_simulation/programs/early_access/text_based/comment/use/host_text_forum.tscn"
@@ -9855,7 +9849,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/host_news_reading.tscn"
 			]
@@ -9881,7 +9875,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"",
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/read_any_news.tscn"
@@ -9905,7 +9899,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/decentro_currency_network/decentro_peer.tscn"
 			]
@@ -9928,7 +9922,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/decentro_currency_network/decentro_peer.tscn",
 				"graph_network_simulation/programs/early_access/decentro_currency_network/decentro_user_node.tscn"
@@ -9955,7 +9949,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/food_delivery/use/accept_food_delivery.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/learning/upload_lecture_video.tscn",
@@ -9992,7 +9986,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
 				"graph_network_simulation/programs/early_access/work/use/do_any_work.tscn",
@@ -10029,7 +10023,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/read_any_news.tscn",
@@ -10063,7 +10057,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/media_system/forum_social_media/use/browse_religious_content.tscn",
@@ -10096,7 +10090,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn",
@@ -10129,7 +10123,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn",
@@ -10167,7 +10161,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -10199,7 +10193,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -10232,7 +10226,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -10266,7 +10260,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
 				"graph_network_simulation/programs/early_access/work/use/do_any_work.tscn",
@@ -10302,7 +10296,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				""
 			]
@@ -10328,7 +10322,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"",
 				"graph_network_simulation/programs/early_access/text_based/comment/use/scrap_text_api.tscn"
@@ -10355,7 +10349,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/advertisement/use/post_ideological_ads.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
@@ -10382,7 +10376,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/advertisement/use/post_ideological_ads.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
@@ -10409,7 +10403,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/advertisement/use/post_ideological_ads.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
@@ -10435,7 +10429,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"",
 				"",
@@ -10462,7 +10456,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/media_system/podcast/use/stream_any_podcast.tscn",
@@ -10491,7 +10485,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/work/use/do_any_work.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn"
@@ -10517,7 +10511,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/decentro_currency_network/decentro_peer.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn",
@@ -10544,7 +10538,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
@@ -10570,7 +10564,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/text_based/blogging/use/post_any_blog_post.tscn"
@@ -10596,7 +10590,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/write_email.tscn",
@@ -10623,7 +10617,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/chatting_online.tscn",
@@ -10650,7 +10644,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn"
@@ -10676,7 +10670,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/supplies/purchase_any_supplies.tscn"
@@ -10702,7 +10696,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
 			]
@@ -10729,7 +10723,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -10761,7 +10755,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/food_delivery/use/accept_food_delivery.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/learning/upload_lecture_video.tscn",
@@ -10797,7 +10791,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/food_delivery/use/accept_food_delivery.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/learning/upload_lecture_video.tscn",
@@ -10834,7 +10828,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/food_delivery/use/accept_food_delivery.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/learning/upload_lecture_video.tscn",
@@ -10870,7 +10864,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/banking_system/use/manage_fixed_deposit.tscn",
 				"graph_network_simulation/programs/early_access/banking_system/use/perform_high_risk_operations.tscn",
@@ -10901,7 +10895,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -10935,7 +10929,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -10968,7 +10962,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/banking_system/use/manage_fixed_deposit.tscn",
@@ -11008,7 +11002,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/browse_media_content.tscn",
 				"graph_network_simulation/programs/early_access/work/use/do_any_work.tscn",
@@ -11043,7 +11037,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/browse_media_content.tscn",
@@ -11079,7 +11073,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_premium_payment.tscn",
 				"graph_network_simulation/programs/early_access/food_delivery/use/order_premium_food.tscn",
@@ -11114,7 +11108,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/browse_media_content.tscn",
@@ -11148,7 +11142,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/browse_media_content.tscn",
@@ -11185,7 +11179,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/browse_media_content.tscn",
@@ -11219,7 +11213,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/browse_media_content.tscn",
@@ -11253,7 +11247,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -11290,7 +11284,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/worms/annoying_morris.tscn",
@@ -11319,7 +11313,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/work/use/do_any_work.tscn",
 				"graph_network_simulation/programs/early_access/food_delivery/use/order_any_food.tscn",
@@ -11353,7 +11347,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -11382,7 +11376,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/video_conferencing/use/stream_live_conference.tscn",
@@ -11412,7 +11406,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -11439,7 +11433,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
@@ -11466,7 +11460,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -11494,7 +11488,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -11522,7 +11516,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/learning/host_online_university.tscn",
@@ -11549,7 +11543,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
@@ -11576,7 +11570,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/gaming/publish_game_store.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
@@ -11605,7 +11599,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/supplies/publish_store_page.tscn",
@@ -11634,7 +11628,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/supplies/publish_store_page.tscn",
@@ -11662,7 +11656,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/work/use/host_internal_workspace.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/gaming/publish_game_store.tscn",
@@ -11689,7 +11683,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
@@ -11717,7 +11711,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/food_delivery/use/publish_store_page.tscn",
@@ -11744,7 +11738,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
@@ -11772,7 +11766,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
@@ -11799,7 +11793,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -11827,7 +11821,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
@@ -11855,7 +11849,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
@@ -11883,7 +11877,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -11912,7 +11906,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/food_delivery/use/publish_store_page.tscn",
@@ -11939,7 +11933,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -11967,7 +11961,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
 				"graph_network_simulation/programs/early_access/text_based/blogging/use/host_blog_site.tscn",
@@ -11994,7 +11988,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/book_system/use/host_library_site.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/store_file.tscn",
@@ -12021,7 +12015,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software_backend.tscn",
 				"graph_network_simulation/programs/early_access/storage_and_file_system/use/host_file_storage.tscn"
@@ -12047,7 +12041,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/kanban/use/use_business_kanban.tscn",
 				"graph_network_simulation/programs/early_access/work/use/host_freelance_workspace.tscn",
@@ -12075,7 +12069,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software_backend.tscn",
 				"graph_network_simulation/programs/early_access/work/use/host_internal_workspace.tscn",
@@ -12102,7 +12096,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/host_news_reading.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -12129,7 +12123,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"",
 				"graph_network_simulation/programs/early_access/work/use/host_freelance_workspace.tscn",
@@ -12156,7 +12150,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/kanban/use/host_business_kanban.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn",
@@ -12183,7 +12177,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				""
@@ -12209,7 +12203,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/social_media/use/host_media_content.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -12236,7 +12230,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/music/use/host_music_site.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -12263,7 +12257,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/podcast/use/host_postcast_platform.tscn",
 				"graph_network_simulation/programs/early_access/text_based/blogging/use/post_any_blog_post.tscn",
@@ -12290,7 +12284,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/host_news_reading.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/store_file.tscn"
@@ -12316,7 +12310,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/forum_social_media/use/host_forum_social_media.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
@@ -12343,7 +12337,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/host_news_reading.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -12370,7 +12364,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software_backend.tscn",
 				"graph_network_simulation/programs/early_access/text_based/news_system/use/host_news_posting.tscn",
@@ -12398,7 +12392,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/social_media/use/host_social_media.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -12425,7 +12419,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software_backend.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
@@ -12453,7 +12447,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software_backend.tscn",
 				""
@@ -12479,7 +12473,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software_backend.tscn",
@@ -12506,7 +12500,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
@@ -12533,7 +12527,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
@@ -12562,7 +12556,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/media_system/advertisement/use/host_ideological_ads.tscn"
@@ -12588,7 +12582,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/work/use/host_scientific_research.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
@@ -12614,7 +12608,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				""
 			]
@@ -12642,7 +12636,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/human_resource/user_consume/employee_self_servicing.tscn",
@@ -12676,7 +12670,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12709,7 +12703,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12741,7 +12735,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12772,7 +12766,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12805,7 +12799,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12838,7 +12832,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12875,7 +12869,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.2,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12911,7 +12905,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.1,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12943,7 +12937,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.3,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -12973,7 +12967,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13008,7 +13002,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13043,7 +13037,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13073,7 +13067,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn"
 			]
@@ -13105,7 +13099,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13143,7 +13137,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.1,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13179,7 +13173,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13219,7 +13213,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/human_resource/producer/database_access_employee.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/human_resource/producer/hcm_service.tscn",
@@ -13251,7 +13245,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13282,7 +13276,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/cloud_portal/producer/saas_serving.tscn"
 			]
@@ -13309,7 +13303,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/customer_services/ecommerce_portal/producer/ecommerce_serving.tscn"
 			]
@@ -13336,7 +13330,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/human_resource/producer/database_access_employee.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/human_resource/producer/hcm_service.tscn"
@@ -13366,7 +13360,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/common_use/log_server/user_consume/search_logs.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/itsm_server/producer/database_access_itsm.tscn",
@@ -13404,7 +13398,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/customer_services/complain_portal/user_consume/submit_complaint.tscn",
 				"graph_network_simulation/programs/company_datacenter/customer_services/ecommerce_portal/user_consume/purchase_device.tscn",
@@ -13437,7 +13431,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.1,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13471,7 +13465,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.2,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13506,7 +13500,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.8,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/company_datacenter/staff_services/internal_portal/user_consume/view_staff_portal.tscn",
 				"graph_network_simulation/programs/company_datacenter/staff_services/mail_system/user_consume/exchange_email.tscn",
@@ -13537,7 +13531,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software.tscn",
 				"graph_network_simulation/programs/early_access/work/use/do_confidential_work.tscn",
@@ -13564,7 +13558,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/work/use/do_confidential_work.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn"
@@ -13592,7 +13586,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/work/use/do_any_work.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn"
@@ -13618,7 +13612,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/media_system/movie/use/stream_any_movie.tscn",
@@ -13645,7 +13639,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/media_system/music/use/stream_any_music.tscn"
@@ -13674,7 +13668,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
 				"graph_network_simulation/programs/early_access/grocery_delivery/use/order_any_grocery.tscn",
@@ -13710,7 +13704,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/validate_b2c_payment.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_public_content.tscn",
@@ -13742,7 +13736,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_paid_content.tscn",
@@ -13772,7 +13766,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/consolidate_behaviour/view_paid_content.tscn",
@@ -13802,7 +13796,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/text_based/mail_system/use/read_and_write_email.tscn",
@@ -13830,7 +13824,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
 				"graph_network_simulation/programs/early_access/media_system/animation/use/host_animation_platform.tscn",
@@ -13858,7 +13852,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/media_system/animation/use/post_animation.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
@@ -13886,7 +13880,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
 				"graph_network_simulation/programs/early_access/grocery_delivery/use/host_grocery_delivery.tscn",
@@ -13914,7 +13908,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_software_backend.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
@@ -13941,7 +13935,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/grocery_delivery/use/publish_store_page.tscn",
@@ -13970,7 +13964,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/subscription/use/subscribe_database_service.tscn",
 				"graph_network_simulation/programs/early_access/purchase_system/use/inventory_management/host_inventory_dashboard.tscn",
@@ -13997,7 +13991,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",
 				"graph_network_simulation/programs/early_access/work/use/host_cofidential_research.tscn"
@@ -14021,7 +14015,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/purchase_system/use/utilities/pay_commercial_utilities.tscn",
 				"graph_network_simulation/programs/early_access/work/use/do_any_work.tscn"
@@ -14047,7 +14041,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "USAGE_FULFILMENT_TODAY",
+			"payment_calculation_method": "USAGE_FULFILMENT_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/storage_and_file_system/use/host_file_transfer.tscn"
 			]
@@ -14070,7 +14064,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_paid_software_backend.tscn",
 				"graph_network_simulation/programs/early_access/media_system/forum_social_media/use/host_forum_social_media.tscn",
@@ -14097,7 +14091,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/update_paid_software_backend.tscn",
 				"graph_network_simulation/programs/early_access/video_conferencing/use/host_video_conferencing.tscn"
@@ -14123,7 +14117,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/banking_system/use/enable_b2b_banking_backend.tscn",
 				"graph_network_simulation/programs/early_access/software_system/use/host_antivirus_update.tscn",
@@ -14150,7 +14144,7 @@
 			"consumption_payment_scaling": 0.3,
 			"allow_hwreset": true,
 			"ot_probability": 0.0,
-			"payment_calculation_methodlity": "LOWEST_SATIETY_TODAY",
+			"payment_calculation_method": "LOWEST_SATIETY_TODAY",
 			"behaviours": [
 				"graph_network_simulation/programs/early_access/software_system/use/host_privacy_software_update.tscn",
 				"graph_network_simulation/programs/early_access/chatting_system/stream_voice.tscn",

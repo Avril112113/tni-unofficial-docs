@@ -4,6 +4,7 @@ export type TniJsonUserId = TniJsonId;
 export type TniJsonDeviceId = TniJsonId;
 export type TniJsonProposalPackId = TniJsonId;
 export type TniJsonUseConfigId = TniJsonId;
+export type TniJsonProposalName = string;
 
 type integer = number;
 
@@ -35,17 +36,17 @@ interface TniJsonDataEnums {
 }
 
 interface TniJsonProgram {
-	cpu_load: unknown,
-	code_size: unknown,
-	stack_size: unknown,
-	data_size: unknown,
-	release_name: unknown,
-	description: unknown,
-	rendered_description: unknown,
-	modifiers: unknown,
-	application_unlocks: unknown,
-	required_hardware_device: unknown,
-	unlocked_by: unknown,
+	cpu_load: integer,
+	code_size: integer,
+	stack_size: integer,
+	data_size: integer,
+	release_name: string,
+	description: string,
+	rendered_description: string,
+	modifiers: TniProgramControllerModifiers[],
+	application_unlocks: TniJsonId[],  // Should only be TniJsonProgramId
+	required_hardware_device: TniDeviceHardwareClass[],
+	unlocked_by: TniJsonId[],
 	TraversalBase: TniJsonProgramTraversalBase|undefined,
 	TraversalConsume: TniJsonProgramTraversalConsume|undefined,
 	AlwaysProduce: TniJsonProgramAlwaysProduce|undefined,
@@ -60,29 +61,30 @@ interface TniJsonProgram {
 	UseStorage: TniJsonProgramUseStorage|undefined,
 }
 interface TniJsonProgramTraversalBase {
-	traffic_class: unknown,
-	traffic_weight: unknown,
+	traffic_class: string,
+	traffic_weight: integer,
 }
+/** Program will always have TraversalBase if it has this. */
 interface TniJsonProgramTraversalConsume {
-	produce_use_config: unknown,
-	produce_target: unknown,
-	produce_factor: unknown,
-	conversion_policy: unknown,
-	produce_limit_type: unknown,
-	limit_factor: unknown,
-	consumption_policy: unknown,
-	consume_use_config: unknown,
-	consume_factor: unknown,
-	allow_localhost_consumption: unknown,
-	allow_user_consumption: unknown,
-	additional_descriptions: unknown,
+	produce_use_config: TniJsonUseConfigId,
+	produce_target: TniTraversalProductTarget,
+	produce_factor: integer,
+	conversion_policy: TniTraversalConversionPolicy,
+	produce_limit_type: TniProduceLimitType,
+	limit_factor: integer,
+	consumption_policy: TniTraversalConsumptionPolicy,
+	consume_use_config: TniJsonUseConfigId,
+	consume_factor: integer,
+	allow_localhost_consumption: boolean,
+	allow_user_consumption: boolean,
+	additional_descriptions: string[],
 }
 interface TniJsonProgramAlwaysProduce {
-	produce_use_config: unknown,
-	produce_factor: unknown,
-	produce_limit_type: unknown,
-	limit_factor: unknown,
-	additional_descriptions: unknown,
+	produce_use_config: TniJsonUseConfigId,
+	produce_factor: integer,
+	produce_limit_type: TniProduceLimitType,
+	limit_factor: integer,
+	additional_descriptions: string[],
 }
 interface TniJsonProgramWormBase {
 	release_name_template: unknown,
@@ -159,7 +161,7 @@ interface TniJsonUser {
 	active_time_float: unknown,
 	inactive_time_float: unknown,
 	fulfilment_penalty_factor: unknown,
-	user_application_unlocks: unknown,
+	user_application_unlocks: TniJsonId[],  // Should only be TniJsonProgramId
 	consumption_payment_scaling: unknown,
 	allow_hwreset: unknown,
 	ot_probability: unknown,
@@ -184,71 +186,71 @@ interface TniJsonDevice {
 	defect_possibility: boolean,
 	auto_config_bw_multiplier: number,
 	auto_config_pload_multiplier: number,
-	device_application_unlocks: TniJsonId[],
+	device_application_unlocks: TniJsonId[],  // Should only be TniJsonProgramId
 	device_hardware_class: TniDeviceHardwareClass,
 	mount_type: TniDeviceMountType,
 	logic_controller: TniJsonDeviceLogicController|undefined,
 	power_controller: TniJsonDevicePowerController|undefined,
 }
 interface TniJsonDeviceLogicController {
-	default_tick_period: unknown,
-	auto_cycle_enabled: unknown,
-	installed_cpu: unknown,
-	installed_mem: unknown,
-	installed_sto: unknown,
-	installed_nbw: unknown,
-	power_load: unknown,
-	infinite_power_mode: unknown,
-	force_autoconfig: unknown,
-	skip_autoconfig_cpu: unknown,
-	allow_storage_mods: unknown,
-	allow_process_mods: unknown,
-	auto_config_additional_cpu: unknown,
-	auto_config_additional_sto: unknown,
-	auto_config_additional_mem: unknown,
-	installed_programs: unknown,
+	default_tick_period: integer,
+	auto_cycle_enabled: boolean,
+	installed_cpu: integer,
+	installed_mem: integer,
+	installed_sto: integer,
+	installed_nbw: integer,
+	power_load: integer,
+	infinite_power_mode: boolean,
+	force_autoconfig: boolean,
+	skip_autoconfig_cpu: boolean,
+	allow_storage_mods: boolean,
+	allow_process_mods: boolean,
+	auto_config_additional_cpu: integer,
+	auto_config_additional_sto: integer,
+	auto_config_additional_mem: integer,
+	installed_programs: TniJsonProgramId[],
 }
 interface TniJsonDevicePowerController {
-	propagate_charges: unknown,
-	disabled: unknown,
-	charge_rate: unknown,
-	allow_passthrough: unknown,
-	charge_capacity: unknown,
-	can_discharge_to_supply: unknown,
-	surge_blocker: unknown,
+	propagate_charges: boolean,
+	disabled: boolean,
+	charge_rate: integer,
+	allow_passthrough: boolean,
+	charge_capacity: integer,
+	can_discharge_to_supply: boolean,
+	surge_blocker: boolean,
 }
 
 interface TniJsonProposalPack {
-	[key: string]: TniJsonProposal,
+	[key: TniJsonProposalName]: TniJsonProposal,
 }
 
 interface TniJsonProposal {
-	locked: unknown,
-	depends_on: unknown,
-	disallow_proposal_if_depends_submitted: unknown,
-	can_be_proposed_beginning: unknown,
-	force_once_on_day: unknown,
-	name: unknown,
-	cost: unknown,
+	locked: boolean,
+	depends_on: TniJsonProposalName,
+	disallow_proposal_if_depends_submitted: boolean,
+	can_be_proposed_beginning: integer,
+	force_once_on_day: integer,
+	name: string,
+	cost: integer|null,
 	description: string,
 	LogicProgramUnlock: TniJsonProposalLogicProgramUnlock|undefined,
 }
 interface TniJsonProposalLogicProgramUnlock {
-	title: unknown,
-	dialog_text: unknown,
-	logic_program_scn: unknown,
+	title: string,
+	dialog_text: string,
+	logic_program_scn: TniJsonProgramId,
 }
 
 interface TniJsonUseConfig {
-	use_value: unknown,
-	use_descriptions: unknown,
-	and_compatibility: unknown,
+	use_value: string,
+	use_descriptions: string[],
+	and_compatibility: boolean,
 	consume_config_blocks: TniJsonUseConfigConsumeBlock[],
 }
 interface TniJsonUseConfigConsumeBlock {
-	anti_match: unknown,
-	or_compatibility: unknown,
-	use_descriptions: unknown,
+	anti_match: boolean,
+	or_compatibility: boolean,
+	use_descriptions: string[],
 }
 
 // Enums based on 0.11.3
