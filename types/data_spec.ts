@@ -8,7 +8,7 @@ export type TniJsonProposalName = string;
 
 type integer = number;
 
-interface TniJsonData {
+export interface TniJsonData {
 	game_version: string,
 	enums: TniJsonDataEnums,
 	programs: Record<TniJsonProgramId, TniJsonProgram>,
@@ -19,7 +19,7 @@ interface TniJsonData {
 }
 
 // Actual enum definitions are at the bottom of this file.
-interface TniJsonDataEnums {
+export interface TniJsonDataEnums {
 	"Program.ControllerModifiers": string[],
 	"DeviceUnit.DeviceHardwareClass": string[],
 	"TraversalConsume.ProductTarget": string[],
@@ -35,7 +35,7 @@ interface TniJsonDataEnums {
 	"DeviceUnit.ExtraDescriptionType": string[],
 }
 
-interface TniJsonProgram {
+export interface TniJsonProgram {
 	cpu_load: integer,
 	code_size: integer,
 	stack_size: integer,
@@ -60,12 +60,12 @@ interface TniJsonProgram {
 	UserTraversalHostingBackend: TniJsonProgramUserTraversalHostingBackend|undefined,
 	UseStorage: TniJsonProgramUseStorage|undefined,
 }
-interface TniJsonProgramTraversalBase {
+export interface TniJsonProgramTraversalBase {
 	traffic_class: string,
 	traffic_weight: integer,
 }
 /** Program will always have TraversalBase if it has this. */
-interface TniJsonProgramTraversalConsume {
+export interface TniJsonProgramTraversalConsume {
 	produce_use_config: TniJsonUseConfigId,
 	produce_target: TniTraversalProductTarget,
 	produce_factor: integer,
@@ -79,14 +79,14 @@ interface TniJsonProgramTraversalConsume {
 	allow_user_consumption: boolean,
 	additional_descriptions: string[],
 }
-interface TniJsonProgramAlwaysProduce {
+export interface TniJsonProgramAlwaysProduce {
 	produce_use_config: TniJsonUseConfigId,
 	produce_factor: integer,
 	produce_limit_type: TniProduceLimitType,
 	limit_factor: integer,
 	additional_descriptions: string[],
 }
-interface TniJsonProgramWormBase {
+export interface TniJsonProgramWormBase {
 	release_name_template: unknown,
 	max_spread_per_tick: unknown,
 	signature: unknown,
@@ -94,7 +94,7 @@ interface TniJsonProgramWormBase {
 	incubation_cycles: unknown,
 	force_hint_hide: unknown,
 }
-interface TniJsonProgramUserHosting {
+export interface TniJsonProgramUserHosting {
 	satiety_weight: unknown,
 	advertised_use_config: unknown,
 	theme_config: unknown,
@@ -103,12 +103,12 @@ interface TniJsonProgramUserHosting {
 	tld_choice: unknown,
 	extra_visitor_limit: unknown,
 }
-interface TniJsonProgramSurveyScaledUserHosting {
+export interface TniJsonProgramSurveyScaledUserHosting {
 	min_visitors: unknown,
 	max_visitors: unknown,
 	desired_ratio: unknown,
 }
-interface TniJsonProgramVisitorScaledUserHosting {
+export interface TniJsonProgramVisitorScaledUserHosting {
 	min_visitors: unknown,
 	max_visitors: unknown,
 	growth_per_tick: unknown,
@@ -116,7 +116,7 @@ interface TniJsonProgramVisitorScaledUserHosting {
 	greed_factor: unknown,
 	min_visitor_scale_factor: unknown,
 }
-interface TniJsonProgramUserTraversal {
+export interface TniJsonProgramUserTraversal {
 	satiety_weight: unknown,
 	producer_satiety_change_on_consume: unknown,
 	consumer_satiety_change_on_consume: unknown,
@@ -129,25 +129,25 @@ interface TniJsonProgramUserTraversal {
 	surveyor_dialog_ptype: unknown,
 	theme_affinity: unknown,
 }
-interface TniJsonProgramUserTraversalFQDN {
+export interface TniJsonProgramUserTraversalFQDN {
 	manifest_probability: unknown,
 	never_manifest_without_any_provider: unknown,
 	host_selection_algorithm: unknown,
 }
-interface TniJsonProgramUserTraversalP2P {
+export interface TniJsonProgramUserTraversalP2P {
 	p2p_method: unknown,
 	facility_selection_algorithm: unknown,
 }
-interface TniJsonProgramUserTraversalHostingBackend {
+export interface TniJsonProgramUserTraversalHostingBackend {
 	user_hosting_frontend: unknown,
 	warning_checks_uses_or_condition: unknown,
 }
-interface TniJsonProgramUseStorage {
+export interface TniJsonProgramUseStorage {
 	stored_use_config: unknown,
 	storage_factor: unknown,
 }
 
-interface TniJsonUser {
+export interface TniJsonUser {
 	description: unknown,
 	user_profile_name: unknown,
 	base_use_period: unknown,
@@ -169,7 +169,7 @@ interface TniJsonUser {
 	behaviours: unknown,
 }
 
-interface TniJsonDevice {
+export interface TniJsonDevice {
 	product_name: string,
 	description: string,
 	device_rendered_description: string,
@@ -192,7 +192,7 @@ interface TniJsonDevice {
 	logic_controller: TniJsonDeviceLogicController|undefined,
 	power_controller: TniJsonDevicePowerController|undefined,
 }
-interface TniJsonDeviceLogicController {
+export interface TniJsonDeviceLogicController {
 	default_tick_period: integer,
 	auto_cycle_enabled: boolean,
 	installed_cpu: integer,
@@ -210,7 +210,7 @@ interface TniJsonDeviceLogicController {
 	auto_config_additional_mem: integer,
 	installed_programs: TniJsonProgramId[],
 }
-interface TniJsonDevicePowerController {
+export interface TniJsonDevicePowerController {
 	propagate_charges: boolean,
 	disabled: boolean,
 	charge_rate: integer,
@@ -220,11 +220,11 @@ interface TniJsonDevicePowerController {
 	surge_blocker: boolean,
 }
 
-interface TniJsonProposalPack {
+export interface TniJsonProposalPack {
 	[key: TniJsonProposalName]: TniJsonProposal,
 }
 
-interface TniJsonProposal {
+export interface TniJsonProposal {
 	locked: boolean,
 	depends_on: TniJsonProposalName,
 	disallow_proposal_if_depends_submitted: boolean,
@@ -235,19 +235,19 @@ interface TniJsonProposal {
 	description: string,
 	LogicProgramUnlock: TniJsonProposalLogicProgramUnlock|undefined,
 }
-interface TniJsonProposalLogicProgramUnlock {
+export interface TniJsonProposalLogicProgramUnlock {
 	title: string,
 	dialog_text: string,
 	logic_program_scn: TniJsonProgramId,
 }
 
-interface TniJsonUseConfig {
+export interface TniJsonUseConfig {
 	use_value: string,
 	use_descriptions: string[],
 	and_compatibility: boolean,
 	consume_config_blocks: TniJsonUseConfigConsumeBlock[],
 }
-interface TniJsonUseConfigConsumeBlock {
+export interface TniJsonUseConfigConsumeBlock {
 	anti_match: boolean,
 	or_compatibility: boolean,
 	use_descriptions: string[],
