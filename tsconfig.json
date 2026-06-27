@@ -1,6 +1,10 @@
 {
 	// Visit https://aka.ms/tsconfig to read more about this file
 	"compilerOptions": {
+		"paths": {
+			"data-spec": ["./types/data_spec.ts"] 
+		},
+		
 		"rootDir": ".",
 
 		"module": "es2022",

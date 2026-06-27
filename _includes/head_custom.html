@@ -4,10 +4,18 @@
 
 	<script type="module" src="{{ '/assets/js/my-combobox.js' | relative_url }}"></script>
 
+    <script type="importmap">
+    {
+        "imports": {
+            "data-spec": "{{ site.baseurl }}/types/data_spec.js"
+        }
+    }
+    </script>
+
 	<script>
         window.SiteConfig = {
             baseUrl: "{{ site.baseurl }}",
-            dataUrl: "{{ '/data.json' | relative_url }}",
+            dataUrl: "{{ '/data.min.json' | relative_url }}",
         };
         document.documentElement.classList.add('wa-dark');
     </script>

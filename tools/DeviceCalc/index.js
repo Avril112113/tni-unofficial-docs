@@ -41,8 +41,10 @@ Promise.all([
             elem.appendChild(dropdown_item_elem);
         }
     }
-    document.getElementById("device-select").addEventListener("my-select", (e) => {
-        document.getElementById("dbg_selected_device").textContent = e.detail;
+    document.getElementById("device-select").addEventListener("my-value-confirm", (e) => {
+        if (e.detail) {
+            document.getElementById("dbg_selected_device").textContent = e.detail;
+        }
     });
 })
     .catch((error) => {

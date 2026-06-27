@@ -1,4 +1,7 @@
-import WaDropdownItem from "@awesome.me/webawesome/dist/components/dropdown-item/dropdown-item.js";
+import WaDropdown from "@awesome.me/webawesome/dist/components/dropdown/dropdown.js";
+import WaInput from "@awesome.me/webawesome/dist/components/input/input.js";
+import { TniJsonData } from "data-spec";
+
 
 const domReady = new Promise<void>((resolve) => {
     if (document.readyState !== "loading") {
@@ -45,8 +48,10 @@ Promise.all([
 			}
 		}
 
-		document.getElementById("device-select")!.addEventListener("my-select", (e) => {
-			document.getElementById("dbg_selected_device")!.textContent = e.detail;
+		document.getElementById("device-select")!.addEventListener("my-value-confirm", (e) => {
+			if (e.detail) {
+				document.getElementById("dbg_selected_device")!.textContent = e.detail;
+			}
 		});
 	})
 	.catch((error) => {
