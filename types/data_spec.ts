@@ -66,10 +66,31 @@ interface TniJsonDevice {
 	power_controller: TniJsonDevicePowerController|undefined,
 }
 interface TniJsonDeviceLogicController {
-
+	default_tick_period: unknown,
+	auto_cycle_enabled: unknown,
+	installed_cpu: unknown,
+	installed_mem: unknown,
+	installed_sto: unknown,
+	installed_nbw: unknown,
+	power_load: unknown,
+	infinite_power_mode: unknown,
+	force_autoconfig: unknown,
+	skip_autoconfig_cpu: unknown,
+	allow_storage_mods: unknown,
+	allow_process_mods: unknown,
+	auto_config_additional_cpu: unknown,
+	auto_config_additional_sto: unknown,
+	auto_config_additional_mem: unknown,
+	installed_programs: unknown,
 }
 interface TniJsonDevicePowerController {
-
+	propagate_charges: unknown,
+	disabled: unknown,
+	charge_rate: unknown,
+	allow_passthrough: unknown,
+	charge_capacity: unknown,
+	can_discharge_to_supply: unknown,
+	surge_blocker: unknown,
 }
 
 interface TniJsonProposalPack {
