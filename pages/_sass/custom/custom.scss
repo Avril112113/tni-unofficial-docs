@@ -23,27 +23,7 @@ h2, a {
 	}
 }
 
-.nav-list-item:has(button[aria-label="Data submenu"]) {
-    > .nav-list {
-        display: block !important;
-    }
-
-    > .nav-list-expander {
-        display: none !important;
-    }
-}
-
-.nav-list-item:has(button[aria-label="Proposals submenu"]) {
-    > .nav-list {
-        display: block !important;
-    }
-
-    > .nav-list-expander {
-        display: none !important;
-    }
-}
-
-.nav-list-item:has(button[aria-label="Tools submenu"]) {
+.nav-list-item {
     > .nav-list {
         display: block !important;
     }
