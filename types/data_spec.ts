@@ -1,11 +1,20 @@
+export type TniJsonId = string;
+export type TniJsonProgramId = TniJsonId;
+export type TniJsonUserId = TniJsonId;
+export type TniJsonDeviceId = TniJsonId;
+export type TniJsonProposalPackId = TniJsonId;
+export type TniJsonUseConfigId = TniJsonId;
+
+type integer = number;
+
 interface TniJsonData {
 	game_version: string,
 	enums: TniJsonDataEnums,
-	programs: Record<string, TniJsonProgram>,
-	users: Record<string, TniJsonUser>,
-	devices: Record<string, TniJsonDevice>,
-	proposal_packs: Record<string, TniJsonProposalPack>,
-	use_configs: Record<string, TniJsonUseConfig>,
+	programs: Record<TniJsonProgramId, TniJsonProgram>,
+	users: Record<TniJsonUserId, TniJsonUser>,
+	devices: Record<TniJsonDeviceId, TniJsonDevice>,
+	proposal_packs: Record<TniJsonProposalPackId, TniJsonProposalPack>,
+	use_configs: Record<TniJsonUseConfigId, TniJsonUseConfig>,
 }
 
 // Actual enum definitions are at the bottom of this file.
@@ -38,21 +47,29 @@ interface TniJsonDevice {
 	description: string,
 	device_rendered_description: string,
 	text: string,
-	extra_descriptions: unknown,
-	price: unknown,
-	base_warranty_days: unknown,
-	base_warranty_cycles: unknown,
-	recycle_price_factor: unknown,
-	recycle_price: unknown,
-	force_auto_config_powctl_based_on_logctl: unknown,
-	force_auto_config_nbw_based_on_ports: unknown,
-	force_auto_config_logctl_powerload: unknown,
-	defect_possibility: unknown,
-	auto_config_bw_multiplier: unknown,
-	auto_config_pload_multiplier: unknown,
-	device_application_unlocks: unknown,
-	device_hardware_class: unknown,
-	mount_type: unknown,
+	extra_descriptions: TniDeviceExtraDescriptionType,
+	price: integer,
+	base_warranty_days: integer,
+	base_warranty_cycles: integer,
+	recycle_price_factor: number,
+	recycle_price: integer,
+	force_auto_config_powctl_based_on_logctl: boolean,
+	force_auto_config_nbw_based_on_ports: boolean,
+	force_auto_config_logctl_powerload: boolean,
+	defect_possibility: boolean,
+	auto_config_bw_multiplier: number,
+	auto_config_pload_multiplier: number,
+	device_application_unlocks: TniJsonId[],
+	device_hardware_class: TniDeviceHardwareClass,
+	mount_type: TniDeviceMountType,
+	logic_controller: TniJsonDeviceLogicController|undefined,
+	power_controller: TniJsonDevicePowerController|undefined,
+}
+interface TniJsonDeviceLogicController {
+
+}
+interface TniJsonDevicePowerController {
+
 }
 
 interface TniJsonProposalPack {
