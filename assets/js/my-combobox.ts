@@ -108,6 +108,7 @@ export class ComboboxController {
 
 	private filterItems(): void {
 		const searchTerm = (this.input.value ?? "").toLowerCase();
+		const searchTerms = searchTerm.split(" ");
 		
 		// Query items that are direct structural children of the dropdown element
 		const items = this.dropdown.querySelectorAll<HTMLElement>(':scope > wa-dropdown-item');
@@ -120,7 +121,7 @@ export class ComboboxController {
 
 		items.forEach((item) => {
 			const text = (item.textContent || '').toLowerCase();
-			if (text.includes(searchTerm)) {
+			if (searchTerms.every(term => text.includes(term))) {
 				if (!hasMatches)
 					singleMatch = item;
 				else
@@ -132,8 +133,9 @@ export class ComboboxController {
 			}
 		});
 
-		if (!hasMatches && searchTerm.length > 0)
+		if (!hasMatches && searchTerm.length > 0) {
 			this.dropdown.open = false;
+		}
 		
 		if (singleMatch) {
 			this.dropdown.dispatchEvent(new CustomEvent<string|null>('my-select', { bubbles: false, detail: singleMatch?.getAttribute("value") ?? null }));
