@@ -6,8 +6,8 @@ github_username: Avril112113
 
 source: pages
 
-# remote_theme: just-the-docs/just-the-docs
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
+# theme: just-the-docs
 plugins:
   - jekyll-include-cache
 
