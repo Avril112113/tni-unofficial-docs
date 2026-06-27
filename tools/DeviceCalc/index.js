@@ -8,7 +8,7 @@ const domReady = new Promise((resolve) => {
 });
 Promise.all([
     domReady,
-    fetch(window.SiteConfig.dataUrl)
+    fetch(window.SiteConfig.dataLatestUrl)
         .then(async (response) => {
         if (!response.ok)
             throw response;
@@ -48,8 +48,8 @@ Promise.all([
     });
 })
     .catch((error) => {
-    console.error(error);
-    document.getElementById("loading_data_status").textContent = error;
+    console.error("Failed to retrieve data", error);
+    document.getElementById("loading_data_status").textContent = "Failed to retrieve data, check console for details.";
     document.getElementById("loading_data_spinner").style.display = "none";
 });
 export {};

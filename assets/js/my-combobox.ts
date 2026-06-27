@@ -48,7 +48,7 @@ function offsetSelectedItem(dropdown: WaDropdown, offset: number, force_update =
 		newIndex = items.length + newIndex;
 
 	if (offset != 0 || force_update) {
-		selectItem(allItems, items[newIndex])
+		selectItem(allItems, items[newIndex]);
 	}
 	return items[newIndex] ?? null;
 }
@@ -96,7 +96,11 @@ export class ComboboxController {
 		});
 
 		this.dropdown.addEventListener('wa-show', () => {
-			offsetSelectedItem(this.dropdown, 0, true);
+			offsetSelectedItem(this.dropdown, 0)?.scrollIntoView({
+				block: "center",
+				inline: "center",
+				behavior: "instant"
+			});
 		})
 
 		this.dropdown.addEventListener('focus', (e) => {

@@ -1,5 +1,7 @@
 {
 	"game_version": "0.11.3",
+	"revision": 1,
+	"format": 1,
 	"enums": {
 		"Program.ControllerModifiers": [
 			"ALLOW_REMOTE_DEBUGGING",

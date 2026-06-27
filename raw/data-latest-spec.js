@@ -95,4 +95,4 @@ export var TniUserPaymentCalculationMethod;
     TniUserPaymentCalculationMethod["USAGE_FULFILMENT_TODAY"] = "USAGE_FULFILMENT_TODAY";
     TniUserPaymentCalculationMethod["LOWEST_SATIETY_TODAY"] = "LOWEST_SATIETY_TODAY";
 })(TniUserPaymentCalculationMethod || (TniUserPaymentCalculationMethod = {}));
-//# sourceMappingURL=data_spec.js.map
+//# sourceMappingURL=data-latest-spec.js.map

@@ -1,6 +1,4 @@
-import WaDropdown from "@awesome.me/webawesome/dist/components/dropdown/dropdown.js";
-import WaInput from "@awesome.me/webawesome/dist/components/input/input.js";
-import { TniJsonData } from "data-spec";
+import { TniJsonData } from "data-latest-spec";
 
 
 const domReady = new Promise<void>((resolve) => {
@@ -13,7 +11,7 @@ const domReady = new Promise<void>((resolve) => {
 
 Promise.all([
 	domReady,
-	fetch(window.SiteConfig!.dataUrl)
+	fetch(window.SiteConfig!.dataLatestUrl)
 		.then(async (response) => {
 			if (!response.ok) throw response;
 			return await response.json() as TniJsonData;
@@ -55,7 +53,7 @@ Promise.all([
 		});
 	})
 	.catch((error) => {
-		console.error(error);
-		document.getElementById("loading_data_status")!.textContent = error;
+		console.error("Failed to retrieve data", error);
+		document.getElementById("loading_data_status")!.textContent = "Failed to retrieve data, check console for details.";
 		document.getElementById("loading_data_spinner")!.style.display = "none";
 	});

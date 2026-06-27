@@ -76,7 +76,11 @@ export class ComboboxController {
             this.handleSelect(e);
         });
         this.dropdown.addEventListener('wa-show', () => {
-            offsetSelectedItem(this.dropdown, 0, true);
+            offsetSelectedItem(this.dropdown, 0)?.scrollIntoView({
+                block: "center",
+                inline: "center",
+                behavior: "instant"
+            });
         });
         this.dropdown.addEventListener('focus', (e) => {
             if (e.target !== this.input) {

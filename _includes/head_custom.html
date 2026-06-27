@@ -7,7 +7,7 @@
     <script type="importmap">
     {
         "imports": {
-            "data-spec": "{{ site.baseurl }}/types/data_spec.js"
+            "data-latest-spec": "{{ site.baseurl }}/raw/data-latest-spec.js"
         }
     }
     </script>
@@ -15,7 +15,7 @@
 	<script>
         window.SiteConfig = {
             baseUrl: "{{ site.baseurl }}",
-            dataUrl: "{{ '/data.min.json' | relative_url }}",
+            dataLatestUrl: "{{ '/raw/data-latest.min.json' | relative_url }}",
         };
         document.documentElement.classList.add('wa-dark');
     </script>
