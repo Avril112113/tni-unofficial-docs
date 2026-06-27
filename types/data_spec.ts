@@ -35,11 +35,136 @@ interface TniJsonDataEnums {
 }
 
 interface TniJsonProgram {
-
+	cpu_load: unknown,
+	code_size: unknown,
+	stack_size: unknown,
+	data_size: unknown,
+	release_name: unknown,
+	description: unknown,
+	rendered_description: unknown,
+	modifiers: unknown,
+	application_unlocks: unknown,
+	required_hardware_device: unknown,
+	unlocked_by: unknown,
+	TraversalBase: TniJsonProgramTraversalBase|undefined,
+	TraversalConsume: TniJsonProgramTraversalConsume|undefined,
+	AlwaysProduce: TniJsonProgramAlwaysProduce|undefined,
+	WormBase: TniJsonProgramWormBase|undefined,
+	UserHosting: TniJsonProgramUserHosting|undefined,
+	SurveyScaledUserHosting: TniJsonProgramSurveyScaledUserHosting|undefined,
+	VisitorScaledUserHosting: TniJsonProgramVisitorScaledUserHosting|undefined,
+	UserTraversal: TniJsonProgramUserTraversal|undefined,
+	UserTraversalFQDN: TniJsonProgramUserTraversalFQDN|undefined,
+	UserTraversalP2P: TniJsonProgramUserTraversalP2P|undefined,
+	UserTraversalHostingBackend: TniJsonProgramUserTraversalHostingBackend|undefined,
+	UseStorage: TniJsonProgramUseStorage|undefined,
+}
+interface TniJsonProgramTraversalBase {
+	traffic_class: unknown,
+	traffic_weight: unknown,
+}
+interface TniJsonProgramTraversalConsume {
+	produce_use_config: unknown,
+	produce_target: unknown,
+	produce_factor: unknown,
+	conversion_policy: unknown,
+	produce_limit_type: unknown,
+	limit_factor: unknown,
+	consumption_policy: unknown,
+	consume_use_config: unknown,
+	consume_factor: unknown,
+	allow_localhost_consumption: unknown,
+	allow_user_consumption: unknown,
+	additional_descriptions: unknown,
+}
+interface TniJsonProgramAlwaysProduce {
+	produce_use_config: unknown,
+	produce_factor: unknown,
+	produce_limit_type: unknown,
+	limit_factor: unknown,
+	additional_descriptions: unknown,
+}
+interface TniJsonProgramWormBase {
+	release_name_template: unknown,
+	max_spread_per_tick: unknown,
+	signature: unknown,
+	vulnerable_device_types: unknown,
+	incubation_cycles: unknown,
+	force_hint_hide: unknown,
+}
+interface TniJsonProgramUserHosting {
+	satiety_weight: unknown,
+	advertised_use_config: unknown,
+	theme_config: unknown,
+	desired_visitors_per_tick: unknown,
+	self_produce: unknown,
+	tld_choice: unknown,
+	extra_visitor_limit: unknown,
+}
+interface TniJsonProgramSurveyScaledUserHosting {
+	min_visitors: unknown,
+	max_visitors: unknown,
+	desired_ratio: unknown,
+}
+interface TniJsonProgramVisitorScaledUserHosting {
+	min_visitors: unknown,
+	max_visitors: unknown,
+	growth_per_tick: unknown,
+	shrink_per_tick: unknown,
+	greed_factor: unknown,
+	min_visitor_scale_factor: unknown,
+}
+interface TniJsonProgramUserTraversal {
+	satiety_weight: unknown,
+	producer_satiety_change_on_consume: unknown,
+	consumer_satiety_change_on_consume: unknown,
+	hidden_from_surveys: unknown,
+	will_select_player_providers: unknown,
+	max_acceptable_ppu: unknown,
+	surveyor_dialog_target: unknown,
+	add_dialog_text_on_success: unknown,
+	dialog_text: unknown,
+	surveyor_dialog_ptype: unknown,
+	theme_affinity: unknown,
+}
+interface TniJsonProgramUserTraversalFQDN {
+	manifest_probability: unknown,
+	never_manifest_without_any_provider: unknown,
+	host_selection_algorithm: unknown,
+}
+interface TniJsonProgramUserTraversalP2P {
+	p2p_method: unknown,
+	facility_selection_algorithm: unknown,
+}
+interface TniJsonProgramUserTraversalHostingBackend {
+	user_hosting_frontend: unknown,
+	warning_checks_uses_or_condition: unknown,
+}
+interface TniJsonProgramUseStorage {
+	stored_use_config: unknown,
+	storage_factor: unknown,
 }
 
 interface TniJsonUser {
-
+	description: unknown,
+	user_profile_name: unknown,
+	base_use_period: unknown,
+	use_period_variance: unknown,
+	downtime_sla_seconds: unknown,
+	init_grace_days: unknown,
+	daily_rate: unknown,
+	eagerness_factor: unknown,
+	max_satiety_decay_ratio: unknown,
+	satiety_sla_ratio: unknown,
+	active_time_float: unknown,
+	inactive_time_float: unknown,
+	fulfilment_penalty_factor: unknown,
+	user_application_unlocks: unknown,
+	consumption_payment_scaling: unknown,
+	allow_hwreset: unknown,
+	ot_probability: unknown,
+	payment_calculation_method: TniUserPaymentCalculationMethod,
+	behaviours: unknown,
 }
 
 interface TniJsonDevice {
@@ -98,11 +223,32 @@ interface TniJsonProposalPack {
 }
 
 interface TniJsonProposal {
-
+	locked: unknown,
+	depends_on: unknown,
+	disallow_proposal_if_depends_submitted: unknown,
+	can_be_proposed_beginning: unknown,
+	force_once_on_day: unknown,
+	name: unknown,
+	cost: unknown,
+	description: string,
+	LogicProgramUnlock: TniJsonProposalLogicProgramUnlock|undefined,
+}
+interface TniJsonProposalLogicProgramUnlock {
+	title: unknown,
+	dialog_text: unknown,
+	logic_program_scn: unknown,
 }
 
 interface TniJsonUseConfig {
-
+	use_value: unknown,
+	use_descriptions: unknown,
+	and_compatibility: unknown,
+	consume_config_blocks: TniJsonUseConfigConsumeBlock[],
+}
+interface TniJsonUseConfigConsumeBlock {
+	anti_match: unknown,
+	or_compatibility: unknown,
+	use_descriptions: unknown,
 }
 
 // Enums based on 0.11.3
