@@ -6,3 +6,5 @@ vendor
 Gemfile.lock
 
 node_modules/
+tni.png
+tni.webp
