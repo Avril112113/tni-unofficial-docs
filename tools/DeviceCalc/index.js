@@ -52,5 +52,6 @@ Promise.all([
     document.getElementById("loading_data_status").textContent = "Failed to retrieve data, check console for details.";
     document.getElementById("loading_data_spinner").style.display = "none";
 });
+console.log("Hell world!");
 export {};
 //# sourceMappingURL=index.js.map

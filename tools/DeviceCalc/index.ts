@@ -1,5 +1,7 @@
 import { TniJsonData } from "data-latest-spec";
 
+import { MyDevice } from "./components/my-device";
+
 
 const domReady = new Promise<void>((resolve) => {
     if (document.readyState !== "loading") {
@@ -57,3 +59,5 @@ Promise.all([
 		document.getElementById("loading_data_status")!.textContent = "Failed to retrieve data, check console for details.";
 		document.getElementById("loading_data_spinner")!.style.display = "none";
 	});
+
+console.log("Hell world!");
