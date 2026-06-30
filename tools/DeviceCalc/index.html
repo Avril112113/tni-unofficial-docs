@@ -11,18 +11,15 @@ permalink: /tools/DeviceCalc/
 		display: none;
 	}
 
-	wa-menu-item[active],
-	wa-dropdown-item[active] {
-		background-color: var(--wa-color-neutral-100, #f4f4f5);
-		color: var(--wa-color-neutral-900, #09090b);
-		outline: none;
+	#devices_list > * {
+		display: block;
+		margin-top: var(--wa-space-s);
 	}
-
-	/* Optional: If you want to show a clear focus ring matching Web Awesome's theme styling */
-	wa-menu-item[active]::part(base) {
-		box-shadow: 0 0 0 3px var(--wa-color-primary-200, rgba(14, 165, 233, 0.4));
+	#devices_list > *:first-child {
+		margin-top: 0px;
 	}
 </style>
+<script type="module" src="components/my-device.js"></script>
 <script type="module" src="index.js"></script>
 
 
@@ -32,7 +29,6 @@ permalink: /tools/DeviceCalc/
 	This will be where you can calculate programs installed on devices. <br>
 	Including the use stack and throughputs (assuming no routing issues).
 </p>
-<h1></h1>
 
 
 <div id="loading_data">
@@ -42,12 +38,21 @@ permalink: /tools/DeviceCalc/
 
 
 <div class="show_data_loaded wa-cloak">
-	<!-- Annoyingly, Web Awesome has the combobox behind a subscription :/ -->
-	<wa-dropdown id="device-select" class="my-combobox populate_dropdown_data_devices">
-		<wa-input slot="trigger" placeholder="Type to search devices..." with-clear>
-			<wa-icon name="server" slot="start"></wa-icon>
-			<wa-icon name="chevron-down" slot="end"></wa-icon>
-		</wa-input>
-	</wa-dropdown>
-	<p id="dbg_selected_device"></p>
+	<wa-button-group label="Alignment" style="padding: var(--wa-content-spacing);">
+		<wa-button appearance="filled-outlined" size="l" variant="success"
+			onclick="document.getElementById('devices_list').appendChild(document.createElement('my-device'))"
+		>
+			Add Device
+		</wa-button>
+		<wa-button id="copy-link-btn" appearance="filled-outlined" size="l">
+			Copy Link
+		</wa-button>
+		<wa-button appearance="outlined" size="l" variant="danger"
+			onclick="window.localStorage.clear(); window.location.reload()"
+		>
+			Clear Save & Refresh
+		</wa-button>
+	</wa-button-group>
+	<div id="devices_list">
+	</div>
 </div>

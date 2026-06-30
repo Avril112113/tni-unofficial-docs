@@ -2,7 +2,10 @@
 	// Visit https://aka.ms/tsconfig to read more about this file
 	"compilerOptions": {
 		"paths": {
-			"data-latest-spec": ["./raw/data-latest-spec.ts"] 
+			"data-latest-spec": ["./raw/data-latest-spec.ts"],
+			"assets/*": ["./assets/*"],
+			"raw/*": ["./raw/*"],
+			"types/*": ["./types/*"]
 		},
 		
 		"rootDir": ".",
@@ -13,6 +16,9 @@
 		"types": [],
 
 		"moduleResolution": "bundler",
+		
+		"experimentalDecorators": true,
+		"useDefineForClassFields": false,
 
 		"sourceMap": true,
 
@@ -25,6 +31,8 @@
 		"noUncheckedSideEffectImports": true,
 		"noUncheckedIndexedAccess": true,
 		"exactOptionalPropertyTypes": true,
+
+		"skipLibCheck": true
 	},
 	"include": [
 		"**/*.ts",

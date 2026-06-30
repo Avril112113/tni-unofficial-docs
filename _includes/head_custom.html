@@ -1,24 +1,32 @@
 {% if page.layout == "page" %}
-    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
-
-	<link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.9.0/styles/webawesome.css" />
-	<script type="module" src="https://ka-f.webawesome.com/webawesome@3.9.0/webawesome.loader.js"></script>
-
-	<script type="module" src="{{ '/assets/js/my-combobox.js' | relative_url }}"></script>
-
     <script type="importmap">
     {
         "imports": {
-            "data-latest-spec": "{{ site.baseurl }}/raw/data-latest-spec.js"
+            "assets/": "{{ site.baseurl }}/assets/",
+            "raw/": "{{ site.baseurl }}/raw/",
+
+            "data-latest-spec": "{{ site.baseurl }}/raw/data-latest-spec.js",
+            
+            "lit": "{{ site.baseurl }}/assets/js/vendor/lit.js",
+            "lit/": "{{ site.baseurl }}/assets/js/vendor/lit/",
+            "@lit/context": "{{ site.baseurl }}/assets/js/vendor/@lit/context.js",
+            "lodash": "{{ site.baseurl }}/assets/js/vendor/lodash.js",
+            "lz-string": "{{ site.baseurl }}/assets/js/vendor/lz-string.js"
         }
     }
     </script>
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/js/vendor/webawesome.css" />
+    <script type="module" src="{{ site.baseurl }}/assets/js/vendor/webawesome.js"></script>
+
+	<!-- <script type="module" src="{{ '/assets/js/my-combobox.js' | relative_url }}"></script> -->
+	<script type="module" src="{{ '/assets/js/components/my-combobox/my-combobox.js' | relative_url }}"></script>
 
 	<script>
         window.SiteConfig = {
             baseUrl: "{{ site.baseurl }}",
             dataLatestUrl: "{{ '/raw/data-latest.min.json' | relative_url }}",
         };
-        document.documentElement.classList.add('wa-dark');
+        document.documentElement.classList.add("wa-dark");
     </script>
 {% endif %}

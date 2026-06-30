@@ -1,3 +1,29 @@
+import LZString from 'lz-string';
+import { dataProvider } from "./data-context.js";
+function serializeState() {
+    const devices_list = document.getElementById("devices_list");
+    const devices_data = [];
+    devices_list.querySelectorAll("my-device").forEach((device) => {
+        devices_data.push(device.serialize());
+    });
+    const state = {
+        "devices": devices_data,
+    };
+    console.debug("serializeState()", state);
+    return state;
+}
+;
+function deserializeState(data) {
+    console.debug("deserializeState", data);
+    const devices_list = document.getElementById("devices_list");
+    devices_list.innerHTML = "";
+    data.devices?.forEach((device_data) => {
+        const device = document.createElement("my-device");
+        devices_list.appendChild(device);
+        device.deserialize(device_data);
+    });
+}
+;
 const domReady = new Promise((resolve) => {
     if (document.readyState !== "loading") {
         resolve();
@@ -23,28 +49,45 @@ Promise.all([
             elem.style.display = "initial";
         }
     }
-    for (let elem of document.getElementsByClassName("populate_options_data_devices")) {
-        for (let device_id in data.devices) {
-            let device = data.devices[device_id];
-            var option_elem = document.createElement("wa-option");
-            option_elem.setAttribute("value", device_id);
-            option_elem.textContent = device.product_name;
-            elem.appendChild(option_elem);
+    dataProvider.setValue(data);
+    const devices_list = document.getElementById("devices_list");
+    // State loading...
+    {
+        const url = new URL(window.location.href);
+        if (url.searchParams.has("state")) {
+            console.log("Loading from url state...");
+            deserializeState(JSON.parse(LZString.decompressFromEncodedURIComponent(url.searchParams.get("state"))));
+            url.searchParams.delete("state");
+            window.history.replaceState(null, "", url);
+        }
+        else {
+            const storage_state = window.localStorage.getItem("tool_DeviceCalc_state");
+            if (storage_state) {
+                console.log("Loading from localStorage state...");
+                deserializeState(JSON.parse(storage_state));
+            }
+            else {
+                console.log("Loading default state... (no state found)");
+                const elem = document.createElement("my-device");
+                devices_list.appendChild(elem);
+                elem.device_name = "MacroHard Boulder SRV";
+            }
         }
     }
-    for (let elem of document.getElementsByClassName("populate_dropdown_data_devices")) {
-        for (let device_id in data.devices) {
-            let device = data.devices[device_id];
-            var dropdown_item_elem = document.createElement("wa-dropdown-item");
-            dropdown_item_elem.setAttribute("value", device_id);
-            dropdown_item_elem.textContent = device.product_name;
-            elem.appendChild(dropdown_item_elem);
-        }
-    }
-    document.getElementById("device-select").addEventListener("my-value-confirm", (e) => {
-        if (e.detail) {
-            document.getElementById("dbg_selected_device").textContent = e.detail;
-        }
+    // State saving...
+    // Give the DOM time to load everything that may have just been loaded...
+    requestAnimationFrame(() => {
+        const saveState = () => {
+            console.log("Saving state to localStorage...");
+            window.localStorage.setItem("tool_DeviceCalc_state", JSON.stringify(serializeState()));
+        };
+        devices_list.addEventListener("my-device-updated", saveState);
+        new MutationObserver(saveState).observe(devices_list, { childList: true });
+    });
+    document.getElementById("copy-link-btn").addEventListener("click", () => {
+        const url = new URL(window.location.href);
+        url.searchParams.set("state", LZString.compressToEncodedURIComponent(JSON.stringify(serializeState())));
+        navigator.clipboard.writeText(url.toString());
     });
 })
     .catch((error) => {
@@ -52,6 +95,4 @@ Promise.all([
     document.getElementById("loading_data_status").textContent = "Failed to retrieve data, check console for details.";
     document.getElementById("loading_data_spinner").style.display = "none";
 });
-console.log("Hell world!");
-export {};
 //# sourceMappingURL=index.js.map
