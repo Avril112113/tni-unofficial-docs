@@ -183,7 +183,7 @@ let MyDevice = class MyDevice extends LitElement {
                         }
                     }}
 							></wa-number-input>
-							<div></div>
+							<!-- <div></div>
 							<wa-number-input
 								label="Bandwidth" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_nbw))}
 								appearance="filled" size="l"
@@ -199,7 +199,7 @@ let MyDevice = class MyDevice extends LitElement {
                             this.requestUpdate();
                         }
                     }}
-							></wa-number-input>
+							></wa-number-input> -->
 						</div>
 						<wa-divider></wa-divider>
 						<div>
