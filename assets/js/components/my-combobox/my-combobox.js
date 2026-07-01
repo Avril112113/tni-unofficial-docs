@@ -15,6 +15,7 @@ let MyCombobox = class MyCombobox extends LitElement {
         this.dropdownRef = createRef();
         this.inputRef = createRef();
         this.value = null;
+        this.size = 'm';
     }
     get dropdown() { return this.dropdownRef.value; }
     get input() { return this.inputRef.value; }
@@ -29,6 +30,7 @@ let MyCombobox = class MyCombobox extends LitElement {
         return html `
 			<wa-dropdown ${ref(this.dropdownRef)}
 				slot="header" class="my-combobox" placement="bottom-start" skidding="32"
+				size=${this.size}
 				@wa-select=${this._onDropdownSelect}
 				@wa-show=${() => this._filterItems(true)}
 				@wa-after-show=${this._scrollToCurrent}
@@ -36,12 +38,12 @@ let MyCombobox = class MyCombobox extends LitElement {
 			>
 				<wa-input ${ref(this.inputRef)}
 					slot="trigger" placeholder="Type to search..." autocomplete="off" with-clear
-					value=${this.value ?? ""}
+					size=${this.size} value=${this.value ?? ""}
 					@input=${() => this._filterItems()}
 					@keydown=${this._onInputKeydown}
 					@click=${this._onInputClear}
 				>
-					<wa-icon name="server" slot="start"></wa-icon>
+					<slot name="start" slot="start"></slot>
 					<wa-icon name="chevron-down" slot="end"></wa-icon>
 				</wa-input>
 				<slot @slotchange="${this._onSlotchange}"></slot>
@@ -199,6 +201,9 @@ let MyCombobox = class MyCombobox extends LitElement {
 __decorate([
     property({ type: String })
 ], MyCombobox.prototype, "value", void 0);
+__decorate([
+    property({ attribute: true, reflect: true })
+], MyCombobox.prototype, "size", void 0);
 __decorate([
     queryAssignedElements({ flatten: true, selector: 'wa-dropdown-item' })
 ], MyCombobox.prototype, "dropdownItems", void 0);

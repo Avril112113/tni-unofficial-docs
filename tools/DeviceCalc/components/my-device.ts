@@ -7,7 +7,7 @@ import { consume } from '@lit/context';
 
 import _ from "lodash";
 
-import { TniJsonData, TniJsonDevice, TniJsonDeviceId } from 'raw/data-format2-spec';
+import { TniJsonData, TniJsonDevice, TniJsonDeviceId, TniJsonProgramId } from 'raw/data-format2-spec';
 
 import { dataContext } from "../data-context.js";
 import { MyCombobox } from 'assets/js/components/my-combobox/my-combobox.js';
@@ -50,20 +50,37 @@ export class MyDevice extends LitElement {
 	// Reset to `null` upon merge.
 	device_data_partial: Partial<TniJsonDevice>|null = null;
 
-	private __dropdown_item_templates: TemplateResult<1>[] = [];
-	private __dropdown_item_templates_data?: any;
-	get _dropdown_item_templates(): TemplateResult<1>[] {
-		if (this.__dropdown_item_templates_data !== this._data) {
-			this.__dropdown_item_templates_data = this._data;
-			this.__dropdown_item_templates = [];
+	private __dropdown_items_devices_templates: TemplateResult<1>[] = [];
+	private _dropdown_items_devices_templates_data?: any;
+	get _dropdown_items_devices_templates(): TemplateResult<1>[] {
+		if (this._dropdown_items_devices_templates_data !== this._data) {
+			this._dropdown_items_devices_templates_data = this._data;
+			this.__dropdown_items_devices_templates = [];
 			if (this._data) {
 				for (const device_id in this._data.devices) {
 					const device = this._data.devices[device_id]!;
-					this.__dropdown_item_templates.push(html`<wa-dropdown-item value=${device_id}>${device.product_name}</wa-dropdown-item>`)
+					this.__dropdown_items_devices_templates.push(html`<wa-dropdown-item value=${device_id}>${device.product_name}</wa-dropdown-item>`)
 				}
 			}
 		}
-		return this.__dropdown_item_templates;
+		return this.__dropdown_items_devices_templates;
+	}
+
+	private __dropdown_items_programs_templates: TemplateResult<1>[] = [];
+	private _dropdown_items_programs_templates_data?: any;
+	get _dropdown_items_programs_templates(): TemplateResult<1>[] {
+		if (this._dropdown_items_programs_templates_data !== this._data) {
+			this._dropdown_items_programs_templates_data = this._data;
+			this.__dropdown_items_programs_templates = [];
+			if (this._data) {
+				for (const program_id in this._data.programs) {
+					const program = this._data.programs[program_id]!;
+					if (program.release_name.length > 0)
+						this.__dropdown_items_programs_templates.push(html`<wa-dropdown-item value=${program_id}>${program.release_name}</wa-dropdown-item>`)
+				}
+			}
+		}
+		return this.__dropdown_items_programs_templates;
 	}
 
 	static override styles = css`
@@ -78,19 +95,30 @@ export class MyDevice extends LitElement {
 			padding: 0;
 			width: max-content;
 		}
+		wa-number-input {
+			width: 100px;
+			--wa-content-spacing: 0;
+		}
 		
 		:host .input-changed::part(input) {
 			color: var(--wa-color-yellow);
 		}
 
-		:host .my-flex {
+		:host .flex-and-gap {
 			display: flex;
 			gap: var(--wa-content-spacing);
 		}
 
-		/* wa-button::part(label) {
-			color: var(--wa-color-red);
-		} */
+		:host table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		:host th, td {
+			padding-right: var(--wa-content-spacing);
+		}
+		:host th:last-child, td:last-child {
+			padding-right: 0;
+		}
 	`;
 
 	override render() {
@@ -107,35 +135,123 @@ export class MyDevice extends LitElement {
 				if (device.logic_controller && device_original.logic_controller) {
 					const logic_controller_original = device_original.logic_controller;
 					const logic_controller = device.logic_controller;
+
+					let programs_cpu = 0;
+					let programs_mem = 0;
+					let programs_size = 0;
+					if (this._data) {
+						logic_controller.installed_programs.forEach((program_id) => {
+							const program = this._data?.programs[program_id];
+							if (program) {
+								programs_cpu += program.cpu_load;
+								programs_mem += program.stack_size;
+								programs_size += program.code_size + program.data_size;
+							}
+						});
+					}
+
 					parts.push(html`
-						<div class="my-flex">
+						<div class="flex-and-gap">
 							<wa-number-input
 								label="CPU" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_cpu))}
-								appearance="filled" size="l" style="max-width: 100px; --wa-content-spacing: 0;"
+								appearance="filled" size="l"
 								class=${logic_controller.installed_cpu == logic_controller_original.installed_cpu ? "" : "input-changed"}
 								@input=${(e: InputEvent) => {
 									logic_controller.installed_cpu = Number.parseInt((e.target as WaNumberInput).value ?? "0");
 									this.requestUpdate();
 								}}
+								@blur=${(e: InputEvent) => {
+									const input = e.target as WaNumberInput;
+									if (!input.value) {
+										logic_controller.installed_cpu = logic_controller_original.installed_cpu;
+										this.requestUpdate();
+									}
+								}}
 							></wa-number-input>
 							<wa-number-input
 								label="Memory" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_mem))}
-								appearance="filled" size="l" style="max-width: 100px; --wa-content-spacing: 0;"
+								appearance="filled" size="l"
 								class=${logic_controller.installed_mem == logic_controller_original.installed_mem ? "" : "input-changed"}
 								@input=${(e: InputEvent) => {
 									logic_controller.installed_mem = Number.parseInt((e.target as WaNumberInput).value ?? "0");
 									this.requestUpdate();
 								}}
+								@blur=${(e: InputEvent) => {
+									const input = e.target as WaNumberInput;
+									if (!input.value) {
+										logic_controller.installed_mem = logic_controller_original.installed_mem;
+										this.requestUpdate();
+									}
+								}}
 							></wa-number-input>
 							<wa-number-input
 								label="Storage" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_sto))}
-								appearance="filled" size="l" style="max-width: 100px; --wa-content-spacing: 0;"
+								appearance="filled" size="l"
 								class=${logic_controller.installed_sto == logic_controller_original.installed_sto ? "" : "input-changed"}
 								@input=${(e: InputEvent) => {
 									logic_controller.installed_sto = Number.parseInt((e.target as WaNumberInput).value ?? "0");
 									this.requestUpdate();
 								}}
+								@blur=${(e: InputEvent) => {
+									const input = e.target as WaNumberInput;
+									if (!input.value) {
+										logic_controller.installed_sto = logic_controller_original.installed_sto;
+										this.requestUpdate();
+									}
+								}}
 							></wa-number-input>
+							<div></div>
+							<wa-number-input
+								label="Bandwidth" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_nbw))}
+								appearance="filled" size="l"
+								class=${logic_controller.installed_nbw == logic_controller_original.installed_nbw ? "" : "input-changed"}
+								@input=${(e: InputEvent) => {
+									logic_controller.installed_nbw = Number.parseInt((e.target as WaNumberInput).value ?? "0");
+									this.requestUpdate();
+								}}
+								@blur=${(e: InputEvent) => {
+									const input = e.target as WaNumberInput;
+									if (!input.value) {
+										logic_controller.installed_nbw = logic_controller_original.installed_nbw;
+										this.requestUpdate();
+									}
+								}}
+							></wa-number-input>
+						</div>
+						<wa-divider></wa-divider>
+						<div>
+							<div style="display: flex; align-items: center;">
+								<div style="display: flex; align-items: center; gap: var(--wa-content-spacing);">
+									<h2 style="margin: 0;">Programs</h2>
+									<p style="margin: 0; color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}">CPU: ${programs_cpu}</p>
+									<p style="margin: 0; color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}">MEM: ${programs_mem}</p>
+									<p style="margin: 0; color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}">Size: ${programs_size}</p>
+								</div>
+								<div style="margin-left: auto;"></div>
+								<wa-button appearance="plain" size="l"
+									@click=${() => {
+										logic_controller.installed_programs.push("");
+										this.requestUpdate();
+									}}
+								>
+									<wa-icon name="plus" variant="solid" label="Reset"
+										style="color: green;"
+									></wa-icon>
+								</wa-button>
+								<wa-button appearance="plain" size="l"
+									@click=${() => {
+										logic_controller.installed_programs = _.cloneDeep(logic_controller_original.installed_programs);
+										this.requestUpdate();
+									}}
+								>
+									<wa-icon name="rotate-left" variant="solid" label="Reset"
+										style="color: ${_.isEqual(logic_controller.installed_programs, logic_controller_original.installed_programs) ? "" : "var(--wa-color-orange)"};"
+									></wa-icon>
+								</wa-button>
+							</div>
+							<table>
+								${this._generateTemplatesForPrograms(logic_controller.installed_programs)}
+							</table>
 						</div>
 					`);
 				}
@@ -147,11 +263,12 @@ export class MyDevice extends LitElement {
 
 		return html`
 			<wa-card class="card-header">
-				<my-combobox ${ref(this.comboboxRef)} slot="header" style="flex-grow: 1;" value=${this.device_name ?? ""}
-					@my-single-match=${(e: CustomEvent<string|null>) => {this.device_id = e.detail}}
-					@my-value-confirm=${(e: CustomEvent<string>) => {this.device_id = e.detail}}
+				<my-combobox ${ref(this.comboboxRef)} size="l" slot="header" style="flex-grow: 1;" value=${this.device_name ?? ""}
+					@my-single-match=${(e: CustomEvent<string|null>) => { this.device_id = e.detail }}
+					@my-value-confirm=${(e: CustomEvent<string>) => { this.device_id = e.detail }}
 				>
-					${cache(this._dropdown_item_templates)}
+					<wa-icon name="server" slot="start"></wa-icon>
+					${cache(this._dropdown_items_devices_templates)}
 				</my-combobox>
 				<wa-button appearance="plain" slot="header-actions"
 					@click=${this._resetDeviceData}
@@ -173,6 +290,40 @@ export class MyDevice extends LitElement {
 				${body}
 			</wa-card>
 		`;
+	}
+
+	private _generateTemplatesForPrograms(programs: TniJsonProgramId[]): TemplateResult[] {
+		if (!this._data) return [];
+
+		const templates: TemplateResult[] = [];
+		for (let i = 0; i < programs.length; i++) {
+			const program_id = programs[i]!;
+			const program = this._data?.programs[program_id];
+			templates.push(html`
+				<tr>
+					<th style="width: 100%;">
+						<my-combobox slot="header" style="flex-grow: 1;" value=${program?.release_name ?? ""}
+							@my-single-match=${(e: CustomEvent<string|null>) => { programs[i] = e.detail ?? ""; this.requestUpdate(); }}
+							@my-value-confirm=${(e: CustomEvent<string>) => { programs[i] = e.detail ?? ""; this.requestUpdate(); }}
+						>
+							<wa-icon name="code" slot="start"></wa-icon>
+							${cache(this._dropdown_items_programs_templates)}
+						</my-combobox>
+					</th>
+					<td style="white-space: nowrap; text-align: center;"><b>CPU:</b><br>${String(program?.cpu_load ?? "?")}</td>
+					<td style="white-space: nowrap; text-align: center;"><b>Mem:</b><br>${String(program?.stack_size ?? "?")}</td>
+					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : `${program.code_size}${program.data_size ? `+${program.data_size}=${program.code_size+program.data_size}` : ""}`}</td>
+					<td>
+						<wa-button appearance="plain"
+							@click=${() => { console.log(i); programs.splice(i, 1); this.requestUpdate(); }}
+						>
+							<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
+						</wa-button>
+					</td>
+				</tr>
+			`);
+		}
+		return templates;
 	}
 
 	override willUpdate(changedProperties: Map<PropertyKey, unknown>) {

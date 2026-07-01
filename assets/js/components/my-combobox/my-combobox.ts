@@ -22,6 +22,9 @@ export class MyCombobox extends LitElement {
 	@property({ type: String })
 	value: string|null = null;
 
+	@property({ attribute: true, reflect: true })
+	size: 'xs' | 's' | 'm' | 'l' | 'xl' | 'small' | 'medium' | 'large' = 'm';
+
 	@queryAssignedElements({ flatten: true, selector: 'wa-dropdown-item' })
 	dropdownItems!: WaDropdownItem[];
 
@@ -37,6 +40,7 @@ export class MyCombobox extends LitElement {
 		return html`
 			<wa-dropdown ${ref(this.dropdownRef)}
 				slot="header" class="my-combobox" placement="bottom-start" skidding="32"
+				size=${this.size}
 				@wa-select=${this._onDropdownSelect}
 				@wa-show=${() => this._filterItems(true)}
 				@wa-after-show=${this._scrollToCurrent}
@@ -44,12 +48,12 @@ export class MyCombobox extends LitElement {
 			>
 				<wa-input ${ref(this.inputRef)}
 					slot="trigger" placeholder="Type to search..." autocomplete="off" with-clear
-					value=${this.value ?? ""}
+					size=${this.size} value=${this.value ?? ""}
 					@input=${() => this._filterItems()}
 					@keydown=${this._onInputKeydown}
 					@click=${this._onInputClear}
 				>
-					<wa-icon name="server" slot="start"></wa-icon>
+					<slot name="start" slot="start"></slot>
 					<wa-icon name="chevron-down" slot="end"></wa-icon>
 				</wa-input>
 				<slot @slotchange="${this._onSlotchange}"></slot>
