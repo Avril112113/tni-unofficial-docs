@@ -24,6 +24,12 @@ function getDeepDiff<T extends Record<string, any>>(object: T, base: Record<stri
 	});
 }
 
+// Converts TNI BBCode into a html template.
+function _renderBBCode(description: string): TemplateResult {
+	// TODO: Actually parse the BBCode, mainly just `[color=...][/color]`
+	return html`${description.split("\n").map((s) => html`${s}<br>`)}`
+}
+
 @customElement('my-device')
 export class MyDevice extends LitElement {
 	comboboxRef: Ref<MyCombobox> = createRef();
@@ -313,7 +319,13 @@ export class MyDevice extends LitElement {
 					<td style="white-space: nowrap; text-align: center;"><b>CPU:</b><br>${String(program?.cpu_load ?? "?")}</td>
 					<td style="white-space: nowrap; text-align: center;"><b>Mem:</b><br>${String(program?.stack_size ?? "?")}</td>
 					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : `${program.code_size}${program.data_size ? `+${program.data_size}=${program.code_size+program.data_size}` : ""}`}</td>
-					<td>
+					<td style="white-space: nowrap;">
+						<wa-popover for="my-device-program-info-${i}">
+							${_renderBBCode(program?.rendered_description ?? "Invalid program...")}
+						</wa-popover>
+						<wa-button appearance="plain" id="my-device-program-info-${i}">
+							<wa-icon name="circle-info" variant="solid" label="Info"></wa-icon>
+						</wa-button>
 						<wa-button appearance="plain"
 							@click=${() => { programs.splice(i, 1); this.requestUpdate(); }}
 						>
