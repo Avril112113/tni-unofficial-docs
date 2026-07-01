@@ -9,8 +9,18 @@ export type TniJsonProposalName = string;
 
 type integer = number;
 
+export const SPEC_FORMAT_VERSION = 2;
+
+
 export interface TniJsonData {
 	game_version: string,
+	/** The revision count of this data for this particular game version. */
+	revision: integer,
+	/** The format version of the data. \
+	 * The following fields will never change name or type; `game_version`, `revision` and `format`
+	 * @see SPEC_FORMAT_VERSION */
+	format: integer,
+
 	enums: TniJsonDataEnums,
 	programs: Record<TniJsonProgramId, TniJsonProgram>,
 	users: Record<TniJsonUserId, TniJsonUser>,

@@ -1,5 +1,5 @@
 import { ContextProvider, createContext } from "@lit/context";
-import { TniJsonData } from "data-latest-spec";
+import { TniJsonData } from "raw/data-format2-spec";
 
 export const dataContext = createContext<TniJsonData|null>("tni-json-data");
 

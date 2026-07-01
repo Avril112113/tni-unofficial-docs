@@ -7,7 +7,7 @@ import { consume } from '@lit/context';
 
 import _ from "lodash";
 
-import { TniJsonData, TniJsonDevice, TniJsonDeviceId } from 'data-latest-spec';
+import { TniJsonData, TniJsonDevice, TniJsonDeviceId } from 'raw/data-format2-spec';
 
 import { dataContext } from "../data-context.js";
 import { MyCombobox } from 'assets/js/components/my-combobox/my-combobox.js';

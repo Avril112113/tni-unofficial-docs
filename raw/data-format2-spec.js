@@ -1,3 +1,4 @@
+export const SPEC_FORMAT_VERSION = 2;
 // Enums based on 0.11.3
 export var TniProgramControllerModifiers;
 (function (TniProgramControllerModifiers) {
@@ -95,4 +96,4 @@ export var TniUserPaymentCalculationMethod;
     TniUserPaymentCalculationMethod["USAGE_FULFILMENT_TODAY"] = "USAGE_FULFILMENT_TODAY";
     TniUserPaymentCalculationMethod["LOWEST_SATIETY_TODAY"] = "LOWEST_SATIETY_TODAY";
 })(TniUserPaymentCalculationMethod || (TniUserPaymentCalculationMethod = {}));
-//# sourceMappingURL=data-latest-spec.js.map
+//# sourceMappingURL=data-format2-spec.js.map

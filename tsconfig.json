@@ -2,7 +2,6 @@
 	// Visit https://aka.ms/tsconfig to read more about this file
 	"compilerOptions": {
 		"paths": {
-			"data-latest-spec": ["./raw/data-latest-spec.ts"],
 			"assets/*": ["./assets/*"],
 			"raw/*": ["./raw/*"],
 			"types/*": ["./types/*"]
