@@ -27,3 +27,7 @@ Any change to the game version may bring unexpected breaking changes, as the gam
 		{% endif %}
 	{% endfor %}
 </ul>
+
+# Format History
+1. Initial format...
+2. Added theme configs. *(non-breaking)*
