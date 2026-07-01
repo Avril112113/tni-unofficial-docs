@@ -87,7 +87,7 @@ Promise.all([
 		// Give the DOM time to load everything that may have just been loaded...
 		requestAnimationFrame(() => {
 			const saveState = () => {
-				console.log("Saving state to localStorage...");
+				console.debug("Saving state to localStorage...");
 				window.localStorage.setItem("tool_DeviceCalc_state", JSON.stringify(serializeState()));
 			};
 			devices_list.addEventListener("my-device-updated", saveState);

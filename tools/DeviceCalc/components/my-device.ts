@@ -271,7 +271,7 @@ export class MyDevice extends LitElement {
 					${cache(this._dropdown_items_devices_templates)}
 				</my-combobox>
 				<wa-button appearance="plain" slot="header-actions"
-					@click=${this._resetDeviceData}
+					@click=${() => this._resetDeviceData(null)}
 				>
 					<wa-icon name="rotate-left" variant="solid" label="Reset"
 						style="color: ${this.device_data_is_original ? "" : "var(--wa-color-orange)"};"
@@ -315,7 +315,7 @@ export class MyDevice extends LitElement {
 					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : `${program.code_size}${program.data_size ? `+${program.data_size}=${program.code_size+program.data_size}` : ""}`}</td>
 					<td>
 						<wa-button appearance="plain"
-							@click=${() => { console.log(i); programs.splice(i, 1); this.requestUpdate(); }}
+							@click=${() => { programs.splice(i, 1); this.requestUpdate(); }}
 						>
 							<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
 						</wa-button>
@@ -329,6 +329,7 @@ export class MyDevice extends LitElement {
 	override willUpdate(changedProperties: Map<PropertyKey, unknown>) {
 		super.willUpdate(changedProperties);
 
+		const old_device_id = changedProperties.get("device_id") as TniJsonDeviceId ?? this.device_id;
 		if ((!this.device_id && this.device_name) || (changedProperties.has('device_name') && !changedProperties.has('device_id'))) {
 			this.device_id = null;
 			if (this._data) {
@@ -338,11 +339,11 @@ export class MyDevice extends LitElement {
 				}
 			}
 			if (!changedProperties.has("device_data") || !this.device_data)
-				this._resetDeviceData();
+				this._resetDeviceData(old_device_id);
 		} else if ((this.device_id && !this.device_name) || changedProperties.has('device_id')) {
 			this.device_name = this.device_id ? this._data?.devices[this.device_id]?.product_name ?? null : null;
 			if (!changedProperties.has("device_data") || !this.device_data)
-				this._resetDeviceData();
+				this._resetDeviceData(old_device_id);
 		}
 	}
 
@@ -352,13 +353,25 @@ export class MyDevice extends LitElement {
 		this.dispatchEvent(new Event('my-device-updated', {bubbles: true, composed: true}));
 	}
 
-	private _resetDeviceData() {
-		const device_data = this.device_data_original;
-		if (device_data) {
-			this.device_data = structuredClone(device_data);
+	// `previousDeviceId` should be null to enforce a full reset.
+	private _resetDeviceData(previousDeviceId: string|null) {
+		const data_original_prev = this._data && previousDeviceId ? this._data.devices[previousDeviceId] ?? null : null;
+		const data_original = this.device_data_original;
+		if (data_original) {
+			const old_data = this.device_data;
+			this.device_data = structuredClone(data_original);
+
 			if (this.device_data_partial) {
 				_.merge(this.device_data, this.device_data_partial);
 				this.device_data_partial = null;
+			}
+
+			if (previousDeviceId && this.device_data && old_data && data_original_prev) {
+				if (this.device_data.logic_controller && old_data.logic_controller && data_original_prev.logic_controller) {
+					if (!_.isEqual(old_data.logic_controller.installed_programs, data_original_prev.logic_controller.installed_programs)) {
+						this.device_data.logic_controller.installed_programs = old_data.logic_controller.installed_programs;
+					}
+				}
 			}
 		} else {
 			this.device_data = null;
