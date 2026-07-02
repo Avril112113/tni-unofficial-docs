@@ -32,11 +32,13 @@ function _renderBBCode(description: string): TemplateResult[] {
 	const re = /(\n)|\[(\w+)=(.*?)\]|\[\/(\w+)\]/g;
 	const stack: TemplateResult[][] = [[]];
 	const tag_stack = [];
+	let lastEndPos = 0;
 	while (re.lastIndex < description.length) {
 		const startPos = re.lastIndex;
 		const match = re.exec(description);
 		const endPos = re.lastIndex;
 		if (!match) break;
+		lastEndPos = endPos;
 		const matchStartPos = endPos - match[0].length;
 		if (startPos < matchStartPos) {
 			stack[stack.length-1]!.push(html`${description.slice(startPos, matchStartPos)}`);
@@ -66,6 +68,9 @@ function _renderBBCode(description: string): TemplateResult[] {
 					break;
 			}
 		}
+	}
+	if (lastEndPos < description.length) {
+		stack[stack.length-1]!.push(html`${description.slice(lastEndPos, description.length)}`);
 	}
 	return stack[0]!;
 }
