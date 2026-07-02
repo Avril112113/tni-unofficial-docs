@@ -11,6 +11,7 @@ import { createRef, ref } from 'lit/directives/ref.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
 import _ from "lodash";
+import { TniProduceLimitType } from 'raw/data-format2-spec.js';
 import { dataContext } from "../data-context.js";
 function getDeepDiff(object, base) {
     return _.transform(object, (result, value, key) => {
@@ -138,31 +139,33 @@ let MyDevice = class MyDevice extends LitElement {
 			gap: calc(var(--wa-content-spacing) / 2);
 		}
 
-		:host table {
+		:host table.tbl-programs {
 			border-collapse: collapse;
 			width: 100%;
 		}
-		:host th, td {
+		:host table.tbl-programs th,
+		:host table.tbl-programs td {
 			padding-right: var(--wa-content-spacing);
 		}
-		:host th:last-child, td:last-child {
+		:host table.tbl-programs th:last-child,
+		:host table.tbl-programs td:last-child {
 			padding-right: 0;
 		}
 
 		@media (max-width: 725px) {
-			:host tr {
+			:host table.tbl-programs tr {
 				display: grid;
     			grid-template-columns: max-content max-content max-content 1fr;
 				width: 100%;
 			}
-			:host th {
+			:host table.tbl-programs th {
 				grid-column: 1 / -1; 
 				font-weight: bold;
 			}
-			:host td {
+			:host table.tbl-programs td {
 				width: auto; 
 			}
-			:host td:last-child {
+			:host table.tbl-programs td:last-child {
 				margin-left: auto;
 			}
 		}
@@ -296,8 +299,18 @@ let MyDevice = class MyDevice extends LitElement {
 									</div>
 								</div>
 							</div>
-							<table>
+							<table class="tbl-programs">
 								${this._generateTemplatesForPrograms(logic_controller.installed_programs)}
+							</table>
+						</div>
+						<wa-divider></wa-divider>
+						<div>
+							<div style="display: flex; align-items: center; gap: var(--wa-content-spacing);">
+								<h2 style="margin: 0;">Use Stack</h2>
+								<i><code>[PRODUCTION/LIMIT] PRODUCE_TYPES<br></code></i>
+							</div>
+							<table style="margin-left: var(--wa-content-spacing); border-collapse: separate; border-spacing: 10px 0;">
+								${this._generateTemplatesForUseStack(logic_controller.installed_programs, programs_mem)}
 							</table>
 						</div>
 					`);
@@ -348,7 +361,7 @@ let MyDevice = class MyDevice extends LitElement {
         const templates = [];
         for (let i = 0; i < programs.length; i++) {
             const program_id = programs[i];
-            const program = this._data?.programs[program_id];
+            const program = this._data.programs[program_id];
             templates.push(html `
 				<tr>
 					<th style="width: 100%;">
@@ -378,6 +391,67 @@ let MyDevice = class MyDevice extends LitElement {
 					</td>
 				</tr>
 			`);
+        }
+        return templates;
+    }
+    _generateTemplatesForUseStack(programs, used_mem) {
+        if (!this._data)
+            return [];
+        const installed_cpu = this.device_data?.logic_controller?.installed_cpu ?? 0;
+        const installed_mem = this.device_data?.logic_controller?.installed_mem ?? 0;
+        const installed_sto = this.device_data?.logic_controller?.installed_sto ?? 0;
+        const free_mem = installed_mem - used_mem;
+        const templates = [];
+        for (let i = 0; i < programs.length; i++) {
+            const program_id = programs[i];
+            const program = this._data.programs[program_id];
+            if (!program)
+                continue;
+            let data = null;
+            if (program.AlwaysProduce) {
+                data = program.AlwaysProduce;
+            }
+            if (program.TraversalConsume) {
+                data = program.TraversalConsume;
+            }
+            if (data) {
+                const use_config = this._data.use_configs[data.produce_use_config];
+                if (!use_config) {
+                    console.warn("Encountered missing use_config:", data.produce_use_config);
+                    continue;
+                }
+                const produce = data.produce_factor;
+                let limit;
+                switch (data.produce_limit_type) {
+                    case TniProduceLimitType.LIMITED_BY_LIMIT_FACTOR:
+                        limit = String(data.limit_factor);
+                        break;
+                    case TniProduceLimitType.LIMITED_BY_PRODUCE_FACTOR:
+                        limit = String(data.produce_factor);
+                        break;
+                    case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_CPU:
+                        limit = `${installed_cpu} (cpu)`;
+                        break;
+                    case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_MEM:
+                        limit = `${installed_mem} (mem)`;
+                        break;
+                    case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_STORAGE:
+                        limit = `${installed_sto} (sto)`;
+                        break;
+                    case TniProduceLimitType.LIMITED_BY_TARGET_FREE_MEMORY:
+                        limit = `${free_mem} (free mem)`;
+                        break;
+                    default:
+                        limit = "?";
+                        break;
+                }
+                templates.push(html `
+					<tr>
+						<td style="float: right;"><b><code>[${produce}/${limit}]</code></b></td>
+						<td><b><code>${use_config.use_value}</code></b></td>
+					</tr>
+				`);
+            }
         }
         return templates;
     }
