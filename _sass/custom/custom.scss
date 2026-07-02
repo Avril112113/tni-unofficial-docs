@@ -9,20 +9,6 @@ h2, a {
 	width: fit-content;
 }
 
-// https://github.com/just-the-docs/just-the-docs/issues/1215
-.side-bar {
-	@include mq(lg) {
-		width: calc((100% - 76.5rem) / 2 + 16.5rem);
-        min-width: 16.5rem;
-	}
-}
-.side-bar + .main {
-	@include mq(lg) {
-		margin-left: Max(16.5rem, calc((100% - 76.5rem) / 2 + 16.5rem));
-		max-width: 60rem;
-	}
-}
-
 .nav-list-item {
     > .nav-list {
         display: block !important;

@@ -23,8 +23,48 @@ function getDeepDiff(object, base) {
 }
 // Converts TNI BBCode into a html template.
 function _renderBBCode(description) {
-    // TODO: Actually parse the BBCode, mainly just `[color=...][/color]`
-    return html `${description.split("\n").map((s) => html `${s}<br>`)}`;
+    const re = /(\n)|\[(\w+)=(.*?)\]|\[\/(\w+)\]/g;
+    const stack = [[]];
+    const tag_stack = [];
+    while (re.lastIndex < description.length) {
+        const startPos = re.lastIndex;
+        const match = re.exec(description);
+        const endPos = re.lastIndex;
+        if (!match)
+            break;
+        const matchStartPos = endPos - match[0].length;
+        if (startPos < matchStartPos) {
+            stack[stack.length - 1].push(html `${description.slice(startPos, matchStartPos)}`);
+        }
+        if (match[0] == "\n") {
+            stack[stack.length - 1].push(html `<br>`);
+        }
+        else if (match[2]) {
+            const value = match[3];
+            switch (match[2]) {
+                case "color":
+                    stack.push([]);
+                    tag_stack.push([match[2], value]);
+                    break;
+                default:
+                    break;
+            }
+        }
+        else if (match[4]) {
+            if (tag_stack.length <= 0 && stack.length >= 2)
+                continue;
+            const elems = stack.pop();
+            const [tag, value] = tag_stack.pop();
+            switch (tag) {
+                case "color":
+                    stack[stack.length - 1].push(html `<span style="color: ${value};">${elems}</span>`);
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    return stack[0];
 }
 let MyDevice = class MyDevice extends LitElement {
     constructor() {
@@ -95,7 +135,7 @@ let MyDevice = class MyDevice extends LitElement {
 
 		:host .flex-and-gap {
 			display: flex;
-			gap: var(--wa-content-spacing);
+			gap: calc(var(--wa-content-spacing) / 2);
 		}
 
 		:host table {
@@ -107,6 +147,24 @@ let MyDevice = class MyDevice extends LitElement {
 		}
 		:host th:last-child, td:last-child {
 			padding-right: 0;
+		}
+
+		@media (max-width: 725px) {
+			:host tr {
+				display: grid;
+    			grid-template-columns: max-content max-content max-content 1fr;
+				width: 100%;
+			}
+			:host th {
+				grid-column: 1 / -1; 
+				font-weight: bold;
+			}
+			:host td {
+				width: auto; 
+			}
+			:host td:last-child {
+				margin-left: auto;
+			}
 		}
 	`; }
     render() {
@@ -142,7 +200,7 @@ let MyDevice = class MyDevice extends LitElement {
 						<div class="flex-and-gap">
 							<wa-number-input
 								label="CPU" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_cpu))}
-								appearance="filled" size="l"
+								appearance="filled" size="m"
 								class=${logic_controller.installed_cpu == logic_controller_original.installed_cpu ? "" : "input-changed"}
 								@input=${(e) => {
                         logic_controller.installed_cpu = Number.parseInt(e.target.value ?? "0");
@@ -158,7 +216,7 @@ let MyDevice = class MyDevice extends LitElement {
 							></wa-number-input>
 							<wa-number-input
 								label="Memory" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_mem))}
-								appearance="filled" size="l"
+								appearance="filled" size="m"
 								class=${logic_controller.installed_mem == logic_controller_original.installed_mem ? "" : "input-changed"}
 								@input=${(e) => {
                         logic_controller.installed_mem = Number.parseInt(e.target.value ?? "0");
@@ -174,7 +232,7 @@ let MyDevice = class MyDevice extends LitElement {
 							></wa-number-input>
 							<wa-number-input
 								label="Storage" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_sto))}
-								appearance="filled" size="l"
+								appearance="filled" size="m"
 								class=${logic_controller.installed_sto == logic_controller_original.installed_sto ? "" : "input-changed"}
 								@input=${(e) => {
                         logic_controller.installed_sto = Number.parseInt(e.target.value ?? "0");
@@ -191,7 +249,7 @@ let MyDevice = class MyDevice extends LitElement {
 							<!-- <div></div>
 							<wa-number-input
 								label="Bandwidth" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_nbw))}
-								appearance="filled" size="l"
+								appearance="filled" size="m"
 								class=${logic_controller.installed_nbw == logic_controller_original.installed_nbw ? "" : "input-changed"}
 								@input=${(e) => {
                         logic_controller.installed_nbw = Number.parseInt(e.target.value ?? "0");
@@ -208,34 +266,33 @@ let MyDevice = class MyDevice extends LitElement {
 						</div>
 						<wa-divider></wa-divider>
 						<div>
-							<div style="display: flex; align-items: center;">
-								<div style="display: flex; align-items: center; gap: var(--wa-content-spacing);">
-									<h2 style="margin: 0;">Programs</h2>
-									<p style="margin: 0; color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}">CPU: ${programs_cpu}</p>
-									<p style="margin: 0; color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}">MEM: ${programs_mem}</p>
-									<p style="margin: 0; color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}">Size: ${programs_size}</p>
-								</div>
-								<div style="margin-left: auto;"></div>
-								<wa-button appearance="plain" size="l"
-									@click=${() => {
+							<div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--wa-content-spacing);">
+								<h2 style="margin: 0;">Programs</h2>
+								<div style="flex-grow: 1; margin: 0; text-align: center; display: flex; align-items: center; gap: var(--wa-content-spacing);">
+									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}">CPU: ${programs_cpu}</p>
+									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}">MEM: ${programs_mem}</p>
+									<p style="color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}">Size: ${programs_size}</p>
+									<wa-button appearance="plain" size="l" style="margin-left: auto;"
+										@click=${() => {
                         logic_controller.installed_programs.push("");
                         this.requestUpdate();
                     }}
-								>
-									<wa-icon name="plus" variant="solid" label="Reset"
-										style="color: green;"
-									></wa-icon>
-								</wa-button>
-								<wa-button appearance="plain" size="l"
-									@click=${() => {
+									>
+										<wa-icon name="plus" variant="solid" label="Reset"
+											style="color: green;"
+										></wa-icon>
+									</wa-button>
+									<wa-button appearance="plain" size="l"
+										@click=${() => {
                         logic_controller.installed_programs = _.cloneDeep(logic_controller_original.installed_programs);
                         this.requestUpdate();
                     }}
-								>
-									<wa-icon name="rotate-left" variant="solid" label="Reset"
-										style="color: ${_.isEqual(logic_controller.installed_programs, logic_controller_original.installed_programs) ? "" : "var(--wa-color-orange)"};"
-									></wa-icon>
-								</wa-button>
+									>
+										<wa-icon name="rotate-left" variant="solid" label="Reset"
+											style="color: ${_.isEqual(logic_controller.installed_programs, logic_controller_original.installed_programs) ? "" : "var(--wa-color-orange)"};"
+										></wa-icon>
+									</wa-button>
+								</div>
 							</div>
 							<table>
 								${this._generateTemplatesForPrograms(logic_controller.installed_programs)}
@@ -251,30 +308,34 @@ let MyDevice = class MyDevice extends LitElement {
         }
         return html `
 			<wa-card class="card-header">
-				<my-combobox ${ref(this.comboboxRef)} size="l" slot="header" style="flex-grow: 1;" value=${this.device_name ?? ""}
-					@my-single-match=${(e) => { this.device_id = e.detail; }}
-					@my-value-confirm=${(e) => { this.device_id = e.detail; }}
-				>
-					<wa-icon name="server" slot="start"></wa-icon>
-					${cache(this._dropdown_items_devices_templates)}
-				</my-combobox>
-				<wa-button appearance="plain" slot="header-actions"
-					@click=${() => this._resetDeviceData(null)}
-				>
-					<wa-icon name="rotate-left" variant="solid" label="Reset"
-						style="color: ${this.device_data_is_original ? "" : "var(--wa-color-orange)"};"
-					></wa-icon>
-				</wa-button>
-				<wa-button appearance="plain" slot="header-actions"
-					@click=${() => this.parentElement?.appendChild(this._cloneDevice())}
-				>
-					<wa-icon name="clone" variant="solid" label="Clone"></wa-icon>
-				</wa-button>
-				<wa-button appearance="plain" slot="header-actions"
-					@click=${this.remove}
-				>
-					<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
-				</wa-button>
+				<div slot="header" style="display: flex; align-items: center; flex-wrap: wrap; gap: var(--wa-content-spacing);">
+					<my-combobox ${ref(this.comboboxRef)} size="l" style="flex-grow: 1;" value=${this.device_name ?? ""}
+						@my-single-match=${(e) => { this.device_id = e.detail; }}
+						@my-value-confirm=${(e) => { this.device_id = e.detail; }}
+					>
+						<wa-icon name="server" slot="start"></wa-icon>
+						${cache(this._dropdown_items_devices_templates)}
+					</my-combobox>
+					<div style="margin-left: auto;">
+						<wa-button appearance="plain"
+							@click=${() => this._resetDeviceData(null)}
+						>
+							<wa-icon name="rotate-left" variant="solid" label="Reset"
+								style="color: ${this.device_data_is_original ? "" : "var(--wa-color-orange)"};"
+							></wa-icon>
+						</wa-button>
+						<wa-button appearance="plain"
+							@click=${() => this.parentElement?.appendChild(this._cloneDevice())}
+						>
+							<wa-icon name="clone" variant="solid" label="Clone"></wa-icon>
+						</wa-button>
+						<wa-button appearance="plain"
+							@click=${this.remove}
+						>
+							<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
+						</wa-button>
+					</div>
+				</div>
 				${body}
 			</wa-card>
 		`;
@@ -301,8 +362,8 @@ let MyDevice = class MyDevice extends LitElement {
 					<td style="white-space: nowrap; text-align: center;"><b>Mem:</b><br>${String(program?.stack_size ?? "?")}</td>
 					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : `${program.code_size}${program.data_size ? `+${program.data_size}=${program.code_size + program.data_size}` : ""}`}</td>
 					<td style="white-space: nowrap;">
-						<wa-popover for="my-device-program-info-${i}">
-							${_renderBBCode(program?.rendered_description ?? "Invalid program...")}
+						<wa-popover for="my-device-program-info-${i}" style="--max-width: 80ww;">
+							<p>${_renderBBCode(program?.rendered_description ?? "Invalid program...")}</p>
 						</wa-popover>
 						<wa-button appearance="plain" id="my-device-program-info-${i}">
 							<wa-icon name="circle-info" variant="solid" label="Info"></wa-icon>

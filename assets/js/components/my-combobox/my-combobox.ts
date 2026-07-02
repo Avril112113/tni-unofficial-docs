@@ -29,6 +29,11 @@ export class MyCombobox extends LitElement {
 	dropdownItems!: WaDropdownItem[];
 
 	static override styles = css`
+		:host {
+			max-width: 100%;
+			min-width: 0;
+		}
+
 		::slotted(wa-dropdown-item[active]) {
 			background-color: var(--wa-color-surface-default);
 			box-shadow: 0 0 0 3px var(--wa-color-focus);
