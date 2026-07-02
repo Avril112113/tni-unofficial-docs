@@ -287,26 +287,28 @@ export class MyDevice extends LitElement {
 									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}">CPU: ${programs_cpu}</p>
 									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}">MEM: ${programs_mem}</p>
 									<p style="color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}">Size: ${programs_size}</p>
-									<wa-button appearance="plain" size="l" style="margin-left: auto;"
-										@click=${() => {
-											logic_controller.installed_programs.push("");
-											this.requestUpdate();
-										}}
-									>
-										<wa-icon name="plus" variant="solid" label="Reset"
-											style="color: green;"
-										></wa-icon>
-									</wa-button>
-									<wa-button appearance="plain" size="l"
-										@click=${() => {
-											logic_controller.installed_programs = _.cloneDeep(logic_controller_original.installed_programs);
-											this.requestUpdate();
-										}}
-									>
-										<wa-icon name="rotate-left" variant="solid" label="Reset"
-											style="color: ${_.isEqual(logic_controller.installed_programs, logic_controller_original.installed_programs) ? "" : "var(--wa-color-orange)"};"
-										></wa-icon>
-									</wa-button>
+									<div style="margin-left: auto;">
+										<wa-button appearance="plain" size="l"
+											@click=${() => {
+												logic_controller.installed_programs.push("");
+												this.requestUpdate();
+											}}
+										>
+											<wa-icon name="plus" variant="solid" label="Reset"
+												style="color: green;"
+											></wa-icon>
+										</wa-button>
+										<wa-button appearance="plain" size="l"
+											@click=${() => {
+												logic_controller.installed_programs = _.cloneDeep(logic_controller_original.installed_programs);
+												this.requestUpdate();
+											}}
+										>
+											<wa-icon name="rotate-left" variant="solid" label="Reset"
+												style="color: ${_.isEqual(logic_controller.installed_programs, logic_controller_original.installed_programs) ? "" : "var(--wa-color-orange)"};"
+											></wa-icon>
+										</wa-button>
+									</div>
 								</div>
 							</div>
 							<table>
