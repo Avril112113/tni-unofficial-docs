@@ -296,7 +296,7 @@ let MyDevice = class MyDevice extends LitElement {
 						<div>
 							<div class="flex-gap" style="align-items: center;">
 								<h2 style="margin: 0;">Use Stack</h2>
-								<code style="white-space: nowrap;"><i>[PRODUCTION/LIMIT] PRODUCE_TYPES</i></code>
+								<code style="white-space: nowrap;"><i>[PRODUCTION/LIMIT] or [-CONSUME]</i></code>
 							</div>
 							<table style="margin-left: var(--wa-content-spacing); border-collapse: separate; border-spacing: 10px 0;">
 								${this._generateTemplatesForUseStack(logic_controller.installed_programs, programs_mem)}
@@ -449,55 +449,67 @@ let MyDevice = class MyDevice extends LitElement {
         const installed_sto = this.device_data?.logic_controller?.installed_sto ?? 0;
         const free_mem = installed_mem - used_mem;
         const templates = [];
+        const addConsumeTemplate = (use_config_id, consume) => {
+            const use_config = this._data.use_configs[use_config_id];
+            if (!use_config) {
+                console.warn("Encountered missing use_config:", use_config_id);
+                return;
+            }
+            templates.push(html `
+				<tr style="color: var(--wa-color-red-80);">
+					<td style="float: right;"><b><code>[${-consume}]</code></b></td>
+					<td><b><code>${use_config.use_value}</code></b></td>
+				</tr>
+			`);
+        };
+        const addProduceTemplate = (use_config_id, produce, limit_type, limit_factor, produce_factor) => {
+            const use_config = this._data.use_configs[use_config_id];
+            if (!use_config) {
+                console.warn("Encountered missing use_config:", use_config_id);
+                return;
+            }
+            let limit;
+            switch (limit_type) {
+                case TniProduceLimitType.LIMITED_BY_LIMIT_FACTOR:
+                    limit = String(limit_factor);
+                    break;
+                case TniProduceLimitType.LIMITED_BY_PRODUCE_FACTOR:
+                    limit = String(produce_factor);
+                    break;
+                case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_CPU:
+                    limit = `${installed_cpu} (cpu)`;
+                    break;
+                case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_MEM:
+                    limit = `${installed_mem} (mem)`;
+                    break;
+                case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_STORAGE:
+                    limit = `${installed_sto} (sto)`;
+                    break;
+                case TniProduceLimitType.LIMITED_BY_TARGET_FREE_MEMORY:
+                    limit = `${free_mem} (free mem)`;
+                    break;
+                default:
+                    limit = "?";
+                    break;
+            }
+            templates.push(html `
+				<tr style="color: var(--wa-color-green-95);">
+					<td style="float: right;"><b><code>[${produce}/${limit}]</code></b></td>
+					<td><b><code>${use_config.use_value}</code></b></td>
+				</tr>
+			`);
+        };
         for (let i = 0; i < programs.length; i++) {
             const program_id = programs[i];
             const program = this._data.programs[program_id];
             if (!program)
                 continue;
-            let data = null;
             if (program.AlwaysProduce) {
-                data = program.AlwaysProduce;
+                addProduceTemplate(program.AlwaysProduce.produce_use_config, program.AlwaysProduce.produce_factor, program.AlwaysProduce.produce_limit_type, program.AlwaysProduce.limit_factor, program.AlwaysProduce.produce_factor);
             }
             if (program.TraversalConsume) {
-                data = program.TraversalConsume;
-            }
-            if (data) {
-                const use_config = this._data.use_configs[data.produce_use_config];
-                if (!use_config) {
-                    console.warn("Encountered missing use_config:", data.produce_use_config);
-                    continue;
-                }
-                const produce = data.produce_factor;
-                let limit;
-                switch (data.produce_limit_type) {
-                    case TniProduceLimitType.LIMITED_BY_LIMIT_FACTOR:
-                        limit = String(data.limit_factor);
-                        break;
-                    case TniProduceLimitType.LIMITED_BY_PRODUCE_FACTOR:
-                        limit = String(data.produce_factor);
-                        break;
-                    case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_CPU:
-                        limit = `${installed_cpu} (cpu)`;
-                        break;
-                    case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_MEM:
-                        limit = `${installed_mem} (mem)`;
-                        break;
-                    case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_STORAGE:
-                        limit = `${installed_sto} (sto)`;
-                        break;
-                    case TniProduceLimitType.LIMITED_BY_TARGET_FREE_MEMORY:
-                        limit = `${free_mem} (free mem)`;
-                        break;
-                    default:
-                        limit = "?";
-                        break;
-                }
-                templates.push(html `
-					<tr>
-						<td style="float: right;"><b><code>[${produce}/${limit}]</code></b></td>
-						<td><b><code>${use_config.use_value}</code></b></td>
-					</tr>
-				`);
+                addConsumeTemplate(program.TraversalConsume.consume_use_config, program.TraversalConsume.consume_factor);
+                addProduceTemplate(program.TraversalConsume.produce_use_config, program.TraversalConsume.produce_factor, program.TraversalConsume.produce_limit_type, program.TraversalConsume.limit_factor, program.TraversalConsume.produce_factor);
             }
         }
         return templates;
