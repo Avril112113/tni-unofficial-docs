@@ -11,7 +11,7 @@ import { createRef, ref } from 'lit/directives/ref.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
 import _ from "lodash";
-import { TniProduceLimitType } from 'raw/data-format2-spec.js';
+import { TniProduceLimitType } from 'raw/data-format3-spec.js';
 import { dataContext } from "../data-context.js";
 function getDeepDiff(object, base) {
     return _.transform(object, (result, value, key) => {
