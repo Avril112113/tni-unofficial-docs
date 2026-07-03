@@ -105,6 +105,12 @@ let MyCombobox = class MyCombobox extends LitElement {
             this.input.focus();
         }
     }
+    _getDropdownItemLabel(item) {
+        const itemLabel = item.shadowRoot?.querySelector("[part='label']")?.querySelector("slot");
+        return itemLabel
+            ? itemLabel.assignedNodes().map(node => node.textContent).join('').trim()
+            : item.textContent;
+    }
     async _filterItems(isInitial = false) {
         const searchTerm = (this.input.value ?? "").toLowerCase();
         const searchTerms = searchTerm.split(" ");
@@ -115,7 +121,7 @@ let MyCombobox = class MyCombobox extends LitElement {
             this.dropdown.open = true;
         }
         this.dropdownItems.forEach((item) => {
-            const text = (item.textContent || '').toLowerCase();
+            const text = this._getDropdownItemLabel(item).toLowerCase() ?? "";
             if (searchTerms.every(term => text.includes(term)) || text.startsWith(searchTerm)) {
                 if (!hasMatches)
                     singleMatch = item;
@@ -144,7 +150,7 @@ let MyCombobox = class MyCombobox extends LitElement {
     }
     _onDropdownSelect(event) {
         const selectedItem = event.detail.item;
-        this.input.value = (selectedItem.textContent || '').trim();
+        this.input.value = this._getDropdownItemLabel(selectedItem).trim();
         // Reset layout displays for next visibility cycle
         const items = this.dropdown.querySelectorAll('wa-dropdown-item');
         items.forEach(item => item.style.display = '');

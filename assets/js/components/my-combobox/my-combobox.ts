@@ -120,6 +120,13 @@ export class MyCombobox extends LitElement {
 		}
 	}
 
+	private _getDropdownItemLabel(item: WaDropdownItem): string {
+		const itemLabel = item.shadowRoot?.querySelector("[part='label']")?.querySelector("slot") as HTMLSlotElement|null|undefined;
+		return itemLabel
+			? itemLabel.assignedNodes().map(node => node.textContent).join('').trim()
+			: item.textContent;
+	}
+
 	private async _filterItems(isInitial = false) {
 		const searchTerm = (this.input.value ?? "").toLowerCase();
 		const searchTerms = searchTerm.split(" ");
@@ -133,7 +140,7 @@ export class MyCombobox extends LitElement {
 		}
 
 		this.dropdownItems.forEach((item) => {
-			const text = (item.textContent || '').toLowerCase();
+			const text = this._getDropdownItemLabel(item).toLowerCase() ?? "";
 			if (searchTerms.every(term => text.includes(term)) || text.startsWith(searchTerm)) {
 				if (!hasMatches)
 					singleMatch = item as WaDropdownItem;
@@ -162,7 +169,7 @@ export class MyCombobox extends LitElement {
 
 	private _onDropdownSelect(event: WaSelectEvent): void {
 		const selectedItem = event.detail.item as WaDropdownItem;
-		this.input.value = (selectedItem.textContent || '').trim();
+		this.input.value = this._getDropdownItemLabel(selectedItem).trim();
 		
 		// Reset layout displays for next visibility cycle
 		const items = this.dropdown.querySelectorAll<HTMLElement>('wa-dropdown-item');

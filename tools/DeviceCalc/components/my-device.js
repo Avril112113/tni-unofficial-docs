@@ -27,12 +27,14 @@ function _renderBBCode(description) {
     const re = /(\n)|\[(\w+)=(.*?)\]|\[\/(\w+)\]/g;
     const stack = [[]];
     const tag_stack = [];
+    let lastEndPos = 0;
     while (re.lastIndex < description.length) {
         const startPos = re.lastIndex;
         const match = re.exec(description);
         const endPos = re.lastIndex;
         if (!match)
             break;
+        lastEndPos = endPos;
         const matchStartPos = endPos - match[0].length;
         if (startPos < matchStartPos) {
             stack[stack.length - 1].push(html `${description.slice(startPos, matchStartPos)}`);
@@ -65,7 +67,13 @@ function _renderBBCode(description) {
             }
         }
     }
+    if (lastEndPos < description.length) {
+        stack[stack.length - 1].push(html `${description.slice(lastEndPos, description.length)}`);
+    }
     return stack[0];
+}
+function _renderProgramSize(program) {
+    return `${program.code_size}${program.data_size ? `+${program.data_size}=${program.code_size + program.data_size}` : ""}`;
 }
 let MyDevice = class MyDevice extends LitElement {
     constructor() {
@@ -76,7 +84,6 @@ let MyDevice = class MyDevice extends LitElement {
         this.device_data = null;
         // Reset to `null` upon merge.
         this.device_data_partial = null;
-        this.__dropdown_items_devices_templates = [];
         this.__dropdown_items_programs_templates = [];
     }
     get combobox() { return this.comboboxRef.value; }
@@ -86,19 +93,6 @@ let MyDevice = class MyDevice extends LitElement {
     get device_data_is_original() {
         return _.isEqual(this.device_data_original, this.device_data);
     }
-    get _dropdown_items_devices_templates() {
-        if (this._dropdown_items_devices_templates_data !== this._data) {
-            this._dropdown_items_devices_templates_data = this._data;
-            this.__dropdown_items_devices_templates = [];
-            if (this._data) {
-                for (const device_id in this._data.devices) {
-                    const device = this._data.devices[device_id];
-                    this.__dropdown_items_devices_templates.push(html `<wa-dropdown-item value=${device_id}>${device.product_name}</wa-dropdown-item>`);
-                }
-            }
-        }
-        return this.__dropdown_items_devices_templates;
-    }
     get _dropdown_items_programs_templates() {
         if (this._dropdown_items_programs_templates_data !== this._data) {
             this._dropdown_items_programs_templates_data = this._data;
@@ -107,7 +101,7 @@ let MyDevice = class MyDevice extends LitElement {
                 for (const program_id in this._data.programs) {
                     const program = this._data.programs[program_id];
                     if (program.release_name.length > 0)
-                        this.__dropdown_items_programs_templates.push(html `<wa-dropdown-item value=${program_id}>${program.release_name}</wa-dropdown-item>`);
+                        this.__dropdown_items_programs_templates.push(html `<wa-dropdown-item value=${program_id}>${program.release_name}<span slot="details">${program.cpu_load}/${program.stack_size}/${program.code_size + program.data_size}</span></wa-dropdown-item>`);
                 }
             }
         }
@@ -171,6 +165,9 @@ let MyDevice = class MyDevice extends LitElement {
 		}
 	`; }
     render() {
+        let programs_cpu = 0;
+        let programs_mem = 0;
+        let programs_size = 0;
         let body;
         if (this.device_id) {
             const device_original = this.device_data_original;
@@ -186,9 +183,6 @@ let MyDevice = class MyDevice extends LitElement {
                 if (device.logic_controller && device_original.logic_controller) {
                     const logic_controller_original = device_original.logic_controller;
                     const logic_controller = device.logic_controller;
-                    let programs_cpu = 0;
-                    let programs_mem = 0;
-                    let programs_size = 0;
                     if (this._data) {
                         logic_controller.installed_programs.forEach((program_id) => {
                             const program = this._data?.programs[program_id];
@@ -321,6 +315,13 @@ let MyDevice = class MyDevice extends LitElement {
         else {
             body = html `No device selected...`;
         }
+        const dropdown_templates = [];
+        if (this._data) {
+            for (const device_id in this._data.devices) {
+                const device = this._data.devices[device_id];
+                dropdown_templates.push(html `<wa-dropdown-item value=${device_id}>${device.product_name}<span slot="details">$${device.price}</span></wa-dropdown-item>`);
+            }
+        }
         return html `
 			<wa-card class="card-header">
 				<div slot="header" style="display: flex; align-items: center; flex-wrap: wrap; gap: var(--wa-content-spacing);">
@@ -329,9 +330,15 @@ let MyDevice = class MyDevice extends LitElement {
 						@my-value-confirm=${(e) => { this.device_id = e.detail; }}
 					>
 						<wa-icon name="server" slot="start"></wa-icon>
-						${cache(this._dropdown_items_devices_templates)}
+						${dropdown_templates}
 					</my-combobox>
 					<div style="margin-left: auto;">
+						<wa-popover for="my-device-info" style="--max-width: 80ww;">
+							<p>${_renderBBCode(this.device_data?.device_rendered_description ?? "Invalid device...")}</p>
+						</wa-popover>
+						<wa-button appearance="plain" id="my-device-info" ?disabled=${!this.device_data}>
+							<wa-icon name="circle-info" variant="solid" label="Info"></wa-icon>
+						</wa-button>
 						<wa-button appearance="plain"
 							@click=${() => this._resetDeviceData(null)}
 						>
@@ -375,7 +382,7 @@ let MyDevice = class MyDevice extends LitElement {
 					</th>
 					<td style="white-space: nowrap; text-align: center;"><b>CPU:</b><br>${String(program?.cpu_load ?? "?")}</td>
 					<td style="white-space: nowrap; text-align: center;"><b>Mem:</b><br>${String(program?.stack_size ?? "?")}</td>
-					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : `${program.code_size}${program.data_size ? `+${program.data_size}=${program.code_size + program.data_size}` : ""}`}</td>
+					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : _renderProgramSize(program)}</td>
 					<td style="white-space: nowrap;">
 						<wa-popover for="my-device-program-info-${i}" style="--max-width: 80ww;">
 							<p>${_renderBBCode(program?.rendered_description ?? "Invalid program...")}</p>
