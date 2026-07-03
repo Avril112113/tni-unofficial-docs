@@ -128,7 +128,13 @@ let MyDevice = class MyDevice extends LitElement {
 			color: var(--wa-color-yellow);
 		}
 
-		:host .flex-and-gap {
+		:host .flex-wrap-gap {
+			display: flex;
+			flex-wrap: wrap;
+			gap: calc(var(--wa-content-spacing) / 2);
+		}
+
+		:host .flex-gap {
 			display: flex;
 			gap: calc(var(--wa-content-spacing) / 2);
 		}
@@ -194,81 +200,70 @@ let MyDevice = class MyDevice extends LitElement {
                         });
                     }
                     parts.push(html `
-						<div class="flex-and-gap">
-							<wa-number-input
-								label="CPU" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_cpu))}
-								appearance="filled" size="m"
-								class=${logic_controller.installed_cpu == logic_controller_original.installed_cpu ? "" : "input-changed"}
-								@input=${(e) => {
+						<div class="flex-wrap-gap">
+							<div class="flex-gap">
+								<wa-number-input
+									label="CPU" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_cpu))}
+									appearance="filled" size="m"
+									class=${logic_controller.installed_cpu == logic_controller_original.installed_cpu ? "" : "input-changed"}
+									@input=${(e) => {
                         logic_controller.installed_cpu = Number.parseInt(e.target.value ?? "0");
                         this.requestUpdate();
                     }}
-								@blur=${(e) => {
+									@blur=${(e) => {
                         const input = e.target;
                         if (!input.value) {
                             logic_controller.installed_cpu = logic_controller_original.installed_cpu;
                             this.requestUpdate();
                         }
                     }}
-							></wa-number-input>
-							<wa-number-input
-								label="Memory" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_mem))}
-								appearance="filled" size="m"
-								class=${logic_controller.installed_mem == logic_controller_original.installed_mem ? "" : "input-changed"}
-								@input=${(e) => {
+								></wa-number-input>
+								<wa-number-input
+									label="Memory" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_mem))}
+									appearance="filled" size="m"
+									class=${logic_controller.installed_mem == logic_controller_original.installed_mem ? "" : "input-changed"}
+									@input=${(e) => {
                         logic_controller.installed_mem = Number.parseInt(e.target.value ?? "0");
                         this.requestUpdate();
                     }}
-								@blur=${(e) => {
+									@blur=${(e) => {
                         const input = e.target;
                         if (!input.value) {
                             logic_controller.installed_mem = logic_controller_original.installed_mem;
                             this.requestUpdate();
                         }
                     }}
-							></wa-number-input>
-							<wa-number-input
-								label="Storage" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_sto))}
-								appearance="filled" size="m"
-								class=${logic_controller.installed_sto == logic_controller_original.installed_sto ? "" : "input-changed"}
-								@input=${(e) => {
+								></wa-number-input>
+								<wa-number-input
+									label="Storage" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_sto))}
+									appearance="filled" size="m"
+									class=${logic_controller.installed_sto == logic_controller_original.installed_sto ? "" : "input-changed"}
+									@input=${(e) => {
                         logic_controller.installed_sto = Number.parseInt(e.target.value ?? "0");
                         this.requestUpdate();
                     }}
-								@blur=${(e) => {
+									@blur=${(e) => {
                         const input = e.target;
                         if (!input.value) {
                             logic_controller.installed_sto = logic_controller_original.installed_sto;
                             this.requestUpdate();
                         }
                     }}
-							></wa-number-input>
-							<!-- <div></div>
-							<wa-number-input
-								label="Bandwidth" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_nbw))}
-								appearance="filled" size="m"
-								class=${logic_controller.installed_nbw == logic_controller_original.installed_nbw ? "" : "input-changed"}
-								@input=${(e) => {
-                        logic_controller.installed_nbw = Number.parseInt(e.target.value ?? "0");
-                        this.requestUpdate();
-                    }}
-								@blur=${(e) => {
-                        const input = e.target;
-                        if (!input.value) {
-                            logic_controller.installed_nbw = logic_controller_original.installed_nbw;
-                            this.requestUpdate();
-                        }
-                    }}
-							></wa-number-input> -->
+								></wa-number-input>
+							</div>
+							<div></div>
+							<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">Bandwidth:<br>${String(logic_controller.installed_nbw)}</p>
+							<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">Base Warranty:<br>${String(device.base_warranty_days)} days + ${String(device.base_warranty_cycles)} cycles</p>
 						</div>
 						<wa-divider></wa-divider>
 						<div>
-							<div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--wa-content-spacing);">
+							<div class="flex-wrap-gap" style="align-items: center;">
 								<h2 style="margin: 0;">Programs</h2>
-								<div style="flex-grow: 1; margin: 0; text-align: center; display: flex; align-items: center; gap: var(--wa-content-spacing);">
-									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}">CPU: ${programs_cpu}</p>
-									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}">MEM: ${programs_mem}</p>
-									<p style="color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}">Size: ${programs_size}</p>
+								<div class="flex-gap" style="flex-grow: 1; margin: 0; text-align: center; align-items: center;">
+									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}; margin-top: 0;">CPU: ${programs_cpu}</p>
+									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin-top: 0;">MEM: ${programs_mem}</p>
+									<p style="color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}; margin-top: 0;">Size: ${programs_size}</p>
+
 									<div style="margin-left: auto;">
 										<wa-button appearance="plain" size="l"
 											@click=${() => {
@@ -299,9 +294,9 @@ let MyDevice = class MyDevice extends LitElement {
 						</div>
 						<wa-divider></wa-divider>
 						<div>
-							<div style="display: flex; align-items: center; gap: var(--wa-content-spacing);">
+							<div class="flex-gap" style="align-items: center;">
 								<h2 style="margin: 0;">Use Stack</h2>
-								<i><code>[PRODUCTION/LIMIT] PRODUCE_TYPES<br></code></i>
+								<code style="white-space: nowrap;"><i>[PRODUCTION/LIMIT] PRODUCE_TYPES</i></code>
 							</div>
 							<table style="margin-left: var(--wa-content-spacing); border-collapse: separate; border-spacing: 10px 0;">
 								${this._generateTemplatesForUseStack(logic_controller.installed_programs, programs_mem)}
@@ -315,16 +310,61 @@ let MyDevice = class MyDevice extends LitElement {
         else {
             body = html `No device selected...`;
         }
-        const dropdown_templates = [];
+        let dropdown_templates = [];
         if (this._data) {
-            for (const device_id in this._data.devices) {
-                const device = this._data.devices[device_id];
-                dropdown_templates.push(html `<wa-dropdown-item value=${device_id}>${device.product_name}<span slot="details">$${device.price}</span></wa-dropdown-item>`);
+            if (this.device_data_is_original || (programs_cpu <= 0 && programs_mem <= 0 && programs_size <= 0)) {
+                for (const device_id in this._data.devices) {
+                    const device = this._data.devices[device_id];
+                    dropdown_templates.push(html `
+						<wa-dropdown-item value=${device_id}>
+							${device.product_name}
+							<span slot="details">$${device.price}</span>
+						</wa-dropdown-item>
+					`);
+                }
+            }
+            else {
+                const device_templates_scored = [];
+                for (const device_id in this._data.devices) {
+                    const device = this._data.devices[device_id];
+                    const excess_cpu = device.logic_controller ? device.logic_controller.installed_cpu - programs_cpu : -Infinity;
+                    const excess_mem = device.logic_controller ? device.logic_controller.installed_mem - programs_mem : -Infinity;
+                    const excess_sto = device.logic_controller ? device.logic_controller.installed_sto - programs_size : -Infinity;
+                    const any_lacking = excess_cpu < 0 || excess_mem < 0 || excess_sto < 0;
+                    const score = any_lacking
+                        ? Math.min(0, excess_cpu) + Math.min(0, excess_mem) + Math.min(0, excess_sto)
+                        : excess_cpu + excess_mem + excess_sto;
+                    const numFormat = new Intl.NumberFormat(undefined, { signDisplay: "exceptZero" });
+                    const details = html `<span slot="details">${!Number.isFinite(score) ? "" : html `${numFormat.format(excess_cpu)} / ${numFormat.format(excess_mem)} / ${numFormat.format(excess_sto)}&nbsp;&nbsp;&nbsp;`}$${device.price}</span>`;
+                    const color = !Number.isFinite(score)
+                        ? "var(--wa-color-gray)"
+                        : any_lacking
+                            ? "var(--wa-color-red-80)"
+                            : "";
+                    device_templates_scored.push([score, device.price, html `
+						<wa-dropdown-item value=${device_id} style="color: ${color};">
+							${device.product_name}
+							${details}
+						</wa-dropdown-item>
+					`]);
+                }
+                dropdown_templates = device_templates_scored.sort(([a_score, a_price, a_template], [b_score, b_price, b_template]) => {
+                    // Sorted as; zero -> near zero -> negative 0 -> negative near zero
+                    if (a_score == b_score)
+                        return a_price - b_price;
+                    if (a_score < 0 && b_score >= 0)
+                        return 1;
+                    if (b_score < 0 && a_score >= 0)
+                        return -1;
+                    if (a_score < 0 && b_score < 0)
+                        return b_score - a_score;
+                    return a_score - b_score;
+                }).map(([score, price, template]) => template);
             }
         }
         return html `
 			<wa-card class="card-header">
-				<div slot="header" style="display: flex; align-items: center; flex-wrap: wrap; gap: var(--wa-content-spacing);">
+				<div slot="header" class="flex-wrap-gap" style="align-items: center;">
 					<my-combobox ${ref(this.comboboxRef)} size="l" style="flex-grow: 1;" value=${this.device_name ?? ""}
 						@my-single-match=${(e) => { this.device_id = e.detail; }}
 						@my-value-confirm=${(e) => { this.device_id = e.detail; }}
