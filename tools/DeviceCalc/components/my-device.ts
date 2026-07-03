@@ -76,6 +76,42 @@ function _renderProgramSize(program: TniJsonProgram): string {
 	return `${program.code_size}${program.data_size ? `+${program.data_size}=${program.code_size+program.data_size}` : ""}`;
 }
 
+// AI Generated.
+interface SumCombination {
+    sum: number;
+    values: number[];
+}
+function getSumCombinations(numbers: number[], maxLength: number): SumCombination[] {
+    const uniqueSums = new Map<number, number[]>();
+
+    function generate(currentCombo: number[], currentSum: number): void {
+        // Store the unique sum and the combination that made it
+        if (!uniqueSums.has(currentSum)) {
+            uniqueSums.set(currentSum, [...currentCombo]);
+        }
+
+        // Base case: stop if we reached the maximum combination length
+        if (currentCombo.length === maxLength) {
+            return;
+        }
+
+        // Recursive case: allow repetition by starting from index 0 every time
+        for (let i = 0; i < numbers.length; i++) {
+            currentCombo.push(numbers[i]!);
+            generate(currentCombo, currentSum + numbers[i]!);
+            currentCombo.pop(); // Backtrack
+        }
+    }
+
+    generate([], 0);
+    
+    return Array.from(uniqueSums.entries()).map(([sum, values]) => ({
+        sum,
+        values
+    }));
+}
+
+
 interface CustomDeviceExt {
 	CustomData?: CustomDeviceData,
 }
@@ -227,6 +263,7 @@ export class MyDevice extends LitElement {
 		let programs_cpu = 0;
 		let programs_mem = 0;
 		let programs_size = 0;
+		let sata_slot_count = 0;
 		
 		let body: TemplateResult|Array<TemplateResult>;
 		if (this.device_id) {
@@ -257,6 +294,7 @@ export class MyDevice extends LitElement {
 					}
 
 					const satas_templates = this._generateTemplatesForPeripherals(logic_controller, custom_data);
+					sata_slot_count = satas_templates.length;
 					let satas_size = 0;
 					if (custom_data.peripherals) {
 						for (const plug_id of Object.values(custom_data.peripherals)) {
@@ -394,23 +432,58 @@ export class MyDevice extends LitElement {
 						${device.product_name}
 						<span slot="details">
 							${details}
-							<span style="display: inline-block; min-width: 5ch;">$${device.price}</span>
 						</span>
 					</wa-dropdown-item>
 				`;
 			};
 			if (this.device_data_is_original || (programs_cpu <= 0 && programs_mem <= 0 && programs_size <= 0)) {
 				for (const device_id in this._data.devices) {
-					dropdown_templates.push(dropdownItemTemplate(device_id, "", []));
+					const device = this._data.devices[device_id]!;
+					dropdown_templates.push(dropdownItemTemplate(device_id, "", [
+						html`<span style="display: inline-block; min-width: 5ch;">$${device.price}</span>`,
+					]));
 				}
 			} else {
+				const sata_options: number[] = [];
+				const sata_prices: Record<number,number> = [];
+				for (const plug_id in this._data.plugs) {
+					if (plug_id == "components/removables/usb_stick.tscn") continue;
+					const plug = this._data.plugs[plug_id]!;
+					if (plug.PeripheralPlug && plug.RemovableStorageDevice) {
+						if (sata_options.indexOf(plug.RemovableStorageDevice.available_sto) == -1){
+							sata_options.push(plug.RemovableStorageDevice.available_sto);
+							sata_prices[plug.RemovableStorageDevice.available_sto] = plug.PeripheralPlug.price;
+						}
+					}
+				}
+				const sata_combinations = getSumCombinations(sata_options, sata_slot_count)
+					.map(combination => {return {
+						storage: combination.sum,
+						values: combination.values,
+						price: _.sumBy(combination.values, sata_size => sata_prices[sata_size]!),
+					}});
+				sata_combinations.sort((a, b) => {
+					return a.price - b.price;
+				});
+
 				const device_templates_scored: [number, number, TemplateResult][] = [];
 				for (const device_id in this._data.devices) {
 					const device = this._data.devices[device_id]!;
 
 					const excess_cpu = device.logic_controller ? device.logic_controller.installed_cpu - programs_cpu : -Infinity;
 					const excess_mem = device.logic_controller ? device.logic_controller.installed_mem - programs_mem : -Infinity;
-					const excess_sto = device.logic_controller ? device.logic_controller.installed_sto - programs_size : -Infinity;
+					let excess_sto = device.logic_controller ? device.logic_controller.installed_sto - programs_size : -Infinity;
+					let sata_combination = null;
+					if (excess_sto < 0) {
+						for (let i = 0; i < sata_combinations.length; i++) {
+							const combination = sata_combinations[i]!;
+							if (excess_sto + combination.storage >= 0) {
+								excess_sto = excess_sto + combination.storage;
+								sata_combination = combination;
+								break;
+							}
+						}
+					}
 					const any_lacking = excess_cpu < 0 || excess_mem < 0 || excess_sto < 0;
 					const score = any_lacking
 						? Math.min(0, excess_cpu) + Math.min(0, excess_mem) + Math.min(0, excess_sto)
@@ -419,7 +492,14 @@ export class MyDevice extends LitElement {
 					const numFormat = new Intl.NumberFormat(undefined, { signDisplay: "exceptZero" });
 					const details = [
 						html`<span>${!Number.isFinite(score) ? "" : html`${numFormat.format(excess_cpu)} / ${numFormat.format(excess_mem)} / ${numFormat.format(excess_sto)}`}</span>`,
+						html`&nbsp;&nbsp;`,
+						html`<span style="display: inline-block; min-width: 5ch;">$${device.price + (sata_combination?.price ?? 0)}</span>`,
 					];
+					if (sata_combination) {
+						details.push(html`<div>
+							SATA: ${sata_combination.values.map(numFormat.format).join(",")}
+						</div>`);
+					}
 
 					const color = !Number.isFinite(score)
 						? "var(--wa-color-gray)"
