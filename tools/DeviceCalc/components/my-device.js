@@ -260,9 +260,9 @@ let MyDevice = class MyDevice extends LitElement {
 							<div class="flex-wrap-gap" style="align-items: center;">
 								<h2 style="margin: 0;">Programs</h2>
 								<div class="flex-gap" style="flex-grow: 1; margin: 0; text-align: center; align-items: center;">
-									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}; margin-top: 0;">CPU: ${programs_cpu}</p>
-									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin-top: 0;">MEM: ${programs_mem}</p>
-									<p style="color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}; margin-top: 0;">Size: ${programs_size}</p>
+									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}; margin: 0;">CPU: ${programs_cpu}</p>
+									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
+									<p style="color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
 
 									<div style="margin-left: auto;">
 										<wa-button appearance="plain" size="l"
