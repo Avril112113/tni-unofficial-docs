@@ -6,7 +6,7 @@ permalink: /data/users
 
 # Users
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.3
+GENERATED FOR TNI VERSION 0.11.4
 
 - TOC
 {:toc}
@@ -2862,7 +2862,7 @@ They reconcil meter usage against issued bills, identifying discrepancies, and f
   
 Responsible for receiving, reviewing, and resolving customer complaints.  
   
-**Unlocks:** [dns-server](programs.md/#dns-server), [complaint-server2](programs.md/#complaint-server2), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [print-server](programs.md/#print-server)  
+**Unlocks:** [dns-server](programs.md/#dns-server), [complaint-server2](programs.md/#complaint-server2), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [print-server](programs.md/#print-server), [complaint-lite](programs.md/#complaint-lite)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3137,7 +3137,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 **Description:** a humble technician who resolve complaints in the morning.  
   
-**Unlocks:** [dns-server](programs.md/#dns-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [hypervisor-server](programs.md/#hypervisor-server), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server)  
+**Unlocks:** [dns-server](programs.md/#dns-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [hypervisor-server](programs.md/#hypervisor-server), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3211,7 +3211,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 **Description:** a humble technician who resolve complaints  
   
-**Unlocks:** [dns-server](programs.md/#dns-server), [hypervisor-server](programs.md/#hypervisor-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server)  
+**Unlocks:** [dns-server](programs.md/#dns-server), [hypervisor-server](programs.md/#hypervisor-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3276,7 +3276,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 **Description:** a humble technician who resolve complaints  
   
-**Unlocks:** [dns-server](programs.md/#dns-server), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [hypervisor-server](programs.md/#hypervisor-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1)  
+**Unlocks:** [dns-server](programs.md/#dns-server), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [hypervisor-server](programs.md/#hypervisor-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3309,7 +3309,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   
 **Description:** Represents outbound internet traffic from Tenabolt to its third-party service providers.  
   
-**Unlocks:** [ten-public-portal](programs.md/#ten-public-portal), [complaint-server2](programs.md/#complaint-server2), [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [dnsmasq](programs.md/#dnsmasq), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
+**Unlocks:** [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [dnsmasq](programs.md/#dnsmasq), [tena-employee-db](programs.md/#tena-employee-db)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **ACCESS EMPLOYEE DATABASE** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3414,7 +3414,7 @@ Switched off by IT staff during non-working hour to save cost.
   
 Only operates during working hours.  
   
-**Unlocks:** [dns-server](programs.md/#dns-server), [log-server](programs.md/#log-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2)  
+**Unlocks:** [dns-server](programs.md/#dns-server), [log-server](programs.md/#log-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ `tcp/443` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3437,7 +3437,7 @@ Only operates during working hours.
   
 **Description:** Represents incoming internet traffic to Tenabolt's public-facing services.  
   
-**Unlocks:** [complaint-server2](programs.md/#complaint-server2), [ten-public-portal](programs.md/#ten-public-portal), [complaint-server2](programs.md/#complaint-server2), [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [dnsmasq](programs.md/#dnsmasq), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server), [tena-staff-portal](programs.md/#tena-staff-portal)  
+**Unlocks:** [complaint-server2](programs.md/#complaint-server2), [ten-public-portal](programs.md/#ten-public-portal), [complaint-server2](programs.md/#complaint-server2), [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [dnsmasq](programs.md/#dnsmasq), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server), [tena-staff-portal](programs.md/#tena-staff-portal), [complaint-lite](programs.md/#complaint-lite), [tmp-collabpoint0](programs.md/#tmp-collabpoint0), [ten-public-lite](programs.md/#ten-public-lite)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **SUBMIT COMPLAINTS** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3492,6 +3492,37 @@ Only operates during working hours.
 **Description:** An R&D engineer who works towards more sustainable and effective energy sources, specialising in nuclear reactor modelling and calculation.  
   
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-calc-server](programs.md/#tena-calc-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tena-staff-portal](programs.md/#tena-staff-portal), [tmp-collabpoint1](programs.md/#tmp-collabpoint1)  
+  
+**Behaviors:**  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
+  **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
+  **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
+- <span style="color:Yellow;">Use:</span> **SHARE TENABOLT RESEARCH** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
+  **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
+- <span style="color:Yellow;">Use:</span> **PRINT TENABOLT RESEARCH** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
+  **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
+- <span style="color:Yellow;">Use:</span> **SAAS** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
+  **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image )`  
+  **<span style="color:LightGray;">Subjects:</span>** software-as-a-service, professional  
+- <span style="color:Yellow;">Use:</span> **DO TENABOLT CALCULATION** 100% @ `tcp/80` for <span style="color:Salmon;">8</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
+  **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and ( run-tenabolt-simulation or store-tenabolt-model )`  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-tenabolt-calculation`  
+  
+  
+## R&D Specialist  
+**Grace Days:** 10  
+**Online Times:** 09:00 to 18:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(37% of the time)</span>  
+  
+**Description:** An R&D specialist who works towards more sustainable and effective energy sources, specialising in nuclear reactor modelling and calculation.  
+  
+**Unlocks:** [dns-server](programs.md/#dns-server), [tena-calc-server](programs.md/#tena-calc-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tena-staff-portal](programs.md/#tena-staff-portal), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [tena-calc-server2](programs.md/#tena-calc-server2), [ten-anomaly-server](programs.md/#ten-anomaly-server)  
   
 **Behaviors:**  
 - <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  

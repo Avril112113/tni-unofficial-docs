@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.3
+GENERATED FOR TNI VERSION 0.11.4
 
 - TOC
 {:toc}
@@ -35,6 +35,21 @@ Production is limited to 5 compatible uses on the device's use stack.
   
 ## cctv_edge  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**<span style="color:LightCoral;">Required Hardware:</span>** CCTV  
+**<span style="color:PapayaWhip;">Consumes:</span>** 1 `accept-cctv-camera-connection` @ `udp/554` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-live-video` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
+  
+  
+**Description:**  
+cctv camera firmware  
+  
+Produce target's use stack limit is 1 compatible uses per target's installed CPU.  
+Skips consuming from destination if produce target's use stack limit is reached.  
+  
+  
+  
+## cctv_edge  
+**CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `accept-cctv-monitor-connection` @ `tcp/554` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
 **<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-live-video` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
   
@@ -47,19 +62,16 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
   
   
-## cctv_edge  
-**CPU:** 1 **MEM:** 1 **SIZE:** 1  
-**<span style="color:LightCoral;">Required Hardware:</span>** CCTV  
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 `accept-cctv-camera-connection` @ `udp/554` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-live-video` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
+## complaint-lite  
+**CPU:** 1 **MEM:** 2 **SIZE:** 1  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `read-complaint, post-complaint, store-complaint` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
   
   
 **Description:**  
-cctv camera firmware  
+Lightweight complaint server which allows customers to submit complaints and customer service to manage and respond to tickets.  
+Production is limited to 2 compatible uses on the device's use stack.  
   
-Produce target's use stack limit is 1 compatible uses per target's installed CPU.  
-Skips consuming from destination if produce target's use stack limit is reached.  
-  
+**Unlocked By:** [Customer Officer](users.md/#customer-officer), [Public Gateway](users.md/#public-gateway)  
   
   
 ## complaint-server2  
@@ -76,7 +88,7 @@ Produce target's use stack limit is 15 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v2](#padu_v2), [mailer](#mailer)  
-**Unlocked By:** [Customer Officer](users.md/#customer-officer), [Partner Gateway](users.md/#partner-gateway), [Public Gateway](users.md/#public-gateway), [Public Gateway](users.md/#public-gateway)  
+**Unlocked By:** [Customer Officer](users.md/#customer-officer), [Public Gateway](users.md/#public-gateway), [Public Gateway](users.md/#public-gateway)  
   
   
 ## decentro-collector  
@@ -147,7 +159,7 @@ Produce target's use stack limit is 20 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v1](#padu_v1)  
-**Unlocked By:** [Media Maniac](users.md/#media-maniac), [Feed Signal](users.md/#feed-signal), [WireSync News](users.md/#wiresync-news), [Loyal Worker](users.md/#loyal-worker), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scientific Professor](users.md/#scientific-professor), [Patient Professor](users.md/#patient-professor), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Kanban Central](users.md/#kanban-central), [Booking Hub](users.md/#booking-hub), [Full Campus](users.md/#full-campus), [Night Campus](users.md/#night-campus), [Game Studios](users.md/#game-studios), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Horror Studios](users.md/#horror-studios), [Travel Agency](users.md/#travel-agency), [Cheap Kitchen](users.md/#cheap-kitchen), [Database Hub](users.md/#database-hub), [Game Marketplace](users.md/#game-marketplace), [Film Sphere](users.md/#film-sphere), [Premium Kitchen](users.md/#premium-kitchen), [Telemedicine Hub](users.md/#telemedicine-hub), [Blogger Hub](users.md/#blogger-hub), [Book Club](users.md/#book-club), [Data Nexus](users.md/#data-nexus), [Data Hub](users.md/#data-hub), [Econ News](users.md/#econ-news), [Indie Studios](users.md/#indie-studios), [Free Kanban Central](users.md/#free-kanban-central), [Media Hub](users.md/#media-hub), [Music Sphere](users.md/#music-sphere), [Audio Sphere](users.md/#audio-sphere), [Political News](users.md/#political-news), [Religious Hub](users.md/#religious-hub), [Scientific News](users.md/#scientific-news), [Socialite Hub](users.md/#socialite-hub), [Finance Hub](users.md/#finance-hub), [Chatter Hive](users.md/#chatter-hive), [Mail Hub](users.md/#mail-hub), [Ads Agency](users.md/#ads-agency), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Cloud Service](users.md/#cloud-service), [Tenabolt Retail](users.md/#tenabolt-retail), [People Operations](users.md/#people-operations), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer), [AI Researcher](users.md/#ai-researcher), [Chips Designer](users.md/#chips-designer), [Professional Gamer](users.md/#professional-gamer), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Animation Sphere](users.md/#animation-sphere), [Animation Studios](users.md/#animation-studios), [Central Mart](users.md/#central-mart), [ESport Hub](users.md/#esport-hub), [Happy Grocery](users.md/#happy-grocery), [Inventory Hub](users.md/#inventory-hub), [Transfer Hub](users.md/#transfer-hub), [Meeting Hub](users.md/#meeting-hub), [Antivirus Nexus](users.md/#antivirus-nexus), [Privacy Hub](users.md/#privacy-hub)  
+**Unlocked By:** [Media Maniac](users.md/#media-maniac), [Feed Signal](users.md/#feed-signal), [WireSync News](users.md/#wiresync-news), [Loyal Worker](users.md/#loyal-worker), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scientific Professor](users.md/#scientific-professor), [Patient Professor](users.md/#patient-professor), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Kanban Central](users.md/#kanban-central), [Booking Hub](users.md/#booking-hub), [Full Campus](users.md/#full-campus), [Night Campus](users.md/#night-campus), [Game Studios](users.md/#game-studios), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Horror Studios](users.md/#horror-studios), [Travel Agency](users.md/#travel-agency), [Cheap Kitchen](users.md/#cheap-kitchen), [Database Hub](users.md/#database-hub), [Game Marketplace](users.md/#game-marketplace), [Film Sphere](users.md/#film-sphere), [Premium Kitchen](users.md/#premium-kitchen), [Telemedicine Hub](users.md/#telemedicine-hub), [Blogger Hub](users.md/#blogger-hub), [Book Club](users.md/#book-club), [Data Nexus](users.md/#data-nexus), [Data Hub](users.md/#data-hub), [Econ News](users.md/#econ-news), [Indie Studios](users.md/#indie-studios), [Free Kanban Central](users.md/#free-kanban-central), [Media Hub](users.md/#media-hub), [Music Sphere](users.md/#music-sphere), [Audio Sphere](users.md/#audio-sphere), [Political News](users.md/#political-news), [Religious Hub](users.md/#religious-hub), [Scientific News](users.md/#scientific-news), [Socialite Hub](users.md/#socialite-hub), [Finance Hub](users.md/#finance-hub), [Chatter Hive](users.md/#chatter-hive), [Mail Hub](users.md/#mail-hub), [Ads Agency](users.md/#ads-agency), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Cloud Service](users.md/#cloud-service), [Tenabolt Retail](users.md/#tenabolt-retail), [People Operations](users.md/#people-operations), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer), [AI Researcher](users.md/#ai-researcher), [Chips Designer](users.md/#chips-designer), [Professional Gamer](users.md/#professional-gamer), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Animation Sphere](users.md/#animation-sphere), [Animation Studios](users.md/#animation-studios), [Central Mart](users.md/#central-mart), [ESport Hub](users.md/#esport-hub), [Happy Grocery](users.md/#happy-grocery), [Inventory Hub](users.md/#inventory-hub), [Transfer Hub](users.md/#transfer-hub), [Meeting Hub](users.md/#meeting-hub), [Antivirus Nexus](users.md/#antivirus-nexus), [Privacy Hub](users.md/#privacy-hub)  
   
   
 ## dnsmasq  
@@ -255,6 +267,18 @@ Round-robin network load balancer.
   
   
   
+## log-lite  
+**CPU:** 1 **MEM:** 1 **SIZE:** 3  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `query-log-entry, store-log-entry` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+  
+  
+**Description:**  
+Lightweight event log storage. Records and searches system activity.  
+Production is limited to 2 compatible uses on the device's use stack.  
+  
+**Unlocked By:** [ten-scada-server](#ten-scada-server), [Morning Technician](users.md/#morning-technician), [Night Technician](users.md/#night-technician), [Normal Technician](users.md/#normal-technician), [IT Service](users.md/#it-service)  
+  
+  
 ## log-server  
 **CPU:** 5 **MEM:** 9 **SIZE:** 16  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-text` @ `tcp/3306` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
@@ -285,7 +309,7 @@ Produce target's use stack limit is 15 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v2](#padu_v2)  
-**Unlocked By:** [complaint-server2](#complaint-server2), [EXCHANGE EMAIL](NO_LINK/#exchange-email), [EXCHANGE EMAIL](NO_LINK/#exchange-email), [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
+**Unlocked By:** [complaint-server2](#complaint-server2), [EXCHANGE EMAIL](NO_LINK/#exchange-email), [EXCHANGE EMAIL](NO_LINK/#exchange-email), [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer)  
   
   
 ## maintenance-server  
@@ -374,7 +398,7 @@ Primary aggregation data unit. Supports text, image and audio storage.
 Improved disk handling algorithm.  
 Production is limited to 2 compatible uses on the device's use stack.  
   
-**Unlocked By:** [hypervisor-server](#hypervisor-server), [log-server](#log-server), [ten-bill-server](#ten-bill-server), [complaint-server2](#complaint-server2), [ten-public-portal](#ten-public-portal), [oauth-serv](#oauth-serv), [tmp-collabpoint1](#tmp-collabpoint1), [tena-calc-server](#tena-calc-server), [tena-staff-portal](#tena-staff-portal), [maintenance-server](#maintenance-server), [ten-scada-server](#ten-scada-server), [tena-mail](#tena-mail), [mailer](#mailer), [Partner Gateway](users.md/#partner-gateway), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway)  
+**Unlocked By:** [hypervisor-server](#hypervisor-server), [log-server](#log-server), [ten-bill-server](#ten-bill-server), [complaint-server2](#complaint-server2), [ten-public-portal](#ten-public-portal), [oauth-serv](#oauth-serv), [tmp-collabpoint1](#tmp-collabpoint1), [tena-calc-server](#tena-calc-server), [ten-anomaly-server](#ten-anomaly-server), [tena-calc-server2](#tena-calc-server2), [tena-staff-portal](#tena-staff-portal), [maintenance-server](#maintenance-server), [ten-scada-server](#ten-scada-server), [tena-mail](#tena-mail), [mailer](#mailer), [Partner Gateway](users.md/#partner-gateway), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway)  
   
   
 ## padu_v3  
@@ -413,7 +437,7 @@ Support printing services.
 Allows printer to be connected to produce print-text and print-image uses.  
 Production is limited to 10 compatible uses on the device's use stack.  
   
-**Unlocked By:** [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
+**Unlocked By:** [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer)  
   
   
 ## print-server2  
@@ -478,6 +502,35 @@ Production is limited to 13 compatible uses on the device's use stack.
 **Unlocked By:** [Loyal Worker](users.md/#loyal-worker), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor)  
   
   
+## san-client  
+**CPU:** 1 **MEM:** 1 **SIZE:** 2  
+**<span style="color:DarkKhaki;">Produces:</span>** 6 `store-block` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 6)</span>  
+  
+  
+**Description:**  
+The storage array's operating system.   
+  
+Exposes their capacity as raw blocks (store-block) to the network.  
+Production is limited to 6 compatible uses on the device's use stack.  
+  
+  
+  
+## san-server  
+**CPU:** 3 **MEM:** 1 **SIZE:** 1  
+**<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-block` @ `tcp/3264` for <span style="color:Salmon;">4</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-text, store-image` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+  
+  
+**Description:**  
+Mounts remote storage from a SAN.   
+  
+Fetches raw blocks over the network and serves them as text or image storage on this device.  
+  
+Produce target's use stack limit is 4 compatible uses.  
+Skips consuming from destination if produce target's use stack limit is reached.  
+  
+  
+  
 ## sun-dns  
 **CPU:** 10 **MEM:** 6 **SIZE:** 8+1=9  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `store-text` @ `tcp/3306` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
@@ -494,6 +547,24 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 **Unlocks:** [padu_v1](#padu_v1)  
 **Unlocked By:** [Tenabolt Prometheus/Sun DNS](proposals-Tenabolt%20Prometheus.md/#sun-dns), [Standard/Sun DNS](proposals-Standard.md/#sun-dns)  
+  
+  
+## ten-anomaly-server  
+**CPU:** 20 **MEM:** 8 **SIZE:** 4  
+**<span style="color:PapayaWhip;">Consumes:</span>** 3 `read-operation-data` @ `tcp/3306` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 20 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
+  
+  
+**Description:**  
+Serve as advanced nuclear plant calculation application. Engineers run simulations and save models.  
+<span style="color:red;">Requiring grid officer to perform scada operations.</span>  
+  
+  
+Produce target's use stack limit is 20 compatible uses.  
+Skips consuming from destination if produce target's use stack limit is reached.  
+  
+**Unlocks:** [padu_v2](#padu_v2), [ten-scada-server](#ten-scada-server)  
+**Unlocked By:** [R&D Specialist](users.md/#r&d-specialist)  
   
   
 ## ten-bill-server  
@@ -513,6 +584,18 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlocked By:** [Billing Officer](users.md/#billing-officer)  
   
   
+## ten-public-lite  
+**CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `post-news-updates, read-news-updates` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+  
+  
+**Description:**  
+Publishes outage updates and company news for public viewing.  
+Production is limited to 2 compatible uses on the device's use stack.  
+  
+**Unlocked By:** [Public Gateway](users.md/#public-gateway)  
+  
+  
 ## ten-public-portal  
 **CPU:** 3 **MEM:** 3 **SIZE:** 4  
 **<span style="color:PapayaWhip;">Consumes:</span>** 2 `store-text and store-image` @ `tcp/5432` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
@@ -527,7 +610,7 @@ Produce target's use stack limit is 8 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v2](#padu_v2)  
-**Unlocked By:** [Partner Gateway](users.md/#partner-gateway), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer)  
+**Unlocked By:** [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer)  
   
   
 ## ten-scada-server  
@@ -543,8 +626,8 @@ Serve as real-time supervisory control and data acquisition system for grid oper
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**Unlocks:** [padu_v2](#padu_v2), [log-server](#log-server)  
-**Unlocked By:** [tena-calc-server](#tena-calc-server), [Field Inspector](users.md/#field-inspector), [Grid Officer](users.md/#grid-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Night Grid Officer](users.md/#night-grid-officer)  
+**Unlocks:** [padu_v2](#padu_v2), [log-server](#log-server), [log-lite](#log-lite)  
+**Unlocked By:** [tena-calc-server](#tena-calc-server), [ten-anomaly-server](#ten-anomaly-server), [tena-calc-server2](#tena-calc-server2), [Field Inspector](users.md/#field-inspector), [Grid Officer](users.md/#grid-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Night Grid Officer](users.md/#night-grid-officer)  
   
   
 ## tena-calc-server  
@@ -562,7 +645,25 @@ Produce target's use stack limit is 10 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v2](#padu_v2), [ten-scada-server](#ten-scada-server)  
-**Unlocked By:** [Analytics Officer](users.md/#analytics-officer), [R&D Engineer](users.md/#r&d-engineer)  
+**Unlocked By:** [Analytics Officer](users.md/#analytics-officer), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist)  
+  
+  
+## tena-calc-server2  
+**CPU:** 20 **MEM:** 8 **SIZE:** 4  
+**<span style="color:PapayaWhip;">Consumes:</span>** 3 `read-operation-data` @ `tcp/3306` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 20 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
+  
+  
+**Description:**  
+Serve as advanced nuclear plant calculation application. Engineers run simulations and save models.  
+<span style="color:red;">Requiring grid officer to perform scada operations.</span>  
+  
+  
+Produce target's use stack limit is 20 compatible uses.  
+Skips consuming from destination if produce target's use stack limit is reached.  
+  
+**Unlocks:** [padu_v2](#padu_v2), [ten-scada-server](#ten-scada-server)  
+**Unlocked By:** [R&D Specialist](users.md/#r&d-specialist)  
   
   
 ## tena-employee-db  
@@ -578,7 +679,7 @@ Stores employee data.
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**Unlocked By:** [ACCESS DATABASE](NO_LINK/#access-database), [HR Officer](users.md/#hr-officer)  
+**Unlocked By:** [ACCESS DATABASE](NO_LINK/#access-database), [HR Officer](users.md/#hr-officer), [Partner Gateway](users.md/#partner-gateway)  
   
   
 ## tena-gis-server  
@@ -642,7 +743,19 @@ Produce target's use stack limit is 8 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v2](#padu_v2)  
-**Unlocked By:** [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Normal Technician](users.md/#normal-technician), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
+**Unlocked By:** [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Normal Technician](users.md/#normal-technician), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer)  
+  
+  
+## tmp-collabpoint0  
+**CPU:** 1 **MEM:** 2 **SIZE:** 1  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `download-file, upload-file` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+  
+  
+**Description:**  
+Allows media sharing among staff.  
+Production is limited to 2 compatible uses on the device's use stack.  
+  
+**Unlocked By:** [Public Gateway](users.md/#public-gateway)  
   
   
 ## tmp-collabpoint1  
@@ -659,7 +772,7 @@ Produce target's use stack limit is 25 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v2](#padu_v2)  
-**Unlocked By:** [Billing Officer](users.md/#billing-officer), [Analytics Officer](users.md/#analytics-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Legal Officer](users.md/#legal-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [Sales Officer](users.md/#sales-officer)  
+**Unlocked By:** [Billing Officer](users.md/#billing-officer), [Analytics Officer](users.md/#analytics-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Legal Officer](users.md/#legal-officer), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer)  
   
   
 ## tnbmon  

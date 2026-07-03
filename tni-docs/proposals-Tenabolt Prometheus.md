@@ -6,7 +6,7 @@ permalink: /data/proposals/Tenabolt Prometheus
 
 # Proposals for Tenabolt Prometheus
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.3
+GENERATED FOR TNI VERSION 0.11.4
 
 - TOC
 {:toc}
@@ -275,13 +275,6 @@ Unlocks the 'cron', 'try' and 'notify' routines on NetShell.
 **Description:** Allows netsh and autograph scans to bypass all router rules for a cost of 1200.
 
 The exploit can be optionally turned on/off.  
-  
-  
-## Botnets research  
-**Price:** $665  
-**Unlock day:** 0  
-**Lore:** Not enough users?  
-**Description:** Adds a new "botconf" routine to netshell. Allow configuration of bots that can generate visitor traffic to enterprises. Funding costs 665.  
   
   
 ## Jailbreaker  
