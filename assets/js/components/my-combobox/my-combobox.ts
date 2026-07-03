@@ -19,8 +19,8 @@ export class MyCombobox extends LitElement {
 	inputRef: Ref<WaInput> = createRef();
 	get input(): WaInput { return this.inputRef.value!; }
 
-	@property({ type: String })
-	value: string|null = null;
+	@property({ type: String, reflect: true })
+	value: string = "";
 
 	@property({ attribute: true, reflect: true })
 	size: 'xs' | 's' | 'm' | 'l' | 'xl' | 'small' | 'medium' | 'large' = 'm';
@@ -49,11 +49,12 @@ export class MyCombobox extends LitElement {
 				@wa-select=${this._onDropdownSelect}
 				@wa-show=${() => this._filterItems(true)}
 				@wa-after-show=${this._scrollToCurrent}
+				@wa-after-hide=${() => { this.input.value = this.value; }}
 				@focus=${{ handleEvent: (e: FocusEvent) => this._onDropdownFocus(e), capture: true }}
 			>
 				<wa-input ${ref(this.inputRef)}
 					slot="trigger" placeholder="Type to search..." autocomplete="off" with-clear
-					size=${this.size} value=${this.value ?? ""}
+					size=${this.size} value=${this.value}
 					@input=${() => this._filterItems()}
 					@keydown=${this._onInputKeydown}
 					@click=${this._onInputClear}

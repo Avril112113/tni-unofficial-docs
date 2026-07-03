@@ -14,7 +14,7 @@ let MyCombobox = class MyCombobox extends LitElement {
         super(...arguments);
         this.dropdownRef = createRef();
         this.inputRef = createRef();
-        this.value = null;
+        this.value = "";
         this.size = 'm';
     }
     get dropdown() { return this.dropdownRef.value; }
@@ -39,11 +39,12 @@ let MyCombobox = class MyCombobox extends LitElement {
 				@wa-select=${this._onDropdownSelect}
 				@wa-show=${() => this._filterItems(true)}
 				@wa-after-show=${this._scrollToCurrent}
+				@wa-after-hide=${() => { this.input.value = this.value; }}
 				@focus=${{ handleEvent: (e) => this._onDropdownFocus(e), capture: true }}
 			>
 				<wa-input ${ref(this.inputRef)}
 					slot="trigger" placeholder="Type to search..." autocomplete="off" with-clear
-					size=${this.size} value=${this.value ?? ""}
+					size=${this.size} value=${this.value}
 					@input=${() => this._filterItems()}
 					@keydown=${this._onInputKeydown}
 					@click=${this._onInputClear}
@@ -210,7 +211,7 @@ let MyCombobox = class MyCombobox extends LitElement {
     }
 };
 __decorate([
-    property({ type: String })
+    property({ type: String, reflect: true })
 ], MyCombobox.prototype, "value", void 0);
 __decorate([
     property({ attribute: true, reflect: true })
