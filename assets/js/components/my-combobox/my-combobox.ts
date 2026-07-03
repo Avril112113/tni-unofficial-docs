@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, nothing, PropertyValues } from 'lit';
 import { customElement, property, query, queryAssignedElements } from 'lit/decorators.js';
 import { Ref, createRef, ref } from 'lit/directives/ref.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
@@ -19,8 +19,26 @@ export class MyCombobox extends LitElement {
 	inputRef: Ref<WaInput> = createRef();
 	get input(): WaInput { return this.inputRef.value!; }
 
+	@property({ type: Boolean })
+	use_value_over_label: boolean = false;
+
+	@property({ type: Boolean })
+	without_clear: boolean = false;
+
+	@property({ type: Boolean })
+	without_chevron: boolean = false;
+
+	@property({ type: Boolean })
+	without_filtering: boolean = false;
+
+	@property({ type: String })
+	placeholder: string = "Type to search...";
+
 	@property({ type: String, reflect: true })
 	value: string = "";
+
+	@property({ type: String, reflect: true })
+	input_value: string = "";
 
 	@property({ attribute: true, reflect: true })
 	size: 'xs' | 's' | 'm' | 'l' | 'xl' | 'small' | 'medium' | 'large' = 'm';
@@ -40,27 +58,40 @@ export class MyCombobox extends LitElement {
 		}
 	`;
 
+	protected override firstUpdated(_changedProperties: PropertyValues): void {
+		this.input_value = this._getInputValueForValue(this.value);
+		this.input.value = this.input_value;
+	}
+
+	protected override willUpdate(changedProperties: PropertyValues): void {
+		if (changedProperties.has("value") && !changedProperties.has("input_value")) {
+			this.input_value = this._getInputValueForValue(this.value);
+			if (this.input)
+				this.input.value = this.input_value;
+		}
+	}
+
 	override render() {
 		// TODO: Replace static placement with, disabled auto reposition.
 		return html`
 			<wa-dropdown ${ref(this.dropdownRef)}
-				slot="header" class="my-combobox" placement="bottom-start" skidding="32"
+				slot="header" placement="bottom-start"
 				size=${this.size}
-				@wa-select=${this._onDropdownSelect}
-				@wa-show=${() => this._filterItems(true)}
+				@wa-select=${(e: WaSelectEvent) => this._selectDropdownItem(e.detail.item as WaDropdownItem)}
+				@wa-show=${this._filterItems}
 				@wa-after-show=${this._scrollToCurrent}
-				@wa-after-hide=${() => { this.input.value = this.value; }}
+				@wa-after-hide=${() => { this.input.value = this._getInputValueForValue(this.value); }}
 				@focus=${{ handleEvent: (e: FocusEvent) => this._onDropdownFocus(e), capture: true }}
 			>
 				<wa-input ${ref(this.inputRef)}
-					slot="trigger" placeholder="Type to search..." autocomplete="off" with-clear
-					size=${this.size} value=${this.value}
-					@input=${() => this._filterItems()}
+					slot="trigger" placeholder=${this.placeholder} autocomplete="off" with-clear=${!this.without_clear || nothing}
+					size=${this.size} .value=${this.input_value}
+					@input=${() => { this.input_value = this.input.value ?? ""; this._filterItems(); }}
 					@keydown=${this._onInputKeydown}
 					@click=${this._onInputClear}
 				>
 					<slot name="start" slot="start"></slot>
-					<wa-icon name="chevron-down" slot="end"></wa-icon>
+					${this.without_chevron ? nothing : html`<wa-icon name="chevron-down" slot="end"></wa-icon>`}
 				</wa-input>
 				<slot @slotchange="${this._onSlotchange}"></slot>
 			</wa-dropdown>
@@ -106,7 +137,6 @@ export class MyCombobox extends LitElement {
 			const selectedItem = this._offsetSelectedItem(0);
 			if (selectedItem) {
 				selectedItem.click();
-				this.dispatchEvent(new CustomEvent("my-value-confirm", { bubbles: false, detail: selectedItem.value }));
 			}
 		} else if (e.key === 'Escape') {
 			this.dropdown.open = false;
@@ -122,19 +152,51 @@ export class MyCombobox extends LitElement {
 	}
 
 	private _getDropdownItemLabel(item: WaDropdownItem): string {
-		const itemLabel = item.shadowRoot?.querySelector("[part='label']")?.querySelector("slot") as HTMLSlotElement|null|undefined;
-		return itemLabel
-			? itemLabel.assignedNodes().map(node => node.textContent).join('').trim()
-			: item.textContent;
+		// const itemLabel = item.shadowRoot?.querySelector("[part='label']")?.querySelector("slot") as HTMLSlotElement|null|undefined;
+		// return itemLabel
+		// 	? itemLabel.assignedNodes().filter(node => !((node as HTMLElement).classList?.contains("my-combobox-ignore"))).map(node => node.textContent).join('').trim()
+		// 	: item.textContent;
+		const labelText = Array.from(item.childNodes)
+			.filter((node) => {
+				if (node.nodeType == Node.COMMENT_NODE) return false;
+				const el = node as HTMLElement;
+				if (el.classList?.contains("my-combobox-ignore")) return false;
+				if (el.slot) return false;
+				return true;
+			})
+			.map(node => node.textContent)
+			.join('')
+			.trim();
+		return labelText;
+	}
+	private _getDropdownInputValue(dropdown_item: WaDropdownItem) {
+		return this.use_value_over_label
+			? dropdown_item.value
+			: this._getDropdownItemLabel(dropdown_item).trim();
 	}
 
-	private async _filterItems(isInitial = false) {
+	private _getDropdownItemForValue(value: string) {
+		return this.dropdownItems.find((item) => {
+			return item.value == value;
+		});
+	}
+	private _getInputValueForValue(value: string) {
+		const item = this._getDropdownItemForValue(value);
+		if (!item) return "";
+		return this._getDropdownInputValue(item);
+	}
+
+	private async _filterItems() {
+		if (this.without_filtering) {
+			this.dropdown.open = true;
+			return;
+		}
+
 		const searchTerm = (this.input.value ?? "").toLowerCase();
 		const searchTerms = searchTerm.split(" ");
 		
 		// Query items that are direct structural children of the dropdown element
 		let hasMatches = false;
-		let singleMatch: WaDropdownItem|undefined;
 
 		if (searchTerm.length > 0) {
 			this.dropdown.open = true;
@@ -143,10 +205,6 @@ export class MyCombobox extends LitElement {
 		this.dropdownItems.forEach((item) => {
 			const text = this._getDropdownItemLabel(item).toLowerCase() ?? "";
 			if (searchTerms.every(term => text.includes(term)) || text.startsWith(searchTerm)) {
-				if (!hasMatches)
-					singleMatch = item as WaDropdownItem;
-				else
-					singleMatch = undefined;
 				item.style.display = '';
 				hasMatches = true;
 			} else {
@@ -154,32 +212,25 @@ export class MyCombobox extends LitElement {
 			}
 		});
 
-		if (!hasMatches && searchTerm.length > 0) {
-			this.dropdown.open = false;
-		} else {
+		if (hasMatches || searchTerm.length > 0) {
 			this._checkInputAndSelect();
 			this._scrollToCurrent();
 		}
-		
-		if (singleMatch) {
-			this.dispatchEvent(new CustomEvent<string|null>('my-single-match', { bubbles: false, detail: singleMatch.value }));
-		} else if (!isInitial) {
-			this.dispatchEvent(new CustomEvent<string|null>('my-single-match', { bubbles: false, detail: null }));
-		}
 	}
 
-	private _onDropdownSelect(event: WaSelectEvent): void {
-		const selectedItem = event.detail.item as WaDropdownItem;
-		this.input.value = this._getDropdownItemLabel(selectedItem).trim();
+	private _selectDropdownItem(selected_item: WaDropdownItem) {
+		this.value = selected_item.value;
+		this.input_value = this.use_value_over_label
+			? selected_item.value
+			: this._getDropdownItemLabel(selected_item).trim();
 		
-		// Reset layout displays for next visibility cycle
 		const items = this.dropdown.querySelectorAll<HTMLElement>('wa-dropdown-item');
 		items.forEach(item => item.style.display = '');
 		
 		this.dropdown.open = false;
 
 		this.input.dispatchEvent(new Event("input"));
-		this.dispatchEvent(new CustomEvent("my-value-confirm", { bubbles: false, detail: selectedItem.value }));
+		this.dispatchEvent(new CustomEvent("my-value-confirm", { bubbles: false, detail: this }));
 	}
 
 	private _selectItem(selectedItem: WaDropdownItem|null|undefined) {
@@ -215,8 +266,8 @@ export class MyCombobox extends LitElement {
 	}
 
 	private _checkInputAndSelect() {
-		if (this.input.value)
-			this._selectItemWithValue(this.input.value);
+		if (this.input_value)
+			this._selectItemWithValue(this.input_value);
 	}
 
 	private _selectItemWithValue(value: string, default_0 = false): WaDropdownItem|null {

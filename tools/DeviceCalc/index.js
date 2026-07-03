@@ -70,7 +70,7 @@ Promise.all([
                 console.log("Loading default state... (no state found)");
                 const elem = document.createElement("my-device");
                 devices_list.appendChild(elem);
-                elem.device_name = "MacroHard Boulder SRV";
+                elem.device_id = "MacroHard Boulder SRV";
             }
         }
     }

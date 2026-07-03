@@ -7,11 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';
-import { createRef, ref } from 'lit/directives/ref.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
 import _ from "lodash";
-import { TniProduceLimitType } from 'raw/data-format3-spec.js';
+import { TniProduceLimitType, TniSocketType } from 'raw/data-format3-spec.js';
 import { dataContext } from "../data-context.js";
 function getDeepDiff(object, base) {
     return _.transform(object, (result, value, key) => {
@@ -78,15 +77,14 @@ function _renderProgramSize(program) {
 let MyDevice = class MyDevice extends LitElement {
     constructor() {
         super(...arguments);
-        this.comboboxRef = createRef();
-        this.device_name = null;
         this.device_id = null;
         this.device_data = null;
         // Reset to `null` upon merge.
         this.device_data_partial = null;
         this.__dropdown_items_programs_templates = [];
+        this.__dropdown_items_satas_templates = [];
     }
-    get combobox() { return this.comboboxRef.value; }
+    get device_name() { return this._data && this.device_id ? this._data.devices[this.device_id]?.product_name ?? null : null; }
     get device_data_original() {
         return this._data && this.device_id ? this._data.devices[this.device_id] ?? null : null;
     }
@@ -94,18 +92,48 @@ let MyDevice = class MyDevice extends LitElement {
         return _.isEqual(this.device_data_original, this.device_data);
     }
     get _dropdown_items_programs_templates() {
-        if (this._dropdown_items_programs_templates_data !== this._data) {
-            this._dropdown_items_programs_templates_data = this._data;
+        if (this.__dropdown_items_programs_templates_data !== this._data) {
+            this.__dropdown_items_programs_templates_data = this._data;
             this.__dropdown_items_programs_templates = [];
             if (this._data) {
                 for (const program_id in this._data.programs) {
                     const program = this._data.programs[program_id];
-                    if (program.release_name.length > 0)
-                        this.__dropdown_items_programs_templates.push(html `<wa-dropdown-item value=${program_id}>${program.release_name}<span slot="details">${program.cpu_load}/${program.stack_size}/${program.code_size + program.data_size}</span></wa-dropdown-item>`);
+                    if (program.release_name.length > 0) {
+                        this.__dropdown_items_programs_templates.push(html `
+							<wa-dropdown-item value=${program_id}>
+								${program.release_name}
+								<span slot="details">${program.cpu_load}/${program.stack_size}/${program.code_size + program.data_size}</span>
+							</wa-dropdown-item>
+						`);
+                    }
                 }
             }
         }
         return this.__dropdown_items_programs_templates;
+    }
+    get _dropdown_items_satas_templates() {
+        if (this.__dropdown_items_satas_templates_data !== this._data) {
+            this.__dropdown_items_satas_templates_data = this._data;
+            this.__dropdown_items_satas_templates = [];
+            if (this._data) {
+                for (const plug_id in this._data.plugs) {
+                    if (plug_id == "components/removables/usb_stick.tscn")
+                        continue;
+                    const plug = this._data.plugs[plug_id];
+                    if (plug.PeripheralPlug && plug.RemovableStorageDevice) {
+                        this.__dropdown_items_satas_templates.push(html `
+							<wa-dropdown-item value="${plug_id}">
+								+${plug.RemovableStorageDevice.available_sto} <span class="my-combobox-ignore">${plug.PeripheralPlug.product_name}</span>
+								<span slot="details">
+									<span style="display: inline-block; min-width: 5ch;">$${plug.PeripheralPlug.price}</span>
+								</span>
+							</wa-dropdown-item>
+						`);
+                    }
+                }
+            }
+        }
+        return this.__dropdown_items_satas_templates;
     }
     static { this.styles = css `
 		wa-number-input::part(stepper) {
@@ -137,6 +165,11 @@ let MyDevice = class MyDevice extends LitElement {
 		:host .flex-gap {
 			display: flex;
 			gap: calc(var(--wa-content-spacing) / 2);
+		}
+
+		:host .flex-wrap {
+			display: flex;
+			flex-wrap: wrap;
 		}
 
 		:host table.tbl-programs {
@@ -182,9 +215,11 @@ let MyDevice = class MyDevice extends LitElement {
                 body = html `ERROR: Invalid \`deivce_id\``;
             }
             else if (!device) {
-                body = html `ERROR BUG: Component needs updating...`;
+                body = html `ERROR: No device data?`;
             }
             else {
+                device.CustomData ??= {};
+                const custom_data = device.CustomData;
                 const parts = [];
                 if (device.logic_controller && device_original.logic_controller) {
                     const logic_controller_original = device_original.logic_controller;
@@ -198,6 +233,16 @@ let MyDevice = class MyDevice extends LitElement {
                                 programs_size += program.code_size + program.data_size;
                             }
                         });
+                    }
+                    const satas_templates = this._generateTemplatesForPeripherals(logic_controller, custom_data);
+                    let satas_size = 0;
+                    if (custom_data.peripherals) {
+                        for (const plug_id of Object.values(custom_data.peripherals)) {
+                            const plug = this._data.plugs[plug_id];
+                            if (plug && plug.RemovableStorageDevice) {
+                                satas_size += plug.RemovableStorageDevice.available_sto;
+                            }
+                        }
                     }
                     parts.push(html `
 						<div class="flex-wrap-gap">
@@ -235,11 +280,11 @@ let MyDevice = class MyDevice extends LitElement {
                     }}
 								></wa-number-input>
 								<wa-number-input
-									label="Storage" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_sto))}
+									label="Storage" min="0" max="9999" step="1" .value=${live(String(logic_controller.installed_sto + satas_size))}
 									appearance="filled" size="m"
 									class=${logic_controller.installed_sto == logic_controller_original.installed_sto ? "" : "input-changed"}
 									@input=${(e) => {
-                        logic_controller.installed_sto = Number.parseInt(e.target.value ?? "0");
+                        logic_controller.installed_sto = Number.parseInt(e.target.value ?? "0") + satas_size;
                         this.requestUpdate();
                     }}
 									@blur=${(e) => {
@@ -251,7 +296,14 @@ let MyDevice = class MyDevice extends LitElement {
                     }}
 								></wa-number-input>
 							</div>
-							<div></div>
+							${satas_templates.length <= 0 ? "" : html `
+								<div class="flex-wrap" style="align-self: center; flex-direction: column;">
+									<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">SATA's</p>
+									<div class="flex-wrap">
+										${satas_templates}
+									</div>
+								</div>
+							`}
 							<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">Bandwidth:<br>${String(logic_controller.installed_nbw)}</p>
 							<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">Base Warranty:<br>${String(device.base_warranty_days)} days + ${String(device.base_warranty_cycles)} cycles</p>
 						</div>
@@ -262,7 +314,7 @@ let MyDevice = class MyDevice extends LitElement {
 								<div class="flex-gap" style="flex-grow: 1; margin: 0; text-align: center; align-items: center;">
 									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}; margin: 0;">CPU: ${programs_cpu}</p>
 									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
-									<p style="color: ${programs_size > logic_controller.installed_sto ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
+									<p style="color: ${programs_size > (logic_controller.installed_sto + satas_size) ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
 
 									<div style="margin-left: auto;">
 										<wa-button appearance="plain" size="l"
@@ -368,9 +420,8 @@ let MyDevice = class MyDevice extends LitElement {
         return html `
 			<wa-card class="card-header">
 				<div slot="header" class="flex-wrap-gap" style="align-items: center;">
-					<my-combobox ${ref(this.comboboxRef)} size="l" style="flex-grow: 1;" value=${this.device_name ?? ""}
-						@my-single-match=${(e) => { this.device_id = e.detail; }}
-						@my-value-confirm=${(e) => { this.device_id = e.detail; }}
+					<my-combobox size="l" style="flex-grow: 1;" value=${this.device_id ?? ""} input_value=${this.device_name ?? ""}
+						@my-value-confirm=${(e) => { this.device_id = e.detail.value ?? null; }}
 					>
 						<wa-icon name="server" slot="start"></wa-icon>
 						${dropdown_templates}
@@ -405,6 +456,28 @@ let MyDevice = class MyDevice extends LitElement {
 			</wa-card>
 		`;
     }
+    _generateTemplatesForPeripherals(logic_controller, custom_data) {
+        custom_data.peripherals ??= {};
+        const templates = [];
+        for (let port_index = 0; port_index < logic_controller.ports.length; port_index++) {
+            const port = logic_controller.ports[port_index];
+            if (port.type != TniSocketType.SATA35_SLOT)
+                continue;
+            templates.push(html `
+				<my-combobox
+					without_clear without_filtering without_chevron placeholder="0" style="width: 40px; --wa-form-control-padding-inline: 5px;"
+					value=${custom_data.peripherals[port_index] ?? ""}
+					@my-value-confirm=${(e) => { !e.detail.value ? delete custom_data.peripherals[port_index] : custom_data.peripherals[port_index] = e.detail.value; this.requestUpdate(); }}
+				>
+					<wa-dropdown-item value="">
+						<span class="my-combobox-ignore">Empty</span>
+					</wa-dropdown-item>
+					${this._dropdown_items_satas_templates}
+				</my-combobox>
+			`);
+        }
+        return templates;
+    }
     _generateTemplatesForPrograms(programs) {
         if (!this._data)
             return [];
@@ -415,9 +488,8 @@ let MyDevice = class MyDevice extends LitElement {
             templates.push(html `
 				<tr>
 					<th style="width: 100%;">
-						<my-combobox slot="header" style="flex-grow: 1;" value=${program?.release_name ?? ""}
-							@my-single-match=${(e) => { programs[i] = e.detail ?? ""; this.requestUpdate(); }}
-							@my-value-confirm=${(e) => { programs[i] = e.detail ?? ""; this.requestUpdate(); }}
+						<my-combobox slot="header" style="flex-grow: 1;" value=${program_id}
+							@my-value-confirm=${(e) => { programs[i] = e.detail.value ?? ""; this.requestUpdate(); }}
 						>
 							<wa-icon name="code" slot="start"></wa-icon>
 							${cache(this._dropdown_items_programs_templates)}
@@ -520,22 +592,22 @@ let MyDevice = class MyDevice extends LitElement {
     willUpdate(changedProperties) {
         super.willUpdate(changedProperties);
         const old_device_id = changedProperties.get("device_id") ?? this.device_id;
-        if ((!this.device_id && this.device_name) || (changedProperties.has('device_name') && !changedProperties.has('device_id'))) {
-            this.device_id = null;
-            if (this._data) {
-                const entry = Object.entries(this._data.devices).find(([key, val]) => val.product_name === this.device_name || key === this.device_name);
-                if (entry) {
-                    this.device_id = entry[0];
+        if (changedProperties.has('device_id')) {
+            if (this._data && this.device_id) {
+                const device = this.device_data_original;
+                if (!device) {
+                    const entry = Object.entries(this._data.devices).find(([key, val]) => val.product_name === this.device_id);
+                    if (entry) {
+                        this.device_id = entry[0];
+                    }
+                    else {
+                        this.device_id = null;
+                    }
                 }
             }
-            if (!changedProperties.has("device_data") || !this.device_data)
-                this._resetDeviceData(old_device_id);
         }
-        else if ((this.device_id && !this.device_name) || changedProperties.has('device_id')) {
-            this.device_name = this.device_id ? this._data?.devices[this.device_id]?.product_name ?? null : null;
-            if (!changedProperties.has("device_data") || !this.device_data)
-                this._resetDeviceData(old_device_id);
-        }
+        if (!this.device_data || this.device_id != old_device_id)
+            this._resetDeviceData(old_device_id);
     }
     updated(changedProperties) {
         super.updated(changedProperties);
@@ -548,6 +620,7 @@ let MyDevice = class MyDevice extends LitElement {
         if (data_original) {
             const old_data = this.device_data;
             this.device_data = structuredClone(data_original);
+            this.device_data.CustomData = {};
             if (this.device_data_partial) {
                 _.merge(this.device_data, this.device_data_partial);
                 this.device_data_partial = null;
@@ -593,9 +666,6 @@ __decorate([
     consume({ context: dataContext, subscribe: true }),
     state()
 ], MyDevice.prototype, "_data", void 0);
-__decorate([
-    property({ reflect: true })
-], MyDevice.prototype, "device_name", void 0);
 __decorate([
     property({ reflect: true })
 ], MyDevice.prototype, "device_id", void 0);
