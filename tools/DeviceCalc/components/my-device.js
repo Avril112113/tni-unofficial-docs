@@ -12,11 +12,16 @@ import { consume } from '@lit/context';
 import _ from "lodash";
 import { TniProduceLimitType, TniSocketType } from 'raw/data-format3-spec.js';
 import { dataContext } from "../data-context.js";
-function getDeepDiff(object, base) {
+const IRRELEVANT_DEVICES = new Set([
+    "units/gpu_servers/gpu_test_server.tscn",
+    "units/servers/test_server.tscn",
+    "units/routers/test_router.tscn",
+]);
+function _getDeepDiff(object, base) {
     return _.transform(object, (result, value, key) => {
         if (!_.isEqual(value, base[key])) {
             result[key] = (_.isObject(value) && _.isObject(base[key]))
-                ? getDeepDiff(value, base[key])
+                ? _getDeepDiff(value, base[key])
                 : value;
         }
     });
@@ -231,7 +236,6 @@ let MyDevice = class MyDevice extends LitElement {
         let programs_cpu = 0;
         let programs_mem = 0;
         let programs_size = 0;
-        let sata_slot_count = 0;
         let body;
         if (this.device_id) {
             const device_original = this.device_data_original;
@@ -260,7 +264,6 @@ let MyDevice = class MyDevice extends LitElement {
                         });
                     }
                     const satas_templates = this._generateTemplatesForPeripherals(logic_controller, custom_data);
-                    sata_slot_count = satas_templates.length;
                     let satas_size = 0;
                     if (custom_data.peripherals) {
                         for (const plug_id of Object.values(custom_data.peripherals)) {
@@ -404,7 +407,9 @@ let MyDevice = class MyDevice extends LitElement {
             if (this.device_data_is_original || (programs_cpu <= 0 && programs_mem <= 0 && programs_size <= 0)) {
                 for (const device_id in this._data.devices) {
                     const device = this._data.devices[device_id];
-                    dropdown_templates.push(dropdownItemTemplate(device_id, "", [
+                    if (!device.logic_controller)
+                        continue;
+                    dropdown_templates.push(dropdownItemTemplate(device_id, IRRELEVANT_DEVICES.has(device_id) ? "var(--wa-color-gray)" : "", [
                         html `<span style="display: inline-block; min-width: 5ch;">$${device.price}</span>`,
                     ]));
                 }
@@ -423,25 +428,27 @@ let MyDevice = class MyDevice extends LitElement {
                         }
                     }
                 }
-                const sata_combinations = getSumCombinations(sata_options, sata_slot_count)
-                    .map(combination => {
-                    return {
-                        storage: combination.sum,
-                        values: combination.values,
-                        price: _.sumBy(combination.values, sata_size => sata_prices[sata_size]),
-                    };
-                });
-                sata_combinations.sort((a, b) => {
-                    return a.price - b.price;
-                });
                 const device_templates_scored = [];
                 for (const device_id in this._data.devices) {
                     const device = this._data.devices[device_id];
-                    const excess_cpu = device.logic_controller ? device.logic_controller.installed_cpu - programs_cpu : -Infinity;
-                    const excess_mem = device.logic_controller ? device.logic_controller.installed_mem - programs_mem : -Infinity;
-                    let excess_sto = device.logic_controller ? device.logic_controller.installed_sto - programs_size : -Infinity;
+                    if (!device.logic_controller)
+                        continue;
+                    const excess_cpu = device.logic_controller.installed_cpu - programs_cpu;
+                    const excess_mem = device.logic_controller.installed_mem - programs_mem;
+                    let excess_sto = device.logic_controller.installed_sto - programs_size;
                     let sata_combination = null;
                     if (excess_sto < 0) {
+                        const sata_combinations = getSumCombinations(sata_options, this._countSataPorts(device.logic_controller))
+                            .map(combination => {
+                            return {
+                                storage: combination.sum,
+                                values: combination.values,
+                                price: _.sumBy(combination.values, sata_size => sata_prices[sata_size]),
+                            };
+                        });
+                        sata_combinations.sort((a, b) => {
+                            return a.price - b.price;
+                        });
                         for (let i = 0; i < sata_combinations.length; i++) {
                             const combination = sata_combinations[i];
                             if (excess_sto + combination.storage >= 0) {
@@ -452,9 +459,9 @@ let MyDevice = class MyDevice extends LitElement {
                         }
                     }
                     const any_lacking = excess_cpu < 0 || excess_mem < 0 || excess_sto < 0;
-                    const score = any_lacking
-                        ? Math.min(0, excess_cpu) + Math.min(0, excess_mem) + Math.min(0, excess_sto)
-                        : excess_cpu + excess_mem + excess_sto;
+                    const score = IRRELEVANT_DEVICES.has(device_id) ? -Infinity
+                        : any_lacking ? Math.min(0, excess_cpu) + Math.min(0, excess_mem) + Math.min(0, excess_sto)
+                            : excess_cpu + excess_mem + excess_sto;
                     const numFormat = new Intl.NumberFormat(undefined, { signDisplay: "exceptZero" });
                     const details = [
                         html `<span>${!Number.isFinite(score) ? "" : html `${numFormat.format(excess_cpu)} / ${numFormat.format(excess_mem)} / ${numFormat.format(excess_sto)}`}</span>`,
@@ -466,10 +473,8 @@ let MyDevice = class MyDevice extends LitElement {
 							SATA: ${sata_combination.values.map(numFormat.format).join(",")}
 						</div>`);
                     }
-                    const color = !Number.isFinite(score)
-                        ? "var(--wa-color-gray)"
-                        : any_lacking
-                            ? "var(--wa-color-red-80)"
+                    const color = IRRELEVANT_DEVICES.has(device_id) ? "var(--wa-color-gray)"
+                        : any_lacking ? "var(--wa-color-red-80)"
                             : "";
                     device_templates_scored.push([score, device.price, dropdownItemTemplate(device_id, color, details)]);
                 }
@@ -483,7 +488,7 @@ let MyDevice = class MyDevice extends LitElement {
                         return -1;
                     if (a_score < 0 && b_score < 0)
                         return b_score - a_score;
-                    return a_score - b_score;
+                    return a_price - b_price;
                 }).map(([score, price, template]) => template);
             }
         }
@@ -547,6 +552,16 @@ let MyDevice = class MyDevice extends LitElement {
 			`);
         }
         return templates;
+    }
+    _countSataPorts(logic_controller) {
+        let sum = 0;
+        for (let port_index = 0; port_index < logic_controller.ports.length; port_index++) {
+            const port = logic_controller.ports[port_index];
+            if (port.type != TniSocketType.SATA35_SLOT)
+                continue;
+            sum++;
+        }
+        return sum;
     }
     _generateTemplatesForPrograms(programs) {
         if (!this._data)
@@ -718,7 +733,7 @@ let MyDevice = class MyDevice extends LitElement {
             device_id: this.device_id,
             // device_data: this.device_data_is_original ? null : this.device_data,
             device_data_diff: this.device_data && this.device_data_original && !this.device_data_is_original
-                ? getDeepDiff(this.device_data, this.device_data_original)
+                ? _getDeepDiff(this.device_data, this.device_data_original)
                 : null,
         };
     }
