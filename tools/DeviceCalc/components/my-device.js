@@ -312,15 +312,21 @@ let MyDevice = class MyDevice extends LitElement {
         }
         let dropdown_templates = [];
         if (this._data) {
+            const dropdownItemTemplate = (device_id, color, details) => {
+                const device = this._data.devices[device_id];
+                return html `
+					<wa-dropdown-item value=${device_id} style="color: ${color};">
+						${device.product_name}
+						<span slot="details">
+							${details}
+							<span style="display: inline-block; min-width: 5ch;">$${device.price}</span>
+						</span>
+					</wa-dropdown-item>
+				`;
+            };
             if (this.device_data_is_original || (programs_cpu <= 0 && programs_mem <= 0 && programs_size <= 0)) {
                 for (const device_id in this._data.devices) {
-                    const device = this._data.devices[device_id];
-                    dropdown_templates.push(html `
-						<wa-dropdown-item value=${device_id}>
-							${device.product_name}
-							<span slot="details">$${device.price}</span>
-						</wa-dropdown-item>
-					`);
+                    dropdown_templates.push(dropdownItemTemplate(device_id, "", []));
                 }
             }
             else {
@@ -335,18 +341,15 @@ let MyDevice = class MyDevice extends LitElement {
                         ? Math.min(0, excess_cpu) + Math.min(0, excess_mem) + Math.min(0, excess_sto)
                         : excess_cpu + excess_mem + excess_sto;
                     const numFormat = new Intl.NumberFormat(undefined, { signDisplay: "exceptZero" });
-                    const details = html `<span slot="details">${!Number.isFinite(score) ? "" : html `${numFormat.format(excess_cpu)} / ${numFormat.format(excess_mem)} / ${numFormat.format(excess_sto)}&nbsp;&nbsp;&nbsp;`}$${device.price}</span>`;
+                    const details = [
+                        html `<span>${!Number.isFinite(score) ? "" : html `${numFormat.format(excess_cpu)} / ${numFormat.format(excess_mem)} / ${numFormat.format(excess_sto)}`}</span>`,
+                    ];
                     const color = !Number.isFinite(score)
                         ? "var(--wa-color-gray)"
                         : any_lacking
                             ? "var(--wa-color-red-80)"
                             : "";
-                    device_templates_scored.push([score, device.price, html `
-						<wa-dropdown-item value=${device_id} style="color: ${color};">
-							${device.product_name}
-							${details}
-						</wa-dropdown-item>
-					`]);
+                    device_templates_scored.push([score, device.price, dropdownItemTemplate(device_id, color, details)]);
                 }
                 dropdown_templates = device_templates_scored.sort(([a_score, a_price, a_template], [b_score, b_price, b_template]) => {
                     // Sorted as; zero -> near zero -> negative 0 -> negative near zero
