@@ -10,7 +10,7 @@ import { cache } from 'lit/directives/cache.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
 import _ from "lodash";
-import { TniProduceLimitType, TniSocketType } from 'raw/data-format3-spec.js';
+import { TniProduceLimitType, TniSocketType } from 'raw/data-format4-spec.js';
 import { dataContext } from "../data-context.js";
 const IRRELEVANT_DEVICES = new Set([
     "units/gpu_servers/gpu_test_server.tscn",
@@ -618,7 +618,7 @@ let MyDevice = class MyDevice extends LitElement {
             templates.push(html `
 				<tr style="color: var(--wa-color-red-80);">
 					<td style="float: right;"><b><code>[${-consume}]</code></b></td>
-					<td><b><code>${use_config.use_value}</code></b></td>
+					<td><b><code>${use_config.constraint_descript}</code></b></td>
 				</tr>
 			`);
         };

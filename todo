@@ -1,2 +1,11 @@
-Generate `./pages/tni-docs` from a python script and `data.json` instead of the data collector in GDScript.
-Investigate how devices are unlocked and provide that data.
+- Generate `./pages/tni-docs` from a python script and `data.json` instead of the data collector in GDScript.
+- Investigate how devices are unlocked and provide that data.
+- Page listing all traffic types
+
+- DeviceCalc; New device default selected device
+- DeviceCalc; Add wattage and rack size with bandwidth and warranty
+- DeviceCalc; Look into incorrect/confusing warranty numbers
+- DeviceCalc; Look into incorrect prices
+- DeviceCalc; Note about needing jailbreaker for devices that come with preinstalled software
+- DeviceCalc; Fix reset button on non-changed devices (likely due to custom data)
+- DeviceCalc; Auto-add SATA's if needed for current programs (which are shown in the device list)

@@ -1,13 +1,12 @@
 import { LitElement, PropertyValues, TemplateResult, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';
-import { createRef, ref, Ref } from 'lit/directives/ref.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
 
 import _ from "lodash";
 
-import { TniJsonData, TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType } from 'raw/data-format3-spec.js';
+import { TniJsonData, TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType } from 'raw/data-format4-spec.js';
 
 import { dataContext } from "../data-context.js";
 import { MyCombobox } from 'assets/js/components/my-combobox/my-combobox.js';
@@ -660,7 +659,7 @@ export class MyDevice extends LitElement {
 			templates.push(html`
 				<tr style="color: var(--wa-color-red-80);">
 					<td style="float: right;"><b><code>[${-consume}]</code></b></td>
-					<td><b><code>${use_config.use_value}</code></b></td>
+					<td><b><code>${use_config.constraint_descript}</code></b></td>
 				</tr>
 			`)
 		};
