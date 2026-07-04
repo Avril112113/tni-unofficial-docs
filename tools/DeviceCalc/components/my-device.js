@@ -543,10 +543,11 @@ let MyDevice = class MyDevice extends LitElement {
                         : any_lacking ? Math.min(0, excess_cpu) + Math.min(0, excess_mem) + Math.min(0, excess_sto)
                             : excess_cpu + excess_mem + excess_sto;
                     const numFormat = new Intl.NumberFormat(undefined, { signDisplay: "exceptZero" });
+                    const total_price = device.price + (sata_combination?.price ?? 0);
                     const details = [
                         html `<span>${!Number.isFinite(score) ? "" : html `${numFormat.format(excess_cpu)} / ${numFormat.format(excess_mem)} / ${numFormat.format(excess_sto)}`}</span>`,
                         html `&nbsp;&nbsp;`,
-                        html `<span style="display: inline-block; min-width: 5ch;">$${device.price + (sata_combination?.price ?? 0)}</span>`,
+                        html `<span style="display: inline-block; min-width: 5ch;">$${total_price}</span>`,
                     ];
                     if (sata_combination) {
                         details.push(html `<div>
@@ -556,7 +557,7 @@ let MyDevice = class MyDevice extends LitElement {
                     const color = IRRELEVANT_DEVICES.has(device_id) ? "var(--wa-color-gray)"
                         : any_lacking ? "var(--wa-color-red-80)"
                             : "";
-                    device_templates_scored.push([score, device.price, dropdownItemTemplate(device_id, color, details)]);
+                    device_templates_scored.push([score, total_price, dropdownItemTemplate(device_id, color, details)]);
                 }
                 dropdown_templates = device_templates_scored.sort(([a_score, a_price, a_template], [b_score, b_price, b_template]) => {
                     // Sorted as; zero -> near zero -> negative 0 -> negative near zero
