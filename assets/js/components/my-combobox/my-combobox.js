@@ -64,7 +64,8 @@ let MyCombobox = class MyCombobox extends LitElement {
 					size=${this.size} .value=${this.input_value}
 					@input=${() => { this.input_value = this.input.value ?? ""; this._filterItems(); }}
 					@keydown=${this._onInputKeydown}
-					@click=${this._onInputClear}
+					@click=${this._onInputClick}
+					@wa-clear=${(e) => { this._selectItemWithValue(this.value, true); }}
 				>
 					<slot name="start" slot="start"></slot>
 					${this.without_chevron ? nothing : html `<wa-icon name="chevron-down" slot="end"></wa-icon>`}
@@ -83,7 +84,7 @@ let MyCombobox = class MyCombobox extends LitElement {
     _onSlotchange() {
         this.requestUpdate();
     }
-    _onInputClear(e) {
+    _onInputClick(e) {
         if (this.dropdown.open) {
             e.stopPropagation();
         }
@@ -197,7 +198,7 @@ let MyCombobox = class MyCombobox extends LitElement {
         this.input.dispatchEvent(new Event("input"));
         this.dispatchEvent(new CustomEvent("my-value-confirm", { bubbles: false, detail: this }));
     }
-    _selectItem(selectedItem) {
+    _selectItemUpdate(selectedItem) {
         this.dropdownItems.forEach(item => {
             if (item == selectedItem) {
                 item.setAttribute('active', '');
@@ -223,7 +224,7 @@ let MyCombobox = class MyCombobox extends LitElement {
         if (newIndex < 0)
             newIndex = items.length + newIndex;
         if (offset != 0 || force_update) {
-            this._selectItem(items[newIndex]);
+            this._selectItemUpdate(items[newIndex]);
         }
         return items[newIndex] ?? null;
     }
@@ -237,12 +238,12 @@ let MyCombobox = class MyCombobox extends LitElement {
             return null;
         const newIndex = items.findIndex(item => item.value == value || item.textContent == value);
         if (newIndex > -1) {
-            this._selectItem(items[newIndex]);
+            this._selectItemUpdate(items[newIndex]);
             return items[newIndex] ?? null;
         }
         else {
             if (default_0) {
-                this._selectItem(items[0]);
+                this._selectItemUpdate(items[0]);
             }
             return null;
         }

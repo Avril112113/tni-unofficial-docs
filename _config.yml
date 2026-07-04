@@ -24,6 +24,10 @@ color_scheme: dark
 aux_links:
   "Github":
     - "https://github.com/Avril112113/tni-unofficial-docs"
+  "TNI Discord":
+    - "https://discord.gg/gMtxdgRu5b"
+  "TNI on Steam":
+    - "https://store.steampowered.com/app/2939600/Tower_Networking_Inc/"
 
 back_to_top: true
 back_to_top_text: "Back to top"

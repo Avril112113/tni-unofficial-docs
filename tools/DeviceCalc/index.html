@@ -25,9 +25,13 @@ permalink: /tools/DeviceCalc/
 
 <h1>Device Calculator</h1>
 <p>
-	<b>This is work in progress!</b> <br>
+	Feedback and suggestions are welcome! <br>
+	Find @Avril112113 on the <a href="https://discord.gg/gMtxdgRu5b">TNI discord</a>, or <a href="https://github.com/Avril112113/tni-unofficial-docs/issues">create an issue on the github</a>.
+</p>
+<p>
 	The following are still to be added; <br>
 	- Use stack total <br>
+	- Try account for merchant price multipliers
 </p>
 
 
@@ -40,7 +44,7 @@ permalink: /tools/DeviceCalc/
 <div class="show_data_loaded wa-cloak">
 	<wa-button-group label="Alignment" style="padding: var(--wa-content-spacing);">
 		<wa-button appearance="filled-outlined" size="l" variant="success"
-			onclick="document.getElementById('devices_list').appendChild(document.createElement('my-device'))"
+			onclick="const device = document.createElement('my-device'); device.setAttribute('device_id', 'MacroHard Boulder SRV'); document.getElementById('devices_list').appendChild(device)"
 		>
 			Add Device
 		</wa-button>

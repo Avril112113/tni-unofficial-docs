@@ -10,7 +10,7 @@ import { cache } from 'lit/directives/cache.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
 import _ from "lodash";
-import { TniProduceLimitType, TniSocketType } from 'raw/data-format4-spec.js';
+import { TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format5-spec.js';
 import { dataContext } from "../data-context.js";
 const IRRELEVANT_DEVICES = new Set([
     "units/gpu_servers/gpu_test_server.tscn",
@@ -110,15 +110,33 @@ let MyDevice = class MyDevice extends LitElement {
         this.device_data = null;
         // Reset to `null` upon merge.
         this.device_data_partial = null;
+        this.difficulty = {
+            device_warranty_period_multiplier: 1,
+        };
         this.__dropdown_items_programs_templates = [];
         this.__dropdown_items_satas_templates = [];
+        this._sata_options = [];
+        this._sata_prices = [];
+        this._sata_ids = [];
     }
     get device_name() { return this._data && this.device_id ? this._data.devices[this.device_id]?.product_name ?? null : null; }
     get device_data_original() {
         return this._data && this.device_id ? this._data.devices[this.device_id] ?? null : null;
     }
     get device_data_is_original() {
-        return _.isEqual(this.device_data_original, this.device_data);
+        // TODO: This is quite ugly...
+        let device_data = this.device_data;
+        if (device_data?.CustomData) {
+            device_data = { ...device_data };
+            device_data.CustomData = { ...device_data.CustomData };
+            if (_.isEmpty(device_data.CustomData.peripherals)) {
+                delete device_data.CustomData.peripherals;
+            }
+            if (_.isEmpty(device_data.CustomData)) {
+                delete device_data.CustomData;
+            }
+        }
+        return _.isEqual(this.device_data_original, device_data);
     }
     get _dropdown_items_programs_templates() {
         if (this.__dropdown_items_programs_templates_data !== this._data) {
@@ -164,6 +182,57 @@ let MyDevice = class MyDevice extends LitElement {
         }
         return this.__dropdown_items_satas_templates;
     }
+    __recalc_satas() {
+        this._sata_options = [];
+        this._sata_prices = [];
+        this._sata_ids = [];
+        if (this._data) {
+            for (const plug_id in this._data.plugs) {
+                if (plug_id == "components/removables/usb_stick.tscn")
+                    continue;
+                const plug = this._data.plugs[plug_id];
+                if (plug.PeripheralPlug && plug.RemovableStorageDevice) {
+                    const sata_sto = plug.RemovableStorageDevice.available_sto;
+                    if (this._sata_options.indexOf(sata_sto) == -1) {
+                        this._sata_options.push(sata_sto);
+                        this._sata_prices[sata_sto] = plug.PeripheralPlug.price;
+                        this._sata_ids[sata_sto] = plug_id;
+                    }
+                }
+            }
+        }
+    }
+    _getSataCombinations(sata_port_count) {
+        const sata_combinations = getSumCombinations(this._sata_options, sata_port_count)
+            .map(combination => {
+            return {
+                storage: combination.sum,
+                values: combination.values,
+                price: _.sumBy(combination.values, sata_size => this._sata_prices[sata_size]),
+                plug_ids: combination.values.map(sata_size => this._sata_ids[sata_size]),
+            };
+        });
+        sata_combinations.sort((a, b) => {
+            return a.price - b.price;
+        });
+        return sata_combinations;
+    }
+    _getProgramsRequirements(programs) {
+        let programs_cpu = 0;
+        let programs_mem = 0;
+        let programs_size = 0;
+        if (this._data && programs) {
+            programs.forEach((program_id) => {
+                const program = this._data?.programs[program_id];
+                if (program) {
+                    programs_cpu += program.cpu_load;
+                    programs_mem += program.stack_size;
+                    programs_size += program.code_size + program.data_size;
+                }
+            });
+        }
+        return [programs_cpu, programs_mem, programs_size];
+    }
     static { this.styles = css `
 		wa-number-input::part(stepper) {
 			aspect-ratio: unset
@@ -201,6 +270,16 @@ let MyDevice = class MyDevice extends LitElement {
 			flex-wrap: wrap;
 		}
 
+		:host .some-text {
+			text-align: center;
+			margin: 0;
+		}
+		:host .some-title {
+			font-weight: var(--wa-form-control-label-font-weight);
+			text-align: center;
+			margin: 0;
+		}
+
 		:host table.tbl-programs {
 			border-collapse: collapse;
 			width: 100%;
@@ -231,11 +310,20 @@ let MyDevice = class MyDevice extends LitElement {
 				margin-left: auto;
 			}
 		}
+
+		wa-tooltip {
+			--wa-tooltip-background-color: var(--wa-color-surface-raised);
+			--wa-tooltip-content-color: var(--wa-color-text-normal);
+			--wa-tooltip-border-color: var(--wa-color-surface-border);
+			
+			/* Also match the small indicator arrow */
+			--wa-tooltip-arrow-color: var(--wa-color-surface-raised);
+
+			--max-width: 75vw;
+		}
 	`; }
     render() {
-        let programs_cpu = 0;
-        let programs_mem = 0;
-        let programs_size = 0;
+        const [programs_cpu, programs_mem, programs_size] = this._getProgramsRequirements(this.device_data?.logic_controller?.installed_programs);
         let body;
         if (this.device_id) {
             const device_original = this.device_data_original;
@@ -253,16 +341,6 @@ let MyDevice = class MyDevice extends LitElement {
                 if (device.logic_controller && device_original.logic_controller) {
                     const logic_controller_original = device_original.logic_controller;
                     const logic_controller = device.logic_controller;
-                    if (this._data) {
-                        logic_controller.installed_programs.forEach((program_id) => {
-                            const program = this._data?.programs[program_id];
-                            if (program) {
-                                programs_cpu += program.cpu_load;
-                                programs_mem += program.stack_size;
-                                programs_size += program.code_size + program.data_size;
-                            }
-                        });
-                    }
                     const satas_templates = this._generateTemplatesForPeripherals(logic_controller, custom_data);
                     let satas_size = 0;
                     if (custom_data.peripherals) {
@@ -313,7 +391,7 @@ let MyDevice = class MyDevice extends LitElement {
 									appearance="filled" size="m"
 									class=${logic_controller.installed_sto == logic_controller_original.installed_sto ? "" : "input-changed"}
 									@input=${(e) => {
-                        logic_controller.installed_sto = Number.parseInt(e.target.value ?? "0") + satas_size;
+                        logic_controller.installed_sto = Number.parseInt(e.target.value ?? "0") - satas_size;
                         this.requestUpdate();
                     }}
 									@blur=${(e) => {
@@ -327,24 +405,30 @@ let MyDevice = class MyDevice extends LitElement {
 							</div>
 							${satas_templates.length <= 0 ? "" : html `
 								<div class="flex-wrap" style="align-self: center; flex-direction: column;">
-									<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">SATA's</p>
+									<p class="some-title">SATA's</p>
 									<div class="flex-wrap">
 										${satas_templates}
 									</div>
 								</div>
 							`}
-							<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">Bandwidth:<br>${String(logic_controller.installed_nbw)}</p>
-							<p style="font-weight: var(--wa-form-control-label-font-weight); text-align: center; margin: 0;">Base Warranty:<br>${String(device.base_warranty_days)} days + ${String(device.base_warranty_cycles)} cycles</p>
+							<p class="some-text"><span class="some-title">Bandwidth</span><br>${logic_controller.installed_nbw}/tick</p>
+							<p class="some-text"><span class="some-title">Warranty</span><br>${device.base_warranty_days + (device.base_warranty_cycles * this._data.BalanceCalc.GLOBAL_WARRANTY_PERIOD_DAYS_PER_CYCLE * this.difficulty.device_warranty_period_multiplier)} days</p>
+							<p class="some-text"><span class="some-title">Wattage</span><br>${device.power_controller?.charge_rate ?? "?"}w</p>
+							<p class="some-text"><span class="some-title">Mount Type</span><br>${device.mount_type}</p>
 						</div>
 						<wa-divider></wa-divider>
 						<div>
 							<div class="flex-wrap-gap" style="align-items: center;">
 								<h2 style="margin: 0;">Programs</h2>
-								<div class="flex-gap" style="flex-grow: 1; margin: 0; text-align: center; align-items: center;">
+								<div class="flex-gap flex-swap-2-3" style="flex-grow: 1; margin: 0; text-align: center; align-items: center;">
 									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}; margin: 0;">CPU: ${programs_cpu}</p>
 									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
 									<p style="color: ${programs_size > (logic_controller.installed_sto + satas_size) ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
 
+									${logic_controller_original.installed_programs.length > 0 && !this.device_data_is_original ? html `
+										<p class="some-text" style="color: var(--wa-color-orange-90);"><small>Jailbreaker<br>Required</small></p>
+									` : ""}
+									
 									<div style="margin-left: auto;">
 										<wa-button appearance="plain" size="l"
 											@click=${() => {
@@ -375,9 +459,15 @@ let MyDevice = class MyDevice extends LitElement {
 						</div>
 						<wa-divider></wa-divider>
 						<div>
-							<div class="flex-gap" style="align-items: center;">
+							<div class="flex-gap" style="align-items: center;" class="wa-invert">
 								<h2 style="margin: 0;">Use Stack</h2>
-								<code style="white-space: nowrap;"><i>[PRODUCTION/LIMIT] or [-CONSUME]</i></code>
+								<wa-icon id="my_device-use_stack-info" name="circle-question" variant="regular"></wa-icon>
+								<wa-tooltip for="my_device-use_stack-info">
+									<span style="color: var(--wa-color-green-95);">[PRODUCTION/LIMIT] PRODUCE_TYPES</span><br>
+									<span style="color: var(--wa-color-red-80);">[-CONSUME] CONSTRAINTS&nbsp;<small><i>(CONSUME_POLICY)</i></small></span><br>
+									<span style="color: var(--wa-color-red-80);"><small><i>(fragmented allowed)</i></small></span> - Partial consumption allowed, with reduced production. <br>
+									<span style="color: var(--wa-color-red-80);"><small><i>(all or nothing)</i></small></span> - Requires at least CONSUME, otherwise nothing produced. <br>
+								</wa-tooltip>
 							</div>
 							<table style="margin-left: var(--wa-content-spacing); border-collapse: separate; border-spacing: 10px 0;">
 								${this._generateTemplatesForUseStack(logic_controller.installed_programs, programs_mem)}
@@ -438,17 +528,7 @@ let MyDevice = class MyDevice extends LitElement {
                     let excess_sto = device.logic_controller.installed_sto - programs_size;
                     let sata_combination = null;
                     if (excess_sto < 0) {
-                        const sata_combinations = getSumCombinations(sata_options, this._countSataPorts(device.logic_controller))
-                            .map(combination => {
-                            return {
-                                storage: combination.sum,
-                                values: combination.values,
-                                price: _.sumBy(combination.values, sata_size => sata_prices[sata_size]),
-                            };
-                        });
-                        sata_combinations.sort((a, b) => {
-                            return a.price - b.price;
-                        });
+                        const sata_combinations = this._getSataCombinations(this._getSataPorts(device.logic_controller).length);
                         for (let i = 0; i < sata_combinations.length; i++) {
                             const combination = sata_combinations[i];
                             if (excess_sto + combination.storage >= 0) {
@@ -542,7 +622,10 @@ let MyDevice = class MyDevice extends LitElement {
 				<my-combobox
 					without_clear without_filtering without_chevron placeholder="0" style="width: 40px; --wa-form-control-padding-inline: 5px;"
 					value=${custom_data.peripherals[port_index] ?? ""}
-					@my-value-confirm=${(e) => { !e.detail.value ? delete custom_data.peripherals[port_index] : custom_data.peripherals[port_index] = e.detail.value; this.requestUpdate(); }}
+					@my-value-confirm=${(e) => {
+                !e.detail.value ? delete custom_data.peripherals[port_index] : custom_data.peripherals[port_index] = e.detail.value;
+                this.requestUpdate();
+            }}
 				>
 					<wa-dropdown-item value="">
 						<span class="my-combobox-ignore">Empty</span>
@@ -553,15 +636,15 @@ let MyDevice = class MyDevice extends LitElement {
         }
         return templates;
     }
-    _countSataPorts(logic_controller) {
-        let sum = 0;
+    _getSataPorts(logic_controller) {
+        const sata_port_indices = [];
         for (let port_index = 0; port_index < logic_controller.ports.length; port_index++) {
             const port = logic_controller.ports[port_index];
             if (port.type != TniSocketType.SATA35_SLOT)
                 continue;
-            sum++;
+            sata_port_indices.push(port_index);
         }
-        return sum;
+        return sata_port_indices;
     }
     _generateTemplatesForPrograms(programs) {
         if (!this._data)
@@ -580,8 +663,8 @@ let MyDevice = class MyDevice extends LitElement {
 							${cache(this._dropdown_items_programs_templates)}
 						</my-combobox>
 					</th>
-					<td style="white-space: nowrap; text-align: center;"><b>CPU:</b><br>${String(program?.cpu_load ?? "?")}</td>
-					<td style="white-space: nowrap; text-align: center;"><b>Mem:</b><br>${String(program?.stack_size ?? "?")}</td>
+					<td style="white-space: nowrap; text-align: center;"><b>CPU:</b><br>${program?.cpu_load ?? "?"}</td>
+					<td style="white-space: nowrap; text-align: center;"><b>Mem:</b><br>${program?.stack_size ?? "?"}</td>
 					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : _renderProgramSize(program)}</td>
 					<td style="white-space: nowrap;">
 						<wa-popover for="my-device-program-info-${i}" style="--max-width: 80ww;">
@@ -609,16 +692,27 @@ let MyDevice = class MyDevice extends LitElement {
         const installed_sto = this.device_data?.logic_controller?.installed_sto ?? 0;
         const free_mem = installed_mem - used_mem;
         const templates = [];
-        const addConsumeTemplate = (use_config_id, consume) => {
+        const addConsumeTemplate = (use_config_id, consume, policy) => {
             const use_config = this._data.use_configs[use_config_id];
             if (!use_config) {
                 console.warn("Encountered missing use_config:", use_config_id);
                 return;
             }
+            const policy_name = consume <= 1 ? ""
+                : policy == TniTraversalConsumptionPolicy.ALL_OR_NOTHING ? "all or nothing"
+                    : policy == TniTraversalConsumptionPolicy.FRAGMENTED_USE_ALLOWED ? "fragmented allowed"
+                        : policy;
+            let better_descript = use_config.constraint_descript;
+            if (better_descript.startsWith("(") && better_descript.endsWith(")") && (better_descript.match(/[()]/g) || []).length == 2) {
+                better_descript = better_descript.substring(1, better_descript.length - 2);
+            }
             templates.push(html `
 				<tr style="color: var(--wa-color-red-80);">
-					<td style="float: right;"><b><code>[${-consume}]</code></b></td>
-					<td><b><code>${use_config.constraint_descript}</code></b></td>
+					<td style="float: right;"><code><b>[${-consume}]</b></code></td>
+					<td><code>
+						<b>${better_descript}</b>
+						${policy_name.length > 0 ? html `&nbsp;<small><i>(${policy_name})</i></small>` : ""}
+					</code></td>
 				</tr>
 			`);
         };
@@ -668,7 +762,7 @@ let MyDevice = class MyDevice extends LitElement {
                 addProduceTemplate(program.AlwaysProduce.produce_use_config, program.AlwaysProduce.produce_factor, program.AlwaysProduce.produce_limit_type, program.AlwaysProduce.limit_factor, program.AlwaysProduce.produce_factor);
             }
             if (program.TraversalConsume) {
-                addConsumeTemplate(program.TraversalConsume.consume_use_config, program.TraversalConsume.consume_factor);
+                addConsumeTemplate(program.TraversalConsume.consume_use_config, program.TraversalConsume.consume_factor, program.TraversalConsume.consumption_policy);
                 addProduceTemplate(program.TraversalConsume.produce_use_config, program.TraversalConsume.produce_factor, program.TraversalConsume.produce_limit_type, program.TraversalConsume.limit_factor, program.TraversalConsume.produce_factor);
             }
         }
@@ -676,6 +770,9 @@ let MyDevice = class MyDevice extends LitElement {
     }
     willUpdate(changedProperties) {
         super.willUpdate(changedProperties);
+        if (changedProperties.has("_data")) {
+            this.__recalc_satas();
+        }
         const old_device_id = changedProperties.get("device_id") ?? this.device_id;
         if (changedProperties.has('device_id')) {
             if (this._data && this.device_id) {
@@ -706,6 +803,32 @@ let MyDevice = class MyDevice extends LitElement {
             const old_data = this.device_data;
             this.device_data = structuredClone(data_original);
             this.device_data.CustomData = {};
+            if (old_data && old_data.logic_controller && data_original.logic_controller) {
+                const [programs_cpu, programs_mem, programs_size] = this._getProgramsRequirements(old_data.logic_controller.installed_programs);
+                let excess_sto = data_original.logic_controller.installed_sto - programs_size;
+                if (excess_sto < 0) {
+                    let sata_combination = null;
+                    const sata_ports = this._getSataPorts(data_original.logic_controller);
+                    if (sata_ports.length > 0) {
+                        const sata_combinations = this._getSataCombinations(sata_ports.length);
+                        for (let i = 0; i < sata_combinations.length; i++) {
+                            const combination = sata_combinations[i];
+                            if (excess_sto + combination.storage >= 0) {
+                                excess_sto = excess_sto + combination.storage;
+                                sata_combination = combination;
+                                break;
+                            }
+                        }
+                        if (sata_combination) {
+                            this.device_data.CustomData.peripherals = {};
+                            for (let i = 0; i < sata_combination.plug_ids.length; i++) {
+                                const plug_id = sata_combination.plug_ids[i];
+                                this.device_data.CustomData.peripherals[sata_ports[i]] = plug_id;
+                            }
+                        }
+                    }
+                }
+            }
             if (this.device_data_partial) {
                 _.merge(this.device_data, this.device_data_partial);
                 this.device_data_partial = null;
