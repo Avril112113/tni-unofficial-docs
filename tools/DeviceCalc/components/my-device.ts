@@ -1,4 +1,4 @@
-import { LitElement, PropertyValues, TemplateResult, css, html } from 'lit';
+import { LitElement, PropertyValues, TemplateResult, css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';
 import { live } from 'lit/directives/live.js';
@@ -269,11 +269,11 @@ export class MyDevice extends LitElement {
 
 	static override styles = css`
 		wa-number-input::part(stepper) {
-			aspect-ratio: unset
+			aspect-ratio: unset;
 		}
 		wa-number-input::part(start),
 		wa-number-input::part(end) {
-			display: none
+			display: none;
 		}
 		wa-number-input::part(input) {
 			padding: 0;
@@ -282,6 +282,14 @@ export class MyDevice extends LitElement {
 		wa-number-input {
 			width: 100px;
 			--wa-content-spacing: 0;
+		}
+
+		.tiny-button {
+			line-height: 0;
+		}
+		.tiny-button::part(base) {
+			--wa-form-control-height: 21px;
+			aspect-ratio: unset;
 		}
 		
 		:host .input-changed::part(input) {
@@ -645,6 +653,26 @@ export class MyDevice extends LitElement {
 						>
 							<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
 						</wa-button>
+						<wa-button-group orientation="vertical" style="vertical-align: middle;">
+							<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${this.previousElementSibling ? false : true}
+								@click=${() => { if (this.previousElementSibling) {
+									(this.previousElementSibling as LitElement)?.requestUpdate();
+									this.parentElement?.insertBefore(this, this.previousElementSibling);
+									this.requestUpdate();
+								} }}
+							>
+								<wa-icon name="chevron-up" variant="solid" label="Move Up"></wa-icon>
+							</wa-button>
+							<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${this.nextElementSibling ? false : true}
+								@click=${() => { if (this.nextElementSibling) {
+									(this.nextElementSibling as LitElement)?.requestUpdate();
+									this.parentElement?.insertBefore(this.nextElementSibling, this);
+									this.requestUpdate();
+								} }}
+							>
+								<wa-icon name="chevron-down" variant="solid" label="Move Down"></wa-icon>
+							</wa-button>
+						</wa-button-group>
 					</div>
 				</div>
 				${body}
@@ -719,6 +747,24 @@ export class MyDevice extends LitElement {
 						>
 							<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
 						</wa-button>
+						<wa-button-group orientation="vertical" style="vertical-align: middle;">
+							<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${i <= 0}
+								@click=${() => { if (i > 0) {
+									[programs[i], programs[i-1]] = [programs[i-1]!, programs[i]!];
+									this.requestUpdate();
+								} }}
+							>
+								<wa-icon name="chevron-up" variant="solid" label="Move Up"></wa-icon>
+							</wa-button>
+							<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${i >= programs.length-1}
+								@click=${() => { if (i < programs.length) {
+									[programs[i], programs[i+1]] = [programs[i+1]!, programs[i]!];
+									this.requestUpdate();
+								} }}
+							>
+								<wa-icon name="chevron-down" variant="solid" label="Move Down"></wa-icon>
+							</wa-button>
+						</wa-button-group>
 					</td>
 				</tr>
 			`);
