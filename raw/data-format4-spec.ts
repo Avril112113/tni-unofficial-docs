@@ -10,7 +10,7 @@ export type TniJsonProposalName = string;
 
 type integer = number;
 
-export const SPEC_FORMAT_VERSION = 3;
+export const SPEC_FORMAT_VERSION = 4;
 
 
 export interface TniJsonData {

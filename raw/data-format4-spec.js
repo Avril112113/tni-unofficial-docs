@@ -1,4 +1,4 @@
-export const SPEC_FORMAT_VERSION = 3;
+export const SPEC_FORMAT_VERSION = 4;
 // Enums based on 0.11.3
 export var TniProgramControllerModifiers;
 (function (TniProgramControllerModifiers) {
