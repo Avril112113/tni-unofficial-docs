@@ -72,7 +72,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostMediaContent**  
-  **<span style="color:DarkKhaki;">Produces:</span>** stream-video  
+  **<span style="color:DarkKhaki;">Produces:</span>** `stream-video`  
   **Scaling:** Static?=8-13  
   **Description:** a media platform  
   
@@ -87,11 +87,11 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostNewsReading**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, stream-video, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** text-based political news site  
 - <span style="color:Aqua;">Host:</span> **HostTextForum**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, post-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Visitors  
   **Description:** a simple text-based forum  
   
@@ -106,11 +106,11 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostNewsReading**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, stream-video, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** text-based political news site  
 - <span style="color:Aqua;">Host:</span> **HostTextForum**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, post-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Visitors  
   **Description:** a simple text-based forum  
   
@@ -125,7 +125,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostNewsReading**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, stream-video, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** text-based political news site  
   
@@ -178,7 +178,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
 - <span style="color:Aqua;">Host:</span> **DecentroUserNode**  
-  **<span style="color:DarkKhaki;">Produces:</span>** facilitate-p2p-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-p2p-transaction`  
   **Scaling:** Static?=4-9  
   **Description:** decentro currency network facilitator  
   
@@ -1637,7 +1637,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
 - <span style="color:Aqua;">Host:</span> **DecentroUserNode**  
-  **<span style="color:DarkKhaki;">Produces:</span>** facilitate-p2p-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-p2p-transaction`  
   **Scaling:** Static?=4-9  
   **Description:** decentro currency network facilitator  
 - <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
@@ -1728,7 +1728,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
 - <span style="color:Aqua;">Host:</span> **HostEcommerceSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** Step outside the tower. Your only portal to global travel, international goods, and the world beyond!  
   
@@ -1752,7 +1752,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostDividendPayment**  
-  **<span style="color:DarkKhaki;">Produces:</span>** facilitate-banking  
+  **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-banking`  
   **Scaling:** Survey  
   **Description:** Safe, predictable growth for your money.  
   
@@ -1773,7 +1773,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostLiveHackingWorkshop**  
-  **<span style="color:DarkKhaki;">Produces:</span>** stream-live-video, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `stream-live-video, verify-user`  
   **Scaling:** Survey  
   **Description:** host private ethical hacking workshop  
   
@@ -1797,7 +1797,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, post-text, post-image`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostBusinessKanban**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction, post-text, post-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, post-text, post-image`  
   **Scaling:** Survey  
   **Description:** experience enhanced project efficiency with our premium business kanban service - invite your team and organization to streamline project management.  
   
@@ -1825,7 +1825,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostCheapTravelPackage**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** offer unbeatable travel packages to the public with the most affordable rates and exclusive deals - book now before these limited-time offers expire!  
   
@@ -1853,7 +1853,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, post-video`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostOnlineUniversity**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-video, post-text, post-image, stream-video, read-text, view-image, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-video, post-text, post-image, stream-video, read-text, view-image, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** join our comprehensive online university platform offering accredited degree programs designed for working professionals and students.  
   
@@ -1874,7 +1874,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, post-video`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostOnlineUniversity**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-video, post-text, post-image, stream-video, read-text, view-image, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-video, post-text, post-image, stream-video, read-text, view-image, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** join our comprehensive online university platform offering accredited degree program designed for working professionals and students.  
 - <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -1902,7 +1902,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostEcommerceSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** offers unbeatable prices on used devices for tower residents with exclusive bulk discounts.  
   
@@ -1929,7 +1929,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostDevWorkspace**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
   **Scaling:** Survey  
   **Description:** An internal development workspace for hired coders, plus a secure login site where gamers can view game releases.  
   
@@ -1958,7 +1958,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostEcommerceSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** let's buy high-quality servers, switches, and networking equipment for home tech setups.  
   
@@ -1987,7 +1987,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostEcommerceSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** we are your one-stop shop for all business and home office technology needs.  
   
@@ -2002,7 +2002,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostDevWorkspace**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
   **Scaling:** Survey  
   **Description:** An internal development workspace for hired coders, plus a secure login site where gamers can view latest game releases.  
 - <span style="color:Yellow;">Use:</span> **PUBLISH GAME STOREPAGE** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2035,7 +2035,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostTravelPackage**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** book your dream vacation with our curated high-end travel deals.  
   
@@ -2058,7 +2058,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `view-image, read-text, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** food, cheap  
 - <span style="color:Aqua;">Host:</span> **ReadingFoodMenu**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, post-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Survey  
   **Description:** food review community where people can share and read restaurant reviews.  
   
@@ -2086,7 +2086,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostCommunityHelping**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-image, authenticate-transaction, accept-instruction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, authenticate-transaction, accept-instruction`  
   **Scaling:** Visitors  
   **Description:** Post small tasks and hire neighbors for help, or earn extra income by accepting tasks to support your tower community.  
   
@@ -2111,7 +2111,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostFoodDelivery**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, post-image, post-text, accept-instruction, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-image, post-text, accept-instruction, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** food delivery platform  
   
@@ -2138,7 +2138,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostOnlineMerchant**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-image, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** we are online marketplace platform hosting multiple e-commerce sellers.  
   
@@ -2166,7 +2166,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostDatabaseSubscription**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** access a managed database without the need to set up physical hardware or manage database software.  
   
@@ -2194,7 +2194,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-video, post-text`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostGamePurchaseAndPosting**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-video, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-video, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** free to post your own games and play others' creations.  
   
@@ -2222,7 +2222,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-video, post-text, post-image`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostMoviePlatform**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-video, post-text, post-image, authenticate-transaction, stream-video, read-text, view-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-video, post-text, post-image, authenticate-transaction, stream-video, read-text, view-image`  
   **Scaling:** Survey  
   **Description:** we are movie platform where users can upload and watch films - share your videos or discover new content from our community of creators.  
   
@@ -2245,7 +2245,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `view-image, read-text, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** food, premium  
 - <span style="color:Aqua;">Host:</span> **ReadingFoodMenu**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, post-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Survey  
   **Description:** food review community where people can share and read restaurant reviews.  
   
@@ -2273,7 +2273,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, post-video`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostMedicalConsultation**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-image, post-text, post-video, authenticate-transaction, stream-video, read-text, view-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-image, post-text, post-video, authenticate-transaction, stream-video, read-text, view-image`  
   **Scaling:** Survey  
   **Description:** online medical consultation platform connecting patients with licensed healthcare professionals for virtual appointments.  
   
@@ -2291,7 +2291,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostBlogSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-image, read-text, view-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, read-text, view-image`  
   **Scaling:** Visitors  
   **Description:** join our community and start posting your blog today.  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2309,7 +2309,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostLibrarySite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-image, read-text, view-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, read-text, view-image`  
   **Scaling:** Visitors  
   **Description:**  join our community and start sharing your favourite books today.  
 - <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2335,7 +2335,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:DarkKhaki;">Produces:</span>** `store-text, store-image, store-video`  
 - <span style="color:Aqua;">Host:</span> **HostFileStorage**  
-  **<span style="color:DarkKhaki;">Produces:</span>** store-text, store-image, store-video  
+  **<span style="color:DarkKhaki;">Produces:</span>** `store-text, store-image, store-video`  
   **Scaling:** Visitors  
   **Description:** we provide cloud storage service offering reliable online backup and file sharing.  
   
@@ -2354,7 +2354,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction and post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** b2b, project-planning  
 - <span style="color:Aqua;">Host:</span> **HostFreelanceWorkspace**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **Scaling:** Survey  
   **Description:** internal workspace which provides freelance coders with advanced tools and collaborative environments to create the best working experience within tower.  
 - <span style="color:Yellow;">Use:</span> **USE DATABASE SERVICE** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2383,7 +2383,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostDevWorkspace**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
   **Scaling:** Survey  
   **Description:** An internal workspace for hired coders to develop custom software solutions, plus a login-protected site where authorized users can view company data products and case studies.  
 - <span style="color:Yellow;">Use:</span> **USE BUSINESS KANBAN** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2402,7 +2402,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostNewsSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, stream-video, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** exclusive news site for public.  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2428,7 +2428,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** gaming, sci-fi  
 - <span style="color:Aqua;">Host:</span> **HostFreelanceWorkspace**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **Scaling:** Survey  
   **Description:** host freelance workspace  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2446,7 +2446,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostFreeKanban**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image`  
   **Scaling:** Survey  
   **Description:** free kanban platform  
 - <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2486,7 +2486,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostMediaContent**  
-  **<span style="color:DarkKhaki;">Produces:</span>** stream-video, view-image, read-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `stream-video, view-image, read-text`  
   **Scaling:** Survey  
   **Description:** let’s explore our additive streaming site to brighten your day.  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2507,7 +2507,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostMusicSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-audio, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-audio, stream-audio`  
   **Scaling:** Visitors  
   **Description:** free music site  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2528,7 +2528,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostPostcastPlatform**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-audio, stream-audio, read-text, post-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-audio, stream-audio, read-text, post-text`  
   **Scaling:** Visitors  
   **Description:** host podcast platform  
 - <span style="color:Yellow;">Use:</span> **POST PODCAST TRANSCRIPT** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2550,7 +2550,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostOfficialPoliticalNews**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, stream-video, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** official news site  
 - <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2568,7 +2568,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostForumSocialMedia**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, post-text, post-image, post-video, stream-video  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-text, post-image, post-video, stream-video`  
   **Scaling:** Visitors  
   **Description:** let's share your spiritual journey with us.  
 - <span style="color:Yellow;">Use:</span> **TALK TO BELIEVERS** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2590,7 +2590,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostScientificNews**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, stream-video, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** scientific news site  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2616,7 +2616,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
 - <span style="color:Aqua;">Host:</span> **HostNewsPosting**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, post-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Visitors  
   **Description:** feel free to read or post announcement.  
 - <span style="color:Yellow;">Use:</span> **PURCHASE OFFICE SUPPLIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2638,7 +2638,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostSocialMedia**  
-  **<span style="color:DarkKhaki;">Produces:</span>** stream-video, view-image, read-text, post-text, post-image, post-video  
+  **<span style="color:DarkKhaki;">Produces:</span>** `stream-video, view-image, read-text, post-text, post-image, post-video`  
   **Scaling:** Survey  
   **Description:** social media platform  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2669,7 +2669,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
 - <span style="color:Aqua;">Host:</span> **ProvideBankingService**  
-  **<span style="color:DarkKhaki;">Produces:</span>** facilitate-banking  
+  **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-banking`  
   **Scaling:** Survey  
   **Description:** enjoy our best professional banking services for both businesses and individual customers.  
 - <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 80% @ `tcp/631` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2692,7 +2692,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-instant-messages, post-instant-messages`  
 - <span style="color:Aqua;">Host:</span> **HostChattingPlatform**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-instant-messages, post-instant-messages  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-instant-messages, post-instant-messages`  
   **Scaling:** Visitors  
   **Description:** let's chat with your loved ones instantly.  
   
@@ -2716,7 +2716,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text, verify-user`  
 - <span style="color:Aqua;">Host:</span> **ReadEmail**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, post-text, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text, verify-user`  
   **Scaling:** Visitors  
   **Description:** let's read incoming messages and compose responses when necessary.  
   
@@ -2731,7 +2731,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostSoftwareUpdate**  
-  **<span style="color:DarkKhaki;">Produces:</span>** update-software  
+  **<span style="color:DarkKhaki;">Produces:</span>** `update-software`  
   **Scaling:** Visitors  
   **Description:** release software update for companies.  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2761,7 +2761,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **IssueUtilitiesBills**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Visitors  
   **Description:** kindly pay your monthly utilities bills by the due date to avoid service interruptions.  
 - <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 80% @ `tcp/631` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2782,7 +2782,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
 - <span style="color:Aqua;">Host:</span> **HostIdeologicalAds**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-video, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-video, verify-user`  
   **Scaling:** Visitors  
   **Description:** host ideological advertisement  
   
@@ -2797,7 +2797,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostExclusiveResearch**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **Scaling:** Visitors  
   **Description:** host scientific research work  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -2815,7 +2815,7 @@ GENERATED FOR TNI VERSION 0.11.4
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **ProvideHiddenContent**  
-  **<span style="color:DarkKhaki;">Produces:</span>** store-text, tunnel-vpn-traffic  
+  **<span style="color:DarkKhaki;">Produces:</span>** `store-text, tunnel-vpn-traffic`  
   **Scaling:** Static?=1-1  
   **Description:** allow users to store surveillance data with the utmost privacy settings.  
   
@@ -3318,11 +3318,11 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-employee-data or post-employee-data )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `verify-user, post-leave-request, post-certification-renewal, post-employee-payslip`  
 - <span style="color:Aqua;">Host:</span> **HcmService**  
-  **<span style="color:DarkKhaki;">Produces:</span>** verify-user, post-leave-request, post-certification-renewal, post-employee-payslip, read-employee-payslip  
+  **<span style="color:DarkKhaki;">Produces:</span>** `verify-user, post-leave-request, post-certification-renewal, post-employee-payslip, read-employee-payslip`  
   **Scaling:** Survey  
   **Description:** allows human resource to manage staff records, and staff to manage their own leave, payslips, and other staff-related applications.  
 - <span style="color:Aqua;">Host:</span> **ServeSaas**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, view-tenabolt-dashboard, post-tenabolt-dashboard  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, view-tenabolt-dashboard, post-tenabolt-dashboard`  
   **Scaling:** Survey  
   **Description:** Enables staff to access dashboards, retrieve external data, and publish outputs to cloud services.  
   
@@ -3366,7 +3366,7 @@ Switched off by IT staff during non-working hour to save cost.
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **ServeSaas**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, view-tenabolt-dashboard, post-tenabolt-dashboard  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, view-tenabolt-dashboard, post-tenabolt-dashboard`  
   **Scaling:** Survey  
   **Description:** Enables staff to access dashboards, retrieve external data, and publish outputs to cloud services.  
   
@@ -3381,7 +3381,7 @@ Switched off by IT staff during non-working hour to save cost.
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **EcommerceService**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction, read-text, view-image, post-text, post-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, read-text, view-image, post-text, post-image`  
   **Scaling:** Survey  
   **Description:** allows e-commerce department to manage sales.  
   
@@ -3401,7 +3401,7 @@ Switched off by IT staff during non-working hour to save cost.
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-employee-data or post-employee-data )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `verify-user, post-leave-request, post-certification-renewal, post-employee-payslip`  
 - <span style="color:Aqua;">Host:</span> **HcmService**  
-  **<span style="color:DarkKhaki;">Produces:</span>** verify-user, post-leave-request, post-certification-renewal, post-employee-payslip, read-employee-payslip  
+  **<span style="color:DarkKhaki;">Produces:</span>** `verify-user, post-leave-request, post-certification-renewal, post-employee-payslip, read-employee-payslip`  
   **Scaling:** Survey  
   **Description:** allows human resource to manage staff records, and staff to manage their own leave, payslips, and other staff-related applications.  
   
@@ -3426,7 +3426,7 @@ Only operates during working hours.
   **<span style="color:PapayaWhip;">Consumes:</span>** `store-text and store-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-text, post-image, verify-user, accept-instruction`  
 - <span style="color:Aqua;">Host:</span> **ITSMService**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, post-text, post-image, verify-user, accept-instruction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-text, post-image, verify-user, accept-instruction`  
   **Scaling:** Survey  
   **Description:** allows staff to submit it tickets  
   
@@ -3780,7 +3780,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostImageTextPost**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-image, view-image, read-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, view-image, read-text`  
   **Scaling:** Survey  
   **Description:** host memes forum  
   
@@ -3804,7 +3804,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostImageTextPost**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-text, post-image, view-image, read-text  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, view-image, read-text`  
   **Scaling:** Survey  
   **Description:** host memes forum  
   
@@ -3828,7 +3828,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostLofiMusic**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-audio, stream-audio  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-audio, stream-audio`  
   **Scaling:** Survey  
   **Description:** host lofi music channel  
   
@@ -3849,7 +3849,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `post-image, post-video, accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostAnimationPlatform**  
-  **<span style="color:DarkKhaki;">Produces:</span>** post-image, post-video, authenticate-transaction, view-image, stream-video, accept-instruction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `post-image, post-video, authenticate-transaction, view-image, stream-video, accept-instruction`  
   **Scaling:** Survey  
   **Description:** host animation platform  
 - <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
@@ -3882,7 +3882,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
 - <span style="color:Aqua;">Host:</span> **HostFreelanceWorkspace**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **Scaling:** Survey  
   **Description:** host freelance workspace  
   
@@ -3903,7 +3903,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-image, post-text, accept-instruction, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostGroceryDelivery**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, post-image, post-text, accept-instruction, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-image, post-text, accept-instruction, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** grocery and food delivery  
 - <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -3934,7 +3934,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
 - <span style="color:Aqua;">Host:</span> **HostGameStreaming**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction, stream-video  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, stream-video`  
   **Scaling:** Visitors  
   **Description:** hires professional gamers to broadcast live gameplay and provides viewers with access to watch these live gaming streams.  
   
@@ -3967,7 +3967,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostEcommerceSite**  
-  **<span style="color:DarkKhaki;">Produces:</span>** authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** host e-commerce site  
   
@@ -3988,7 +3988,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** database-as-a-service, b2b  
 - <span style="color:Aqua;">Host:</span> **HostInventoryDashboard**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** track, manage, and optimize the clients' product inventory at a small fee  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -4009,7 +4009,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
 - <span style="color:Aqua;">Host:</span> **HostConfidentialResearch**  
-  **<span style="color:DarkKhaki;">Produces:</span>** accept-instruction, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, verify-user`  
   **Scaling:** Visitors  
   **Description:** host confidential research work  
   
@@ -4043,7 +4043,7 @@ They stick to familiar websites unless better options appear.
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostFileTransfer**  
-  **<span style="color:DarkKhaki;">Produces:</span>** store-text, store-image, post-text, post-image  
+  **<span style="color:DarkKhaki;">Produces:</span>** `store-text, store-image, post-text, post-image`  
   **Scaling:** Visitors  
   **Description:** file transfer site  
   
@@ -4063,7 +4063,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-text, post-image, post-video, stream-video`  
 - <span style="color:Aqua;">Host:</span> **HostForumSocialMedia**  
-  **<span style="color:DarkKhaki;">Produces:</span>** read-text, view-image, post-text, post-image, post-video, stream-video  
+  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-text, post-image, post-video, stream-video`  
   **Scaling:** Visitors  
   **Description:** host professional forum  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -4086,7 +4086,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-live-video, read-instant-messages, post-instant-messages, verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostVideoConferencing**  
-  **<span style="color:DarkKhaki;">Produces:</span>** stream-live-video, read-instant-messages, post-instant-messages, verify-user  
+  **<span style="color:DarkKhaki;">Produces:</span>** `stream-live-video, read-instant-messages, post-instant-messages, verify-user`  
   **Scaling:** Survey  
   **Description:** enabling real-time meetings  
   
@@ -4107,7 +4107,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `update-software, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
 - <span style="color:Aqua;">Host:</span> **HostAntivirusUpdate**  
-  **<span style="color:DarkKhaki;">Produces:</span>** update-software, authenticate-transaction  
+  **<span style="color:DarkKhaki;">Produces:</span>** `update-software, authenticate-transaction`  
   **Scaling:** Visitors  
   **Description:** release antivirus software update  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
@@ -4125,7 +4125,7 @@ They stick to familiar websites unless better options appear.
   
 **Behaviors:**  
 - <span style="color:Aqua;">Host:</span> **HostPrivacySoftwareUpdate**  
-  **<span style="color:DarkKhaki;">Produces:</span>** update-software  
+  **<span style="color:DarkKhaki;">Produces:</span>** `update-software`  
   **Scaling:** Visitors  
   **Description:** release privacy software update  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
