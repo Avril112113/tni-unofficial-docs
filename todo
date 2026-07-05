@@ -1,3 +1,2 @@
 - Generate `./pages/tni-docs` from a python script and `data.json` instead of the data collector in GDScript.
 - Investigate how devices are unlocked and provide that data.
-- Page listing all traffic types

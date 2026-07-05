@@ -1,0 +1,108 @@
+{
+	"header": [
+		"`#` represents any number between 0-9",
+		"",
+		"Note that, descriptions are manually written, so they could be inaccurate or out of date."
+	],
+
+	"icmp": [
+		"Default type for `ping`"
+	],
+	"tcp/23": [
+		"Debugger/netsh traffic"
+	],
+	"udp/53": [
+		"DNS request.s",
+		"Looking for `reply-dns-queries`"
+	],
+	"udp/67": [
+		"DHCP requests.",
+		"Looking for `reply-dhcp-request`"
+	],
+	"tcp/80": [
+		"Generic User traffic."
+	],
+	"tcp/443": [
+		"Generic User traffic."
+	],
+	"tcp/80##": [
+		"Malicious User traffic.",
+		"Text scraping."
+	],
+	"tcp/51#": [
+		"Worm `ANNOYING_MORRIS`"
+	],
+
+	"udp/520": [
+		"RIP route advertisement.",
+		"Setup via the `rip` command"
+	],
+	"udp/554": [
+		"RTSP requests, including User traffic.",
+		"From CCTV Camera looking for `accept-cctv-camera-connection`",
+		"From users looking for `stream-live-video`"
+	],
+	"tcp/554": [
+		"RTSP requests.",
+		"From CCTV Monitor looking for `accept-cctv-monitor-connection`."
+	],
+	"udp/5060": [
+		"SIP requests, produced by VOIP phones or users looking for `stream-voice`",
+		"This also includes the Worm `HUSH`"
+	],
+	"tcp/8333": [
+		"Decentro/P2P traffic"
+	],
+	"tcp/3264": [
+		"SAN traffic.",
+		"From a `san-server`, looking for `store-block`, from a `san-client`"
+	],
+	"tcp/2404": [
+		"SCADA User traffic."
+	],
+	"udp/1194": [
+		"VPN User traffic."
+	],
+	"tcp/3306": [
+		"Database traffic.",
+		"Looking for `store-text` and `store-image` traffic."
+	],
+	"tcp/5432": [
+		"Database traffic.",
+		"Looking for `store-text` and `store-image` traffic."
+	],
+	"tcp/631": [
+		"Printer traffic, including User traffic.",
+		"From users looking for `print-image` and `print-text`",
+		"From `printer_edge`"
+	],
+	"udp/6343": [
+		"??? traffic.",
+		"From `ubbt` looking for `inspect-user-packets`"
+	],
+	"tcp/25": [
+		"Mailer traffic."
+	],
+
+	"udp/16384": [
+		"Missing description."
+	],
+	"tcp/20": [
+		"Missing description."
+	],
+	"tcp/119": [
+		"Missing description."
+	],
+	"tcp/6667": [
+		"Missing description."
+	],
+	"tcp/300#": [
+		"Missing description."
+	],
+	"tcp/90##": [
+		"Missing description."
+	],
+	"tcp/25###": [
+		"Missing description."
+	]
+}
