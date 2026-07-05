@@ -103,7 +103,7 @@ Collects decentro currencies over the network and accumulate them on the install
 Produce target's use stack limit is 6 compatible uses per target's free memory.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**Unlocked By:** [SEND DECENTRO](NO_LINK/#send-decentro)  
+**Unlocked By:** SEND DECENTRO  
   
   
 ## decentro-node  
@@ -115,7 +115,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 Authenticate Decentro transactions. Decentro peers can connect to this program to perform peer-to-peer transactions. You may only spend decentro currencies that are accessible by decentro nodes.  
 Production is limited to 10 compatible uses on the device's use stack.  
   
-**Unlocked By:** [SEND DECENTRO](NO_LINK/#send-decentro)  
+**Unlocked By:** SEND DECENTRO  
   
   
 ## decentro-wallet  
@@ -128,7 +128,7 @@ Safeguards your decentro currencies from power loss or unscheduled shutdown even
   
 This program stores up to 10 'access-p2p-currency' compatible uses per free storage on device. Stored uses persists across device reboots.  
   
-**Unlocked By:** [SEND DECENTRO](NO_LINK/#send-decentro)  
+**Unlocked By:** SEND DECENTRO  
   
   
 ## dns-lite  
@@ -208,7 +208,7 @@ open-source software repository. Supports software-updates requests.
 Produce target's use stack limit is 16 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**Unlocked By:** [SOFTWARE UPDATES](NO_LINK/#software-updates), [SOFTWARE UPDATES](NO_LINK/#software-updates)  
+**Unlocked By:** SOFTWARE UPDATES, SOFTWARE UPDATES  
   
   
 ## hakernel  
@@ -309,7 +309,7 @@ Produce target's use stack limit is 15 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v2](#padu_v2)  
-**Unlocked By:** [complaint-server2](#complaint-server2), [EXCHANGE EMAIL](NO_LINK/#exchange-email), [EXCHANGE EMAIL](NO_LINK/#exchange-email), [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer)  
+**Unlocked By:** [complaint-server2](#complaint-server2), EXCHANGE EMAIL, EXCHANGE EMAIL, [Billing Officer](users.md/#billing-officer), [Customer Officer](users.md/#customer-officer), [Distribution Officer](users.md/#distribution-officer), [Field Inspector](users.md/#field-inspector), [Finance Officer](users.md/#finance-officer), [Grid Officer](users.md/#grid-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Grid Officer](users.md/#morning-grid-officer), [Morning Technician](users.md/#morning-technician), [Night Grid Officer](users.md/#night-grid-officer), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Planning Officer](users.md/#planning-officer), [Public Gateway](users.md/#public-gateway), [PR Officer](users.md/#pr-officer), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer)  
   
   
 ## maintenance-server  
@@ -679,7 +679,7 @@ Stores employee data.
 Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
-**Unlocked By:** [ACCESS DATABASE](NO_LINK/#access-database), [HR Officer](users.md/#hr-officer), [Partner Gateway](users.md/#partner-gateway)  
+**Unlocked By:** ACCESS DATABASE, [HR Officer](users.md/#hr-officer), [Partner Gateway](users.md/#partner-gateway)  
   
   
 ## tena-gis-server  
@@ -821,7 +821,7 @@ Supports Voice over Internet Protocol for streaming voice messages phones.
 Allows voip phones to be connected to produce stream-voice uses.  
 Production is limited to 10 compatible uses on the device's use stack.  
   
-**Unlocked By:** [TALK TO SOMEONE ONLINE](NO_LINK/#talk-to-someone-online), [Media Maniac](users.md/#media-maniac), [Vocal Connector](users.md/#vocal-connector), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Private Dweller](users.md/#private-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scifi Movie Director](users.md/#scifi-movie-director), [Audio Lover](users.md/#audio-lover), [Scientific Professor](users.md/#scientific-professor), [Decentro Farmer](users.md/#decentro-farmer), [Home Chef](users.md/#home-chef), [Lifestyle Blogger](users.md/#lifestyle-blogger), [Digital Salesman](users.md/#digital-salesman), [Night Chatter](users.md/#night-chatter), [Pet Lover](users.md/#pet-lover), [Secondhand Buyer](users.md/#secondhand-buyer), [Vocal Connector](users.md/#vocal-connector), [Patient Professor](users.md/#patient-professor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Malicious User](users.md/#malicious-user), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Recycling Center](users.md/#recycling-center), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Cheap Kitchen](users.md/#cheap-kitchen), [Premium Kitchen](users.md/#premium-kitchen), [Horror Director](users.md/#horror-director), [Ads Agency](users.md/#ads-agency), [Research Hub](users.md/#research-hub), [Surveillance Hub](users.md/#surveillance-hub), [Normal Associate](users.md/#normal-associate), [Sales Officer](users.md/#sales-officer), [Professional Gamer](users.md/#professional-gamer), [Binge Watcher](users.md/#binge-watcher), [Jazz Lover](users.md/#jazz-lover), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Semiconductor Hub](users.md/#semiconductor-hub)  
+**Unlocked By:** TALK TO SOMEONE ONLINE, [Media Maniac](users.md/#media-maniac), [Vocal Connector](users.md/#vocal-connector), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Private Dweller](users.md/#private-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scifi Movie Director](users.md/#scifi-movie-director), [Audio Lover](users.md/#audio-lover), [Scientific Professor](users.md/#scientific-professor), [Decentro Farmer](users.md/#decentro-farmer), [Home Chef](users.md/#home-chef), [Lifestyle Blogger](users.md/#lifestyle-blogger), [Digital Salesman](users.md/#digital-salesman), [Night Chatter](users.md/#night-chatter), [Pet Lover](users.md/#pet-lover), [Secondhand Buyer](users.md/#secondhand-buyer), [Vocal Connector](users.md/#vocal-connector), [Patient Professor](users.md/#patient-professor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Malicious User](users.md/#malicious-user), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Recycling Center](users.md/#recycling-center), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Cheap Kitchen](users.md/#cheap-kitchen), [Premium Kitchen](users.md/#premium-kitchen), [Horror Director](users.md/#horror-director), [Ads Agency](users.md/#ads-agency), [Research Hub](users.md/#research-hub), [Surveillance Hub](users.md/#surveillance-hub), [Normal Associate](users.md/#normal-associate), [Sales Officer](users.md/#sales-officer), [Professional Gamer](users.md/#professional-gamer), [Binge Watcher](users.md/#binge-watcher), [Jazz Lover](users.md/#jazz-lover), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Semiconductor Hub](users.md/#semiconductor-hub)  
   
   
 ## vonet_edge  

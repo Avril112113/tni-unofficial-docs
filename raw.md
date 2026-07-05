@@ -34,3 +34,4 @@ Any change to the game version may bring unexpected breaking changes, as the gam
 3. Added device ports & plug types. *(non-breaking)*
 4. Added use_config field `constraint_descript`. *(non-breaking)*
 5. Added section `BalanceCalc`. *(non-breaking)*
+6. Added section `merchants`. *(non-breaking)*

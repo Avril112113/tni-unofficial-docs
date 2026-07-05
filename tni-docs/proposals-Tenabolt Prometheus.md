@@ -16,7 +16,8 @@ GENERATED FOR TNI VERSION 0.11.4
 **Price:** ?  
 **Unlock day:** 0  
 **Lore:** Expand your office with a new floor. Giving you more space to place servers, switches, and other equipment.  
-**Description:** Request for a new company floor  
+**Description:**  
+Request for a new company floor  
   
   
 ## New company floor #5  
@@ -24,7 +25,8 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlock day:** 5  
 **Always on day:** 5  
 **Lore:** Expand your office with a new floor. Giving you more space to place servers, switches, and other equipment.  
-**Description:** Request for a new company floor  
+**Description:**  
+Request for a new company floor  
   
   
 ## New company floor #10  
@@ -32,14 +34,16 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlock day:** 10  
 **Always on day:** 10  
 **Lore:** Expand your office with a new floor. Giving you more space to place servers, switches, and other equipment.  
-**Description:** Request for a new company floor  
+**Description:**  
+Request for a new company floor  
   
   
 ## Support the Cabler's Union  
 **Price:** $300  
 **Unlock day:** 0  
 **Lore:** R&D - Rewire and Distribute equally  
-**Description:** Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. This unlocks more proposals for the Cabler's Union.
+**Description:**  
+Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. This unlocks more proposals for the Cabler's Union.  
 This proposal also adds extra cable management features on some MobileOS applications.  
   
   
@@ -48,7 +52,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $300  
 **Unlock day:** 0  
 **Lore:** R&D - Rewire and Distribute equally  
-**Description:** Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. This let's them sell their prototypes on the D-Market.  
+**Description:**  
+Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. This let's them sell their prototypes on the D-Market.  
   
   
 ## Support the Cabler's Union  
@@ -56,7 +61,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $300  
 **Unlock day:** 0  
 **Lore:** R&D - Rewire and Distribute equally  
-**Description:** Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. In return, they promise to lobby for cheaper cable prices (30.0% discounts) from the merchants on the DMarket.  
+**Description:**  
+Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. In return, they promise to lobby for cheaper cable prices (30.0% discounts) from the merchants on the DMarket.  
   
   
 ## Elevator upgrade #10  
@@ -64,7 +70,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Unlock day:** 9  
 **Always on day:** 9  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 1250  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 1250  
   
   
 ## Elevator upgrade #1  
@@ -72,7 +79,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $2000  
 **Unlock day:** 0  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 2000  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 2000  
   
   
 ## Elevator upgrade #2  
@@ -80,7 +88,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $2500  
 **Unlock day:** 0  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 2500  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 2500  
   
   
 ## Elevator upgrade #3  
@@ -88,7 +97,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $3000  
 **Unlock day:** 0  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 3000  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 3000  
   
   
 ## Elevator upgrade #4  
@@ -96,7 +106,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $3500  
 **Unlock day:** 0  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 3500  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 3500  
   
   
 ## Elevator upgrade #5  
@@ -104,7 +115,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $4000  
 **Unlock day:** 0  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 4000  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 4000  
   
   
 ## Elevator upgrade #6  
@@ -112,7 +124,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $4500  
 **Unlock day:** 0  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 4500  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 4500  
   
   
 ## Elevator upgrade #7  
@@ -120,14 +133,16 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Price:** $5000  
 **Unlock day:** 0  
 **Lore:** Faster travels for those emergencies  
-**Description:** Decrease elevator wait time by 50.0%. Costs 5000  
+**Description:**  
+Decrease elevator wait time by 50.0%. Costs 5000  
   
   
 ## Liability Insurance  
 **Price:** $300  
 **Unlock day:** 5  
 **Lore:** Money solves problems  
-**Description:** SLA breaches no longer ends the game, but comes with a financial penalty of 3000 per breach. Adds a recurring premium cost of 300 per day.  
+**Description:**  
+SLA breaches no longer ends the game, but comes with a financial penalty of 3000 per breach. Adds a recurring premium cost of 300 per day.  
   
   
 ## PADU development funding  
@@ -135,18 +150,19 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Unlock day:** 0  
 **Unlocks:** [padu_v3](programs.md/#padu_v3)  
 **Lore:** Everyone's favorite database.  
-**Description:** Fund the development of the software 'padu_v3' at cost of 300.
-
-program name: padu_v3
-program type: producer
-produce output: 4 store-text, store-image, store-audio, store-video per tick
-cpu load: 4
-install size (code+data): 12 + 0 = 12
-memory size: 6
-description:
-Primary aggregation data unit. Supports text, image, audio and video storage.
-
-Improved disk handling algorithm.
+**Description:**  
+Fund the development of the software 'padu_v3' at cost of 300.  
+  
+program name: padu_v3  
+program type: producer  
+produce output: 4 store-text, store-image, store-audio, store-video per tick  
+cpu load: 4  
+install size (code+data): 12 + 0 = 12  
+memory size: 6  
+description:  
+Primary aggregation data unit. Supports text, image, audio and video storage.  
+  
+Improved disk handling algorithm.  
 Production is limited to 4 compatible uses on the device's use stack.  
   
   
@@ -155,16 +171,17 @@ Production is limited to 4 compatible uses on the device's use stack.
 **Unlock day:** 0  
 **Unlocks:** [poems-db](programs.md/#poems-db)  
 **Lore:** A DB just for the text chads.  
-**Description:** Fund the development of the software 'poems-db' at cost of 200.
-
-program name: poems-db
-program type: producer
-produce output: 4 store-text per tick
-cpu load: 4
-install size (code+data): 6 + 0 = 6
-memory size: 4
-description:
-Based text-based database. Supports text storage usage.
+**Description:**  
+Fund the development of the software 'poems-db' at cost of 200.  
+  
+program name: poems-db  
+program type: producer  
+produce output: 4 store-text per tick  
+cpu load: 4  
+install size (code+data): 6 + 0 = 6  
+memory size: 4  
+description:  
+Based text-based database. Supports text storage usage.  
 Production is limited to 4 compatible uses on the device's use stack.  
   
   
@@ -172,7 +189,8 @@ Production is limited to 4 compatible uses on the device's use stack.
 **Price:** $555  
 **Unlock day:** 0  
 **Lore:** As long as it works...  
-**Description:** Fund 555 to support the opening of the RefurbHut merchant, which provides cheap refurbished (no warranty) devices.  
+**Description:**  
+Fund 555 to support the opening of the RefurbHut merchant, which provides cheap refurbished (no warranty) devices.  
   
   
 ## Sun DNS  
@@ -180,21 +198,22 @@ Production is limited to 4 compatible uses on the device's use stack.
 **Unlock day:** 5  
 **Unlocks:** [sun-dns](programs.md/#sun-dns)  
 **Lore:** We've got names for everyone.  
-**Description:** Fund the development of the software 'sun-dns' at cost of 400.
-
-program name: sun-dns
-program type: converter - all
-required inputs: 3 store-text per tick
-produce output: 40 reply-dns-queries per tick
-produce target: source
-cpu load: 10
-install size (code+data): 8 + 1 = 9
-memory size: 6
-description:
-Enterprise grade DNS server.
-<span style="color:red;">Requires access to a running text storage program</span>.
-
-Produce target's use stack limit is 40 compatible uses.
+**Description:**  
+Fund the development of the software 'sun-dns' at cost of 400.  
+  
+program name: sun-dns  
+program type: converter - all  
+required inputs: 3 store-text per tick  
+produce output: 40 reply-dns-queries per tick  
+produce target: source  
+cpu load: 10  
+install size (code+data): 8 + 1 = 9  
+memory size: 6  
+description:  
+Enterprise grade DNS server.  
+<span style="color:red;">Requires access to a running text storage program</span>.  
+  
+Produce target's use stack limit is 40 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
   
@@ -203,22 +222,23 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Unlock day:** 5  
 **Unlocks:** [kea](programs.md/#kea)  
 **Lore:** Mass host configurations, made easy.  
-**Description:** Fund the development of the software 'kea' at cost of 200.
-
-program name: kea
-program type: converter - all
-required inputs: 1 store-text per tick
-produce output: 15 reply-dhcp-request per tick
-produce target: source
-cpu load: 6
-install size (code+data): 6 + 1 = 7
-memory size: 5
-description:
-Automatically assigns network addresses and designated DNS server to network devices.
-
-<span style="color:red;">Requires access to a running text storage program</span>.
-
-Produce target's use stack limit is 15 compatible uses.
+**Description:**  
+Fund the development of the software 'kea' at cost of 200.  
+  
+program name: kea  
+program type: converter - all  
+required inputs: 1 store-text per tick  
+produce output: 15 reply-dhcp-request per tick  
+produce target: source  
+cpu load: 6  
+install size (code+data): 6 + 1 = 7  
+memory size: 5  
+description:  
+Automatically assigns network addresses and designated DNS server to network devices.  
+  
+<span style="color:red;">Requires access to a running text storage program</span>.  
+  
+Produce target's use stack limit is 15 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
   
   
@@ -226,15 +246,17 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **Price:** $2500  
 **Unlock day:** 0  
 **Lore:** Screen too small?  
-**Description:** Allows use of a wide second monitor. Costs 2500  
+**Description:**  
+Allows use of a wide second monitor. Costs 2500  
   
   
 ## Remote Backups  
 **Price:** $450  
 **Unlock day:** 0  
 **Lore:** 3-2-1, let's back it up!  
-**Description:** Adds a new "sftp" routine to netshell. Allows backup of configs/files on remote devices for price of 450.
-	
+**Description:**  
+Adds a new "sftp" routine to netshell. Allows backup of configs/files on remote devices for price of 450.  
+	  
 The routine can also be used to remove malware when regular program uninstalls do not work.  
   
   
@@ -242,29 +264,33 @@ The routine can also be used to remove malware when regular program uninstalls d
 **Price:** $1500  
 **Unlock day:** 0  
 **Lore:** State of the art in 1988  
-**Description:** Adds a new "rip" routine to netshell. Allow configuration of automated route discoveries on routers for price of 1500.  
+**Description:**  
+Adds a new "rip" routine to netshell. Allow configuration of automated route discoveries on routers for price of 1500.  
   
   
 ## High availability research  
 **Price:** $600  
 **Unlock day:** 0  
 **Lore:** HA HA HA, no DR!  
-**Description:** Adds a new "haconf" routine to netshell. Allow configuration of high-availability setup on ha-enabled routers. Funding costs 600.  
+**Description:**  
+Adds a new "haconf" routine to netshell. Allow configuration of high-availability setup on ha-enabled routers. Funding costs 600.  
   
   
 ## Virtual machines research  
 **Price:** $999  
 **Unlock day:** 0  
 **Lore:** carrier has arrived.  
-**Description:** Adds a new "vmconf" routine to netshell. Allow configuration of virtual machines on servers. Funding costs 999.  
+**Description:**  
+Adds a new "vmconf" routine to netshell. Allow configuration of virtual machines on servers. Funding costs 999.  
   
   
 ## NetOps Research  
 **Price:** $330  
 **Unlock day:** 0  
 **Lore:** Improvise, adapt, overcome  
-**Description:** Adds automation utility for managing and monitoring your network for the price of 330.
-
+**Description:**  
+Adds automation utility for managing and monitoring your network for the price of 330.  
+  
 Unlocks the 'cron', 'try' and 'notify' routines on NetShell.  
   
   
@@ -272,8 +298,9 @@ Unlocks the 'cron', 'try' and 'notify' routines on NetShell.
 **Price:** $1200  
 **Unlock day:** 0  
 **Lore:** Scans too shall pass.  
-**Description:** Allows netsh and autograph scans to bypass all router rules for a cost of 1200.
-
+**Description:**  
+Allows netsh and autograph scans to bypass all router rules for a cost of 1200.  
+  
 The exploit can be optionally turned on/off.  
   
   
@@ -282,5 +309,6 @@ The exploit can be optionally turned on/off.
 **Price:** $1000  
 **Unlock day:** 0  
 **Lore:** Hardware liberation day  
-**Description:** The "sftp" routine can now be used to install programs extracted from devices. Costs 1000.  
+**Description:**  
+The "sftp" routine can now be used to install programs extracted from devices. Costs 1000.  
   
