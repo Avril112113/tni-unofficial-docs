@@ -1177,7 +1177,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    17-day device warranty.  
   
   
-## AB compute Ltd.  
+## Tutortial AB compute Ltd.  
 **Restock:** FILL after 300s    
 **Price:** +120%    
 **Warranty:** Base warranties.    
@@ -1256,7 +1256,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    7-day device warranty.  
   
   
-## Blade Networking Inc.  
+## Tutortial Blade Networking Inc.  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1362,7 +1362,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    28-day device warranty.  
   
   
-## Conduit Systems  
+## Tutortial Conduit Systems  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1482,7 +1482,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    25-day device warranty.  
   
   
-## Mr Cable  
+## Tutortial Mr Cable  
 **Restock:** FILL after 30s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1558,7 +1558,7 @@ Your trusted cabling merchant. Get all kinds of network and power cables here at
    Not rack mountable.  
   
   
-## Tenabolt Retail  
+## Tutortial Tenabolt Retail  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
