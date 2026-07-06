@@ -3,6 +3,8 @@ import LZString from 'lz-string';
 import { TniJsonData } from "raw/data-format5-spec.js";
 import { dataProvider } from "./data-context.js";
 
+import "./components/my-device";
+
 
 function serializeState() {
 	const devices_list = document.getElementById("devices_list")! as HTMLElement;

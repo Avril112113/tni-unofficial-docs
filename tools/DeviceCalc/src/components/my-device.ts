@@ -1,17 +1,16 @@
+import 'assets/js/components/my-combobox/my-combobox';
+
 import { LitElement, PropertyValues, TemplateResult, css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
-
+import type WaNumberInput from '@awesome.me/webawesome/dist/components/number-input/number-input.js';
 import _ from "lodash";
 
 import { TniJsonData, TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format5-spec.js';
-
-import { dataContext } from "../data-context.js";
-import { MyCombobox } from 'assets/js/components/my-combobox/my-combobox.js';
-import { WaNumberInput } from '@awesome.me/webawesome/dist/ssr/all.js';
-
+import { dataContext } from "../data-context";
+import type { MyCombobox } from 'assets/js/components/my-combobox/my-combobox';
 
 
 const IRRELEVANT_DEVICES = new Set([

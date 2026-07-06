@@ -3,22 +3,13 @@
     {
         "imports": {
             "assets/": "{{ site.baseurl }}/assets/",
-            "raw/": "{{ site.baseurl }}/raw/",
-
-            "lit": "{{ site.baseurl }}/assets/js/vendor/lit.js",
-            "lit/": "{{ site.baseurl }}/assets/js/vendor/lit/",
-            "@lit/context": "{{ site.baseurl }}/assets/js/vendor/@lit/context.js",
-            "lodash": "{{ site.baseurl }}/assets/js/vendor/lodash.js",
-            "lz-string": "{{ site.baseurl }}/assets/js/vendor/lz-string.js"
+            "raw/": "{{ site.baseurl }}/raw/"
         }
     }
     </script>
     
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/js/vendor/webawesome.css" />
     <script type="module" src="{{ site.baseurl }}/assets/js/vendor/webawesome.js"></script>
-
-	<!-- <script type="module" src="{{ '/assets/js/my-combobox.js' | relative_url }}"></script> -->
-	<script type="module" src="{{ '/assets/js/components/my-combobox/my-combobox.js' | relative_url }}"></script>
 
 	<script>
         window.SiteConfig = {

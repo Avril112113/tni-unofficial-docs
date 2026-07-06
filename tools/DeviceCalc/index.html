@@ -19,8 +19,7 @@ permalink: /tools/DeviceCalc/
 		margin-top: 0px;
 	}
 </style>
-<script type="module" src="components/my-device.js"></script>
-<script type="module" src="index.js"></script>
+<script type="module" src="{{ site.baseurl }}/assets/js/DeviceCalc.js"></script>
 
 
 <h1>Device Calculator</h1>
@@ -34,7 +33,10 @@ permalink: /tools/DeviceCalc/
 	- Try account for merchant price multipliers <br>
 	- Total price of all devices <br>
 	- Saving/Loading pre-made setups <br>
+	- Filter device list by current day <br>
+	- Options for difficulty <br>
 	- Organize the code, it's a bit of a mess... <br>
+	- Sorting options <br>
 </p>
 
 
@@ -44,7 +46,7 @@ permalink: /tools/DeviceCalc/
 </div>
 
 
-<div class="show_data_loaded wa-cloak">
+<div class="show_data_loaded">
 	<wa-button-group label="Alignment" style="padding: var(--wa-content-spacing);">
 		<wa-button appearance="filled-outlined" size="l" variant="success"
 			onclick="const device = document.createElement('my-device'); device.setAttribute('device_id', 'MacroHard Boulder SRV'); document.getElementById('devices_list').appendChild(device)"
