@@ -18,6 +18,27 @@ permalink: /tools/DeviceCalc/
 	#devices_list > *:first-child {
 		margin-top: 0px;
 	}
+
+	/* Copied from device-editor.ts */
+	wa-number-input::part(stepper) {
+		aspect-ratio: unset;
+	}
+	wa-number-input::part(start),
+	wa-number-input::part(end) {
+		--wa-form-control-padding-inline: 0.25em;
+	}
+	wa-number-input:not(:has([slot="start"]:not(:empty)))::part(start),
+	wa-number-input:not(:has([slot="end"]:not(:empty)))::part(end) {
+		display: none;
+	}
+	wa-number-input::part(input) {
+		padding: 0;
+		width: max-content;
+	}
+	wa-number-input {
+		width: 100px;
+		--wa-content-spacing: 0;
+	}
 </style>
 <script type="module" src="{{ site.baseurl }}/assets/js/DeviceCalc.js"></script>
 
@@ -27,17 +48,18 @@ permalink: /tools/DeviceCalc/
 	Feedback and suggestions are welcome! <br>
 	Find @Avril112113 on the <a href="https://discord.gg/gMtxdgRu5b">TNI discord</a>, or <a href="https://github.com/Avril112113/tni-unofficial-docs/issues">create an issue on the github</a>.
 </p>
-<p>
-	The following are still to be added; <br>
-	- Use stack total <br>
-	- Try account for merchant price multipliers <br>
-	- Total price of all devices <br>
-	- Saving/Loading pre-made setups <br>
-	- Filter device list by current day <br>
-	- Options for difficulty <br>
-	- Organize the code, it's a bit of a mess... <br>
-	- Sorting options <br>
-</p>
+<wa-accordion appearance="">
+	<wa-accordion-item label="Planned features;">
+		- Use stack total <br>
+		- Total price of all devices <br>
+		- Saving/Loading pre-made setups <br>
+		- Options to account for difficulty <br>
+		- Organize the code, it's a bit of a mess... <br>
+		- Sorting options <br>
+		- Warn about vmconf requirement if multiple of same program <br>
+		- Use stack limits account for multiple of same program, which must use vmconf <br>
+	</wa-accordion-item>
+</wa-accordion>
 
 
 <div id="loading_data">
@@ -47,9 +69,15 @@ permalink: /tools/DeviceCalc/
 
 
 <div class="show_data_loaded">
+	<div style="display: flex; flex-wrap: wrap; gap: var(--wa-content-spacing); padding: var(--wa-content-spacing); padding-bottom: 0;">
+		<wa-number-input id="config_current_day" label="Current Day" appearance="filled-outlined" style="max-width: 160px;"
+			onchange="EditorConfig.current_day = parseInt(this.value);"
+		></wa-number-input>
+	</div>
+
 	<wa-button-group label="Alignment" style="padding: var(--wa-content-spacing);">
 		<wa-button appearance="filled-outlined" size="l" variant="success"
-			onclick="const device = document.createElement('my-device'); device.setAttribute('device_id', 'MacroHard Boulder SRV'); document.getElementById('devices_list').appendChild(device)"
+			onclick="const device = document.createElement('device-editor'); device.setAttribute('device_id', 'MacroHard Boulder SRV'); document.getElementById('devices_list').appendChild(device)"
 		>
 			Add Device
 		</wa-button>
@@ -62,6 +90,7 @@ permalink: /tools/DeviceCalc/
 			Clear Save & Refresh
 		</wa-button>
 	</wa-button-group>
+	
 	<div id="devices_list">
 	</div>
 </div>

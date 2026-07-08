@@ -74,7 +74,7 @@ export class MyCombobox extends LitElement {
 	override render() {
 		// TODO: Replace static placement with, disabled auto reposition.
 		return html`
-			<wa-dropdown ${ref(this.dropdownRef)}
+			<wa-dropdown ${ref(this.dropdownRef)} part="dropdown"
 				slot="header" placement="bottom-start"
 				size=${this.size}
 				@wa-select=${(e: WaSelectEvent) => this._selectDropdownItem(e.detail.item as WaDropdownItem)}
@@ -83,7 +83,7 @@ export class MyCombobox extends LitElement {
 				@wa-after-hide=${() => { this.input.value = this._getInputValueForValue(this.value); }}
 				@focus=${{ handleEvent: (e: FocusEvent) => this._onDropdownFocus(e), capture: true }}
 			>
-				<wa-input ${ref(this.inputRef)}
+				<wa-input ${ref(this.inputRef)} part="wa-input" exportparts="input"
 					slot="trigger" placeholder=${this.placeholder} autocomplete="off" with-clear=${!this.without_clear || nothing}
 					size=${this.size} .value=${this.input_value}
 					@input=${() => { this.input_value = this.input.value ?? ""; this._filterItems(); }}
@@ -97,6 +97,14 @@ export class MyCombobox extends LitElement {
 				<slot @slotchange="${this._onSlotchange}"></slot>
 			</wa-dropdown>
 		`;
+	}
+
+	protected override updated(_changedProperties: PropertyValues): void {
+		const popup = this.dropdown.shadowRoot?.querySelector("wa-popup");
+		if (popup) {
+			popup.removeAttribute('flip');
+			popup.removeAttribute('flip-fallback-strategy');
+		}
 	}
 
 	private _scrollToCurrent() {

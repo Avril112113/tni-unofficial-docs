@@ -1,16 +1,18 @@
 import LZString from 'lz-string';
 
-import { TniJsonData } from "raw/data-format5-spec.js";
+import { TniJsonData } from "raw/data-format6-spec";
 import { dataProvider } from "./data-context.js";
+import { DataCached } from './data-cached.js';
 
-import "./components/my-device";
+import "./device-editor";
+import { EditorConfig } from './editor-config.js';
 
 
 function serializeState() {
 	const devices_list = document.getElementById("devices_list")! as HTMLElement;
 
 	const devices_data: any[] = [];
-	devices_list.querySelectorAll("my-device").forEach((device) => {
+	devices_list.querySelectorAll("device-editor").forEach((device) => {
 		devices_data.push(device.serialize());
 	});
 
@@ -27,7 +29,7 @@ function deserializeState(data: ReturnType<typeof serializeState>) {
 	devices_list.innerHTML = "";
 	
 	data.devices?.forEach((device_data) => {
-		const device = document.createElement("my-device");
+		const device = document.createElement("device-editor");
 		devices_list.appendChild(device);
 		device.deserialize(device_data);
 	});
@@ -59,7 +61,7 @@ Promise.all([
 			}
 		}
 
-		dataProvider.setValue(data);
+		dataProvider.setValue(new DataCached(data));
 
 		const devices_list = document.getElementById("devices_list")! as HTMLElement;
 
@@ -78,11 +80,13 @@ Promise.all([
 					deserializeState(JSON.parse(storage_state));
 				} else {
 					console.log("Loading default state... (no state found)");
-					const elem = document.createElement("my-device");
+					const elem = document.createElement("device-editor");
 					devices_list.appendChild(elem);
 					elem.device_id = "MacroHard Boulder SRV";
 				}
 			}
+
+			EditorConfig.loadFromLocalStorage();
 		}
 
 		// State saving...
@@ -92,7 +96,7 @@ Promise.all([
 				console.debug("Saving state to localStorage...");
 				window.localStorage.setItem("tool_DeviceCalc_state", JSON.stringify(serializeState()));
 			};
-			devices_list.addEventListener("my-device-updated", saveState);
+			devices_list.addEventListener("device-editor-updated", saveState);
 			new MutationObserver(saveState).observe(devices_list, { childList: true });
 		});
 

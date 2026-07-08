@@ -3,7 +3,8 @@
 	"compilerOptions": {
 		"paths": {
 			"assets/*": ["./assets/*"],
-			"raw/*": ["./raw/*"],
+			// "raw/*": ["./raw/*"],
+			"raw/data-format6-spec": ["./raw/data-format6-spec.ts"],
 			"types/*": ["./types/*"]
 		},
 		

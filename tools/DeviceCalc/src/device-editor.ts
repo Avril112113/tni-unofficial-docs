@@ -8,9 +8,11 @@ import { consume } from '@lit/context';
 import type WaNumberInput from '@awesome.me/webawesome/dist/components/number-input/number-input.js';
 import _ from "lodash";
 
-import { TniJsonData, TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format5-spec.js';
-import { dataContext } from "../data-context";
+import { TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format6-spec';
+import { dataContext } from "./data-context";
 import type { MyCombobox } from 'assets/js/components/my-combobox/my-combobox';
+import { DataCached } from './data-cached';
+import { EditorConfig, editorConfigContext } from './editor-config';
 
 
 const IRRELEVANT_DEVICES = new Set([
@@ -125,11 +127,15 @@ interface CustomDeviceData {
 	peripherals?: Record<number, TniJsonPlugId>;
 }
 
-@customElement('my-device')
-export class MyDevice extends LitElement {
+@customElement('device-editor')
+export class DeviceEditor extends LitElement {
+	@consume({ context: editorConfigContext, subscribe: true })
+	@state()
+	private _editorConfig!: typeof EditorConfig;
+
 	@consume({ context: dataContext, subscribe: true })
 	@state()
-	private _data!: TniJsonData|null;
+	private _data!: DataCached|null;
 
 	get device_name() { return this._data && this.device_id ? this._data!.devices[this.device_id]?.product_name ?? null : null; }
 	@property({ reflect: true })
@@ -272,6 +278,10 @@ export class MyDevice extends LitElement {
 		}
 		wa-number-input::part(start),
 		wa-number-input::part(end) {
+			--wa-form-control-padding-inline: 0.25em;
+		}
+		wa-number-input:not(:has([slot="start"]:not(:empty)))::part(start),
+		wa-number-input:not(:has([slot="end"]:not(:empty)))::part(end) {
 			display: none;
 		}
 		wa-number-input::part(input) {
@@ -281,6 +291,10 @@ export class MyDevice extends LitElement {
 		wa-number-input {
 			width: 100px;
 			--wa-content-spacing: 0;
+		}
+
+		.not-available-id::part(input) {
+			text-decoration-line: line-through;
 		}
 
 		.tiny-button {
@@ -379,6 +393,16 @@ export class MyDevice extends LitElement {
 				device.CustomData ??= {};
 				const custom_data = device.CustomData;
 
+				const ideal_listing = this._data!.getIdealListingToday(this.device_id, EditorConfig.current_day);
+				let total_price = device.price;
+				let warranty = device.base_warranty_days + (device.base_warranty_cycles * this._data!.BalanceCalc.GLOBAL_WARRANTY_PERIOD_DAYS_PER_CYCLE * this.difficulty.device_warranty_period_multiplier);
+				if (ideal_listing) {
+					warranty *= ideal_listing.merchant.DeviceMerchant.warranty_multiplier;
+					warranty += ideal_listing.merchant.DeviceMerchant.warranty_add_constant;
+					total_price *= ideal_listing.merchant.DeviceMerchant.price_multiplier;
+					total_price += ideal_listing.merchant.DeviceMerchant.price_add_constant;
+				}
+
 				const parts = [];
 				if (device.logic_controller && device_original.logic_controller) {
 					const logic_controller_original = device_original.logic_controller;
@@ -391,6 +415,9 @@ export class MyDevice extends LitElement {
 							const plug = this._data!.plugs[plug_id];
 							if (plug && plug.RemovableStorageDevice) {
 								satas_size += plug.RemovableStorageDevice.available_sto;
+							}
+							if (plug && plug.PeripheralPlug) {
+								total_price += plug.PeripheralPlug.price;
 							}
 						}
 					}
@@ -455,9 +482,10 @@ export class MyDevice extends LitElement {
 									</div>
 								</div>
 							`}
-							<p class="some-text"><span class="some-title">Bandwidth</span><br>${logic_controller.installed_nbw}/tick</p>
-							<p class="some-text"><span class="some-title">Warranty</span><br>${device.base_warranty_days + (device.base_warranty_cycles * this._data!.BalanceCalc.GLOBAL_WARRANTY_PERIOD_DAYS_PER_CYCLE * this.difficulty.device_warranty_period_multiplier)} days</p>
+							<!-- <p class="some-text"><span class="some-title">Price</span><br>$${total_price}</p> -->
+							<p class="some-text"><span class="some-title">Warranty</span><br>${warranty} days</p>
 							<p class="some-text"><span class="some-title">Wattage</span><br>${device.power_controller?.charge_rate ?? "?"}w</p>
+							<p class="some-text"><span class="some-title">Bandwidth</span><br>${logic_controller.installed_nbw}/tick</p>
 							<p class="some-text"><span class="some-title">Mount Type</span><br>${device.mount_type}</p>
 						</div>
 						<wa-divider></wa-divider>
@@ -529,10 +557,11 @@ export class MyDevice extends LitElement {
 		if (this._data) {
 			const dropdownItemTemplate = (device_id: TniJsonDeviceId, color: string, details: TemplateResult[]) => {
 				const device = this._data!.devices[device_id]!;
+				const available = EditorConfig.current_day <= -1 || this._data?.isAvailableToday(device_id, EditorConfig.current_day);
 				return html`
-					<wa-dropdown-item value=${device_id} style="color: ${color};">
+					<wa-dropdown-item value=${device_id} style="color: ${color}; text-decoration-line: ${available ? '' : 'line-through'};">
 						${device.product_name}
-						<span slot="details">
+						<span slot="details" style="text-decoration-line: ${available ? '' : 'line-through'};">
 							${details}
 						</span>
 					</wa-dropdown-item>
@@ -542,11 +571,14 @@ export class MyDevice extends LitElement {
 				for (const device_id in this._data.devices) {
 					const device = this._data.devices[device_id]!;
 					if (!device.logic_controller) continue;
+					
+					const ideal_listing = this._data.getIdealListingToday(device_id, EditorConfig.current_day);
+					const total_price = ideal_listing ? ideal_listing.listing.AdditionalData.price : device.price;
 					dropdown_templates.push(dropdownItemTemplate(
 						device_id,
 						IRRELEVANT_DEVICES.has(device_id) ? "var(--wa-color-gray)" : "",
 						[
-							html`<span style="display: inline-block; min-width: 5ch;">$${device.price}</span>`,
+							html`<span style="display: inline-block; min-width: 5ch;">$${total_price}</span>`,
 						]
 					));
 				}
@@ -590,11 +622,12 @@ export class MyDevice extends LitElement {
 						: excess_cpu + excess_mem + excess_sto;
 
 					const numFormat = new Intl.NumberFormat(undefined, { signDisplay: "exceptZero" });
-					const total_price = device.price + (sata_combination?.price ?? 0);
+					const ideal_listing = this._data.getIdealListingToday(device_id, EditorConfig.current_day);
+					const total_price = (ideal_listing ? ideal_listing.listing.AdditionalData.price : device.price) + (sata_combination?.price ?? 0);
 					const details = [
 						html`<span>${!Number.isFinite(score) ? "" : html`${numFormat.format(excess_cpu)} / ${numFormat.format(excess_mem)} / ${numFormat.format(excess_sto)}`}</span>`,
 						html`&nbsp;&nbsp;`,
-						html`<span style="display: inline-block; min-width: 5ch;">$${total_price}</span>`,
+						html`<span style="display: inline-block; min-width: 5ch; text-decoration: inherit;">$${total_price}</span>`,
 					];
 					if (sata_combination) {
 						details.push(html`<div>
@@ -619,20 +652,23 @@ export class MyDevice extends LitElement {
 			}
 		}
 
+		
+		const available = EditorConfig.current_day <= -1 || !this.device_id || (this._data?.isAvailableToday(this.device_id, EditorConfig.current_day) ?? true);
+
 		return html`
 			<wa-card class="card-header">
 				<div slot="header" class="flex-wrap-gap" style="align-items: center;">
-					<my-combobox size="l" style="flex-grow: 1;" value=${this.device_id ?? ""} input_value=${this.device_name ?? ""}
+					<my-combobox size="l" class="${available ? '' : 'not-available-id'}" style="flex-grow: 1;" value=${this.device_id ?? ""} input_value=${this.device_name ?? ""}
 						@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { this.device_id = e.detail.value ?? null; }}
 					>
 						<wa-icon name="server" slot="start"></wa-icon>
 						${dropdown_templates}
 					</my-combobox>
 					<div style="margin-left: auto;">
-						<wa-popover for="my-device-info" style="--max-width: 80ww;">
+						<wa-popover for="device-editor-info" style="--max-width: 80ww;">
 							<p>${_renderBBCode(this.device_data?.device_rendered_description ?? "Invalid device...")}</p>
 						</wa-popover>
-						<wa-button appearance="plain" id="my-device-info" ?disabled=${!this.device_data}>
+						<wa-button appearance="plain" id="device-editor-info" ?disabled=${!this.device_data}>
 							<wa-icon name="circle-info" variant="solid" label="Info"></wa-icon>
 						</wa-button>
 						<wa-button appearance="plain"
@@ -735,10 +771,10 @@ export class MyDevice extends LitElement {
 					<td style="white-space: nowrap; text-align: center;"><b>Mem:</b><br>${program?.stack_size ?? "?"}</td>
 					<td style="white-space: nowrap; text-align: center;"><b>Size:</b><br>${!program ? "?" : _renderProgramSize(program)}</td>
 					<td style="white-space: nowrap;">
-						<wa-popover for="my-device-program-info-${i}" style="--max-width: 80ww;">
+						<wa-popover for="device-editor-program-info-${i}" style="--max-width: 80ww;">
 							<p>${_renderBBCode(program?.rendered_description ?? "Invalid program...")}</p>
 						</wa-popover>
-						<wa-button appearance="plain" id="my-device-program-info-${i}">
+						<wa-button appearance="plain" id="device-editor-program-info-${i}">
 							<wa-icon name="circle-info" variant="solid" label="Info"></wa-icon>
 						</wa-button>
 						<wa-button appearance="plain"
@@ -887,7 +923,7 @@ export class MyDevice extends LitElement {
 	override updated(changedProperties: PropertyValues): void {
 		super.updated(changedProperties);
 
-		this.dispatchEvent(new Event('my-device-updated', {bubbles: true, composed: true}));
+		this.dispatchEvent(new Event('device-editor-updated', {bubbles: true, composed: true}));
 	}
 
 	// `previousDeviceId` should be null to enforce a full reset.
@@ -945,7 +981,7 @@ export class MyDevice extends LitElement {
 	}
 
 	private _cloneDevice() {
-		const clone = this.cloneNode() as MyDevice;
+		const clone = this.cloneNode() as DeviceEditor;
 		clone.device_data = structuredClone(this.device_data);
 		return clone;
 	}
@@ -954,7 +990,7 @@ export class MyDevice extends LitElement {
 		return {
 			device_id: this.device_id,
 			// device_data: this.device_data_is_original ? null : this.device_data,
-			device_data_diff: this.device_data &&this.device_data_original && !this.device_data_is_original
+			device_data_diff: this.device_data && this.device_data_original && !this.device_data_is_original
 				? _getDeepDiff(this.device_data, this.device_data_original)
 				: null,
 		};
@@ -972,6 +1008,6 @@ export class MyDevice extends LitElement {
 
 declare global {
 	interface HTMLElementTagNameMap {
-		"my-device": MyDevice;
+		"device-editor": DeviceEditor;
 	}
 }

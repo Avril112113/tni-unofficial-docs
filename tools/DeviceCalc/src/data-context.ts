@@ -1,7 +1,7 @@
 import { ContextProvider, createContext } from "@lit/context";
-import { TniJsonData } from "raw/data-format5-spec.js";
+import { DataCached } from "./data-cached";
 
-export const dataContext = createContext<TniJsonData|null>("tni-json-data");
+export const dataContext = createContext<DataCached|null>("tni-json-data");
 
 export const dataProvider = new ContextProvider(document.body, {
 	context: dataContext,
