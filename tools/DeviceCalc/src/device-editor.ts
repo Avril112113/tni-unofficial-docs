@@ -537,8 +537,9 @@ export class DeviceEditor extends LitElement {
 								<wa-tooltip for="my_device-use_stack-info">
 									<span style="color: var(--wa-color-green-95);">[PRODUCTION/LIMIT] PRODUCE_TYPES</span><br>
 									<span style="color: var(--wa-color-red-80);">[-CONSUME] CONSTRAINTS&nbsp;<small><i>(CONSUME_POLICY)</i></small></span><br>
-									<span style="color: var(--wa-color-red-80);"><small><i>(fragmented allowed)</i></small></span> - Partial consumption allowed, with reduced production. <br>
-									<span style="color: var(--wa-color-red-80);"><small><i>(all or nothing)</i></small></span> - Requires at least CONSUME, otherwise nothing produced. <br>
+									<span style="color: var(--wa-color-red-80);"><small><i>(fragmented allowed)</i></small></span> - Can consumes from multiple sources. Partial consumption is wasted. <br>
+									<span style="color: var(--wa-color-red-80);"><small><i>(all or nothing)</i></small></span> - Consumes from a single source only. <br>
+									In all cases, if the required CONSUME amount is not obtained, nothing is produced. <br>
 								</wa-tooltip>
 							</div>
 							<table style="margin-left: var(--wa-content-spacing); border-collapse: separate; border-spacing: 10px 0;">
