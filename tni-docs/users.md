@@ -21,10 +21,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite), [dnsmasq](programs.md/#dnsmasq), [dns-server](programs.md/#dns-server), [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 50% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 50% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **BROWSE MEDIA CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **BROWSE MEDIA CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** addictive  
@@ -39,10 +39,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite), [dnsmasq](programs.md/#dnsmasq)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ AND COMMENT** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ AND COMMENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text and post-text`  
-- <span style="color:Yellow;">Use:</span> **READ POLITICAL NEWS** 60% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ POLITICAL NEWS** 60% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text and view-image and stream-video and stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** news-update, political  
@@ -57,7 +57,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -139,11 +139,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite), [dnsmasq](programs.md/#dnsmasq)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **GENERIC PROGRAM** 33% @ `tcp/80##` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **GENERIC PROGRAM** 33% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text or stream-video`  
-- <span style="color:Yellow;">Use:</span> **READ ANY NEWS** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ ANY NEWS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text and view-image and stream-video and stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** news-update  
@@ -158,7 +158,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:**   
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ `tcp/8333` for <span style="color:Salmon;">1</span>bw  
+- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
@@ -173,7 +173,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:**   
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ `tcp/8333` for <span style="color:Salmon;">1</span>bw  
+- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
@@ -192,45 +192,45 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server), [rtsp-diva-r](programs.md/#rtsp-diva-r)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** professional  
-- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-audio`  
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** music  
-- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and post-video`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** medical  
-- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text`  
   **<span style="color:LightGray;">Subjects:</span>** news-update  
-- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 100% @ `udp/554` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 100% @ [`udp/554`](traffic_types.md/#udp554) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video`  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **DO WORK WITH VPN** 100% @ `udp/1194` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK WITH VPN** 100% @ [`udp/1194`](traffic_types.md/#udp1194) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ `tcp/8333` for <span style="color:Salmon;">1</span>bw  
+- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
@@ -245,43 +245,43 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server), [dnsmasq](programs.md/#dnsmasq)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **BUY INTERTOWER GOODS** 85% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **BUY INTERTOWER GOODS** 85% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** supplies, intertower  
-- <span style="color:Yellow;">Use:</span> **SHARE VIRAL MEMES** 85% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE VIRAL MEMES** 85% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and view-image and read-text`  
   **<span style="color:LightGray;">Subjects:</span>** viral, memes  
-- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction`  
   
@@ -295,32 +295,32 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **READ OFFICIAL NEWS** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ OFFICIAL NEWS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text and view-image and stream-video and stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** official, political, news-update  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 30% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
   
@@ -334,29 +334,29 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VISIT RELIGIOUS FORUM** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VISIT RELIGIOUS FORUM** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-audio or stream-video or read-text or post-text or post-image or view-image`  
   **<span style="color:LightGray;">Subjects:</span>** religious  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILES** 50% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILES** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   
@@ -370,30 +370,30 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **POST SCIENTIFIC PAPER** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **POST SCIENTIFIC PAPER** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** scientific  
-- <span style="color:Yellow;">Use:</span> **DO SCIENTIFIC RESEARCH** 100% @ `tcp/80` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO SCIENTIFIC RESEARCH** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** research, scientific  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILES** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILES** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   
@@ -407,47 +407,47 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** addictive  
-- <span style="color:Yellow;">Use:</span> **VIEW OR POST SOCIAL MEDIA** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW OR POST SOCIAL MEDIA** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** social-media  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 70% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 70% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **VISIT EXTERNAL TOWER** 75% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VISIT EXTERNAL TOWER** 75% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** public-transportation, intertower  
-- <span style="color:Yellow;">Use:</span> **SHARE VIRAL MEMES** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE VIRAL MEMES** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and view-image and read-text`  
   **<span style="color:LightGray;">Subjects:</span>** viral, memes  
-- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction`  
   
@@ -461,23 +461,23 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
   
@@ -491,28 +491,28 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 20% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
   
@@ -526,32 +526,32 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">3</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **POST FOOD RECIPE** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST FOOD RECIPE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** blogging, food  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
   
@@ -565,47 +565,47 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **VISIT EXTERNAL TOWER** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VISIT EXTERNAL TOWER** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** public-transportation, intertower  
-- <span style="color:Yellow;">Use:</span> **SHARE VIRAL MEMES** 80% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE VIRAL MEMES** 80% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and view-image and read-text`  
   **<span style="color:LightGray;">Subjects:</span>** viral, memes  
-- <span style="color:Yellow;">Use:</span> **STREAM LOFI MUSIC** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM LOFI MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** lo-fi, music  
-- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction`  
   
@@ -619,7 +619,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **STORE SURVEILLANCE DATA** 100% @ `tcp/80` for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE SURVEILLANCE DATA** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `store-text and tunnel-vpn-traffic`  
   **<span style="color:LightGray;">Subjects:</span>** exclusive, surveillance  
@@ -634,11 +634,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **DO WORK THROUGH VPN** 100% @ `tcp/443` for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK THROUGH VPN** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and tunnel-vpn-traffic`  
   **<span style="color:LightGray;">Subjects:</span>** gaming  
-- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 50% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 50% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
@@ -653,11 +653,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **POST IDEOLOGICAL ADVERTISEMENT** 100% @ `tcp/443` for <span style="color:Salmon;">20</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST IDEOLOGICAL ADVERTISEMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">20</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( post-text or post-video ) and verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** conservative, advertisement  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -671,11 +671,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **POST ADVERTISEMENT** 100% @ `tcp/443` for <span style="color:Salmon;">25</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ADVERTISEMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">25</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( post-text or post-video ) and verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** libertarian, advertisement  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -689,11 +689,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **POST IDEOLOGICAL ADVERTISEMENT** 100% @ `tcp/443` for <span style="color:Salmon;">20</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST IDEOLOGICAL ADVERTISEMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">20</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( post-text or post-video ) and verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** capitalistic, advertisement  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -707,16 +707,16 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **UPLOAD SCI-FI MOVIE** 100% @ `tcp/443` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **UPLOAD SCI-FI MOVIE** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** sci-fi  
-- <span style="color:Yellow;">Use:</span> **PAY RESIDENTIAL UTILITIES** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY RESIDENTIAL UTILITIES** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** residential-utilities, b2c  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -730,14 +730,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 50% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 50% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **STREAM ANY PODCAST** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM ANY PODCAST** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** podcast  
-- <span style="color:Yellow;">Use:</span> **STREAM ANY MUSIC** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM ANY MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** music  
@@ -752,11 +752,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **DO SCIENTIFIC RESEARCH** 100% @ `tcp/80` for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO SCIENTIFIC RESEARCH** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** research, scientific  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -770,14 +770,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ `tcp/8333` for <span style="color:Salmon;">1</span>bw  
+- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 25% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 25% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -791,11 +791,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VIEW ONLINE RECIPE** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW ONLINE RECIPE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** blogging, food  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -809,10 +809,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **SHARE BLOG POSTS** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE BLOG POSTS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** blogging  
@@ -827,13 +827,13 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 25% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 25% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **POST SPAM MAIL** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **POST SPAM MAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and verify-user`  
-- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 30% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 30% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
@@ -848,13 +848,13 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **CHAT WITH SOMEONE AT NIGHT** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **CHAT WITH SOMEONE AT NIGHT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **PURCHASE ANY GAME** 80% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PURCHASE ANY GAME** 80% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2c, gaming  
@@ -869,10 +869,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **ENJOY PET CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **ENJOY PET CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** pet  
@@ -887,10 +887,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 25% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 25% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **PURCHASE RECYCLED SUPPLIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **PURCHASE RECYCLED SUPPLIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2c, cheap, supplies  
@@ -905,7 +905,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -919,30 +919,30 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **PROCESS SCIENTIFIC PAPERS** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **PROCESS SCIENTIFIC PAPERS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** scientific  
-- <span style="color:Yellow;">Use:</span> **DO SCIENTIFIC RESEARCH** 100% @ `tcp/80` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO SCIENTIFIC RESEARCH** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** research, scientific  
-- <span style="color:Yellow;">Use:</span> **ORDER PREMIUM FOOD** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER PREMIUM FOOD** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food, premium  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE BACKUP FILES** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE BACKUP FILES** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -956,49 +956,49 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server), [rtsp-diva-r](programs.md/#rtsp-diva-r)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 1% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 1% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** professional  
-- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-audio`  
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** music  
-- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and post-video`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** medical  
-- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text`  
   **<span style="color:LightGray;">Subjects:</span>** news-update  
-- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 80% @ `udp/554` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 80% @ [`udp/554`](traffic_types.md/#udp554) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video`  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ `tcp/8333` for <span style="color:Salmon;">1</span>bw  
+- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
-- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction`  
   
@@ -1012,53 +1012,53 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server), [rtsp-diva-r](programs.md/#rtsp-diva-r)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** professional  
-- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-audio`  
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** music  
-- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and post-video`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** medical  
-- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text`  
   **<span style="color:LightGray;">Subjects:</span>** news-update  
-- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 50% @ `udp/554` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 50% @ [`udp/554`](traffic_types.md/#udp554) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **DO FREELANCE WORK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO FREELANCE WORK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** freelance  
-- <span style="color:Yellow;">Use:</span> **ACCEPT NEIGHBOURS' TASK** 1% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT NEIGHBOURS' TASK** 1% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** freelance  
-- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
   **<span style="color:LightGray;">Subjects:</span>** fixed-deposit, intertower  
@@ -1073,50 +1073,50 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server), [rtsp-diva-r](programs.md/#rtsp-diva-r)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT FOOD DELIVERY** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 20% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **UPLOAD LECTURE VIDEO** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** professional  
-- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MUSIC** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-audio`  
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** music  
-- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 20% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST MEDICAL CONSULTATION** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and post-video`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** medical  
-- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 20% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY MOVIE** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, read-text, view-image`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY NEWS** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text`  
   **<span style="color:LightGray;">Subjects:</span>** news-update  
-- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 20% @ `udp/554` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM CCTV FOOTAGES** 20% @ [`udp/554`](traffic_types.md/#udp554) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video`  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **ACCEPT NEIGHBOURS' TASK** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT NEIGHBOURS' TASK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** freelance  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ `tcp/8333` for <span style="color:Salmon;">1</span>bw  
+- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
-- <span style="color:Yellow;">Use:</span> **HIGH RISK GAMBLING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **HIGH RISK GAMBLING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** gambling  
@@ -1131,21 +1131,21 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server), [rtsp-diva-r](programs.md/#rtsp-diva-r)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
   **<span style="color:LightGray;">Subjects:</span>** fixed-deposit, intertower  
-- <span style="color:Yellow;">Use:</span> **DO RISKY INVESTMENT** 100% @ `tcp/443` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO RISKY INVESTMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** gambling  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ `tcp/8333` for <span style="color:Salmon;">1</span>bw  
+- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(Requires peer tracking provider)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** `access-p2p-currency`  
@@ -1160,32 +1160,32 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **STREAM ANY MOVIE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM ANY MOVIE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction and stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
@@ -1200,28 +1200,28 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
@@ -1236,55 +1236,55 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
   **<span style="color:LightGray;">Subjects:</span>** fixed-deposit, intertower  
-- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 30% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 30% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 80% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 80% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 20% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 20% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
-- <span style="color:Yellow;">Use:</span> **REQUEST HELP FROM OTHERS** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **REQUEST HELP FROM OTHERS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** freelance  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 65% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 65% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **STREAM LOFI MUSIC** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM LOFI MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** lo-fi, music  
-- <span style="color:Yellow;">Use:</span> **JOIN HACKING WORKSHOP** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **JOIN HACKING WORKSHOP** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video and verify-user`  
   
@@ -1298,36 +1298,36 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 30% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 30% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 80% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 80% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 30% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 80% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 80% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **HIGH RISK GAMBLING** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **HIGH RISK GAMBLING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">3</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** gambling  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -1341,41 +1341,41 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILES** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILES** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   **<span style="color:LightGray;">Subjects:</span>** software-as-a-service  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **PIRATING MOVIE CONTENT** 50% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PIRATING MOVIE CONTENT** 50% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -1389,37 +1389,37 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE PREMIUM PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE PREMIUM PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking or authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2c, premium  
-- <span style="color:Yellow;">Use:</span> **ORDER PREMIUM FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER PREMIUM FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food, premium  
-- <span style="color:Yellow;">Use:</span> **STREAM SCIENTIFIC MEDIA** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM SCIENTIFIC MEDIA** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** scientific  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILES** 50% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILES** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **READ EXCLUSIVE ECONOMICAL NEWS** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ EXCLUSIVE ECONOMICAL NEWS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text and view-image and stream-video and stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** exclusive, economical  
-- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **MANAGE FIXED DEPOSIT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
   **<span style="color:LightGray;">Subjects:</span>** fixed-deposit, intertower  
-- <span style="color:Yellow;">Use:</span> **REQUEST HELP FROM OTHERS** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **REQUEST HELP FROM OTHERS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
@@ -1435,32 +1435,32 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FAVOURITE MOVIES** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FAVOURITE MOVIES** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
   
@@ -1474,42 +1474,42 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** supplies, high-tech, b2c  
-- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 30% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 30% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **JOIN HACKING WORKSHOP** 50% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **JOIN HACKING WORKSHOP** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video and verify-user`  
   
@@ -1523,32 +1523,32 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **STREAM LECTURE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM LECTURE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** professional, podcast  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE LECTURE CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE LECTURE CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
@@ -1563,32 +1563,32 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **STREAM LECTURE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM LECTURE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video or stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** professional, podcast  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE LECTURE CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE LECTURE CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
@@ -1603,36 +1603,36 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 30% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **STREAM ANY MOVIE** 30% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM ANY MOVIE** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction and stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 80% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 80% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
@@ -1640,13 +1640,13 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-p2p-transaction`  
   **Scaling:** Static?=4-9  
   **Description:** decentro currency network facilitator  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK WITH VPN** 30% @ `udp/1194` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK WITH VPN** 30% @ [`udp/1194`](traffic_types.md/#udp1194) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **JOIN HACKING WORKSHOP** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **JOIN HACKING WORKSHOP** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video and verify-user`  
   
@@ -1660,12 +1660,12 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
 - <span style="color:red;">Worm:</span> **ANNOYING_MORRIS** @ `tcp/51#`  
   **Vulnerable Devices:** NETWORK_ROUTER, COMPUTE_SERVER  
-- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 100% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 100% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
@@ -1680,34 +1680,34 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 20% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO REMOTE SUPPORT** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER CHEAP FOOD** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER CHEAP FOOD** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food, cheap  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 20% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **PIRATING MOVIE CONTENT** 80% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PIRATING MOVIE CONTENT** 80% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **PURCHASE CHEAP SUPPLIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PURCHASE CHEAP SUPPLIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2c, cheap, supplies  
-- <span style="color:Yellow;">Use:</span> **VIEW FREE-TIER CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW FREE-TIER CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">3</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** free-tier  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -1721,10 +1721,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO BUSINESS PARTNER** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO BUSINESS PARTNER** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
 - <span style="color:Aqua;">Host:</span> **HostEcommerceSite**  
@@ -1742,13 +1742,13 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **ATTEND VIDEO MEETING** 100% @ `tcp/443` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ATTEND VIDEO MEETING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-live-video and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostDividendPayment**  
@@ -1766,10 +1766,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostLiveHackingWorkshop**  
@@ -1787,10 +1787,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -1811,14 +1811,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -1839,14 +1839,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -1867,7 +1867,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -1877,7 +1877,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-video, post-text, post-image, stream-video, read-text, view-image, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** join our comprehensive online university platform offering accredited degree program designed for working professionals and students.  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
@@ -1892,10 +1892,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -1916,16 +1916,16 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PUBLISH GAME STOREPAGE** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PUBLISH GAME STOREPAGE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** gaming, sci-fi  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE BUSINESS EMAIL** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE BUSINESS EMAIL** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostDevWorkspace**  
@@ -1943,15 +1943,15 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO CUSTOMERS** 30% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO CUSTOMERS** 30% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **PUBLISH STORE PAGE** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PUBLISH STORE PAGE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** high-tech, supplies  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -1972,15 +1972,15 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **CUSTOMER SERVICE** 30% @ `udp/5060` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **CUSTOMER SERVICE** 30% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **PUBLISH STORE PAGE** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PUBLISH STORE PAGE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** high-tech, administrative, supplies  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2005,12 +2005,12 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
   **Scaling:** Survey  
   **Description:** An internal development workspace for hired coders, plus a secure login site where gamers can view latest game releases.  
-- <span style="color:Yellow;">Use:</span> **PUBLISH GAME STOREPAGE** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PUBLISH GAME STOREPAGE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** horror, gaming  
-- <span style="color:Yellow;">Use:</span> **CUSTOMER SERVICE** 100% @ `udp/5060` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **CUSTOMER SERVICE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -2024,11 +2024,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2049,10 +2049,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **POST FOOD MENU** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST FOOD MENU** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `view-image, read-text, authenticate-transaction`  
@@ -2072,14 +2072,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2100,11 +2100,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2125,13 +2125,13 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO CUSTOMERS** 80% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO CUSTOMERS** 80% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2152,17 +2152,17 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostDatabaseSubscription**  
@@ -2180,14 +2180,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2208,14 +2208,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 80% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 80% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2236,10 +2236,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **POST FOOD MENU** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST FOOD MENU** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `view-image, read-text, authenticate-transaction`  
@@ -2259,14 +2259,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -2287,14 +2287,14 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostBlogSite**  
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, read-text, view-image`  
   **Scaling:** Visitors  
   **Description:** join our community and start posting your blog today.  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -2312,10 +2312,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, read-text, view-image`  
   **Scaling:** Visitors  
   **Description:**  join our community and start sharing your favourite books today.  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   
@@ -2329,7 +2329,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
@@ -2349,7 +2349,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **USE BUSINESS KANBAN** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **USE BUSINESS KANBAN** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction and post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** b2b, project-planning  
@@ -2357,13 +2357,13 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **Scaling:** Survey  
   **Description:** internal workspace which provides freelance coders with advanced tools and collaborative environments to create the best working experience within tower.  
-- <span style="color:Yellow;">Use:</span> **USE DATABASE SERVICE** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **USE DATABASE SERVICE** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** database-as-a-service, b2b  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE BUSINESS EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE BUSINESS EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -2377,7 +2377,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
@@ -2386,7 +2386,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
   **Scaling:** Survey  
   **Description:** An internal workspace for hired coders to develop custom software solutions, plus a login-protected site where authorized users can view company data products and case studies.  
-- <span style="color:Yellow;">Use:</span> **USE BUSINESS KANBAN** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **USE BUSINESS KANBAN** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction and post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** b2b, project-planning  
@@ -2405,10 +2405,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** exclusive news site for public.  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   
@@ -2422,7 +2422,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PUBLISH SCI-FI GAME** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PUBLISH SCI-FI GAME** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
@@ -2431,7 +2431,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **Scaling:** Survey  
   **Description:** host freelance workspace  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   
@@ -2449,10 +2449,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image`  
   **Scaling:** Survey  
   **Description:** free kanban platform  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   
@@ -2466,10 +2466,10 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **UPLOAD MOVIES TO SITE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **UPLOAD MOVIES TO SITE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-video and post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video`  
@@ -2489,10 +2489,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-video, view-image, read-text`  
   **Scaling:** Survey  
   **Description:** let’s explore our additive streaming site to brighten your day.  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   
@@ -2510,10 +2510,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-audio, stream-audio`  
   **Scaling:** Visitors  
   **Description:** free music site  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   
@@ -2531,11 +2531,11 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `post-audio, stream-audio, read-text, post-text`  
   **Scaling:** Visitors  
   **Description:** host podcast platform  
-- <span style="color:Yellow;">Use:</span> **POST PODCAST TRANSCRIPT** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST PODCAST TRANSCRIPT** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** blogging  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   
@@ -2553,7 +2553,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** official news site  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   
@@ -2571,10 +2571,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-text, post-image, post-video, stream-video`  
   **Scaling:** Visitors  
   **Description:** let's share your spiritual journey with us.  
-- <span style="color:Yellow;">Use:</span> **TALK TO BELIEVERS** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO BELIEVERS** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **POST NEWS ON PORTAL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST NEWS ON PORTAL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text`  
   **<span style="color:LightGray;">Subjects:</span>** news-update  
@@ -2593,10 +2593,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
   **Scaling:** Survey  
   **Description:** scientific news site  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and verify-user`  
   
@@ -2610,7 +2610,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
@@ -2619,11 +2619,11 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Visitors  
   **Description:** feel free to read or post announcement.  
-- <span style="color:Yellow;">Use:</span> **PURCHASE OFFICE SUPPLIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PURCHASE OFFICE SUPPLIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** supplies, administrative, b2c  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 55% @ `tcp/631` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 55% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `print-image or print-text`  
   
@@ -2641,10 +2641,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-video, view-image, read-text, post-text, post-image, post-video`  
   **Scaling:** Survey  
   **Description:** social media platform  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **PROMOTE ON PORTAL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PROMOTE ON PORTAL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text`  
   **<span style="color:LightGray;">Subjects:</span>** news-update  
@@ -2659,20 +2659,20 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-banking`  
   **<span style="color:LightGray;">Subjects:</span>** critical  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
 - <span style="color:Aqua;">Host:</span> **ProvideBankingService**  
   **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-banking`  
   **Scaling:** Survey  
   **Description:** enjoy our best professional banking services for both businesses and individual customers.  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 80% @ `tcp/631` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 80% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `print-image or print-text`  
   
@@ -2686,7 +2686,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
@@ -2706,11 +2706,11 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
@@ -2734,10 +2734,10 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `update-software`  
   **Scaling:** Visitors  
   **Description:** release software update for companies.  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 70% @ `tcp/631` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 70% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `print-image or print-text`  
   
@@ -2751,20 +2751,20 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [dns-lite](programs.md/#dns-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** b2b  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **IssueUtilitiesBills**  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Visitors  
   **Description:** kindly pay your monthly utilities bills by the due date to avoid service interruptions.  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 80% @ `tcp/631` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 80% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `print-image or print-text`  
   
@@ -2778,7 +2778,7 @@ GENERATED FOR TNI VERSION 0.11.4
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 30% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
 - <span style="color:Aqua;">Host:</span> **HostIdeologicalAds**  
@@ -2800,7 +2800,7 @@ GENERATED FOR TNI VERSION 0.11.4
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **Scaling:** Visitors  
   **Description:** host scientific research work  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -2831,23 +2831,23 @@ They reconcil meter usage against issued bills, identifying discrepancies, and f
 **Unlocks:** [ten-bill-server](programs.md/#ten-bill-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **EMPLOYEE SELF-SERVICE** 50% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EMPLOYEE SELF-SERVICE** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and ( post-leave-request or post-certification-renewal )`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **CUSTOMER BILLING** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **CUSTOMER BILLING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and post-invoice`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-invoice, verify-user`  
-- <span style="color:Yellow;">Use:</span> **SUBMIT HELPDESK TICKET** 80% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SUBMIT HELPDESK TICKET** 80% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( post-image or post-text or verify-user )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
@@ -2865,19 +2865,19 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [complaint-server2](programs.md/#complaint-server2), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [print-server](programs.md/#print-server), [complaint-lite](programs.md/#complaint-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **RESOLVE COMPLAINTS** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **RESOLVE COMPLAINTS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-complaint and store-complaint`  
   
@@ -2891,24 +2891,24 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-calc-server](programs.md/#tena-calc-server), [tena-staff-portal](programs.md/#tena-staff-portal), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **PUBLISH DASHBOARD** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PUBLISH DASHBOARD** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-tenabolt-dashboard`  
   **<span style="color:DarkKhaki;">Produces:</span>** `view-tenabolt-dashboard`  
   **<span style="color:LightGray;">Subjects:</span>** software-as-a-service, professional  
-- <span style="color:Yellow;">Use:</span> **IDENTIFY THEFT ANOMALY** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **IDENTIFY THEFT ANOMALY** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-meter-data or read-operation-data or read-tenabolt-calculation )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `post-inspection-report`  
@@ -2923,13 +2923,13 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [maintenance-server](programs.md/#maintenance-server), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **POST REPAIR TASK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST REPAIR TASK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( post-repair-workorder or post-inspection-report or read-operation-data or view-tenabolt-dashboard )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-repair-instruction`  
@@ -2944,23 +2944,23 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [ten-scada-server](programs.md/#ten-scada-server), [maintenance-server](programs.md/#maintenance-server), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE FIELD REPORT** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE FIELD REPORT** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT ASSET MAP** 100% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT ASSET MAP** 100% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **ACCEPT REPAIR TASK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT REPAIR TASK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-repair-instruction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-workorder-claim`  
-- <span style="color:Yellow;">Use:</span> **POST THEFT INSPECTION** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST THEFT INSPECTION** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-inspection-report`  
   
@@ -2974,19 +2974,19 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **MANAGE FINANCE** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **MANAGE FINANCE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-workorder-claim or read-expansion-budget )`  
   
@@ -3000,19 +3000,19 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [ten-scada-server](programs.md/#ten-scada-server), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE OPERATION PLANS** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE OPERATION PLANS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT OPERATION SCHEDULE** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT OPERATION SCHEDULE** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **CONTROL GRID POWER** 100% @ `tcp/2404` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **CONTROL GRID POWER** 100% @ [`tcp/2404`](traffic_types.md/#tcp2404) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and adjust-tenabolt-setpoint`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-operation-data`  
@@ -3027,32 +3027,32 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [tena-employee-db](programs.md/#tena-employee-db), [tena-staff-portal](programs.md/#tena-staff-portal), [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [dnsmasq](programs.md/#dnsmasq), [mailer](programs.md/#mailer)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 100% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 100% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **MANAGE WORKFORCE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **MANAGE WORKFORCE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and post-employee-payslip`  
   **<span style="color:DarkKhaki;">Produces:</span>** `verify-user, read-employee-payslip`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE AS A SERVICE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE AS A SERVICE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image )`  
   **<span style="color:LightGray;">Subjects:</span>** software-as-a-service, professional  
-- <span style="color:Yellow;">Use:</span> **SUBMIT HELPDESK TICKET** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SUBMIT HELPDESK TICKET** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( post-image or post-text or verify-user )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** professional, support, corporate  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 10% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 10% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -3066,19 +3066,19 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [mailer](programs.md/#mailer), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **DRAFT CONTRACT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DRAFT CONTRACT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `upload-file or download-file`  
   
@@ -3092,13 +3092,13 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-meter-db](programs.md/#tena-meter-db), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **POST METER READINGS** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST METER READINGS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-meter-reading`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-meter-reading`  
@@ -3113,19 +3113,19 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [ten-scada-server](programs.md/#ten-scada-server), [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [mailer](programs.md/#mailer)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE OPERATION PLANS** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE OPERATION PLANS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT OPERATION SCHEDULE** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT OPERATION SCHEDULE** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **CONTROL GRID POWER** 100% @ `tcp/2404` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **CONTROL GRID POWER** 100% @ [`tcp/2404`](traffic_types.md/#tcp2404) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and adjust-tenabolt-setpoint`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-operation-data`  
@@ -3140,26 +3140,26 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [hypervisor-server](programs.md/#hypervisor-server), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ `tcp/443` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `query-log-entry`  
-- <span style="color:Yellow;">Use:</span> **RESOLVE HELPDESK TICKET** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **RESOLVE HELPDESK TICKET** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** professional, support, corporate  
-- <span style="color:Yellow;">Use:</span> **PROVISION VIRTUAL MACHINE** 80% @ `tcp/443` for <span style="color:Salmon;">15</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PROVISION VIRTUAL MACHINE** 80% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">15</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `provision-vm`  
   
@@ -3173,19 +3173,19 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [ten-scada-server](programs.md/#ten-scada-server), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE OPERATION PLANS** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE OPERATION PLANS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT OPERATION SCHEDULE** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT OPERATION SCHEDULE** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **CONTROL GRID POWER** 100% @ `tcp/2404` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **CONTROL GRID POWER** 100% @ [`tcp/2404`](traffic_types.md/#tcp2404) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and adjust-tenabolt-setpoint`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-operation-data`  
@@ -3200,7 +3200,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [mailer](programs.md/#mailer)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -3214,29 +3214,29 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [hypervisor-server](programs.md/#hypervisor-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **RESOLVE COMPLAINTS** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **RESOLVE COMPLAINTS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-complaint and store-complaint`  
-- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ `tcp/443` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `query-log-entry`  
-- <span style="color:Yellow;">Use:</span> **RESOLVE HELPDESK TICKET** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **RESOLVE HELPDESK TICKET** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** professional, support, corporate  
-- <span style="color:Yellow;">Use:</span> **PROVISION VIRTUAL MACHINE** 20% @ `tcp/443` for <span style="color:Salmon;">15</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PROVISION VIRTUAL MACHINE** 20% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">15</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `provision-vm`  
   
@@ -3250,22 +3250,22 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-staff-portal](programs.md/#tena-staff-portal), [voip-server](programs.md/#voip-server), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 100% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 100% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 100% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **EMPLOYEE SELF-SERVICE** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EMPLOYEE SELF-SERVICE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and ( post-leave-request or post-certification-renewal )`  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -3279,26 +3279,26 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [log-server](programs.md/#log-server), [tena-staff-portal](programs.md/#tena-staff-portal), [hypervisor-server](programs.md/#hypervisor-server), [tena-staff-portal](programs.md/#tena-staff-portal), [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ `tcp/443` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `query-log-entry`  
-- <span style="color:Yellow;">Use:</span> **RESOLVE HELPDESK TICKET** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **RESOLVE HELPDESK TICKET** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** professional, support, corporate  
-- <span style="color:Yellow;">Use:</span> **PROVISION VIRTUAL MACHINE** 50% @ `tcp/443` for <span style="color:Salmon;">15</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PROVISION VIRTUAL MACHINE** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">15</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `provision-vm`  
   
@@ -3312,7 +3312,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [dnsmasq](programs.md/#dnsmasq), [tena-employee-db](programs.md/#tena-employee-db)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ACCESS EMPLOYEE DATABASE** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCESS EMPLOYEE DATABASE** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-employee-data or post-employee-data )`  
@@ -3336,19 +3336,19 @@ Responsible for receiving, reviewing, and resolving customer complaints.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-gis-server](programs.md/#tena-gis-server), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE PLAN** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE PLAN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT RESEARCH** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT RESEARCH** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **PLAN GRID EXPANSION** 100% @ `tcp/80` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PLAN GRID EXPANSION** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and ( store-geospatial-data or read-geospatial-data )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-expansion-budget`  
@@ -3395,7 +3395,7 @@ Switched off by IT staff during non-working hour to save cost.
 **Unlocks:** [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [dnsmasq](programs.md/#dnsmasq)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ACCESS EMPLOYEE DATABASE** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCESS EMPLOYEE DATABASE** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-employee-data or post-employee-data )`  
@@ -3417,10 +3417,10 @@ Only operates during working hours.
 **Unlocks:** [dns-server](programs.md/#dns-server), [log-server](programs.md/#log-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [log-lite](programs.md/#log-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ `tcp/443` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **QUERY EVENT LOGS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `query-log-entry`  
-- <span style="color:Yellow;">Use:</span> **ACCESS DATABASE** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCESS DATABASE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `store-text and store-image`  
@@ -3440,20 +3440,20 @@ Only operates during working hours.
 **Unlocks:** [complaint-server2](programs.md/#complaint-server2), [ten-public-portal](programs.md/#ten-public-portal), [complaint-server2](programs.md/#complaint-server2), [dns-server](programs.md/#dns-server), [dns-lite](programs.md/#dns-lite), [padu_v1](programs.md/#padu_v1), [padu_v2](programs.md/#padu_v2), [dnsmasq](programs.md/#dnsmasq), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server), [tena-staff-portal](programs.md/#tena-staff-portal), [complaint-lite](programs.md/#complaint-lite), [tmp-collabpoint0](programs.md/#tmp-collabpoint0), [ten-public-lite](programs.md/#ten-public-lite)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SUBMIT COMPLAINTS** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SUBMIT COMPLAINTS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-complaint`  
-- <span style="color:Yellow;">Use:</span> **PURCHASE DEVICES** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PURCHASE DEVICES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction and view-image and read-text`  
   **<span style="color:LightGray;">Subjects:</span>** official, b2c, high-tech  
-- <span style="color:Yellow;">Use:</span> **READ OUTAGE NEWS** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ OUTAGE NEWS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **READ BILL INVOICE** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ BILL INVOICE** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and read-invoice`  
-- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 30% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 30% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text`  
@@ -3468,19 +3468,19 @@ Only operates during working hours.
 **Unlocks:** [print-server](programs.md/#print-server), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [ten-public-portal](programs.md/#ten-public-portal), [tena-staff-portal](programs.md/#tena-staff-portal), [mailer](programs.md/#mailer)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE SOCIAL MEDIA** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE SOCIAL MEDIA** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT POSTERS** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT POSTERS** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **POST OUTAGE NEWS** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST OUTAGE NEWS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-news-updates`  
   
@@ -3494,23 +3494,23 @@ Only operates during working hours.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-calc-server](programs.md/#tena-calc-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tena-staff-portal](programs.md/#tena-staff-portal), [tmp-collabpoint1](programs.md/#tmp-collabpoint1)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE TENABOLT RESEARCH** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE TENABOLT RESEARCH** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT TENABOLT RESEARCH** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT TENABOLT RESEARCH** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **SAAS** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SAAS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image )`  
   **<span style="color:LightGray;">Subjects:</span>** software-as-a-service, professional  
-- <span style="color:Yellow;">Use:</span> **DO TENABOLT CALCULATION** 100% @ `tcp/80` for <span style="color:Salmon;">8</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO TENABOLT CALCULATION** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">8</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and ( run-tenabolt-simulation or store-tenabolt-model )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-tenabolt-calculation`  
@@ -3525,23 +3525,23 @@ Only operates during working hours.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-calc-server](programs.md/#tena-calc-server), [print-server](programs.md/#print-server), [mailer](programs.md/#mailer), [tena-staff-portal](programs.md/#tena-staff-portal), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [tena-calc-server2](programs.md/#tena-calc-server2), [ten-anomaly-server](programs.md/#ten-anomaly-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE TENABOLT RESEARCH** 25% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE TENABOLT RESEARCH** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT TENABOLT RESEARCH** 50% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT TENABOLT RESEARCH** 50% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **SAAS** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SAAS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image )`  
   **<span style="color:LightGray;">Subjects:</span>** software-as-a-service, professional  
-- <span style="color:Yellow;">Use:</span> **DO TENABOLT CALCULATION** 100% @ `tcp/80` for <span style="color:Salmon;">8</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **DO TENABOLT CALCULATION** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">8</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and ( run-tenabolt-simulation or store-tenabolt-model )`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-tenabolt-calculation`  
@@ -3556,25 +3556,25 @@ Only operates during working hours.
 **Unlocks:** [dns-server](programs.md/#dns-server), [tena-staff-portal](programs.md/#tena-staff-portal), [voip-server](programs.md/#voip-server), [mailer](programs.md/#mailer), [tmp-collabpoint1](programs.md/#tmp-collabpoint1), [print-server](programs.md/#print-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 30% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **READ STAFF BULLETIN** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-news-updates and verify-user`  
-- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 30% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXHANGE EMAILS** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or post-text or post-image ) and verify-user and not ( read-complaint and post-complaint ) and not publish-tenabolt-dashboard and not authenticate-transaction and not accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 30% @ `tcp/80` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SHARE MEDIA FILE** 30% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `download-file and upload-file`  
-- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 100% @ `tcp/631` for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PRINT DOCUMENTS** 100% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">6</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( print-image or print-text )`  
-- <span style="color:Yellow;">Use:</span> **EMPLOYEE SELF-SERVICE** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EMPLOYEE SELF-SERVICE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `verify-user and ( post-leave-request or post-certification-renewal )`  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **MANAGE PRODUCTS** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **MANAGE PRODUCTS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** official, b2c, high-tech  
@@ -3589,14 +3589,14 @@ Only operates during working hours.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
-- <span style="color:Yellow;">Use:</span> **DO CONFIDENTIAL RESEARCH** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO CONFIDENTIAL RESEARCH** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** research  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -3610,11 +3610,11 @@ Only operates during working hours.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **DO CHIPS DESIGNING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO CHIPS DESIGNING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** high-tech, research  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -3628,12 +3628,12 @@ Only operates during working hours.
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **DO GAMEPLAY STREAMING** 100% @ `tcp/80` for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO GAMEPLAY STREAMING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">10</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** gaming  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
   
@@ -3647,14 +3647,14 @@ Only operates during working hours.
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **STREAM ANY MOVIE** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM ANY MOVIE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction and stream-video`  
   **<span style="color:LightGray;">Subjects:</span>** movie  
-- <span style="color:Yellow;">Use:</span> **PIRATING MOVIE CONTENT** 70% @ `tcp/80##` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PIRATING MOVIE CONTENT** 70% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-video`  
@@ -3670,10 +3670,10 @@ Only operates during working hours.
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **STREAM JAZZ MUSIC** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **STREAM JAZZ MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-audio`  
   **<span style="color:LightGray;">Subjects:</span>** music, jazz  
@@ -3688,40 +3688,40 @@ Only operates during working hours.
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server), [dnsmasq](programs.md/#dnsmasq)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **ORDER GROCERY DELIVERY** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER GROCERY DELIVERY** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-text and view-image and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** grocery, supplies  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 25% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO PROJECT PLANNING** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:LightGray;">Subjects:</span>** project-planning  
-- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PRIVATE CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:LightGray;">Subjects:</span>** privacy  
@@ -3738,25 +3738,25 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( authenticate-transaction or facilitate-banking ) and not ( read-text or view-image or stream-audio or stream-video )`  
   **<span style="color:LightGray;">Subjects:</span>** b2c  
-- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 25% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 25% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and not verify-user and not authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **DO WORK** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
-- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ORDER ANY FOOD** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `view-image and read-text and authenticate-transaction`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** food  
-- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 20% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **ONLINE INSTANT MESSAGING** 20% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `read-instant-messages or post-instant-messages`  
-- <span style="color:Yellow;">Use:</span> **STORE BACKUP FILES** 100% @ `tcp/80` for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE BACKUP FILES** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
   
@@ -3770,13 +3770,13 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostImageTextPost**  
@@ -3794,13 +3794,13 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ `tcp/443` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image or stream-audio or stream-video ) and authenticate-transaction`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
 - <span style="color:Aqua;">Host:</span> **HostImageTextPost**  
@@ -3818,13 +3818,13 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [voip-server](programs.md/#voip-server), [dns-lite](programs.md/#dns-lite), [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or post-text ) and verify-user`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
 - <span style="color:Aqua;">Host:</span> **HostLofiMusic**  
@@ -3842,7 +3842,7 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -3852,10 +3852,10 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `post-image, post-video, authenticate-transaction, view-image, stream-video, accept-instruction`  
   **Scaling:** Survey  
   **Description:** host animation platform  
-- <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and verify-user`  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   
@@ -3869,16 +3869,16 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **POST ANY ANIMATION** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **POST ANY ANIMATION** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-image and post-video`  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction, stream-video, view-image, accept-instruction`  
   **<span style="color:LightGray;">Subjects:</span>** animation, movie  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( store-text or store-image or store-video ) and not tunnel-vpn-traffic`  
 - <span style="color:Aqua;">Host:</span> **HostFreelanceWorkspace**  
@@ -3896,7 +3896,7 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -3906,11 +3906,11 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-image, post-text, accept-instruction, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** grocery and food delivery  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   
@@ -3924,12 +3924,12 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction`  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 20% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 20% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
@@ -3948,19 +3948,19 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 50% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 50% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **POST GROCERY MENU** 100% @ `tcp/80` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **POST GROCERY MENU** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and post-image`  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** grocery, supplies  
-- <span style="color:Yellow;">Use:</span> **INVENTORY MANAGEMENT** 100% @ `tcp/80` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
+- <span style="color:Yellow;">Use:</span> **INVENTORY MANAGEMENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `( read-text or view-image ) and authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** inventory-management  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -3981,7 +3981,7 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SUBSCRIBE DATABASE SERVICE** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SUBSCRIBE DATABASE SERVICE** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
@@ -3991,7 +3991,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, authenticate-transaction`  
   **Scaling:** Survey  
   **Description:** track, manage, and optimize the clients' product inventory at a small fee  
-- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software`  
   
@@ -4005,7 +4005,7 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [voip-server](programs.md/#voip-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
 - <span style="color:Aqua;">Host:</span> **HostConfidentialResearch**  
@@ -4023,11 +4023,11 @@ They stick to familiar websites unless better options appear.
 **Unlocks:**   
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `authenticate-transaction`  
   **<span style="color:LightGray;">Subjects:</span>** commercial-utilities  
-- <span style="color:Yellow;">Use:</span> **ACCEPT VENDOR CONTRACT** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ACCEPT VENDOR CONTRACT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `accept-instruction and not tunnel-vpn-traffic and not verify-user`  
   **<span style="color:LightGray;">Subjects:</span>** animation, movie  
@@ -4057,7 +4057,7 @@ They stick to familiar websites unless better options appear.
 **Unlocks:**   
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ANTIVIRUS SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ANTIVIRUS SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software and authenticate-transaction`  
@@ -4066,7 +4066,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, post-text, post-image, post-video, stream-video`  
   **Scaling:** Visitors  
   **Description:** host professional forum  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -4080,7 +4080,7 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ANTIVIRUS SOFTWARE UPDATES** 100% @ `tcp/443` for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ANTIVIRUS SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `update-software and authenticate-transaction`  
@@ -4100,7 +4100,7 @@ They stick to familiar websites unless better options appear.
 **Unlocks:** [dns-server](programs.md/#dns-server)  
   
 **Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ `tcp/443` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `facilitate-banking`  
@@ -4110,7 +4110,7 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `update-software, authenticate-transaction`  
   **Scaling:** Visitors  
   **Description:** release antivirus software update  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
   
@@ -4128,10 +4128,10 @@ They stick to familiar websites unless better options appear.
   **<span style="color:DarkKhaki;">Produces:</span>** `update-software`  
   **Scaling:** Visitors  
   **Description:** release privacy software update  
-- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ `udp/5060` for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
+- <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `stream-voice`  
-- <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ `tcp/80` for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
+- <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **<span style="color:PapayaWhip;">Consumes:</span>** `post-text and verify-user`  
   
