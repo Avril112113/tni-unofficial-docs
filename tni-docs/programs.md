@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.4
+GENERATED FOR TNI VERSION 0.11.5
 
 - TOC
 {:toc}
@@ -502,23 +502,10 @@ Production is limited to 13 compatible uses on the device's use stack.
 **Unlocked By:** [Loyal Worker](users.md/#loyal-worker), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor)  
   
   
-## san-client  
-**CPU:** 1 **MEM:** 1 **SIZE:** 2  
-**<span style="color:DarkKhaki;">Produces:</span>** 6 `store-block` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 6)</span>  
-  
-  
-**Description:**  
-The storage array's operating system.   
-  
-Exposes their capacity as raw blocks (store-block) to the network.  
-Production is limited to 6 compatible uses on the device's use stack.  
-  
-  
-  
 ## san-server  
-**CPU:** 3 **MEM:** 1 **SIZE:** 1  
+**CPU:** 6 **MEM:** 14 **SIZE:** 6  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-block` @ [`tcp/3264`](traffic_types.md/#tcp3264) for <span style="color:Salmon;">4</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-text, store-image` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `store-text, store-image` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -526,8 +513,21 @@ Mounts remote storage from a SAN.
   
 Fetches raw blocks over the network and serves them as text or image storage on this device.  
   
-Produce target's use stack limit is 4 compatible uses.  
+Produce target's use stack limit is 8 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
+  
+  
+  
+## san-storage  
+**CPU:** 2 **MEM:** 5 **SIZE:** 10  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-block` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+  
+  
+**Description:**  
+The storage array's operating system.   
+  
+Exposes their capacity as raw blocks (store-block) to the network.  
+Production is limited to 4 compatible uses on the device's use stack.  
   
   
   

@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.4
+GENERATED FOR TNI VERSION 0.11.5
 
 - TOC
 {:toc}
@@ -26,7 +26,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 4 CPU, 4 memory and 6 storage.Handles up to 16 traversals per tick.  
+   Specs: 4 CPU, 4 memory and 6 storage.  
+   Handles up to 16 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 72W.  
    Mountable on 500px racks.  
@@ -38,7 +39,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 6 CPU, 8 memory and 8 storage.Handles up to 28 traversals per tick.  
+   Specs: 6 CPU, 8 memory and 8 storage.  
+   Handles up to 28 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 161W.  
    Mountable on 500px racks.  
@@ -70,7 +72,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 35 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 6 CPU, 6 memory and 6 storage.Handles up to 24 traversals per tick.  
+   Specs: 6 CPU, 6 memory and 6 storage.  
+   Handles up to 24 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 108W.  
    Mountable on 500px racks.  
@@ -82,7 +85,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 7 days  
   **Description:**  
    Decentro mining rig.  
-   Specs: 24 CPU, 16 memory and 8 storage.Handles up to 40 traversals per tick.  
+   Specs: 24 CPU, 16 memory and 8 storage.  
+   Handles up to 40 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 523W.  
    Not rack mountable.  
@@ -112,7 +116,8 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
   **Warranty:** 14 days  
   **Description:**  
    3-port entry-level server  
-   Specs: 3 CPU, 4 memory and 8 storage.Handles up to 21 traversals per tick.  
+   Specs: 3 CPU, 4 memory and 8 storage.  
+   Handles up to 21 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 88W.  
    Mountable on 630px racks.  
@@ -124,7 +129,8 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
   **Warranty:** 14 days  
   **Description:**  
    3-port balanced compute server  
-   Specs: 7 CPU, 6 memory and 7 storage.Handles up to 39 traversals per tick.  
+   Specs: 7 CPU, 6 memory and 7 storage.  
+   Handles up to 39 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 191W.  
    Mountable on 630px racks.  
@@ -136,7 +142,8 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
   **Warranty:** 21 days  
   **Description:**  
    3-port high-capacity storage server  
-   Specs: 4 CPU, 8 memory and 12 storage.Handles up to 38 traversals per tick.  
+   Specs: 4 CPU, 8 memory and 12 storage.  
+   Handles up to 38 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 200W.  
    Mountable on 630px racks.  
@@ -150,7 +157,8 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
   **Warranty:** 21 days  
   **Description:**  
    3-port high-memory performance server  
-   Specs: 12 CPU, 16 memory and 4 storage.Handles up to 90 traversals per tick.  
+   Specs: 12 CPU, 16 memory and 4 storage.  
+   Handles up to 90 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 723W.  
    Mountable on 630px racks.  
@@ -164,7 +172,8 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
   **Warranty:** 35 days  
   **Description:**  
    4-port high-performance compute server  
-   Specs: 23 CPU, 13 memory and 10 storage.Handles up to 168 traversals per tick.  
+   Specs: 23 CPU, 13 memory and 10 storage.  
+   Handles up to 168 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 953W.  
    Mountable on 630px racks.  
@@ -842,7 +851,8 @@ Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.
   **Warranty:** 16 days  
   **Description:**  
    1-port network storage device.  
-   Specs: 1 CPU, 1 memory and 1 storage.Handles up to 6 traversals per tick.  
+   Specs: 1 CPU, 1 memory and 1 storage.  
+   Handles up to 6 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 13W.  
    Not rack mountable.  
@@ -864,7 +874,8 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
   **Warranty:** 8 days  
   **Description:**  
    1-port modular computing unit.  
-   Specs: 1 CPU, 2 memory and 2 storage.Handles up to 6 traversals per tick.  
+   Specs: 1 CPU, 2 memory and 2 storage.  
+   Handles up to 6 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 19W.  
    Not rack mountable.  
@@ -1007,7 +1018,8 @@ Cheap refurbished boxes for sale. No warranties!
   **Warranty:** 3 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 6 CPU, 8 memory and 8 storage.Handles up to 28 traversals per tick.  
+   Specs: 6 CPU, 8 memory and 8 storage.  
+   Handles up to 28 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 161W.  
    Mountable on 500px racks.  
@@ -1043,7 +1055,8 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
   **Warranty:** 21 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 4 CPU, 4 memory and 4 storage.Handles up to 16 traversals per tick.  
+   Specs: 4 CPU, 4 memory and 4 storage.  
+   Handles up to 16 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 62W.  
    Not rack mountable.  
@@ -1055,7 +1068,8 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
   **Warranty:** 35 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 6 CPU, 6 memory and 6 storage.Handles up to 24 traversals per tick.  
+   Specs: 6 CPU, 6 memory and 6 storage.  
+   Handles up to 24 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 108W.  
    Mountable on 500px racks.  
@@ -1067,7 +1081,8 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
   **Warranty:** 42 days  
   **Description:**  
    3-port general computing server.  
-   Specs: 10 CPU, 10 memory and 5 storage.Handles up to 65 traversals per tick.  
+   Specs: 10 CPU, 10 memory and 5 storage.  
+   Handles up to 65 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 293W.  
    Mountable on 500px racks.  
@@ -1079,7 +1094,8 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
   **Warranty:** 49 days  
   **Description:**  
    3-port general computing server.  
-   Specs: 16 CPU, 16 memory and 8 storage.Handles up to 104 traversals per tick.  
+   Specs: 16 CPU, 16 memory and 8 storage.  
+   Handles up to 104 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 423W.  
    Mountable on 500px racks.  
@@ -1216,7 +1232,8 @@ The Server Shoppe is your authorized distributor for Macrohard products.
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 6 CPU, 8 memory and 8 storage.Handles up to 28 traversals per tick.  
+   Specs: 6 CPU, 8 memory and 8 storage.  
+   Handles up to 28 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 161W.  
    Mountable on 500px racks.  
@@ -1228,7 +1245,8 @@ The Server Shoppe is your authorized distributor for Macrohard products.
   **Warranty:** 14 days  
   **Description:**  
    3-port general computing server.  
-   Specs: 6 CPU, 10 memory and 10 storage.Handles up to 48 traversals per tick.  
+   Specs: 6 CPU, 10 memory and 10 storage.  
+   Handles up to 48 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 312W.  
    Mountable on 500px racks.  
@@ -1240,7 +1258,8 @@ The Server Shoppe is your authorized distributor for Macrohard products.
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 16 CPU, 10 memory and 4 storage.Handles up to 52 traversals per tick.  
+   Specs: 16 CPU, 10 memory and 4 storage.  
+   Handles up to 52 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 429W.  
    Mountable on 500px racks.  
@@ -1252,7 +1271,8 @@ The Server Shoppe is your authorized distributor for Macrohard products.
   **Warranty:** 21 days  
   **Description:**  
    3-port high bandwidth computing server.  
-   Specs: 24 CPU, 14 memory and 4 storage.Handles up to 150 traversals per tick.  
+   Specs: 24 CPU, 14 memory and 4 storage.  
+   Handles up to 150 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 973W.  
    Mountable on 500px racks.  
@@ -1264,7 +1284,8 @@ The Server Shoppe is your authorized distributor for Macrohard products.
   **Warranty:** 21 days  
   **Description:**  
    4-port high bandwidth computing server.  
-   Specs: 24 CPU, 16 memory and 4 storage.Handles up to 208 traversals per tick.  
+   Specs: 24 CPU, 16 memory and 4 storage.  
+   Handles up to 208 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 1125W.  
    Mountable on 500px racks.  
@@ -1276,7 +1297,8 @@ The Server Shoppe is your authorized distributor for Macrohard products.
   **Warranty:** 24 days  
   **Description:**  
    5-port high performance computing server.  
-   Specs: 32 CPU, 16 memory and 4 storage.Handles up to 240 traversals per tick.  
+   Specs: 32 CPU, 16 memory and 4 storage.  
+   Handles up to 240 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 1223W.  
    Not rack mountable.  
@@ -1310,7 +1332,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 4 CPU, 4 memory and 6 storage.Handles up to 16 traversals per tick.  
+   Specs: 4 CPU, 4 memory and 6 storage.  
+   Handles up to 16 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 72W.  
    Mountable on 500px racks.  
@@ -1322,7 +1345,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 6 CPU, 8 memory and 8 storage.Handles up to 28 traversals per tick.  
+   Specs: 6 CPU, 8 memory and 8 storage.  
+   Handles up to 28 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 161W.  
    Mountable on 500px racks.  
@@ -1354,7 +1378,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 35 days  
   **Description:**  
    2-port general computing server.  
-   Specs: 6 CPU, 6 memory and 6 storage.Handles up to 24 traversals per tick.  
+   Specs: 6 CPU, 6 memory and 6 storage.  
+   Handles up to 24 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 108W.  
    Mountable on 500px racks.  
@@ -1366,7 +1391,8 @@ At AB compute, we offer a variety of computing devices from different manufactur
   **Warranty:** 7 days  
   **Description:**  
    Decentro mining rig.  
-   Specs: 24 CPU, 16 memory and 8 storage.Handles up to 40 traversals per tick.  
+   Specs: 24 CPU, 16 memory and 8 storage.  
+   Handles up to 40 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 523W.  
    Not rack mountable.  

@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.4
+GENERATED FOR TNI VERSION 0.11.5
 
 - TOC
 {:toc}
@@ -19,7 +19,8 @@ GENERATED FOR TNI VERSION 0.11.4
 **Merchants:** [Avex Tech](merchants.md/#avex-tech)  
 **Description:**  
 4-port high-performance compute server  
-Specs: 23 CPU, 13 memory and 10 storage.Handles up to 168 traversals per tick.  
+Specs: 23 CPU, 13 memory and 10 storage.  
+Handles up to 168 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 953W.  
 Mountable on 630px racks.  
@@ -35,7 +36,8 @@ Spacious and efficient. Perfect for businesses with growing data needs.
 **Merchants:** [Avex Tech](merchants.md/#avex-tech)  
 **Description:**  
 3-port high-memory performance server  
-Specs: 12 CPU, 16 memory and 4 storage.Handles up to 90 traversals per tick.  
+Specs: 12 CPU, 16 memory and 4 storage.  
+Handles up to 90 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 723W.  
 Mountable on 630px racks.  
@@ -51,7 +53,8 @@ Powerful and responsive. Perfect for businesses with intensive operations.
 **Merchants:** [Avex Tech](merchants.md/#avex-tech)  
 **Description:**  
 3-port entry-level server  
-Specs: 3 CPU, 4 memory and 8 storage.Handles up to 21 traversals per tick.  
+Specs: 3 CPU, 4 memory and 8 storage.  
+Handles up to 21 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 88W.  
 Mountable on 630px racks.  
@@ -65,7 +68,8 @@ Compact and cost-efficient. Perfect for businesses in early deployment
 **Merchants:** [Avex Tech](merchants.md/#avex-tech)  
 **Description:**  
 3-port balanced compute server  
-Specs: 7 CPU, 6 memory and 7 storage.Handles up to 39 traversals per tick.  
+Specs: 7 CPU, 6 memory and 7 storage.  
+Handles up to 39 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 191W.  
 Mountable on 630px racks.  
@@ -79,7 +83,8 @@ Balanced and dependable. Perfect for businesses in steady expansion.
 **Merchants:** [Avex Tech](merchants.md/#avex-tech)  
 **Description:**  
 3-port high-capacity storage server  
-Specs: 4 CPU, 8 memory and 12 storage.Handles up to 38 traversals per tick.  
+Specs: 4 CPU, 8 memory and 12 storage.  
+Handles up to 38 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 200W.  
 Mountable on 630px racks.  
@@ -543,7 +548,8 @@ Not rack mountable.
 **Installed Programs:** [decentro-node](programs.md/#decentro-node)  
 **Description:**  
 Decentro mining rig.  
-Specs: 24 CPU, 16 memory and 8 storage.Handles up to 40 traversals per tick.  
+Specs: 24 CPU, 16 memory and 8 storage.  
+Handles up to 40 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 523W.  
 Not rack mountable.  
@@ -593,17 +599,18 @@ Mountable on 500px racks.
   
   
 ## golonys-bloque  
-**CPU:** `2` **MEM:** `2` **SIZE:** `4` **BW/t:** `30`  
-**Watts:** 13w **Base Price:** $2300  
+**CPU:** `2` **MEM:** `5` **SIZE:** `10` **BW/t:** `30`  
+**Watts:** 13w **Base Price:** $2500  
 **Port Counts:** 3x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
-**Installed Programs:** [san-client](programs.md/#san-client)  
+**Installed Programs:** [san-storage](programs.md/#san-storage)  
 **Description:**  
 3-port storage area network (SAN) array.  
-Specs: 2 CPU, 2 memory and 4 storage.Handles up to 30 traversals per tick.  
+Specs: 2 CPU, 5 memory and 10 storage.  
+Handles up to 30 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 13W.  
 Not rack mountable.  
-Comes with 2 SATA 3.5" expansion slots.  
+Comes with 3 SATA 3.5" expansion slots.  
 Needs to pair with running san-server.  
   
   
@@ -614,24 +621,12 @@ Needs to pair with running san-server.
 **Merchants:** [Golonys Ltd.](merchants.md/#golonys-ltd)  
 **Description:**  
 1-port network storage device.  
-Specs: 1 CPU, 1 memory and 1 storage.Handles up to 6 traversals per tick.  
+Specs: 1 CPU, 1 memory and 1 storage.  
+Handles up to 6 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 13W.  
 Not rack mountable.  
 Comes with 5 SATA 3.5" expansion slots.  
-  
-  
-## GPU Test Server  
-**CPU:** `50` **MEM:** `50` **SIZE:** `50` **BW/t:** `50`  
-**Watts:** 703w **Base Price:** $700  
-**Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
-**Description:**  
-2-port general computing server.  
-Specs: 50 CPU, 50 memory and 50 storage.Handles up to 50 traversals per tick.  
-CPU cycles 1 tick every 2.0 seconds.  
-Power consumption: 703W.  
-Mountable on 500px racks.  
-High performance model.  
   
   
 ## ICC1  
@@ -641,7 +636,8 @@ High performance model.
 **Merchants:** [Interchange Compute Corporation](merchants.md/#interchange-compute-corporation)  
 **Description:**  
 1-port modular computing unit.  
-Specs: 1 CPU, 2 memory and 2 storage.Handles up to 6 traversals per tick.  
+Specs: 1 CPU, 2 memory and 2 storage.  
+Handles up to 6 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 19W.  
 Not rack mountable.  
@@ -665,7 +661,8 @@ Not rack mountable.
 **Merchants:** [AB compute Ltd.](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
 2-port general computing server.  
-Specs: 4 CPU, 4 memory and 6 storage.Handles up to 16 traversals per tick.  
+Specs: 4 CPU, 4 memory and 6 storage.  
+Handles up to 16 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 72W.  
 Mountable on 500px racks.  
@@ -679,7 +676,8 @@ Suitable for small businesses.
 **Merchants:** [AB compute Ltd.](merchants.md/#ab-compute-ltd), [Refurb Hut](merchants.md/#refurb-hut), [The Server Shoppe](merchants.md/#the-server-shoppe), [Tutortial AB compute Ltd.](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
 2-port general computing server.  
-Specs: 6 CPU, 8 memory and 8 storage.Handles up to 28 traversals per tick.  
+Specs: 6 CPU, 8 memory and 8 storage.  
+Handles up to 28 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 161W.  
 Mountable on 500px racks.  
@@ -693,7 +691,8 @@ High performance model.
 **Merchants:** [The Server Shoppe](merchants.md/#the-server-shoppe)  
 **Description:**  
 3-port general computing server.  
-Specs: 6 CPU, 10 memory and 10 storage.Handles up to 48 traversals per tick.  
+Specs: 6 CPU, 10 memory and 10 storage.  
+Handles up to 48 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 312W.  
 Mountable on 500px racks.  
@@ -707,7 +706,8 @@ High performance model with extra bandwidth.
 **Merchants:** [The Server Shoppe](merchants.md/#the-server-shoppe)  
 **Description:**  
 4-port high bandwidth computing server.  
-Specs: 24 CPU, 16 memory and 4 storage.Handles up to 208 traversals per tick.  
+Specs: 24 CPU, 16 memory and 4 storage.  
+Handles up to 208 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 1125W.  
 Mountable on 500px racks.  
@@ -721,7 +721,8 @@ Fiber enabled compute server.
 **Merchants:** [The Server Shoppe](merchants.md/#the-server-shoppe)  
 **Description:**  
 3-port high bandwidth computing server.  
-Specs: 24 CPU, 14 memory and 4 storage.Handles up to 150 traversals per tick.  
+Specs: 24 CPU, 14 memory and 4 storage.  
+Handles up to 150 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 973W.  
 Mountable on 500px racks.  
@@ -735,7 +736,8 @@ Fiber enabled compute server.
 **Merchants:** [The Server Shoppe](merchants.md/#the-server-shoppe)  
 **Description:**  
 5-port high performance computing server.  
-Specs: 32 CPU, 16 memory and 4 storage.Handles up to 240 traversals per tick.  
+Specs: 32 CPU, 16 memory and 4 storage.  
+Handles up to 240 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 1223W.  
 Not rack mountable.  
@@ -749,7 +751,8 @@ Comes with 6 SATA 3.5" expansion slot.
 **Merchants:** [The Server Shoppe](merchants.md/#the-server-shoppe)  
 **Description:**  
 2-port general computing server.  
-Specs: 16 CPU, 10 memory and 4 storage.Handles up to 52 traversals per tick.  
+Specs: 16 CPU, 10 memory and 4 storage.  
+Handles up to 52 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 429W.  
 Mountable on 500px racks.  
@@ -806,7 +809,8 @@ Not rack mountable.
 **Merchants:** [Savannah Org.](merchants.md/#savannah-org)  
 **Description:**  
 3-port general computing server.  
-Specs: 10 CPU, 10 memory and 5 storage.Handles up to 65 traversals per tick.  
+Specs: 10 CPU, 10 memory and 5 storage.  
+Handles up to 65 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 293W.  
 Mountable on 500px racks.  
@@ -820,7 +824,8 @@ Mountable on 500px racks.
 **Merchants:** [AB compute Ltd.](merchants.md/#ab-compute-ltd), [Savannah Org.](merchants.md/#savannah-org), [Tutortial AB compute Ltd.](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
 2-port general computing server.  
-Specs: 6 CPU, 6 memory and 6 storage.Handles up to 24 traversals per tick.  
+Specs: 6 CPU, 6 memory and 6 storage.  
+Handles up to 24 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 108W.  
 Mountable on 500px racks.  
@@ -834,7 +839,8 @@ The gazelle is a durable device that is designed to last long in high load condi
 **Merchants:** [Savannah Org.](merchants.md/#savannah-org)  
 **Description:**  
 2-port general computing server.  
-Specs: 4 CPU, 4 memory and 4 storage.Handles up to 16 traversals per tick.  
+Specs: 4 CPU, 4 memory and 4 storage.  
+Handles up to 16 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 62W.  
 Not rack mountable.  
@@ -848,7 +854,8 @@ Scalable compute.
 **Merchants:** [Savannah Org.](merchants.md/#savannah-org)  
 **Description:**  
 3-port general computing server.  
-Specs: 16 CPU, 16 memory and 8 storage.Handles up to 104 traversals per tick.  
+Specs: 16 CPU, 16 memory and 8 storage.  
+Handles up to 104 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 423W.  
 Mountable on 500px racks.  
@@ -996,7 +1003,22 @@ Suitable for small businesses.
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
 **Description:**  
 2-port general computing server.  
-Specs: 32 CPU, 32 memory and 32 storage.Handles up to 50 traversals per tick.  
+Specs: 32 CPU, 32 memory and 32 storage.  
+Handles up to 50 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 703W.  
+Mountable on 500px racks.  
+High performance model.  
+  
+  
+## Test Server  
+**CPU:** `50` **MEM:** `50` **SIZE:** `50` **BW/t:** `50`  
+**Watts:** 703w **Base Price:** $700  
+**Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Description:**  
+2-port general computing server.  
+Specs: 50 CPU, 50 memory and 50 storage.  
+Handles up to 50 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 703W.  
 Mountable on 500px racks.  
@@ -1008,8 +1030,9 @@ High performance model.
 **Watts:** 703w **Base Price:** $700  
 **Port Counts:** 2x `RJ45`, 2x `PCIE_SLOT`, 2x `B_3PIN`  
 **Description:**  
-2-port gpu-enabled computing server.  
-Specs: 20 CPU, 10 memory and 8 storage.Handles up to 50 traversals per tick.  
+2-port computing server.  
+Specs: 20 CPU, 10 memory and 8 storage.  
+Handles up to 50 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 703W.  
 Mountable on 500px racks.  
@@ -1021,8 +1044,9 @@ High performance model.
 **Watts:** 703w **Base Price:** $700  
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
 **Description:**  
-2-port gpu-enabled computing server.  
-Specs: 20 CPU, 10 memory and 8 storage.Handles up to 50 traversals per tick.  
+2-port computing server.  
+Specs: 20 CPU, 10 memory and 8 storage.  
+Handles up to 50 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 703W.  
 Mountable on 500px racks.  
