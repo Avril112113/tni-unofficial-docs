@@ -24,7 +24,7 @@ Network switch firmware.
   
 ## blobdb  
 **CPU:** 4 **MEM:** 3 **SIZE:** 5  
-**<span style="color:DarkKhaki;">Produces:</span>** 5 `store-image, store-video, store-audio, store-text` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 5)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 5 `store-image, store-video, store-audio, store-text` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 5)</span>  
   
   
 **Description:**  
@@ -37,7 +37,7 @@ Production is limited to 5 compatible uses on the device's use stack.
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:LightCoral;">Required Hardware:</span>** CCTV  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `accept-cctv-camera-connection` @ [`udp/554`](traffic_types.md/#udp554) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-live-video` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-live-video` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device </span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
   
   
 **Description:**  
@@ -51,7 +51,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## cctv_edge  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `accept-cctv-monitor-connection` @ [`tcp/554`](traffic_types.md/#tcp554) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-live-video` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-live-video` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device </span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
   
   
 **Description:**  
@@ -64,7 +64,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## complaint-lite  
 **CPU:** 1 **MEM:** 2 **SIZE:** 1  
-**<span style="color:DarkKhaki;">Produces:</span>** 2 `read-complaint, post-complaint, store-complaint` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `read-complaint, post-complaint, store-complaint` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
   
   
 **Description:**  
@@ -77,7 +77,7 @@ Production is limited to 2 compatible uses on the device's use stack.
 ## complaint-server2  
 **CPU:** 5 **MEM:** 9 **SIZE:** 3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 2 `( read-text and post-text and verify-user )` @ [`tcp/25`](traffic_types.md/#tcp25) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 `read-complaint, post-complaint, store-complaint` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 15 `read-complaint, post-complaint, store-complaint` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
   
   
 **Description:**  
@@ -94,7 +94,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## decentro-collector  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `access-p2p-currency` @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
   
   
 **Description:**  
@@ -108,7 +108,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## decentro-node  
 **CPU:** 24 **MEM:** 12 **SIZE:** 6  
-**<span style="color:DarkKhaki;">Produces:</span>** 10 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 10 `facilitate-p2p-transaction` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
   
   
 **Description:**  
@@ -133,7 +133,7 @@ This program stores up to 10 'access-p2p-currency' compatible uses per free stor
   
 ## dns-lite  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1+1=2  
-**<span style="color:DarkKhaki;">Produces:</span>** 3 `reply-dns-queries` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 3)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 3 `reply-dns-queries` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 3)</span>  
   
 **Modifiers:** ALLOW_DOMAIN_QUERYING  
   
@@ -147,7 +147,7 @@ Production is limited to 3 compatible uses on the device's use stack.
 ## dns-server  
 **CPU:** 4 **MEM:** 3 **SIZE:** 2+1=3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-text` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 20 `reply-dns-queries` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 20 `reply-dns-queries` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
   
 **Modifiers:** ALLOW_DOMAIN_QUERYING  
   
@@ -164,7 +164,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## dnsmasq  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1+1=2  
-**<span style="color:DarkKhaki;">Produces:</span>** 3 `reply-dhcp-request` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 3)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 3 `reply-dhcp-request` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 3)</span>  
   
 **Modifiers:** ALLOW_REMOTE_HOST_CONFIGURATION  
   
@@ -199,7 +199,7 @@ Firewall operating system; performs packet filtering.
 ## gitcoffee  
 **CPU:** 4 **MEM:** 2 **SIZE:** 4  
 **<span style="color:PapayaWhip;">Consumes:</span>** 2 `store-text` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 16 `read-text, update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 16)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 16 `read-text, update-software` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 16)</span>  
   
   
 **Description:**  
@@ -224,7 +224,7 @@ HA-enabled port grouping kernel.
 ## hypervisor-server  
 **CPU:** 20 **MEM:** 10 **SIZE:** 8  
 **<span style="color:PapayaWhip;">Consumes:</span>** 4 `store-text` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 `provision-vm` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 15 `provision-vm` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
   
   
 **Description:**  
@@ -241,7 +241,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## kea  
 **CPU:** 6 **MEM:** 5 **SIZE:** 6+1=7  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-text` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 `reply-dhcp-request` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 15 `reply-dhcp-request` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
   
 **Modifiers:** ALLOW_REMOTE_HOST_CONFIGURATION  
   
@@ -269,7 +269,7 @@ Round-robin network load balancer.
   
 ## log-lite  
 **CPU:** 1 **MEM:** 1 **SIZE:** 3  
-**<span style="color:DarkKhaki;">Produces:</span>** 2 `query-log-entry, store-log-entry` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `query-log-entry, store-log-entry` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
   
   
 **Description:**  
@@ -282,7 +282,7 @@ Production is limited to 2 compatible uses on the device's use stack.
 ## log-server  
 **CPU:** 5 **MEM:** 9 **SIZE:** 16  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-text` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 `query-log-entry, store-log-entry` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 15 `query-log-entry, store-log-entry` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
   
   
 **Description:**  
@@ -299,7 +299,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## mailer  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `( store-text and store-image )` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 `read-text, post-text, verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 15 `read-text, post-text, verify-user` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
   
   
 **Description:**  
@@ -315,7 +315,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## maintenance-server  
 **CPU:** 3 **MEM:** 5 **SIZE:** 7  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `( verify-user and store-geospatial-data and read-geospatial-data )` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-repair-workorder` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-repair-workorder` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -363,7 +363,7 @@ Generic program.
 ## oauth-serv  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `store-text and store-image` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 `verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 15 `verify-user` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
   
   
 **Description:**  
@@ -377,7 +377,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## padu_v1  
 **CPU:** 1 **MEM:** 2 **SIZE:** 4  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `store-text, store-image` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `store-text, store-image` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
   
   
 **Description:**  
@@ -389,7 +389,7 @@ Production is limited to 2 compatible uses on the device's use stack.
   
 ## padu_v2  
 **CPU:** 2 **MEM:** 4 **SIZE:** 8  
-**<span style="color:DarkKhaki;">Produces:</span>** 2 `store-text, store-image, store-audio` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `store-text, store-image, store-audio` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
   
   
 **Description:**  
@@ -403,7 +403,7 @@ Production is limited to 2 compatible uses on the device's use stack.
   
 ## padu_v3  
 **CPU:** 4 **MEM:** 6 **SIZE:** 12  
-**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-text, store-image, store-audio, store-video` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-text, store-image, store-audio, store-video` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
   
   
 **Description:**  
@@ -417,7 +417,7 @@ Production is limited to 4 compatible uses on the device's use stack.
   
 ## poems-db  
 **CPU:** 4 **MEM:** 4 **SIZE:** 6  
-**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-text` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-text` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
   
   
 **Description:**  
@@ -429,7 +429,7 @@ Production is limited to 4 compatible uses on the device's use stack.
   
 ## print-server  
 **CPU:** 2 **MEM:** 1 **SIZE:** 4  
-**<span style="color:DarkKhaki;">Produces:</span>** 10 `accept-printer-connection` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 10 `accept-printer-connection` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
   
   
 **Description:**  
@@ -442,7 +442,7 @@ Production is limited to 10 compatible uses on the device's use stack.
   
 ## print-server2  
 **CPU:** 5 **MEM:** 3 **SIZE:** 5  
-**<span style="color:DarkKhaki;">Produces:</span>** 20 `accept-printer-connection` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 20 `accept-printer-connection` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
   
   
 **Description:**  
@@ -457,7 +457,7 @@ Production is limited to 20 compatible uses on the device's use stack.
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:LightCoral;">Required Hardware:</span>** PRINTER  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `accept-printer-connection` @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `print-image, print-text` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `print-image, print-text` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device </span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
   
   
 **Description:**  
@@ -490,7 +490,7 @@ Packet routing program.
   
 ## rtsp-diva-r  
 **CPU:** 6 **MEM:** 4 **SIZE:** 10  
-**<span style="color:DarkKhaki;">Produces:</span>** 13 `accept-cctv-camera-connection, accept-cctv-monitor-connection` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 13)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 13 `accept-cctv-camera-connection, accept-cctv-monitor-connection` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 13)</span>  
   
   
 **Description:**  
@@ -505,7 +505,7 @@ Production is limited to 13 compatible uses on the device's use stack.
 ## san-server  
 **CPU:** 6 **MEM:** 14 **SIZE:** 6  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-block` @ [`tcp/3264`](traffic_types.md/#tcp3264) for <span style="color:Salmon;">4</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `store-text, store-image` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `store-text, store-image` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -520,7 +520,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## san-storage  
 **CPU:** 2 **MEM:** 5 **SIZE:** 10  
-**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-block` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-block` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
   
   
 **Description:**  
@@ -534,7 +534,7 @@ Production is limited to 4 compatible uses on the device's use stack.
 ## sun-dns  
 **CPU:** 10 **MEM:** 6 **SIZE:** 8+1=9  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `store-text` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 40 `reply-dns-queries` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 40)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 40 `reply-dns-queries` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 40)</span>  
   
 **Modifiers:** ALLOW_DOMAIN_QUERYING  
   
@@ -552,7 +552,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## ten-anomaly-server  
 **CPU:** 20 **MEM:** 8 **SIZE:** 4  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `read-operation-data` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 20 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 20 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
   
   
 **Description:**  
@@ -570,7 +570,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## ten-bill-server  
 **CPU:** 3 **MEM:** 9 **SIZE:** 3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `read-meter-reading` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-invoice, verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-invoice, verify-user` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -586,7 +586,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## ten-public-lite  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
-**<span style="color:DarkKhaki;">Produces:</span>** 2 `post-news-updates, read-news-updates` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `post-news-updates, read-news-updates` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
   
   
 **Description:**  
@@ -599,7 +599,7 @@ Production is limited to 2 compatible uses on the device's use stack.
 ## ten-public-portal  
 **CPU:** 3 **MEM:** 3 **SIZE:** 4  
 **<span style="color:PapayaWhip;">Consumes:</span>** 2 `store-text and store-image` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-news-updates, read-news-updates` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-news-updates, read-news-updates` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -616,7 +616,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## ten-scada-server  
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 2 `store-log-entry` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `verify-user, adjust-tenabolt-setpoint` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `verify-user, adjust-tenabolt-setpoint` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -633,7 +633,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## tena-calc-server  
 **CPU:** 15 **MEM:** 8 **SIZE:** 4  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `read-operation-data` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 10 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 10 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
   
   
 **Description:**  
@@ -651,7 +651,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## tena-calc-server2  
 **CPU:** 20 **MEM:** 8 **SIZE:** 4  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `read-operation-data` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 20 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 20 `verify-user, run-tenabolt-simulation, store-tenabolt-model` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 20)</span>  
   
   
 **Description:**  
@@ -669,7 +669,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## tena-employee-db  
 **CPU:** 3 **MEM:** 7 **SIZE:** 8  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-text and store-image` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `read-employee-data, post-employee-data` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `read-employee-data, post-employee-data` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -685,7 +685,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## tena-gis-server  
 **CPU:** 16 **MEM:** 9 **SIZE:** 3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `store-text and store-image` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `verify-user, store-geospatial-data, read-geospatial-data` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `verify-user, store-geospatial-data, read-geospatial-data` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -701,7 +701,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## tena-mail  
 **CPU:** 5 **MEM:** 6 **SIZE:** 3  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `store-text and store-image` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 15 `read-text, post-text, post-image, view-image, verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 15 `read-text, post-text, post-image, view-image, verify-user` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 15)</span>  
   
   
 **Description:**  
@@ -716,7 +716,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## tena-meter-db  
 **CPU:** 5 **MEM:** 3 **SIZE:** 6  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-text and store-image` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-meter-reading` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-meter-reading` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -732,7 +732,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## tena-staff-portal  
 **CPU:** 5 **MEM:** 3 **SIZE:** 9  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `( store-text or store-image )` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-news-updates, read-news-updates, verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 8 `post-news-updates, read-news-updates, verify-user` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
   
   
 **Description:**  
@@ -748,7 +748,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## tmp-collabpoint0  
 **CPU:** 1 **MEM:** 2 **SIZE:** 1  
-**<span style="color:DarkKhaki;">Produces:</span>** 2 `download-file, upload-file` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 2 `download-file, upload-file` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 2)</span>  
   
   
 **Description:**  
@@ -761,7 +761,7 @@ Production is limited to 2 compatible uses on the device's use stack.
 ## tmp-collabpoint1  
 **CPU:** 5 **MEM:** 7 **SIZE:** 5  
 **<span style="color:PapayaWhip;">Consumes:</span>** 3 `store-text and store-image` @ [`tcp/5432`](traffic_types.md/#tcp5432) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(FRAGMENTED_USE_ALLOWED)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 25 `download-file, upload-file` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 25)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 25 `download-file, upload-file` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 25)</span>  
   
   
 **Description:**  
@@ -787,7 +787,7 @@ Power meter firmware.
 ## ubbt  
 **CPU:** 4 **MEM:** 4 **SIZE:** 6  
 **<span style="color:PapayaWhip;">Consumes:</span>** 4 `inspect-user-packets` @ [`udp/6343`](traffic_types.md/#udp6343) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 4 `support-bots` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `support-bots` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
   
   
 **Description:**  
@@ -812,7 +812,7 @@ Managed switch firmware.
   
 ## voip-server  
 **CPU:** 5 **MEM:** 2 **SIZE:** 5  
-**<span style="color:DarkKhaki;">Produces:</span>** 10 `accept-voip-phone-connection` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 10 `accept-voip-phone-connection` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
   
   
 **Description:**  
@@ -828,7 +828,7 @@ Production is limited to 10 compatible uses on the device's use stack.
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
 **<span style="color:LightCoral;">Required Hardware:</span>** PHONE  
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `accept-voip-phone-connection` @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `stream-voice` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device </span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_CPU)</span>  
   
   
 **Description:**  
@@ -851,7 +851,7 @@ Packet routing with VLAN subinterfaces.
   
 ## wirerat  
 **CPU:** 2 **MEM:** 2 **SIZE:** 1  
-**<span style="color:DarkKhaki;">Produces:</span>** 1 `inspect-user-packets` <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_MEM)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `inspect-user-packets` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span><span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_MEM)</span>  
   
 **Modifiers:** ALLOW_PACKET_INSPECTION, ALLOW_PACKET_SWITCHING  
   
