@@ -12,6 +12,14 @@ GENERATED FOR TNI VERSION 0.11.5
 {:toc}
 
 
+
+## **Reference**  
+- "(ALL_OR_NOTHING)" - Consumes from a single source only, which must have all the required USE.  
+- "(FRAGMENTED_USE_ALLOWED)" - Can consume from multiple sources. Some USE's can be wasted if the total is not found.  
+- "on destination device" - The produced USE is given to the device it consumed from instead of the device running the program.  
+
+---
+
 ## bladeos  
 **CPU:** 2 **MEM:** 1 **SIZE:** 1  
   
