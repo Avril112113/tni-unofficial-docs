@@ -1,1 +1,3 @@
 - Generate `./pages/tni-docs` from a python script and `data.json` instead of the data collector in GDScript.
+- Look into filtering users by what scenario they appear in (I assume this isn't feasible)
+- Look into a mermaid diagram of all users, programs and traffic.
