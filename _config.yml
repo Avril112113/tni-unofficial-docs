@@ -40,3 +40,6 @@ gh_edit_link_text: "Edit this page on GitHub."
 gh_edit_repository: "https://github.com/Avril112113/tni-unofficial-docs"
 gh_edit_branch: "master"
 gh_edit_view_mode: "tree"
+
+include:
+  - LICENSE.md
