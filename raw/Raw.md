@@ -35,3 +35,4 @@ Any change to the game version may bring unexpected breaking changes, as the gam
 4. Added use_config field `constraint_descript`. *(non-breaking)*
 5. Added section `BalanceCalc`. *(non-breaking)*
 6. Added section `merchants`. *(non-breaking)*
+7. Added link sizings. *(non-breaking)*
