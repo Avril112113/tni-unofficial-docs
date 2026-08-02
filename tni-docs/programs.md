@@ -529,6 +529,7 @@ Production is limited to 13 compatible uses on the device's use stack.
 ## san-initiator  
 **CPU:** 1 **MEM:** 1 **SIZE:** 0+1=1  
 **Traffic:** [tcp/3260](traffic_types.md/#tcp3260)  
+**Storage per bw:** 4  
   
   
 **Description:**  
@@ -541,6 +542,7 @@ Capacity is lost if the path to the target is lost.
   
 ## san-target  
 **CPU:** 2 **MEM:** 5 **SIZE:** 8  
+**Initiator Seen TTL:** 3  
   
   
 **Description:**  
