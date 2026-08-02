@@ -897,6 +897,7 @@ Production is limited to 4 compatible uses per device's installed memory.
 **CPU:** 0 **MEM:** 0 **SIZE:** 0  
 **Traffic:** [tcp/51#](traffic_types.md/#tcp51)  
 **Vulnerable Devices:** NETWORK_ROUTER, COMPUTE_SERVER  
+**Program Name Template:** `morris##`  
 **Incubation Cycles:** 5  
 **Spread per tick:** 1  
   
@@ -910,6 +911,7 @@ ANNOYING_MORRIS spreads itself across routers and servers using traffic types ra
 **CPU:** 0 **MEM:** 0 **SIZE:** 0  
 **Traffic:** [udp/5060](traffic_types.md/#udp5060)  
 **Vulnerable Devices:** PHONE, COMPUTE_SERVER  
+**Program Name Template:** `hush`  
 **Incubation Cycles:** 3  
 **Spread per tick:** 3  
   
