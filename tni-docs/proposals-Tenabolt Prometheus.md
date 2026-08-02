@@ -6,7 +6,7 @@ permalink: /data/proposals/Tenabolt Prometheus
 
 # Proposals for Tenabolt Prometheus
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.5
+GENERATED FOR TNI VERSION 0.12.0
 
 - TOC
 {:toc}
@@ -311,4 +311,12 @@ The exploit can be optionally turned on/off.
 **Lore:** Hardware liberation day  
 **Description:**  
 The "sftp" routine can now be used to install programs extracted from devices. Costs 1000.  
+  
+  
+## SAN Storage Research  
+**Price:** $600  
+**Unlock day:** 0  
+**Lore:** Eye-Skuzzy: put your storage on the network.  
+**Description:**  
+Adds a new "sanconf" routine to netshell. Allows configuration of Storage Area Network (SAN) arrays for remote storage. Funding costs 600.  
   

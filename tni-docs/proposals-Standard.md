@@ -6,7 +6,7 @@ permalink: /data/proposals/Standard
 
 # Proposals for Standard
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.5
+GENERATED FOR TNI VERSION 0.12.0
 
 - TOC
 {:toc}
@@ -491,4 +491,12 @@ Support Tenabolt Corporation's effort in building a fusion power plant by fundin
 Reduce all Data Center power cost by 50.0%  
   
 Reduces probability of power outage/surge by 10.0%  
+  
+  
+## SAN Storage Research  
+**Price:** $600  
+**Unlock day:** 0  
+**Lore:** Eye-Skuzzy: put your storage on the network.  
+**Description:**  
+Adds a new "sanconf" routine to netshell. Allows configuration of Storage Area Network (SAN) arrays for remote storage. Funding costs 600.  
   

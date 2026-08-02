@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.5
+GENERATED FOR TNI VERSION 0.12.0
 
 - TOC
 {:toc}
@@ -97,6 +97,22 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 **Unlocks:** [padu_v2](#padu_v2), [mailer](#mailer)  
 **Unlocked By:** [Customer Officer](users.md/#customer-officer), [Public Gateway](users.md/#public-gateway), [Public Gateway](users.md/#public-gateway)  
+  
+  
+## db-cluster  
+**CPU:** 6 **MEM:** 6 **SIZE:** 8  
+**<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-block` @ [`tcp/3306`](traffic_types.md/#tcp3306) for <span style="color:Salmon;">4</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-text, store-image`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_STORAGE)</span>  
+  
+  
+**Description:**  
+Networked database-hosting quota broker.  
+  
+Scans the network for storage-node programs and pools their count into database-hosting capacity on this device, limited by the device's free storage.  
+  
+Produce target's use stack limit is 1 compatible uses per target's free storage.  
+Skips consuming from destination if produce target's use stack limit is reached.  
+  
   
   
 ## decentro-collector  
@@ -338,7 +354,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
   
 ## mbox  
-**CPU:** 1 **MEM:** 1 **SIZE:** 1+1=2  
+**CPU:** 1 **MEM:** 1 **SIZE:** 0+1=1  
   
 **Modifiers:** ALLOW_PACKET_TRANSLATION  
   
@@ -510,32 +526,37 @@ Production is limited to 13 compatible uses on the device's use stack.
 **Unlocked By:** [Loyal Worker](users.md/#loyal-worker), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor)  
   
   
-## san-server  
-**CPU:** 6 **MEM:** 14 **SIZE:** 6  
-**<span style="color:PapayaWhip;">Consumes:</span>** 1 `store-block` @ [`tcp/3264`](traffic_types.md/#tcp3264) for <span style="color:Salmon;">4</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-**<span style="color:DarkKhaki;">Produces:</span>** 8 `store-text, store-image`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 8)</span>  
+## san-initiator  
+**CPU:** 1 **MEM:** 1 **SIZE:** 0+1=1  
   
   
 **Description:**  
-Mounts remote storage from a SAN.   
+Mounts storage from remote SAN targets over the network.  
   
-Fetches raw blocks over the network and serves them as text or image storage on this device.  
-  
-Produce target's use stack limit is 8 compatible uses.  
-Skips consuming from destination if produce target's use stack limit is reached.  
+Capacity is lost if the path to the target is lost.  
   
   
   
-## san-storage  
+  
+## san-target  
+**CPU:** 2 **MEM:** 5 **SIZE:** 8  
+  
+  
+**Description:**  
+Exports this device's storage for SAN initiators to mount.  
+  
+Storage goes to reservations in the order they were made, and is held until one is removed.  
+  
+  
+  
+## storage-node  
 **CPU:** 2 **MEM:** 5 **SIZE:** 10  
-**<span style="color:DarkKhaki;">Produces:</span>** 4 `store-block`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 1 `store-block`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
   
   
 **Description:**  
-The storage array's operating system.   
-  
-Exposes their capacity as raw blocks (store-block) to the network.  
-Production is limited to 4 compatible uses on the device's use stack.  
+Storage node. A network marker for database clusters to discover and pool storage capacity.  
+Production is limited to 1 compatible uses on the device's use stack.  
   
   
   

@@ -53,19 +53,18 @@
 	"tcp/8333": [
 		"Decentro/P2P traffic"
 	],
-	"tcp/3264": [
-		"SAN traffic.",
-		"From a `san-server`, looking for `store-block`, from a `san-client`"
-	],
 	"tcp/2404": [
 		"SCADA User traffic."
 	],
 	"udp/1194": [
 		"VPN User traffic."
 	],
+	"tcp/3260": [
+		"SAN traffic."
+	],
 	"tcp/3306": [
 		"Database traffic.",
-		"Looking for `store-text` and `store-image` traffic."
+		"Looking for `store-text`, `store-image` and `store-block` traffic."
 	],
 	"tcp/5432": [
 		"Database traffic.",
@@ -100,6 +99,9 @@
 		"Missing description."
 	],
 	"tcp/90##": [
+		"Missing description."
+	],
+	"tcp/3264": [
 		"Missing description."
 	],
 	"tcp/25###": [

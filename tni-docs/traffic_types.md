@@ -6,7 +6,7 @@ permalink: /data/traffic_types
 
 # Traffic Types
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.5
+GENERATED FOR TNI VERSION 0.12.0
 
 `#` represents any number between 0-9  
   
@@ -155,17 +155,6 @@ Decentro/P2P traffic
 **Used by Users:** [tester debbie](users.md/#tester-debbie), [tester ellie](users.md/#tester-ellie), [Loyal Worker](users.md/#loyal-worker), [Decentro Farmer](users.md/#decentro-farmer), [Tower Worker](users.md/#tower-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor)  
   
   
-## tcp/3264  
-**Description:**    
-SAN traffic.  
-From a `san-server`, looking for `store-block`, from a `san-client`  
-  
-
-  
-**Used by Programs:** [san-server](programs.md/#san-server)  
-**Used by Users:**   
-  
-  
 ## tcp/2404  
 **Description:**    
 SCADA User traffic.  
@@ -186,14 +175,24 @@ VPN User traffic.
 **Used by Users:** [Loyal Worker](users.md/#loyal-worker), [Software Engineer](users.md/#software-engineer)  
   
   
-## tcp/3306  
+## tcp/3260  
 **Description:**    
-Database traffic.  
-Looking for `store-text` and `store-image` traffic.  
+SAN traffic.  
   
 
   
-**Used by Programs:** [tena-employee-db](programs.md/#tena-employee-db), [tena-meter-db](programs.md/#tena-meter-db), [log-server](programs.md/#log-server), [tena-calc-server](programs.md/#tena-calc-server), [ten-anomaly-server](programs.md/#ten-anomaly-server), [tena-calc-server2](programs.md/#tena-calc-server2), [dns-server](programs.md/#dns-server), [sun-dns](programs.md/#sun-dns), [kea](programs.md/#kea)  
+**Used by Programs:** [san-initiator](programs.md/#san-initiator)  
+**Used by Users:**   
+  
+  
+## tcp/3306  
+**Description:**    
+Database traffic.  
+Looking for `store-text`, `store-image` and `store-block` traffic.  
+  
+
+  
+**Used by Programs:** [tena-employee-db](programs.md/#tena-employee-db), [tena-meter-db](programs.md/#tena-meter-db), [log-server](programs.md/#log-server), [tena-calc-server](programs.md/#tena-calc-server), [ten-anomaly-server](programs.md/#ten-anomaly-server), [tena-calc-server2](programs.md/#tena-calc-server2), [dns-server](programs.md/#dns-server), [sun-dns](programs.md/#sun-dns), [kea](programs.md/#kea), [db-cluster](programs.md/#db-cluster)  
 **Used by Users:**   
   
   
@@ -292,6 +291,16 @@ Missing description.
   
   
 ## tcp/90##  
+**Description:**    
+Missing description.  
+  
+
+  
+**Used by Programs:**   
+**Used by Users:**   
+  
+  
+## tcp/3264  
 **Description:**    
 Missing description.  
   

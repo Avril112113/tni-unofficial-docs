@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.5
+GENERATED FOR TNI VERSION 0.12.0
 
 - TOC
 {:toc}
@@ -239,6 +239,66 @@ Mountable on 930px racks.
 This device is well sought after in the second hand market.  
   
   
+## Cortex 20  
+**CPU:** `20` **MEM:** `20` **SIZE:** `3` **BW/t:** `180`  
+**Watts:** 1018w **Base Price:** $4050  
+**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Merchants:** [Cortex Org.](merchants.md/#cortex-org)  
+**Description:**  
+4-port processing server with limited storage.  
+Specs: 20 CPU, 20 memory and 3 storage.  
+Handles up to 180 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 1018W.  
+Mountable on 630px racks.  
+Suitable for medium teams.  
+  
+  
+## Cortex 28  
+**CPU:** `28` **MEM:** `24` **SIZE:** `4` **BW/t:** `302`  
+**Watts:** 1323w **Base Price:** $6900  
+**Port Counts:** 2x `RJ45`, 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Merchants:** [Cortex Org.](merchants.md/#cortex-org)  
+**Description:**  
+5-port processing server with limited storage.  
+Specs: 28 CPU, 24 memory and 4 storage.  
+Handles up to 302 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 1323W.  
+Mountable on 630px racks.  
+Suitable for enterprise team.  
+  
+  
+## Cortex 8  
+**CPU:** `8` **MEM:** `8` **SIZE:** `2` **BW/t:** `36`  
+**Watts:** 186w **Base Price:** $1250  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Merchants:** [Cortex Org.](merchants.md/#cortex-org)  
+**Description:**  
+2-port processing server with limited storage.  
+Specs: 8 CPU, 8 memory and 2 storage.  
+Handles up to 36 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 186W.  
+Mountable on 500px racks.  
+Suitable for light office use  
+  
+  
+## Cortex Espresso  
+**CPU:** `16` **MEM:** `12` **SIZE:** `3` **BW/t:** `100`  
+**Watts:** 718w **Base Price:** $3050  
+**Port Counts:** 1x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Merchants:** [Cortex Org.](merchants.md/#cortex-org)  
+**Description:**  
+3-port processing server with limited storage.  
+Specs: 16 CPU, 12 memory and 3 storage.  
+Handles up to 100 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 718W.  
+Mountable on 500px racks.  
+Suitable for data-heavy application.  
+  
+  
 ## Debugger Alice  
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `12`  
 **Watts:** 33w **Base Price:** $1000  
@@ -248,6 +308,16 @@ This device is well sought after in the second hand market.
 **Description:**  
 2-port ethernet remote debugger.  
 Not rack mountable.  
+  
+  
+## Debugger Eve  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `24`  
+**Watts:** 33w **Base Price:** $1500  
+**Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**Installed Programs:** [netpeeker](programs.md/#netpeeker)  
+**Description:**  
+2-port ethernet remote debugger.  
+Mountable on 500px racks.  
   
   
 ## Disco Kilo  
@@ -584,6 +654,32 @@ Power consumption: 163W.
 Mountable on 500px racks.  
   
   
+## FireWatch CP6E  
+**CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `260`  
+**Watts:** 263w **Base Price:** $2500  
+**Port Counts:** 4x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
+**Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
+**Description:**  
+Ethernet and fiber in-line network traffic monitoring and filtering system.  
+Handles up to 260 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 263W.  
+Mountable on 500px racks.  
+  
+  
+## FireWatch CP6F  
+**CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `280`  
+**Watts:** 283w **Base Price:** $2750  
+**Port Counts:** 2x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
+**Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
+**Description:**  
+Ethernet and fiber in-line network traffic monitoring and filtering system.  
+Handles up to 280 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 283W.  
+Mountable on 500px racks.  
+  
+  
 ## FireWatch ES4A  
 **CPU:** `6` **MEM:** `3` **SIZE:** `3` **BW/t:** `52`  
 **Watts:** 55w **Base Price:** $550  
@@ -599,19 +695,20 @@ Mountable on 500px racks.
   
   
 ## golonys-bloque  
-**CPU:** `2` **MEM:** `5` **SIZE:** `10` **BW/t:** `30`  
-**Watts:** 13w **Base Price:** $2500  
+**CPU:** `2` **MEM:** `5` **SIZE:** `12` **BW/t:** `60`  
+**Watts:** 53w **Base Price:** $525  
 **Port Counts:** 3x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
-**Installed Programs:** [san-storage](programs.md/#san-storage)  
+**Merchants:** [Golonys Ltd.](merchants.md/#golonys-ltd)  
+**Installed Programs:** [san-target](programs.md/#san-target)  
 **Description:**  
 3-port storage area network (SAN) array.  
-Specs: 2 CPU, 5 memory and 10 storage.  
-Handles up to 30 traversals per tick.  
+Specs: 2 CPU, 5 memory and 12 storage.  
+Handles up to 60 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
-Power consumption: 13W.  
+Power consumption: 53W.  
 Not rack mountable.  
 Comes with 3 SATA 3.5" expansion slots.  
-Needs to pair with running san-server.  
+Ships as a SAN target  
   
   
 ## golonys-cinco  
@@ -640,6 +737,21 @@ Specs: 1 CPU, 2 memory and 2 storage.
 Handles up to 6 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 19W.  
+Not rack mountable.  
+Homelab equipment.  
+  
+  
+## ICC2  
+**CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `12`  
+**Watts:** 35w **Base Price:** $345  
+**Port Counts:** 2x `RJ45`, 1x `SATA35_SLOT`, 1x `B_3PIN`  
+**Merchants:** [Interchange Compute Corporation](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+2-port modular computing unit.  
+Specs: 2 CPU, 4 memory and 2 storage.  
+Handles up to 12 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 35W.  
 Not rack mountable.  
 Homelab equipment.  
   

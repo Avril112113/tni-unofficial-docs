@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.5
+GENERATED FOR TNI VERSION 0.12.0
 
 - TOC
 {:toc}
@@ -594,6 +594,70 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    29-day device warranty.  
   
   
+## Cortex Org.  
+**Restock:** FILL after 300s    
+**Price:** Base prices.    
+**Warranty:** Base warranties.    
+**Description:**    
+Cortex builds servers for compute-heavy workloads.   
+  
+High CPU, high memory, minimal storage devices for sale.  
+  
+**Listings:**    
+- **[Cortex 8](devices.md/#cortex-8)**  
+  **Listing Starts** day 0  
+  **Price:** $1250  
+  **Warranty:** 28 days  
+  **Description:**  
+   2-port processing server with limited storage.  
+   Specs: 8 CPU, 8 memory and 2 storage.  
+   Handles up to 36 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 186W.  
+   Mountable on 500px racks.  
+   Suitable for light office use  
+   28-day device warranty.  
+- **[Cortex Espresso](devices.md/#cortex-espresso)**  
+  **Listing Starts** day 0  
+  **Price:** $3050  
+  **Warranty:** 28 days  
+  **Description:**  
+   3-port processing server with limited storage.  
+   Specs: 16 CPU, 12 memory and 3 storage.  
+   Handles up to 100 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 718W.  
+   Mountable on 500px racks.  
+   Suitable for data-heavy application.  
+   28-day device warranty.  
+- **[Cortex 20](devices.md/#cortex-20)**  
+  **Listing Starts** day 5  
+  **Price:** $4050  
+  **Warranty:** 35 days  
+  **Description:**  
+   4-port processing server with limited storage.  
+   Specs: 20 CPU, 20 memory and 3 storage.  
+   Handles up to 180 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 1018W.  
+   Mountable on 630px racks.  
+   Suitable for medium teams.  
+   35-day device warranty.  
+- **[Cortex 28](devices.md/#cortex-28)**  
+  **Listing Starts** day 9  
+  **Price:** $6900  
+  **Warranty:** 35 days  
+  **Description:**  
+   5-port processing server with limited storage.  
+   Specs: 28 CPU, 24 memory and 4 storage.  
+   Handles up to 302 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 1323W.  
+   Mountable on 630px racks.  
+   Suitable for enterprise team.  
+   35-day device warranty.  
+  
+  
 ## Data Liner Corp.  
 **Restock:** FILL after 60s    
 **Price:** Base prices.    
@@ -858,6 +922,20 @@ Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.
    Not rack mountable.  
    Comes with 5 SATA 3.5" expansion slots.  
    16-day device warranty.  
+- **[golonys-bloque](devices.md/#golonys-bloque)**  
+  **Listing Starts** day 0  
+  **Price:** $525  
+  **Warranty:** 16 days  
+  **Description:**  
+   3-port storage area network (SAN) array.  
+   Specs: 2 CPU, 5 memory and 12 storage.  
+   Handles up to 60 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 53W.  
+   Not rack mountable.  
+   Comes with 3 SATA 3.5" expansion slots.  
+   Ships as a SAN target  
+   16-day device warranty.  
   
   
 ## Interchange Compute Corporation  
@@ -878,6 +956,19 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Handles up to 6 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 19W.  
+   Not rack mountable.  
+   Homelab equipment.  
+   8-day device warranty.  
+- **[ICC2](devices.md/#icc2)**  
+  **Listing Starts** day 2  
+  **Price:** $345  
+  **Warranty:** 8 days  
+  **Description:**  
+   2-port modular computing unit.  
+   Specs: 2 CPU, 4 memory and 2 storage.  
+   Handles up to 12 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 35W.  
    Not rack mountable.  
    Homelab equipment.  
    8-day device warranty.  

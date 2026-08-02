@@ -6,7 +6,7 @@ permalink: /data/users
 
 # Users
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.11.5
+GENERATED FOR TNI VERSION 0.12.0
 
 - TOC
 {:toc}
