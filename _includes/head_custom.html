@@ -17,5 +17,11 @@
             dataLatestUrl: "{{ '/raw/data-latest.min.json' | relative_url }}",
         };
         document.documentElement.classList.add("wa-dark");
+
+        // // Re-enable smooth scroll after page loaded.
+        // // This makes initial URL anchors teleport.
+        // window.addEventListener('load', () => {
+        //     document.documentElement.classList.add('smooth-scroll');
+        // });
     </script>
 {% endif %}
