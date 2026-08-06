@@ -8,7 +8,7 @@ import { consume } from '@lit/context';
 import type WaNumberInput from '@awesome.me/webawesome/dist/components/number-input/number-input.js';
 import _ from "lodash";
 
-import { TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format6-spec';
+import { TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format8-spec';
 import { dataContext } from "./data-context";
 import type { MyCombobox } from 'assets/js/components/my-combobox/my-combobox';
 import { DataCached } from './data-cached';

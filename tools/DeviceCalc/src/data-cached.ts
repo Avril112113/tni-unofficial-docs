@@ -1,4 +1,4 @@
-import { TniJsonBalanceCalc, TniJsonData, TniJsonDataEnums, TniJsonDevice, TniJsonDeviceId, TniJsonId, TniJsonMerchant, TniJsonMerchantId, TniJsonMerchantListing, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonProposalPack, TniJsonProposalPackId, TniJsonThemeConfig, TniJsonThemeConfigId, TniJsonUseConfig, TniJsonUseConfigId, TniJsonUser, TniJsonUserId, TniSocketType } from "raw/data-format6-spec";
+import { TniJsonBalanceCalc, TniJsonData, TniJsonDataEnums, TniJsonDevice, TniJsonDeviceId, TniJsonDeviceOutlet, TniJsonId, TniJsonLinkSizing, TniJsonLinkType, TniJsonLocation, TniJsonLocationPiece, TniJsonMerchant, TniJsonMerchantId, TniJsonMerchantListing, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonProposalPack, TniJsonProposalPackId, TniJsonThemeConfig, TniJsonThemeConfigId, TniJsonUseConfig, TniJsonUseConfigId, TniJsonUser, TniJsonUserId, TniSocketType } from "raw/data-format8-spec";
 
 type integer = number;
 
@@ -27,6 +27,10 @@ export class DataCached implements TniJsonData {
 	plugs!: Record<TniJsonPlugId, TniJsonPlug>;
 	use_configs!: Record<TniJsonUseConfigId, TniJsonUseConfig>;
 	theme_configs!: Record<TniJsonThemeConfigId, TniJsonThemeConfig>;
+	link_sizings!: Record<TniJsonLinkType, TniJsonLinkSizing[]>;
+	device_outlets!: Record<string, TniJsonDeviceOutlet>;
+	locations!: Record<string, TniJsonLocation>;
+	location_pieces!: Record<string, TniJsonLocationPiece>;
 	//#endregion
 
 	constructor(data: TniJsonData) {

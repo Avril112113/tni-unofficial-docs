@@ -36,3 +36,4 @@ Any change to the game version may bring unexpected breaking changes, as the gam
 5. Added section `BalanceCalc`. *(non-breaking)*
 6. Added section `merchants`. *(non-breaking)*
 7. Added link sizings. *(non-breaking)*
+8. Added sections `device_outlets`, `locations` and `location_pieces`. *(non-breaking)*

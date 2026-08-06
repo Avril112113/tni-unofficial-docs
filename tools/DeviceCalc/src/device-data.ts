@@ -1,4 +1,4 @@
-import { TniJsonDevice, TniJsonDeviceId, TniJsonPlug, TniJsonPlugId, TniSocketType } from 'raw/data-format6-spec';
+import { TniJsonDevice, TniJsonDeviceId, TniJsonPlug, TniJsonPlugId, TniSocketType } from 'raw/data-format8-spec';
 import { dataProvider } from "./data-context";
 import _ from 'lodash';
 
