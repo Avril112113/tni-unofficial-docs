@@ -476,14 +476,21 @@ This residential floor consists of low bandwidth users only
 ## Tenabolt Office  
 **User Count:** 1 - 6  
 **Guaranteed Users:** [Public Gateway](users.md/#public-gateway)  
+**User Group:** (none) OR ([R&D Engineer](users.md/#r&d-engineer), [Grid Officer](users.md/#grid-officer)) OR ([Night Technician](users.md/#night-technician)) OR ([Night Grid Officer](users.md/#night-grid-officer), [Customer Officer](users.md/#customer-officer))  
+**User Group:** (none) OR ([R&D Engineer](users.md/#r&d-engineer), [Grid Officer](users.md/#grid-officer)) OR ([Night Technician](users.md/#night-technician)) OR ([Night Grid Officer](users.md/#night-grid-officer), [Customer Officer](users.md/#customer-officer))  
+**User Group:** ([HR Officer](users.md/#hr-officer)) OR (none)  
 **Max Inter-User Distance:** 5794px  
   
 ## Tenabolt Office  
 **User Count:** 0 - 4  
 **Guaranteed Users:**   
+**User Group:** (none) OR ([R&D Engineer](users.md/#r&d-engineer), [Grid Officer](users.md/#grid-officer)) OR ([Night Technician](users.md/#night-technician)) OR ([Night Grid Officer](users.md/#night-grid-officer), [Customer Officer](users.md/#customer-officer))  
+**User Group:** (none) OR ([R&D Engineer](users.md/#r&d-engineer), [Grid Officer](users.md/#grid-officer)) OR ([Night Technician](users.md/#night-technician)) OR ([Night Grid Officer](users.md/#night-grid-officer), [Customer Officer](users.md/#customer-officer))  
 **Max Inter-User Distance:** 2068px  
   
 ## Tenabolt Floor  
 **User Count:** 0 - 4  
 **Guaranteed Users:**   
+**User Group:** (none) OR ([R&D Engineer](users.md/#r&d-engineer), [Grid Officer](users.md/#grid-officer)) OR ([Night Technician](users.md/#night-technician)) OR ([Night Grid Officer](users.md/#night-grid-officer), [Customer Officer](users.md/#customer-officer))  
+**User Group:** (none) OR ([R&D Engineer](users.md/#r&d-engineer), [Grid Officer](users.md/#grid-officer)) OR ([Night Technician](users.md/#night-technician)) OR ([Night Grid Officer](users.md/#night-grid-officer), [Customer Officer](users.md/#customer-officer))  
 **Max Inter-User Distance:** 2068px  
