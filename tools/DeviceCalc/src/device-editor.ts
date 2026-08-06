@@ -575,12 +575,21 @@ export class DeviceEditor extends LitElement {
 					
 					const ideal_listing = this._data.getIdealListingToday(device_id, EditorConfig.current_day);
 					const total_price = ideal_listing ? ideal_listing.listing.AdditionalData.price : device.price;
+					const details = [
+						html`<span>${device.logic_controller.installed_cpu} / ${device.logic_controller.installed_mem} / ${device.logic_controller.installed_sto}</span>`,
+						html`&nbsp;&nbsp;`,
+						html`<span style="display: inline-block; min-width: 5ch;">$${total_price}</span>`,
+					];
+					const sata_slot_count = this._getSataPorts(device.logic_controller).length;
+					if (sata_slot_count > 0) {
+						details.push(html`<div>
+							SATA: ${sata_slot_count} slots
+						</div>`);
+					}
 					dropdown_templates.push(dropdownItemTemplate(
 						device_id,
 						IRRELEVANT_DEVICES.has(device_id) ? "var(--wa-color-gray)" : "",
-						[
-							html`<span style="display: inline-block; min-width: 5ch;">$${total_price}</span>`,
-						]
+						details
 					));
 				}
 			} else {
