@@ -761,7 +761,6 @@ export class DeviceEditor extends LitElement {
 						<wa-dropdown-item value=${program_id} style="color: ${color};">
 							${program.release_name}
 							<span slot="details">${program.cpu_load}/${program.stack_size}/${program.code_size+program.data_size}</span>
-							<span slot="details">${excess_cpu}/${excess_mem}/${excess_sto}-${excess_sto_max}</span>
 						</wa-dropdown-item>
 					`)
 				}
