@@ -169,29 +169,6 @@ export class DeviceEditor extends LitElement {
 		device_warranty_period_multiplier: 1,
 	};
 
-	private __dropdown_items_programs_templates: TemplateResult<1>[] = [];
-	private __dropdown_items_programs_templates_data?: any;
-	get _dropdown_items_programs_templates(): TemplateResult<1>[] {
-		if (this.__dropdown_items_programs_templates_data !== this._data) {
-			this.__dropdown_items_programs_templates_data = this._data;
-			this.__dropdown_items_programs_templates = [];
-			if (this._data) {
-				for (const program_id in this._data.programs) {
-					const program = this._data.programs[program_id]!;
-					if (program.release_name.length > 0) {
-						this.__dropdown_items_programs_templates.push(html`
-							<wa-dropdown-item value=${program_id}>
-								${program.release_name}
-								<span slot="details">${program.cpu_load}/${program.stack_size}/${program.code_size+program.data_size}</span>
-							</wa-dropdown-item>
-						`)
-					}
-				}
-			}
-		}
-		return this.__dropdown_items_programs_templates;
-	}
-
 	private __dropdown_items_satas_templates: TemplateResult<1>[] = [];
 	private __dropdown_items_satas_templates_data?: any;
 	get _dropdown_items_satas_templates(): TemplateResult<1>[] {
@@ -409,6 +386,8 @@ export class DeviceEditor extends LitElement {
 					const logic_controller = device.logic_controller;
 
 					const satas_templates = this._generateTemplatesForPeripherals(logic_controller, custom_data);
+					const satas_sto_max = Math.max(...this._getSataCombinations(this._getSataPorts(device.logic_controller).length).map(value => value.storage));
+
 					let satas_size = 0;
 					if (custom_data.peripherals) {
 						for (const plug_id of Object.values(custom_data.peripherals)) {
@@ -421,6 +400,11 @@ export class DeviceEditor extends LitElement {
 							}
 						}
 					}
+
+					const excess_cpu = device.logic_controller.installed_cpu - programs_cpu;
+					const excess_mem = device.logic_controller.installed_mem - programs_mem;
+					const excess_sto = device.logic_controller.installed_sto + satas_size - programs_size;
+					const excess_sto_max = device.logic_controller.installed_sto + satas_sto_max - programs_size;
 
 					parts.push(html`
 						<div class="flex-wrap-gap">
@@ -497,7 +481,7 @@ export class DeviceEditor extends LitElement {
 									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
 									<p style="color: ${programs_size > (logic_controller.installed_sto + satas_size) ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
 
-									${logic_controller_original.installed_programs.length > 0 && !this.device_data_is_original ? html`
+									${logic_controller_original.installed_programs.length > 0 && !logic_controller_original.installed_programs.every(v => this.device_data?.logic_controller?.installed_programs.includes(v) ?? true, ) ? html`
 										<p class="some-text" style="color: var(--wa-color-orange-90);"><small>Jailbreaker<br>Required</small></p>
 									` : ""}
 									
@@ -526,7 +510,7 @@ export class DeviceEditor extends LitElement {
 								</div>
 							</div>
 							<table class="tbl-programs">
-								${this._generateTemplatesForPrograms(logic_controller.installed_programs)}
+								${this._generateTemplatesForPrograms(logic_controller.installed_programs, excess_cpu, excess_mem, excess_sto, excess_sto_max)}
 							</table>
 						</div>
 						<wa-divider></wa-divider>
@@ -760,13 +744,40 @@ export class DeviceEditor extends LitElement {
 		return sata_port_indices;
 	}
 
-	private _generateTemplatesForPrograms(programs: TniJsonProgramId[]): TemplateResult[] {
+	private _generateTemplatesForProgramDropdownItems(excess_cpu: number, excess_mem: number, excess_sto: number, excess_sto_max: number): TemplateResult<1>[] {
+		const templates = [];
+		if (this._data) {
+			for (const program_id in this._data.programs) {
+				const program = this._data.programs[program_id]!;
+				if (program.release_name.length > 0) {
+					const program_size = program.code_size + program.data_size;
+					const fits_cpu_mem = program.cpu_load <= excess_cpu && program.stack_size <= excess_mem;
+					const color = fits_cpu_mem && program_size <= excess_sto
+						? ""
+						: fits_cpu_mem && program_size <= excess_sto_max
+						? "var(--wa-color-yellow-90)"
+						: "var(--wa-color-red-80)";
+					templates.push(html`
+						<wa-dropdown-item value=${program_id} style="color: ${color};">
+							${program.release_name}
+							<span slot="details">${program.cpu_load}/${program.stack_size}/${program.code_size+program.data_size}</span>
+							<span slot="details">${excess_cpu}/${excess_mem}/${excess_sto}-${excess_sto_max}</span>
+						</wa-dropdown-item>
+					`)
+				}
+			}
+		}
+		return templates;
+	}
+
+	private _generateTemplatesForPrograms(programs: TniJsonProgramId[], excess_cpu: number, excess_mem: number, excess_sto: number, excess_sto_max: number): TemplateResult[] {
 		if (!this._data) return [];
 
 		const templates: TemplateResult[] = [];
 		for (let i = 0; i < programs.length; i++) {
 			const program_id = programs[i]!;
 			const program = this._data.programs[program_id];
+			const program_size = (program?.code_size ?? 0) + (program?.data_size ?? 0);
 			templates.push(html`
 				<tr>
 					<th style="width: 100%;">
@@ -774,7 +785,11 @@ export class DeviceEditor extends LitElement {
 							@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { programs[i] = e.detail.value ?? ""; this.requestUpdate(); }}
 						>
 							<wa-icon name="code" slot="start"></wa-icon>
-							${cache(this._dropdown_items_programs_templates)}
+							${cache(this._generateTemplatesForProgramDropdownItems(
+								excess_cpu + (program?.cpu_load ?? 0),
+								excess_mem + (program?.stack_size ?? 0),
+								excess_sto + program_size, excess_sto_max + program_size
+							))}
 						</my-combobox>
 					</th>
 					<td style="white-space: nowrap; text-align: center;"><b>CPU:</b><br>${program?.cpu_load ?? "?"}</td>
