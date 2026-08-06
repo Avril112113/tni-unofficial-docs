@@ -481,8 +481,11 @@ export class DeviceEditor extends LitElement {
 									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
 									<p style="color: ${programs_size > (logic_controller.installed_sto + satas_size) ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
 
-									${logic_controller_original.installed_programs.length > 0 && !logic_controller_original.installed_programs.every(v => this.device_data?.logic_controller?.installed_programs.includes(v) ?? true, ) ? html`
+									${logic_controller_original.installed_programs.length > 0 && !logic_controller_original.installed_programs.every(v => logic_controller.installed_programs.includes(v) ?? true) ? html`
 										<p class="some-text" style="color: var(--wa-color-orange-90);"><small>Jailbreaker<br>Required</small></p>
+									` : ""}
+									${logic_controller.installed_programs.filter( ( s, i, arr ) => s.length > 0 && arr.indexOf( s, i + 1 ) != -1 ).length > 0 ? html`
+										<p class="some-text" style="color: var(--wa-color-orange-90);"><small>vmconf<br>Required</small></p>
 									` : ""}
 									
 									<div style="margin-left: auto;">
