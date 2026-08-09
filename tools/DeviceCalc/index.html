@@ -39,6 +39,11 @@ permalink: /tools/DeviceCalc/
 		width: 100px;
 		--wa-content-spacing: 0;
 	}
+
+	#planned-features-accordion wa-accordion-item::part(button) {
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
 </style>
 <script type="module" src="{{ site.baseurl }}/assets/js/DeviceCalc.js"></script>
 
@@ -46,17 +51,15 @@ permalink: /tools/DeviceCalc/
 <h1>Device Calculator</h1>
 <p>
 	Feedback and suggestions are welcome! <br>
-	Find @Avril112113 on the <a href="https://discord.gg/gMtxdgRu5b">TNI discord</a>, or <a href="https://github.com/Avril112113/tni-unofficial-docs/issues">create an issue on the github</a>.
+	Find @Avril112113 on the <a href="https://discord.gg/gMtxdgRu5b">TNI discord</a>, or <a href="https://github.com/Avril112113/tni-unofficial-docs/issues">create an issue on the github</a>. <br>
 </p>
-<wa-accordion appearance="">
+<wa-accordion appearance="" style="font-size: 0.875rem;" id="planned-features-accordion">
 	<wa-accordion-item label="Planned features;">
-		- Use stack total <br>
-		- Total price of all devices <br>
 		- Saving/Loading pre-made setups <br>
+		- Total price of all devices <br>
 		- Options to account for difficulty <br>
+		- Use stack total <br>
 		- Organize the code, it's a bit of a mess... <br>
-		- Sorting options <br>
-		- Warn about vmconf requirement if multiple of same program <br>
 		- Use stack limits account for multiple of same program, which must use vmconf <br>
 		- Don't remove programs if matches default program <br>
 	</wa-accordion-item>
