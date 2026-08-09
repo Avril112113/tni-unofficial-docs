@@ -14,7 +14,7 @@ GENERATED FOR TNI VERSION 0.12.0
 
 ## AB compute Ltd.  
 **Restock:** FILL after 300s    
-**Price:** +120%    
+**Price:** 120%    
 **Warranty:** Base warranties.    
 **Description:**    
 At AB compute, we offer a variety of computing devices from different manufacturers at good prices. You need servers? AB compute got you covered.  
@@ -1311,7 +1311,7 @@ Our power appliances are certified quality with good warrany coverage.
   
 ## The Server Shoppe  
 **Restock:** FILL after 300s    
-**Price:** +125%    
+**Price:** 125%    
 **Warranty:** Base warranties.    
 **Description:**    
 The Server Shoppe is your authorized distributor for Macrohard products.  
@@ -1411,7 +1411,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
   
 ## Tutortial AB compute Ltd.  
 **Restock:** FILL after 300s    
-**Price:** +120%    
+**Price:** 120%    
 **Warranty:** Base warranties.    
 **Description:**    
 At AB compute, we offer a variety of computing devices from different manufacturers at good prices. You need servers? AB compute got you covered.  
