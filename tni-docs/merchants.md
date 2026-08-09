@@ -22,7 +22,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
 **Listings:**    
 - **[MacroHard Boulder SRV](devices.md/#macrohard-boulder-srv)**  
   **Listing Starts** day 0  
-  **Price:** $540 <span style="color:gray;font-size:85%;white-space:nowrap;">+$90 over base price of $450</span>  
+  **Price:** $540 <span style="color:gray;font-size:85%;white-space:nowrap;">$90 above the base price of $450</span>  
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
@@ -35,7 +35,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    14-day device warranty.  
 - **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
-  **Price:** $1020 <span style="color:gray;font-size:85%;white-space:nowrap;">+$170 over base price of $850</span>  
+  **Price:** $1020 <span style="color:gray;font-size:85%;white-space:nowrap;">$170 above the base price of $850</span>  
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
@@ -48,7 +48,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    14-day device warranty.  
 - **[Disco Nano](devices.md/#disco-nano)**  
   **Listing Starts** day 0  
-  **Price:** $264 <span style="color:gray;font-size:85%;white-space:nowrap;">+$44 over base price of $220</span>  
+  **Price:** $264 <span style="color:gray;font-size:85%;white-space:nowrap;">$44 above the base price of $220</span>  
   **Warranty:** 17 days  
   **Description:**  
    5-port mixed-media network router. Small form factor suitable for routing on the edge.  
@@ -60,7 +60,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    17-day device warranty.  
 - **[Debugger Alice](devices.md/#debugger-alice)**  
   **Listing Starts** day 0  
-  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">+$200 over base price of $1000</span>  
+  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 21 days  
   **Description:**  
    2-port ethernet remote debugger.  
@@ -68,7 +68,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    21-day device warranty.  
 - **[Savannah Gazelle](devices.md/#savannah-gazelle)**  
   **Listing Starts** day 0  
-  **Price:** $2640 <span style="color:gray;font-size:85%;white-space:nowrap;">+$440 over base price of $2200</span>  
+  **Price:** $2640 <span style="color:gray;font-size:85%;white-space:nowrap;">$440 above the base price of $2200</span>  
   **Warranty:** 35 days  
   **Description:**  
    2-port general computing server.  
@@ -81,7 +81,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    35-day device warranty.  
 - **[Dvergar](devices.md/#dvergar)**  
   **Listing Starts** day 0  
-  **Price:** $1320 <span style="color:gray;font-size:85%;white-space:nowrap;">+$220 over base price of $1100</span>  
+  **Price:** $1320 <span style="color:gray;font-size:85%;white-space:nowrap;">$220 above the base price of $1100</span>  
   **Warranty:** 7 days  
   **Description:**  
    Decentro mining rig.  
@@ -94,7 +94,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    7-day device warranty.  
 - **[DNS UDP/53 Load Tester](devices.md/#dns-udp53-load-tester)**  
   **Listing Starts** day 0  
-  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">+$200 over base price of $1000</span>  
+  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 7 days  
   **Description:**  
    1-port ethernet load tester. Blasts UDP/53 DNS query traffic.  
@@ -1093,7 +1093,7 @@ Cheap refurbished boxes for sale. No warranties!
 **Listings:**    
 - **[Disco Micro 2G](devices.md/#disco-micro-2g)**  
   **Listing Starts** day 0  
-  **Price:** $285 <span style="color:gray;font-size:85%;white-space:nowrap;">-$665 over base price of $950</span>  
+  **Price:** $285 <span style="color:gray;font-size:85%;white-space:nowrap;">$665 under the base price of $950</span>  
   **Warranty:** 3 days  
   **Description:**  
    10-port mixed media network router.  
@@ -1105,7 +1105,7 @@ Cheap refurbished boxes for sale. No warranties!
    3-day device warranty.  
 - **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
-  **Price:** $255 <span style="color:gray;font-size:85%;white-space:nowrap;">-$595 over base price of $850</span>  
+  **Price:** $255 <span style="color:gray;font-size:85%;white-space:nowrap;">$595 under the base price of $850</span>  
   **Warranty:** 3 days  
   **Description:**  
    2-port general computing server.  
@@ -1118,7 +1118,7 @@ Cheap refurbished boxes for sale. No warranties!
    3-day device warranty.  
 - **[Blade88](devices.md/#blade88)**  
   **Listing Starts** day 0  
-  **Price:** $326 <span style="color:gray;font-size:85%;white-space:nowrap;">-$762 over base price of $1088</span>  
+  **Price:** $326 <span style="color:gray;font-size:85%;white-space:nowrap;">$762 under the base price of $1088</span>  
   **Warranty:** 3 days  
   **Description:**  
    16-port mixed media network managed switch. Supports VLAN port tagging.  
@@ -1319,7 +1319,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
 **Listings:**    
 - **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
-  **Price:** $1062 <span style="color:gray;font-size:85%;white-space:nowrap;">+$212 over base price of $850</span>  
+  **Price:** $1062 <span style="color:gray;font-size:85%;white-space:nowrap;">$212 above the base price of $850</span>  
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
@@ -1332,7 +1332,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    14-day device warranty.  
 - **[MacroHard Boulder++ SRV](devices.md/#macrohard-boulder-srv-1)**  
   **Listing Starts** day 5  
-  **Price:** $1750 <span style="color:gray;font-size:85%;white-space:nowrap;">+$350 over base price of $1400</span>  
+  **Price:** $1750 <span style="color:gray;font-size:85%;white-space:nowrap;">$350 above the base price of $1400</span>  
   **Warranty:** 14 days  
   **Description:**  
    3-port general computing server.  
@@ -1345,7 +1345,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    14-day device warranty.  
 - **[MacroHard Monolith SRV](devices.md/#macrohard-monolith-srv)**  
   **Listing Starts** day 0  
-  **Price:** $2100 <span style="color:gray;font-size:85%;white-space:nowrap;">+$420 over base price of $1680</span>  
+  **Price:** $2100 <span style="color:gray;font-size:85%;white-space:nowrap;">$420 above the base price of $1680</span>  
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
@@ -1358,7 +1358,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    14-day device warranty.  
 - **[MacroHard Ledge Two SRV](devices.md/#macrohard-ledge-two-srv)**  
   **Listing Starts** day 0  
-  **Price:** $2625 <span style="color:gray;font-size:85%;white-space:nowrap;">+$525 over base price of $2100</span>  
+  **Price:** $2625 <span style="color:gray;font-size:85%;white-space:nowrap;">$525 above the base price of $2100</span>  
   **Warranty:** 21 days  
   **Description:**  
    3-port high bandwidth computing server.  
@@ -1371,7 +1371,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    21-day device warranty.  
 - **[MacroHard Ledge Three SRV](devices.md/#macrohard-ledge-three-srv)**  
   **Listing Starts** day 10  
-  **Price:** $4000 <span style="color:gray;font-size:85%;white-space:nowrap;">+$800 over base price of $3200</span>  
+  **Price:** $4000 <span style="color:gray;font-size:85%;white-space:nowrap;">$800 above the base price of $3200</span>  
   **Warranty:** 21 days  
   **Description:**  
    4-port high bandwidth computing server.  
@@ -1384,7 +1384,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    21-day device warranty.  
 - **[MacroHard Megalith SRV](devices.md/#macrohard-megalith-srv)**  
   **Listing Starts** day 10  
-  **Price:** $4750 <span style="color:gray;font-size:85%;white-space:nowrap;">+$950 over base price of $3800</span>  
+  **Price:** $4750 <span style="color:gray;font-size:85%;white-space:nowrap;">$950 above the base price of $3800</span>  
   **Warranty:** 24 days  
   **Description:**  
    5-port high performance computing server.  
@@ -1397,7 +1397,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    24-day device warranty.  
 - **[MacroHard NLB2](devices.md/#macrohard-nlb2)**  
   **Listing Starts** day 5  
-  **Price:** $437 <span style="color:gray;font-size:85%;white-space:nowrap;">+$87 over base price of $350</span>  
+  **Price:** $437 <span style="color:gray;font-size:85%;white-space:nowrap;">$87 above the base price of $350</span>  
   **Warranty:** 17 days  
   **Description:**  
    2-2 hardware-based round-robin network load balancer.  
@@ -1419,7 +1419,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
 **Listings:**    
 - **[MacroHard Boulder SRV](devices.md/#macrohard-boulder-srv)**  
   **Listing Starts** day 0  
-  **Price:** $540 <span style="color:gray;font-size:85%;white-space:nowrap;">+$90 over base price of $450</span>  
+  **Price:** $540 <span style="color:gray;font-size:85%;white-space:nowrap;">$90 above the base price of $450</span>  
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
@@ -1432,7 +1432,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    14-day device warranty.  
 - **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
-  **Price:** $1020 <span style="color:gray;font-size:85%;white-space:nowrap;">+$170 over base price of $850</span>  
+  **Price:** $1020 <span style="color:gray;font-size:85%;white-space:nowrap;">$170 above the base price of $850</span>  
   **Warranty:** 14 days  
   **Description:**  
    2-port general computing server.  
@@ -1445,7 +1445,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    14-day device warranty.  
 - **[Disco Nano](devices.md/#disco-nano)**  
   **Listing Starts** day 0  
-  **Price:** $264 <span style="color:gray;font-size:85%;white-space:nowrap;">+$44 over base price of $220</span>  
+  **Price:** $264 <span style="color:gray;font-size:85%;white-space:nowrap;">$44 above the base price of $220</span>  
   **Warranty:** 17 days  
   **Description:**  
    5-port mixed-media network router. Small form factor suitable for routing on the edge.  
@@ -1457,7 +1457,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    17-day device warranty.  
 - **[Debugger Alice](devices.md/#debugger-alice)**  
   **Listing Starts** day 0  
-  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">+$200 over base price of $1000</span>  
+  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 21 days  
   **Description:**  
    2-port ethernet remote debugger.  
@@ -1465,7 +1465,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    21-day device warranty.  
 - **[Savannah Gazelle](devices.md/#savannah-gazelle)**  
   **Listing Starts** day 0  
-  **Price:** $2640 <span style="color:gray;font-size:85%;white-space:nowrap;">+$440 over base price of $2200</span>  
+  **Price:** $2640 <span style="color:gray;font-size:85%;white-space:nowrap;">$440 above the base price of $2200</span>  
   **Warranty:** 35 days  
   **Description:**  
    2-port general computing server.  
@@ -1478,7 +1478,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    35-day device warranty.  
 - **[Dvergar](devices.md/#dvergar)**  
   **Listing Starts** day 0  
-  **Price:** $1320 <span style="color:gray;font-size:85%;white-space:nowrap;">+$220 over base price of $1100</span>  
+  **Price:** $1320 <span style="color:gray;font-size:85%;white-space:nowrap;">$220 above the base price of $1100</span>  
   **Warranty:** 7 days  
   **Description:**  
    Decentro mining rig.  
@@ -1491,7 +1491,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    7-day device warranty.  
 - **[DNS UDP/53 Load Tester](devices.md/#dns-udp53-load-tester)**  
   **Listing Starts** day 0  
-  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">+$200 over base price of $1000</span>  
+  **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 7 days  
   **Description:**  
    1-port ethernet load tester. Blasts UDP/53 DNS query traffic.  
