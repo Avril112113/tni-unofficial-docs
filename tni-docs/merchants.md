@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.0
+GENERATED FOR TNI VERSION 0.12.1
 
 - TOC
 {:toc}
@@ -267,6 +267,39 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 7W.  
    Mountable on 500px racks.  
    7-day device warranty.  
+- **[Blade-M8E](devices.md/#blade-m8e)**  
+  **Listing Starts** day 0  
+  **Price:** $475  
+  **Warranty:** 14 days  
+  **Description:**  
+   8-port ethernet managed network switch. Supports VLAN port tagging.  
+   Handles up to 144 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 25W.  
+   Mountable on 630px racks.  
+   14-day device warranty.  
+- **[Blade-M8F](devices.md/#blade-m8f)**  
+  **Listing Starts** day 5  
+  **Price:** $625  
+  **Warranty:** 14 days  
+  **Description:**  
+   8-port fiber-optic network managed switch. Supports VLAN port tagging.  
+   Handles up to 192 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 33W.  
+   Mountable on 630px racks.  
+   14-day device warranty.  
+- **[Blade-M44](devices.md/#blade-m44)**  
+  **Listing Starts** day 5  
+  **Price:** $650  
+  **Warranty:** 14 days  
+  **Description:**  
+   8-port mixed media network managed switch. Supports VLAN port tagging.  
+   Handles up to 168 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 28W.  
+   Mountable on 630px racks.  
+   14-day device warranty.  
 - **[Blade12](devices.md/#blade12)**  
   **Listing Starts** day 0  
   **Price:** $712  
@@ -872,6 +905,17 @@ Fortypoint security is a subsidiary of Fortypoint global.
    Power consumption: 163W.  
    Mountable on 500px racks.  
    30-day device warranty.  
+- **[FireWatch CP4EF](devices.md/#firewatch-cp4ef)**  
+  **Listing Starts** day 5  
+  **Price:** $2000  
+  **Warranty:** 30 days  
+  **Description:**  
+   Ethernet and fiber in-line network traffic monitoring and filtering system.  
+   Handles up to 180 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 183W.  
+   Mountable on 500px racks.  
+   30-day device warranty.  
 - **[EthTapper](devices.md/#ethtapper)**  
   **Listing Starts** day 0  
   **Price:** $300  
@@ -934,7 +978,8 @@ Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.
    Power consumption: 53W.  
    Not rack mountable.  
    Comes with 3 SATA 3.5" expansion slots.  
-   Ships as a SAN target  
+   Acts as a SAN target to provide remote storage over the network.  
+   Requires a SAN initiator program on another device to mount its storage.  
    16-day device warranty.  
   
   
@@ -978,18 +1023,21 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
   **Description:**  
    Compatible with SATA3.5"  
    Provides extra 4 storage to attached devices.  
+   Files moved onto it travel with the disk when it is unplugged.  
 - **Storage Extension**  
   **Listing Starts** day 0  
   **Price:** $150  
   **Description:**  
    Compatible with SATA3.5"  
    Provides extra 6 storage to attached devices.  
+   Files moved onto it travel with the disk when it is unplugged.  
 - **Storage Extension**  
   **Listing Starts** day 5  
   **Price:** $300  
   **Description:**  
    Compatible with SATA3.5"  
    Provides extra 8 storage to attached devices.  
+   Files moved onto it travel with the disk when it is unplugged.  
   
   
 ## Mr Cable  

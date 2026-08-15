@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.0
+GENERATED FOR TNI VERSION 0.12.1
 
 - TOC
 {:toc}
@@ -112,6 +112,48 @@ Handles up to 384 traversals per tick.
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 387W.  
 Mountable on 930px racks.  
+  
+  
+## Blade-M44  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `168` **Watts:** 28w  
+**Base Price:** $650 **Base Warranty:** 14.0 days   
+**Port Counts:** 4x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Merchants:** [Blade Networking Inc.](merchants.md/#blade-networking-inc)  
+**Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
+**Description:**  
+8-port mixed media network managed switch. Supports VLAN port tagging.  
+Handles up to 168 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 28W.  
+Mountable on 630px racks.  
+  
+  
+## Blade-M8E  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `144` **Watts:** 25w  
+**Base Price:** $475 **Base Warranty:** 14.0 days   
+**Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
+**Merchants:** [Blade Networking Inc.](merchants.md/#blade-networking-inc)  
+**Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
+**Description:**  
+8-port ethernet managed network switch. Supports VLAN port tagging.  
+Handles up to 144 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 25W.  
+Mountable on 630px racks.  
+  
+  
+## Blade-M8F  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `192` **Watts:** 33w  
+**Base Price:** $625 **Base Warranty:** 14.0 days   
+**Port Counts:** 8x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Merchants:** [Blade Networking Inc.](merchants.md/#blade-networking-inc)  
+**Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
+**Description:**  
+8-port fiber-optic network managed switch. Supports VLAN port tagging.  
+Handles up to 192 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 33W.  
+Mountable on 630px racks.  
   
   
 ## Blade10  
@@ -661,16 +703,17 @@ Power consumption: 163W.
 Mountable on 500px racks.  
   
   
-## FireWatch CP6E  
-**CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `260` **Watts:** 263w  
-**Base Price:** $2500 **Base Warranty:** 30.0 days   
-**Port Counts:** 4x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
+## FireWatch CP4EF  
+**CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `180` **Watts:** 183w  
+**Base Price:** $2000 **Base Warranty:** 30.0 days   
+**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
+**Merchants:** [Fortypoint Security](merchants.md/#fortypoint-security)  
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
 **Description:**  
 Ethernet and fiber in-line network traffic monitoring and filtering system.  
-Handles up to 260 traversals per tick.  
+Handles up to 180 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
-Power consumption: 263W.  
+Power consumption: 183W.  
 Mountable on 500px racks.  
   
   
@@ -715,7 +758,8 @@ CPU cycles 1 tick every 2.0 seconds.
 Power consumption: 53W.  
 Not rack mountable.  
 Comes with 3 SATA 3.5" expansion slots.  
-Ships as a SAN target  
+Acts as a SAN target to provide remote storage over the network.  
+Requires a SAN initiator program on another device to mount its storage.  
   
   
 ## golonys-cinco  
@@ -1193,7 +1237,7 @@ Not rack mountable.
   
   
 ## Zodianet Beam Router  
-**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `450` **Watts:** 138w  
+**CPU:** `4` **MEM:** `2` **SIZE:** `2` **BW/t:** `450` **Watts:** 138w  
 **Base Price:** $3700 **Base Warranty:** 17.0 days   
 **Port Counts:** 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
 **Merchants:** [Zodiac Networks](merchants.md/#zodiac-networks)  

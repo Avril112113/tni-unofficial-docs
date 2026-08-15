@@ -6,7 +6,7 @@ permalink: /data/proposals/Standard
 
 # Proposals for Standard
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.0
+GENERATED FOR TNI VERSION 0.12.1
 
 - TOC
 {:toc}
