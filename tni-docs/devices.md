@@ -354,6 +354,7 @@ Suitable for data-heavy application.
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
 **Merchants:** [AB compute Ltd.](merchants.md/#ab-compute-ltd), [Debugging Stuff](merchants.md/#debugging-stuff), [Tutortial AB compute Ltd.](merchants.md/#tutortial-ab-compute-ltd)  
 **Installed Programs:** [netpeeker](programs.md/#netpeeker)  
+**Ownership Unlocks:** [mbox](programs.md/#mbox)  
 **Description:**  
 2-port ethernet remote debugger.  
 Not rack mountable.  
@@ -364,6 +365,7 @@ Not rack mountable.
 **Base Price:** $1500 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
 **Installed Programs:** [netpeeker](programs.md/#netpeeker)  
+**Ownership Unlocks:** [mbox](programs.md/#mbox)  
 **Description:**  
 2-port ethernet remote debugger.  
 Mountable on 500px racks.  
@@ -750,6 +752,7 @@ Mountable on 500px racks.
 **Port Counts:** 3x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Merchants:** [Golonys Ltd.](merchants.md/#golonys-ltd)  
 **Installed Programs:** [san-target](programs.md/#san-target)  
+**Ownership Unlocks:** [san-initiator](programs.md/#san-initiator)  
 **Description:**  
 3-port storage area network (SAN) array.  
 Specs: 2 CPU, 5 memory and 12 storage.  
