@@ -312,35 +312,72 @@ export class DeviceEditor extends LitElement {
 			margin: 0;
 		}
 
-		:host table.tbl-programs {
-			border-collapse: collapse;
-			width: 100%;
+		:host .div-programs {
+			container-name: div-programs;
+			container-type: inline-size;
 		}
-		:host table.tbl-programs th,
-		:host table.tbl-programs td {
+		.tbl-programs th,
+		.tbl-programs td {
 			padding-right: var(--wa-content-spacing);
+			align-self: center;
 		}
-		:host table.tbl-programs th:last-child,
-		:host table.tbl-programs td:last-child {
+		.tbl-programs th:last-child,
+		.tbl-programs td:last-child {
 			padding-right: 0;
 		}
 
-		@media (max-width: 725px) {
-			:host table.tbl-programs tr {
+		.tbl-programs {
+			width: 100%;
+			display: grid;
+			grid-template-columns: auto min-content min-content min-content min-content; 
+		}
+		.tbl-programs tr {
+			display: contents;
+		}
+		.tbl-programs th {
+			width: auto;
+			min-width: 16em;
+			max-width: 100%;
+		}
+
+		@container div-programs (max-width: 590px) {
+			.tbl-programs {
+				display: block;
+			}
+			.tbl-programs tr {
 				display: grid;
     			grid-template-columns: max-content max-content max-content 1fr;
 				width: 100%;
 			}
-			:host table.tbl-programs th {
+			.tbl-programs th {
 				grid-column: 1 / -1; 
 				font-weight: bold;
+				width: 100%;
 			}
-			:host table.tbl-programs td {
+			.tbl-programs td {
 				width: auto; 
 			}
-			:host table.tbl-programs td:last-child {
+			.tbl-programs td:last-child {
 				margin-left: auto;
 			}
+		}
+		
+		:host .header-device {
+			align-items: center;
+		}
+		.header-device-combobox {
+			width: 24em;
+			min-width: 12em;
+			max-width: 100%;
+			flex-grow: 1;
+		}
+		.header-buttons {
+			margin-left: auto;
+		}
+		.header-device-img {
+			max-width: 100%;
+			align-self: flex-start;
+			padding-top: 0.5em;
 		}
 
 		wa-tooltip {
@@ -473,7 +510,7 @@ export class DeviceEditor extends LitElement {
 							<p class="some-text"><span class="some-title">Mount Type</span><br>${device.mount_type}</p>
 						</div>
 						<wa-divider></wa-divider>
-						<div>
+						<div class="div-programs">
 							<div class="flex-wrap-gap" style="align-items: center;">
 								<h2 style="margin: 0;">Programs</h2>
 								<div class="flex-gap flex-swap-2-3" style="flex-grow: 1; margin: 0; text-align: center; align-items: center;">
@@ -541,7 +578,7 @@ export class DeviceEditor extends LitElement {
 			body = html`No device selected...`;
 		}
 
-		let dropdown_templates: TemplateResult[] = [];
+		let devices_dropdown_templates: TemplateResult[] = [];
 		if (this._data) {
 			const dropdownItemTemplate = (device_id: TniJsonDeviceId, color: string, details: TemplateResult[]) => {
 				const device = this._data!.devices[device_id]!;
@@ -549,6 +586,7 @@ export class DeviceEditor extends LitElement {
 				return html`
 					<wa-dropdown-item value=${device_id} style="color: ${color}; text-decoration-line: ${available ? '' : 'line-through'};">
 						${device.product_name}
+						<img src="${window.SiteConfig!.baseUrl}/tni-docs/assets/devices/${device?.product_name.replaceAll(/[\.\/\\]/g, "")}.webp" style="height: 1em; max-width: 100%;" />
 						<span slot="details" style="text-decoration-line: ${available ? '' : 'line-through'};">
 							${details}
 						</span>
@@ -573,7 +611,7 @@ export class DeviceEditor extends LitElement {
 							SATA: ${sata_slot_count} slots
 						</div>`);
 					}
-					dropdown_templates.push(dropdownItemTemplate(
+					devices_dropdown_templates.push(dropdownItemTemplate(
 						device_id,
 						IRRELEVANT_DEVICES.has(device_id) ? "var(--wa-color-gray)" : "",
 						details
@@ -638,7 +676,7 @@ export class DeviceEditor extends LitElement {
 						: "";
 					device_templates_scored.push([score, total_price, dropdownItemTemplate(device_id, color, details)])
 				}
-				dropdown_templates = device_templates_scored.sort(([a_score, a_price, a_template], [b_score, b_price, b_template]) => {
+				devices_dropdown_templates = device_templates_scored.sort(([a_score, a_price, a_template], [b_score, b_price, b_template]) => {
 					// Sorted as; zero -> near zero -> negative 0 -> negative near zero
 					if (a_score == b_score) return a_price - b_price;
 					if (a_score < 0 && b_score >= 0) return 1;
@@ -654,58 +692,62 @@ export class DeviceEditor extends LitElement {
 
 		return html`
 			<wa-card class="card-header">
-				<div slot="header" class="flex-wrap-gap" style="align-items: center;">
-					<my-combobox size="l" class="${available ? '' : 'not-available-id'}" style="flex-grow: 1;" value=${this.device_id ?? ""} input_value=${this.device_name ?? ""}
-						@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { this.device_id = e.detail.value ?? null; }}
-					>
-						<wa-icon name="server" slot="start"></wa-icon>
-						${dropdown_templates}
-					</my-combobox>
-					<div style="margin-left: auto;">
-						<wa-popover for="device-editor-info" style="--max-width: 80ww;">
-							<p>${_renderBBCode(this.device_data?.device_rendered_description ?? "Invalid device...")}</p>
-						</wa-popover>
-						<wa-button appearance="plain" id="device-editor-info" ?disabled=${!this.device_data}>
-							<wa-icon name="circle-info" variant="solid" label="Info"></wa-icon>
-						</wa-button>
-						<wa-button appearance="plain"
-							@click=${() => this._resetDeviceData(null)}
+				<div slot="header">
+					<div class="header-device flex-wrap-gap">
+						<my-combobox size="l" class="header-device-combobox ${available ? '' : 'not-available-id'}" value=${this.device_id ?? ""} input_value=${this.device_name ?? ""}
+							@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { this.device_id = e.detail.value ?? null; }}
 						>
-							<wa-icon name="rotate-left" variant="solid" label="Reset"
-								style="color: ${this.device_data_is_original ? "" : "var(--wa-color-orange)"};"
-							></wa-icon>
-						</wa-button>
-						<wa-button appearance="plain"
-							@click=${() => this.parentElement?.appendChild(this._cloneDevice())}
-						>
-							<wa-icon name="clone" variant="solid" label="Clone"></wa-icon>
-						</wa-button>
-						<wa-button appearance="plain"
-							@click=${this.remove}
-						>
-							<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
-						</wa-button>
-						<wa-button-group orientation="vertical" style="vertical-align: middle;">
-							<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${this.previousElementSibling ? false : true}
-								@click=${() => { if (this.previousElementSibling) {
-									(this.previousElementSibling as LitElement)?.requestUpdate();
-									this.parentElement?.insertBefore(this, this.previousElementSibling);
-									this.requestUpdate();
-								} }}
-							>
-								<wa-icon name="chevron-up" variant="solid" label="Move Up"></wa-icon>
+							<wa-icon name="server" slot="start"></wa-icon>
+							${devices_dropdown_templates}
+						</my-combobox>
+						<div class="header-buttons">
+							<wa-popover for="device-editor-info" style="--max-width: 80ww;">
+								<p>${_renderBBCode(this.device_data?.device_rendered_description ?? "Invalid device...")}</p>
+							</wa-popover>
+							<wa-button appearance="plain" id="device-editor-info" ?disabled=${!this.device_data}>
+								<wa-icon name="circle-info" variant="solid" label="Info"></wa-icon>
 							</wa-button>
-							<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${this.nextElementSibling ? false : true}
-								@click=${() => { if (this.nextElementSibling) {
-									(this.nextElementSibling as LitElement)?.requestUpdate();
-									this.parentElement?.insertBefore(this.nextElementSibling, this);
-									this.requestUpdate();
-								} }}
+							<wa-button appearance="plain"
+								@click=${() => this._resetDeviceData(null)}
 							>
-								<wa-icon name="chevron-down" variant="solid" label="Move Down"></wa-icon>
+								<wa-icon name="rotate-left" variant="solid" label="Reset"
+									style="color: ${this.device_data_is_original ? "" : "var(--wa-color-orange)"};"
+								></wa-icon>
 							</wa-button>
-						</wa-button-group>
+							<wa-button appearance="plain"
+								@click=${() => this.parentElement?.appendChild(this._cloneDevice())}
+							>
+								<wa-icon name="clone" variant="solid" label="Clone"></wa-icon>
+							</wa-button>
+							<wa-button appearance="plain"
+								@click=${this.remove}
+							>
+								<wa-icon name="trash" variant="solid" label="Remove" style="color: var(--wa-color-red);"></wa-icon>
+							</wa-button>
+							<wa-button-group orientation="vertical" style="vertical-align: middle;">
+								<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${this.previousElementSibling ? false : true}
+									@click=${() => { if (this.previousElementSibling) {
+										(this.previousElementSibling as LitElement)?.requestUpdate();
+										this.parentElement?.insertBefore(this, this.previousElementSibling);
+										this.requestUpdate();
+									} }}
+								>
+									<wa-icon name="chevron-up" variant="solid" label="Move Up"></wa-icon>
+								</wa-button>
+								<wa-button appearance="plain" size="xs" class="tiny-button" .disabled=${this.nextElementSibling ? false : true}
+									@click=${() => { if (this.nextElementSibling) {
+										(this.nextElementSibling as LitElement)?.requestUpdate();
+										this.parentElement?.insertBefore(this.nextElementSibling, this);
+										this.requestUpdate();
+									} }}
+								>
+									<wa-icon name="chevron-down" variant="solid" label="Move Down"></wa-icon>
+								</wa-button>
+							</wa-button-group>
+						</div>
 					</div>
+					
+					<img src="${window.SiteConfig!.baseUrl}/tni-docs/assets/devices/${this.device_data?.product_name.replaceAll(/[\.\/\\]/g, "")}.webp" class="header-device-img" />
 				</div>
 				${body}
 			</wa-card>
@@ -782,8 +824,8 @@ export class DeviceEditor extends LitElement {
 			const program_size = (program?.code_size ?? 0) + (program?.data_size ?? 0);
 			templates.push(html`
 				<tr>
-					<th style="width: 100%;">
-						<my-combobox slot="header" style="flex-grow: 1;" value=${program_id}
+					<th>
+						<my-combobox value=${program_id}
 							@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { programs[i] = e.detail.value ?? ""; this.requestUpdate(); }}
 						>
 							<wa-icon name="code" slot="start"></wa-icon>

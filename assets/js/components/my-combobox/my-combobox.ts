@@ -50,6 +50,7 @@ export class MyCombobox extends LitElement {
 		:host {
 			max-width: 100%;
 			min-width: 0;
+			--wa-form-control-padding-inline: 10px;
 		}
 
 		::slotted(wa-dropdown-item[active]) {
