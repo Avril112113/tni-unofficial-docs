@@ -24,4 +24,44 @@
         //     document.documentElement.classList.add('smooth-scroll');
         // });
     </script>
+
+    <style>
+        .img-1em {
+            height: 1em;
+            width: auto;
+            object-fit: scale-down;
+            vertical-align: middle;
+            padding-left: 0.25em;
+            padding-right: 0.25em;
+        }
+
+        /* Prevent FOUCE - Flash Of Uninitialized Custom Elements */
+        :not(:defined) {
+            display: none;
+        }
+
+		wa-tooltip {
+			--wa-tooltip-background-color: var(--wa-color-surface-raised);
+			--wa-tooltip-content-color: var(--wa-color-text-normal);
+			--wa-tooltip-border-color: var(--wa-color-surface-border);
+			
+			/* Also match the small indicator arrow */
+			--wa-tooltip-arrow-color: var(--wa-color-surface-raised);
+
+			--max-width: 75vw;
+		}
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".img-1em").forEach((elem) => {
+                var tooltip_elem = elem.parentElement.querySelector("wa-tooltip");
+                if (elem && tooltip_elem && !elem.id && !tooltip_elem.getAttribute("for")) {
+                    elem.id = crypto.randomUUID();
+                    tooltip_elem.setAttribute("for", elem.id);
+                    tooltip_elem.style.display = "auto";
+                }
+            });
+        });
+    </script>
 {% endif %}

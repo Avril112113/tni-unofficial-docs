@@ -4,12 +4,14 @@ Some contents of [/assets/vendor](assets/vendor) and [/assets/chunks](assets/chu
 
 ---
 
-Express permission by the devs of Tower Networking Inc to use a modified Tower Networking Inc logo found at [/favicon.ico](favicon.ico) was grated to Avril112113 for these pages.
+Express permission by the devs of Tower Networking Inc to use the following assets was grated to Avril112113 for these pages;
+- A modified Tower Networking Inc logo found at [/favicon.ico](favicon.ico)
+- Contents of [/tni-docs/assets](tni-docs/assets)
 
 ---
 
 [MIT-0](LICENSE.MIT-0) (no attribution)
-- Contents of [/tni-docs](tni-docs) or found at https://avril112113.github.io/tni-unofficial-docs/data/ and it's sub-pages
+- Contents of [/tni-docs](tni-docs) but excluding [/tni-docs/assets](tni-docs/assets) or found at https://avril112113.github.io/tni-unofficial-docs/data/ and it's sub-pages
 - Contents of [/raw](raw) or found at https://avril112113.github.io/tni-unofficial-docs/raw/ and it's sub-pages
 
 ---

@@ -12,7 +12,7 @@ GENERATED FOR TNI VERSION 0.12.1
 {:toc}
 
 
-## AB compute Ltd.  
+## AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** 120%    
 **Warranty:** Base warranties.    
@@ -20,7 +20,7 @@ GENERATED FOR TNI VERSION 0.12.1
 At AB compute, we offer a variety of computing devices from different manufacturers at good prices. You need servers? AB compute got you covered.  
   
 **Listings:**    
-- **[MacroHard Boulder SRV](devices.md/#macrohard-boulder-srv)**  
+- **[MacroHard Boulder SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-boulder-srv)**  
   **Listing Starts** day 0  
   **Price:** $540 <span style="color:gray;font-size:85%;white-space:nowrap;">$90 above the base price of $450</span>  
   **Warranty:** 14 days  
@@ -33,7 +33,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Mountable on 500px racks.  
    Suitable for small businesses.  
    14-day device warranty.  
-- **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
+- **[MacroHard Boulder+ SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
   **Price:** $1020 <span style="color:gray;font-size:85%;white-space:nowrap;">$170 above the base price of $850</span>  
   **Warranty:** 14 days  
@@ -46,7 +46,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Mountable on 500px racks.  
    High performance model.  
    14-day device warranty.  
-- **[Disco Nano](devices.md/#disco-nano)**  
+- **[Disco Nano<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano)**  
   **Listing Starts** day 0  
   **Price:** $264 <span style="color:gray;font-size:85%;white-space:nowrap;">$44 above the base price of $220</span>  
   **Warranty:** 17 days  
@@ -58,7 +58,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Not rack mountable.  
    Uses DC power.  
    17-day device warranty.  
-- **[Debugger Alice](devices.md/#debugger-alice)**  
+- **[Debugger Alice<img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Alice.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Alice.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#debugger-alice)**  
   **Listing Starts** day 0  
   **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 21 days  
@@ -66,7 +66,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    2-port ethernet remote debugger.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Savannah Gazelle](devices.md/#savannah-gazelle)**  
+- **[Savannah Gazelle<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#savannah-gazelle)**  
   **Listing Starts** day 0  
   **Price:** $2640 <span style="color:gray;font-size:85%;white-space:nowrap;">$440 above the base price of $2200</span>  
   **Warranty:** 35 days  
@@ -79,7 +79,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Mountable on 500px racks.  
    The gazelle is a durable device that is designed to last long in high load conditions.  
    35-day device warranty.  
-- **[Dvergar](devices.md/#dvergar)**  
+- **[Dvergar<img src="{{ site.baseurl }}/tni-docs/assets/devices/Dvergar.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Dvergar.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#dvergar)**  
   **Listing Starts** day 0  
   **Price:** $1320 <span style="color:gray;font-size:85%;white-space:nowrap;">$220 above the base price of $1100</span>  
   **Warranty:** 7 days  
@@ -92,7 +92,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Not rack mountable.  
    Provides Decentro transaction verification to the p2p currency network.  
    7-day device warranty.  
-- **[DNS UDP/53 Load Tester](devices.md/#dns-udp53-load-tester)**  
+- **[DNS UDP/53 Load Tester<img src="{{ site.baseurl }}/tni-docs/assets/devices/DNS UDP53 Load Tester.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/DNS UDP53 Load Tester.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#dns-udp53-load-tester)**  
   **Listing Starts** day 0  
   **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 7 days  
@@ -102,7 +102,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    7-day device warranty.  
   
   
-## Avex Tech  
+## Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -110,7 +110,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
 At Avex, we build servers that grow with you. Whatever the workload, there is an Avex machine ready for the job.  
   
 **Listings:**    
-- **[Avex Sparrow](devices.md/#avex-sparrow)**  
+- **[Avex Sparrow<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Sparrow.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Sparrow.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#avex-sparrow)**  
   **Listing Starts** day 0  
   **Price:** $1100  
   **Warranty:** 14 days  
@@ -123,7 +123,7 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
    Mountable on 630px racks.  
    Compact and cost-efficient. Perfect for businesses in early deployment  
    14-day device warranty.  
-- **[Avex Starling](devices.md/#avex-starling)**  
+- **[Avex Starling<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Starling.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Starling.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#avex-starling)**  
   **Listing Starts** day 0  
   **Price:** $1150  
   **Warranty:** 14 days  
@@ -136,7 +136,7 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
    Mountable on 630px racks.  
    Balanced and dependable. Perfect for businesses in steady expansion.  
    14-day device warranty.  
-- **[Avex Swallow](devices.md/#avex-swallow)**  
+- **[Avex Swallow<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Swallow.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Swallow.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#avex-swallow)**  
   **Listing Starts** day 0  
   **Price:** $3000  
   **Warranty:** 21 days  
@@ -151,7 +151,7 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
      
    Spacious and efficient. Perfect for businesses with growing data needs.  
    21-day device warranty.  
-- **[Avex Skua](devices.md/#avex-skua)**  
+- **[Avex Skua<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Skua.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Skua.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#avex-skua)**  
   **Listing Starts** day 0  
   **Price:** $3000  
   **Warranty:** 21 days  
@@ -166,7 +166,7 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
      
    Powerful and responsive. Perfect for businesses with intensive operations.  
    21-day device warranty.  
-- **[Avex Secretary](devices.md/#avex-secretary)**  
+- **[Avex Secretary<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Secretary.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Secretary.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#avex-secretary)**  
   **Listing Starts** day 0  
   **Price:** $5150  
   **Warranty:** 35 days  
@@ -183,7 +183,7 @@ At Avex, we build servers that grow with you. Whatever the workload, there is an
    35-day device warranty.  
   
   
-## Barracks and Son's  
+## Barracks and Son's<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Barracks and Son's.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Barracks and Son's.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 900s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -200,19 +200,19 @@ We're listing our mobility racks (a.k.a. trolleys) and whiteboard here on the DM
    A trolley to help with moving devices around the tower. Interior treated with anti-slip coating.  
      
    UPDATE: Due to metal shortages for floor constructions, The Secretariat has restricted our metal use quota. We apologies for any stocking delays.  
-- **[Mounting Shelf Piece R500](devices.md/#mounting-shelf-piece-r500)**  
+- **[Mounting Shelf Piece R500<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mounting Shelf Piece R500.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mounting Shelf Piece R500.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mounting-shelf-piece-r500)**  
   **Listing Starts** day 0  
   **Price:** $10  
   **Description:**  
    Used as shelf piece of mounting racks  
    Mountable on 500px racks.  
-- **[Mounting Shelf Piece R630](devices.md/#mounting-shelf-piece-r630)**  
+- **[Mounting Shelf Piece R630<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mounting Shelf Piece R630.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mounting Shelf Piece R630.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mounting-shelf-piece-r630)**  
   **Listing Starts** day 0  
   **Price:** $10  
   **Description:**  
    Used as shelf piece of mounting racks  
    Mountable on 630px racks.  
-- **[Mounting Shelf Piece R930](devices.md/#mounting-shelf-piece-r930)**  
+- **[Mounting Shelf Piece R930<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mounting Shelf Piece R930.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mounting Shelf Piece R930.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mounting-shelf-piece-r930)**  
   **Listing Starts** day 0  
   **Price:** $10  
   **Description:**  
@@ -225,7 +225,7 @@ We're listing our mobility racks (a.k.a. trolleys) and whiteboard here on the DM
    A whiteboard for drawing network diagrams.  
   
   
-## Blade Networking Inc.  
+## Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -233,7 +233,7 @@ We're listing our mobility racks (a.k.a. trolleys) and whiteboard here on the DM
 Blade Networking © offers high quality network switches in the tower. Your one-stop merchant for all your connectivity needs.  
   
 **Listings:**    
-- **[Blade5](devices.md/#blade5)**  
+- **[Blade5<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade5)**  
   **Listing Starts** day 0  
   **Price:** $100  
   **Warranty:** 7 days  
@@ -245,7 +245,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 500px racks.  
    Suitable for entry-level networks.  
    7-day device warranty.  
-- **[Blade10](devices.md/#blade10)**  
+- **[Blade10<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade10.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade10)**  
   **Listing Starts** day 1  
   **Price:** $230  
   **Warranty:** 7 days  
@@ -256,7 +256,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 8W.  
    Mountable on 500px racks.  
    7-day device warranty.  
-- **[Blade4](devices.md/#blade4)**  
+- **[Blade4<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade4.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade4.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade4)**  
   **Listing Starts** day 0  
   **Price:** $100  
   **Warranty:** 7 days  
@@ -267,7 +267,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 7W.  
    Mountable on 500px racks.  
    7-day device warranty.  
-- **[Blade-M8E](devices.md/#blade-m8e)**  
+- **[Blade-M8E<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M8E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M8E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade-m8e)**  
   **Listing Starts** day 0  
   **Price:** $475  
   **Warranty:** 14 days  
@@ -278,7 +278,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 25W.  
    Mountable on 630px racks.  
    14-day device warranty.  
-- **[Blade-M8F](devices.md/#blade-m8f)**  
+- **[Blade-M8F<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M8F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M8F.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade-m8f)**  
   **Listing Starts** day 5  
   **Price:** $625  
   **Warranty:** 14 days  
@@ -289,7 +289,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 33W.  
    Mountable on 630px racks.  
    14-day device warranty.  
-- **[Blade-M44](devices.md/#blade-m44)**  
+- **[Blade-M44<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M44.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M44.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade-m44)**  
   **Listing Starts** day 5  
   **Price:** $650  
   **Warranty:** 14 days  
@@ -300,7 +300,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 28W.  
    Mountable on 630px racks.  
    14-day device warranty.  
-- **[Blade12](devices.md/#blade12)**  
+- **[Blade12<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade12.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade12.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade12)**  
   **Listing Starts** day 0  
   **Price:** $712  
   **Warranty:** 21 days  
@@ -311,7 +311,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 32W.  
    Mountable on 930px racks.  
    21-day device warranty.  
-- **[Blade66](devices.md/#blade66)**  
+- **[Blade66<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade66.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade66.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade66)**  
   **Listing Starts** day 0  
   **Price:** $466  
   **Warranty:** 14 days  
@@ -322,7 +322,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 12W.  
    Mountable on 930px racks.  
    14-day device warranty.  
-- **[Blade15](devices.md/#blade15)**  
+- **[Blade15<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade15.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade15.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade15)**  
   **Listing Starts** day 10  
   **Price:** $815  
   **Warranty:** 21 days  
@@ -334,7 +334,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 930px racks.  
    More ports at a cheaper price.  
    21-day device warranty.  
-- **[Blade88](devices.md/#blade88)**  
+- **[Blade88<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade88.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade88.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade88)**  
   **Listing Starts** day 10  
   **Price:** $1088  
   **Warranty:** 35 days  
@@ -346,7 +346,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 930px racks.  
    This device is well sought after in the second hand market.  
    35-day device warranty.  
-- **[Blade1515](devices.md/#blade1515)**  
+- **[Blade1515<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade1515.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade1515.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade1515)**  
   **Listing Starts** day 10  
   **Price:** $1815  
   **Warranty:** 30 days  
@@ -359,7 +359,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 930px racks.  
    Enterprise grade equipment.  
    30-day device warranty.  
-- **[Blade30](devices.md/#blade30)**  
+- **[Blade30<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade30.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade30)**  
   **Listing Starts** day 10  
   **Price:** $1630  
   **Warranty:** 28 days  
@@ -373,7 +373,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    28-day device warranty.  
   
   
-## Cabler's Union  
+## Cabler's Union<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cabler's Union.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cabler's Union.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 60s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -381,19 +381,19 @@ Blade Networking © offers high quality network switches in the tower. Your one-
 Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct research and development to improve the livelihood of cablers around the tall world.  
   
 **Listings:**    
-- **[Cable-O-Matic CAT5](devices.md/#cable-o-matic-cat5)**  
+- **[Cable-O-Matic CAT5<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cable-O-Matic CAT5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cable-O-Matic CAT5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cable-o-matic-cat5)**  
   **Listing Starts** day 0  
   **Price:** $300  
   **Description:**  
    Reclaims patch and jumbled cables to create CAT5 spools  
    Stores up to 10000 length.  
-- **[Cable-O-Matic Fiber SC](devices.md/#cable-o-matic-fiber-sc)**  
+- **[Cable-O-Matic Fiber SC<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cable-O-Matic Fiber SC.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cable-O-Matic Fiber SC.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cable-o-matic-fiber-sc)**  
   **Listing Starts** day 0  
   **Price:** $300  
   **Description:**  
    Reclaims patch and jumbled cables to create fiber optic spools  
    Stores up to 10000 length.  
-- **[Cable-O-Matic Power UK-B](devices.md/#cable-o-matic-power-uk-b)**  
+- **[Cable-O-Matic Power UK-B<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cable-O-Matic Power UK-B.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cable-O-Matic Power UK-B.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cable-o-matic-power-uk-b)**  
   **Listing Starts** day 0  
   **Price:** $300  
   **Description:**  
@@ -423,37 +423,37 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
      
    Install cable trays with our cabling partner Barracks and Sons using their MobileOS application.  
    20000px of cable  
-- **[Punch-down Patch Panel R500](devices.md/#punch-down-patch-panel-r500)**  
+- **[Punch-down Patch Panel R500<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R500.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R500.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r500)**  
   **Listing Starts** day 0  
   **Price:** $45  
   **Description:**  
    Used with affixed cables with cable trays. 10 RJ45 keystone jacks.  
    Mountable on 500px racks.  
-- **[Punch-down Patch Panel R500 SC](devices.md/#punch-down-patch-panel-r500-sc)**  
+- **[Punch-down Patch Panel R500 SC<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R500 SC.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R500 SC.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r500-sc)**  
   **Listing Starts** day 0  
   **Price:** $70  
   **Description:**  
    Used with affixed cables with cable trays. 10 fiber SC keystone jacks.  
    Mountable on 500px racks.  
-- **[Punch-down Patch Panel R630](devices.md/#punch-down-patch-panel-r630)**  
+- **[Punch-down Patch Panel R630<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R630.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R630.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r630)**  
   **Listing Starts** day 0  
   **Price:** $90  
   **Description:**  
    Used with affixed cables with cable trays. 15 RJ45 keystone jacks.  
    Mountable on 630px racks.  
-- **[Punch-down Patch Panel R630 SC](devices.md/#punch-down-patch-panel-r630-sc)**  
+- **[Punch-down Patch Panel R630 SC<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R630 SC.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R630 SC.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r630-sc)**  
   **Listing Starts** day 0  
   **Price:** $140  
   **Description:**  
    Used with affixed cables with cable trays. 15 fiber SC keystone jacks.  
    Mountable on 630px racks.  
-- **[Punch-down Patch Panel R930](devices.md/#punch-down-patch-panel-r930)**  
+- **[Punch-down Patch Panel R930<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R930.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R930.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r930)**  
   **Listing Starts** day 0  
   **Price:** $180  
   **Description:**  
    Used with affixed cables with cable trays. 22 RJ45 keystone jacks.  
    Mountable on 930px racks.  
-- **[Punch-down Patch Panel R930 SC](devices.md/#punch-down-patch-panel-r930-sc)**  
+- **[Punch-down Patch Panel R930 SC<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R930 SC.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R930 SC.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r930-sc)**  
   **Listing Starts** day 0  
   **Price:** $220  
   **Description:**  
@@ -461,7 +461,7 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
    Mountable on 930px racks.  
   
   
-## Conduit Systems  
+## Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -469,7 +469,7 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
 Official Conduit Systems DMarket store. Quality routers from the disco series and ether series.  
   
 **Listings:**    
-- **[Disco Nano](devices.md/#disco-nano)**  
+- **[Disco Nano<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano)**  
   **Listing Starts** day 0 **Until** day 7  
   **Price:** $220  
   **Warranty:** 17 days  
@@ -481,7 +481,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Not rack mountable.  
    Uses DC power.  
    17-day device warranty.  
-- **[Disco Micro](devices.md/#disco-micro)**  
+- **[Disco Micro<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-micro)**  
   **Listing Starts** day 0 **Until** day 7  
   **Price:** $600  
   **Warranty:** 14 days  
@@ -493,7 +493,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 500px racks.  
    Suitable for small businesses.  
    14-day device warranty.  
-- **[Disco Milli](devices.md/#disco-milli)**  
+- **[Disco Milli<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli)**  
   **Listing Starts** day 0 **Until** day 7  
   **Price:** $325  
   **Warranty:** 16 days  
@@ -505,7 +505,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 630px racks.  
    Economical model for medium sized enterprises.  
    16-day device warranty.  
-- **[Disco Nano2G](devices.md/#disco-nano2g)**  
+- **[Disco Nano2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano2g)**  
   **Listing Starts** day 5 **Until** day 17  
   **Price:** $180  
   **Warranty:** 21 days  
@@ -517,7 +517,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Not rack mountable.  
    Uses DC power.  
    21-day device warranty.  
-- **[Disco Micro 2G](devices.md/#disco-micro-2g)**  
+- **[Disco Micro 2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-micro-2g)**  
   **Listing Starts** day 5 **Until** day 17  
   **Price:** $950  
   **Warranty:** 19 days  
@@ -529,7 +529,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 500px racks.  
    Improved performance and maximum throughput.  
    19-day device warranty.  
-- **[Disco Milli 2G](devices.md/#disco-milli-2g)**  
+- **[Disco Milli 2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli-2g)**  
   **Listing Starts** day 5 **Until** day 17  
   **Price:** $500  
   **Warranty:** 18 days  
@@ -541,7 +541,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 630px racks.  
    Economical model for medium sized enterprises.  
    18-day device warranty.  
-- **[Disco Milli 3G](devices.md/#disco-milli-3g)**  
+- **[Disco Milli 3G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 3G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 3G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli-3g)**  
   **Listing Starts** day 15 **Until** day 27  
   **Price:** $800  
   **Warranty:** 21 days  
@@ -553,7 +553,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 630px racks.  
    Economical model for medium sized enterprises. High-availability support.  
    21-day device warranty.  
-- **[Disco Nano3H](devices.md/#disco-nano3h)**  
+- **[Disco Nano3H<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano3H.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano3H.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano3h)**  
   **Listing Starts** day 15  
   **Price:** $450  
   **Warranty:** 28 days  
@@ -565,7 +565,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Not rack mountable.  
    Uses DC power.  
    28-day device warranty.  
-- **[Disco Micro 3G](devices.md/#disco-micro-3g)**  
+- **[Disco Micro 3G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 3G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 3G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-micro-3g)**  
   **Listing Starts** day 15  
   **Price:** $1300  
   **Warranty:** 21 days  
@@ -577,7 +577,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 500px racks.  
    3rd generation edition. Supports high-availability setups.  
    21-day device warranty.  
-- **[Disco Milli 4G](devices.md/#disco-milli-4g)**  
+- **[Disco Milli 4G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 4G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 4G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli-4g)**  
   **Listing Starts** day 25  
   **Price:** $1150  
   **Warranty:** 25 days  
@@ -589,7 +589,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 630px racks.  
    Economical model for medium sized enterprises. High-availability support.  
    25-day device warranty.  
-- **[Disco Kilo](devices.md/#disco-kilo)**  
+- **[Disco Kilo<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-kilo)**  
   **Listing Starts** day 5 **Until** day 17  
   **Price:** $1230  
   **Warranty:** 15 days  
@@ -601,7 +601,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 930px racks.  
    Allows VLAN subinterfaces.  
    15-day device warranty.  
-- **[Disco Kilo 2G](devices.md/#disco-kilo-2g)**  
+- **[Disco Kilo 2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo 2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo 2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-kilo-2g)**  
   **Listing Starts** day 15 **Until** day 27  
   **Price:** $1500  
   **Warranty:** 22 days  
@@ -613,7 +613,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 930px racks.  
    Allows VLAN subinterfaces. Improved BW performance.  
    22-day device warranty.  
-- **[Disco Kilo 3G](devices.md/#disco-kilo-3g)**  
+- **[Disco Kilo 3G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo 3G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo 3G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-kilo-3g)**  
   **Listing Starts** day 25  
   **Price:** $1950  
   **Warranty:** 29 days  
@@ -627,7 +627,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    29-day device warranty.  
   
   
-## Cortex Org.  
+## Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -637,7 +637,7 @@ Cortex builds servers for compute-heavy workloads.
 High CPU, high memory, minimal storage devices for sale.  
   
 **Listings:**    
-- **[Cortex 8](devices.md/#cortex-8)**  
+- **[Cortex 8<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 8.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 8.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cortex-8)**  
   **Listing Starts** day 0  
   **Price:** $1250  
   **Warranty:** 28 days  
@@ -650,7 +650,7 @@ High CPU, high memory, minimal storage devices for sale.
    Mountable on 500px racks.  
    Suitable for light office use  
    28-day device warranty.  
-- **[Cortex Espresso](devices.md/#cortex-espresso)**  
+- **[Cortex Espresso<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex Espresso.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex Espresso.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cortex-espresso)**  
   **Listing Starts** day 0  
   **Price:** $3050  
   **Warranty:** 28 days  
@@ -663,7 +663,7 @@ High CPU, high memory, minimal storage devices for sale.
    Mountable on 500px racks.  
    Suitable for data-heavy application.  
    28-day device warranty.  
-- **[Cortex 20](devices.md/#cortex-20)**  
+- **[Cortex 20<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 20.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 20.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cortex-20)**  
   **Listing Starts** day 5  
   **Price:** $4050  
   **Warranty:** 35 days  
@@ -676,7 +676,7 @@ High CPU, high memory, minimal storage devices for sale.
    Mountable on 630px racks.  
    Suitable for medium teams.  
    35-day device warranty.  
-- **[Cortex 28](devices.md/#cortex-28)**  
+- **[Cortex 28<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 28.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 28.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cortex-28)**  
   **Listing Starts** day 9  
   **Price:** $6900  
   **Warranty:** 35 days  
@@ -691,7 +691,7 @@ High CPU, high memory, minimal storage devices for sale.
    35-day device warranty.  
   
   
-## Data Liner Corp.  
+## Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 60s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -699,7 +699,7 @@ High CPU, high memory, minimal storage devices for sale.
 Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun not intended) media converters and repeaters to transform and extend your physical lines in any way you want it.  
   
 **Listings:**    
-- **[Duplex 1C](devices.md/#duplex-1c)**  
+- **[Duplex 1C<img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex 1C.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex 1C.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#duplex-1c)**  
   **Listing Starts** day 0  
   **Price:** $60  
   **Warranty:** 21 days  
@@ -710,7 +710,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 7W.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Simplex 452F 1C](devices.md/#simplex-452f-1c)**  
+- **[Simplex 452F 1C<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex 452F 1C.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex 452F 1C.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-452f-1c)**  
   **Listing Starts** day 0  
   **Price:** $40  
   **Warranty:** 21 days  
@@ -721,7 +721,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 9W.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Simplex SC245 1C](devices.md/#simplex-sc245-1c)**  
+- **[Simplex SC245 1C<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC245 1C.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC245 1C.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-sc245-1c)**  
   **Listing Starts** day 0  
   **Price:** $40  
   **Warranty:** 21 days  
@@ -732,7 +732,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 9W.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Duplex 3C](devices.md/#duplex-3c)**  
+- **[Duplex 3C<img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex 3C.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex 3C.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#duplex-3c)**  
   **Listing Starts** day 0  
   **Price:** $240  
   **Warranty:** 28 days  
@@ -743,7 +743,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 8W.  
    Not rack mountable.  
    28-day device warranty.  
-- **[Simplex 452F 3C](devices.md/#simplex-452f-3c)**  
+- **[Simplex 452F 3C<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex 452F 3C.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex 452F 3C.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-452f-3c)**  
   **Listing Starts** day 0  
   **Price:** $160  
   **Warranty:** 28 days  
@@ -754,7 +754,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 12W.  
    Not rack mountable.  
    28-day device warranty.  
-- **[Simplex SC245 3C](devices.md/#simplex-sc245-3c)**  
+- **[Simplex SC245 3C<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC245 3C.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC245 3C.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-sc245-3c)**  
   **Listing Starts** day 0  
   **Price:** $160  
   **Warranty:** 28 days  
@@ -765,7 +765,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 12W.  
    Not rack mountable.  
    28-day device warranty.  
-- **[Duplex SC 1R](devices.md/#duplex-sc-1r)**  
+- **[Duplex SC 1R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex SC 1R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex SC 1R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#duplex-sc-1r)**  
   **Listing Starts** day 0  
   **Price:** $50  
   **Warranty:** 21 days  
@@ -776,7 +776,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 8W.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Duplex RJ45 1R](devices.md/#duplex-rj45-1r)**  
+- **[Duplex RJ45 1R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex RJ45 1R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex RJ45 1R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#duplex-rj45-1r)**  
   **Listing Starts** day 0  
   **Price:** $50  
   **Warranty:** 21 days  
@@ -787,7 +787,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 6W.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Simplex RJ45 1R](devices.md/#simplex-rj45-1r)**  
+- **[Simplex RJ45 1R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex RJ45 1R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex RJ45 1R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-rj45-1r)**  
   **Listing Starts** day 0  
   **Price:** $30  
   **Warranty:** 21 days  
@@ -798,7 +798,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 7W.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Simplex SC 1R](devices.md/#simplex-sc-1r)**  
+- **[Simplex SC 1R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC 1R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC 1R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-sc-1r)**  
   **Listing Starts** day 0  
   **Price:** $30  
   **Warranty:** 21 days  
@@ -809,7 +809,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 11W.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Duplex RJ45 3R](devices.md/#duplex-rj45-3r)**  
+- **[Duplex RJ45 3R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex RJ45 3R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex RJ45 3R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#duplex-rj45-3r)**  
   **Listing Starts** day 0  
   **Price:** $200  
   **Warranty:** 28 days  
@@ -820,7 +820,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 7W.  
    Not rack mountable.  
    28-day device warranty.  
-- **[Duplex SC 3R](devices.md/#duplex-sc-3r)**  
+- **[Duplex SC 3R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex SC 3R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Duplex SC 3R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#duplex-sc-3r)**  
   **Listing Starts** day 0  
   **Price:** $200  
   **Warranty:** 28 days  
@@ -831,7 +831,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 10W.  
    Not rack mountable.  
    28-day device warranty.  
-- **[Simplex RJ45 3R](devices.md/#simplex-rj45-3r)**  
+- **[Simplex RJ45 3R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex RJ45 3R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex RJ45 3R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-rj45-3r)**  
   **Listing Starts** day 0  
   **Price:** $120  
   **Warranty:** 28 days  
@@ -842,7 +842,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    Power consumption: 9W.  
    Not rack mountable.  
    28-day device warranty.  
-- **[Simplex SC 3R](devices.md/#simplex-sc-3r)**  
+- **[Simplex SC 3R<img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC 3R.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Simplex SC 3R.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#simplex-sc-3r)**  
   **Listing Starts** day 0  
   **Price:** $120  
   **Warranty:** 28 days  
@@ -855,7 +855,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
    28-day device warranty.  
   
   
-## Debugging Stuff  
+## Debugging Stuff<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -863,7 +863,7 @@ Welcome to Data Liner Corporation DMarket's store. We offer top of the line (pun
 Debugging shop.  
   
 **Listings:**    
-- **[Debugger Alice](devices.md/#debugger-alice)**  
+- **[Debugger Alice<img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Alice.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Alice.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#debugger-alice)**  
   **Listing Starts** day 0  
   **Price:** $1000  
   **Warranty:** 21 days  
@@ -873,7 +873,7 @@ Debugging shop.
    21-day device warranty.  
   
   
-## Fortypoint Security  
+## Fortypoint Security<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 900s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -883,7 +883,7 @@ Consistently ranking in the leaders segment of the prestigious Partner's Magic C
 Fortypoint security is a subsidiary of Fortypoint global.  
   
 **Listings:**    
-- **[FireWatch ES4A](devices.md/#firewatch-es4a)**  
+- **[FireWatch ES4A<img src="{{ site.baseurl }}/tni-docs/assets/devices/FireWatch ES4A.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/FireWatch ES4A.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#firewatch-es4a)**  
   **Listing Starts** day 0  
   **Price:** $550  
   **Warranty:** 19 days  
@@ -894,7 +894,7 @@ Fortypoint security is a subsidiary of Fortypoint global.
    Power consumption: 55W.  
    Mountable on 500px racks.  
    19-day device warranty.  
-- **[FireWatch CP4E](devices.md/#firewatch-cp4e)**  
+- **[FireWatch CP4E<img src="{{ site.baseurl }}/tni-docs/assets/devices/FireWatch CP4E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/FireWatch CP4E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#firewatch-cp4e)**  
   **Listing Starts** day 0  
   **Price:** $1500  
   **Warranty:** 30 days  
@@ -905,7 +905,7 @@ Fortypoint security is a subsidiary of Fortypoint global.
    Power consumption: 163W.  
    Mountable on 500px racks.  
    30-day device warranty.  
-- **[FireWatch CP4EF](devices.md/#firewatch-cp4ef)**  
+- **[FireWatch CP4EF<img src="{{ site.baseurl }}/tni-docs/assets/devices/FireWatch CP4EF.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/FireWatch CP4EF.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#firewatch-cp4ef)**  
   **Listing Starts** day 5  
   **Price:** $2000  
   **Warranty:** 30 days  
@@ -916,7 +916,7 @@ Fortypoint security is a subsidiary of Fortypoint global.
    Power consumption: 183W.  
    Mountable on 500px racks.  
    30-day device warranty.  
-- **[EthTapper](devices.md/#ethtapper)**  
+- **[EthTapper<img src="{{ site.baseurl }}/tni-docs/assets/devices/EthTapper.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/EthTapper.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#ethtapper)**  
   **Listing Starts** day 0  
   **Price:** $300  
   **Warranty:** 21 days  
@@ -932,7 +932,7 @@ Fortypoint security is a subsidiary of Fortypoint global.
   **Price:** $399  
   **Description:**  
    When plugged into a powered-on device, the Data Wiper wipes all data on the device. Useful for factory-resetting devices.   
-- **[Bastion 5E](devices.md/#bastion-5e)**  
+- **[Bastion 5E<img src="{{ site.baseurl }}/tni-docs/assets/devices/Bastion 5E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Bastion 5E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#bastion-5e)**  
   **Listing Starts** day 5  
   **Price:** $3000  
   **Warranty:** 49 days  
@@ -945,7 +945,7 @@ Fortypoint security is a subsidiary of Fortypoint global.
    49-day device warranty.  
   
   
-## Golonys Ltd.  
+## Golonys Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -953,7 +953,7 @@ Fortypoint security is a subsidiary of Fortypoint global.
 Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.  
   
 **Listings:**    
-- **[golonys-cinco](devices.md/#golonys-cinco)**  
+- **[golonys-cinco<img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-cinco.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-cinco.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#golonys-cinco)**  
   **Listing Starts** day 0  
   **Price:** $400  
   **Warranty:** 16 days  
@@ -966,7 +966,7 @@ Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.
    Not rack mountable.  
    Comes with 5 SATA 3.5" expansion slots.  
    16-day device warranty.  
-- **[golonys-bloque](devices.md/#golonys-bloque)**  
+- **[golonys-bloque<img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-bloque.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-bloque.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#golonys-bloque)**  
   **Listing Starts** day 0  
   **Price:** $525  
   **Warranty:** 16 days  
@@ -983,7 +983,7 @@ Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.
    16-day device warranty.  
   
   
-## Interchange Compute Corporation  
+## Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 60s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -991,7 +991,7 @@ Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.
 Interchange Compute Corporation (ICC) manufactures the tall world's compute devices, ranging from homelab equipment to enterprise servers.   
   
 **Listings:**    
-- **[ICC1](devices.md/#icc1)**  
+- **[ICC1<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc1)**  
   **Listing Starts** day 0  
   **Price:** $160  
   **Warranty:** 8 days  
@@ -1004,7 +1004,7 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Not rack mountable.  
    Homelab equipment.  
    8-day device warranty.  
-- **[ICC2](devices.md/#icc2)**  
+- **[ICC2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc2)**  
   **Listing Starts** day 2  
   **Price:** $345  
   **Warranty:** 8 days  
@@ -1040,7 +1040,7 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Files moved onto it travel with the disk when it is unplugged.  
   
   
-## Mr Cable  
+## Mr Cable<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Mr Cable.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Mr Cable.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 30s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1117,13 +1117,13 @@ Your trusted cabling merchant. Get all kinds of network and power cables here at
   **Price:** $60  
   **Description:**  
    SC double core glass fiber, 3000 pixels in length.  
-- **[Tenabolt Expander 1-2](devices.md/#tenabolt-expander-1-2)**  
+- **[Tenabolt Expander 1-2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-2)**  
   **Listing Starts** day 0  
   **Price:** $20  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Cardboard Box](devices.md/#cardboard-box)**  
+- **[Cardboard Box<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cardboard Box.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cardboard Box.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cardboard-box)**  
   **Listing Starts** day 0  
   **Price:** $10  
   **Description:**  
@@ -1131,7 +1131,7 @@ Your trusted cabling merchant. Get all kinds of network and power cables here at
    Not rack mountable.  
   
   
-## Refurb Hut  
+## Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 60s    
 **Price:** 30%    
 **Warranty:** 0% and +3 days    
@@ -1139,7 +1139,7 @@ Your trusted cabling merchant. Get all kinds of network and power cables here at
 Cheap refurbished boxes for sale. No warranties!  
   
 **Listings:**    
-- **[Disco Micro 2G](devices.md/#disco-micro-2g)**  
+- **[Disco Micro 2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-micro-2g)**  
   **Listing Starts** day 0  
   **Price:** $285 <span style="color:gray;font-size:85%;white-space:nowrap;">$665 under the base price of $950</span>  
   **Warranty:** 3 days  
@@ -1151,7 +1151,7 @@ Cheap refurbished boxes for sale. No warranties!
    Mountable on 500px racks.  
    Improved performance and maximum throughput.  
    3-day device warranty.  
-- **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
+- **[MacroHard Boulder+ SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
   **Price:** $255 <span style="color:gray;font-size:85%;white-space:nowrap;">$595 under the base price of $850</span>  
   **Warranty:** 3 days  
@@ -1164,7 +1164,7 @@ Cheap refurbished boxes for sale. No warranties!
    Mountable on 500px racks.  
    High performance model.  
    3-day device warranty.  
-- **[Blade88](devices.md/#blade88)**  
+- **[Blade88<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade88.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade88.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade88)**  
   **Listing Starts** day 0  
   **Price:** $326 <span style="color:gray;font-size:85%;white-space:nowrap;">$762 under the base price of $1088</span>  
   **Warranty:** 3 days  
@@ -1178,7 +1178,7 @@ Cheap refurbished boxes for sale. No warranties!
    3-day device warranty.  
   
   
-## Savannah Org.  
+## Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1188,7 +1188,7 @@ The Savannah Organization has decades of experience building and manufacturing s
 As part of the Tower sustanability efforts, 10% of profits made by the organization is donated for wildlife preservation.  
   
 **Listings:**    
-- **[Savannah Meerkat](devices.md/#savannah-meerkat)**  
+- **[Savannah Meerkat<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Meerkat.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Meerkat.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#savannah-meerkat)**  
   **Listing Starts** day 0  
   **Price:** $950  
   **Warranty:** 21 days  
@@ -1201,7 +1201,7 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
    Not rack mountable.  
    Scalable compute.  
    21-day device warranty.  
-- **[Savannah Gazelle](devices.md/#savannah-gazelle)**  
+- **[Savannah Gazelle<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#savannah-gazelle)**  
   **Listing Starts** day 0  
   **Price:** $2200  
   **Warranty:** 35 days  
@@ -1214,7 +1214,7 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
    Mountable on 500px racks.  
    The gazelle is a durable device that is designed to last long in high load conditions.  
    35-day device warranty.  
-- **[Savannah Aardvark](devices.md/#savannah-aardvark)**  
+- **[Savannah Aardvark<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Aardvark.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Aardvark.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#savannah-aardvark)**  
   **Listing Starts** day 0  
   **Price:** $4500  
   **Warranty:** 42 days  
@@ -1227,7 +1227,7 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
    Mountable on 500px racks.  
    2 extensible SATA 3.5" slot.  
    42-day device warranty.  
-- **[Savannah Wildebeest](devices.md/#savannah-wildebeest)**  
+- **[Savannah Wildebeest<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Wildebeest.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Wildebeest.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#savannah-wildebeest)**  
   **Listing Starts** day 10  
   **Price:** $6800  
   **Warranty:** 49 days  
@@ -1242,7 +1242,7 @@ As part of the Tower sustanability efforts, 10% of profits made by the organizat
    49-day device warranty.  
   
   
-## Tenabolt Retail  
+## Tenabolt Retail<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Tenabolt Retail.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Tenabolt Retail.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1259,25 +1259,25 @@ Our power appliances are certified quality with good warrany coverage.
    Power cable, 1000 pixels in length.  
      
    AC power plug for various devices.  
-- **[Tenabolt Expander 1-2](devices.md/#tenabolt-expander-1-2)**  
+- **[Tenabolt Expander 1-2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-2)**  
   **Listing Starts** day 0  
   **Price:** $20  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Tenabolt Expander 1-5](devices.md/#tenabolt-expander-1-5)**  
+- **[Tenabolt Expander 1-5<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-5)**  
   **Listing Starts** day 0  
   **Price:** $100  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Tenabolt Expander 1-10](devices.md/#tenabolt-expander-1-10)**  
+- **[Tenabolt Expander 1-10<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-10.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-10)**  
   **Listing Starts** day 0  
   **Price:** $280  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Tenabolt UPS2](devices.md/#tenabolt-ups2)**  
+- **[Tenabolt UPS2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups2)**  
   **Listing Starts** day 0  
   **Price:** $750  
   **Warranty:** 28 days  
@@ -1286,7 +1286,7 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 200W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
-- **[Tenabolt UPS2E](devices.md/#tenabolt-ups2e)**  
+- **[Tenabolt UPS2E<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups2e)**  
   **Listing Starts** day 0  
   **Price:** $2000  
   **Warranty:** 28 days  
@@ -1295,7 +1295,7 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 800W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
-- **[Mountable Tenabolt UPS2H](devices.md/#mountable-tenabolt-ups2h)**  
+- **[Mountable Tenabolt UPS2H<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt UPS2H.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt UPS2H.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mountable-tenabolt-ups2h)**  
   **Listing Starts** day 0  
   **Price:** $3650  
   **Warranty:** 28 days  
@@ -1304,7 +1304,7 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 1200W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
-- **[Tenabolt UPS2X](devices.md/#tenabolt-ups2x)**  
+- **[Tenabolt UPS2X<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2X.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2X.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups2x)**  
   **Listing Starts** day 10  
   **Price:** $5000  
   **Warranty:** 28 days  
@@ -1313,7 +1313,7 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 1500W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
-- **[Tenabolt AVR2](devices.md/#tenabolt-avr2)**  
+- **[Tenabolt AVR2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt AVR2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt AVR2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-avr2)**  
   **Listing Starts** day 0  
   **Price:** $150  
   **Warranty:** 28 days  
@@ -1322,31 +1322,31 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 400W loads.  
    Protects devices from being damaged by power surges.  
    28-day device warranty.  
-- **[Mountable Tenabolt Expander 1-3](devices.md/#mountable-tenabolt-expander-1-3)**  
+- **[Mountable Tenabolt Expander 1-3<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 1-3.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 1-3.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mountable-tenabolt-expander-1-3)**  
   **Listing Starts** day 0  
   **Price:** $100  
   **Description:**  
    Mountable power distribution strip. Used as power extension when wall sockets are limited.  
    Mountable on 500px racks.  
-- **[Mountable Tenabolt Expander 2-3](devices.md/#mountable-tenabolt-expander-2-3)**  
+- **[Mountable Tenabolt Expander 2-3<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 2-3.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 2-3.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mountable-tenabolt-expander-2-3)**  
   **Listing Starts** day 0  
   **Price:** $180  
   **Description:**  
    Mountable power distribution strip. Used as power extension when wall sockets are limited.  
    Mountable on 500px racks.  
-- **[Mountable Tenabolt Expander 1-5](devices.md/#mountable-tenabolt-expander-1-5)**  
+- **[Mountable Tenabolt Expander 1-5<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 1-5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 1-5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mountable-tenabolt-expander-1-5)**  
   **Listing Starts** day 0  
   **Price:** $200  
   **Description:**  
    Mountable power distribution strip. Used as power extension when wall sockets are limited.  
    Mountable on 630px racks.  
-- **[Mountable Tenabolt Expander 1-7](devices.md/#mountable-tenabolt-expander-1-7)**  
+- **[Mountable Tenabolt Expander 1-7<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 1-7.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt Expander 1-7.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mountable-tenabolt-expander-1-7)**  
   **Listing Starts** day 0  
   **Price:** $200  
   **Description:**  
    Mountable power distribution strip. Used as power extension when wall sockets are limited.  
    Mountable on 930px racks.  
-- **[Mountable Tenabolt UPS2E](devices.md/#mountable-tenabolt-ups2e)**  
+- **[Mountable Tenabolt UPS2E<img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt UPS2E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Mountable Tenabolt UPS2E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#mountable-tenabolt-ups2e)**  
   **Listing Starts** day 0  
   **Price:** $2200  
   **Warranty:** 28 days  
@@ -1357,7 +1357,7 @@ Our power appliances are certified quality with good warrany coverage.
    28-day device warranty.  
   
   
-## The Server Shoppe  
+## The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** 125%    
 **Warranty:** Base warranties.    
@@ -1365,7 +1365,7 @@ Our power appliances are certified quality with good warrany coverage.
 The Server Shoppe is your authorized distributor for Macrohard products.  
   
 **Listings:**    
-- **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
+- **[MacroHard Boulder+ SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
   **Price:** $1062 <span style="color:gray;font-size:85%;white-space:nowrap;">$212 above the base price of $850</span>  
   **Warranty:** 14 days  
@@ -1378,7 +1378,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    Mountable on 500px racks.  
    High performance model.  
    14-day device warranty.  
-- **[MacroHard Boulder++ SRV](devices.md/#macrohard-boulder-srv-1)**  
+- **[MacroHard Boulder++ SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder++ SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder++ SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-boulder-srv-1)**  
   **Listing Starts** day 5  
   **Price:** $1750 <span style="color:gray;font-size:85%;white-space:nowrap;">$350 above the base price of $1400</span>  
   **Warranty:** 14 days  
@@ -1391,7 +1391,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    Mountable on 500px racks.  
    High performance model with extra bandwidth.  
    14-day device warranty.  
-- **[MacroHard Monolith SRV](devices.md/#macrohard-monolith-srv)**  
+- **[MacroHard Monolith SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Monolith SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Monolith SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-monolith-srv)**  
   **Listing Starts** day 0  
   **Price:** $2100 <span style="color:gray;font-size:85%;white-space:nowrap;">$420 above the base price of $1680</span>  
   **Warranty:** 14 days  
@@ -1404,7 +1404,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    Mountable on 500px racks.  
    Comes with 2 SATA 3.5" expansion slot  
    14-day device warranty.  
-- **[MacroHard Ledge Two SRV](devices.md/#macrohard-ledge-two-srv)**  
+- **[MacroHard Ledge Two SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Two SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Two SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-ledge-two-srv)**  
   **Listing Starts** day 0  
   **Price:** $2625 <span style="color:gray;font-size:85%;white-space:nowrap;">$525 above the base price of $2100</span>  
   **Warranty:** 21 days  
@@ -1417,7 +1417,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    Mountable on 500px racks.  
    Fiber enabled compute server.  
    21-day device warranty.  
-- **[MacroHard Ledge Three SRV](devices.md/#macrohard-ledge-three-srv)**  
+- **[MacroHard Ledge Three SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Three SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Three SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-ledge-three-srv)**  
   **Listing Starts** day 10  
   **Price:** $4000 <span style="color:gray;font-size:85%;white-space:nowrap;">$800 above the base price of $3200</span>  
   **Warranty:** 21 days  
@@ -1430,7 +1430,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    Mountable on 500px racks.  
    Fiber enabled compute server.  
    21-day device warranty.  
-- **[MacroHard Megalith SRV](devices.md/#macrohard-megalith-srv)**  
+- **[MacroHard Megalith SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Megalith SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Megalith SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-megalith-srv)**  
   **Listing Starts** day 10  
   **Price:** $4750 <span style="color:gray;font-size:85%;white-space:nowrap;">$950 above the base price of $3800</span>  
   **Warranty:** 24 days  
@@ -1443,7 +1443,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    Not rack mountable.  
    Comes with 6 SATA 3.5" expansion slot.  
    24-day device warranty.  
-- **[MacroHard NLB2](devices.md/#macrohard-nlb2)**  
+- **[MacroHard NLB2<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard NLB2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard NLB2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-nlb2)**  
   **Listing Starts** day 5  
   **Price:** $437 <span style="color:gray;font-size:85%;white-space:nowrap;">$87 above the base price of $350</span>  
   **Warranty:** 17 days  
@@ -1457,7 +1457,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    17-day device warranty.  
   
   
-## Tutortial AB compute Ltd.  
+## Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** 120%    
 **Warranty:** Base warranties.    
@@ -1465,7 +1465,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
 At AB compute, we offer a variety of computing devices from different manufacturers at good prices. You need servers? AB compute got you covered.  
   
 **Listings:**    
-- **[MacroHard Boulder SRV](devices.md/#macrohard-boulder-srv)**  
+- **[MacroHard Boulder SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-boulder-srv)**  
   **Listing Starts** day 0  
   **Price:** $540 <span style="color:gray;font-size:85%;white-space:nowrap;">$90 above the base price of $450</span>  
   **Warranty:** 14 days  
@@ -1478,7 +1478,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Mountable on 500px racks.  
    Suitable for small businesses.  
    14-day device warranty.  
-- **[MacroHard Boulder+ SRV](devices.md/#macrohard-boulder-srv-2)**  
+- **[MacroHard Boulder+ SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-boulder-srv-2)**  
   **Listing Starts** day 0  
   **Price:** $1020 <span style="color:gray;font-size:85%;white-space:nowrap;">$170 above the base price of $850</span>  
   **Warranty:** 14 days  
@@ -1491,7 +1491,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Mountable on 500px racks.  
    High performance model.  
    14-day device warranty.  
-- **[Disco Nano](devices.md/#disco-nano)**  
+- **[Disco Nano<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano)**  
   **Listing Starts** day 0  
   **Price:** $264 <span style="color:gray;font-size:85%;white-space:nowrap;">$44 above the base price of $220</span>  
   **Warranty:** 17 days  
@@ -1503,7 +1503,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Not rack mountable.  
    Uses DC power.  
    17-day device warranty.  
-- **[Debugger Alice](devices.md/#debugger-alice)**  
+- **[Debugger Alice<img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Alice.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Alice.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#debugger-alice)**  
   **Listing Starts** day 0  
   **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 21 days  
@@ -1511,7 +1511,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    2-port ethernet remote debugger.  
    Not rack mountable.  
    21-day device warranty.  
-- **[Savannah Gazelle](devices.md/#savannah-gazelle)**  
+- **[Savannah Gazelle<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#savannah-gazelle)**  
   **Listing Starts** day 0  
   **Price:** $2640 <span style="color:gray;font-size:85%;white-space:nowrap;">$440 above the base price of $2200</span>  
   **Warranty:** 35 days  
@@ -1524,7 +1524,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Mountable on 500px racks.  
    The gazelle is a durable device that is designed to last long in high load conditions.  
    35-day device warranty.  
-- **[Dvergar](devices.md/#dvergar)**  
+- **[Dvergar<img src="{{ site.baseurl }}/tni-docs/assets/devices/Dvergar.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Dvergar.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#dvergar)**  
   **Listing Starts** day 0  
   **Price:** $1320 <span style="color:gray;font-size:85%;white-space:nowrap;">$220 above the base price of $1100</span>  
   **Warranty:** 7 days  
@@ -1537,7 +1537,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Not rack mountable.  
    Provides Decentro transaction verification to the p2p currency network.  
    7-day device warranty.  
-- **[DNS UDP/53 Load Tester](devices.md/#dns-udp53-load-tester)**  
+- **[DNS UDP/53 Load Tester<img src="{{ site.baseurl }}/tni-docs/assets/devices/DNS UDP53 Load Tester.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/DNS UDP53 Load Tester.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#dns-udp53-load-tester)**  
   **Listing Starts** day 0  
   **Price:** $1200 <span style="color:gray;font-size:85%;white-space:nowrap;">$200 above the base price of $1000</span>  
   **Warranty:** 7 days  
@@ -1547,7 +1547,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    7-day device warranty.  
   
   
-## Tutortial Blade Networking Inc.  
+## Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1555,7 +1555,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
 Blade Networking © offers high quality network switches in the tower. Your one-stop merchant for all your connectivity needs.  
   
 **Listings:**    
-- **[Blade5](devices.md/#blade5)**  
+- **[Blade5<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade5)**  
   **Listing Starts** day 0  
   **Price:** $100  
   **Warranty:** 7 days  
@@ -1567,7 +1567,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 500px racks.  
    Suitable for entry-level networks.  
    7-day device warranty.  
-- **[Blade10](devices.md/#blade10)**  
+- **[Blade10<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade10.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade10)**  
   **Listing Starts** day 1  
   **Price:** $230  
   **Warranty:** 7 days  
@@ -1578,7 +1578,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 8W.  
    Mountable on 500px racks.  
    7-day device warranty.  
-- **[Blade4](devices.md/#blade4)**  
+- **[Blade4<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade4.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade4.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade4)**  
   **Listing Starts** day 0  
   **Price:** $100  
   **Warranty:** 7 days  
@@ -1589,7 +1589,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 7W.  
    Mountable on 500px racks.  
    7-day device warranty.  
-- **[Blade12](devices.md/#blade12)**  
+- **[Blade12<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade12.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade12.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade12)**  
   **Listing Starts** day 0  
   **Price:** $712  
   **Warranty:** 21 days  
@@ -1600,7 +1600,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 32W.  
    Mountable on 930px racks.  
    21-day device warranty.  
-- **[Blade66](devices.md/#blade66)**  
+- **[Blade66<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade66.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade66.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade66)**  
   **Listing Starts** day 0  
   **Price:** $466  
   **Warranty:** 14 days  
@@ -1611,7 +1611,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Power consumption: 12W.  
    Mountable on 930px racks.  
    14-day device warranty.  
-- **[Blade15](devices.md/#blade15)**  
+- **[Blade15<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade15.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade15.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade15)**  
   **Listing Starts** day 10  
   **Price:** $815  
   **Warranty:** 21 days  
@@ -1623,7 +1623,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 930px racks.  
    More ports at a cheaper price.  
    21-day device warranty.  
-- **[Blade88](devices.md/#blade88)**  
+- **[Blade88<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade88.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade88.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade88)**  
   **Listing Starts** day 10  
   **Price:** $1088  
   **Warranty:** 35 days  
@@ -1635,7 +1635,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 930px racks.  
    This device is well sought after in the second hand market.  
    35-day device warranty.  
-- **[Blade1515](devices.md/#blade1515)**  
+- **[Blade1515<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade1515.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade1515.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade1515)**  
   **Listing Starts** day 10  
   **Price:** $1815  
   **Warranty:** 30 days  
@@ -1648,7 +1648,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    Mountable on 930px racks.  
    Enterprise grade equipment.  
    30-day device warranty.  
-- **[Blade30](devices.md/#blade30)**  
+- **[Blade30<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade30.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade30)**  
   **Listing Starts** day 10  
   **Price:** $1630  
   **Warranty:** 28 days  
@@ -1662,7 +1662,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
    28-day device warranty.  
   
   
-## Tutortial Conduit Systems  
+## Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1670,7 +1670,7 @@ Blade Networking © offers high quality network switches in the tower. Your one-
 Official Conduit Systems DMarket store. Quality routers from the disco series and ether series.  
   
 **Listings:**    
-- **[Disco Nano](devices.md/#disco-nano)**  
+- **[Disco Nano<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano)**  
   **Listing Starts** day 0 **Until** day 7  
   **Price:** $220  
   **Warranty:** 17 days  
@@ -1682,7 +1682,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Not rack mountable.  
    Uses DC power.  
    17-day device warranty.  
-- **[Disco Micro](devices.md/#disco-micro)**  
+- **[Disco Micro<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-micro)**  
   **Listing Starts** day 0 **Until** day 7  
   **Price:** $600  
   **Warranty:** 14 days  
@@ -1694,7 +1694,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 500px racks.  
    Suitable for small businesses.  
    14-day device warranty.  
-- **[Disco Milli](devices.md/#disco-milli)**  
+- **[Disco Milli<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli)**  
   **Listing Starts** day 0 **Until** day 7  
   **Price:** $325  
   **Warranty:** 16 days  
@@ -1706,7 +1706,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 630px racks.  
    Economical model for medium sized enterprises.  
    16-day device warranty.  
-- **[Disco Nano2G](devices.md/#disco-nano2g)**  
+- **[Disco Nano2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano2g)**  
   **Listing Starts** day 5 **Until** day 17  
   **Price:** $180  
   **Warranty:** 21 days  
@@ -1718,7 +1718,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Not rack mountable.  
    Uses DC power.  
    21-day device warranty.  
-- **[Disco Micro 2G](devices.md/#disco-micro-2g)**  
+- **[Disco Micro 2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-micro-2g)**  
   **Listing Starts** day 5 **Until** day 17  
   **Price:** $950  
   **Warranty:** 19 days  
@@ -1730,7 +1730,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 500px racks.  
    Improved performance and maximum throughput.  
    19-day device warranty.  
-- **[Disco Milli 2G](devices.md/#disco-milli-2g)**  
+- **[Disco Milli 2G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 2G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 2G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli-2g)**  
   **Listing Starts** day 5 **Until** day 17  
   **Price:** $500  
   **Warranty:** 18 days  
@@ -1742,7 +1742,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 630px racks.  
    Economical model for medium sized enterprises.  
    18-day device warranty.  
-- **[Disco Milli 3G](devices.md/#disco-milli-3g)**  
+- **[Disco Milli 3G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 3G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 3G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli-3g)**  
   **Listing Starts** day 15 **Until** day 27  
   **Price:** $800  
   **Warranty:** 21 days  
@@ -1754,7 +1754,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 630px racks.  
    Economical model for medium sized enterprises. High-availability support.  
    21-day device warranty.  
-- **[Disco Nano3H](devices.md/#disco-nano3h)**  
+- **[Disco Nano3H<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano3H.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Nano3H.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-nano3h)**  
   **Listing Starts** day 15  
   **Price:** $450  
   **Warranty:** 28 days  
@@ -1766,7 +1766,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Not rack mountable.  
    Uses DC power.  
    28-day device warranty.  
-- **[Disco Micro 3G](devices.md/#disco-micro-3g)**  
+- **[Disco Micro 3G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 3G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Micro 3G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-micro-3g)**  
   **Listing Starts** day 15  
   **Price:** $1300  
   **Warranty:** 21 days  
@@ -1778,7 +1778,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    Mountable on 500px racks.  
    3rd generation edition. Supports high-availability setups.  
    21-day device warranty.  
-- **[Disco Milli 4G](devices.md/#disco-milli-4g)**  
+- **[Disco Milli 4G<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 4G.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli 4G.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli-4g)**  
   **Listing Starts** day 25  
   **Price:** $1150  
   **Warranty:** 25 days  
@@ -1792,7 +1792,7 @@ Official Conduit Systems DMarket store. Quality routers from the disco series an
    25-day device warranty.  
   
   
-## Tutortial Mr Cable  
+## Tutortial Mr Cable<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Mr Cable.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Mr Cable.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 30s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1869,13 +1869,13 @@ Your trusted cabling merchant. Get all kinds of network and power cables here at
   **Price:** $60  
   **Description:**  
    SC double core glass fiber, 3000 pixels in length.  
-- **[Tenabolt Expander 1-2](devices.md/#tenabolt-expander-1-2)**  
+- **[Tenabolt Expander 1-2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-2)**  
   **Listing Starts** day 0  
   **Price:** $20  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Cardboard Box](devices.md/#cardboard-box)**  
+- **[Cardboard Box<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cardboard Box.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cardboard Box.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#cardboard-box)**  
   **Listing Starts** day 0  
   **Price:** $10  
   **Description:**  
@@ -1883,7 +1883,7 @@ Your trusted cabling merchant. Get all kinds of network and power cables here at
    Not rack mountable.  
   
   
-## Tutortial Tenabolt Retail  
+## Tutortial Tenabolt Retail<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Tenabolt Retail.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Tenabolt Retail.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1900,25 +1900,25 @@ Our power appliances are certified quality with good warrany coverage.
    Power cable, 1000 pixels in length.  
      
    AC power plug for various devices.  
-- **[Tenabolt Expander 1-2](devices.md/#tenabolt-expander-1-2)**  
+- **[Tenabolt Expander 1-2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-2)**  
   **Listing Starts** day 0  
   **Price:** $20  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Tenabolt Expander 1-5](devices.md/#tenabolt-expander-1-5)**  
+- **[Tenabolt Expander 1-5<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-5)**  
   **Listing Starts** day 0  
   **Price:** $100  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Tenabolt Expander 1-10](devices.md/#tenabolt-expander-1-10)**  
+- **[Tenabolt Expander 1-10<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt Expander 1-10.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-expander-1-10)**  
   **Listing Starts** day 0  
   **Price:** $280  
   **Description:**  
    Power distribution strip. Used as power extension when wall sockets are limited.  
    Not rack mountable.  
-- **[Tenabolt UPS2](devices.md/#tenabolt-ups2)**  
+- **[Tenabolt UPS2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups2)**  
   **Listing Starts** day 0  
   **Price:** $750  
   **Warranty:** 28 days  
@@ -1927,7 +1927,7 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 200W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
-- **[Tenabolt UPS2E](devices.md/#tenabolt-ups2e)**  
+- **[Tenabolt UPS2E<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups2e)**  
   **Listing Starts** day 0  
   **Price:** $2000  
   **Warranty:** 28 days  
@@ -1936,7 +1936,7 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 800W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
-- **[Tenabolt UPS2X](devices.md/#tenabolt-ups2x)**  
+- **[Tenabolt UPS2X<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2X.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS2X.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups2x)**  
   **Listing Starts** day 10  
   **Price:** $5000  
   **Warranty:** 28 days  
@@ -1945,7 +1945,7 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 1500W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
-- **[Tenabolt AVR2](devices.md/#tenabolt-avr2)**  
+- **[Tenabolt AVR2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt AVR2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt AVR2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-avr2)**  
   **Listing Starts** day 0  
   **Price:** $150  
   **Warranty:** 28 days  
@@ -1956,7 +1956,7 @@ Our power appliances are certified quality with good warrany coverage.
    28-day device warranty.  
   
   
-## Vision Grid  
+## Vision Grid<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 60s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1964,7 +1964,7 @@ Our power appliances are certified quality with good warrany coverage.
 Get real-time insights on your tower’s population with monitors built for data display and analysis.  
   
 **Listings:**    
-- **[Top Issue Monitor](devices.md/#top-issue-monitor)**  
+- **[Top Issue Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Top Issue Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Top Issue Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#top-issue-monitor)**  
   **Listing Starts** day 0  
   **Price:** $300  
   **Warranty:** 14 days  
@@ -1972,7 +1972,7 @@ Get real-time insights on your tower’s population with monitors built for data
    Extra monitor displaying top floor issues, available for sale.  
    Not rack mountable.  
    14-day device warranty.  
-- **[Visitor Stats Monitor](devices.md/#visitor-stats-monitor)**  
+- **[Visitor Stats Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Visitor Stats Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Visitor Stats Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#visitor-stats-monitor)**  
   **Listing Starts** day 0  
   **Price:** $300  
   **Warranty:** 14 days  
@@ -1980,7 +1980,7 @@ Get real-time insights on your tower’s population with monitors built for data
    Extra monitor displaying visitor count by domain name, available for sale.  
    Not rack mountable.  
    14-day device warranty.  
-- **[Satiety Stats Monitor](devices.md/#satiety-stats-monitor)**  
+- **[Satiety Stats Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Satiety Stats Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Satiety Stats Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#satiety-stats-monitor)**  
   **Listing Starts** day 0  
   **Price:** $500  
   **Warranty:** 14 days  
@@ -1990,7 +1990,7 @@ Get real-time insights on your tower’s population with monitors built for data
    14-day device warranty.  
   
   
-## Zodiac Networks  
+## Zodiac Networks<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" style="max-height: 25vh;" /></wa-tooltip>  
 **Restock:** FILL after 300s    
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
@@ -1998,7 +1998,7 @@ Get real-time insights on your tower’s population with monitors built for data
 Zodiac Networks is a leading manufacturer of backbone high throughput routers.  
   
 **Listings:**    
-- **[Zodianet Spine Router](devices.md/#zodianet-spine-router)**  
+- **[Zodianet Spine Router<img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Spine Router.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Spine Router.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#zodianet-spine-router)**  
   **Listing Starts** day 0 **Until** day 13  
   **Price:** $1200  
   **Warranty:** 14 days  
@@ -2010,7 +2010,7 @@ Zodiac Networks is a leading manufacturer of backbone high throughput routers.
    Mountable on 630px racks.  
    High bandwidth router for core networking.  
    14-day device warranty.  
-- **[Zodianet Beam Router](devices.md/#zodianet-beam-router)**  
+- **[Zodianet Beam Router<img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Beam Router.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Beam Router.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#zodianet-beam-router)**  
   **Listing Starts** day 10  
   **Price:** $3700  
   **Warranty:** 17 days  
