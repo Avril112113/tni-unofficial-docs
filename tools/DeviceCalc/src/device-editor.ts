@@ -390,6 +390,12 @@ export class DeviceEditor extends LitElement {
 
 			--max-width: 75vw;
 		}
+
+		@media (min-width: 550px) {
+			.device-dropdown-item-img-br {
+				display: none;
+			}
+		}
 	`;
 
 	override render() {
@@ -585,11 +591,14 @@ export class DeviceEditor extends LitElement {
 				const available = EditorConfig.current_day <= -1 || this._data?.isAvailableToday(device_id, EditorConfig.current_day);
 				return html`
 					<wa-dropdown-item value=${device_id} style="color: ${color}; text-decoration-line: ${available ? '' : 'line-through'};">
-						${device.product_name}
+						<span>${device.product_name}</span>
+						<br class="device-dropdown-item-img-br">
 						<img src="${window.SiteConfig!.baseUrl}/tni-docs/assets/devices/${device?.product_name.replaceAll(/[\.\/\\]/g, "")}.webp" style="height: 1em; max-width: 100%;" />
-						<span slot="details" style="text-decoration-line: ${available ? '' : 'line-through'};">
-							${details}
-						</span>
+						<div slot="details" style="display: contents;">
+							<div style="margin-inline-start: 0.5em !important; text-decoration-line: ${available ? '' : 'line-through'};">
+								${details}
+							</div>
+						</div>
 					</wa-dropdown-item>
 				`;
 			};

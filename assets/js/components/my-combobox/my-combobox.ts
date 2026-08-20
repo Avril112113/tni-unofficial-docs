@@ -46,7 +46,6 @@ export class MyCombobox extends LitElement {
 	@queryAssignedElements({ flatten: true, selector: 'wa-dropdown-item' })
 	dropdownItems!: WaDropdownItem[];
 
-	private _lock_dropdown_pos: [number, number] = [0, 0];
 
 	static override styles = css`
 		:host {
@@ -82,9 +81,16 @@ export class MyCombobox extends LitElement {
 				@wa-select=${(e: WaSelectEvent) => this._selectDropdownItem(e.detail.item as WaDropdownItem)}
 				@wa-show=${this._filterItems}
 				@wa-after-show=${() => {
+					const popup = this.dropdown.shadowRoot?.querySelector("wa-popup") as WaPopup;
+					if (popup) {
+						const popupWidth = popup.shiftPadding * 2 + (popup.querySelector("#menu")! as HTMLElement).offsetWidth;
+						popup.shift = popupWidth < window.innerWidth;
+					}
 					this._scrollToCurrent();
 				}}
-				@wa-after-hide=${() => { this.input.value = this._getInputValueForValue(this.value); }}
+				@wa-after-hide=${() => {
+					this.input.value = this._getInputValueForValue(this.value);
+				}}
 				@focus=${{ handleEvent: (e: FocusEvent) => this._onDropdownFocus(e), capture: true }}
 			>
 				<wa-input ${ref(this.inputRef)} part="wa-input" exportparts="input"
@@ -108,7 +114,6 @@ export class MyCombobox extends LitElement {
 		if (popup) {
 			popup.flip = false;
 			popup.flipFallbackStrategy = "initial";
-			popup.shift = false;
 		}
 	}
 
@@ -118,6 +123,13 @@ export class MyCombobox extends LitElement {
 			inline: "center",
 			behavior: "instant"
 		});
+		if (navigator.maxTouchPoints > 1) {
+			this.scrollIntoView({
+				block: "start",
+				inline: "center",
+				behavior: "instant"
+			});
+		}
 	}
 
 	private _onSlotchange() {
