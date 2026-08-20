@@ -5,6 +5,9 @@ _site
 vendor
 Gemfile.lock
 
+localhost.crt
+localhost.key
+
 node_modules/
 tni.png
 tni.webp
