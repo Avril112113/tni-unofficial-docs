@@ -1,12 +1,12 @@
 import { LitElement, html, css, nothing, PropertyValues } from 'lit';
-import { customElement, property, query, queryAssignedElements } from 'lit/decorators.js';
+import { customElement, property, queryAssignedElements } from 'lit/decorators.js';
 import { Ref, createRef, ref } from 'lit/directives/ref.js';
-import { ifDefined } from 'lit/directives/if-defined.js';
 
 import { WaClearEvent, WaSelectEvent } from "@awesome.me/webawesome";
 import WaDropdownItem from "@awesome.me/webawesome/dist/components/dropdown-item/dropdown-item.js";
 import WaDropdown from "@awesome.me/webawesome/dist/components/dropdown/dropdown.js";
 import WaInput from "@awesome.me/webawesome/dist/components/input/input.js";
+import WaPopup from '@awesome.me/webawesome/dist/components/popup/popup.js';
 
 
 // This only exists because WebAwesome put theirs behind a pro subscription :/
@@ -46,6 +46,8 @@ export class MyCombobox extends LitElement {
 	@queryAssignedElements({ flatten: true, selector: 'wa-dropdown-item' })
 	dropdownItems!: WaDropdownItem[];
 
+	private _lock_dropdown_pos: [number, number] = [0, 0];
+
 	static override styles = css`
 		:host {
 			max-width: 100%;
@@ -73,14 +75,15 @@ export class MyCombobox extends LitElement {
 	}
 
 	override render() {
-		// TODO: Replace static placement with, disabled auto reposition.
 		return html`
 			<wa-dropdown ${ref(this.dropdownRef)} part="dropdown"
 				slot="header" placement="bottom-start"
 				size=${this.size}
 				@wa-select=${(e: WaSelectEvent) => this._selectDropdownItem(e.detail.item as WaDropdownItem)}
 				@wa-show=${this._filterItems}
-				@wa-after-show=${this._scrollToCurrent}
+				@wa-after-show=${() => {
+					this._scrollToCurrent();
+				}}
 				@wa-after-hide=${() => { this.input.value = this._getInputValueForValue(this.value); }}
 				@focus=${{ handleEvent: (e: FocusEvent) => this._onDropdownFocus(e), capture: true }}
 			>
@@ -101,10 +104,11 @@ export class MyCombobox extends LitElement {
 	}
 
 	protected override updated(_changedProperties: PropertyValues): void {
-		const popup = this.dropdown.shadowRoot?.querySelector("wa-popup");
+		const popup = this.dropdown.shadowRoot?.querySelector("wa-popup") as WaPopup;
 		if (popup) {
-			popup.removeAttribute('flip');
-			popup.removeAttribute('flip-fallback-strategy');
+			popup.flip = false;
+			popup.flipFallbackStrategy = "initial";
+			popup.shift = false;
 		}
 	}
 
