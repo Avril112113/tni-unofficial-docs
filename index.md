@@ -1,8 +1,8 @@
 # tni-unofficial-docs
 ## Welcome to Avril's un-official TNI docs!
-These pages contain data generated from within the game.  
-There are docs, tools and raw data available.  
-See the sidebar (or burger menu on mobile) for the list pages.  
+These pages contain data generated from within the game under [Data](./data/) along with manually written information under [Info](./info/).  
+Additionally some tools are provided under [Tools](./tools/)  
+See the sidebar (or burger menu on mobile) for the full list of pages.  
 
 ### NOTES:  
 - The available data is usually from on the `beta` branch, so if you play on stable, the information may be inaccurate!  
