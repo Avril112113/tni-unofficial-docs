@@ -11,8 +11,9 @@ Express permission by the devs of Tower Networking Inc to use the following asse
 ---
 
 [MIT-0](LICENSE.MIT-0) (no attribution)
-- Contents of [/tni-docs](tni-docs) but excluding [/tni-docs/assets](tni-docs/assets) or found at https://avril112113.github.io/tni-unofficial-docs/data/ and it's sub-pages
-- Contents of [/raw](raw) or found at https://avril112113.github.io/tni-unofficial-docs/raw/ and it's sub-pages
+- Contents of [/tni-docs](tni-docs) but excluding [/tni-docs/assets](tni-docs/assets) or found at [https://avril112113.github.io/tni-unofficial-docs/data/](https://avril112113.github.io/tni-unofficial-docs/data/) and it's sub-pages
+- Contents of [/tni-info](tni-info) or found at [https://avril112113.github.io/tni-unofficial-docs/info/](https://avril112113.github.io/tni-unofficial-docs/info/) and it's sub-pages
+- Contents of [/raw](raw) or found at [https://avril112113.github.io/tni-unofficial-docs/raw/](https://avril112113.github.io/tni-unofficial-docs/raw/) and it's sub-pages
 
 ---
 
