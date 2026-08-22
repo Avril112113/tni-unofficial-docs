@@ -23,6 +23,7 @@ GENERATED FOR TNI VERSION 0.12.1
 **CPU:** `23` **MEM:** `13` **SIZE:** `10` **BW/t:** `168` **Watts:** 953w  
 **Base Price:** $5150 **Base Warranty:** 35.0 days   
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
 4-port high-performance compute server  
@@ -40,6 +41,7 @@ Spacious and efficient. Perfect for businesses with growing data needs.
 **CPU:** `12` **MEM:** `16` **SIZE:** `4` **BW/t:** `90` **Watts:** 723w  
 **Base Price:** $3000 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
 3-port high-memory performance server  
@@ -57,6 +59,7 @@ Powerful and responsive. Perfect for businesses with intensive operations.
 **CPU:** `3` **MEM:** `4` **SIZE:** `8` **BW/t:** `21` **Watts:** 88w  
 **Base Price:** $1100 **Base Warranty:** 14.0 days   
 **Port Counts:** 3x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
 3-port entry-level server  
@@ -72,6 +75,7 @@ Compact and cost-efficient. Perfect for businesses in early deployment
 **CPU:** `7` **MEM:** `6` **SIZE:** `7` **BW/t:** `39` **Watts:** 191w  
 **Base Price:** $1150 **Base Warranty:** 14.0 days   
 **Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
 3-port balanced compute server  
@@ -87,6 +91,7 @@ Balanced and dependable. Perfect for businesses in steady expansion.
 **CPU:** `4` **MEM:** `8` **SIZE:** `12` **BW/t:** `38` **Watts:** 200w  
 **Base Price:** $3000 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
 3-port high-capacity storage server  
@@ -104,6 +109,7 @@ Spacious and efficient. Perfect for businesses with growing data needs.
 **CPU:** `6` **MEM:** `6` **SIZE:** `5` **BW/t:** `384` **Watts:** 387w  
 **Base Price:** $3000 **Base Warranty:** 49.0 days   
 **Port Counts:** 4x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_FIREWALL`  
 **Merchants:** [Fortypoint Security<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#fortypoint-security)  
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
 **Description:**  
@@ -118,6 +124,7 @@ Mountable on 930px racks.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `168` **Watts:** 28w  
 **Base Price:** $650 **Base Warranty:** 14.0 days   
 **Port Counts:** 4x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -132,6 +139,7 @@ Mountable on 630px racks.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `144` **Watts:** 25w  
 **Base Price:** $475 **Base Warranty:** 14.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -146,6 +154,7 @@ Mountable on 630px racks.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `192` **Watts:** 33w  
 **Base Price:** $625 **Base Warranty:** 14.0 days   
 **Port Counts:** 8x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -160,6 +169,7 @@ Mountable on 630px racks.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `50` **Watts:** 8w  
 **Base Price:** $230 **Base Warranty:** 7.0 days   
 **Port Counts:** 10x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -174,6 +184,7 @@ Mountable on 500px racks.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `288` **Watts:** 32w  
 **Base Price:** $712 **Base Warranty:** 21.0 days   
 **Port Counts:** 12x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -188,6 +199,7 @@ Mountable on 930px racks.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `270` **Watts:** 43w  
 **Base Price:** $815 **Base Warranty:** 21.0 days   
 **Port Counts:** 15x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -203,6 +215,7 @@ More ports at a cheaper price.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `630` **Watts:** 84w  
 **Base Price:** $1815 **Base Warranty:** 30.0 days   
 **Port Counts:** 15x `FIBER_OPTIC_SC`, 15x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -219,6 +232,7 @@ Enterprise grade equipment.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `540` **Watts:** 89w  
 **Base Price:** $1630 **Base Warranty:** 28.0 days   
 **Port Counts:** 30x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -234,6 +248,7 @@ Enterprise grade equipment. Consumes high power to support throughput.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `36` **Watts:** 7w  
 **Base Price:** $100 **Base Warranty:** 7.0 days   
 **Port Counts:** 4x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -248,6 +263,7 @@ Mountable on 500px racks.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `25` **Watts:** 6w  
 **Base Price:** $100 **Base Warranty:** 7.0 days   
 **Port Counts:** 5x `RJ45`, 1x `DC_JACK`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -263,6 +279,7 @@ Suitable for entry-level networks.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `88` **Watts:** 12w  
 **Base Price:** $466 **Base Warranty:** 14.0 days   
 **Port Counts:** 6x `FIBER_OPTIC_SC`, 6x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -277,6 +294,7 @@ Mountable on 930px racks.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `336` **Watts:** 37w  
 **Base Price:** $1088 **Base Warranty:** 35.0 days   
 **Port Counts:** 8x `FIBER_OPTIC_SC`, 8x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
 **Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
@@ -292,6 +310,7 @@ This device is well sought after in the second hand market.
 **CPU:** `20` **MEM:** `20` **SIZE:** `3` **BW/t:** `180` **Watts:** 1018w  
 **Base Price:** $4050 **Base Warranty:** 35.0 days   
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
 4-port processing server with limited storage.  
@@ -307,6 +326,7 @@ Suitable for medium teams.
 **CPU:** `28` **MEM:** `24` **SIZE:** `4` **BW/t:** `302` **Watts:** 1323w  
 **Base Price:** $6900 **Base Warranty:** 35.0 days   
 **Port Counts:** 2x `RJ45`, 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
 5-port processing server with limited storage.  
@@ -322,6 +342,7 @@ Suitable for enterprise team.
 **CPU:** `8` **MEM:** `8` **SIZE:** `2` **BW/t:** `36` **Watts:** 186w  
 **Base Price:** $1250 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
 2-port processing server with limited storage.  
@@ -337,6 +358,7 @@ Suitable for light office use
 **CPU:** `16` **MEM:** `12` **SIZE:** `3` **BW/t:** `100` **Watts:** 718w  
 **Base Price:** $3050 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
 3-port processing server with limited storage.  
@@ -352,6 +374,7 @@ Suitable for data-heavy application.
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `12` **Watts:** 33w  
 **Base Price:** $1000 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `DEBUGGER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Debugging Stuff<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#debugging-stuff), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Installed Programs:** [netpeeker](programs.md/#netpeeker)  
 **Ownership Unlocks:** [mbox](programs.md/#mbox)  
@@ -364,6 +387,7 @@ Not rack mountable.
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `24` **Watts:** 33w  
 **Base Price:** $1500 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `DEBUGGER`  
 **Installed Programs:** [netpeeker](programs.md/#netpeeker)  
 **Ownership Unlocks:** [mbox](programs.md/#mbox)  
 **Description:**  
@@ -375,6 +399,7 @@ Mountable on 500px racks.
 **CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `120` **Watts:** 42w  
 **Base Price:** $1230 **Base Warranty:** 15.0 days   
 **Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [vrout3](programs.md/#vrout3)  
 **Description:**  
@@ -390,6 +415,7 @@ Allows VLAN subinterfaces.
 **CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `180` **Watts:** 67w  
 **Base Price:** $1500 **Base Warranty:** 22.0 days   
 **Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [vrout3](programs.md/#vrout3)  
 **Description:**  
@@ -405,6 +431,7 @@ Allows VLAN subinterfaces. Improved BW performance.
 **CPU:** `5` **MEM:** `2` **SIZE:** `6` **BW/t:** `240` **Watts:** 111w  
 **Base Price:** $1950 **Base Warranty:** 29.0 days   
 **Port Counts:** 6x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [vrout3](programs.md/#vrout3)  
 **Description:**  
@@ -420,6 +447,7 @@ Allows VLAN subinterfaces. Improved BW performance.
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `125` **Watts:** 41w  
 **Base Price:** $600 **Base Warranty:** 14.0 days   
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
@@ -435,6 +463,7 @@ Suitable for small businesses.
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `162` **Watts:** 47w  
 **Base Price:** $950 **Base Warranty:** 19.0 days   
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
@@ -450,6 +479,7 @@ Improved performance and maximum throughput.
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `175` **Watts:** 50w  
 **Base Price:** $1300 **Base Warranty:** 21.0 days   
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
@@ -465,6 +495,7 @@ Mountable on 500px racks.
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `80` **Watts:** 27w  
 **Base Price:** $325 **Base Warranty:** 16.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
@@ -480,6 +511,7 @@ Economical model for medium sized enterprises.
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `112` **Watts:** 30w  
 **Base Price:** $500 **Base Warranty:** 18.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
@@ -495,6 +527,7 @@ Economical model for medium sized enterprises.
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `160` **Watts:** 41w  
 **Base Price:** $800 **Base Warranty:** 21.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
@@ -510,6 +543,7 @@ Economical model for medium sized enterprises. High-availability support.
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `240` **Watts:** 60w  
 **Base Price:** $1150 **Base Warranty:** 25.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
@@ -525,6 +559,7 @@ Economical model for medium sized enterprises. High-availability support.
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `60` **Watts:** 21w  
 **Base Price:** $220 **Base Warranty:** 17.0 days   
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 3x `RJ45`, 1x `DC_JACK`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
@@ -540,6 +575,7 @@ Uses DC power.
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `65` **Watts:** 23w  
 **Base Price:** $180 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
@@ -555,6 +591,7 @@ Uses DC power.
 **CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `75` **Watts:** 26w  
 **Base Price:** $450 **Base Warranty:** 28.0 days   
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
@@ -570,6 +607,7 @@ Uses DC power.
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6` **Watts:** 203w  
 **Base Price:** $1000 **Base Warranty:** 7.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `DEFAULT`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Installed Programs:** [dnsspam](programs.md/#dnsspam)  
 **Description:**  
@@ -581,6 +619,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `18` **Watts:** 7w  
 **Base Price:** $60 **Base Warranty:** 21.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_DUPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -595,6 +634,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `54` **Watts:** 8w  
 **Base Price:** $240 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_DUPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -609,6 +649,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `12` **Watts:** 6w  
 **Base Price:** $50 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_DUPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -623,6 +664,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `36` **Watts:** 7w  
 **Base Price:** $200 **Base Warranty:** 28.0 days   
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_DUPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -637,6 +679,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `24` **Watts:** 8w  
 **Base Price:** $50 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_DUPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -651,6 +694,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `72` **Watts:** 10w  
 **Base Price:** $200 **Base Warranty:** 28.0 days   
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_DUPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -665,6 +709,7 @@ Not rack mountable.
 **CPU:** `24` **MEM:** `16` **SIZE:** `8` **BW/t:** `40` **Watts:** 523w  
 **Base Price:** $1100 **Base Warranty:** 7.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `DECENTRO_RIGS`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Installed Programs:** [decentro-node](programs.md/#decentro-node)  
 **Description:**  
@@ -681,6 +726,7 @@ Provides Decentro transaction verification to the p2p currency network.
 **CPU:** `2` **MEM:** `2` **SIZE:** `1` **BW/t:** `18` **Watts:** 12w  
 **Base Price:** $300 **Base Warranty:** 21.0 days   
 **Port Counts:** 3x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_TAP`  
 **Merchants:** [Fortypoint Security<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#fortypoint-security)  
 **Installed Programs:** [wirerat](programs.md/#wirerat)  
 **Description:**  
@@ -695,6 +741,7 @@ Not rack mountable.
 **CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `160` **Watts:** 163w  
 **Base Price:** $1500 **Base Warranty:** 30.0 days   
 **Port Counts:** 4x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_FIREWALL`  
 **Merchants:** [Fortypoint Security<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#fortypoint-security)  
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
 **Description:**  
@@ -709,6 +756,7 @@ Mountable on 500px racks.
 **CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `180` **Watts:** 183w  
 **Base Price:** $2000 **Base Warranty:** 30.0 days   
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_FIREWALL`  
 **Merchants:** [Fortypoint Security<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#fortypoint-security)  
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
 **Description:**  
@@ -723,6 +771,7 @@ Mountable on 500px racks.
 **CPU:** `6` **MEM:** `4` **SIZE:** `3` **BW/t:** `280` **Watts:** 283w  
 **Base Price:** $2750 **Base Warranty:** 30.0 days   
 **Port Counts:** 2x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_FIREWALL`  
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
 **Description:**  
 Ethernet and fiber in-line network traffic monitoring and filtering system.  
@@ -736,6 +785,7 @@ Mountable on 500px racks.
 **CPU:** `6` **MEM:** `3` **SIZE:** `3` **BW/t:** `52` **Watts:** 55w  
 **Base Price:** $550 **Base Warranty:** 19.0 days   
 **Port Counts:** 1x `FIBER_OPTIC_SC`, 2x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_FIREWALL`  
 **Merchants:** [Fortypoint Security<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Fortypoint Security.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#fortypoint-security)  
 **Installed Programs:** [firewatcher](programs.md/#firewatcher), [wirerat](programs.md/#wirerat)  
 **Description:**  
@@ -750,6 +800,7 @@ Mountable on 500px racks.
 **CPU:** `2` **MEM:** `5` **SIZE:** `12` **BW/t:** `60` **Watts:** 53w  
 **Base Price:** $525 **Base Warranty:** 16.0 days   
 **Port Counts:** 3x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_STORAGE`  
 **Merchants:** [Golonys Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#golonys-ltd)  
 **Installed Programs:** [san-target](programs.md/#san-target)  
 **Ownership Unlocks:** [san-initiator](programs.md/#san-initiator)  
@@ -769,6 +820,7 @@ Requires a SAN initiator program on another device to mount its storage.
 **CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6` **Watts:** 13w  
 **Base Price:** $400 **Base Warranty:** 16.0 days   
 **Port Counts:** 5x `SATA35_SLOT`, 1x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_STORAGE`  
 **Merchants:** [Golonys Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#golonys-ltd)  
 **Description:**  
 1-port network storage device.  
@@ -784,6 +836,7 @@ Comes with 5 SATA 3.5" expansion slots.
 **CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 19w  
 **Base Price:** $160 **Base Warranty:** 8.0 days   
 **Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
 **Description:**  
 1-port modular computing unit.  
@@ -799,6 +852,7 @@ Homelab equipment.
 **CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `12` **Watts:** 35w  
 **Base Price:** $345 **Base Warranty:** 8.0 days   
 **Port Counts:** 2x `RJ45`, 1x `SATA35_SLOT`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
 **Description:**  
 2-port modular computing unit.  
@@ -814,6 +868,7 @@ Homelab equipment.
 **CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 203w  
 **Base Price:** $1000 **Base Warranty:** 4.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `DEFAULT`  
 **Installed Programs:** [dnsspam](programs.md/#dnsspam), [dnsspam](programs.md/#dnsspam)  
 **Description:**  
 1-port ethernet load tester.  
@@ -824,6 +879,7 @@ Not rack mountable.
 **CPU:** `4` **MEM:** `4` **SIZE:** `6` **BW/t:** `16` **Watts:** 72w  
 **Base Price:** $450 **Base Warranty:** 14.0 days   
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
 2-port general computing server.  
@@ -839,6 +895,7 @@ Suitable for small businesses.
 **CPU:** `6` **MEM:** `8` **SIZE:** `8` **BW/t:** `28` **Watts:** 161w  
 **Base Price:** $850 **Base Warranty:** 14.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
 2-port general computing server.  
@@ -854,6 +911,7 @@ High performance model.
 **CPU:** `6` **MEM:** `10` **SIZE:** `10` **BW/t:** `48` **Watts:** 312w  
 **Base Price:** $1400 **Base Warranty:** 14.0 days   
 **Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
 3-port general computing server.  
@@ -869,6 +927,7 @@ High performance model with extra bandwidth.
 **CPU:** `24` **MEM:** `16` **SIZE:** `4` **BW/t:** `208` **Watts:** 1125w  
 **Base Price:** $3200 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `SATA35_SLOT`, 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
 4-port high bandwidth computing server.  
@@ -884,6 +943,7 @@ Fiber enabled compute server.
 **CPU:** `24` **MEM:** `14` **SIZE:** `4` **BW/t:** `150` **Watts:** 973w  
 **Base Price:** $2100 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
 3-port high bandwidth computing server.  
@@ -899,6 +959,7 @@ Fiber enabled compute server.
 **CPU:** `32` **MEM:** `16` **SIZE:** `4` **BW/t:** `240` **Watts:** 1223w  
 **Base Price:** $3800 **Base Warranty:** 24.0 days   
 **Port Counts:** 5x `RJ45`, 6x `SATA35_SLOT`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
 5-port high performance computing server.  
@@ -914,6 +975,7 @@ Comes with 6 SATA 3.5" expansion slot.
 **CPU:** `16` **MEM:** `10` **SIZE:** `4` **BW/t:** `52` **Watts:** 429w  
 **Base Price:** $1680 **Base Warranty:** 14.0 days   
 **Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
 2-port general computing server.  
@@ -929,6 +991,7 @@ Comes with 2 SATA 3.5" expansion slot
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `80` **Watts:** 83w  
 **Base Price:** $350 **Base Warranty:** 17.0 days   
 **Port Counts:** 4x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_LOAD_BALANCER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Installed Programs:** [lbrr](programs.md/#lbrr)  
 **Description:**  
@@ -944,6 +1007,7 @@ Traffic from either front ports are alternated between the back ports.
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
 **Base Price:** $500 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
 **Description:**  
 Extra monitor which displays all the DNS-entries mapping, network address assignments and device location.  
 Not rack mountable.  
@@ -953,6 +1017,7 @@ Not rack mountable.
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
 **Base Price:** $1 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
 **Description:**  
 Extra monitor displaying the total population count in the tower, available for sale.  
 Not rack mountable.  
@@ -962,6 +1027,7 @@ Not rack mountable.
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
 **Base Price:** $500 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
 **Merchants:** [Vision Grid<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#vision-grid)  
 **Description:**  
 Extra monitor displaying resident satiety levels, available for sale.  
@@ -972,6 +1038,7 @@ Not rack mountable.
 **CPU:** `10` **MEM:** `10` **SIZE:** `5` **BW/t:** `65` **Watts:** 293w  
 **Base Price:** $4500 **Base Warranty:** 42.0 days   
 **Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
 3-port general computing server.  
@@ -987,6 +1054,7 @@ Mountable on 500px racks.
 **CPU:** `6` **MEM:** `6` **SIZE:** `6` **BW/t:** `24` **Watts:** 108w  
 **Base Price:** $2200 **Base Warranty:** 35.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
 2-port general computing server.  
@@ -1002,6 +1070,7 @@ The gazelle is a durable device that is designed to last long in high load condi
 **CPU:** `4` **MEM:** `4` **SIZE:** `4` **BW/t:** `16` **Watts:** 62w  
 **Base Price:** $950 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
 2-port general computing server.  
@@ -1017,6 +1086,7 @@ Scalable compute.
 **CPU:** `16` **MEM:** `16` **SIZE:** `8` **BW/t:** `104` **Watts:** 423w  
 **Base Price:** $6800 **Base Warranty:** 49.0 days   
 **Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
 3-port general computing server.  
@@ -1032,6 +1102,7 @@ Mountable on 500px racks.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `30` **Watts:** 9w  
 **Base Price:** $40 **Base Warranty:** 21.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1046,6 +1117,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `90` **Watts:** 12w  
 **Base Price:** $160 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1060,6 +1132,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `20` **Watts:** 7w  
 **Base Price:** $30 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1074,6 +1147,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `60` **Watts:** 9w  
 **Base Price:** $120 **Base Warranty:** 28.0 days   
 **Port Counts:** 2x `RJ45`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1088,6 +1162,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `40` **Watts:** 11w  
 **Base Price:** $30 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1102,6 +1177,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `120` **Watts:** 15w  
 **Base Price:** $120 **Base Warranty:** 28.0 days   
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1116,6 +1192,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `30` **Watts:** 9w  
 **Base Price:** $40 **Base Warranty:** 21.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1130,6 +1207,7 @@ Not rack mountable.
 **CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `90` **Watts:** 12w  
 **Base Price:** $160 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `MEDIA_LINE_SIMPLEX`  
 **Merchants:** [Data Liner Corp.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Data Liner Corp.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#data-liner-corp)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
@@ -1144,6 +1222,7 @@ Not rack mountable.
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
 **Base Price:** $1 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
 **Description:**  
 Extra monitor which can be used to monitor the users under your internet service's purview  
 Not rack mountable.  
@@ -1153,6 +1232,7 @@ Not rack mountable.
 **CPU:** `8` **MEM:** `4` **SIZE:** `4` **BW/t:** `125` **Watts:** 41w  
 **Base Price:** $1 **Base Warranty:** 7.0 days   
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
 10-port mixed media network router.  
@@ -1167,6 +1247,7 @@ Suitable for small businesses.
 **CPU:** `32` **MEM:** `32` **SIZE:** `32` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port general computing server.  
 Specs: 32 CPU, 32 memory and 32 storage.  
@@ -1181,6 +1262,7 @@ High performance model.
 **CPU:** `50` **MEM:** `50` **SIZE:** `50` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port general computing server.  
 Specs: 50 CPU, 50 memory and 50 storage.  
@@ -1195,6 +1277,7 @@ High performance model.
 **CPU:** `20` **MEM:** `10` **SIZE:** `8` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `PCIE_SLOT`, 2x `B_3PIN`  
+**Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port computing server.  
 Specs: 20 CPU, 10 memory and 8 storage.  
@@ -1209,6 +1292,7 @@ High performance model.
 **CPU:** `20` **MEM:** `10` **SIZE:** `8` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port computing server.  
 Specs: 20 CPU, 10 memory and 8 storage.  
@@ -1223,6 +1307,7 @@ High performance model.
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
 **Base Price:** $300 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
 **Merchants:** [Vision Grid<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#vision-grid)  
 **Description:**  
 Extra monitor displaying top floor issues, available for sale.  
@@ -1233,6 +1318,7 @@ Not rack mountable.
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
 **Base Price:** $300 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
 **Merchants:** [Vision Grid<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#vision-grid)  
 **Description:**  
 Extra monitor displaying visitor count by domain name, available for sale.  
@@ -1243,6 +1329,7 @@ Not rack mountable.
 **CPU:** `4` **MEM:** `2` **SIZE:** `2` **BW/t:** `450` **Watts:** 138w  
 **Base Price:** $3700 **Base Warranty:** 17.0 days   
 **Port Counts:** 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Zodiac Networks<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#zodiac-networks)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
@@ -1258,6 +1345,7 @@ High bandwidth router for core networking.
 **CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `250` **Watts:** 78w  
 **Base Price:** $1200 **Base Warranty:** 14.0 days   
 **Port Counts:** 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
 **Merchants:** [Zodiac Networks<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#zodiac-networks)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
