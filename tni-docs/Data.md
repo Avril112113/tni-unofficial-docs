@@ -1,5 +1,6 @@
 ---
 title: Data
+nav_order: 20
 permalink: /data/
 ---
 
