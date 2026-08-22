@@ -27,6 +27,8 @@ Request for a new company floor
 **Lore:** Expand your office with a new floor. Giving you more space to place servers, switches, and other equipment.  
 **Description:**  
 Request for a new company floor  
+**Unlock Description:**  
+Will automatically appear on day 5.  
   
   
 ## New company floor #10  
@@ -36,6 +38,8 @@ Request for a new company floor
 **Lore:** Expand your office with a new floor. Giving you more space to place servers, switches, and other equipment.  
 **Description:**  
 Request for a new company floor  
+**Unlock Description:**  
+Will automatically appear on day 10.  
   
   
 ## Support the Cabler's Union  
@@ -54,6 +58,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Lore:** R&D - Rewire and Distribute equally  
 **Description:**  
 Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. This let's them sell their prototypes on the D-Market.  
+**Unlock Description:**  
+Requires 'Support the Cabler's Union (1/3)' to be submitted first.  
   
   
 ## Support the Cabler's Union  
@@ -63,6 +69,8 @@ Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabl
 **Lore:** R&D - Rewire and Distribute equally  
 **Description:**  
 Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. In return, they promise to lobby for cheaper cable prices (30.0% discounts) from the merchants on the DMarket.  
+**Unlock Description:**  
+Requires 'Support the Cabler's Union (1/3)' to be submitted first.  
   
   
 ## Elevator upgrade #10  
@@ -72,6 +80,8 @@ Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabl
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 1250  
+**Unlock Description:**  
+Will automatically appear on day 9.  
   
   
 ## Elevator upgrade #1  
@@ -81,6 +91,8 @@ Decrease elevator wait time by 50.0%. Costs 1250
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 2000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (1/8)' to be submitted first.  
   
   
 ## Elevator upgrade #2  
@@ -90,6 +102,8 @@ Decrease elevator wait time by 50.0%. Costs 2000
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 2500  
+**Unlock Description:**  
+Requires 'Elevator upgrade (2/8)' to be submitted first.  
   
   
 ## Elevator upgrade #3  
@@ -99,6 +113,8 @@ Decrease elevator wait time by 50.0%. Costs 2500
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 3000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (3/8)' to be submitted first.  
   
   
 ## Elevator upgrade #4  
@@ -108,6 +124,8 @@ Decrease elevator wait time by 50.0%. Costs 3000
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 3500  
+**Unlock Description:**  
+Requires 'Elevator upgrade (4/8)' to be submitted first.  
   
   
 ## Elevator upgrade #5  
@@ -117,6 +135,8 @@ Decrease elevator wait time by 50.0%. Costs 3500
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 4000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (5/8)' to be submitted first.  
   
   
 ## Elevator upgrade #6  
@@ -126,6 +146,8 @@ Decrease elevator wait time by 50.0%. Costs 4000
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 4500  
+**Unlock Description:**  
+Requires 'Elevator upgrade (6/8)' to be submitted first.  
   
   
 ## Elevator upgrade #7  
@@ -135,6 +157,8 @@ Decrease elevator wait time by 50.0%. Costs 4500
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 5000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (7/8)' to be submitted first.  
   
   
 ## Liability Insurance  
@@ -143,6 +167,8 @@ Decrease elevator wait time by 50.0%. Costs 5000
 **Lore:** Money solves problems  
 **Description:**  
 SLA breaches no longer ends the game, but comes with a financial penalty of 3000 per breach. Adds a recurring premium cost of 300 per day.  
+**Unlock Description:**  
+Available from day 5.  
   
   
 ## PADU development funding  
@@ -215,6 +241,8 @@ Enterprise grade DNS server.
   
 Produce target's use stack limit is 40 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
+**Unlock Description:**  
+Available from day 5.  
   
   
 ## KEA DHCP Server  
@@ -240,6 +268,8 @@ Automatically assigns network addresses and designated DNS server to network dev
   
 Produce target's use stack limit is 15 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
+**Unlock Description:**  
+Available from day 5.  
   
   
 ## Second monitor  
@@ -266,6 +296,8 @@ The routine can also be used to remove malware when regular program uninstalls d
 **Lore:** State of the art in 1988  
 **Description:**  
 Adds a new "rip" routine to netshell. Allow configuration of automated route discoveries on routers for price of 1500.  
+**Unlock Description:**  
+Requires at least 7 network routers deployed in the tower.  
   
   
 ## High availability research  
@@ -274,6 +306,8 @@ Adds a new "rip" routine to netshell. Allow configuration of automated route dis
 **Lore:** HA HA HA, no DR!  
 **Description:**  
 Adds a new "haconf" routine to netshell. Allow configuration of high-availability setup on ha-enabled routers. Funding costs 600.  
+**Unlock Description:**  
+Requires at least 7 network routers deployed in the tower.  
   
   
 ## Virtual machines research  
@@ -282,6 +316,8 @@ Adds a new "haconf" routine to netshell. Allow configuration of high-availabilit
 **Lore:** carrier has arrived.  
 **Description:**  
 Adds a new "vmconf" routine to netshell. Allow configuration of virtual machines on servers. Funding costs 999.  
+**Unlock Description:**  
+Requires at least 5 compute servers deployed in the tower.  
   
   
 ## NetOps Research  
@@ -311,6 +347,8 @@ The exploit can be optionally turned on/off.
 **Lore:** Hardware liberation day  
 **Description:**  
 The "sftp" routine can now be used to install programs extracted from devices. Costs 1000.  
+**Unlock Description:**  
+Requires 'Remote Backups' to be submitted first.  
   
   
 ## SAN Storage Research  
@@ -319,4 +357,6 @@ The "sftp" routine can now be used to install programs extracted from devices. C
 **Lore:** Eye-Skuzzy: put your storage on the network.  
 **Description:**  
 Adds a new "sanconf" routine to netshell. Allows configuration of Storage Area Network (SAN) arrays for remote storage. Funding costs 600.  
+**Unlock Description:**  
+Requires at least 1 network storage device(s) deployed in the tower.  
   

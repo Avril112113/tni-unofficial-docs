@@ -27,6 +27,8 @@ Permanently reduce daily admin expenses by 30.0% at the cost of upfront 600 paym
 **Lore:** Pain now for gain later  
 **Description:**  
 Permanently reduce daily admin expenses by 30.0% at the cost of upfront 700 payment  
+**Unlock Description:**  
+Requires 'Lean administration (1/6)' to be submitted first.  
   
   
 ## Lean administration #3  
@@ -36,6 +38,8 @@ Permanently reduce daily admin expenses by 30.0% at the cost of upfront 700 paym
 **Lore:** Pain now for gain later  
 **Description:**  
 Permanently reduce daily admin expenses by 30.0% at the cost of upfront 800 payment  
+**Unlock Description:**  
+Requires 'Lean administration (2/6)' to be submitted first.  
   
   
 ## Lean administration #4  
@@ -45,6 +49,8 @@ Permanently reduce daily admin expenses by 30.0% at the cost of upfront 800 paym
 **Lore:** Pain now for gain later  
 **Description:**  
 Permanently reduce daily admin expenses by 30.0% at the cost of upfront 900 payment  
+**Unlock Description:**  
+Requires 'Lean administration (3/6)' to be submitted first.  
   
   
 ## Lean administration #5  
@@ -54,6 +60,8 @@ Permanently reduce daily admin expenses by 30.0% at the cost of upfront 900 paym
 **Lore:** Pain now for gain later  
 **Description:**  
 Permanently reduce daily admin expenses by 30.0% at the cost of upfront 1000 payment  
+**Unlock Description:**  
+Requires 'Lean administration (4/6)' to be submitted first.  
   
   
 ## Lean administration #6  
@@ -63,6 +71,8 @@ Permanently reduce daily admin expenses by 30.0% at the cost of upfront 1000 pay
 **Lore:** Pain now for gain later  
 **Description:**  
 Permanently reduce daily admin expenses by 30.0% at the cost of upfront 1100 payment  
+**Unlock Description:**  
+Requires 'Lean administration (5/6)' to be submitted first.  
   
   
 ## New data center #10  
@@ -72,6 +82,8 @@ Permanently reduce daily admin expenses by 30.0% at the cost of upfront 1100 pay
 **Lore:** It's free (?) real-estate baby!  
 **Description:**  
 Request for a new data center, increases administrative fees by 10.0%.  
+**Unlock Description:**  
+Will automatically appear on day 6.  
   
   
 ## New data center #20  
@@ -81,6 +93,8 @@ Request for a new data center, increases administrative fees by 10.0%.
 **Lore:** It's free (?) real-estate baby!  
 **Description:**  
 Request for a new data center, increases administrative fees by 10.0%.  
+**Unlock Description:**  
+Will automatically appear on day 15.  
   
   
 ## New data center #30  
@@ -90,6 +104,8 @@ Request for a new data center, increases administrative fees by 10.0%.
 **Lore:** It's free (?) real-estate baby!  
 **Description:**  
 Request for a new data center, increases administrative fees by 10.0%.  
+**Unlock Description:**  
+Will automatically appear on day 24.  
   
   
 ## New data center #40  
@@ -99,6 +115,8 @@ Request for a new data center, increases administrative fees by 10.0%.
 **Lore:** It's free (?) real-estate baby!  
 **Description:**  
 Request for a new data center, increases administrative fees by 10.0%.  
+**Unlock Description:**  
+Will automatically appear on day 30.  
   
   
 ## Overvoltage directive  
@@ -116,6 +134,8 @@ Request for a new data center, increases administrative fees by 10.0%.
 **Lore:** POWER OVERWHELMING!  
 **Description:**  
 -30.0% of power outage occurring, +30.0% of power surge occurring. Stamp duty costs 250.  
+**Unlock Description:**  
+Requires 'Overvoltage directive (1/3)' to be submitted first.  
   
   
 ## Overvoltage directive #3  
@@ -125,6 +145,8 @@ Request for a new data center, increases administrative fees by 10.0%.
 **Lore:** POWER OVERWHELMING!  
 **Description:**  
 -30.0% of power outage occurring, +30.0% of power surge occurring. Stamp duty costs 300.  
+**Unlock Description:**  
+Requires 'Overvoltage directive (2/3)' to be submitted first.  
   
   
 ## Undervoltage directive  
@@ -142,6 +164,8 @@ Request for a new data center, increases administrative fees by 10.0%.
 **Lore:** Better dark than magic smoke  
 **Description:**  
 +30.0% of power outage occurring, -30.0% of power surge occurring. Stamp duty costs 250.  
+**Unlock Description:**  
+Requires 'Undervoltage directive (1/3)' to be submitted first.  
   
   
 ## Undervoltage directive #3  
@@ -151,6 +175,8 @@ Request for a new data center, increases administrative fees by 10.0%.
 **Lore:** Better dark than magic smoke  
 **Description:**  
 +30.0% of power outage occurring, -30.0% of power surge occurring. Stamp duty costs 300.  
+**Unlock Description:**  
+Requires 'Undervoltage directive (2/3)' to be submitted first.  
   
   
 ## Support the Cabler's Union  
@@ -169,6 +195,8 @@ This proposal also adds extra cable management features on some MobileOS applica
 **Lore:** R&D - Rewire and Distribute equally  
 **Description:**  
 Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. This let's them sell their prototypes on the D-Market.  
+**Unlock Description:**  
+Requires 'Support the Cabler's Union (1/3)' to be submitted first.  
   
   
 ## Support the Cabler's Union  
@@ -178,6 +206,8 @@ Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabl
 **Lore:** R&D - Rewire and Distribute equally  
 **Description:**  
 Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabling workers. In return, they promise to lobby for cheaper cable prices (30.0% discounts) from the merchants on the DMarket.  
+**Unlock Description:**  
+Requires 'Support the Cabler's Union (1/3)' to be submitted first.  
   
   
 ## Elevator upgrade #10  
@@ -187,6 +217,8 @@ Fund 300 to support the Cabler's Union, an R&D institute for the benefit of cabl
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 1250  
+**Unlock Description:**  
+Will automatically appear on day 9.  
   
   
 ## Elevator upgrade #1  
@@ -196,6 +228,8 @@ Decrease elevator wait time by 50.0%. Costs 1250
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 2000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (1/8)' to be submitted first.  
   
   
 ## Elevator upgrade #2  
@@ -205,6 +239,8 @@ Decrease elevator wait time by 50.0%. Costs 2000
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 2500  
+**Unlock Description:**  
+Requires 'Elevator upgrade (2/8)' to be submitted first.  
   
   
 ## Elevator upgrade #3  
@@ -214,6 +250,8 @@ Decrease elevator wait time by 50.0%. Costs 2500
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 3000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (3/8)' to be submitted first.  
   
   
 ## Elevator upgrade #4  
@@ -223,6 +261,8 @@ Decrease elevator wait time by 50.0%. Costs 3000
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 3500  
+**Unlock Description:**  
+Requires 'Elevator upgrade (4/8)' to be submitted first.  
   
   
 ## Elevator upgrade #5  
@@ -232,6 +272,8 @@ Decrease elevator wait time by 50.0%. Costs 3500
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 4000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (5/8)' to be submitted first.  
   
   
 ## Elevator upgrade #6  
@@ -241,6 +283,8 @@ Decrease elevator wait time by 50.0%. Costs 4000
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 4500  
+**Unlock Description:**  
+Requires 'Elevator upgrade (6/8)' to be submitted first.  
   
   
 ## Elevator upgrade #7  
@@ -250,6 +294,8 @@ Decrease elevator wait time by 50.0%. Costs 4500
 **Lore:** Faster travels for those emergencies  
 **Description:**  
 Decrease elevator wait time by 50.0%. Costs 5000  
+**Unlock Description:**  
+Requires 'Elevator upgrade (7/8)' to be submitted first.  
   
   
 ## Liability Insurance  
@@ -258,6 +304,8 @@ Decrease elevator wait time by 50.0%. Costs 5000
 **Lore:** Money solves problems  
 **Description:**  
 SLA breaches no longer ends the game, but comes with a financial penalty of 3000 per breach. Adds a recurring premium cost of 300 per day.  
+**Unlock Description:**  
+Available from day 5.  
   
   
 ## Refurbhut investment  
@@ -330,6 +378,8 @@ Enterprise grade DNS server.
   
 Produce target's use stack limit is 40 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
+**Unlock Description:**  
+Available from day 5.  
   
   
 ## KEA DHCP Server  
@@ -355,6 +405,8 @@ Automatically assigns network addresses and designated DNS server to network dev
   
 Produce target's use stack limit is 15 compatible uses.  
 Skips consuming from destination if produce target's use stack limit is reached.  
+**Unlock Description:**  
+Available from day 5.  
   
   
 ## Second monitor  
@@ -381,6 +433,8 @@ The routine can also be used to remove malware when regular program uninstalls d
 **Lore:** State of the art in 1988  
 **Description:**  
 Adds a new "rip" routine to netshell. Allow configuration of automated route discoveries on routers for price of 1500.  
+**Unlock Description:**  
+Requires at least 7 network routers deployed in the tower.  
   
   
 ## High availability research  
@@ -389,6 +443,8 @@ Adds a new "rip" routine to netshell. Allow configuration of automated route dis
 **Lore:** HA HA HA, no DR!  
 **Description:**  
 Adds a new "haconf" routine to netshell. Allow configuration of high-availability setup on ha-enabled routers. Funding costs 600.  
+**Unlock Description:**  
+Requires at least 7 network routers deployed in the tower.  
   
   
 ## Virtual machines research  
@@ -397,6 +453,8 @@ Adds a new "haconf" routine to netshell. Allow configuration of high-availabilit
 **Lore:** carrier has arrived.  
 **Description:**  
 Adds a new "vmconf" routine to netshell. Allow configuration of virtual machines on servers. Funding costs 999.  
+**Unlock Description:**  
+Requires at least 5 compute servers deployed in the tower.  
   
   
 ## NetOps Research  
@@ -425,6 +483,8 @@ The exploit can be optionally turned on/off.
 **Lore:** Not enough users?  
 **Description:**  
 Adds a new "botconf" routine to netshell. Allow configuration of bots that can generate visitor traffic to enterprises. Funding costs 665.  
+**Unlock Description:**  
+Requires at least 5 compute servers deployed in the tower.  
   
   
 ## Jailbreaker  
@@ -434,6 +494,8 @@ Adds a new "botconf" routine to netshell. Allow configuration of bots that can g
 **Lore:** Hardware liberation day  
 **Description:**  
 The "sftp" routine can now be used to install programs extracted from devices. Costs 1000.  
+**Unlock Description:**  
+Requires 'Remote Backups' to be submitted first.  
   
   
 ## Power Management Research  
@@ -478,6 +540,8 @@ All items sold by Tenabolt reseller is 20.0% more expensive.
 Support Tenabolt Corporation's effort in building a fusion power plant by funding 1000  
   
 Reduce all Data Center power cost by 20.0%  
+**Unlock Description:**  
+Unavailable if you've lobbied against or legally retaliated against Tenabolt Corporation.  
   
   
 ## Fusion Plant Funding (Phase 2)  
@@ -491,6 +555,9 @@ Support Tenabolt Corporation's effort in building a fusion power plant by fundin
 Reduce all Data Center power cost by 50.0%  
   
 Reduces probability of power outage/surge by 10.0%  
+**Unlock Description:**  
+Requires 'Fusion Plant Funding (Phase 1)' to be submitted first.  
+Unavailable if you've lobbied against or legally retaliated against Tenabolt Corporation.  
   
   
 ## SAN Storage Research  
@@ -499,4 +566,6 @@ Reduces probability of power outage/surge by 10.0%
 **Lore:** Eye-Skuzzy: put your storage on the network.  
 **Description:**  
 Adds a new "sanconf" routine to netshell. Allows configuration of Storage Area Network (SAN) arrays for remote storage. Funding costs 600.  
+**Unlock Description:**  
+Requires at least 1 network storage device(s) deployed in the tower.  
   
