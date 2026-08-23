@@ -8,7 +8,7 @@ import { consume } from '@lit/context';
 import type WaNumberInput from '@awesome.me/webawesome/dist/components/number-input/number-input.js';
 import _ from "lodash";
 
-import { TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format8-spec';
+import { TniJsonDevice, TniJsonDeviceId, TniJsonDeviceLogicController, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonUseConfigId, TniProduceLimitType, TniSocketType, TniTraversalConsumptionPolicy } from 'raw/data-format9-spec';
 import { dataContext } from "./data-context";
 import type { MyCombobox } from 'assets/js/components/my-combobox/my-combobox';
 import { DataCached } from './data-cached';
@@ -119,6 +119,18 @@ function getSumCombinations(numbers: number[], maxLength: number): SumCombinatio
     }));
 }
 
+export function getTotalSanStorageDelta(exclude: DeviceEditor|undefined = undefined): number {
+	const devices = document.getElementById("devices_list")?.querySelectorAll("device-editor") ?? (new NodeList() as NodeListOf<DeviceEditor>);
+	let san_storage = 0;
+	devices.forEach((device_editor) => {
+		if (device_editor == exclude) return;
+
+		san_storage += device_editor.getSanStorageDelta();
+	});
+	return san_storage + EditorConfig.delta_san;
+}
+window.getTotalSanStorageDelta = getTotalSanStorageDelta;
+
 
 interface CustomDeviceExt {
 	CustomData?: CustomDeviceData,
@@ -127,8 +139,16 @@ interface CustomDeviceData {
 	peripherals?: Record<number, TniJsonPlugId>;
 }
 
+interface SataCombinationData {
+	storage: number;
+	values: number[];
+	price: number;
+	plug_ids: string[];
+}
+
 @customElement('device-editor')
 export class DeviceEditor extends LitElement {
+	// This value is used to make sure the element get's re-rendered when the config changes.
 	@consume({ context: editorConfigContext, subscribe: true })
 	@state()
 	private _editorConfig!: typeof EditorConfig;
@@ -140,6 +160,9 @@ export class DeviceEditor extends LitElement {
 	get device_name() { return this._data && this.device_id ? this._data!.devices[this.device_id]?.product_name ?? null : null; }
 	@property({ reflect: true })
 	device_id: TniJsonDeviceId|null = null;
+
+	// Temporary one-shot value for when a new device is selected via the combobox.
+	custom_data: { sata_combination: SataCombinationData }|undefined = undefined;
 
 	get device_data_original() {
 		return this._data && this.device_id ? this._data.devices[this.device_id] ?? null : null;
@@ -224,7 +247,7 @@ export class DeviceEditor extends LitElement {
 				values: combination.values,
 				price: _.sumBy(combination.values, sata_size => this._sata_prices[sata_size]!),
 				plug_ids: combination.values.map(sata_size => this._sata_ids[sata_size]!),
-			}});
+			} as SataCombinationData});
 
 		sata_combinations.sort((a, b) => {
 			return a.price - b.price;
@@ -247,6 +270,71 @@ export class DeviceEditor extends LitElement {
 			});
 		}
 		return [programs_cpu, programs_mem, programs_size];
+	}
+
+	private _getHardwareResources(): { excess_cpu: number, excess_mem: number, excess_sto: number, excess_sto_max: number, satas_size: number, extra_price: number, san_usage: number } {
+		const [programs_cpu, programs_mem, programs_size] = this._getProgramsRequirements(this.device_data?.logic_controller?.installed_programs);
+		
+		const satas_sto_max = this.device_data?.logic_controller
+			? Math.max(...this._getSataCombinations(this._getSataPorts(this.device_data?.logic_controller).length).map(value => value.storage))
+			: 0;
+
+		let satas_size = 0;
+		var extra_price = 0;
+		if (this.device_data?.CustomData?.peripherals) {
+			for (const plug_id of Object.values(this.device_data.CustomData.peripherals)) {
+				const plug = this._data!.plugs[plug_id];
+				if (plug && plug.RemovableStorageDevice) {
+					satas_size += plug.RemovableStorageDevice.available_sto;
+				}
+				if (plug && plug.PeripheralPlug) {
+					extra_price += plug.PeripheralPlug.price;
+				}
+			}
+		}
+
+		const san_sto = this.has_san_initiator ? getTotalSanStorageDelta(this) : 0;
+		
+		const excess_cpu = (this.device_data?.logic_controller?.installed_cpu ?? 0) - programs_cpu;
+		const excess_mem = (this.device_data?.logic_controller?.installed_mem ?? 0) - programs_mem;
+		let excess_sto = (this.device_data?.logic_controller?.installed_sto  ?? 0) + satas_size - programs_size;
+		const excess_sto_max = (this.device_data?.logic_controller?.installed_sto ?? 0) + satas_sto_max - programs_size + san_sto;
+
+		var san_usage = excess_sto < 0 ? Math.max(0, Math.min(-excess_sto, san_sto)) : 0;
+		excess_sto += san_usage;
+
+		return {
+			excess_cpu,
+			excess_mem,
+			excess_sto,
+			excess_sto_max,
+			satas_size,
+			extra_price,
+			san_usage,
+		};
+	}
+
+	public get has_san_target() {
+		return (this.device_data?.logic_controller?.installed_programs ?? []).includes("graph_network_simulation/programs/early_access/storage_and_file_system/san_target.tscn");
+	}
+	public get has_san_initiator() {
+		return (this.device_data?.logic_controller?.installed_programs ?? []).includes("graph_network_simulation/programs/early_access/storage_and_file_system/san_initiator.tscn");
+	}
+
+	public getSanStorageDelta(): number {
+		const {excess_sto, san_usage} = this._getHardwareResources();
+
+		var san_delta = 0;
+
+		if (this.has_san_target) {
+			san_delta += Math.max(0, excess_sto);
+		}
+
+		if (this.has_san_initiator) {
+			san_delta -= san_usage - Math.min(0, excess_sto);
+		}
+
+		return san_delta;
 	}
 
 	static override styles = css`
@@ -400,7 +488,8 @@ export class DeviceEditor extends LitElement {
 
 	override render() {
 		const [programs_cpu, programs_mem, programs_size] = this._getProgramsRequirements(this.device_data?.logic_controller?.installed_programs);
-		
+		const excess_san = getTotalSanStorageDelta();
+
 		let body: TemplateResult|Array<TemplateResult>;
 		if (this.device_id) {
 			const device_original = this.device_data_original;
@@ -429,25 +518,9 @@ export class DeviceEditor extends LitElement {
 					const logic_controller = device.logic_controller;
 
 					const satas_templates = this._generateTemplatesForPeripherals(logic_controller, custom_data);
-					const satas_sto_max = Math.max(...this._getSataCombinations(this._getSataPorts(device.logic_controller).length).map(value => value.storage));
 
-					let satas_size = 0;
-					if (custom_data.peripherals) {
-						for (const plug_id of Object.values(custom_data.peripherals)) {
-							const plug = this._data!.plugs[plug_id];
-							if (plug && plug.RemovableStorageDevice) {
-								satas_size += plug.RemovableStorageDevice.available_sto;
-							}
-							if (plug && plug.PeripheralPlug) {
-								total_price += plug.PeripheralPlug.price;
-							}
-						}
-					}
-
-					const excess_cpu = device.logic_controller.installed_cpu - programs_cpu;
-					const excess_mem = device.logic_controller.installed_mem - programs_mem;
-					const excess_sto = device.logic_controller.installed_sto + satas_size - programs_size;
-					const excess_sto_max = device.logic_controller.installed_sto + satas_sto_max - programs_size;
+					const {excess_cpu, excess_mem, excess_sto, excess_sto_max, satas_size, extra_price, san_usage} = this._getHardwareResources();
+					total_price += extra_price;
 
 					parts.push(html`
 						<div class="flex-wrap-gap">
@@ -520,9 +593,10 @@ export class DeviceEditor extends LitElement {
 							<div class="flex-wrap-gap" style="align-items: center;">
 								<h2 style="margin: 0;">Programs</h2>
 								<div class="flex-gap flex-swap-2-3" style="flex-grow: 1; margin: 0; text-align: center; align-items: center;">
-									<p style="color: ${programs_cpu > logic_controller.installed_cpu ? 'red' : ''}; margin: 0;">CPU: ${programs_cpu}</p>
-									<p style="color: ${programs_mem > logic_controller.installed_mem ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
-									<p style="color: ${programs_size > (logic_controller.installed_sto + satas_size) ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
+									<p style="color: ${excess_cpu < 0 ? 'red' : ''}; margin: 0;">CPU: ${programs_cpu}</p>
+									<p style="color: ${excess_mem < 0 ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
+									<p style="color: ${excess_sto < 0 ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
+									${san_usage > 0 ? html`<p style="color: ${excess_san < 0 ? 'red' : ''}; margin: 0;">SAN Use: ${san_usage}</p>` : ""}
 
 									${logic_controller_original.installed_programs.length > 0 && !logic_controller_original.installed_programs.every(v => logic_controller.installed_programs.includes(v) ?? true) ? html`
 										<p class="some-text" style="color: var(--wa-color-orange-90);"><small>Jailbreaker<br>Required</small></p>
@@ -586,11 +660,13 @@ export class DeviceEditor extends LitElement {
 
 		let devices_dropdown_templates: TemplateResult[] = [];
 		if (this._data) {
-			const dropdownItemTemplate = (device_id: TniJsonDeviceId, color: string, details: TemplateResult[]) => {
+			const dropdownItemTemplate = (device_id: TniJsonDeviceId, color: string, details: TemplateResult[], sata_combination: SataCombinationData|null = null) => {
 				const device = this._data!.devices[device_id]!;
 				const available = EditorConfig.current_day <= -1 || this._data?.isAvailableToday(device_id, EditorConfig.current_day);
 				return html`
-					<wa-dropdown-item value=${device_id} style="color: ${color}; text-decoration-line: ${available ? '' : 'line-through'};">
+					<wa-dropdown-item value=${device_id} style="color: ${color}; text-decoration-line: ${available ? '' : 'line-through'};"
+						.custom_data=${{ sata_combination }}
+					>
 						<span>${device.product_name}</span>
 						<br class="device-dropdown-item-img-br">
 						<img src="${window.SiteConfig!.baseUrl}/tni-docs/assets/devices/${device?.product_name.replaceAll(/[\.\/\\]/g, "")}.webp" style="height: 1em; max-width: 100%;" />
@@ -648,18 +724,27 @@ export class DeviceEditor extends LitElement {
 					const excess_cpu = device.logic_controller.installed_cpu - programs_cpu;
 					const excess_mem = device.logic_controller.installed_mem - programs_mem;
 					let excess_sto = device.logic_controller.installed_sto - programs_size;
-					let sata_combination = null;
+					let sata_combination: SataCombinationData|null = null;
 					if (excess_sto < 0) {
 						const sata_combinations = this._getSataCombinations(this._getSataPorts(device.logic_controller).length);
 						for (let i = 0; i < sata_combinations.length; i++) {
 							const combination = sata_combinations[i]!;
-							if (excess_sto + combination.storage >= 0) {
-								excess_sto = excess_sto + combination.storage;
+							if (combination.storage <= 0)
+								continue;
+							if (!sata_combination || excess_sto + combination.storage > excess_sto + sata_combination.storage) {
 								sata_combination = combination;
-								break;
+								if (excess_sto >= 0)
+									break;
 							}
 						}
 					}
+					if (sata_combination)
+						excess_sto = excess_sto + sata_combination.storage;
+
+					const san_sto = this.has_san_initiator ? getTotalSanStorageDelta(this) : 0;
+					let san_usage = excess_sto < 0 ? Math.max(0, Math.min(-excess_sto, san_sto)) : 0;
+					excess_sto += san_usage;
+
 					const any_lacking = excess_cpu < 0 || excess_mem < 0 || excess_sto < 0;
 					const score = IRRELEVANT_DEVICES.has(device_id) ? -Infinity
 						: any_lacking ? Math.min(0, excess_cpu) + Math.min(0, excess_mem) + Math.min(0, excess_sto)
@@ -678,12 +763,18 @@ export class DeviceEditor extends LitElement {
 							SATA: ${sata_combination.values.map(numFormat.format).join(",")}
 						</div>`);
 					}
+					if (san_usage > 0) {
+						details.push(html`<div>
+							SAN: ${san_usage}
+						</div>`);
+					}
 
 					const color =
 						IRRELEVANT_DEVICES.has(device_id) ? "var(--wa-color-gray)"
 						: any_lacking ? "var(--wa-color-red-80)"
+						: san_usage > 0 ? "var(--wa-color-yellow-90)"
 						: "";
-					device_templates_scored.push([score, total_price, dropdownItemTemplate(device_id, color, details)])
+					device_templates_scored.push([score, total_price, dropdownItemTemplate(device_id, color, details, sata_combination)])
 				}
 				devices_dropdown_templates = device_templates_scored.sort(([a_score, a_price, a_template], [b_score, b_price, b_template]) => {
 					// Sorted as; zero -> near zero -> negative 0 -> negative near zero
@@ -704,7 +795,10 @@ export class DeviceEditor extends LitElement {
 				<div slot="header">
 					<div class="header-device flex-wrap-gap">
 						<my-combobox size="l" class="header-device-combobox ${available ? '' : 'not-available-id'}" value=${this.device_id ?? ""} input_value=${this.device_name ?? ""}
-							@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { this.device_id = e.detail.value ?? null; }}
+							@my-value-confirm=${(e: CustomEvent<MyCombobox>) => {
+								this.device_id = e.detail.value ?? null;
+								this.custom_data = e.detail.custom_data;
+							}}
 						>
 							<wa-icon name="server" slot="start"></wa-icon>
 							${devices_dropdown_templates}
@@ -1002,6 +1096,11 @@ export class DeviceEditor extends LitElement {
 		super.updated(changedProperties);
 
 		this.dispatchEvent(new Event('device-editor-updated', {bubbles: true, composed: true}));
+		EditorConfig.delta_san = EditorConfig.delta_san;
+	}
+
+	override disconnectedCallback(): void {
+		EditorConfig.delta_san = EditorConfig.delta_san;
 	}
 
 	// `previousDeviceId` should be null to enforce a full reset.
@@ -1013,32 +1112,18 @@ export class DeviceEditor extends LitElement {
 			this.device_data = structuredClone(data_original);
 			this.device_data.CustomData = { };
 
-			if (old_data && old_data.logic_controller && data_original.logic_controller) {
-				const [programs_cpu, programs_mem, programs_size] = this._getProgramsRequirements(old_data.logic_controller.installed_programs);
-				let excess_sto = data_original.logic_controller.installed_sto - programs_size;
-				if (excess_sto < 0) {
-					let sata_combination = null;
-					const sata_ports = this._getSataPorts(data_original.logic_controller)
-					if (sata_ports.length > 0) {
-						const sata_combinations = this._getSataCombinations(sata_ports.length);
-						for (let i = 0; i < sata_combinations.length; i++) {
-							const combination = sata_combinations[i]!;
-							if (excess_sto + combination.storage >= 0) {
-								excess_sto = excess_sto + combination.storage;
-								sata_combination = combination;
-								break;
-							}
-						}
-						if (sata_combination) {
-							this.device_data.CustomData.peripherals = {};
-							for (let i = 0; i < sata_combination.plug_ids.length; i++) {
-								const plug_id = sata_combination.plug_ids[i]!;
-								this.device_data.CustomData.peripherals[sata_ports[i]!] = plug_id;
-							}
-						}
+			if (old_data && old_data.logic_controller && data_original.logic_controller && this.custom_data?.sata_combination) {
+				let sata_combination = this.custom_data.sata_combination;
+				const sata_ports = this._getSataPorts(data_original.logic_controller)
+				if (sata_ports.length > 0) {
+					this.device_data.CustomData.peripherals = {};
+					for (let i = 0; i < sata_combination.plug_ids.length; i++) {
+						const plug_id = sata_combination.plug_ids[i]!;
+						this.device_data.CustomData.peripherals[sata_ports[i]!] = plug_id;
 					}
 				}
 			}
+			this.custom_data = undefined;
 
 			if (this.device_data_partial) {
 				_.merge(this.device_data, this.device_data_partial);
@@ -1087,5 +1172,8 @@ export class DeviceEditor extends LitElement {
 declare global {
 	interface HTMLElementTagNameMap {
 		"device-editor": DeviceEditor;
+	}
+	interface Window {
+		"getTotalSanStorageDelta": typeof getTotalSanStorageDelta;
 	}
 }

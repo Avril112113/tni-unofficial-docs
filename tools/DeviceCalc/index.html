@@ -44,6 +44,10 @@ permalink: /tools/DeviceCalc/
 		padding-top: 4px;
 		padding-bottom: 4px;
 	}
+
+	.input-changed::part(input) {
+		color: var(--wa-color-yellow);
+	}
 </style>
 <script type="module" src="{{ site.baseurl }}/assets/js/DeviceCalc.js"></script>
 
@@ -62,7 +66,7 @@ permalink: /tools/DeviceCalc/
 		- Organize the code, it's a bit of a mess... <br>
 		- Use stack limits account for multiple of same program, which must use vmconf <br>
 		- Don't remove programs if matches default program <br>
-		- SAN storage <br>
+		- Excess resources <br>
 	</wa-accordion-item>
 </wa-accordion>
 
@@ -77,6 +81,9 @@ permalink: /tools/DeviceCalc/
 	<div style="display: flex; flex-wrap: wrap; gap: var(--wa-content-spacing); padding: var(--wa-content-spacing); padding-bottom: 0;">
 		<wa-number-input id="config_current_day" label="Current Day" appearance="filled-outlined" style="max-width: 160px;"
 			onchange="EditorConfig.current_day = parseInt(this.value);"
+		></wa-number-input>
+		<wa-number-input id="config_excess_san" label="SAN Storage" appearance="filled-outlined" style="max-width: 160px;" value="0"
+			onchange="EditorConfig.delta_san = parseInt(this.value) - (getTotalSanStorageDelta() - EditorConfig.delta_san);"
 		></wa-number-input>
 	</div>
 

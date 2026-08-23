@@ -40,6 +40,9 @@ export class MyCombobox extends LitElement {
 	@property({ type: String, reflect: true })
 	input_value: string = "";
 
+	@property()
+	custom_data: any = undefined;
+
 	@property({ attribute: true, reflect: true })
 	size: 'xs' | 's' | 'm' | 'l' | 'xl' | 'small' | 'medium' | 'large' = 'm';
 
@@ -249,6 +252,8 @@ export class MyCombobox extends LitElement {
 		this.input_value = this.use_value_over_label
 			? selected_item.value
 			: this._getDropdownItemLabel(selected_item).trim();
+		
+		this.custom_data = (selected_item as WaDropdownItem&{custom_data: any}).custom_data;
 		
 		const items = this.dropdown.querySelectorAll<HTMLElement>('wa-dropdown-item');
 		items.forEach(item => item.style.display = '');

@@ -1,4 +1,4 @@
-import { TniJsonBalanceCalc, TniJsonData, TniJsonDataEnums, TniJsonDevice, TniJsonDeviceId, TniJsonDeviceOutlet, TniJsonId, TniJsonLinkSizing, TniJsonLinkType, TniJsonLocation, TniJsonLocationPiece, TniJsonMerchant, TniJsonMerchantId, TniJsonMerchantListing, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonProposalPack, TniJsonProposalPackId, TniJsonThemeConfig, TniJsonThemeConfigId, TniJsonUseConfig, TniJsonUseConfigId, TniJsonUser, TniJsonUserId, TniSocketType } from "raw/data-format8-spec";
+import { TniJsonBalanceCalc, TniJsonData, TniJsonDataEnums, TniJsonDevice, TniJsonDeviceId, TniJsonDeviceOutlet, TniJsonId, TniJsonLinkSizing, TniJsonLinkType, TniJsonLocation, TniJsonLocationPiece, TniJsonMerchant, TniJsonMerchantId, TniJsonMerchantListing, TniJsonPlug, TniJsonPlugId, TniJsonProgram, TniJsonProgramId, TniJsonProposalPack, TniJsonProposalPackId, TniJsonThemeConfig, TniJsonThemeConfigId, TniJsonUseConfig, TniJsonUseConfigId, TniJsonUser, TniJsonUserId, TniSocketType } from "raw/data-format9-spec";
 
 type integer = number;
 

@@ -1,6 +1,6 @@
 import LZString from 'lz-string';
 
-import { TniJsonData } from "raw/data-format8-spec";
+import { TniJsonData } from "raw/data-format9-spec";
 import { dataProvider } from "./data-context.js";
 import { DataCached } from './data-cached.js';
 
