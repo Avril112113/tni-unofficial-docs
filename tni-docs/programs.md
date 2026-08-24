@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.1
+GENERATED FOR TNI VERSION 0.12.3
 
 - TOC
 {:toc}
@@ -542,7 +542,7 @@ Capacity is lost if the path to the target is lost.
   
 ## san-target  
 **CPU:** 2 **MEM:** 5 **SIZE:** 8  
-**Initiator Seen TTL:** 3  
+**Initiator Seen TTL:** 32  
   
   
 **Description:**  

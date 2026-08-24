@@ -6,7 +6,7 @@ permalink: /data/locations
 
 # Locations / Floors
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.1
+GENERATED FOR TNI VERSION 0.12.3
 
 **NOTE:**  
 Many floors/locations are not listed here due to irrelevance.  
