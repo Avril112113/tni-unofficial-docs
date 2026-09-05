@@ -6,7 +6,7 @@ permalink: /data/proposals/Tenabolt Prometheus
 
 # Proposals for Tenabolt Prometheus
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.3
+GENERATED FOR TNI VERSION 0.12.5
 
 - TOC
 {:toc}
@@ -335,7 +335,7 @@ Unlocks the 'cron', 'try' and 'notify' routines on NetShell.
 **Unlock day:** 0  
 **Lore:** Scans too shall pass.  
 **Description:**  
-Allows netsh and autograph scans to bypass all router rules for a cost of 1200.  
+Allows netsh scans and autograph scans to bypass all router rules for a cost of 1200.  
   
 The exploit can be optionally turned on/off.  
   

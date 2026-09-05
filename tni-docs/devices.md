@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.3
+GENERATED FOR TNI VERSION 0.12.5
 
 - TOC
 {:toc}
@@ -125,7 +125,7 @@ Mountable on 930px racks.
 **Base Price:** $650 **Base Warranty:** 14.0 days   
 **Port Counts:** 4x `RJ45`, 4x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 8-port mixed media network managed switch. Supports VLAN port tagging.  
@@ -233,7 +233,7 @@ Enterprise grade equipment.
 **Base Price:** $1630 **Base Warranty:** 28.0 days   
 **Port Counts:** 30x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 30-port ethernet managed network switch. Supports VLAN port tagging.  
@@ -496,7 +496,7 @@ Mountable on 500px racks.
 **Base Price:** $325 **Base Warranty:** 16.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 8-port ethernet network router.  
@@ -832,6 +832,26 @@ Not rack mountable.
 Comes with 5 SATA 3.5" expansion slots.  
   
   
+## golonys-montable<img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-montable.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-montable.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `2` **MEM:** `5` **SIZE:** `12` **BW/t:** `60` **Watts:** 53w  
+**Base Price:** $725 **Base Warranty:** 16.0 days   
+**Port Counts:** 3x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_STORAGE`  
+**Merchants:** [Golonys Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#golonys-ltd)  
+**Installed Programs:** [san-target](programs.md/#san-target)  
+**Ownership Unlocks:** [san-initiator](programs.md/#san-initiator)  
+**Description:**  
+3-port storage area network (SAN) array.  
+Specs: 2 CPU, 5 memory and 12 storage.  
+Handles up to 60 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 53W.  
+Mountable on 500px racks.  
+Comes with 3 SATA 3.5" expansion slots.  
+Acts as a SAN target to provide remote storage over the network.  
+Requires a SAN initiator program on another device to mount its storage.  
+  
+  
 ## ICC1<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 19w  
 **Base Price:** $160 **Base Warranty:** 8.0 days   
@@ -865,11 +885,11 @@ Homelab equipment.
   
   
 ## LoadTester Bob<img src="{{ site.baseurl }}/tni-docs/assets/devices/LoadTester Bob.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/LoadTester Bob.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 203w  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6` **Watts:** 203w  
 **Base Price:** $1000 **Base Warranty:** 4.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `DEFAULT`  
-**Installed Programs:** [dnsspam](programs.md/#dnsspam), [dnsspam](programs.md/#dnsspam)  
+**Installed Programs:** [dnsspam](programs.md/#dnsspam), [loadtester2](programs.md/#loadtester2)  
 **Description:**  
 1-port ethernet load tester.  
 Not rack mountable.  
@@ -960,14 +980,14 @@ Fiber enabled compute server.
 **Base Price:** $3800 **Base Warranty:** 24.0 days   
 **Port Counts:** 5x `RJ45`, 6x `SATA35_SLOT`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
-**Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
+**Merchants:** [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
 5-port high performance computing server.  
 Specs: 32 CPU, 16 memory and 4 storage.  
 Handles up to 240 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 1223W.  
-Not rack mountable.  
+Mountable on 930px racks.  
 Comes with 6 SATA 3.5" expansion slot.  
   
   
@@ -1071,7 +1091,7 @@ The gazelle is a durable device that is designed to last long in high load condi
 **Base Price:** $950 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
-**Merchants:** [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
+**Merchants:** [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
 2-port general computing server.  
 Specs: 4 CPU, 4 memory and 4 storage.  
@@ -1330,7 +1350,7 @@ Not rack mountable.
 **Base Price:** $3700 **Base Warranty:** 17.0 days   
 **Port Counts:** 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Zodiac Networks<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#zodiac-networks)  
+**Merchants:** [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Zodiac Networks<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Zodiac Networks.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#zodiac-networks)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 4-port core router.  

@@ -6,7 +6,7 @@ permalink: /data/proposals/Standard
 
 # Proposals for Standard
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.3
+GENERATED FOR TNI VERSION 0.12.5
 
 - TOC
 {:toc}
@@ -316,6 +316,39 @@ Available from day 5.
 Fund 555 to support the opening of the RefurbHut merchant, which provides cheap refurbished (no warranty) devices.  
   
   
+## Refurbhut expansion #1  
+**Depends On:** [Refurbhut investment](#refurbhut-investment)  
+**Price:** $100  
+**Unlock day:** 0  
+**Lore:** As long as it works...  
+**Description:**  
+Unlock more cheaper but used routers at the RefurbHut. Funding costs 100.  
+**Unlock Description:**  
+Requires 'Refurbhut investment' to be submitted first.  
+  
+  
+## Refurbhut expansion #1  
+**Depends On:** [Refurbhut investment](#refurbhut-investment)  
+**Price:** $100  
+**Unlock day:** 0  
+**Lore:** As long as it works...  
+**Description:**  
+Unlock more cheaper but used servers at the RefurbHut. Funding costs 100.  
+**Unlock Description:**  
+Requires 'Refurbhut investment' to be submitted first.  
+  
+  
+## Refurbhut expansion #1  
+**Depends On:** [Refurbhut investment](#refurbhut-investment)  
+**Price:** $100  
+**Unlock day:** 0  
+**Lore:** As long as it works...  
+**Description:**  
+Unlock more cheaper but used switch at the RefurbHut. Funding costs 100.  
+**Unlock Description:**  
+Requires 'Refurbhut investment' to be submitted first.  
+  
+  
 ## PADU development funding  
 **Price:** $300  
 **Unlock day:** 0  
@@ -472,7 +505,7 @@ Unlocks the 'cron', 'try' and 'notify' routines on NetShell.
 **Unlock day:** 0  
 **Lore:** Scans too shall pass.  
 **Description:**  
-Allows netsh and autograph scans to bypass all router rules for a cost of 1200.  
+Allows netsh scans and autograph scans to bypass all router rules for a cost of 1200.  
   
 The exploit can be optionally turned on/off.  
   

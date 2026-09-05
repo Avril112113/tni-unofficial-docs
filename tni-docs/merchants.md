@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.3
+GENERATED FOR TNI VERSION 0.12.5
 
 - TOC
 {:toc}
@@ -981,6 +981,21 @@ Golonys Ltd manages and operates a wide portfolio of IT devices tower-wide.
    Acts as a SAN target to provide remote storage over the network.  
    Requires a SAN initiator program on another device to mount its storage.  
    16-day device warranty.  
+- **[golonys-montable<img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-montable.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-montable.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#golonys-montable)**  
+  **Listing Starts** day 0  
+  **Price:** $725  
+  **Warranty:** 16 days  
+  **Description:**  
+   3-port storage area network (SAN) array.  
+   Specs: 2 CPU, 5 memory and 12 storage.  
+   Handles up to 60 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 53W.  
+   Mountable on 500px racks.  
+   Comes with 3 SATA 3.5" expansion slots.  
+   Acts as a SAN target to provide remote storage over the network.  
+   Requires a SAN initiator program on another device to mount its storage.  
+   16-day device warranty.  
   
   
 ## Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>  
@@ -1175,6 +1190,79 @@ Cheap refurbished boxes for sale. No warranties!
    Power consumption: 37W.  
    Mountable on 930px racks.  
    This device is well sought after in the second hand market.  
+   3-day device warranty.  
+- **[Savannah Meerkat<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Meerkat.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Meerkat.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#savannah-meerkat)**  
+  **Listing Starts** day 0  
+  **Price:** $285 <span style="color:gray;font-size:85%;white-space:nowrap;">$665 under the base price of $950</span>  
+  **Warranty:** 3 days  
+  **Description:**  
+   2-port general computing server.  
+   Specs: 4 CPU, 4 memory and 4 storage.  
+   Handles up to 16 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 62W.  
+   Not rack mountable.  
+   Scalable compute.  
+   3-day device warranty.  
+- **[MacroHard Megalith SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Megalith SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Megalith SRV.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-megalith-srv)**  
+  **Listing Starts** day 0  
+  **Price:** $1140 <span style="color:gray;font-size:85%;white-space:nowrap;">$2660 under the base price of $3800</span>  
+  **Warranty:** 3 days  
+  **Description:**  
+   5-port high performance computing server.  
+   Specs: 32 CPU, 16 memory and 4 storage.  
+   Handles up to 240 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 1223W.  
+   Mountable on 930px racks.  
+   Comes with 6 SATA 3.5" expansion slot.  
+   3-day device warranty.  
+- **[Blade-M44<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M44.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade-M44.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade-m44)**  
+  **Listing Starts** day 0  
+  **Price:** $195 <span style="color:gray;font-size:85%;white-space:nowrap;">$455 under the base price of $650</span>  
+  **Warranty:** 3 days  
+  **Description:**  
+   8-port mixed media network managed switch. Supports VLAN port tagging.  
+   Handles up to 168 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 28W.  
+   Mountable on 630px racks.  
+   3-day device warranty.  
+- **[Blade30<img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Blade30.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#blade30)**  
+  **Listing Starts** day 0  
+  **Price:** $489 <span style="color:gray;font-size:85%;white-space:nowrap;">$1141 under the base price of $1630</span>  
+  **Warranty:** 3 days  
+  **Description:**  
+   30-port ethernet managed network switch. Supports VLAN port tagging.  
+   Handles up to 540 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 89W.  
+   Mountable on 930px racks.  
+   Enterprise grade equipment. Consumes high power to support throughput.  
+   3-day device warranty.  
+- **[Disco Milli<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Milli.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#disco-milli)**  
+  **Listing Starts** day 0  
+  **Price:** $97 <span style="color:gray;font-size:85%;white-space:nowrap;">$228 under the base price of $325</span>  
+  **Warranty:** 3 days  
+  **Description:**  
+   8-port ethernet network router.  
+   Handles up to 80 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 27W.  
+   Mountable on 630px racks.  
+   Economical model for medium sized enterprises.  
+   3-day device warranty.  
+- **[Zodianet Beam Router<img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Beam Router.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Beam Router.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#zodianet-beam-router)**  
+  **Listing Starts** day 0  
+  **Price:** $1110 <span style="color:gray;font-size:85%;white-space:nowrap;">$2590 under the base price of $3700</span>  
+  **Warranty:** 3 days  
+  **Description:**  
+   4-port core router.  
+   Handles up to 450 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 138W.  
+   Mountable on 630px racks.  
+   High bandwidth router for core networking.  
    3-day device warranty.  
   
   
@@ -1440,7 +1528,7 @@ The Server Shoppe is your authorized distributor for Macrohard products.
    Handles up to 240 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 1223W.  
-   Not rack mountable.  
+   Mountable on 930px racks.  
    Comes with 6 SATA 3.5" expansion slot.  
    24-day device warranty.  
 - **[MacroHard NLB2<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard NLB2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard NLB2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#macrohard-nlb2)**  
