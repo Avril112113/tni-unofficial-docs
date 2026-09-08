@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.5
+GENERATED FOR TNI VERSION 0.12.6
 
 - TOC
 {:toc}
@@ -22,7 +22,7 @@ GENERATED FOR TNI VERSION 0.12.5
 ## Avex Secretary<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Secretary.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Secretary.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `23` **MEM:** `13` **SIZE:** `10` **BW/t:** `168` **Watts:** 953w  
 **Base Price:** $5150 **Base Warranty:** 35.0 days   
-**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
@@ -40,7 +40,7 @@ Spacious and efficient. Perfect for businesses with growing data needs.
 ## Avex Skua<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Skua.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Skua.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `12` **MEM:** `16` **SIZE:** `4` **BW/t:** `90` **Watts:** 723w  
 **Base Price:** $3000 **Base Warranty:** 21.0 days   
-**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
@@ -58,7 +58,7 @@ Powerful and responsive. Perfect for businesses with intensive operations.
 ## Avex Sparrow<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Sparrow.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Sparrow.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `3` **MEM:** `4` **SIZE:** `8` **BW/t:** `21` **Watts:** 88w  
 **Base Price:** $1100 **Base Warranty:** 14.0 days   
-**Port Counts:** 3x `RJ45`, 1x `B_3PIN`  
+**Port Counts:** 3x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
@@ -74,7 +74,7 @@ Compact and cost-efficient. Perfect for businesses in early deployment
 ## Avex Starling<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Starling.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Starling.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `7` **MEM:** `6` **SIZE:** `7` **BW/t:** `39` **Watts:** 191w  
 **Base Price:** $1150 **Base Warranty:** 14.0 days   
-**Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
+**Port Counts:** 3x `RJ45`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
@@ -90,7 +90,7 @@ Balanced and dependable. Perfect for businesses in steady expansion.
 ## Avex Swallow<img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Swallow.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Avex Swallow.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `4` **MEM:** `8` **SIZE:** `12` **BW/t:** `38` **Watts:** 200w  
 **Base Price:** $3000 **Base Warranty:** 21.0 days   
-**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Avex Tech<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Avex Tech.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#avex-tech)  
 **Description:**  
@@ -309,7 +309,7 @@ This device is well sought after in the second hand market.
 ## Cortex 20<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 20.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 20.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `20` **MEM:** `20` **SIZE:** `3` **BW/t:** `180` **Watts:** 1018w  
 **Base Price:** $4050 **Base Warranty:** 35.0 days   
-**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
@@ -325,7 +325,7 @@ Suitable for medium teams.
 ## Cortex 28<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 28.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 28.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `28` **MEM:** `24` **SIZE:** `4` **BW/t:** `302` **Watts:** 1323w  
 **Base Price:** $6900 **Base Warranty:** 35.0 days   
-**Port Counts:** 2x `RJ45`, 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 3x `FIBER_OPTIC_SC`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
@@ -341,7 +341,7 @@ Suitable for enterprise team.
 ## Cortex 8<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 8.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex 8.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `8` **MEM:** `8` **SIZE:** `2` **BW/t:** `36` **Watts:** 186w  
 **Base Price:** $1250 **Base Warranty:** 28.0 days   
-**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
@@ -357,7 +357,7 @@ Suitable for light office use
 ## Cortex Espresso<img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex Espresso.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Cortex Espresso.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `16` **MEM:** `12` **SIZE:** `3` **BW/t:** `100` **Watts:** 718w  
 **Base Price:** $3050 **Base Warranty:** 28.0 days   
-**Port Counts:** 1x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Port Counts:** 1x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Cortex Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cortex Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#cortex-org)  
 **Description:**  
@@ -855,7 +855,7 @@ Requires a SAN initiator program on another device to mount its storage.
 ## ICC1<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 19w  
 **Base Price:** $160 **Base Warranty:** 8.0 days   
-**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `B_3PIN`  
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
 **Description:**  
@@ -871,7 +871,7 @@ Homelab equipment.
 ## ICC2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `12` **Watts:** 35w  
 **Base Price:** $345 **Base Warranty:** 8.0 days   
-**Port Counts:** 2x `RJ45`, 1x `SATA35_SLOT`, 1x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 1x `SATA35_SLOT`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
 **Description:**  
@@ -898,7 +898,7 @@ Not rack mountable.
 ## MacroHard Boulder SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder SRV.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `4` **MEM:** `4` **SIZE:** `6` **BW/t:** `16` **Watts:** 72w  
 **Base Price:** $450 **Base Warranty:** 14.0 days   
-**Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
@@ -914,7 +914,7 @@ Suitable for small businesses.
 ## MacroHard Boulder+ SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder+ SRV.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `6` **MEM:** `8` **SIZE:** `8` **BW/t:** `28` **Watts:** 161w  
 **Base Price:** $850 **Base Warranty:** 14.0 days   
-**Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
@@ -930,7 +930,7 @@ High performance model.
 ## MacroHard Boulder++ SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder++ SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Boulder++ SRV.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `6` **MEM:** `10` **SIZE:** `10` **BW/t:** `48` **Watts:** 312w  
 **Base Price:** $1400 **Base Warranty:** 14.0 days   
-**Port Counts:** 3x `RJ45`, 2x `B_3PIN`  
+**Port Counts:** 3x `RJ45`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
@@ -946,7 +946,7 @@ High performance model with extra bandwidth.
 ## MacroHard Ledge Three SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Three SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Three SRV.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `24` **MEM:** `16` **SIZE:** `4` **BW/t:** `208` **Watts:** 1125w  
 **Base Price:** $3200 **Base Warranty:** 21.0 days   
-**Port Counts:** 2x `SATA35_SLOT`, 4x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Port Counts:** 2x `SATA35_SLOT`, 4x `FIBER_OPTIC_SC`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
@@ -962,7 +962,7 @@ Fiber enabled compute server.
 ## MacroHard Ledge Two SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Two SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Ledge Two SRV.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `24` **MEM:** `14` **SIZE:** `4` **BW/t:** `150` **Watts:** 973w  
 **Base Price:** $2100 **Base Warranty:** 21.0 days   
-**Port Counts:** 2x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 2x `B_3PIN`  
+**Port Counts:** 2x `SATA35_SLOT`, 3x `FIBER_OPTIC_SC`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
@@ -978,7 +978,7 @@ Fiber enabled compute server.
 ## MacroHard Megalith SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Megalith SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Megalith SRV.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `32` **MEM:** `16` **SIZE:** `4` **BW/t:** `240` **Watts:** 1223w  
 **Base Price:** $3800 **Base Warranty:** 24.0 days   
-**Port Counts:** 5x `RJ45`, 6x `SATA35_SLOT`, 2x `B_3PIN`  
+**Port Counts:** 5x `RJ45`, 6x `SATA35_SLOT`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
@@ -994,7 +994,7 @@ Comes with 6 SATA 3.5" expansion slot.
 ## MacroHard Monolith SRV<img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Monolith SRV.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/MacroHard Monolith SRV.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `16` **MEM:** `10` **SIZE:** `4` **BW/t:** `52` **Watts:** 429w  
 **Base Price:** $1680 **Base Warranty:** 14.0 days   
-**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 2x `SATA35_SLOT`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
@@ -1057,7 +1057,7 @@ Not rack mountable.
 ## Savannah Aardvark<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Aardvark.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Aardvark.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `10` **MEM:** `10` **SIZE:** `5` **BW/t:** `65` **Watts:** 293w  
 **Base Price:** $4500 **Base Warranty:** 42.0 days   
-**Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
@@ -1073,7 +1073,7 @@ Mountable on 500px racks.
 ## Savannah Gazelle<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Gazelle.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `6` **MEM:** `6` **SIZE:** `6` **BW/t:** `24` **Watts:** 108w  
 **Base Price:** $2200 **Base Warranty:** 35.0 days   
-**Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
 **Description:**  
@@ -1089,7 +1089,7 @@ The gazelle is a durable device that is designed to last long in high load condi
 ## Savannah Meerkat<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Meerkat.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Meerkat.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `4` **MEM:** `4` **SIZE:** `4` **BW/t:** `16` **Watts:** 62w  
 **Base Price:** $950 **Base Warranty:** 21.0 days   
-**Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
@@ -1105,7 +1105,7 @@ Scalable compute.
 ## Savannah Wildebeest<img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Wildebeest.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Savannah Wildebeest.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `16` **MEM:** `16` **SIZE:** `8` **BW/t:** `104` **Watts:** 423w  
 **Base Price:** $6800 **Base Warranty:** 49.0 days   
-**Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 2x `B_3PIN`  
+**Port Counts:** 2x `RJ45`, 1x `FIBER_OPTIC_SC`, 2x `SATA35_SLOT`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
