@@ -18,12 +18,14 @@ GENERATED FOR TNI VERSION 0.12.5
 - "(FRAGMENTED_USE_ALLOWED)" - Can consume from multiple sources. Some USE's can be wasted if the total is not found.  
 - "on destination device" - The produced USE is given to the device it consumed from instead of the device running the program.  
 - "round(...)" - Rounds to the nearest whole number, with halfway cases rounded away from 0.  
+- "Packet Processing Priority" - Detailed at [Info/Packet Processing]({{ site.baseurl }}/info/packet-processing)
 
 ---
 
 ## bladeos  
 **CPU:** 2 **MEM:** 1 **SIZE:** 1  
   
+**Packet Processing Priority:** 52 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_SWITCHING  
   
 **Description:**  
@@ -214,6 +216,7 @@ DNS load test software.
 ## firewatcher  
 **CPU:** 4 **MEM:** 1 **SIZE:** 1+1=2  
   
+**Packet Processing Priority:** 10 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_FILTERING  
   
 **Description:**  
@@ -239,6 +242,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## hakernel  
 **CPU:** 4 **MEM:** 2 **SIZE:** 1+1=2  
   
+**Packet Processing Priority:** 20 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_ROUTING, ALLOW_HIGH_AVAILABILITY_SETUP  
   
 **Description:**  
@@ -285,6 +289,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## lbrr  
 **CPU:** 2 **MEM:** 1 **SIZE:** 1  
   
+**Packet Processing Priority:** 50 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_TRAFFIC_SPLITTING  
   
 **Description:**  
@@ -357,6 +362,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## mbox  
 **CPU:** 1 **MEM:** 1 **SIZE:** 0+1=1  
   
+**Packet Processing Priority:** 5 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_TRANSLATION  
   
 **Description:**  
@@ -496,6 +502,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## riserswfirm  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
+**Packet Processing Priority:** 52 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_SWITCHING  
   
 **Description:**  
@@ -506,6 +513,7 @@ Riser switch firmware.
 ## rtkernel  
 **CPU:** 4 **MEM:** 1 **SIZE:** 1+1=2  
   
+**Packet Processing Priority:** 20 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_ROUTING  
   
 **Description:**  
@@ -835,6 +843,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## vlanfirm  
 **CPU:** 2 **MEM:** 2 **SIZE:** 1+1=2  
   
+**Packet Processing Priority:** 51 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_VLAN_TAGGING, ALLOW_STP_PORT_CONTROL  
   
 **Description:**  
@@ -874,6 +883,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 ## vrout3  
 **CPU:** 4 **MEM:** 1 **SIZE:** 2+2=4  
   
+**Packet Processing Priority:** 20 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_ROUTING, ALLOW_VLAN_TAGGING  
   
 **Description:**  
@@ -885,6 +895,7 @@ Packet routing with VLAN subinterfaces.
 **CPU:** 2 **MEM:** 2 **SIZE:** 1  
 **<span style="color:DarkKhaki;">Produces:</span>** 1 `inspect-user-packets`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_MEM)</span>  
   
+**Packet Processing Priority:** 52 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_INSPECTION, ALLOW_PACKET_SWITCHING  
   
 **Description:**  
