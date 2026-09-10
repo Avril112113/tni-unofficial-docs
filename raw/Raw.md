@@ -40,3 +40,4 @@ Any change to the game version may bring unexpected breaking changes, as the gam
 8. Added sections `device_outlets`, `locations` and `location_pieces`. *(non-breaking)*
 9. Added proposal `unlock_description`. *(non-breaking)*
 10. Added program field `pkt_processing_priority`. *(non-breaking)*
+11. Added plug fields `InstallerUSB` and `LiveUSB`. *(non-breaking)*
