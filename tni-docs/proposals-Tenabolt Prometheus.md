@@ -6,7 +6,7 @@ permalink: /data/proposals/Tenabolt Prometheus
 
 # Proposals for Tenabolt Prometheus
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.6
+GENERATED FOR TNI VERSION 0.12.7
 
 - TOC
 {:toc}
@@ -359,4 +359,12 @@ Requires 'Remote Backups' to be submitted first.
 Adds a new "sanconf" routine to netshell. Allows configuration of Storage Area Network (SAN) arrays for remote storage. Funding costs 600.  
 **Unlock Description:**  
 Requires at least 1 network storage device(s) deployed in the tower.  
+  
+  
+## Cereal Warez investment  
+**Price:** $825  
+**Unlock day:** 0  
+**Lore:** Global Serial Bus: Unofficial Firmware.  
+**Description:**  
+Fund 825 to support the opening of the Cereal Warez merchant, which provides USB drives pre-loaded with out-of-the-box software for instant local installation.  
   

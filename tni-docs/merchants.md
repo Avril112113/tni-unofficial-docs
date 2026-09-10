@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.6
+GENERATED FOR TNI VERSION 0.12.7
 
 - TOC
 {:toc}
@@ -459,6 +459,36 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
   **Description:**  
    Used with affixed cables with cable trays. 22 fiber SC keystone jacks.  
    Mountable on 930px racks.  
+  
+  
+## Cereal Warez<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cereal Warez.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Cereal Warez.png" style="max-height: 25vh;" /></wa-tooltip>  
+**Restock:** FILL after 900s    
+**Price:** Base prices.    
+**Warranty:** Base warranties.    
+**Description:**    
+Get your USB drives pre-loaded with out-of-the-box software for instant local installation on the host device.  
+  
+**Listings:**    
+- **Rtkernel Installer USB**  
+  **Listing Starts** day 0  
+  **Price:** $250  
+  **Description:**  
+   Provisions rtkernel program onto the host device upon plug-in.  
+- **Vlanfirm Installer USB**  
+  **Listing Starts** day 0  
+  **Price:** $525  
+  **Description:**  
+   Provisions vlanfirm program onto the host device upon plug-in.  
+- **Firewatcher Installer USB**  
+  **Listing Starts** day 0  
+  **Price:** $550  
+  **Description:**  
+   Provisions firewatcher program onto the host device upon plug-in.  
+- **Wirerat Installer USB**  
+  **Listing Starts** day 0  
+  **Price:** $325  
+  **Description:**  
+   Provisions wirerat program onto the host device upon plug-in.  
   
   
 ## Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>  

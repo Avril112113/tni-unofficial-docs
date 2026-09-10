@@ -6,7 +6,7 @@ permalink: /data/traffic_types
 
 # Traffic Types
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.6
+GENERATED FOR TNI VERSION 0.12.7
 
 `#` represents any number between 0-9  
   

@@ -6,7 +6,7 @@ permalink: /data/link-sizings
 
 # Link Sizings
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.6
+GENERATED FOR TNI VERSION 0.12.7
 
 - TOC
 {:toc}
