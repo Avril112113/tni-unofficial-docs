@@ -199,8 +199,7 @@ export class DeviceEditor extends LitElement {
 			this.__dropdown_items_satas_templates_data = this._data;
 			this.__dropdown_items_satas_templates = [];
 			if (this._data) {
-				for (const plug_id in this._data.plugs) {
-					if (plug_id == "components/removables/usb_stick.tscn") continue;
+				for (const plug_id in this._data.plugs_by_type[TniSocketType.SATA35_SLOT]) {
 					const plug = this._data.plugs[plug_id]!;
 					if (plug.PeripheralPlug && plug.RemovableStorageDevice) {
 						this.__dropdown_items_satas_templates.push(html`
@@ -226,8 +225,7 @@ export class DeviceEditor extends LitElement {
 		this._sata_prices = [];
 		this._sata_ids = [];
 		if (this._data) {
-			for (const plug_id in this._data.plugs) {
-				if (plug_id == "components/removables/usb_stick.tscn") continue;
+			for (const plug_id in this._data.plugs_by_type[TniSocketType.SATA35_SLOT]) {
 				const plug: TniJsonPlug = this._data.plugs[plug_id]!;
 				if (plug.PeripheralPlug && plug.RemovableStorageDevice) {
 					const sata_sto = plug.RemovableStorageDevice.available_sto;
@@ -705,8 +703,7 @@ export class DeviceEditor extends LitElement {
 			} else {
 				const sata_options: number[] = [];
 				const sata_prices: Record<number,number> = [];
-				for (const plug_id in this._data.plugs) {
-					if (plug_id == "components/removables/usb_stick.tscn") continue;
+				for (const plug_id in this._data.plugs_by_type[TniSocketType.SATA35_SLOT]) {
 					const plug = this._data.plugs[plug_id]!;
 					if (plug.PeripheralPlug && plug.RemovableStorageDevice) {
 						if (sata_options.indexOf(plug.RemovableStorageDevice.available_sto) == -1){

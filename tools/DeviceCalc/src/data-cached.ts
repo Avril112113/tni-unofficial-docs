@@ -39,19 +39,19 @@ export class DataCached implements TniJsonData {
 		Object.assign(this, data);
 	}
 
-	private __plugs_by_type: Record<TniSocketType, TniJsonPlugId[]>|null = null;
+	private __plugs_by_type: Record<TniSocketType, Record<TniJsonPlugId,TniJsonPlug>>|null = null;
 	public get plugs_by_type() {
 		if (!this.__plugs_by_type) {
-			this.__plugs_by_type = {} as Record<TniSocketType, TniJsonPlugId[]>;
+			this.__plugs_by_type = {} as Record<TniSocketType, Record<TniJsonPlugId,TniJsonPlug>>;
 			for (const socket_type of Object.values(TniSocketType)) {
-				this.__plugs_by_type[socket_type] = [];
+				this.__plugs_by_type[socket_type] = {};
 			}
 			for (const plug_id in this.data.plugs) {
 				const plug: TniJsonPlug = this.data.plugs[plug_id]!;
 				for (const socket_type of plug.compatibles) {
 					if (!(socket_type in this.__plugs_by_type))
-						this.__plugs_by_type[socket_type] = [];
-					this.__plugs_by_type[socket_type].push(plug_id);
+						this.__plugs_by_type[socket_type] = {};
+					this.__plugs_by_type[socket_type][plug_id] = plug;
 				}
 			}
 		}
