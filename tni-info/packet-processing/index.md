@@ -39,7 +39,7 @@ Upon receiving a packet:
     Else:
         Put packet into 'packet input queue'.
 
-Every 0.1s (real time?) while device/vm running:
+Every 0.1s to 0.2s, while device/vm running:  (affected by time scale)
     Send out all packets in packet output queue.
 
     For each packet in the packet input queue:
