@@ -119,15 +119,28 @@ function getSumCombinations(numbers: number[], maxLength: number): SumCombinatio
     }));
 }
 
-export function getTotalSanStorageDelta(exclude: DeviceEditor|undefined = undefined): number {
+export function getTotalSanStorageDelta(ref_device: DeviceEditor|undefined = undefined): number {
 	const devices = document.getElementById("devices_list")?.querySelectorAll("device-editor") ?? (new NodeList() as NodeListOf<DeviceEditor>);
-	let san_storage = 0;
-	devices.forEach((device_editor) => {
-		if (device_editor == exclude) return;
+	let san_storage = EditorConfig.delta_san;
+	let encountered_ref_device = false;
+	for (let i = 0; i < devices.length; i++) {
+		const device_editor = devices[i]!;
+		if (device_editor == ref_device)
+			encountered_ref_device = true;
 
-		san_storage += device_editor.getSanStorageDelta();
-	});
-	return san_storage + EditorConfig.delta_san;
+		if (device_editor.has_san_target || device_editor.has_san_initiator) {
+			const {excess_sto} = device_editor.getHardwareResources(true);
+
+			if (device_editor.has_san_target) {
+				san_storage += Math.max(0, excess_sto);
+			}
+
+			if (!encountered_ref_device && device_editor.has_san_initiator) {
+				san_storage += Math.min(0, excess_sto);
+			}
+		}
+	}
+	return san_storage;
 }
 window.getTotalSanStorageDelta = getTotalSanStorageDelta;
 
@@ -270,7 +283,7 @@ export class DeviceEditor extends LitElement {
 		return [programs_cpu, programs_mem, programs_size];
 	}
 
-	private _getHardwareResources(): { excess_cpu: number, excess_mem: number, excess_sto: number, excess_sto_max: number, satas_size: number, extra_price: number, san_usage: number } {
+	public getHardwareResources(isFromSanTotal = false): { excess_cpu: number, excess_mem: number, excess_sto: number, excess_sto_max: number, satas_size: number, extra_price: number, san_usage: number } {
 		const [programs_cpu, programs_mem, programs_size] = this._getProgramsRequirements(this.device_data?.logic_controller?.installed_programs);
 		
 		const satas_sto_max = this.device_data?.logic_controller
@@ -291,7 +304,7 @@ export class DeviceEditor extends LitElement {
 			}
 		}
 
-		const san_sto = this.has_san_initiator ? getTotalSanStorageDelta(this) : 0;
+		const san_sto = this.has_san_initiator && !isFromSanTotal ? getTotalSanStorageDelta(this) : 0;
 		
 		const excess_cpu = (this.device_data?.logic_controller?.installed_cpu ?? 0) - programs_cpu;
 		const excess_mem = (this.device_data?.logic_controller?.installed_mem ?? 0) - programs_mem;
@@ -318,23 +331,6 @@ export class DeviceEditor extends LitElement {
 	public get has_san_initiator() {
 		return (this.device_data?.logic_controller?.installed_programs ?? []).includes("graph_network_simulation/programs/early_access/storage_and_file_system/san_initiator.tscn");
 	}
-
-	public getSanStorageDelta(): number {
-		const {excess_sto, san_usage} = this._getHardwareResources();
-
-		var san_delta = 0;
-
-		if (this.has_san_target) {
-			san_delta += Math.max(0, excess_sto);
-		}
-
-		if (this.has_san_initiator) {
-			san_delta -= san_usage - Math.min(0, excess_sto);
-		}
-
-		return san_delta;
-	}
-
 	static override styles = css`
 		wa-number-input::part(stepper) {
 			aspect-ratio: unset;
@@ -486,7 +482,7 @@ export class DeviceEditor extends LitElement {
 
 	override render() {
 		const [programs_cpu, programs_mem, programs_size] = this._getProgramsRequirements(this.device_data?.logic_controller?.installed_programs);
-		const excess_san = getTotalSanStorageDelta();
+		const excess_san = getTotalSanStorageDelta(this);
 
 		let body: TemplateResult|Array<TemplateResult>;
 		if (this.device_id) {
@@ -517,7 +513,7 @@ export class DeviceEditor extends LitElement {
 
 					const satas_templates = this._generateTemplatesForPeripherals(logic_controller, custom_data);
 
-					const {excess_cpu, excess_mem, excess_sto, excess_sto_max, satas_size, extra_price, san_usage} = this._getHardwareResources();
+					const {excess_cpu, excess_mem, excess_sto, excess_sto_max, satas_size, extra_price, san_usage} = this.getHardwareResources();
 					total_price += extra_price;
 
 					parts.push(html`
@@ -594,7 +590,7 @@ export class DeviceEditor extends LitElement {
 									<p style="color: ${excess_cpu < 0 ? 'red' : ''}; margin: 0;">CPU: ${programs_cpu}</p>
 									<p style="color: ${excess_mem < 0 ? 'red' : ''}; margin: 0;">MEM: ${programs_mem}</p>
 									<p style="color: ${excess_sto < 0 ? 'red' : ''}; margin: 0;">Size: ${programs_size}</p>
-									${san_usage > 0 ? html`<p style="color: ${excess_san < 0 ? 'red' : ''}; margin: 0;">SAN Use: ${san_usage}</p>` : ""}
+									${this.has_san_initiator ? html`<p style="color: ${(excess_san < 0 || excess_sto < 0) ? 'red' : ''}; margin: 0;">SAN Use: ${san_usage}</p>` : ""}
 
 									${logic_controller_original.installed_programs.length > 0 && !logic_controller_original.installed_programs.every(v => logic_controller.installed_programs.includes(v) ?? true) ? html`
 										<p class="some-text" style="color: var(--wa-color-orange-90);"><small>Jailbreaker<br>Required</small></p>
