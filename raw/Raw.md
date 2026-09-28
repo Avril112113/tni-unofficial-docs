@@ -40,3 +40,4 @@ Any change to the game version may bring unexpected breaking changes, as the gam
 9. Added proposal `unlock_description`. *(non-breaking)*
 10. Added program field `pkt_processing_priority`. *(non-breaking)*
 11. Added plug fields `InstallerUSB` and `LiveUSB`. *(non-breaking)*
+12. Removed location fields `surge_immunity` and `outage_immunity`, Added `power_immunity` *(BREAKING)*

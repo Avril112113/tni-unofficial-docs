@@ -6,7 +6,7 @@ permalink: /data/proposals/Tenabolt Prometheus
 
 # Proposals for Tenabolt Prometheus
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.7
+GENERATED FOR TNI VERSION 0.13.0
 
 - TOC
 {:toc}
@@ -166,7 +166,7 @@ Requires 'Elevator upgrade (7/8)' to be submitted first.
 **Unlock day:** 5  
 **Lore:** Money solves problems  
 **Description:**  
-SLA breaches no longer ends the game, but comes with a financial penalty of 3000 per breach. Adds a recurring premium cost of 300 per day.  
+SLA breaches no longer ends the game, but comes with a penalty that scales with the number of breaches. Insurance premium starts at 300 per day and increases by 1.5x per SLA breach.  
 **Unlock Description:**  
 Available from day 5.  
   
@@ -346,7 +346,9 @@ The exploit can be optionally turned on/off.
 **Unlock day:** 0  
 **Lore:** Hardware liberation day  
 **Description:**  
-The "sftp" routine can now be used to install programs extracted from devices. Costs 1000.  
+The "sftp" routine can now be used to install programs extracted from devices.  
+	  
+USB sticks can now bypass permission restrictions to install programs upon plug-in. Costs 1000.  
 **Unlock Description:**  
 Requires 'Remote Backups' to be submitted first.  
   
@@ -366,5 +368,5 @@ Requires at least 1 network storage device(s) deployed in the tower.
 **Unlock day:** 0  
 **Lore:** Global Serial Bus: Unofficial Firmware.  
 **Description:**  
-Fund 825 to support the opening of the Cereal Warez merchant, which provides USB drives pre-loaded with out-of-the-box software for instant local installation.  
+Fund 825 to support the opening of the Cereal Warez merchant, which provides USB drives pre-loaded with out-of-the-box software for instant local installation or live use.  
   

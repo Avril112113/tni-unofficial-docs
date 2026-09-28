@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.7
+GENERATED FOR TNI VERSION 0.13.0
 
 - TOC
 {:toc}
@@ -384,15 +384,17 @@ Not rack mountable.
   
   
 ## Debugger Eve<img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Eve.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Eve.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `24` **Watts:** 33w  
-**Base Price:** $1500 **Base Warranty:** 21.0 days   
-**Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `32` **Watts:** 131w  
+**Base Price:** $500 **Base Warranty:** 21.0 days   
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `DEBUGGER`  
-**Installed Programs:** [netpeeker](programs.md/#netpeeker)  
+**Merchants:** [Free Babel<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#free-babel)  
+**Installed Programs:** [freebabel](programs.md/#freebabel)  
 **Ownership Unlocks:** [mbox](programs.md/#mbox)  
 **Description:**  
-2-port ethernet remote debugger.  
+2-port mixed media remote debugger.  
 Mountable on 500px racks.  
+Exploits a floor's power meter with fbabel command.  
   
   
 ## Disco Kilo<img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Disco Kilo.webp" style="max-height: 25vh;" /></wa-tooltip>  
@@ -796,6 +798,54 @@ Power consumption: 55W.
 Mountable on 500px racks.  
   
   
+## Free Babel Blade<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Blade.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Blade.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `62` **Watts:** 24w  
+**Base Price:** $230 **Base Warranty:** 7.0 days   
+**Port Counts:** 10x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_SWITCH`  
+**Merchants:** [Free Babel<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#free-babel)  
+**Installed Programs:** [bladeos](programs.md/#bladeos)  
+**Description:**  
+10-port ethernet network switch.  
+Handles up to 62 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 24W.  
+Mountable on 500px racks.  
+More bandwidth than retail. Draws three times the power.  
+  
+  
+## Free Babel Boulder<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Boulder.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Boulder.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `6` **MEM:** `8` **SIZE:** `8` **BW/t:** `28` **Watts:** 477w  
+**Base Price:** $425 **Base Warranty:** 14.0 days   
+**Port Counts:** 2x `RJ45`, 1x `A_USB`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Free Babel<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#free-babel)  
+**Description:**  
+2-port general computing server.  
+Specs: 6 CPU, 8 memory and 8 storage.  
+Handles up to 28 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 477W.  
+Mountable on 500px racks.  
+Half the retail price. Draws three times the power.  
+  
+  
+## Free Babel Micro<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Micro.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Micro.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `8` **MEM:** `2` **SIZE:** `4` **BW/t:** `175` **Watts:** 146w  
+**Base Price:** $950 **Base Warranty:** 21.0 days   
+**Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `NETWORK_ROUTER`  
+**Merchants:** [Free Babel<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#free-babel)  
+**Installed Programs:** [hakernel](programs.md/#hakernel)  
+**Description:**  
+10-port mixed media network router.  
+Handles up to 175 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 146W.  
+Mountable on 500px racks.  
+Cheaper than retail. Draws three times the power.  
+  
+  
 ## golonys-bloque<img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-bloque.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-bloque.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `2` **MEM:** `5` **SIZE:** `12` **BW/t:** `60` **Watts:** 53w  
 **Base Price:** $525 **Base Warranty:** 16.0 days   
@@ -1031,6 +1081,32 @@ Traffic from either front ports are alternated between the back ports.
 **Description:**  
 Extra monitor which displays all the DNS-entries mapping, network address assignments and device location.  
 Not rack mountable.  
+  
+  
+## Panopticon Cellblock<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Cellblock.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Cellblock.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `16` **Watts:** 18w  
+**Base Price:** $350 **Base Warranty:** 28.0 days   
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Panopticon of Secretariat<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#panopticon-of-secretariat)  
+**Installed Programs:** [panop-cell](programs.md/#panop-cell), [panop-storage](programs.md/#panop-storage)  
+**Description:**  
+Map the domain name of a service to this Cellblock's logical address. Each redirected visit earns Secretariat credit.  
+Mountable on 500px racks.  
+Must reach a Panopticon Profiler over the network to receive user behavior data.  
+  
+  
+## Panopticon Profiler<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `16` **Watts:** 18w  
+**Base Price:** $350 **Base Warranty:** 28.0 days   
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Panopticon of Secretariat<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#panopticon-of-secretariat)  
+**Installed Programs:** [panop-profiler](programs.md/#panop-profiler), [panop-storage](programs.md/#panop-storage)  
+**Description:**  
+Converts user traffic behavior from a network tap into user behavior data for the Panopticon Cellblock.  
+Mountable on 500px racks.  
+Must reach a network tap that is inspecting user traffic.  
   
   
 ## Population Stats Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Population Stats Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Population Stats Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>  

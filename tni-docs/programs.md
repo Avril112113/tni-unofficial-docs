@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.7
+GENERATED FOR TNI VERSION 0.13.0
 
 - TOC
 {:toc}
@@ -123,6 +123,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **<span style="color:PapayaWhip;">Consumes:</span>** 1 `access-p2p-currency` @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
 **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
   
+**Modifiers:** ALLOW_DECENTROWORM_TARGETING  
   
 **Description:**  
 Collects decentro currencies over the network and accumulate them on the installed device.  
@@ -137,6 +138,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
 **CPU:** 24 **MEM:** 12 **SIZE:** 6  
 **<span style="color:DarkKhaki;">Produces:</span>** 10 `facilitate-p2p-transaction`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 10)</span>  
   
+**Modifiers:** ALLOW_DECENTROWORM_TARGETING  
   
 **Description:**  
 Authenticate Decentro transactions. Decentro peers can connect to this program to perform peer-to-peer transactions. You may only spend decentro currencies that are accessible by decentro nodes.  
@@ -148,7 +150,7 @@ Production is limited to 10 compatible uses on the device's use stack.
 ## decentro-wallet  
 **CPU:** 1 **MEM:** 2 **SIZE:** 2  
   
-**Modifiers:** ALLOW_DECENTRO_STORAGE  
+**Modifiers:** ALLOW_DECENTRO_STORAGE, ALLOW_DECENTROWORM_TARGETING  
   
 **Description:**  
 Safeguards your decentro currencies from power loss or unscheduled shutdown events.  
@@ -186,7 +188,7 @@ Produce target's use stack limit is 20 compatible uses.
 Skips consuming from destination if produce target's use stack limit is reached.  
   
 **Unlocks:** [padu_v1](#padu_v1)  
-**Unlocked By:** [Media Maniac](users.md/#media-maniac), [Feed Signal](users.md/#feed-signal), [WireSync News](users.md/#wiresync-news), [Loyal Worker](users.md/#loyal-worker), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scientific Professor](users.md/#scientific-professor), [Patient Professor](users.md/#patient-professor), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Kanban Central](users.md/#kanban-central), [Booking Hub](users.md/#booking-hub), [Full Campus](users.md/#full-campus), [Night Campus](users.md/#night-campus), [Game Studios](users.md/#game-studios), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Horror Studios](users.md/#horror-studios), [Travel Agency](users.md/#travel-agency), [Cheap Kitchen](users.md/#cheap-kitchen), [Database Hub](users.md/#database-hub), [Game Marketplace](users.md/#game-marketplace), [Film Sphere](users.md/#film-sphere), [Premium Kitchen](users.md/#premium-kitchen), [Telemedicine Hub](users.md/#telemedicine-hub), [Blogger Hub](users.md/#blogger-hub), [Book Club](users.md/#book-club), [Data Nexus](users.md/#data-nexus), [Data Hub](users.md/#data-hub), [Econ News](users.md/#econ-news), [Indie Studios](users.md/#indie-studios), [Free Kanban Central](users.md/#free-kanban-central), [Media Hub](users.md/#media-hub), [Music Sphere](users.md/#music-sphere), [Audio Sphere](users.md/#audio-sphere), [Political News](users.md/#political-news), [Religious Hub](users.md/#religious-hub), [Scientific News](users.md/#scientific-news), [Socialite Hub](users.md/#socialite-hub), [Finance Hub](users.md/#finance-hub), [Chatter Hive](users.md/#chatter-hive), [Mail Hub](users.md/#mail-hub), [Ads Agency](users.md/#ads-agency), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Cloud Service](users.md/#cloud-service), [Tenabolt Retail](users.md/#tenabolt-retail), [People Operations](users.md/#people-operations), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer), [AI Researcher](users.md/#ai-researcher), [Chips Designer](users.md/#chips-designer), [Professional Gamer](users.md/#professional-gamer), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Animation Sphere](users.md/#animation-sphere), [Animation Studios](users.md/#animation-studios), [Central Mart](users.md/#central-mart), [ESport Hub](users.md/#esport-hub), [Happy Grocery](users.md/#happy-grocery), [Inventory Hub](users.md/#inventory-hub), [Transfer Hub](users.md/#transfer-hub), [Meeting Hub](users.md/#meeting-hub), [Antivirus Nexus](users.md/#antivirus-nexus), [Privacy Hub](users.md/#privacy-hub)  
+**Unlocked By:** [Media Maniac](users.md/#media-maniac), [Feed Signal](users.md/#feed-signal), [WireSync News](users.md/#wiresync-news), [Loyal Worker](users.md/#loyal-worker), [Casual Dweller](users.md/#casual-dweller), [Casual Glancer](users.md/#casual-glancer), [Religious Dweller](users.md/#religious-dweller), [Scientific Researcher](users.md/#scientific-researcher), [Social Dweller](users.md/#social-dweller), [Digital Minimalist](users.md/#digital-minimalist), [Digital Detoxer](users.md/#digital-detoxer), [Cozy Foodie](users.md/#cozy-foodie), [Night Dweller](users.md/#night-dweller), [Full-time Coder](users.md/#full-time-coder), [Conservative Leader](users.md/#conservative-leader), [Liberal Announcer](users.md/#liberal-announcer), [Capitalistic Announcer](users.md/#capitalistic-announcer), [Scientific Professor](users.md/#scientific-professor), [Patient Professor](users.md/#patient-professor), [Tower Worker](users.md/#tower-worker), [Freelance Worker](users.md/#freelance-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor), [Heavy Viewer](users.md/#heavy-viewer), [Stability Seeker](users.md/#stability-seeker), [Greedy Dweller](users.md/#greedy-dweller), [Greedy Gambler](users.md/#greedy-gambler), [Digital Hoarder](users.md/#digital-hoarder), [Wealthy Dweller](users.md/#wealthy-dweller), [Greedy Streamer](users.md/#greedy-streamer), [Tech Adopter](users.md/#tech-adopter), [Day Learner](users.md/#day-learner), [Night Learner](users.md/#night-learner), [Software Engineer](users.md/#software-engineer), [Minimum Spender](users.md/#minimum-spender), [Pavillion Tower](users.md/#pavillion-tower), [Gateway Tower](users.md/#gateway-tower), [WhiteHat Tower](users.md/#whitehat-tower), [Kanban Central](users.md/#kanban-central), [Booking Hub](users.md/#booking-hub), [Full Campus](users.md/#full-campus), [Night Campus](users.md/#night-campus), [Game Studios](users.md/#game-studios), [Tech Center](users.md/#tech-center), [All Supplies Center](users.md/#all-supplies-center), [Horror Studios](users.md/#horror-studios), [Travel Agency](users.md/#travel-agency), [Cheap Kitchen](users.md/#cheap-kitchen), [Database Hub](users.md/#database-hub), [Game Marketplace](users.md/#game-marketplace), [Film Sphere](users.md/#film-sphere), [Premium Kitchen](users.md/#premium-kitchen), [Telemedicine Hub](users.md/#telemedicine-hub), [Blogger Hub](users.md/#blogger-hub), [Book Club](users.md/#book-club), [Data Nexus](users.md/#data-nexus), [Data Hub](users.md/#data-hub), [Econ News](users.md/#econ-news), [Indie Studios](users.md/#indie-studios), [Free Kanban Central](users.md/#free-kanban-central), [Media Hub](users.md/#media-hub), [Music Sphere](users.md/#music-sphere), [Audio Sphere](users.md/#audio-sphere), [Political News](users.md/#political-news), [Religious Hub](users.md/#religious-hub), [Scientific News](users.md/#scientific-news), [Socialite Hub](users.md/#socialite-hub), [Finance Hub](users.md/#finance-hub), [Chatter Hive](users.md/#chatter-hive), [Mail Hub](users.md/#mail-hub), [Ads Agency](users.md/#ads-agency), [Customer Officer](users.md/#customer-officer), [Analytics Officer](users.md/#analytics-officer), [HR Officer](users.md/#hr-officer), [Legal Officer](users.md/#legal-officer), [Meter Reader I](users.md/#meter-reader-i), [Morning Technician](users.md/#morning-technician), [Night Associate](users.md/#night-associate), [Night Technician](users.md/#night-technician), [Normal Associate](users.md/#normal-associate), [Normal Technician](users.md/#normal-technician), [Partner Gateway](users.md/#partner-gateway), [Planning Officer](users.md/#planning-officer), [Cloud Service](users.md/#cloud-service), [Tenabolt Retail](users.md/#tenabolt-retail), [People Operations](users.md/#people-operations), [IT Service](users.md/#it-service), [Public Gateway](users.md/#public-gateway), [R&D Engineer](users.md/#r&d-engineer), [R&D Specialist](users.md/#r&d-specialist), [Sales Officer](users.md/#sales-officer), [AI Researcher](users.md/#ai-researcher), [Chips Designer](users.md/#chips-designer), [Professional Gamer](users.md/#professional-gamer), [Indoor Dweller](users.md/#indoor-dweller), [Patient Dweller](users.md/#patient-dweller), [Satellite Tower](users.md/#satellite-tower), [Satellite Tower](users.md/#satellite-tower), [Relax Tower](users.md/#relax-tower), [Animation Sphere](users.md/#animation-sphere), [Animation Studios](users.md/#animation-studios), [Central Mart](users.md/#central-mart), [ESport Hub](users.md/#esport-hub), [Happy Grocery](users.md/#happy-grocery), [Inventory Hub](users.md/#inventory-hub), [Transfer Hub](users.md/#transfer-hub), [Meeting Hub](users.md/#meeting-hub), [Antivirus Nexus](users.md/#antivirus-nexus), [Privacy Hub](users.md/#privacy-hub), [Free Babel Flock](users.md/#free-babel-flock), [Babel Secretariat](users.md/#babel-secretariat)  
   
   
 ## dnsmasq  
@@ -221,6 +223,16 @@ DNS load test software.
   
 **Description:**  
 Firewall operating system; performs packet filtering.  
+  
+  
+  
+## freebabel  
+**CPU:** 1 **MEM:** 1 **SIZE:** 1  
+  
+**Modifiers:** ALLOW_REMOTE_DEBUGGING, ALLOW_SANDWORM_TARGETING  
+  
+**Description:**  
+Remote debugger which can run with 'fbabel' command.  
   
   
   
@@ -360,7 +372,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
   
 ## mbox  
-**CPU:** 1 **MEM:** 1 **SIZE:** 0+1=1  
+**CPU:** 1 **MEM:** 0 **SIZE:** 0+1=1  
   
 **Packet Processing Priority:** 5 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
 **Modifiers:** ALLOW_PACKET_TRANSLATION  
@@ -375,7 +387,7 @@ Allows packet mangling/translation. Install on a device to make it a network mid
 ## netpeeker  
 **CPU:** 1 **MEM:** 1 **SIZE:** 1  
   
-**Modifiers:** ALLOW_REMOTE_DEBUGGING  
+**Modifiers:** ALLOW_REMOTE_DEBUGGING, ALLOW_SANDWORM_TARGETING  
   
 **Description:**  
 Remote debugger.  
@@ -444,6 +456,49 @@ Improved disk handling algorithm.
 Production is limited to 4 compatible uses on the device's use stack.  
   
 **Unlocked By:** [Tenabolt Prometheus/PADU development funding](proposals-Tenabolt%20Prometheus.md/#padu-development-funding), [Standard/PADU development funding](proposals-Standard.md/#padu-development-funding)  
+  
+  
+## panop-cell  
+**CPU:** 1 **MEM:** 1 **SIZE:** 1  
+**<span style="color:PapayaWhip;">Consumes:</span>** 1 `profile-user-behavior` @ [`udp/6343`](traffic_types.md/#udp6343) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  
+**Modifiers:** ALLOW_SANDWORM_TARGETING  
+  
+**Description:**  
+Point a domain's DNS at this device to censor it.  
+  
+<span style="color:red;">Requires panop-profiler feeding it user behavior data over the network</span>.  
+  
+  
+  
+  
+## panop-profiler  
+**CPU:** 4 **MEM:** 4 **SIZE:** 4  
+**<span style="color:PapayaWhip;">Consumes:</span>** 4 `inspect-user-packets` @ [`udp/6343`](traffic_types.md/#udp6343) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+**<span style="color:DarkKhaki;">Produces:</span>** 4 `profile-user-behavior`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_STORAGE)</span>  
+  
+**Modifiers:** ALLOW_SANDWORM_TARGETING  
+  
+**Description:**  
+Collects inspected user traffic off the network and refines it into user behavior data.  
+  
+<span style="color:red;">Requires a network tap producing user packets</span>.  
+  
+Produce target's use stack limit is 25 compatible uses per target's installed storage.  
+Skips consuming from destination if produce target's use stack limit is reached.  
+  
+  
+  
+## panop-storage  
+**CPU:** 1 **MEM:** 2 **SIZE:** 2  
+  
+**Modifiers:** ALLOW_SANDWORM_TARGETING  
+  
+**Description:**  
+Keeps user behavior data through power loss and unscheduled shutdowns.  
+  
+This program stores up to 65 'profile-user-behavior' compatible uses per free storage on device. Stored uses persists across device reboots.  
+  
   
   
 ## poems-db  
@@ -829,6 +884,7 @@ Power meter firmware.
 **<span style="color:PapayaWhip;">Consumes:</span>** 4 `inspect-user-packets` @ [`udp/6343`](traffic_types.md/#udp6343) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
 **<span style="color:DarkKhaki;">Produces:</span>** 4 `support-bots`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 4)</span>  
   
+**Modifiers:** ALLOW_SANDWORM_TARGETING  
   
 **Description:**  
 Analyzes user traffic behavior from a network tap to support botnet operations.  
@@ -896,7 +952,7 @@ Packet routing with VLAN subinterfaces.
 **<span style="color:DarkKhaki;">Produces:</span>** 1 `inspect-user-packets`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_MEM)</span>  
   
 **Packet Processing Priority:** 52 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
-**Modifiers:** ALLOW_PACKET_INSPECTION, ALLOW_PACKET_SWITCHING  
+**Modifiers:** ALLOW_PACKET_INSPECTION, ALLOW_PACKET_SWITCHING, ALLOW_SANDWORM_TARGETING  
   
 **Description:**  
 Packet monitoring system.  
@@ -918,6 +974,20 @@ ANNOYING_MORRIS spreads itself across routers and servers using traffic types ra
   
   
   
+## WORM DECENTROWORM  
+**CPU:** 0 **MEM:** 0 **SIZE:** 0  
+**Traffic:** [tcp/8333](traffic_types.md/#tcp8333)  
+**Vulnerable Devices:**   
+**Program Name Template:** `decentroworm`  
+**Incubation Cycles:** 5  
+**Spread per tick:** 1  
+  
+  
+**Description:**  
+DECENTROWORM targets devices running Decentro programs using Decentro network traffic (TCP/8333). Upon infection, it uninstalls those programs from the device.  
+  
+  
+  
 ## WORM HUSH  
 **CPU:** 0 **MEM:** 0 **SIZE:** 0  
 **Traffic:** [udp/5060](traffic_types.md/#udp5060)  
@@ -929,5 +999,19 @@ ANNOYING_MORRIS spreads itself across routers and servers using traffic types ra
   
 **Description:**  
 HUSH targets VOIP phones and servers using SIP traffic (UDP/5060). Upon infection, it silently erases all other programs installed on the device.  
+  
+  
+  
+## WORM SANDWORM  
+**CPU:** 0 **MEM:** 0 **SIZE:** 0  
+**Traffic:** [udp/6343](traffic_types.md/#udp6343)  
+**Vulnerable Devices:**   
+**Program Name Template:** `sandworm`  
+**Incubation Cycles:** 5  
+**Spread per tick:** 1  
+  
+  
+**Description:**  
+SANDWORM targets devices running monitoring programs using flow monitoring traffic (UDP/6343). Upon infection, it uninstalls those programs from the device.  
   
   

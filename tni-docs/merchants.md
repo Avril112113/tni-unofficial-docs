@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.7
+GENERATED FOR TNI VERSION 0.13.0
 
 - TOC
 {:toc}
@@ -466,7 +466,7 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
 **Price:** Base prices.    
 **Warranty:** Base warranties.    
 **Description:**    
-Get your USB drives pre-loaded with out-of-the-box software for instant local installation on the host device.  
+Get your USB drives pre-loaded with out-of-the-box software for local installation or live use on the device.  
   
 **Listings:**    
 - **Rtkernel Installer USB**  
@@ -489,6 +489,21 @@ Get your USB drives pre-loaded with out-of-the-box software for instant local in
   **Price:** $325  
   **Description:**  
    Provisions wirerat program onto the host device upon plug-in.  
+- **NetPeeker Live USB**  
+  **Listing Starts** day 0  
+  **Price:** $900  
+  **Description:**  
+   Provisions Netpeeker firmware for live-use while plugged in.  
+- **Vrout3 Installer USB**  
+  **Listing Starts** day 5  
+  **Price:** $925  
+  **Description:**  
+   Provisions vrout3 program onto the host device upon plug-in.  
+- **Generic Live USB**  
+  **Listing Starts** day 5  
+  **Price:** $725  
+  **Description:**  
+   Generic USB which provisions the stored firmware for live-use while plugged in.  
   
   
 ## Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>  
@@ -973,6 +988,69 @@ Fortypoint security is a subsidiary of Fortypoint global.
    Power consumption: 387W.  
    Mountable on 930px racks.  
    49-day device warranty.  
+  
+  
+## Free Babel<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" style="max-height: 25vh;" /></wa-tooltip>  
+**Restock:** FILL after 600s    
+**Price:** Base prices.    
+**Warranty:** Base warranties.    
+**Description:**    
+We built these for our own floors.  
+  
+Be careful when using them.  
+  
+**Listings:**    
+- **[Debugger Eve<img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Eve.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Debugger Eve.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#debugger-eve)**  
+  **Listing Starts** day 0  
+  **Price:** $500  
+  **Warranty:** 21 days  
+  **Description:**  
+   2-port mixed media remote debugger.  
+   Mountable on 500px racks.  
+   Exploits a floor's power meter with fbabel command.  
+   21-day device warranty.  
+- **Fiber Debug Adapter 2000p**  
+  **Listing Starts** day 0  
+  **Price:** $200  
+  **Description:**  
+   Fiber optic SC to serial debug adapter, 2000 pixels in length.  
+- **[Free Babel Boulder<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Boulder.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Boulder.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#free-babel-boulder)**  
+  **Listing Starts** day 0  
+  **Price:** $425  
+  **Warranty:** 14 days  
+  **Description:**  
+   2-port general computing server.  
+   Specs: 6 CPU, 8 memory and 8 storage.  
+   Handles up to 28 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 477W.  
+   Mountable on 500px racks.  
+   Half the retail price. Draws three times the power.  
+   14-day device warranty.  
+- **[Free Babel Blade<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Blade.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Blade.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#free-babel-blade)**  
+  **Listing Starts** day 0  
+  **Price:** $230  
+  **Warranty:** 7 days  
+  **Description:**  
+   10-port ethernet network switch.  
+   Handles up to 62 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 24W.  
+   Mountable on 500px racks.  
+   More bandwidth than retail. Draws three times the power.  
+   7-day device warranty.  
+- **[Free Babel Micro<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Micro.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Micro.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#free-babel-micro)**  
+  **Listing Starts** day 0  
+  **Price:** $950  
+  **Warranty:** 21 days  
+  **Description:**  
+   10-port mixed media network router.  
+   Handles up to 175 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 146W.  
+   Mountable on 500px racks.  
+   Cheaper than retail. Draws three times the power.  
+   21-day device warranty.  
   
   
 ## Golonys Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" style="max-height: 25vh;" /></wa-tooltip>  
@@ -1472,6 +1550,36 @@ Our power appliances are certified quality with good warrany coverage.
    Mountable uninterrupted power supply unit (expanded load).  
    Supports up to 800W loads.  
    Keeps devices functioning in the event of power outages/surges.  
+   28-day device warranty.  
+  
+  
+## Panopticon of Secretariat<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" style="max-height: 25vh;" /></wa-tooltip>  
+**Restock:** FILL after 600s    
+**Price:** Base prices.    
+**Warranty:** Base warranties.    
+**Description:**    
+Essential network hardware for a better resident networking experience.  
+  
+Together we build towards new heights.  
+  
+**Listings:**    
+- **[Panopticon Profiler<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#panopticon-profiler)**  
+  **Listing Starts** day 0  
+  **Price:** $350  
+  **Warranty:** 28 days  
+  **Description:**  
+   Converts user traffic behavior from a network tap into user behavior data for the Panopticon Cellblock.  
+   Mountable on 500px racks.  
+   Must reach a network tap that is inspecting user traffic.  
+   28-day device warranty.  
+- **[Panopticon Cellblock<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Cellblock.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Cellblock.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#panopticon-cellblock)**  
+  **Listing Starts** day 0  
+  **Price:** $350  
+  **Warranty:** 28 days  
+  **Description:**  
+   Map the domain name of a service to this Cellblock's logical address. Each redirected visit earns Secretariat credit.  
+   Mountable on 500px racks.  
+   Must reach a Panopticon Profiler over the network to receive user behavior data.  
    28-day device warranty.  
   
   

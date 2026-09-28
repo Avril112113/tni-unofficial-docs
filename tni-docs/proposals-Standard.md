@@ -6,7 +6,7 @@ permalink: /data/proposals/Standard
 
 # Proposals for Standard
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.7
+GENERATED FOR TNI VERSION 0.13.0
 
 - TOC
 {:toc}
@@ -303,7 +303,7 @@ Requires 'Elevator upgrade (7/8)' to be submitted first.
 **Unlock day:** 5  
 **Lore:** Money solves problems  
 **Description:**  
-SLA breaches no longer ends the game, but comes with a financial penalty of 3000 per breach. Adds a recurring premium cost of 300 per day.  
+SLA breaches no longer ends the game, but comes with a penalty that scales with the number of breaches. Insurance premium starts at 300 per day and increases by 1.5x per SLA breach.  
 **Unlock Description:**  
 Available from day 5.  
   
@@ -526,7 +526,9 @@ Requires at least 5 compute servers deployed in the tower.
 **Unlock day:** 0  
 **Lore:** Hardware liberation day  
 **Description:**  
-The "sftp" routine can now be used to install programs extracted from devices. Costs 1000.  
+The "sftp" routine can now be used to install programs extracted from devices.  
+	  
+USB sticks can now bypass permission restrictions to install programs upon plug-in. Costs 1000.  
 **Unlock Description:**  
 Requires 'Remote Backups' to be submitted first.  
   
@@ -548,9 +550,10 @@ Unlocks the 'power' routines on NetShell.
 **Description:**  
 Lawyer up against Tenabolt Corporation.
 
-This proposal eliminates future collaboration with Tenabolt Corporation.
-Tenabolt Corporation now pays {value} per outage/surge events.
-All items sold by Tenabolt reseller is {change_perc}% more expensive.  
+					This proposal eliminates future collaboration with Tenabolt Corporation.
+					Tenabolt Corporation now pays {value} per outage/surge events.
+					All items sold by Tenabolt reseller is {change_perc}% more expensive.
+				  
   
   
 ## Lobby against Tenabolt Corporation  
@@ -608,5 +611,76 @@ Requires at least 1 network storage device(s) deployed in the tower.
 **Unlock day:** 0  
 **Lore:** Global Serial Bus: Unofficial Firmware.  
 **Description:**  
-Fund 825 to support the opening of the Cereal Warez merchant, which provides USB drives pre-loaded with out-of-the-box software for instant local installation.  
+Fund 825 to support the opening of the Cereal Warez merchant, which provides USB drives pre-loaded with out-of-the-box software for instant local installation or live use.  
+  
+  
+## Secretariat Panopticon Project  
+**Price:** $500  
+**Unlock day:** 3  
+**Always on day:** 6  
+**Lore:** We care for our people. Together we build towards new heights.  
+**Description:**  
+Please be part of the Panopticon Project as a good partner. Redirect resident traffic to Panopticon devices and earn Secretariat credit to use for other proposal trading.  
+Funding costs 500.  
+*This will trigger the Free Babel Movement.*  
+**Unlock Description:**  
+Will automatically appear on day 6.  
+Unavailable if you've allied with Free Babel.  
+  
+  
+## Power Immunity  
+**Depends On:** [Secretariat Panopticon Project](#secretariat-panopticon-project)  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** The Secretariat promises power to those who cooperate.  
+**Description:**  
+<Failed to get description>  
+**Unlock Description:**  
+Requires 'Secretariat Panopticon Project' to be submitted first.  
+  
+  
+## Credit Exchange  
+**Depends On:** [Secretariat Panopticon Project](#secretariat-panopticon-project)  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** The Secretariat rewards those who are loyal.  
+**Description:**  
+<Failed to get description>  
+**Unlock Description:**  
+Requires 'Secretariat Panopticon Project' to be submitted first.  
+  
+  
+## Forgive SLA Breach  
+**Depends On:** [Liability Insurance](#liability-insurance)  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** The Secretariat forgives those who obey.  
+**Description:**  
+<Failed to get description>  
+**Unlock Description:**  
+Requires 'Liability Insurance' to be submitted first.  
+  
+  
+## Premium Domain License  
+**Depends On:** [Secretariat Panopticon Project](#secretariat-panopticon-project)  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** The Secretariat trusts content from those who comply.  
+**Description:**  
+<Failed to get description>  
+**Unlock Description:**  
+Requires 'Secretariat Panopticon Project' to be submitted first.  
+  
+  
+## Rebel against Secretariat  
+**Price:** ?  
+**Unlock day:** 3  
+**Always on day:** 6  
+**Lore:** All we need is freedom.  
+**Description:**  
+Side with us. We sell the stuff we build on the DMarket. More of our people will move into the tower.  
+Permanently locks the Panopticon Project and all Secretariat credit proposals.  
+**Unlock Description:**  
+Will automatically appear on day 6.  
+Unavailable if you've already accepted the Panopticon Project.  
   

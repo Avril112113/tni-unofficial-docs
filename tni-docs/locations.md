@@ -6,7 +6,7 @@ permalink: /data/locations
 
 # Locations / Floors
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.12.7
+GENERATED FOR TNI VERSION 0.13.0
 
 **NOTE:**  
 Many floors/locations are not listed here due to irrelevance.  
@@ -63,6 +63,60 @@ Network engineering lab.
 ## Data Center  
 **User Count:** 0  
 **Guaranteed Users:**   
+  
+## Residential Floor (free_babel_variant_a)  
+**User Count:** 8  
+**Guaranteed Users:**   
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**Description:**  
+This residential floor has heavy p2p decentro mining activity.  
+  
+## Residential Floor (free_babel_variant_b)  
+**User Count:** 8  
+**Guaranteed Users:**   
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock)) OR ([Tower Worker](users.md/#tower-worker))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock)) OR ([Tower Worker](users.md/#tower-worker))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock)) OR ([Tower Worker](users.md/#tower-worker))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock)) OR ([Tower Worker](users.md/#tower-worker))  
+**Max Inter-User Distance:** 6001px  
+**Description:**  
+This residential floor has heavy p2p decentro mining activity.  
+  
+## Residential Floor (free_babel_variant_c)  
+**User Count:** 10  
+**Guaranteed Users:**   
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Casual Glancer](users.md/#casual-glancer)) OR ([Scientific Researcher](users.md/#scientific-researcher)) OR ([Social Dweller](users.md/#social-dweller)) OR ([Digital Minimalist](users.md/#digital-minimalist)) OR ([Digital Detoxer](users.md/#digital-detoxer)) OR ([Cozy Foodie](users.md/#cozy-foodie)) OR ([Patient Professor](users.md/#patient-professor))  
+**User Group:** ([Casual Glancer](users.md/#casual-glancer)) OR ([Scientific Researcher](users.md/#scientific-researcher)) OR ([Social Dweller](users.md/#social-dweller)) OR ([Digital Minimalist](users.md/#digital-minimalist)) OR ([Digital Detoxer](users.md/#digital-detoxer)) OR ([Cozy Foodie](users.md/#cozy-foodie)) OR ([Patient Professor](users.md/#patient-professor))  
+**Max Inter-User Distance:** 5273px  
+**Description:**  
+This residential floor has heavy p2p decentro mining activity.  
+  
+## Residential Floor (free_babel_variant_d)  
+**User Count:** 12  
+**Guaranteed Users:**   
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**User Group:** ([Free Babel Flock](users.md/#free-babel-flock), [Free Babel Flock](users.md/#free-babel-flock))  
+**Description:**  
+This residential floor has heavy p2p decentro mining activity.  
+  
+## Software Nexus  
+**User Count:** 2 - 3  
+**Guaranteed Users:**   
+**User Group:** ([Babel Secretariat](users.md/#babel-secretariat), [Tower Worker](users.md/#tower-worker)) OR ([Tower Worker](users.md/#tower-worker), [Tower Worker](users.md/#tower-worker), [Babel Secretariat](users.md/#babel-secretariat)) OR ([Babel Secretariat](users.md/#babel-secretariat), [Tower Worker](users.md/#tower-worker), [Tower Worker](users.md/#tower-worker))  
+**Max Inter-User Distance:** 3537px  
   
 ## Residential Floor (variant_a)  
 **User Count:** 4  
