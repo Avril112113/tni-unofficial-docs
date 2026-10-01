@@ -51,7 +51,8 @@
 		"This also includes the Worm `HUSH`"
 	],
 	"tcp/8333": [
-		"Decentro/P2P traffic"
+		"Decentro/P2P traffic",
+		"This also includes the Worm `DECENTROWORM`"
 	],
 	"tcp/2404": [
 		"SCADA User traffic."
@@ -76,8 +77,10 @@
 		"From `printer_edge`"
 	],
 	"udp/6343": [
-		"??? traffic.",
-		"From `ubbt` looking for `inspect-user-packets`"
+		"Flow monitoring traffic.",
+		"From `ubbt` or `panop-profiler` looking for `inspect-user-packets`",
+		"From `panop-cell` looking for `profile-user-behavior`",
+		"This also includes the Worm `SANDWORM`"
 	],
 	"tcp/25": [
 		"Mailer traffic."
