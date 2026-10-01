@@ -634,7 +634,7 @@ Unavailable if you've allied with Free Babel.
 **Unlock day:** 0  
 **Lore:** The Secretariat promises power to those who cooperate.  
 **Description:**  
-<Failed to get description>  
+[Failed to get description]  
 **Unlock Description:**  
 Requires 'Secretariat Panopticon Project' to be submitted first.  
   
@@ -645,7 +645,7 @@ Requires 'Secretariat Panopticon Project' to be submitted first.
 **Unlock day:** 0  
 **Lore:** The Secretariat rewards those who are loyal.  
 **Description:**  
-<Failed to get description>  
+[Failed to get description]  
 **Unlock Description:**  
 Requires 'Secretariat Panopticon Project' to be submitted first.  
   
@@ -656,7 +656,7 @@ Requires 'Secretariat Panopticon Project' to be submitted first.
 **Unlock day:** 0  
 **Lore:** The Secretariat forgives those who obey.  
 **Description:**  
-<Failed to get description>  
+[Failed to get description]  
 **Unlock Description:**  
 Requires 'Liability Insurance' to be submitted first.  
   
@@ -667,7 +667,7 @@ Requires 'Liability Insurance' to be submitted first.
 **Unlock day:** 0  
 **Lore:** The Secretariat trusts content from those who comply.  
 **Description:**  
-<Failed to get description>  
+[Failed to get description]  
 **Unlock Description:**  
 Requires 'Secretariat Panopticon Project' to be submitted first.  
   
