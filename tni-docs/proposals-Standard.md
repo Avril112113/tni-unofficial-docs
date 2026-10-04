@@ -6,7 +6,7 @@ permalink: /data/proposals/Standard
 
 # Proposals for Standard
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.0
+GENERATED FOR TNI VERSION 0.13.1
 
 - TOC
 {:toc}
@@ -615,13 +615,13 @@ Fund 825 to support the opening of the Cereal Warez merchant, which provides USB
   
   
 ## Secretariat Panopticon Project  
-**Price:** $500  
+**Price:** ?  
 **Unlock day:** 3  
 **Always on day:** 6  
-**Lore:** We care for our people. Together we build towards new heights.  
+**Lore:** The taller we build, the more we see.  
 **Description:**  
-Please be part of the Panopticon Project as a good partner. Redirect resident traffic to Panopticon devices and earn Secretariat credit to use for other proposal trading.  
-Funding costs 500.  
+Participate in the Panopticon Project run by The Secretariat. Monitor and redirect resident traffic to Panopticon devices and earn Secretariat credit to use for other proposal trading.  
+  
 *This will trigger the Free Babel Movement.*  
 **Unlock Description:**  
 Will automatically appear on day 6.  
@@ -636,7 +636,7 @@ Unavailable if you've allied with Free Babel.
 **Description:**  
 [Failed to get description]  
 **Unlock Description:**  
-Requires 'Secretariat Panopticon Project' to be submitted first.  
+Requires 'Secretariat Panopticon Project (1/2)' to be submitted first.  
   
   
 ## Credit Exchange  
@@ -647,7 +647,7 @@ Requires 'Secretariat Panopticon Project' to be submitted first.
 **Description:**  
 [Failed to get description]  
 **Unlock Description:**  
-Requires 'Secretariat Panopticon Project' to be submitted first.  
+Requires 'Secretariat Panopticon Project (1/2)' to be submitted first.  
   
   
 ## Forgive SLA Breach  
@@ -669,18 +669,54 @@ Requires 'Liability Insurance' to be submitted first.
 **Description:**  
 [Failed to get description]  
 **Unlock Description:**  
-Requires 'Secretariat Panopticon Project' to be submitted first.  
+Requires 'Secretariat Panopticon Project (1/2)' to be submitted first.  
+  
+  
+## Secretariat Panopticon Project  
+**Depends On:** [Secretariat Panopticon Project](#secretariat-panopticon-project)  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** The taller we build, the more we see.  
+**Description:**  
+Become the mouthpiece of the Panopticon Project. This unlocks an influential device capable of affecting consumer satiety.  
+**Unlock Description:**  
+Requires 'Secretariat Panopticon Project (1/2)' to be submitted first.  
+  
+  
+## Scheduled Network Outage  
+**Depends On:** [Secretariat Panopticon Project](#secretariat-panopticon-project)  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** The Secretariat excuses those who obey.  
+**Description:**  
+[Failed to get description]  
+**Unlock Description:**  
+Requires 'Secretariat Panopticon Project (2/2)' to be submitted first.  
   
   
 ## Rebel against Secretariat  
 **Price:** ?  
 **Unlock day:** 3  
 **Always on day:** 6  
-**Lore:** All we need is freedom.  
+**Lore:** We shall not be silenced.  
 **Description:**  
-Side with us. We sell the stuff we build on the DMarket. More of our people will move into the tower.  
-Permanently locks the Panopticon Project and all Secretariat credit proposals.  
+Initiate contact with the Free Babel movement.  
+  
+The movement is run by talented hardware tweakers and heavy decentro users. This will invite more Free Babel folks into the tower.  
 **Unlock Description:**  
 Will automatically appear on day 6.  
 Unavailable if you've already accepted the Panopticon Project.  
+  
+  
+## Rebel against Secretariat  
+**Depends On:** [Rebel against Secretariat](#rebel-against-secretariat)  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** We shall not be silenced.  
+**Description:**  
+Increase our standing with the Free Babel movement.  
+  
+This unlocks an improved decentro rig from the Free Babel folks.  
+**Unlock Description:**  
+Requires 'Rebel against Secretariat (1/2)' to be submitted first.  
   

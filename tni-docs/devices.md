@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.0
+GENERATED FOR TNI VERSION 0.13.1
 
 - TOC
 {:toc}
@@ -846,6 +846,25 @@ Mountable on 500px racks.
 Cheaper than retail. Draws three times the power.  
   
   
+## Free Babel Rig<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Rig.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Rig.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `24` **MEM:** `16` **SIZE:** `8` **BW/t:** `92` **Watts:** 3123w  
+**Base Price:** $650 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
+**Hardware Class:** `DECENTRO_RIGS`  
+**Merchants:** [Free Babel<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Free Babel.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#free-babel)  
+**Installed Programs:** [decentro-node](programs.md/#decentro-node)  
+**Description:**  
+Decentro mining rig.  
+Specs: 24 CPU, 16 memory and 8 storage.  
+Handles up to 92 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 3123W.  
+Mountable on 930px racks.  
+Provides Decentro transaction verification to the p2p currency network.  
+  
+Produces more transactions than the standard node.  
+  
+  
 ## golonys-bloque<img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-bloque.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/golonys-bloque.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `2` **MEM:** `5` **SIZE:** `12` **BW/t:** `60` **Watts:** 53w  
 **Base Price:** $525 **Base Warranty:** 16.0 days   
@@ -902,6 +921,38 @@ Acts as a SAN target to provide remote storage over the network.
 Requires a SAN initiator program on another device to mount its storage.  
   
   
+## ICC Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `12` **Watts:** 57w  
+**Base Price:** $300 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Installed Programs:** [panop-mouthpiece](programs.md/#panop-mouthpiece)  
+**Description:**  
+Panopticon Mouthpiece built as an ICC Razor modular computing unit.  
+Specs: 4 CPU, 8 memory and 2 storage.  
+Handles up to 12 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 57W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC Razor 8<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `78` **Watts:** 55w  
+**Base Price:** $550 **Base Warranty:** 24.0 days   
+**Port Counts:** 13x `RJ45`, 8x `TEST`, 2x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
+**Description:**  
+8-bay modular computing chassis with VLAN port tagging.  
+Handles up to 78 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 55W.  
+Mountable on 930px racks.  
+Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
+  
+  
 ## ICC1<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC1.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 19w  
 **Base Price:** $160 **Base Warranty:** 8.0 days   
@@ -918,6 +969,21 @@ Not rack mountable.
 Homelab equipment.  
   
   
+## ICC10<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 19w  
+**Base Price:** $120 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit.  
+Specs: 1 CPU, 2 memory and 2 storage.  
+Handles up to 6 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 19W.  
+Compatible with an ICC Razor bay  
+  
+  
 ## ICC2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `12` **Watts:** 35w  
 **Base Price:** $345 **Base Warranty:** 8.0 days   
@@ -932,6 +998,36 @@ CPU cycles 1 tick every 2.0 seconds.
 Power consumption: 35W.  
 Not rack mountable.  
 Homelab equipment.  
+  
+  
+## ICC20<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `6` **Watts:** 24w  
+**Base Price:** $260 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit.  
+Specs: 2 CPU, 4 memory and 2 storage.  
+Handles up to 6 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 24W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC30<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `12` **Watts:** 57w  
+**Base Price:** $560 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit.  
+Specs: 4 CPU, 8 memory and 2 storage.  
+Handles up to 12 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 57W.  
+Compatible with an ICC Razor bay  
   
   
 ## LoadTester Bob<img src="{{ site.baseurl }}/tni-docs/assets/devices/LoadTester Bob.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/LoadTester Bob.webp" style="max-height: 25vh;" /></wa-tooltip>  
@@ -1094,6 +1190,19 @@ Not rack mountable.
 Map the domain name of a service to this Cellblock's logical address. Each redirected visit earns Secretariat credit.  
 Mountable on 500px racks.  
 Must reach a Panopticon Profiler over the network to receive user behavior data.  
+  
+  
+## Panopticon Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `7` **Watts:** 13w  
+**Base Price:** $350 **Base Warranty:** 28.0 days   
+**Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Panopticon of Secretariat<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#panopticon-of-secretariat)  
+**Installed Programs:** [panop-mouthpiece](programs.md/#panop-mouthpiece)  
+**Description:**  
+Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.  
+Mountable on 500px racks.  
+Must reach a Panopticon Cellblock or Profiler over the network to gain influence.  
   
   
 ## Panopticon Profiler<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" style="max-height: 25vh;" /></wa-tooltip>  

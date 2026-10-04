@@ -6,7 +6,7 @@ permalink: /data/traffic_types
 
 # Traffic Types
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.0
+GENERATED FOR TNI VERSION 0.13.1
 
 `#` represents any number between 0-9  
   
@@ -87,7 +87,7 @@ Text scraping.
 
   
 **Used by Programs:**   
-**Used by Users:** [Bobby Tester](users.md/#bobby-tester), [Full-time Coder](users.md/#full-time-coder), [Digital Salesman](users.md/#digital-salesman), [Greedy Dweller](users.md/#greedy-dweller), [Digital Hoarder](users.md/#digital-hoarder), [Tech Adopter](users.md/#tech-adopter), [Software Engineer](users.md/#software-engineer), [Malicious User](users.md/#malicious-user), [Minimum Spender](users.md/#minimum-spender), [Public Gateway](users.md/#public-gateway), [Binge Watcher](users.md/#binge-watcher), [Free Babel Flock](users.md/#free-babel-flock)  
+**Used by Users:** [Bobby Tester](users.md/#bobby-tester), [Full-time Coder](users.md/#full-time-coder), [Digital Salesman](users.md/#digital-salesman), [Greedy Dweller](users.md/#greedy-dweller), [Digital Hoarder](users.md/#digital-hoarder), [Tech Adopter](users.md/#tech-adopter), [Software Engineer](users.md/#software-engineer), [Malicious User](users.md/#malicious-user), [Minimum Spender](users.md/#minimum-spender), [Public Gateway](users.md/#public-gateway), [Binge Watcher](users.md/#binge-watcher), [Free Babel Folk](users.md/#free-babel-folk)  
   
   
 ## tcp/51#  
@@ -97,7 +97,7 @@ Worm `ANNOYING_MORRIS`
 
   
 **Used by Programs:** [WORM ANNOYING_MORRIS](programs.md/#worm-annoying_morris)  
-**Used by Users:** [Malicious User](users.md/#malicious-user), [Free Babel Flock](users.md/#free-babel-flock)  
+**Used by Users:** [Malicious User](users.md/#malicious-user), [Free Babel Folk](users.md/#free-babel-folk)  
   
   
 ## udp/520  
@@ -148,11 +148,12 @@ This also includes the Worm `HUSH`
 ## tcp/8333  
 **Description:**    
 Decentro/P2P traffic  
+This also includes the Worm `DECENTROWORM`  
   
 
   
-**Used by Programs:** [decentro-collector](programs.md/#decentro-collector), [WORM DECENTROWORM](programs.md/#worm-decentroworm)  
-**Used by Users:** [tester debbie](users.md/#tester-debbie), [tester ellie](users.md/#tester-ellie), [Loyal Worker](users.md/#loyal-worker), [Decentro Farmer](users.md/#decentro-farmer), [Tower Worker](users.md/#tower-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor), [Free Babel Flock](users.md/#free-babel-flock)  
+**Used by Programs:** [decentro-collector](programs.md/#decentro-collector), [WORM Mt Goks](programs.md/#worm-mt-goks)  
+**Used by Users:** [tester debbie](users.md/#tester-debbie), [tester ellie](users.md/#tester-ellie), [Loyal Worker](users.md/#loyal-worker), [Decentro Farmer](users.md/#decentro-farmer), [Tower Worker](users.md/#tower-worker), [Neighbour Helper](users.md/#neighbour-helper), [Strategic Investor](users.md/#strategic-investor), [Free Babel Folk](users.md/#free-babel-folk)  
   
   
 ## tcp/2404  
@@ -221,12 +222,14 @@ From `printer_edge`
   
 ## udp/6343  
 **Description:**    
-??? traffic.  
-From `ubbt` looking for `inspect-user-packets`  
+Flow monitoring traffic.  
+From `ubbt` or `panop-profiler` looking for `inspect-user-packets`  
+From `panop-cell` looking for `profile-user-behavior`  
+This also includes the Worm `SANDWORM`  
   
 
   
-**Used by Programs:** [ubbt](programs.md/#ubbt), [panop-cell](programs.md/#panop-cell), [panop-profiler](programs.md/#panop-profiler), [WORM SANDWORM](programs.md/#worm-sandworm)  
+**Used by Programs:** [ubbt](programs.md/#ubbt), [panop-mouthpiece](programs.md/#panop-mouthpiece), [panop-cell](programs.md/#panop-cell), [panop-profiler](programs.md/#panop-profiler), [WORM SANDWORM](programs.md/#worm-sandworm)  
 **Used by Users:**   
   
   

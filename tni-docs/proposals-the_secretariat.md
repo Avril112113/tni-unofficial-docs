@@ -6,7 +6,7 @@ permalink: /data/proposals/the_secretariat
 
 # Proposals for the_secretariat
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.0
+GENERATED FOR TNI VERSION 0.13.1
 
 - TOC
 {:toc}
@@ -40,6 +40,14 @@ GENERATED FOR TNI VERSION 0.13.0
 **Price:** ?  
 **Unlock day:** 0  
 **Lore:** The Secretariat trusts content from those who comply.  
+**Description:**  
+[Failed to get description]  
+  
+  
+## Scheduled Network Outage  
+**Price:** ?  
+**Unlock day:** 0  
+**Lore:** The Secretariat excuses those who obey.  
 **Description:**  
 [Failed to get description]  
   

@@ -1,5 +1,5 @@
 {
-	"game_version": "0.13.0",
+	"game_version": "0.13.1",
 	"revision": 1,
 	"format": 12,
 	"enums": {
@@ -56,7 +56,8 @@
 			"NA",
 			"R500",
 			"R930",
-			"R630"
+			"R630",
+			"BLADE_BAY"
 		],
 		"TraversalConsume.ProductTarget": [
 			"SOURCE",
@@ -108,11 +109,13 @@
 			"PCIE_SLOT",
 			"DDR3_SLOT",
 			"DDR4_SLOT",
+			"DRAM_SLOT",
 			"STORAGE_SLOT",
 			"SPOOL_HOOK",
 			"CABLE_O_MATIC_RJ45",
 			"CABLE_O_MATIC_FIBO",
-			"CABLE_O_MATIC_PMA"
+			"CABLE_O_MATIC_PMA",
+			"CPU_SLOT"
 		],
 		"Plug.CableMakeType": [
 			"RJ45",
@@ -457,6 +460,31 @@
 				"limit_factor": 1,
 				"additional_descriptions": [
 					"Production is limited to 10 compatible uses on the device's use stack."
+				]
+			}
+		},
+		"graph_network_simulation/programs/early_access/decentro_currency_network/decentro_node_fb.tscn": {
+			"cpu_load": 24,
+			"code_size": 6,
+			"stack_size": 6,
+			"data_size": 0,
+			"release_name": "decentro-node",
+			"description": "Authenticate Decentro transactions. Decentro peers can connect to this program to perform peer-to-peer transactions. You may only spend decentro currencies that are accessible by decentro nodes.",
+			"rendered_description": "Authenticate Decentro transactions. Decentro peers can connect to this program to perform peer-to-peer transactions. You may only spend decentro currencies that are accessible by decentro nodes.\nProduction is limited to 20 compatible uses on the device's use stack.",
+			"pkt_processing_priority": -1,
+			"modifiers": [
+				"ALLOW_DECENTROWORM_TARGETING"
+			],
+			"application_unlocks": [],
+			"required_hardware_device": [],
+			"unlocked_by": [],
+			"AlwaysProduce": {
+				"produce_use_config": "graph_network_simulation/programs/early_access/decentro_currency_network/decentro_transactions.tres",
+				"produce_factor": 20,
+				"produce_limit_type": "LIMITED_BY_PRODUCE_FACTOR",
+				"limit_factor": 1,
+				"additional_descriptions": [
+					"Production is limited to 20 compatible uses on the device's use stack."
 				]
 			}
 		},
@@ -1367,6 +1395,26 @@
 				"additional_descriptions": [
 					""
 				]
+			}
+		},
+		"graph_network_simulation/programs/early_access/dns_censorship/panop_mouthpiece.tscn": {
+			"cpu_load": 4,
+			"code_size": 4,
+			"stack_size": 4,
+			"data_size": 1,
+			"release_name": "panop-mouthpiece",
+			"description": "Influences a targeted resident with user behavior data read off the network.\n\n[color=red]Requires panop-cell or panop-profiler holding user behavior data over the network[/color].",
+			"rendered_description": "Influences a targeted resident with user behavior data read off the network.\n\n[color=red]Requires panop-cell or panop-profiler holding user behavior data over the network[/color].",
+			"pkt_processing_priority": -1,
+			"modifiers": [
+				"ALLOW_SANDWORM_TARGETING"
+			],
+			"application_unlocks": [],
+			"required_hardware_device": [],
+			"unlocked_by": [],
+			"TraversalBase": {
+				"traffic_class": "udp/6343",
+				"traffic_weight": 1
 			}
 		},
 		"graph_network_simulation/programs/early_access/dns_censorship/user_data_mining.tscn": {
@@ -2566,32 +2614,6 @@
 				"force_hint_hide": false
 			}
 		},
-		"graph_network_simulation/programs/early_access/worms/decentro_worm.tscn": {
-			"cpu_load": 0,
-			"code_size": 0,
-			"stack_size": 0,
-			"data_size": 0,
-			"release_name": "",
-			"description": "DECENTROWORM targets devices running Decentro programs using Decentro network traffic (TCP/8333). Upon infection, it uninstalls those programs from the device.",
-			"rendered_description": "DECENTROWORM targets devices running Decentro programs using Decentro network traffic (TCP/8333). Upon infection, it uninstalls those programs from the device.",
-			"pkt_processing_priority": -1,
-			"modifiers": [],
-			"application_unlocks": [],
-			"required_hardware_device": [],
-			"unlocked_by": [],
-			"TraversalBase": {
-				"traffic_class": "tcp/8333",
-				"traffic_weight": 1
-			},
-			"WormBase": {
-				"release_name_template": "decentroworm",
-				"max_spread_per_tick": 1,
-				"signature": "DECENTROWORM",
-				"vulnerable_device_types": [],
-				"incubation_cycles": 5,
-				"force_hint_hide": false
-			}
-		},
 		"graph_network_simulation/programs/early_access/worms/hush.tscn": {
 			"cpu_load": 0,
 			"code_size": 0,
@@ -2619,6 +2641,32 @@
 				],
 				"incubation_cycles": 3,
 				"force_hint_hide": true
+			}
+		},
+		"graph_network_simulation/programs/early_access/worms/decentro_worm.tscn": {
+			"cpu_load": 0,
+			"code_size": 0,
+			"stack_size": 0,
+			"data_size": 0,
+			"release_name": "",
+			"description": "Mt Groks targets devices running Decentro programs using Decentro network traffic (TCP/8333). Upon infection, it uninstalls those programs from the device.",
+			"rendered_description": "Mt Groks targets devices running Decentro programs using Decentro network traffic (TCP/8333). Upon infection, it uninstalls those programs from the device.",
+			"pkt_processing_priority": -1,
+			"modifiers": [],
+			"application_unlocks": [],
+			"required_hardware_device": [],
+			"unlocked_by": [],
+			"TraversalBase": {
+				"traffic_class": "tcp/8333",
+				"traffic_weight": 1
+			},
+			"WormBase": {
+				"release_name_template": "mtgoks",
+				"max_spread_per_tick": 1,
+				"signature": "Mt Goks",
+				"vulnerable_device_types": [],
+				"incubation_cycles": 5,
+				"force_hint_hide": false
 			}
 		},
 		"graph_network_simulation/programs/early_access/worms/sandworm.tscn": {
@@ -15668,8 +15716,8 @@
 			]
 		},
 		"graph_network_simulation/users/type_v5/early_access/proposal/consumers/free_babel.tscn": {
-			"description": "Residents who want to be free. They jailbreak devices and build their own.",
-			"user_profile_name": "Free Babel Flock",
+			"description": "Resident who want to be free and love to jailbreak devices.",
+			"user_profile_name": "Free Babel Folk",
 			"base_use_period": 8.0,
 			"use_period_variance": 2.0,
 			"downtime_sla_seconds": 360,
@@ -21984,6 +22032,81 @@
 				]
 			}
 		},
+		"units/free_babel/dvergar_fb.tscn": {
+			"product_name": "Free Babel Rig",
+			"description": "Decentro mining rig.",
+			"device_rendered_description": "Decentro mining rig.\nSpecs: 24 CPU, 16 memory and 8 storage.\nHandles up to 92 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 3123W.\nMountable on 930px racks.\nProvides Decentro transaction verification to the p2p currency network.\n\nProduces more transactions than the standard node.",
+			"text": "Provides Decentro transaction verification to the p2p currency network.\n\nProduces more transactions than the standard node.",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 650,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 65,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 3.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DECENTRO_RIGS",
+			"mount_type": "R930",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 24,
+				"installed_mem": 16,
+				"installed_sto": 8,
+				"installed_nbw": 92,
+				"power_load": 3120,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": false,
+				"allow_process_mods": false,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [
+					"graph_network_simulation/programs/early_access/decentro_currency_network/decentro_node_fb.tscn"
+				],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": false,
+				"charge_rate": 3123,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "B_3PIN",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
 		"units/golonys_ltd/golonys_bloque.tscn": {
 			"product_name": "golonys-bloque",
 			"description": "{nport}-port storage area network (SAN) array.",
@@ -22307,6 +22430,392 @@
 				]
 			}
 		},
+		"units/icc_servers/icc_razor_cpu.tscn": {
+			"product_name": "ICC CPU Slot",
+			"description": "CPU slot",
+			"device_rendered_description": "CPU slot\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 30,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 3,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "BLADE_BAY",
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": false,
+				"charge_rate": 2,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_dram.tscn": {
+			"product_name": "ICC Memory Slot",
+			"description": "DRAM slot",
+			"device_rendered_description": "DRAM slot\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 25,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 2,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "BLADE_BAY",
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": false,
+				"charge_rate": 2,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_mouthpiece.tscn": {
+			"product_name": "ICC Mouthpiece",
+			"description": "Panopticon Mouthpiece built as an ICC Razor modular computing unit.",
+			"device_rendered_description": "Panopticon Mouthpiece built as an ICC Razor modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 57W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 300,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 30,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 4,
+				"installed_mem": 8,
+				"installed_sto": 2,
+				"installed_nbw": 12,
+				"power_load": 54,
+				"infinite_power_mode": false,
+				"force_autoconfig": true,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [
+					"graph_network_simulation/programs/early_access/dns_censorship/panop_mouthpiece.tscn"
+				],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 57,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_modular.tscn": {
+			"product_name": "ICC Razor 8",
+			"description": "8-bay modular computing chassis with VLAN port tagging.",
+			"device_rendered_description": "8-bay modular computing chassis with VLAN port tagging.\nHandles up to 78 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 55W.\nMountable on 930px racks.\nPowers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
+			"text": "Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
+			"extra_descriptions": "BW_PER_TICK",
+			"price": 550,
+			"base_warranty_days": 3,
+			"base_warranty_cycles": 3,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 55,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "R930",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 1,
+				"installed_mem": 1,
+				"installed_sto": 1,
+				"installed_nbw": 78,
+				"power_load": 52,
+				"infinite_power_mode": false,
+				"force_autoconfig": true,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": false,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [
+					"graph_network_simulation/programs/early_access/networking_firmwares/managed_sw_firmware.tscn"
+				],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": false,
+				"charge_rate": 55,
+				"allow_passthrough": true,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "B_3PIN",
+						"disable_egress": true,
+						"disable_ingress": false
+					},
+					{
+						"type": "B_3PIN",
+						"disable_egress": true,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_sata.tscn": {
+			"product_name": "ICC Storage Slot",
+			"description": "SATA 3.5\" slot",
+			"device_rendered_description": "SATA 3.5\" slot\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 20,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 2,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "BLADE_BAY",
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": false,
+				"charge_rate": 2,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
 		"units/icc_servers/icc1.tscn": {
 			"product_name": "ICC1",
 			"description": "{nport}-port modular computing unit.",
@@ -22382,6 +22891,79 @@
 				"ports": [
 					{
 						"type": "B_3PIN",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m10.tscn": {
+			"product_name": "ICC10",
+			"description": "Modular computing unit.",
+			"device_rendered_description": "Modular computing unit.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 19W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 120,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 12,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 1,
+				"installed_mem": 2,
+				"installed_sto": 2,
+				"installed_nbw": 6,
+				"power_load": 16,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 19,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
 						"disable_egress": false,
 						"disable_ingress": false
 					}
@@ -22471,6 +23053,152 @@
 				"ports": [
 					{
 						"type": "B_3PIN",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m20.tscn": {
+			"product_name": "ICC20",
+			"description": "Modular computing unit.",
+			"device_rendered_description": "Modular computing unit.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 24W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 260,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 26,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 2,
+				"installed_mem": 4,
+				"installed_sto": 2,
+				"installed_nbw": 6,
+				"power_load": 21,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 24,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m30.tscn": {
+			"product_name": "ICC30",
+			"description": "Modular computing unit.",
+			"device_rendered_description": "Modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 57W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 560,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 56,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 4,
+				"installed_mem": 8,
+				"installed_sto": 2,
+				"installed_nbw": 12,
+				"power_load": 54,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 57,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
 						"disable_egress": false,
 						"disable_ingress": false
 					}
@@ -23914,6 +24642,73 @@
 				"propagate_charges": false,
 				"disabled": false,
 				"charge_rate": 18,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "B_3PIN",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/panopticon/panopticon_mouthpiece_device.tscn": {
+			"product_name": "Panopticon Mouthpiece",
+			"description": "Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.",
+			"device_rendered_description": "Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.\nMountable on 500px racks.\nMust reach a Panopticon Cellblock or Profiler over the network to gain influence.",
+			"text": "Must reach a Panopticon Cellblock or Profiler over the network to gain influence.",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 350,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 4,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 35,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.25,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "R500",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 1,
+				"installed_mem": 1,
+				"installed_sto": 1,
+				"installed_nbw": 7,
+				"power_load": 10,
+				"infinite_power_mode": false,
+				"force_autoconfig": true,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": false,
+				"allow_process_mods": false,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [
+					"graph_network_simulation/programs/early_access/dns_censorship/panop_mouthpiece.tscn"
+				],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": false,
+				"charge_rate": 13,
 				"allow_passthrough": false,
 				"charge_capacity": 10,
 				"can_discharge_to_supply": false,
@@ -27385,8 +28180,8 @@
 				"can_be_proposed_beginning": 3,
 				"force_once_on_day": 6,
 				"name": "Secretariat Panopticon Project",
-				"cost": 500,
-				"description": "Please be part of the Panopticon Project as a good partner. Redirect resident traffic to Panopticon devices and earn Secretariat credit to use for other proposal trading.  \nFunding costs 500.  \n*This will trigger the Free Babel Movement.*",
+				"cost": null,
+				"description": "Participate in the Panopticon Project run by The Secretariat. Monitor and redirect resident traffic to Panopticon devices and earn Secretariat credit to use for other proposal trading.  \n  \n*This will trigger the Free Babel Movement.*",
 				"unlock_description": "Will automatically appear on day 6.\nUnavailable if you've allied with Free Babel."
 			},
 			"PowerImmunity": {
@@ -27397,8 +28192,8 @@
 				"force_once_on_day": -1,
 				"name": "Power Immunity",
 				"cost": null,
-				"description": "<Failed to get description>",
-				"unlock_description": "Requires 'Secretariat Panopticon Project' to be submitted first."
+				"description": "[Failed to get description]",
+				"unlock_description": "Requires 'Secretariat Panopticon Project (1/2)' to be submitted first."
 			},
 			"ExchangeForCash": {
 				"locked": false,
@@ -27408,8 +28203,8 @@
 				"force_once_on_day": -1,
 				"name": "Credit Exchange",
 				"cost": null,
-				"description": "<Failed to get description>",
-				"unlock_description": "Requires 'Secretariat Panopticon Project' to be submitted first."
+				"description": "[Failed to get description]",
+				"unlock_description": "Requires 'Secretariat Panopticon Project (1/2)' to be submitted first."
 			},
 			"ReduceLiabilityInsurance": {
 				"locked": false,
@@ -27419,7 +28214,7 @@
 				"force_once_on_day": -1,
 				"name": "Forgive SLA Breach",
 				"cost": null,
-				"description": "<Failed to get description>",
+				"description": "[Failed to get description]",
 				"unlock_description": "Requires 'Liability Insurance' to be submitted first."
 			},
 			"BoostDomainPPU": {
@@ -27430,8 +28225,30 @@
 				"force_once_on_day": -1,
 				"name": "Premium Domain License",
 				"cost": null,
-				"description": "<Failed to get description>",
-				"unlock_description": "Requires 'Secretariat Panopticon Project' to be submitted first."
+				"description": "[Failed to get description]",
+				"unlock_description": "Requires 'Secretariat Panopticon Project (1/2)' to be submitted first."
+			},
+			"SecretariatFloorClosure": {
+				"locked": false,
+				"depends_on": "BlackboxResearch",
+				"disallow_proposal_if_depends_submitted": false,
+				"can_be_proposed_beginning": 0,
+				"force_once_on_day": -1,
+				"name": "Secretariat Panopticon Project",
+				"cost": null,
+				"description": "Become the mouthpiece of the Panopticon Project. This unlocks an influential device capable of affecting consumer satiety.",
+				"unlock_description": "Requires 'Secretariat Panopticon Project (1/2)' to be submitted first."
+			},
+			"FloorClosurePermit": {
+				"locked": false,
+				"depends_on": "SecretariatFloorClosure",
+				"disallow_proposal_if_depends_submitted": false,
+				"can_be_proposed_beginning": 0,
+				"force_once_on_day": -1,
+				"name": "Scheduled Network Outage",
+				"cost": null,
+				"description": "[Failed to get description]",
+				"unlock_description": "Requires 'Secretariat Panopticon Project (2/2)' to be submitted first."
 			},
 			"SecretariatLobbyAgainst": {
 				"locked": false,
@@ -27441,8 +28258,19 @@
 				"force_once_on_day": 6,
 				"name": "Rebel against Secretariat",
 				"cost": null,
-				"description": "Side with us. We sell the stuff we build on the DMarket. More of our people will move into the tower.  \nPermanently locks the Panopticon Project and all Secretariat credit proposals.",
+				"description": "Initiate contact with the Free Babel movement.  \n  \nThe movement is run by talented hardware tweakers and heavy decentro users. This will invite more Free Babel folks into the tower.",
 				"unlock_description": "Will automatically appear on day 6.\nUnavailable if you've already accepted the Panopticon Project."
+			},
+			"SecretariatLobbyAgainstPhaseTwo": {
+				"locked": false,
+				"depends_on": "SecretariatLobbyAgainst",
+				"disallow_proposal_if_depends_submitted": false,
+				"can_be_proposed_beginning": 0,
+				"force_once_on_day": -1,
+				"name": "Rebel against Secretariat",
+				"cost": null,
+				"description": "Increase our standing with the Free Babel movement.  \n  \nThis unlocks an improved decentro rig from the Free Babel folks.",
+				"unlock_description": "Requires 'Rebel against Secretariat (1/2)' to be submitted first."
 			}
 		},
 		"proposals/packs/the_secretariat.tscn": {
@@ -27454,7 +28282,7 @@
 				"force_once_on_day": -1,
 				"name": "Power Immunity",
 				"cost": null,
-				"description": "<Failed to get description>",
+				"description": "[Failed to get description]",
 				"unlock_description": ""
 			},
 			"ExchangeForCash": {
@@ -27465,7 +28293,7 @@
 				"force_once_on_day": -1,
 				"name": "Credit Exchange",
 				"cost": null,
-				"description": "<Failed to get description>",
+				"description": "[Failed to get description]",
 				"unlock_description": ""
 			},
 			"ReduceLiabilityInsurance": {
@@ -27476,7 +28304,7 @@
 				"force_once_on_day": -1,
 				"name": "Forgive SLA Breach",
 				"cost": null,
-				"description": "<Failed to get description>",
+				"description": "[Failed to get description]",
 				"unlock_description": ""
 			},
 			"BoostDomainPPU": {
@@ -27487,7 +28315,18 @@
 				"force_once_on_day": -1,
 				"name": "Premium Domain License",
 				"cost": null,
-				"description": "<Failed to get description>",
+				"description": "[Failed to get description]",
+				"unlock_description": ""
+			},
+			"FloorClosurePermit": {
+				"locked": false,
+				"depends_on": null,
+				"disallow_proposal_if_depends_submitted": false,
+				"can_be_proposed_beginning": 0,
+				"force_once_on_day": -1,
+				"name": "Scheduled Network Outage",
+				"cost": null,
+				"description": "[Failed to get description]",
 				"unlock_description": ""
 			}
 		}
@@ -28707,12 +29546,12 @@
 					}
 				},
 				{
-					"device_scn": "components/cables/presets/fib_serial_2000p.tscn",
+					"device_scn": "components/cables/presets/eth_serial_2000p.tscn",
 					"listed_on_day": 0,
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Fiber optic SC to serial debug adapter, 2000 pixels in length.",
+						"description": "Ethernet to serial debug cable, 2000 pixels in length.",
 						"warranty_period": 0,
 						"base_price": 200,
 						"price": 200
@@ -28752,6 +29591,18 @@
 						"warranty_period": 21,
 						"base_price": 950,
 						"price": 950
+					}
+				},
+				{
+					"device_scn": "units/free_babel/dvergar_fb.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Decentro mining rig.\nSpecs: 24 CPU, 16 memory and 8 storage.\nHandles up to 92 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 3123W.\nMountable on 930px racks.\nProvides Decentro transaction verification to the p2p currency network.\n\nProduces more transactions than the standard node.\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 650,
+						"price": 650
 					}
 				}
 			],
@@ -28876,6 +29727,174 @@
 					"AdditionalData": {
 						"description": "Compatible with SATA3.5\"\nProvides extra 8 storage to attached devices.\nFiles moved onto it travel with the disk when it is unplugged.",
 						"warranty_period": 0,
+						"base_price": 300,
+						"price": 300
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_modular.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "8-bay modular computing chassis with VLAN port tagging.\nHandles up to 78 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 55W.\nMountable on 930px racks.\nPowers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.\n24-day device warranty.",
+						"warranty_period": 24,
+						"base_price": 550,
+						"price": 550
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m10.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 19W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 120,
+						"price": 120
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m20.tscn",
+					"listed_on_day": 5,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 24W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 260,
+						"price": 260
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m30.tscn",
+					"listed_on_day": 10,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 57W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 560,
+						"price": 560
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_cpu.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "CPU slot\nCompatible with an ICC Razor bay",
+						"warranty_period": 0,
+						"base_price": 30,
+						"price": 30
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_dram.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "DRAM slot\nCompatible with an ICC Razor bay",
+						"warranty_period": 0,
+						"base_price": 25,
+						"price": 25
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_sata.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "SATA 3.5\" slot\nCompatible with an ICC Razor bay",
+						"warranty_period": 0,
+						"base_price": 20,
+						"price": 20
+					}
+				},
+				{
+					"device_scn": "components/removables/cpu_1.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with CPU slots.\nProvides 1 extra CPU to the attached device.\nDraws 3W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 80,
+						"price": 80
+					}
+				},
+				{
+					"device_scn": "components/removables/cpu_2.tscn",
+					"listed_on_day": 5,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with CPU slots.\nProvides 2 extra CPU to the attached device.\nDraws 7W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 185,
+						"price": 185
+					}
+				},
+				{
+					"device_scn": "components/removables/cpu_4.tscn",
+					"listed_on_day": 10,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with CPU slots.\nProvides 4 extra CPU to the attached device.\nDraws 14W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 395,
+						"price": 395
+					}
+				},
+				{
+					"device_scn": "components/removables/dram_2.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with DRAM slots.\nProvides 2 extra memory to the attached device.\nDraws 1W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 25,
+						"price": 25
+					}
+				},
+				{
+					"device_scn": "components/removables/dram_4.tscn",
+					"listed_on_day": 5,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with DRAM slots.\nProvides 4 extra memory to the attached device.\nDraws 2W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 75,
+						"price": 75
+					}
+				},
+				{
+					"device_scn": "components/removables/dram_6.tscn",
+					"listed_on_day": 10,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with DRAM slots.\nProvides 6 extra memory to the attached device.\nDraws 3W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 125,
+						"price": 125
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_mouthpiece.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Panopticon Mouthpiece built as an ICC Razor modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 57W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
 						"base_price": 300,
 						"price": 300
 					}
@@ -29478,6 +30497,18 @@
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
 						"description": "Map the domain name of a service to this Cellblock's logical address. Each redirected visit earns Secretariat credit.\nMountable on 500px racks.\nMust reach a Panopticon Profiler over the network to receive user behavior data.\n28-day device warranty.",
+						"warranty_period": 28,
+						"base_price": 350,
+						"price": 350
+					}
+				},
+				{
+					"device_scn": "units/panopticon/panopticon_mouthpiece_device.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.\nMountable on 500px racks.\nMust reach a Panopticon Cellblock or Profiler over the network to gain influence.\n28-day device warranty.",
 						"warranty_period": 28,
 						"base_price": 350,
 						"price": 350
@@ -30465,6 +31496,48 @@
 			],
 			"cable_make_type": "RJ45"
 		},
+		"components/removables/cpu_1.tscn": {
+			"compatibles": [
+				"CPU_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "CPU Extension 1",
+				"price": 80,
+				"description": "Compatible with CPU slots.",
+				"rendered_description": "Compatible with CPU slots.\nProvides 1 extra CPU to the attached device.\nDraws 3W while the device is running."
+			}
+		},
+		"components/removables/cpu_2.tscn": {
+			"compatibles": [
+				"CPU_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "CPU Extension 2",
+				"price": 185,
+				"description": "Compatible with CPU slots.",
+				"rendered_description": "Compatible with CPU slots.\nProvides 2 extra CPU to the attached device.\nDraws 7W while the device is running."
+			}
+		},
+		"components/removables/cpu_4.tscn": {
+			"compatibles": [
+				"CPU_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "CPU Extension 4",
+				"price": 395,
+				"description": "Compatible with CPU slots.",
+				"rendered_description": "Compatible with CPU slots.\nProvides 4 extra CPU to the attached device.\nDraws 14W while the device is running."
+			}
+		},
 		"components/removables/data_wiper.tscn": {
 			"compatibles": [
 				"A_USB",
@@ -30479,6 +31552,48 @@
 			},
 			"DataWiperUSB": {
 
+			}
+		},
+		"components/removables/dram_2.tscn": {
+			"compatibles": [
+				"DRAM_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "Memory Extension 2",
+				"price": 25,
+				"description": "Compatible with DRAM slots.",
+				"rendered_description": "Compatible with DRAM slots.\nProvides 2 extra memory to the attached device.\nDraws 1W while the device is running."
+			}
+		},
+		"components/removables/dram_4.tscn": {
+			"compatibles": [
+				"DRAM_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "Memory Extension 4",
+				"price": 75,
+				"description": "Compatible with DRAM slots.",
+				"rendered_description": "Compatible with DRAM slots.\nProvides 4 extra memory to the attached device.\nDraws 2W while the device is running."
+			}
+		},
+		"components/removables/dram_6.tscn": {
+			"compatibles": [
+				"DRAM_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "Memory Extension 6",
+				"price": 125,
+				"description": "Compatible with DRAM slots.",
+				"rendered_description": "Compatible with DRAM slots.\nProvides 6 extra memory to the attached device.\nDraws 3W while the device is running."
 			}
 		},
 		"components/removables/gpu_card.tscn": {
@@ -33522,6 +34637,17 @@
 					]
 				}
 			]
+		},
+		"graph_network_simulation/programs/early_access/thesecretariat/use/business_reporting_producer.tres": {
+			"use_value": "verify-user, post-operation-data, authenticate-transaction",
+			"constraint_descript": "verify-user and post-operation-data and authenticate-transaction",
+			"use_descriptions": [
+				"verify-user",
+				"post-operation-data",
+				"authenticate-transaction"
+			],
+			"and_compatibility": true,
+			"consume_config_blocks": []
 		},
 		"graph_network_simulation/programs/early_access/thesecretariat/use/post_operation_data.tres": {
 			"use_value": "post-operation-data, verify-user",

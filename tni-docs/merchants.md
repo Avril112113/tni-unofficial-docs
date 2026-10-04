@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.0
+GENERATED FOR TNI VERSION 0.13.1
 
 - TOC
 {:toc}
@@ -1009,11 +1009,11 @@ Be careful when using them.
    Mountable on 500px racks.  
    Exploits a floor's power meter with fbabel command.  
    21-day device warranty.  
-- **Fiber Debug Adapter 2000p**  
+- **Ethernet Serial 2000p**  
   **Listing Starts** day 0  
   **Price:** $200  
   **Description:**  
-   Fiber optic SC to serial debug adapter, 2000 pixels in length.  
+   Ethernet to serial debug cable, 2000 pixels in length.  
 - **[Free Babel Boulder<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Boulder.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Boulder.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#free-babel-boulder)**  
   **Listing Starts** day 0  
   **Price:** $425  
@@ -1051,6 +1051,21 @@ Be careful when using them.
    Mountable on 500px racks.  
    Cheaper than retail. Draws three times the power.  
    21-day device warranty.  
+- **[Free Babel Rig<img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Rig.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Free Babel Rig.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#free-babel-rig)**  
+  **Listing Starts** day 0  
+  **Price:** $650  
+  **Warranty:** 14 days  
+  **Description:**  
+   Decentro mining rig.  
+   Specs: 24 CPU, 16 memory and 8 storage.  
+   Handles up to 92 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 3123W.  
+   Mountable on 930px racks.  
+   Provides Decentro transaction verification to the p2p currency network.  
+     
+   Produces more transactions than the standard node.  
+   14-day device warranty.  
   
   
 ## Golonys Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Golonys Ltd.png" style="max-height: 25vh;" /></wa-tooltip>  
@@ -1161,6 +1176,126 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Compatible with SATA3.5"  
    Provides extra 8 storage to attached devices.  
    Files moved onto it travel with the disk when it is unplugged.  
+- **[ICC Razor 8<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-razor-8)**  
+  **Listing Starts** day 2  
+  **Price:** $550  
+  **Warranty:** 24 days  
+  **Description:**  
+   8-bay modular computing chassis with VLAN port tagging.  
+   Handles up to 78 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 55W.  
+   Mountable on 930px racks.  
+   Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
+   24-day device warranty.  
+- **[ICC10<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc10)**  
+  **Listing Starts** day 2  
+  **Price:** $120  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit.  
+   Specs: 1 CPU, 2 memory and 2 storage.  
+   Handles up to 6 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 19W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC20<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc20)**  
+  **Listing Starts** day 5  
+  **Price:** $260  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit.  
+   Specs: 2 CPU, 4 memory and 2 storage.  
+   Handles up to 6 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 24W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC30<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc30)**  
+  **Listing Starts** day 10  
+  **Price:** $560  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit.  
+   Specs: 4 CPU, 8 memory and 2 storage.  
+   Handles up to 12 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 57W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC CPU Slot<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC CPU Slot.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC CPU Slot.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-cpu-slot)**  
+  **Listing Starts** day 2  
+  **Price:** $30  
+  **Description:**  
+   CPU slot  
+   Compatible with an ICC Razor bay  
+- **[ICC Memory Slot<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Memory Slot.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Memory Slot.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-memory-slot)**  
+  **Listing Starts** day 2  
+  **Price:** $25  
+  **Description:**  
+   DRAM slot  
+   Compatible with an ICC Razor bay  
+- **[ICC Storage Slot<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Storage Slot.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Storage Slot.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-storage-slot)**  
+  **Listing Starts** day 2  
+  **Price:** $20  
+  **Description:**  
+   SATA 3.5" slot  
+   Compatible with an ICC Razor bay  
+- **CPU Extension 1**  
+  **Listing Starts** day 2  
+  **Price:** $80  
+  **Description:**  
+   Compatible with CPU slots.  
+   Provides 1 extra CPU to the attached device.  
+   Draws 3W while the device is running.  
+- **CPU Extension 2**  
+  **Listing Starts** day 5  
+  **Price:** $185  
+  **Description:**  
+   Compatible with CPU slots.  
+   Provides 2 extra CPU to the attached device.  
+   Draws 7W while the device is running.  
+- **CPU Extension 4**  
+  **Listing Starts** day 10  
+  **Price:** $395  
+  **Description:**  
+   Compatible with CPU slots.  
+   Provides 4 extra CPU to the attached device.  
+   Draws 14W while the device is running.  
+- **Memory Extension 2**  
+  **Listing Starts** day 2  
+  **Price:** $25  
+  **Description:**  
+   Compatible with DRAM slots.  
+   Provides 2 extra memory to the attached device.  
+   Draws 1W while the device is running.  
+- **Memory Extension 4**  
+  **Listing Starts** day 5  
+  **Price:** $75  
+  **Description:**  
+   Compatible with DRAM slots.  
+   Provides 4 extra memory to the attached device.  
+   Draws 2W while the device is running.  
+- **Memory Extension 6**  
+  **Listing Starts** day 10  
+  **Price:** $125  
+  **Description:**  
+   Compatible with DRAM slots.  
+   Provides 6 extra memory to the attached device.  
+   Draws 3W while the device is running.  
+- **[ICC Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-mouthpiece)**  
+  **Listing Starts** day 0  
+  **Price:** $300  
+  **Warranty:** 14 days  
+  **Description:**  
+   Panopticon Mouthpiece built as an ICC Razor modular computing unit.  
+   Specs: 4 CPU, 8 memory and 2 storage.  
+   Handles up to 12 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 57W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
   
   
 ## Mr Cable<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Mr Cable.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Mr Cable.png" style="max-height: 25vh;" /></wa-tooltip>  
@@ -1580,6 +1715,15 @@ Together we build towards new heights.
    Map the domain name of a service to this Cellblock's logical address. Each redirected visit earns Secretariat credit.  
    Mountable on 500px racks.  
    Must reach a Panopticon Profiler over the network to receive user behavior data.  
+   28-day device warranty.  
+- **[Panopticon Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#panopticon-mouthpiece)**  
+  **Listing Starts** day 0  
+  **Price:** $350  
+  **Warranty:** 28 days  
+  **Description:**  
+   Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.  
+   Mountable on 500px racks.  
+   Must reach a Panopticon Cellblock or Profiler over the network to gain influence.  
    28-day device warranty.  
   
   
