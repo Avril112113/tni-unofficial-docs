@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.1
+GENERATED FOR TNI VERSION 0.13.2
 
 - TOC
 {:toc}
@@ -616,7 +616,7 @@ Production is limited to 13 compatible uses on the device's use stack.
   
   
 ## san-initiator  
-**CPU:** 1 **MEM:** 1 **SIZE:** 0+1=1  
+**CPU:** 1 **MEM:** 0 **SIZE:** 0+1=1  
 **<span style="color:PapayaWhip;">Storage Traffic:</span>** [`tcp/3260`](traffic_types.md/#tcp3260) for <span style="color:Salmon;">`1 + round(STO / 4)`</span>bw  
   
   

@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.1
+GENERATED FOR TNI VERSION 0.13.2
 
 - TOC
 {:toc}
@@ -921,6 +921,38 @@ Acts as a SAN target to provide remote storage over the network.
 Requires a SAN initiator program on another device to mount its storage.  
   
   
+## haS R5<img src="{{ site.baseurl }}/tni-docs/assets/devices/haS R5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/haS R5.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `4` **MEM:** `1` **SIZE:** `2` **BW/t:** `60` **Watts:** 21w  
+**Base Price:** $320 **Base Warranty:** 17.0 days   
+**Port Counts:** 2x `FIBER_OPTIC_SC`, 3x `RJ45`, 1x `DC_JACK`  
+**Hardware Class:** `NETWORK_ROUTER`  
+**Merchants:** [Ubitoq Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ubitoq-ltd)  
+**Installed Programs:** [rtkernel](programs.md/#rtkernel)  
+**Description:**  
+5-port mixed-media network router which supports 2 SFP modules.  
+Handles up to 60 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 21W.  
+Mountable on 500px racks.  
+Uses DC power.  
+  
+  
+## haS S5<img src="{{ site.baseurl }}/tni-docs/assets/devices/haS S5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/haS S5.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `2` **MEM:** `1` **SIZE:** `1` **BW/t:** `35` **Watts:** 7w  
+**Base Price:** $300 **Base Warranty:** 14.0 days   
+**Port Counts:** 3x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
+**Hardware Class:** `NETWORK_SWITCH`  
+**Merchants:** [Ubitoq Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ubitoq-ltd)  
+**Installed Programs:** [bladeos](programs.md/#bladeos)  
+**Description:**  
+5-port mixed media network switch which supports 2 SFP modules.  
+Handles up to 35 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 7W.  
+Mountable on 500px racks.  
+Uses DC power.  
+  
+  
 ## ICC Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `12` **Watts:** 57w  
 **Base Price:** $300 **Base Warranty:** 14.0 days   
@@ -937,18 +969,34 @@ Power consumption: 57W.
 Compatible with an ICC Razor bay  
   
   
+## ICC Razor 2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `36` **Watts:** 155w  
+**Base Price:** $580 **Base Warranty:** 15.0 days   
+**Port Counts:** 4x `RJ45`, 1x `A_USB`, 2x `TEST`, 1x `B_3PIN`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
+**Description:**  
+2-bay modular computing chassis with VLAN port tagging and a built-in battery.  
+Handles up to 36 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 155W.  
+Mountable on 630px racks.  
+Powers and networks up to 2 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
+  
+  
 ## ICC Razor 8<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `78` **Watts:** 55w  
-**Base Price:** $550 **Base Warranty:** 24.0 days   
-**Port Counts:** 13x `RJ45`, 8x `TEST`, 2x `B_3PIN`  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `117` **Watts:** 135w  
+**Base Price:** $1415 **Base Warranty:** 24.0 days   
+**Port Counts:** 13x `RJ45`, 1x `A_USB`, 8x `TEST`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 8-bay modular computing chassis with VLAN port tagging.  
-Handles up to 78 traversals per tick.  
+Handles up to 117 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
-Power consumption: 55W.  
+Power consumption: 135W.  
 Mountable on 930px racks.  
 Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
   
@@ -970,8 +1018,8 @@ Homelab equipment.
   
   
 ## ICC10<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 19w  
-**Base Price:** $120 **Base Warranty:** 14.0 days   
+**CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 49w  
+**Base Price:** $120 **Base Warranty:** 7.0 days   
 **Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
@@ -980,7 +1028,37 @@ Modular computing unit.
 Specs: 1 CPU, 2 memory and 2 storage.  
 Handles up to 6 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
-Power consumption: 19W.  
+Power consumption: 49W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC10E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10E.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `12` **Watts:** 24w  
+**Base Price:** $220 **Base Warranty:** 14.0 days   
+**Port Counts:** 2x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit with 1 ethernet port.  
+Specs: 1 CPU, 2 memory and 2 storage.  
+Handles up to 12 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 24W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC10F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10F.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `2` **SIZE:** `2` **BW/t:** `16` **Watts:** 28w  
+**Base Price:** $220 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit with 1 fiber port.  
+Specs: 1 CPU, 2 memory and 2 storage.  
+Handles up to 16 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 28W.  
 Compatible with an ICC Razor bay  
   
   
@@ -1001,7 +1079,7 @@ Homelab equipment.
   
   
 ## ICC20<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `6` **Watts:** 24w  
+**CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `6` **Watts:** 66w  
 **Base Price:** $260 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
 **Hardware Class:** `COMPUTE_SERVER`  
@@ -1011,13 +1089,43 @@ Modular computing unit.
 Specs: 2 CPU, 4 memory and 2 storage.  
 Handles up to 6 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
-Power consumption: 24W.  
+Power consumption: 66W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC20E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20E.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `12` **Watts:** 35w  
+**Base Price:** $360 **Base Warranty:** 14.0 days   
+**Port Counts:** 2x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit with 1 ethernet port.  
+Specs: 2 CPU, 4 memory and 2 storage.  
+Handles up to 12 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 35W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC20F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20F.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `2` **MEM:** `4` **SIZE:** `2` **BW/t:** `16` **Watts:** 42w  
+**Base Price:** $360 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit with 1 fiber port.  
+Specs: 2 CPU, 4 memory and 2 storage.  
+Handles up to 16 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 42W.  
 Compatible with an ICC Razor bay  
   
   
 ## ICC30<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `12` **Watts:** 57w  
-**Base Price:** $560 **Base Warranty:** 14.0 days   
+**CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `12` **Watts:** 159w  
+**Base Price:** $765 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
 **Hardware Class:** `COMPUTE_SERVER`  
 **Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
@@ -1026,7 +1134,37 @@ Modular computing unit.
 Specs: 4 CPU, 8 memory and 2 storage.  
 Handles up to 12 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
-Power consumption: 57W.  
+Power consumption: 159W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC30E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30E.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `24` **Watts:** 100w  
+**Base Price:** $865 **Base Warranty:** 14.0 days   
+**Port Counts:** 2x `RJ45`, 1x `SATA35_SLOT`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit with 1 ethernet port.  
+Specs: 4 CPU, 8 memory and 2 storage.  
+Handles up to 24 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 100W.  
+Compatible with an ICC Razor bay  
+  
+  
+## ICC30F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30F.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `26` **Watts:** 107w  
+**Base Price:** $865 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `SATA35_SLOT`, 1x `FIBER_OPTIC_SC`, 1x `TEST`  
+**Hardware Class:** `COMPUTE_SERVER`  
+**Merchants:** [Interchange Compute Corporation<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Interchange Compute Corporation.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#interchange-compute-corporation)  
+**Description:**  
+Modular computing unit with 1 fiber port.  
+Specs: 4 CPU, 8 memory and 2 storage.  
+Handles up to 26 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 107W.  
 Compatible with an ICC Razor bay  
   
   
@@ -1200,7 +1338,7 @@ Must reach a Panopticon Profiler over the network to receive user behavior data.
 **Merchants:** [Panopticon of Secretariat<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Panopticon of Secretariat.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#panopticon-of-secretariat)  
 **Installed Programs:** [panop-mouthpiece](programs.md/#panop-mouthpiece)  
 **Description:**  
-Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.  
+Influence the consumers with panop commands.  
 Mountable on 500px racks.  
 Must reach a Panopticon Cellblock or Profiler over the network to gain influence.  
   

@@ -1,5 +1,5 @@
 {
-	"game_version": "0.13.1",
+	"game_version": "0.13.2",
 	"revision": 1,
 	"format": 12,
 	"enums": {
@@ -57,7 +57,9 @@
 			"R500",
 			"R930",
 			"R630",
-			"BLADE_BAY"
+			"BLADE_BAY",
+			"KEYSTONE_HOLE",
+			"SFP_SLOT"
 		],
 		"TraversalConsume.ProductTarget": [
 			"SOURCE",
@@ -1670,7 +1672,7 @@
 		"graph_network_simulation/programs/early_access/storage_and_file_system/san_initiator.tscn": {
 			"cpu_load": 1,
 			"code_size": 0,
-			"stack_size": 1,
+			"stack_size": 0,
 			"data_size": 1,
 			"release_name": "san-initiator",
 			"description": "Mounts storage from remote SAN targets over the network.\n\nCapacity is lost if the path to the target is lost.",
@@ -21260,6 +21262,48 @@
 				]
 			}
 		},
+		"units/misc/keystone_module_sc.tscn": {
+			"product_name": "Fiber Keystone Jack",
+			"description": "Compatible to punch-down patch panel.",
+			"device_rendered_description": "Compatible to punch-down patch panel.\nNot rack mountable.",
+			"text": "",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 5,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 0,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "KEYSTONE_HOLE"
+		},
+		"units/switches/sfp_module_sc.tscn": {
+			"product_name": "Fiber SFP Module",
+			"description": "Compatible with an SFP port to work as a fiber port",
+			"device_rendered_description": "Compatible with an SFP port to work as a fiber port\nNot rack mountable.",
+			"text": "",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 20,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 2,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "SFP_SLOT"
+		},
 		"units/inspectors/firewatch_cp4e.tscn": {
 			"product_name": "FireWatch CP4E",
 			"description": "Ethernet in-line network traffic monitoring and filtering system.",
@@ -22430,6 +22474,204 @@
 				]
 			}
 		},
+		"units/routers/has_r5.tscn": {
+			"product_name": "haS R5",
+			"description": "{nport}-port mixed-media network router which supports 2 SFP modules.",
+			"device_rendered_description": "5-port mixed-media network router which supports 2 SFP modules.\nHandles up to 60 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 21W.\nMountable on 500px racks.\nUses DC power.",
+			"text": "Uses DC power.",
+			"extra_descriptions": "BW_PER_TICK",
+			"price": 320,
+			"base_warranty_days": 3,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 32,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "NETWORK_ROUTER",
+			"mount_type": "R500",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 4,
+				"installed_mem": 1,
+				"installed_sto": 2,
+				"installed_nbw": 60,
+				"power_load": 18,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": false,
+				"allow_process_mods": false,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [
+					"graph_network_simulation/programs/early_access/networking_firmwares/rtkernel.tscn"
+				],
+				"ports": [
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 21,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "DC_JACK",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/switches/has_s5.tscn": {
+			"product_name": "haS S5",
+			"description": "{nport}-port mixed media network switch which supports 2 SFP modules.",
+			"device_rendered_description": "5-port mixed media network switch which supports 2 SFP modules.\nHandles up to 35 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 7W.\nMountable on 500px racks.\nUses DC power.",
+			"text": "Uses DC power.",
+			"extra_descriptions": "BW_PER_TICK",
+			"price": 300,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 30,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 0.35,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "NETWORK_SWITCH",
+			"mount_type": "R500",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 2,
+				"installed_mem": 1,
+				"installed_sto": 1,
+				"installed_nbw": 35,
+				"power_load": 4,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": false,
+				"allow_process_mods": false,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [
+					"graph_network_simulation/programs/early_access/networking_firmwares/blade_os.tscn"
+				],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 7,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "DC_JACK",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
 		"units/icc_servers/icc_razor_cpu.tscn": {
 			"product_name": "ICC CPU Slot",
 			"description": "CPU slot",
@@ -22571,23 +22813,132 @@
 				]
 			}
 		},
-		"units/icc_servers/icc_razor_modular.tscn": {
-			"product_name": "ICC Razor 8",
-			"description": "8-bay modular computing chassis with VLAN port tagging.",
-			"device_rendered_description": "8-bay modular computing chassis with VLAN port tagging.\nHandles up to 78 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 55W.\nMountable on 930px racks.\nPowers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
-			"text": "Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
+		"units/icc_servers/icc_razor_two.tscn": {
+			"product_name": "ICC Razor 2",
+			"description": "2-bay modular computing chassis with VLAN port tagging and a built-in battery.",
+			"device_rendered_description": "2-bay modular computing chassis with VLAN port tagging and a built-in battery.\nHandles up to 36 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 155W.\nMountable on 630px racks.\nPowers and networks up to 2 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
+			"text": "Powers and networks up to 2 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
 			"extra_descriptions": "BW_PER_TICK",
-			"price": 550,
-			"base_warranty_days": 3,
-			"base_warranty_cycles": 3,
+			"price": 580,
+			"base_warranty_days": 1,
+			"base_warranty_cycles": 2,
 			"recycle_price_factor": 0.1,
-			"recycle_price": 55,
+			"recycle_price": 58,
 			"force_auto_config_powctl_based_on_logctl": true,
 			"force_auto_config_nbw_based_on_ports": true,
 			"force_auto_config_logctl_powerload": true,
 			"defect_possibility": true,
-			"auto_config_bw_multiplier": 1.0,
-			"auto_config_pload_multiplier": 1.0,
+			"auto_config_bw_multiplier": 1.5,
+			"auto_config_pload_multiplier": 2.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "R630",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 1,
+				"installed_mem": 1,
+				"installed_sto": 1,
+				"installed_nbw": 36,
+				"power_load": 54,
+				"infinite_power_mode": false,
+				"force_autoconfig": true,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": false,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 4,
+				"installed_programs": [
+					"graph_network_simulation/programs/early_access/networking_firmwares/managed_sw_firmware.tscn"
+				],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "A_USB",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 155,
+				"allow_passthrough": true,
+				"charge_capacity": 50000,
+				"can_discharge_to_supply": true,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					},
+					{
+						"type": "B_3PIN",
+						"disable_egress": true,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_modular.tscn": {
+			"product_name": "ICC Razor 8",
+			"description": "8-bay modular computing chassis with VLAN port tagging.",
+			"device_rendered_description": "8-bay modular computing chassis with VLAN port tagging.\nHandles up to 117 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 135W.\nMountable on 930px racks.\nPowers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
+			"text": "Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.",
+			"extra_descriptions": "BW_PER_TICK",
+			"price": 1415,
+			"base_warranty_days": 3,
+			"base_warranty_cycles": 3,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 141,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.5,
+			"auto_config_pload_multiplier": 2.4,
 			"device_application_unlocks": [],
 			"device_hardware_class": "COMPUTE_SERVER",
 			"mount_type": "R930",
@@ -22597,8 +22948,8 @@
 				"installed_cpu": 1,
 				"installed_mem": 1,
 				"installed_sto": 1,
-				"installed_nbw": 78,
-				"power_load": 52,
+				"installed_nbw": 117,
+				"power_load": 132,
 				"infinite_power_mode": false,
 				"force_autoconfig": true,
 				"skip_autoconfig_cpu": false,
@@ -22714,13 +23065,21 @@
 						"LogicControllerSocket": {
 							"is_back_port": false
 						}
+					},
+					{
+						"type": "A_USB",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": false
+						}
 					}
 				]
 			},
 			"power_controller": {
 				"propagate_charges": false,
-				"disabled": false,
-				"charge_rate": 55,
+				"disabled": true,
+				"charge_rate": 135,
 				"allow_passthrough": true,
 				"charge_capacity": 10,
 				"can_discharge_to_supply": false,
@@ -22900,12 +23259,12 @@
 		"units/icc_servers/icc_razor_m10.tscn": {
 			"product_name": "ICC10",
 			"description": "Modular computing unit.",
-			"device_rendered_description": "Modular computing unit.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 19W.\nCompatible with an ICC Razor bay",
+			"device_rendered_description": "Modular computing unit.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 49W.\nCompatible with an ICC Razor bay",
 			"text": "Compatible with an ICC Razor bay",
 			"extra_descriptions": "CMSBW_BASIC",
 			"price": 120,
 			"base_warranty_days": 0,
-			"base_warranty_cycles": 2,
+			"base_warranty_cycles": 1,
 			"recycle_price_factor": 0.1,
 			"recycle_price": 12,
 			"force_auto_config_powctl_based_on_logctl": true,
@@ -22913,7 +23272,7 @@
 			"force_auto_config_logctl_powerload": true,
 			"defect_possibility": true,
 			"auto_config_bw_multiplier": 1.0,
-			"auto_config_pload_multiplier": 1.0,
+			"auto_config_pload_multiplier": 2.9,
 			"device_application_unlocks": [],
 			"device_hardware_class": "COMPUTE_SERVER",
 			"mount_type": "BLADE_BAY",
@@ -22924,7 +23283,7 @@
 				"installed_mem": 2,
 				"installed_sto": 2,
 				"installed_nbw": 6,
-				"power_load": 16,
+				"power_load": 46,
 				"infinite_power_mode": false,
 				"force_autoconfig": false,
 				"skip_autoconfig_cpu": false,
@@ -22956,7 +23315,169 @@
 			"power_controller": {
 				"propagate_charges": false,
 				"disabled": true,
-				"charge_rate": 19,
+				"charge_rate": 49,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m10e.tscn": {
+			"product_name": "ICC10E",
+			"description": "Modular computing unit with {nport_external} ethernet port.",
+			"device_rendered_description": "Modular computing unit with 1 ethernet port.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 24W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 220,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 22,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 1,
+				"installed_mem": 2,
+				"installed_sto": 2,
+				"installed_nbw": 12,
+				"power_load": 21,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 24,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m10f.tscn": {
+			"product_name": "ICC10F",
+			"description": "Modular computing unit with {nport_external} fiber port.",
+			"device_rendered_description": "Modular computing unit with 1 fiber port.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 16 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 28W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 220,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 22,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 1,
+				"installed_mem": 2,
+				"installed_sto": 2,
+				"installed_nbw": 16,
+				"power_load": 25,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					},
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 28,
 				"allow_passthrough": false,
 				"charge_capacity": 10,
 				"can_discharge_to_supply": false,
@@ -23062,7 +23583,7 @@
 		"units/icc_servers/icc_razor_m20.tscn": {
 			"product_name": "ICC20",
 			"description": "Modular computing unit.",
-			"device_rendered_description": "Modular computing unit.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 24W.\nCompatible with an ICC Razor bay",
+			"device_rendered_description": "Modular computing unit.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 66W.\nCompatible with an ICC Razor bay",
 			"text": "Compatible with an ICC Razor bay",
 			"extra_descriptions": "CMSBW_BASIC",
 			"price": 260,
@@ -23075,7 +23596,7 @@
 			"force_auto_config_logctl_powerload": true,
 			"defect_possibility": true,
 			"auto_config_bw_multiplier": 1.0,
-			"auto_config_pload_multiplier": 1.0,
+			"auto_config_pload_multiplier": 3.0,
 			"device_application_unlocks": [],
 			"device_hardware_class": "COMPUTE_SERVER",
 			"mount_type": "BLADE_BAY",
@@ -23086,7 +23607,7 @@
 				"installed_mem": 4,
 				"installed_sto": 2,
 				"installed_nbw": 6,
-				"power_load": 21,
+				"power_load": 63,
 				"infinite_power_mode": false,
 				"force_autoconfig": false,
 				"skip_autoconfig_cpu": false,
@@ -23118,7 +23639,169 @@
 			"power_controller": {
 				"propagate_charges": false,
 				"disabled": true,
-				"charge_rate": 24,
+				"charge_rate": 66,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m20e.tscn": {
+			"product_name": "ICC20E",
+			"description": "Modular computing unit with {nport_external} ethernet port.",
+			"device_rendered_description": "Modular computing unit with 1 ethernet port.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 35W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 360,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 36,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 2,
+				"installed_mem": 4,
+				"installed_sto": 2,
+				"installed_nbw": 12,
+				"power_load": 32,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 35,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m20f.tscn": {
+			"product_name": "ICC20F",
+			"description": "Modular computing unit with {nport_external} fiber port.",
+			"device_rendered_description": "Modular computing unit with 1 fiber port.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 16 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 42W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 360,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 36,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 2,
+				"installed_mem": 4,
+				"installed_sto": 2,
+				"installed_nbw": 16,
+				"power_load": 39,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					},
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 42,
 				"allow_passthrough": false,
 				"charge_capacity": 10,
 				"can_discharge_to_supply": false,
@@ -23135,20 +23818,20 @@
 		"units/icc_servers/icc_razor_m30.tscn": {
 			"product_name": "ICC30",
 			"description": "Modular computing unit.",
-			"device_rendered_description": "Modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 57W.\nCompatible with an ICC Razor bay",
+			"device_rendered_description": "Modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 159W.\nCompatible with an ICC Razor bay",
 			"text": "Compatible with an ICC Razor bay",
 			"extra_descriptions": "CMSBW_BASIC",
-			"price": 560,
+			"price": 765,
 			"base_warranty_days": 0,
 			"base_warranty_cycles": 2,
 			"recycle_price_factor": 0.1,
-			"recycle_price": 56,
+			"recycle_price": 76,
 			"force_auto_config_powctl_based_on_logctl": true,
 			"force_auto_config_nbw_based_on_ports": true,
 			"force_auto_config_logctl_powerload": true,
 			"defect_possibility": true,
 			"auto_config_bw_multiplier": 1.0,
-			"auto_config_pload_multiplier": 1.0,
+			"auto_config_pload_multiplier": 2.9,
 			"device_application_unlocks": [],
 			"device_hardware_class": "COMPUTE_SERVER",
 			"mount_type": "BLADE_BAY",
@@ -23159,7 +23842,7 @@
 				"installed_mem": 8,
 				"installed_sto": 2,
 				"installed_nbw": 12,
-				"power_load": 54,
+				"power_load": 156,
 				"infinite_power_mode": false,
 				"force_autoconfig": false,
 				"skip_autoconfig_cpu": false,
@@ -23191,7 +23874,169 @@
 			"power_controller": {
 				"propagate_charges": false,
 				"disabled": true,
-				"charge_rate": 57,
+				"charge_rate": 159,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m30e.tscn": {
+			"product_name": "ICC30E",
+			"description": "Modular computing unit with {nport_external} ethernet port.",
+			"device_rendered_description": "Modular computing unit with 1 ethernet port.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 24 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 100W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 865,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 86,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 4,
+				"installed_mem": 8,
+				"installed_sto": 2,
+				"installed_nbw": 24,
+				"power_load": 97,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					},
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 100,
+				"allow_passthrough": false,
+				"charge_capacity": 10,
+				"can_discharge_to_supply": false,
+				"surge_blocker": false,
+				"ports": [
+					{
+						"type": "TEST",
+						"disable_egress": false,
+						"disable_ingress": false
+					}
+				]
+			}
+		},
+		"units/icc_servers/icc_razor_m30f.tscn": {
+			"product_name": "ICC30F",
+			"description": "Modular computing unit with {nport_external} fiber port.",
+			"device_rendered_description": "Modular computing unit with 1 fiber port.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 26 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 107W.\nCompatible with an ICC Razor bay",
+			"text": "Compatible with an ICC Razor bay",
+			"extra_descriptions": "CMSBW_BASIC",
+			"price": 865,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 2,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 86,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": true,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "COMPUTE_SERVER",
+			"mount_type": "BLADE_BAY",
+			"logic_controller": {
+				"default_tick_period": 2.0,
+				"auto_cycle_enabled": true,
+				"installed_cpu": 4,
+				"installed_mem": 8,
+				"installed_sto": 2,
+				"installed_nbw": 26,
+				"power_load": 104,
+				"infinite_power_mode": false,
+				"force_autoconfig": false,
+				"skip_autoconfig_cpu": false,
+				"allow_storage_mods": true,
+				"allow_process_mods": true,
+				"auto_config_additional_cpu": 0,
+				"auto_config_additional_sto": 0,
+				"auto_config_additional_mem": 0,
+				"installed_programs": [],
+				"ports": [
+					{
+						"type": "RJ45",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					},
+					{
+						"type": "SATA35_SLOT",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"PeripheralSocket": {
+							"peripheral_lock_switch": true
+						}
+					},
+					{
+						"type": "FIBER_OPTIC_SC",
+						"disable_egress": false,
+						"disable_ingress": false,
+						"LogicControllerSocket": {
+							"is_back_port": false
+						}
+					}
+				]
+			},
+			"power_controller": {
+				"propagate_charges": false,
+				"disabled": true,
+				"charge_rate": 107,
 				"allow_passthrough": false,
 				"charge_capacity": 10,
 				"can_discharge_to_supply": false,
@@ -24113,6 +24958,69 @@
 				]
 			}
 		},
+		"units/misc/mounting_patch_panel_R500_blank.tscn": {
+			"product_name": "Modular Punch-down Patch Panel R500",
+			"description": "Used with affixed cables with cable trays. 10 empty holes for RJ45 or SC keystones.",
+			"device_rendered_description": "Used with affixed cables with cable trays. 10 empty holes for RJ45 or SC keystones.\nMountable on 500px racks.",
+			"text": "",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 30,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 3,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "R500"
+		},
+		"units/misc/mounting_patch_panel_R630_blank.tscn": {
+			"product_name": "Modular Punch-down Patch Panel R630",
+			"description": "Used with affixed cables with cable trays. 15 empty holes for RJ45 or SC keystones.",
+			"device_rendered_description": "Used with affixed cables with cable trays. 15 empty holes for RJ45 or SC keystones.\nMountable on 630px racks.",
+			"text": "",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 70,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 7,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "R630"
+		},
+		"units/misc/mounting_patch_panel_R930_blank.tscn": {
+			"product_name": "Modular Punch-down Patch Panel R930",
+			"description": "Used with affixed cables with cable trays. 22 empty holes for RJ45 or SC keystones.",
+			"device_rendered_description": "Used with affixed cables with cable trays. 22 empty holes for RJ45 or SC keystones.\nMountable on 930px racks.",
+			"text": "",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 155,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 15,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "R930"
+		},
 		"units/monitors/momento_monitor.tscn": {
 			"product_name": "Momento Entries Monitor",
 			"description": "Extra monitor which displays all the DNS-entries mapping, network address assignments and device location. ",
@@ -24657,8 +25565,8 @@
 		},
 		"units/panopticon/panopticon_mouthpiece_device.tscn": {
 			"product_name": "Panopticon Mouthpiece",
-			"description": "Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.",
-			"device_rendered_description": "Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.\nMountable on 500px racks.\nMust reach a Panopticon Cellblock or Profiler over the network to gain influence.",
+			"description": "Influence the consumers with panop commands.",
+			"device_rendered_description": "Influence the consumers with panop commands.\nMountable on 500px racks.\nMust reach a Panopticon Cellblock or Profiler over the network to gain influence.",
 			"text": "Must reach a Panopticon Cellblock or Profiler over the network to gain influence.",
 			"extra_descriptions": "NODESCRIPT",
 			"price": 350,
@@ -24979,6 +25887,48 @@
 			"device_application_unlocks": [],
 			"device_hardware_class": "DEFAULT",
 			"mount_type": "R930"
+		},
+		"units/misc/keystone_module_rj45.tscn": {
+			"product_name": "RJ45 Keystone Jack",
+			"description": "Compatible to punch-down patch panel.",
+			"device_rendered_description": "Compatible to punch-down patch panel.\nNot rack mountable.",
+			"text": "",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 2,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 0,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "KEYSTONE_HOLE"
+		},
+		"units/switches/sfp_module_rj45.tscn": {
+			"product_name": "RJ45 SFP Module",
+			"description": "Compatible with an SFP port and work as a rj45 port",
+			"device_rendered_description": "Compatible with an SFP port and work as a rj45 port\nNot rack mountable.",
+			"text": "",
+			"extra_descriptions": "NODESCRIPT",
+			"price": 20,
+			"base_warranty_days": 0,
+			"base_warranty_cycles": 0,
+			"recycle_price_factor": 0.1,
+			"recycle_price": 2,
+			"force_auto_config_powctl_based_on_logctl": true,
+			"force_auto_config_nbw_based_on_ports": true,
+			"force_auto_config_logctl_powerload": true,
+			"defect_possibility": false,
+			"auto_config_bw_multiplier": 1.0,
+			"auto_config_pload_multiplier": 1.0,
+			"device_application_unlocks": [],
+			"device_hardware_class": "DEFAULT",
+			"mount_type": "SFP_SLOT"
 		},
 		"units/monitors/satietyfloorstats_monitor.tscn": {
 			"product_name": "Satiety Stats Monitor",
@@ -28841,6 +29791,42 @@
 					}
 				},
 				{
+					"device_scn": "units/misc/mounting_patch_panel_R500_blank.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Used with affixed cables with cable trays. 10 empty holes for RJ45 or SC keystones.\nMountable on 500px racks.",
+						"warranty_period": 0,
+						"base_price": 30,
+						"price": 30
+					}
+				},
+				{
+					"device_scn": "units/misc/keystone_module_rj45.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible to punch-down patch panel.\nNot rack mountable.",
+						"warranty_period": 0,
+						"base_price": 2,
+						"price": 2
+					}
+				},
+				{
+					"device_scn": "units/misc/keystone_module_sc.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible to punch-down patch panel.\nNot rack mountable.",
+						"warranty_period": 0,
+						"base_price": 5,
+						"price": 5
+					}
+				},
+				{
 					"device_scn": "units/misc/mounting_patch_panel_R630.tscn",
 					"listed_on_day": 0,
 					"delisted_on_day": 1000000,
@@ -28865,6 +29851,18 @@
 					}
 				},
 				{
+					"device_scn": "units/misc/mounting_patch_panel_R630_blank.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Used with affixed cables with cable trays. 15 empty holes for RJ45 or SC keystones.\nMountable on 630px racks.",
+						"warranty_period": 0,
+						"base_price": 70,
+						"price": 70
+					}
+				},
+				{
 					"device_scn": "units/misc/mounting_patch_panel_R930.tscn",
 					"listed_on_day": 0,
 					"delisted_on_day": 1000000,
@@ -28886,6 +29884,18 @@
 						"warranty_period": 0,
 						"base_price": 220,
 						"price": 220
+					}
+				},
+				{
+					"device_scn": "units/misc/mounting_patch_panel_R930_blank.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Used with affixed cables with cable trays. 22 empty holes for RJ45 or SC keystones.\nMountable on 930px racks.",
+						"warranty_period": 0,
+						"base_price": 155,
+						"price": 155
 					}
 				}
 			],
@@ -29737,10 +30747,22 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "8-bay modular computing chassis with VLAN port tagging.\nHandles up to 78 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 55W.\nMountable on 930px racks.\nPowers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.\n24-day device warranty.",
+						"description": "8-bay modular computing chassis with VLAN port tagging.\nHandles up to 117 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 135W.\nMountable on 930px racks.\nPowers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.\n24-day device warranty.",
 						"warranty_period": 24,
-						"base_price": 550,
-						"price": 550
+						"base_price": 1415,
+						"price": 1415
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_two.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "2-bay modular computing chassis with VLAN port tagging and a built-in battery.\nHandles up to 36 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 155W.\nMountable on 630px racks.\nPowers and networks up to 2 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.\n15-day device warranty.",
+						"warranty_period": 15,
+						"base_price": 580,
+						"price": 580
 					}
 				},
 				{
@@ -29749,10 +30771,34 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Modular computing unit.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 19W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
-						"warranty_period": 14,
+						"description": "Modular computing unit.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 49W.\nCompatible with an ICC Razor bay\n7-day device warranty.",
+						"warranty_period": 7,
 						"base_price": 120,
 						"price": 120
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m10e.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit with 1 ethernet port.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 24W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 220,
+						"price": 220
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m10f.tscn",
+					"listed_on_day": 2,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit with 1 fiber port.\nSpecs: 1 CPU, 2 memory and 2 storage.\nHandles up to 16 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 28W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 220,
+						"price": 220
 					}
 				},
 				{
@@ -29761,10 +30807,34 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Modular computing unit.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 24W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"description": "Modular computing unit.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 6 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 66W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
 						"warranty_period": 14,
 						"base_price": 260,
 						"price": 260
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m20e.tscn",
+					"listed_on_day": 5,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit with 1 ethernet port.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 35W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 360,
+						"price": 360
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m20f.tscn",
+					"listed_on_day": 5,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit with 1 fiber port.\nSpecs: 2 CPU, 4 memory and 2 storage.\nHandles up to 16 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 42W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 360,
+						"price": 360
 					}
 				},
 				{
@@ -29773,10 +30843,34 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 57W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"description": "Modular computing unit.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 12 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 159W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
 						"warranty_period": 14,
-						"base_price": 560,
-						"price": 560
+						"base_price": 765,
+						"price": 765
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m30e.tscn",
+					"listed_on_day": 10,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit with 1 ethernet port.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 24 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 100W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 865,
+						"price": 865
+					}
+				},
+				{
+					"device_scn": "units/icc_servers/icc_razor_m30f.tscn",
+					"listed_on_day": 10,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Modular computing unit with 1 fiber port.\nSpecs: 4 CPU, 8 memory and 2 storage.\nHandles up to 26 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 107W.\nCompatible with an ICC Razor bay\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 865,
+						"price": 865
 					}
 				},
 				{
@@ -29821,10 +30915,10 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Compatible with CPU slots.\nProvides 1 extra CPU to the attached device.\nDraws 3W while the device is running.",
+						"description": "Compatible with CPU slots.\nProvides 1 extra CPU to the attached device.\nDraws 51W while the device is running.",
 						"warranty_period": 0,
-						"base_price": 80,
-						"price": 80
+						"base_price": 75,
+						"price": 75
 					}
 				},
 				{
@@ -29833,10 +30927,10 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Compatible with CPU slots.\nProvides 2 extra CPU to the attached device.\nDraws 7W while the device is running.",
+						"description": "Compatible with CPU slots.\nProvides 2 extra CPU to the attached device.\nDraws 89W while the device is running.",
 						"warranty_period": 0,
-						"base_price": 185,
-						"price": 185
+						"base_price": 175,
+						"price": 175
 					}
 				},
 				{
@@ -29845,10 +30939,22 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Compatible with CPU slots.\nProvides 4 extra CPU to the attached device.\nDraws 14W while the device is running.",
+						"description": "Compatible with CPU slots.\nProvides 4 extra CPU to the attached device.\nDraws 155W while the device is running.",
 						"warranty_period": 0,
-						"base_price": 395,
-						"price": 395
+						"base_price": 375,
+						"price": 375
+					}
+				},
+				{
+					"device_scn": "components/removables/cpu_8.tscn",
+					"listed_on_day": 15,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with CPU slots.\nProvides 8 extra CPU to the attached device.\nDraws 270W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 810,
+						"price": 810
 					}
 				},
 				{
@@ -29857,10 +30963,10 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Compatible with DRAM slots.\nProvides 2 extra memory to the attached device.\nDraws 1W while the device is running.",
+						"description": "Compatible with DRAM slots.\nProvides 2 extra memory to the attached device.\nDraws 30W while the device is running.",
 						"warranty_period": 0,
-						"base_price": 25,
-						"price": 25
+						"base_price": 90,
+						"price": 90
 					}
 				},
 				{
@@ -29869,10 +30975,10 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Compatible with DRAM slots.\nProvides 4 extra memory to the attached device.\nDraws 2W while the device is running.",
+						"description": "Compatible with DRAM slots.\nProvides 4 extra memory to the attached device.\nDraws 52W while the device is running.",
 						"warranty_period": 0,
-						"base_price": 75,
-						"price": 75
+						"base_price": 275,
+						"price": 275
 					}
 				},
 				{
@@ -29881,10 +30987,22 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Compatible with DRAM slots.\nProvides 6 extra memory to the attached device.\nDraws 3W while the device is running.",
+						"description": "Compatible with DRAM slots.\nProvides 6 extra memory to the attached device.\nDraws 71W while the device is running.",
 						"warranty_period": 0,
-						"base_price": 125,
-						"price": 125
+						"base_price": 460,
+						"price": 460
+					}
+				},
+				{
+					"device_scn": "components/removables/dram_8.tscn",
+					"listed_on_day": 15,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with DRAM slots.\nProvides 8 extra memory to the attached device.\nDraws 90W while the device is running.",
+						"warranty_period": 0,
+						"base_price": 735,
+						"price": 735
 					}
 				},
 				{
@@ -30508,7 +31626,7 @@
 					"delisted_on_day": 1000000,
 					"allowed_variant": "NO_VARIANT",
 					"AdditionalData": {
-						"description": "Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.\nMountable on 500px racks.\nMust reach a Panopticon Cellblock or Profiler over the network to gain influence.\n28-day device warranty.",
+						"description": "Influence the consumers with panop commands.\nMountable on 500px racks.\nMust reach a Panopticon Cellblock or Profiler over the network to gain influence.\n28-day device warranty.",
 						"warranty_period": 28,
 						"base_price": 350,
 						"price": 350
@@ -31287,6 +32405,69 @@
 				"warranty_add_constant": 0
 			}
 		},
+		"merchants/device_merchants/ubitoq.tscn": {
+			"display_name": "Ubitoq Ltd.",
+			"description": "Ubitoq builds network devices with SFP ports and their modules. An one-stop merchant for your mixed media networking needs.",
+			"listings": [
+				{
+					"device_scn": "units/switches/has_s5.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "5-port mixed media network switch which supports 2 SFP modules.\nHandles up to 35 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 7W.\nMountable on 500px racks.\nUses DC power.\n14-day device warranty.",
+						"warranty_period": 14,
+						"base_price": 300,
+						"price": 300
+					}
+				},
+				{
+					"device_scn": "units/routers/has_r5.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "5-port mixed-media network router which supports 2 SFP modules.\nHandles up to 60 traversals per tick.\nCPU cycles 1 tick every 2.0 seconds.\nPower consumption: 21W.\nMountable on 500px racks.\nUses DC power.\n17-day device warranty.",
+						"warranty_period": 17,
+						"base_price": 320,
+						"price": 320
+					}
+				},
+				{
+					"device_scn": "units/switches/sfp_module_rj45.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with an SFP port and work as a rj45 port\nNot rack mountable.",
+						"warranty_period": 0,
+						"base_price": 20,
+						"price": 20
+					}
+				},
+				{
+					"device_scn": "units/switches/sfp_module_sc.tscn",
+					"listed_on_day": 0,
+					"delisted_on_day": 1000000,
+					"allowed_variant": "NO_VARIANT",
+					"AdditionalData": {
+						"description": "Compatible with an SFP port to work as a fiber port\nNot rack mountable.",
+						"warranty_period": 0,
+						"base_price": 20,
+						"price": 20
+					}
+				}
+			],
+			"DeviceMerchant": {
+				"restock_period": 300.0,
+				"restock_mode": "FILL",
+				"entry_max_stocks": 3,
+				"price_multiplier": 1.0,
+				"price_add_constant": 0,
+				"warranty_multiplier": 1.0,
+				"warranty_add_constant": 0
+			}
+		},
 		"merchants/device_merchants/vision_grid.tscn": {
 			"display_name": "Vision Grid",
 			"description": "Get real-time insights on your tower’s population with monitors built for data display and analysis.",
@@ -31505,9 +32686,9 @@
 			"cable_make_type": "RJ45",
 			"PeripheralPlug": {
 				"product_name": "CPU Extension 1",
-				"price": 80,
+				"price": 75,
 				"description": "Compatible with CPU slots.",
-				"rendered_description": "Compatible with CPU slots.\nProvides 1 extra CPU to the attached device.\nDraws 3W while the device is running."
+				"rendered_description": "Compatible with CPU slots.\nProvides 1 extra CPU to the attached device.\nDraws 51W while the device is running."
 			}
 		},
 		"components/removables/cpu_2.tscn": {
@@ -31519,9 +32700,9 @@
 			"cable_make_type": "RJ45",
 			"PeripheralPlug": {
 				"product_name": "CPU Extension 2",
-				"price": 185,
+				"price": 175,
 				"description": "Compatible with CPU slots.",
-				"rendered_description": "Compatible with CPU slots.\nProvides 2 extra CPU to the attached device.\nDraws 7W while the device is running."
+				"rendered_description": "Compatible with CPU slots.\nProvides 2 extra CPU to the attached device.\nDraws 89W while the device is running."
 			}
 		},
 		"components/removables/cpu_4.tscn": {
@@ -31533,9 +32714,23 @@
 			"cable_make_type": "RJ45",
 			"PeripheralPlug": {
 				"product_name": "CPU Extension 4",
-				"price": 395,
+				"price": 375,
 				"description": "Compatible with CPU slots.",
-				"rendered_description": "Compatible with CPU slots.\nProvides 4 extra CPU to the attached device.\nDraws 14W while the device is running."
+				"rendered_description": "Compatible with CPU slots.\nProvides 4 extra CPU to the attached device.\nDraws 155W while the device is running."
+			}
+		},
+		"components/removables/cpu_8.tscn": {
+			"compatibles": [
+				"CPU_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "CPU Extension 8",
+				"price": 810,
+				"description": "Compatible with CPU slots.",
+				"rendered_description": "Compatible with CPU slots.\nProvides 8 extra CPU to the attached device.\nDraws 270W while the device is running."
 			}
 		},
 		"components/removables/data_wiper.tscn": {
@@ -31563,9 +32758,9 @@
 			"cable_make_type": "RJ45",
 			"PeripheralPlug": {
 				"product_name": "Memory Extension 2",
-				"price": 25,
+				"price": 90,
 				"description": "Compatible with DRAM slots.",
-				"rendered_description": "Compatible with DRAM slots.\nProvides 2 extra memory to the attached device.\nDraws 1W while the device is running."
+				"rendered_description": "Compatible with DRAM slots.\nProvides 2 extra memory to the attached device.\nDraws 30W while the device is running."
 			}
 		},
 		"components/removables/dram_4.tscn": {
@@ -31577,9 +32772,9 @@
 			"cable_make_type": "RJ45",
 			"PeripheralPlug": {
 				"product_name": "Memory Extension 4",
-				"price": 75,
+				"price": 275,
 				"description": "Compatible with DRAM slots.",
-				"rendered_description": "Compatible with DRAM slots.\nProvides 4 extra memory to the attached device.\nDraws 2W while the device is running."
+				"rendered_description": "Compatible with DRAM slots.\nProvides 4 extra memory to the attached device.\nDraws 52W while the device is running."
 			}
 		},
 		"components/removables/dram_6.tscn": {
@@ -31591,9 +32786,23 @@
 			"cable_make_type": "RJ45",
 			"PeripheralPlug": {
 				"product_name": "Memory Extension 6",
-				"price": 125,
+				"price": 460,
 				"description": "Compatible with DRAM slots.",
-				"rendered_description": "Compatible with DRAM slots.\nProvides 6 extra memory to the attached device.\nDraws 3W while the device is running."
+				"rendered_description": "Compatible with DRAM slots.\nProvides 6 extra memory to the attached device.\nDraws 71W while the device is running."
+			}
+		},
+		"components/removables/dram_8.tscn": {
+			"compatibles": [
+				"DRAM_SLOT",
+				"",
+				"STORAGE_SLOT"
+			],
+			"cable_make_type": "RJ45",
+			"PeripheralPlug": {
+				"product_name": "Memory Extension 8",
+				"price": 735,
+				"description": "Compatible with DRAM slots.",
+				"rendered_description": "Compatible with DRAM slots.\nProvides 8 extra memory to the attached device.\nDraws 90W while the device is running."
 			}
 		},
 		"components/removables/gpu_card.tscn": {

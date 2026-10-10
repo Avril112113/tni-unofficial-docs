@@ -6,7 +6,7 @@ permalink: /data/proposals/Tenabolt Prometheus
 
 # Proposals for Tenabolt Prometheus
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.1
+GENERATED FOR TNI VERSION 0.13.2
 
 - TOC
 {:toc}

@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.1
+GENERATED FOR TNI VERSION 0.13.2
 
 - TOC
 {:toc}
@@ -435,6 +435,24 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
   **Description:**  
    Used with affixed cables with cable trays. 10 fiber SC keystone jacks.  
    Mountable on 500px racks.  
+- **[Modular Punch-down Patch Panel R500<img src="{{ site.baseurl }}/tni-docs/assets/devices/Modular Punch-down Patch Panel R500.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Modular Punch-down Patch Panel R500.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#modular-punch-down-patch-panel-r500)**  
+  **Listing Starts** day 0  
+  **Price:** $30  
+  **Description:**  
+   Used with affixed cables with cable trays. 10 empty holes for RJ45 or SC keystones.  
+   Mountable on 500px racks.  
+- **[RJ45 Keystone Jack<img src="{{ site.baseurl }}/tni-docs/assets/devices/RJ45 Keystone Jack.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/RJ45 Keystone Jack.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#rj45-keystone-jack)**  
+  **Listing Starts** day 0  
+  **Price:** $2  
+  **Description:**  
+   Compatible to punch-down patch panel.  
+   Not rack mountable.  
+- **[Fiber Keystone Jack<img src="{{ site.baseurl }}/tni-docs/assets/devices/Fiber Keystone Jack.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Fiber Keystone Jack.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#fiber-keystone-jack)**  
+  **Listing Starts** day 0  
+  **Price:** $5  
+  **Description:**  
+   Compatible to punch-down patch panel.  
+   Not rack mountable.  
 - **[Punch-down Patch Panel R630<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R630.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R630.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r630)**  
   **Listing Starts** day 0  
   **Price:** $90  
@@ -447,6 +465,12 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
   **Description:**  
    Used with affixed cables with cable trays. 15 fiber SC keystone jacks.  
    Mountable on 630px racks.  
+- **[Modular Punch-down Patch Panel R630<img src="{{ site.baseurl }}/tni-docs/assets/devices/Modular Punch-down Patch Panel R630.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Modular Punch-down Patch Panel R630.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#modular-punch-down-patch-panel-r630)**  
+  **Listing Starts** day 0  
+  **Price:** $70  
+  **Description:**  
+   Used with affixed cables with cable trays. 15 empty holes for RJ45 or SC keystones.  
+   Mountable on 630px racks.  
 - **[Punch-down Patch Panel R930<img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R930.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Punch-down Patch Panel R930.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#punch-down-patch-panel-r930)**  
   **Listing Starts** day 0  
   **Price:** $180  
@@ -458,6 +482,12 @@ Cabler's Union is a nonprofit that runs the Cable NewsLetter. They also conduct 
   **Price:** $220  
   **Description:**  
    Used with affixed cables with cable trays. 22 fiber SC keystone jacks.  
+   Mountable on 930px racks.  
+- **[Modular Punch-down Patch Panel R930<img src="{{ site.baseurl }}/tni-docs/assets/devices/Modular Punch-down Patch Panel R930.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Modular Punch-down Patch Panel R930.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#modular-punch-down-patch-panel-r930)**  
+  **Listing Starts** day 0  
+  **Price:** $155  
+  **Description:**  
+   Used with affixed cables with cable trays. 22 empty holes for RJ45 or SC keystones.  
    Mountable on 930px racks.  
   
   
@@ -1178,26 +1208,62 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Files moved onto it travel with the disk when it is unplugged.  
 - **[ICC Razor 8<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-razor-8)**  
   **Listing Starts** day 2  
-  **Price:** $550  
+  **Price:** $1415  
   **Warranty:** 24 days  
   **Description:**  
    8-bay modular computing chassis with VLAN port tagging.  
-   Handles up to 78 traversals per tick.  
+   Handles up to 117 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 55W.  
+   Power consumption: 135W.  
    Mountable on 930px racks.  
    Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
    24-day device warranty.  
+- **[ICC Razor 2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-razor-2)**  
+  **Listing Starts** day 2  
+  **Price:** $580  
+  **Warranty:** 15 days  
+  **Description:**  
+   2-bay modular computing chassis with VLAN port tagging and a built-in battery.  
+   Handles up to 36 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 155W.  
+   Mountable on 630px racks.  
+   Powers and networks up to 2 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
+   15-day device warranty.  
 - **[ICC10<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc10)**  
   **Listing Starts** day 2  
   **Price:** $120  
-  **Warranty:** 14 days  
+  **Warranty:** 7 days  
   **Description:**  
    Modular computing unit.  
    Specs: 1 CPU, 2 memory and 2 storage.  
    Handles up to 6 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 19W.  
+   Power consumption: 49W.  
+   Compatible with an ICC Razor bay  
+   7-day device warranty.  
+- **[ICC10E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc10e)**  
+  **Listing Starts** day 2  
+  **Price:** $220  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit with 1 ethernet port.  
+   Specs: 1 CPU, 2 memory and 2 storage.  
+   Handles up to 12 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 24W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC10F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10F.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc10f)**  
+  **Listing Starts** day 2  
+  **Price:** $220  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit with 1 fiber port.  
+   Specs: 1 CPU, 2 memory and 2 storage.  
+   Handles up to 16 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 28W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC20<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc20)**  
@@ -1209,19 +1275,67 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Specs: 2 CPU, 4 memory and 2 storage.  
    Handles up to 6 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 24W.  
+   Power consumption: 66W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC20E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc20e)**  
+  **Listing Starts** day 5  
+  **Price:** $360  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit with 1 ethernet port.  
+   Specs: 2 CPU, 4 memory and 2 storage.  
+   Handles up to 12 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 35W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC20F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20F.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc20f)**  
+  **Listing Starts** day 5  
+  **Price:** $360  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit with 1 fiber port.  
+   Specs: 2 CPU, 4 memory and 2 storage.  
+   Handles up to 16 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 42W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC30<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc30)**  
   **Listing Starts** day 10  
-  **Price:** $560  
+  **Price:** $765  
   **Warranty:** 14 days  
   **Description:**  
    Modular computing unit.  
    Specs: 4 CPU, 8 memory and 2 storage.  
    Handles up to 12 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 57W.  
+   Power consumption: 159W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC30E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc30e)**  
+  **Listing Starts** day 10  
+  **Price:** $865  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit with 1 ethernet port.  
+   Specs: 4 CPU, 8 memory and 2 storage.  
+   Handles up to 24 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 100W.  
+   Compatible with an ICC Razor bay  
+   14-day device warranty.  
+- **[ICC30F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30F.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc30f)**  
+  **Listing Starts** day 10  
+  **Price:** $865  
+  **Warranty:** 14 days  
+  **Description:**  
+   Modular computing unit with 1 fiber port.  
+   Specs: 4 CPU, 8 memory and 2 storage.  
+   Handles up to 26 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 107W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC CPU Slot<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC CPU Slot.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC CPU Slot.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-cpu-slot)**  
@@ -1244,46 +1358,60 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Compatible with an ICC Razor bay  
 - **CPU Extension 1**  
   **Listing Starts** day 2  
-  **Price:** $80  
+  **Price:** $75  
   **Description:**  
    Compatible with CPU slots.  
    Provides 1 extra CPU to the attached device.  
-   Draws 3W while the device is running.  
+   Draws 51W while the device is running.  
 - **CPU Extension 2**  
   **Listing Starts** day 5  
-  **Price:** $185  
+  **Price:** $175  
   **Description:**  
    Compatible with CPU slots.  
    Provides 2 extra CPU to the attached device.  
-   Draws 7W while the device is running.  
+   Draws 89W while the device is running.  
 - **CPU Extension 4**  
   **Listing Starts** day 10  
-  **Price:** $395  
+  **Price:** $375  
   **Description:**  
    Compatible with CPU slots.  
    Provides 4 extra CPU to the attached device.  
-   Draws 14W while the device is running.  
+   Draws 155W while the device is running.  
+- **CPU Extension 8**  
+  **Listing Starts** day 15  
+  **Price:** $810  
+  **Description:**  
+   Compatible with CPU slots.  
+   Provides 8 extra CPU to the attached device.  
+   Draws 270W while the device is running.  
 - **Memory Extension 2**  
   **Listing Starts** day 2  
-  **Price:** $25  
+  **Price:** $90  
   **Description:**  
    Compatible with DRAM slots.  
    Provides 2 extra memory to the attached device.  
-   Draws 1W while the device is running.  
+   Draws 30W while the device is running.  
 - **Memory Extension 4**  
   **Listing Starts** day 5  
-  **Price:** $75  
+  **Price:** $275  
   **Description:**  
    Compatible with DRAM slots.  
    Provides 4 extra memory to the attached device.  
-   Draws 2W while the device is running.  
+   Draws 52W while the device is running.  
 - **Memory Extension 6**  
   **Listing Starts** day 10  
-  **Price:** $125  
+  **Price:** $460  
   **Description:**  
    Compatible with DRAM slots.  
    Provides 6 extra memory to the attached device.  
-   Draws 3W while the device is running.  
+   Draws 71W while the device is running.  
+- **Memory Extension 8**  
+  **Listing Starts** day 15  
+  **Price:** $735  
+  **Description:**  
+   Compatible with DRAM slots.  
+   Provides 8 extra memory to the attached device.  
+   Draws 90W while the device is running.  
 - **[ICC Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-mouthpiece)**  
   **Listing Starts** day 0  
   **Price:** $300  
@@ -1721,7 +1849,7 @@ Together we build towards new heights.
   **Price:** $350  
   **Warranty:** 28 days  
   **Description:**  
-   Carries the Secretariat's message to a chosen resident. More user behavior data within reach makes the message stronger.  
+   Influence the consumers with panop commands.  
    Mountable on 500px racks.  
    Must reach a Panopticon Cellblock or Profiler over the network to gain influence.  
    28-day device warranty.  
@@ -2324,6 +2452,52 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 400W loads.  
    Protects devices from being damaged by power surges.  
    28-day device warranty.  
+  
+  
+## Ubitoq Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" style="max-height: 25vh;" /></wa-tooltip>  
+**Restock:** FILL after 300s    
+**Price:** Base prices.    
+**Warranty:** Base warranties.    
+**Description:**    
+Ubitoq builds network devices with SFP ports and their modules. An one-stop merchant for your mixed media networking needs.  
+  
+**Listings:**    
+- **[haS S5<img src="{{ site.baseurl }}/tni-docs/assets/devices/haS S5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/haS S5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#has-s5)**  
+  **Listing Starts** day 0  
+  **Price:** $300  
+  **Warranty:** 14 days  
+  **Description:**  
+   5-port mixed media network switch which supports 2 SFP modules.  
+   Handles up to 35 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 7W.  
+   Mountable on 500px racks.  
+   Uses DC power.  
+   14-day device warranty.  
+- **[haS R5<img src="{{ site.baseurl }}/tni-docs/assets/devices/haS R5.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/haS R5.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#has-r5)**  
+  **Listing Starts** day 0  
+  **Price:** $320  
+  **Warranty:** 17 days  
+  **Description:**  
+   5-port mixed-media network router which supports 2 SFP modules.  
+   Handles up to 60 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 21W.  
+   Mountable on 500px racks.  
+   Uses DC power.  
+   17-day device warranty.  
+- **[RJ45 SFP Module<img src="{{ site.baseurl }}/tni-docs/assets/devices/RJ45 SFP Module.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/RJ45 SFP Module.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#rj45-sfp-module)**  
+  **Listing Starts** day 0  
+  **Price:** $20  
+  **Description:**  
+   Compatible with an SFP port and work as a rj45 port  
+   Not rack mountable.  
+- **[Fiber SFP Module<img src="{{ site.baseurl }}/tni-docs/assets/devices/Fiber SFP Module.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Fiber SFP Module.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#fiber-sfp-module)**  
+  **Listing Starts** day 0  
+  **Price:** $20  
+  **Description:**  
+   Compatible with an SFP port to work as a fiber port  
+   Not rack mountable.  
   
   
 ## Vision Grid<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" style="max-height: 25vh;" /></wa-tooltip>  
