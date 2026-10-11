@@ -1418,7 +1418,7 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
   **Warranty:** 14 days  
   **Description:**  
    Panopticon Mouthpiece built as an ICC Razor modular computing unit.  
-   Specs: 4 CPU, 8 memory and 2 storage.  
+   Specs: 4 CPU, 4 memory and 5 storage.  
    Handles up to 12 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 57W.  

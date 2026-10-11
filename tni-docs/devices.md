@@ -954,7 +954,7 @@ Uses DC power.
   
   
 ## ICC Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `4` **MEM:** `8` **SIZE:** `2` **BW/t:** `12` **Watts:** 57w  
+**CPU:** `4` **MEM:** `4` **SIZE:** `5` **BW/t:** `12` **Watts:** 57w  
 **Base Price:** $300 **Base Warranty:** 14.0 days   
 **Port Counts:** 1x `RJ45`, 1x `TEST`  
 **Hardware Class:** `COMPUTE_SERVER`  
@@ -962,7 +962,7 @@ Uses DC power.
 **Installed Programs:** [panop-mouthpiece](programs.md/#panop-mouthpiece)  
 **Description:**  
 Panopticon Mouthpiece built as an ICC Razor modular computing unit.  
-Specs: 4 CPU, 8 memory and 2 storage.  
+Specs: 4 CPU, 4 memory and 5 storage.  
 Handles up to 12 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 57W.  
@@ -970,7 +970,7 @@ Compatible with an ICC Razor bay
   
   
 ## ICC Razor 2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `36` **Watts:** 155w  
+**CPU:** `2` **MEM:** `6` **SIZE:** `2` **BW/t:** `36` **Watts:** 155w  
 **Base Price:** $580 **Base Warranty:** 15.0 days   
 **Port Counts:** 4x `RJ45`, 1x `A_USB`, 2x `TEST`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
@@ -986,7 +986,7 @@ Powers and networks up to 2 ICC modular computing units. Upgradable with removab
   
   
 ## ICC Razor 8<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `117` **Watts:** 135w  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `117` **Watts:** 135w  
 **Base Price:** $1415 **Base Warranty:** 24.0 days   
 **Port Counts:** 13x `RJ45`, 1x `A_USB`, 8x `TEST`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
@@ -1169,7 +1169,7 @@ Compatible with an ICC Razor bay
   
   
 ## LoadTester Bob<img src="{{ site.baseurl }}/tni-docs/assets/devices/LoadTester Bob.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/LoadTester Bob.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `6` **Watts:** 203w  
+**CPU:** `2` **MEM:** `2` **SIZE:** `2` **BW/t:** `6` **Watts:** 203w  
 **Base Price:** $1000 **Base Warranty:** 4.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `DEFAULT`  
@@ -1318,7 +1318,7 @@ Not rack mountable.
   
   
 ## Panopticon Cellblock<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Cellblock.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Cellblock.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `16` **Watts:** 18w  
+**CPU:** `2` **MEM:** `3` **SIZE:** `10` **BW/t:** `16` **Watts:** 18w  
 **Base Price:** $350 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
@@ -1331,7 +1331,7 @@ Must reach a Panopticon Profiler over the network to receive user behavior data.
   
   
 ## Panopticon Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `7` **Watts:** 13w  
+**CPU:** `4` **MEM:** `4` **SIZE:** `5` **BW/t:** `7` **Watts:** 13w  
 **Base Price:** $350 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
@@ -1344,7 +1344,7 @@ Must reach a Panopticon Cellblock or Profiler over the network to gain influence
   
   
 ## Panopticon Profiler<img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Panopticon Profiler.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `16` **Watts:** 18w  
+**CPU:** `5` **MEM:** `6` **SIZE:** `10` **BW/t:** `16` **Watts:** 18w  
 **Base Price:** $350 **Base Warranty:** 28.0 days   
 **Port Counts:** 1x `RJ45`, 1x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
