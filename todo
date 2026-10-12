@@ -2,3 +2,4 @@
 - Look into filtering users by what scenario they appear in (I assume this isn't feasible)
 - Look into a mermaid diagram of all users, programs and traffic.
 - See if add bot to programs
+- Better filtering, like Users from only Babel or Prometheus

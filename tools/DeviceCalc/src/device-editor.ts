@@ -207,19 +207,24 @@ export class DeviceEditor extends LitElement {
 
 	private __dropdown_items_satas_templates: TemplateResult<1>[] = [];
 	private __dropdown_items_satas_templates_data?: any;
+	private __dropdown_items_satas_current_day: number = -1;
 	get _dropdown_items_satas_templates(): TemplateResult<1>[] {
-		if (this.__dropdown_items_satas_templates_data !== this._data) {
+		if (this.__dropdown_items_satas_templates_data !== this._data || this.__dropdown_items_satas_current_day != EditorConfig.current_day) {
 			this.__dropdown_items_satas_templates_data = this._data;
+			this.__dropdown_items_satas_current_day = EditorConfig.current_day;
 			this.__dropdown_items_satas_templates = [];
 			if (this._data) {
 				for (const plug_id in this._data.plugs_by_type[TniSocketType.SATA35_SLOT]) {
 					const plug = this._data.plugs[plug_id]!;
 					if (plug.PeripheralPlug && plug.RemovableStorageDevice) {
+						const available = EditorConfig.current_day <= -1 || (this._data?.isAvailableToday(plug_id, EditorConfig.current_day) ?? true);
 						this.__dropdown_items_satas_templates.push(html`
-							<wa-dropdown-item value="${plug_id}">
+							<wa-dropdown-item value="${plug_id}" style="${available ? '' : 'text-decoration-line: line-through;'}">
 								+${plug.RemovableStorageDevice.available_sto} <span class="my-combobox-ignore">${plug.PeripheralPlug.product_name}</span>
 								<span slot="details">
-									<span style="display: inline-block; min-width: 5ch;">$${plug.PeripheralPlug.price}</span>
+									<span style="display: inline-block; min-width: 5ch; ${available ? '' : 'text-decoration-line: line-through;'}">
+										$${plug.PeripheralPlug.price}
+									</span>
 								</span>
 							</wa-dropdown-item>
 						`)
