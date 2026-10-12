@@ -731,7 +731,7 @@ export class DeviceEditor extends LitElement {
 								continue;
 							if (!sata_combination || excess_sto + combination.storage > excess_sto + sata_combination.storage) {
 								sata_combination = combination;
-								if (excess_sto >= 0)
+								if (excess_sto + sata_combination.storage >= 0)
 									break;
 							}
 						}
