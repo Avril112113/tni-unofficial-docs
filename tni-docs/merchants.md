@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.2
+GENERATED FOR TNI VERSION 0.13.3
 
 - TOC
 {:toc}
@@ -1185,21 +1185,21 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Not rack mountable.  
    Homelab equipment.  
    8-day device warranty.  
-- **Storage Extension**  
+- **Storage Extension 4**  
   **Listing Starts** day 0  
   **Price:** $75  
   **Description:**  
    Compatible with SATA3.5"  
    Provides extra 4 storage to attached devices.  
    Files moved onto it travel with the disk when it is unplugged.  
-- **Storage Extension**  
+- **Storage Extension 6**  
   **Listing Starts** day 0  
   **Price:** $150  
   **Description:**  
    Compatible with SATA3.5"  
    Provides extra 6 storage to attached devices.  
    Files moved onto it travel with the disk when it is unplugged.  
-- **Storage Extension**  
+- **Storage Extension 8**  
   **Listing Starts** day 5  
   **Price:** $300  
   **Description:**  
@@ -1212,36 +1212,48 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
   **Warranty:** 24 days  
   **Description:**  
    8-bay modular computing chassis with VLAN port tagging.  
-   Handles up to 117 traversals per tick.  
+   Handles up to 228 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 135W.  
    Mountable on 930px racks.  
    Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
    24-day device warranty.  
-- **[ICC Razor 2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-razor-2)**  
+- **[ICC Razor 8U<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8U.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 8U.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-razor-8u)**  
+  **Listing Starts** day 10  
+  **Price:** $5700  
+  **Warranty:** 24 days  
+  **Description:**  
+   8-bay modular computing chassis with VLAN port tagging and a built-in battery which supports up to 2570W loads.  
+   Handles up to 238 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 132W.  
+   Mountable on 930px racks.  
+   Powers and networks up to 8 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.   
+   24-day device warranty.  
+- **[ICC Razor 2U<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2U.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Razor 2U.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-razor-2u)**  
   **Listing Starts** day 2  
-  **Price:** $580  
+  **Price:** $755  
   **Warranty:** 15 days  
   **Description:**  
-   2-bay modular computing chassis with VLAN port tagging and a built-in battery.  
-   Handles up to 36 traversals per tick.  
+   2-bay modular computing chassis with a built-in battery which supports up to 688W loads.  
+   Handles up to 57 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 155W.  
+   Power consumption: 56W.  
    Mountable on 630px racks.  
    Powers and networks up to 2 ICC modular computing units. Upgradable with removable CPU, memory and storage slots.  
    15-day device warranty.  
 - **[ICC10<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc10)**  
   **Listing Starts** day 2  
   **Price:** $120  
-  **Warranty:** 7 days  
+  **Warranty:** 14 days  
   **Description:**  
    Modular computing unit.  
    Specs: 1 CPU, 2 memory and 2 storage.  
    Handles up to 6 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 49W.  
+   Power consumption: 43W.  
    Compatible with an ICC Razor bay  
-   7-day device warranty.  
+   14-day device warranty.  
 - **[ICC10E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc10e)**  
   **Listing Starts** day 2  
   **Price:** $220  
@@ -1251,7 +1263,7 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Specs: 1 CPU, 2 memory and 2 storage.  
    Handles up to 12 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 24W.  
+   Power consumption: 49W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC10F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC10F.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc10f)**  
@@ -1263,7 +1275,7 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Specs: 1 CPU, 2 memory and 2 storage.  
    Handles up to 16 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 28W.  
+   Power consumption: 53W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC20<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc20)**  
@@ -1273,9 +1285,9 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
   **Description:**  
    Modular computing unit.  
    Specs: 2 CPU, 4 memory and 2 storage.  
-   Handles up to 6 traversals per tick.  
+   Handles up to 12 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 66W.  
+   Power consumption: 67W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC20E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc20e)**  
@@ -1285,9 +1297,9 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
   **Description:**  
    Modular computing unit with 1 ethernet port.  
    Specs: 2 CPU, 4 memory and 2 storage.  
-   Handles up to 12 traversals per tick.  
+   Handles up to 24 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 35W.  
+   Power consumption: 73W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC20F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC20F.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc20f)**  
@@ -1297,45 +1309,45 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
   **Description:**  
    Modular computing unit with 1 fiber port.  
    Specs: 2 CPU, 4 memory and 2 storage.  
-   Handles up to 16 traversals per tick.  
+   Handles up to 27 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 42W.  
+   Power consumption: 79W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC30<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc30)**  
   **Listing Starts** day 10  
-  **Price:** $765  
+  **Price:** $740  
   **Warranty:** 14 days  
   **Description:**  
    Modular computing unit.  
    Specs: 4 CPU, 8 memory and 2 storage.  
-   Handles up to 12 traversals per tick.  
+   Handles up to 21 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 159W.  
+   Power consumption: 166W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC30E<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc30e)**  
   **Listing Starts** day 10  
-  **Price:** $865  
+  **Price:** $840  
   **Warranty:** 14 days  
   **Description:**  
    Modular computing unit with 1 ethernet port.  
    Specs: 4 CPU, 8 memory and 2 storage.  
    Handles up to 24 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 100W.  
+   Power consumption: 177W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC30F<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30F.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC30F.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc30f)**  
   **Listing Starts** day 10  
-  **Price:** $865  
+  **Price:** $840  
   **Warranty:** 14 days  
   **Description:**  
    Modular computing unit with 1 fiber port.  
    Specs: 4 CPU, 8 memory and 2 storage.  
-   Handles up to 26 traversals per tick.  
+   Handles up to 27 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
-   Power consumption: 107W.  
+   Power consumption: 186W.  
    Compatible with an ICC Razor bay  
    14-day device warranty.  
 - **[ICC CPU Slot<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC CPU Slot.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC CPU Slot.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-cpu-slot)**  
@@ -1358,60 +1370,60 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Compatible with an ICC Razor bay  
 - **CPU Extension 1**  
   **Listing Starts** day 2  
-  **Price:** $75  
+  **Price:** $70  
   **Description:**  
    Compatible with CPU slots.  
    Provides 1 extra CPU to the attached device.  
-   Draws 51W while the device is running.  
+   Draws 55W while the device is running.  
 - **CPU Extension 2**  
   **Listing Starts** day 5  
-  **Price:** $175  
+  **Price:** $160  
   **Description:**  
    Compatible with CPU slots.  
    Provides 2 extra CPU to the attached device.  
-   Draws 89W while the device is running.  
+   Draws 95W while the device is running.  
 - **CPU Extension 4**  
   **Listing Starts** day 10  
-  **Price:** $375  
+  **Price:** $340  
   **Description:**  
    Compatible with CPU slots.  
    Provides 4 extra CPU to the attached device.  
-   Draws 155W while the device is running.  
+   Draws 165W while the device is running.  
 - **CPU Extension 8**  
   **Listing Starts** day 15  
-  **Price:** $810  
+  **Price:** $735  
   **Description:**  
    Compatible with CPU slots.  
    Provides 8 extra CPU to the attached device.  
-   Draws 270W while the device is running.  
+   Draws 288W while the device is running.  
 - **Memory Extension 2**  
   **Listing Starts** day 2  
   **Price:** $90  
   **Description:**  
    Compatible with DRAM slots.  
    Provides 2 extra memory to the attached device.  
-   Draws 30W while the device is running.  
+   Draws 19W while the device is running.  
 - **Memory Extension 4**  
   **Listing Starts** day 5  
   **Price:** $275  
   **Description:**  
    Compatible with DRAM slots.  
    Provides 4 extra memory to the attached device.  
-   Draws 52W while the device is running.  
+   Draws 33W while the device is running.  
 - **Memory Extension 6**  
   **Listing Starts** day 10  
   **Price:** $460  
   **Description:**  
    Compatible with DRAM slots.  
    Provides 6 extra memory to the attached device.  
-   Draws 71W while the device is running.  
+   Draws 46W while the device is running.  
 - **Memory Extension 8**  
   **Listing Starts** day 15  
   **Price:** $735  
   **Description:**  
    Compatible with DRAM slots.  
    Provides 8 extra memory to the attached device.  
-   Draws 90W while the device is running.  
+   Draws 58W while the device is running.  
 - **[ICC Mouthpiece<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC Mouthpiece.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc-mouthpiece)**  
   **Listing Starts** day 0  
   **Price:** $300  
@@ -1772,6 +1784,33 @@ Our power appliances are certified quality with good warrany coverage.
    Supports up to 1500W loads.  
    Keeps devices functioning in the event of power outages/surges.  
    28-day device warranty.  
+- **[Tenabolt UPS3<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS3.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS3.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups3)**  
+  **Listing Starts** day 15  
+  **Price:** $9950  
+  **Warranty:** 28 days  
+  **Description:**  
+   Uninterrupted power supply unit.  
+   Supports up to 2850W loads.  
+   Keeps devices functioning in the event of power outages/surges.  
+   28-day device warranty.  
+- **[Tenabolt UPS3E<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS3E.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS3E.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups3e)**  
+  **Listing Starts** day 15  
+  **Price:** $15375  
+  **Warranty:** 28 days  
+  **Description:**  
+   Uninterrupted power supply unit (expanded load).  
+   Supports up to 4100W loads.  
+   Keeps devices functioning in the event of power outages/surges.  
+   28-day device warranty.  
+- **[Tenabolt UPS3X<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS3X.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt UPS3X.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-ups3x)**  
+  **Listing Starts** day 15  
+  **Price:** $30810  
+  **Warranty:** 35 days  
+  **Description:**  
+   Uninterrupted power supply unit (extra-expanded load).  
+   Supports up to 7900W loads.  
+   Keeps devices functioning in the event of power outages/surges.  
+   35-day device warranty.  
 - **[Tenabolt AVR2<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt AVR2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tenabolt AVR2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#tenabolt-avr2)**  
   **Listing Starts** day 0  
   **Price:** $150  
@@ -2486,6 +2525,30 @@ Ubitoq builds network devices with SFP ports and their modules. An one-stop merc
    Mountable on 500px racks.  
    Uses DC power.  
    17-day device warranty.  
+- **[haS vS16<img src="{{ site.baseurl }}/tni-docs/assets/devices/haS vS16.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/haS vS16.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#has-vs16)**  
+  **Listing Starts** day 10  
+  **Price:** $998  
+  **Warranty:** 28 days  
+  **Description:**  
+   16-port network switch which supports 16 SFP modules.  
+   Handles up to 384 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 42W.  
+   Mountable on 930px racks.  
+   Supports VLAN port tagging.  
+   28-day device warranty.  
+- **[haS vR12<img src="{{ site.baseurl }}/tni-docs/assets/devices/haS vR12.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/haS vR12.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#has-vr12)**  
+  **Listing Starts** day 15  
+  **Price:** $1550  
+  **Warranty:** 24 days  
+  **Description:**  
+   12-port network router which supports 12 SFP modules.  
+   Handles up to 180 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 84W.  
+   Mountable on 930px racks.  
+   Allows VLAN subinterfaces.  
+   24-day device warranty.  
 - **[RJ45 SFP Module<img src="{{ site.baseurl }}/tni-docs/assets/devices/RJ45 SFP Module.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/RJ45 SFP Module.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#rj45-sfp-module)**  
   **Listing Starts** day 0  
   **Price:** $20  

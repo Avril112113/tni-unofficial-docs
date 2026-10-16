@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.2
+GENERATED FOR TNI VERSION 0.13.3
 
 - TOC
 {:toc}
@@ -1018,12 +1018,12 @@ HUSH targets VOIP phones and servers using SIP traffic (UDP/5060). Upon infectio
 **Traffic:** [tcp/8333](traffic_types.md/#tcp8333)  
 **Vulnerable Devices:**   
 **Program Name Template:** `mtgoks`  
-**Incubation Cycles:** 5  
-**Spread per tick:** 1  
+**Incubation Cycles:** 3  
+**Spread per tick:** 3  
   
   
 **Description:**  
-Mt Groks targets devices running Decentro programs using Decentro network traffic (TCP/8333). Upon infection, it uninstalls those programs from the device.  
+Mt Goks targets devices running Decentro programs using Decentro network traffic (TCP/8333). Upon infection, it uninstalls those programs from the device.  
   
   
   
