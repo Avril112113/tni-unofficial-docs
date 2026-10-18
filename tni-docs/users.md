@@ -33,6 +33,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **BROWSE MEDIA CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -73,6 +74,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Feed Signal  
@@ -178,6 +180,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
   
   
 ## tester ellie  
@@ -194,6 +197,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
 - <span style="color:Aqua;">Host:</span> **DecentroUserNode**  
   **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-p2p-transaction`  
   **Scaling:** Static?=4-9 visitors  
@@ -261,6 +265,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
   
   
 ## Casual Dweller  
@@ -365,6 +370,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -394,6 +400,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **DO WORK** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -432,6 +439,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **POST SCIENTIFIC PAPER** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -476,6 +484,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **STREAM MEDIA CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -508,6 +517,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **VISIT EXTERNAL TOWER** 75% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -770,6 +780,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Liberal Announcer  
@@ -790,6 +801,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Capitalistic Announcer  
@@ -810,6 +822,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Scifi Movie Director  
@@ -836,6 +849,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Audio Lover  
@@ -851,6 +865,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **STREAM ANY PODCAST** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -881,6 +896,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Decentro Farmer  
@@ -897,14 +913,17 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
 - <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 25% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Home Chef  
@@ -925,6 +944,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Lifestyle Blogger  
@@ -940,6 +960,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **SHARE BLOG POSTS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -960,10 +981,12 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **POST SPAM MAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `post-text and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 30% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
@@ -984,6 +1007,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **CHAT WITH SOMEONE AT NIGHT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1008,6 +1032,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **ENJOY PET CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1028,6 +1053,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **PURCHASE RECYCLED SUPPLIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1048,6 +1074,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Patient Professor  
@@ -1092,6 +1119,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Tower Worker  
@@ -1160,6 +1188,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
 - <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1217,6 +1246,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **VALIDATE DIGITAL PAYMENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1301,6 +1331,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
 - <span style="color:Yellow;">Use:</span> **HIGH RISK GAMBLING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1331,15 +1362,18 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 50% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
   
   
 ## Heavy Viewer  
@@ -1494,10 +1528,12 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 65% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **STREAM LOFI MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1559,6 +1595,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Digital Hoarder  
@@ -1617,6 +1654,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Wealthy Dweller  
@@ -1775,6 +1813,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **JOIN HACKING WORKSHOP** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -1959,6 +1998,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:red;">Worm:</span> **ANNOYING_MORRIS** @ `tcp/51#`  
   **Vulnerable Devices:** NETWORK_ROUTER, COMPUTE_SERVER  
 - <span style="color:Yellow;">Use:</span> **TEXT SCRAPING** 100% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
@@ -2015,6 +2055,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Pavillion Tower  
@@ -2030,6 +2071,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **VIEW PUBLIC CONTENT** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2053,6 +2095,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **ATTEND VIDEO MEETING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">5</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2061,6 +2104,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Aqua;">Host:</span> **HostDividendPayment**  
   **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-banking`  
   **Scaling:** Survey  
@@ -2080,10 +2124,12 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostLiveHackingWorkshop**  
   **<span style="color:DarkKhaki;">Produces:</span>** `stream-live-video, verify-user`  
   **Scaling:** Survey  
@@ -2103,6 +2149,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
@@ -2134,6 +2181,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
@@ -2165,6 +2213,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
@@ -2218,6 +2267,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
@@ -2255,6 +2305,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Aqua;">Host:</span> **HostDevWorkspace**  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
   **Scaling:** Survey  
@@ -2274,6 +2325,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **PUBLISH STORE PAGE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2306,6 +2358,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **PUBLISH STORE PAGE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2348,6 +2401,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Travel Agency  
@@ -2390,6 +2444,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **POST FOOD MENU** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2415,6 +2470,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2473,10 +2529,12 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
@@ -2515,6 +2573,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostDatabaseSubscription**  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Survey  
@@ -2534,6 +2593,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2570,6 +2630,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
@@ -2596,6 +2657,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **POST FOOD MENU** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2626,6 +2688,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **ENABLE B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Notes:** Backend service  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
@@ -2652,6 +2715,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostBlogSite**  
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, read-text, view-image`  
   **Scaling:** Visitors  
@@ -2660,6 +2724,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Book Club  
@@ -2683,6 +2748,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## Cloud Hub  
@@ -2700,6 +2766,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `store-text, store-image, store-video` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostFileStorage**  
   **<span style="color:DarkKhaki;">Produces:</span>** `store-text, store-image, store-video`  
   **Scaling:** Visitors  
@@ -2735,6 +2802,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Data Hub  
@@ -2752,6 +2820,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostDevWorkspace**  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, tunnel-vpn-traffic, stream-video, view-image, verify-user`  
   **Scaling:** Survey  
@@ -2780,6 +2849,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2809,6 +2879,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## Free Kanban Central  
@@ -2828,10 +2899,12 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## Horror Director  
@@ -2847,6 +2920,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **UPLOAD MOVIES TO SITE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2872,6 +2946,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2895,6 +2970,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **STORE FILE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2923,6 +2999,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## Political News  
@@ -2961,6 +3038,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **POST NEWS ON PORTAL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -2985,10 +3063,12 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `post-text and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Tower Portal  
@@ -3006,6 +3086,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `read-text, post-text` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostNewsPosting**  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Visitors  
@@ -3038,6 +3119,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **PROMOTE ON PORTAL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -3061,10 +3143,12 @@ GENERATED FOR TNI VERSION 0.13.3
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `facilitate-banking` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
   **<span style="color:LightGray;">Subjects:</span>** critical  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **TALK TO SOMEONE ONLINE** 100% @ [`udp/5060`](traffic_types.md/#udp5060) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Aqua;">Host:</span> **ProvideBankingService**  
   **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-banking`  
   **Scaling:** Survey  
@@ -3095,6 +3179,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `read-instant-messages, post-instant-messages` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostChattingPlatform**  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-instant-messages, post-instant-messages`  
   **Scaling:** Visitors  
@@ -3126,6 +3211,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `read-text, post-text, verify-user` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **ReadEmail**  
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text, verify-user`  
   **Scaling:** Visitors  
@@ -3154,6 +3240,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **PRINT DOCUMENT** 70% @ [`tcp/631`](traffic_types.md/#tcp631) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -3185,6 +3272,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **IssueUtilitiesBills**  
   **<span style="color:DarkKhaki;">Produces:</span>** `authenticate-transaction`  
   **Scaling:** Visitors  
@@ -3213,6 +3301,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Aqua;">Host:</span> **HostIdeologicalAds**  
   **<span style="color:DarkKhaki;">Produces:</span>** `post-video, verify-user`  
   **Scaling:** Visitors  
@@ -3236,6 +3325,7 @@ GENERATED FOR TNI VERSION 0.13.3
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Surveillance Hub  
@@ -3532,6 +3622,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Legal Officer  
@@ -3706,6 +3797,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Night Technician  
@@ -3785,6 +3877,7 @@ Responsible for receiving, reviewing, and resolving customer complaints.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Normal Technician  
@@ -4135,6 +4228,7 @@ Only operates during working hours.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **MANAGE PRODUCTS** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 2.0  
@@ -4155,6 +4249,7 @@ Only operates during working hours.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **DO CONFIDENTIAL RESEARCH** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4164,6 +4259,7 @@ Only operates during working hours.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Chips Designer  
@@ -4184,6 +4280,7 @@ Only operates during working hours.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Professional Gamer  
@@ -4205,6 +4302,7 @@ Only operates during working hours.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Binge Watcher  
@@ -4220,6 +4318,7 @@ Only operates during working hours.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **STREAM ANY MOVIE** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">2</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4246,6 +4345,7 @@ Only operates during working hours.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **STREAM JAZZ MUSIC** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4309,6 +4409,7 @@ Only operates during working hours.
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:LightGray;">Subjects:</span>** privacy  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## Patient Dweller  
@@ -4364,6 +4465,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4372,6 +4474,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Aqua;">Host:</span> **HostImageTextPost**  
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, view-image, read-text`  
   **Scaling:** Survey  
@@ -4391,6 +4494,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **VIEW PAID CONTENT** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4399,6 +4503,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Aqua;">Host:</span> **HostImageTextPost**  
   **<span style="color:DarkKhaki;">Produces:</span>** `post-text, post-image, view-image, read-text`  
   **Scaling:** Survey  
@@ -4418,14 +4523,17 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **EXCHANGE EMAIL** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **HostLofiMusic**  
   **<span style="color:DarkKhaki;">Produces:</span>** `post-audio, stream-audio`  
   **Scaling:** Survey  
@@ -4456,10 +4564,12 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `post-text and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **SOFTWARE UPDATES** 50% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## Animation Studios  
@@ -4521,6 +4631,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## ESport Hub  
@@ -4538,6 +4649,7 @@ They stick to familiar websites unless better options appear.
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `accept-instruction` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Yellow;">Use:</span> **PAY COMMERCIAL UTILITIES** 20% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4562,6 +4674,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **POST GROCERY MENU** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">3</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4610,6 +4723,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
   
   
 ## Semiconductor Hub  
@@ -4625,6 +4739,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Aqua;">Host:</span> **HostConfidentialResearch**  
   **<span style="color:DarkKhaki;">Produces:</span>** `accept-instruction, verify-user`  
   **Scaling:** Visitors  
@@ -4690,6 +4805,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Meeting Hub  
@@ -4737,6 +4853,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
   
 ## Privacy Hub  
@@ -4756,10 +4873,12 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
 - <span style="color:Yellow;">Use:</span> **SEND NEWSLETTER** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(providers by market share)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `post-text and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
   
   
 ## Free Babel Folk  
@@ -4776,6 +4895,7 @@ They stick to familiar websites unless better options appear.
   **Max Acceptable PPU:** 0.2  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
+  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
 - <span style="color:Yellow;">Use:</span> **SCRAPING SECRETARIAT INTEL** 100% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">2</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(same provider)</span>  
   **Notes:** Malicious  
   **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
@@ -4801,6 +4921,7 @@ They stick to familiar websites unless better options appear.
   **Max Acceptable PPU:** 0.5  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `update-software` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
   **<span style="color:DarkKhaki;">Produces:</span>** 1 `verify-user, post-operation-data, authenticate-transaction` <span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by 1)</span>  
+  **Unlocks:** [gitcoffee](programs.md/#gitcoffee)  
 - <span style="color:Aqua;">Host:</span> **BabelRegistryPortal**  
   **<span style="color:DarkKhaki;">Produces:</span>** `verify-user, post-operation-data, authenticate-transaction`  
   **Scaling:** Survey  
@@ -4809,6 +4930,7 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 0.9  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `( read-text or post-text ) and verify-user` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [mailer](programs.md/#mailer)  
 - <span style="color:Yellow;">Use:</span> **PERFORM B2B BANKING** 100% @ [`tcp/443`](traffic_types.md/#tcp443) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
@@ -4818,4 +4940,5 @@ They stick to familiar websites unless better options appear.
   **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
   **Max Acceptable PPU:** 1.1  
   **<span style="color:PapayaWhip;">Consumes:</span>** 1 `stream-voice` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
+  **Unlocks:** [voip-server](programs.md/#voip-server)  
   
