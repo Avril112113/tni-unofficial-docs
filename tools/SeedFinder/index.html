@@ -1,0 +1,100 @@
+---
+layout: page
+title: Proposals Seed Finder
+parent: Tools
+permalink: /tools/SeedFinder/
+---
+<style>
+	#seedfinder { display: grid; gap: var(--wa-space-m, 1rem); }
+	#seedfinder:not(.sf-ready) .sf-body { opacity: .5; pointer-events: none; }
+	.sf-row { display: flex; flex-wrap: wrap; gap: var(--wa-space-s, .75rem); align-items: end; }
+	.sf-row label { display: grid; gap: .25rem; font-size: .8rem; }
+	#sf-verified { margin: 0; font-size: .9rem; }
+	#sf-verified[data-state="ok"] { color: var(--wa-color-success-on-quiet, #23683b); }
+	#sf-verified[data-state="bad"] { color: var(--wa-color-danger-on-quiet, #9b2c2c); font-weight: 600; }
+	#sf-verified[data-state="unverified"] { color: var(--wa-color-warning-on-quiet, #8a5a00); }
+	#sf-pool { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: .2rem; }
+	.sf-pick {
+		text-align: left; padding: .55rem .75rem; border-radius: .25rem; cursor: pointer; font: inherit;
+		border: 1px solid var(--wa-color-neutral-border-normal, #c9d1d9); background: transparent; color: inherit;
+		font-size: .9rem;
+	}
+	.sf-pick[aria-pressed="true"] { border-color: var(--wa-color-blue-50, rgb(0, 113, 236)); font-weight: 500; text-decoration: underline; }
+	.sf-pick:disabled { opacity: .45; cursor: not-allowed; }
+	.sf-table { overflow-x: auto; }
+	.sf-table table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+	.sf-table td, .sf-table th { padding: .4rem .5rem; border-bottom: 1px solid var(--wa-color-neutral-border-quiet, #e1e5ea); text-align: left; }
+	.sf-seed { font-family: var(--wa-font-family-code, monospace); font-weight: 700; letter-spacing: .05em; white-space: nowrap; }
+	#sf-seed { font-family: var(--wa-font-family-code, monospace); }
+</style>
+<script type="module" src="{{ site.baseurl }}/assets/js/SeedFinder.js"></script>
+<!-- Allow use of Liquid to generate an always updated list of version. -->
+<!-- We still use versions.json to verify results -->
+<div id="sf-versions" style="display: none;">
+	{% for file in site.static_files reversed %}
+		{% assign ends_with_json = file.name | slice: -9, 9 %}
+		{% if file.path contains '/raw/' and ends_with_json == '.min.json' %}
+			{% unless file.name contains 'latest' %}
+			<a>{{ site.baseurl }}{{ file.path }}</a>
+			{% endunless %}
+		{% endif %}
+	{% endfor %}
+</div>
+
+<h1>Proposals Seed Finder</h1>
+<p>
+	Pick up to three proposals you want in the first batch, and the finder lists world seeds that open with them.
+	Seeds are case-sensitive: <code>KWZ95</code> and <code>kwz95</code> are different worlds.
+	Pick the game version and scenario first: each scenario deals from its own proposal pack.
+</p>
+
+<div id="seedfinder" data-base="{{ site.baseurl }}">
+	<div class="sf-row">
+		<label>Game version and scenario <select id="sf-version"></select></label>
+	</div>
+	<p id="sf-verified"></p>
+
+	<div class="sf-body">
+		<p><strong>Day-0 proposals</strong> <span id="sf-count"></span></p>
+		<div id="sf-pool"></div>
+
+		<div class="sf-row" style="margin-top: 1rem;">
+			<label>Seed length
+				<select id="sf-length"><option>4</option><option selected>5</option><option>6</option><option>8</option></select>
+			</label>
+			<label>Characters
+				<select id="sf-chars">
+					<option value="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" selected>A–Z and 0–9</option>
+					<option value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">A–Z only</option>
+					<option value="abcdefghijklmnopqrstuvwxyz0123456789">a–z and 0–9</option>
+					<option value="0123456789">0–9 only</option>
+				</select>
+			</label>
+			<button type="button" id="sf-find">Find seeds</button>
+		</div>
+		<p id="sf-status" role="status"></p>
+		<div class="sf-table">
+			<table>
+				<thead><tr><th>Seed</th><th>rng_seed</th><th>First batch</th><th></th></tr></thead>
+				<tbody id="sf-results"></tbody>
+			</table>
+		</div>
+
+		<h2>Check a seed</h2>
+		<div class="sf-row">
+			<label>World seed <input type="text" id="sf-seed" value="KWZ95" maxlength="32" autocomplete="off" spellcheck="false"></label>
+			<button type="button" id="sf-check">Deal</button>
+		</div>
+		<p id="sf-check-out"></p>
+	</div>
+</div>
+
+<p style="font-size: .85rem;">
+	How it works: the game hashes the seed text (Godot <code>String.hash()</code>) into <code>rng_seed</code>, seeds Godot's PCG32 generator with it,
+	shuffles the proposals eligible on day 0 once, and offers the first three. Proposal weights don't affect this first batch.
+	Eligible on day 0 means: not locked, no prerequisite proposal, unlock day 0, and no "Requires …" deployment condition.
+</p>
+
+<p style="font-size: .85rem;">
+	Created by Tylerun, modified by Avril112113.
+</p>

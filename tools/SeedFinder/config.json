@@ -1,0 +1,62 @@
+{
+	"scenarios": [
+		{
+			"name": "Endless Babel",
+			"pack": "proposals/packs/standard.tscn",
+			"from_version": "0.11.3"
+		},
+		{
+			"name": "Tenabolt Prometheus",
+			"pack": "proposals/packs/company_datacenter.tscn",
+			"from_version": "0.11.3"
+		}
+	],
+	"verifications": [
+		{
+			"game_version": "0.13.3",
+			"revision": 1,
+			"pack": "proposals/packs/standard.tscn",
+			"known": [
+				{
+					"seed": "KWZ95",
+					"first": [
+						"TenaboltLegalRetaliation",
+						"PowerManagement",
+						"OvervoltageDirective"
+					]
+				},
+				{
+					"seed": "TOWER1",
+					"first": [
+						"ScanningResearch",
+						"OvervoltageDirective",
+						"RefurbHut"
+					]
+				},
+				{
+					"seed": "kwz95",
+					"first": [
+						"UndervoltageDirective",
+						"TenaboltFusionSupportPhaseOne",
+						"ReduceExpenses"
+					]
+				}
+			]
+		},
+		{
+			"game_version": "0.13.3",
+			"revision": 1,
+			"pack": "proposals/packs/company_datacenter.tscn",
+			"known": [
+				{
+					"seed": "KWZ95",
+					"first": [
+						"NetOpsResearch",
+						"CerealWarez",
+						"SecondMonitor"
+					]
+				}
+			]
+		}
+	]
+}
