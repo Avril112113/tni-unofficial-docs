@@ -11,9 +11,12 @@ Express permission by the devs of Tower Networking Inc to use the following asse
 ---
 
 [MIT-0](LICENSE.MIT-0) (no attribution)
-- Contents of [/tni-docs](tni-docs) but excluding [/tni-docs/assets](tni-docs/assets) or found at [https://avril112113.github.io/tni-unofficial-docs/data/](https://avril112113.github.io/tni-unofficial-docs/data/) and it's sub-pages
-- Contents of [/tni-info](tni-info) or found at [https://avril112113.github.io/tni-unofficial-docs/info/](https://avril112113.github.io/tni-unofficial-docs/info/) and it's sub-pages
-- Contents of [/raw](raw) or found at [https://avril112113.github.io/tni-unofficial-docs/raw/](https://avril112113.github.io/tni-unofficial-docs/raw/) and it's sub-pages
+- Contents of [/tni-docs](tni-docs) but excluding [/tni-docs/assets](tni-docs/assets).  
+  *Found live at [https://avril112113.github.io/tni-unofficial-docs/data/](https://avril112113.github.io/tni-unofficial-docs/data/) and it's sub-pages.*
+- Contents of [/tni-info](tni-info).  
+  *Found live at [https://avril112113.github.io/tni-unofficial-docs/info/](https://avril112113.github.io/tni-unofficial-docs/info/) and it's sub-pages.*
+- Contents of [/raw](raw).  
+  *Found live at [https://avril112113.github.io/tni-unofficial-docs/raw/](https://avril112113.github.io/tni-unofficial-docs/raw/) and it's sub-pages.*
 
 ---
 
@@ -21,3 +24,8 @@ Express permission by the devs of Tower Networking Inc to use the following asse
 - Anything not previously mentioned elsewhere in this file, but explicitly including;
 - Contents of [/tools](tools)
 - Contents of [/assets/js/components](assets/js/components)
+
+
+---
+
+If previewed from the live site, the `/` links do not work. They are intended for local `.md` preview.
