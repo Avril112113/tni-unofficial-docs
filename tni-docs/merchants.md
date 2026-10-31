@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.3
+GENERATED FOR TNI VERSION 0.13.4
 
 - TOC
 {:toc}
@@ -89,7 +89,7 @@ At AB compute, we offer a variety of computing devices from different manufactur
    Handles up to 40 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 523W.  
-   Not rack mountable.  
+   Mountable on 500px racks.  
    Provides Decentro transaction verification to the p2p currency network.  
    7-day device warranty.  
 - **[DNS UDP/53 Load Tester<img src="{{ site.baseurl }}/tni-docs/assets/devices/DNS UDP53 Load Tester.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/DNS UDP53 Load Tester.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#dns-udp53-load-tester)**  
@@ -1169,7 +1169,7 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Handles up to 6 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 19W.  
-   Not rack mountable.  
+   Mountable on 500px racks.  
    Homelab equipment.  
    8-day device warranty.  
 - **[ICC2<img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/ICC2.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#icc2)**  
@@ -1182,7 +1182,7 @@ Interchange Compute Corporation (ICC) manufactures the tall world's compute devi
    Handles up to 12 traversals per tick.  
    CPU cycles 1 tick every 2.0 seconds.  
    Power consumption: 35W.  
-   Not rack mountable.  
+   Mountable on 500px racks.  
    Homelab equipment.  
    8-day device warranty.  
 - **Storage Extension 4**  
@@ -2593,6 +2593,14 @@ Get real-time insights on your tower’s population with monitors built for data
   **Warranty:** 14 days  
   **Description:**  
    Extra monitor displaying resident satiety levels, available for sale.  
+   Not rack mountable.  
+   14-day device warranty.  
+- **[Memento Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Memento Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Memento Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#memento-monitor)**  
+  **Listing Starts** day 0  
+  **Price:** $500  
+  **Warranty:** 14 days  
+  **Description:**  
+   Extra monitor displaying device warranty and reliability, available for sale.  
    Not rack mountable.  
    14-day device warranty.  
   

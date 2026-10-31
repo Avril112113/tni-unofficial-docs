@@ -6,7 +6,7 @@ permalink: /data/users
 
 # Users
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.3
+GENERATED FOR TNI VERSION 0.13.4
 
 - TOC
 {:toc}
@@ -128,80 +128,6 @@ GENERATED FOR TNI VERSION 0.13.3
   **<span style="color:DarkKhaki;">Produces:</span>** `read-text, post-text`  
   **Scaling:** Visitors  
   **Description:** a simple text-based forum  
-  
-  
-## Sync News  
-**Grace Days:** 4  
-**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
-  
-**Description:** A news company that hosts their site on-premise.  
-  
-**Unlocks:**   
-  
-**Behaviors:**  
-- <span style="color:Aqua;">Host:</span> **HostNewsReading**  
-  **<span style="color:DarkKhaki;">Produces:</span>** `read-text, view-image, stream-video, stream-audio`  
-  **Scaling:** Survey  
-  **Description:** text-based political news site  
-  
-  
-## Bobby Tester  
-**Grace Days:** 10  
-**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
-  
-**Description:** Bobby tester  
-  
-**Unlocks:** [dns-lite](programs.md/#dns-lite), [dnsmasq](programs.md/#dnsmasq)  
-  
-**Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **GENERIC PROGRAM** 33% @ [`tcp/80##`](traffic_types.md/#tcp80-1) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
-  **Notes:** Malicious  
-  **Satiety on Consume:** for producer <span style="color:Salmon;">-1</span>, for user <span style="color:Salmon;">0</span>  
-  **Max Acceptable PPU:** 1.1  
-  **<span style="color:PapayaWhip;">Consumes:</span>** 1 `read-text or stream-video` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-- <span style="color:Yellow;">Use:</span> **READ ANY NEWS** 100% @ [`tcp/80`](traffic_types.md/#tcp80) for <span style="color:Salmon;">1</span>bw <span style="color:gray;font-size:85%;white-space:nowrap;">(random providers)</span>  
-  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
-  **Max Acceptable PPU:** 1.1  
-  **<span style="color:PapayaWhip;">Consumes:</span>** 1 `read-text and view-image and stream-video and stream-audio` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-  **<span style="color:LightGray;">Subjects:</span>** news-update  
-  
-  
-## tester debbie  
-**Grace Days:** 10  
-**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
-  
-**Description:** a humble tower dweller who just wants to go online  
-  
-**Unlocks:**   
-  
-**Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
-  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
-  **Max Acceptable PPU:** 0.2  
-  **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-  **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
-  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
-  
-  
-## tester ellie  
-**Grace Days:** 10  
-**Online Times:** 00:00 to 24:00 <span style="color:gray;font-size:85%;white-space:nowrap;">(100% of the time)</span>  
-  
-**Description:** a humble tower dweller who just wants to go online  
-  
-**Unlocks:**   
-  
-**Behaviors:**  
-- <span style="color:Yellow;">Use:</span> **SEND DECENTRO** @ [`tcp/8333`](traffic_types.md/#tcp8333) for <span style="color:Salmon;">1</span>bw  
-  **Satiety on Consume:** for producer <span style="color:YellowGreen;">1</span>, for user <span style="color:YellowGreen;">1</span>  
-  **Max Acceptable PPU:** 0.2  
-  **<span style="color:PapayaWhip;">Consumes:</span>** 1 `facilitate-p2p-transaction` <span style="color:gray;font-size:85%;white-space:nowrap;">(ALL_OR_NOTHING)</span>  
-  **<span style="color:DarkKhaki;">Produces:</span>** 1 `access-p2p-currency` <span style="color:Coral;font-size:85%;white-space:nowrap;">on destination device</span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_FREE_MEMORY)</span>  
-  **Unlocks:** [decentro-node](programs.md/#decentro-node), [decentro-wallet](programs.md/#decentro-wallet), [decentro-collector](programs.md/#decentro-collector)  
-- <span style="color:Aqua;">Host:</span> **DecentroUserNode**  
-  **<span style="color:DarkKhaki;">Produces:</span>** `facilitate-p2p-transaction`  
-  **Scaling:** Static?=4-9 visitors  
-  **Description:** decentro currency network facilitator  
   
   
 ## Loyal Worker  

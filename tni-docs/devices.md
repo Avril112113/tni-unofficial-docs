@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.3
+GENERATED FOR TNI VERSION 0.13.4
 
 - TOC
 {:toc}
@@ -170,7 +170,7 @@ Mountable on 630px racks.
 **Base Price:** $230 **Base Warranty:** 7.0 days   
 **Port Counts:** 10x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
 10-port ethernet network switch.  
@@ -185,7 +185,7 @@ Mountable on 500px racks.
 **Base Price:** $712 **Base Warranty:** 21.0 days   
 **Port Counts:** 12x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 12-port fiber-optic managed network switch. Supports VLAN port tagging.  
@@ -200,7 +200,7 @@ Mountable on 930px racks.
 **Base Price:** $815 **Base Warranty:** 21.0 days   
 **Port Counts:** 15x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 15-port ethernet managed network switch. Supports VLAN port tagging.  
@@ -216,7 +216,7 @@ More ports at a cheaper price.
 **Base Price:** $1815 **Base Warranty:** 30.0 days   
 **Port Counts:** 15x `FIBER_OPTIC_SC`, 15x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 30-port mixed media network switch.   
@@ -233,7 +233,7 @@ Enterprise grade equipment.
 **Base Price:** $1630 **Base Warranty:** 28.0 days   
 **Port Counts:** 30x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 30-port ethernet managed network switch. Supports VLAN port tagging.  
@@ -249,7 +249,7 @@ Enterprise grade equipment. Consumes high power to support throughput.
 **Base Price:** $100 **Base Warranty:** 7.0 days   
 **Port Counts:** 4x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
 4-port fiber-optic network switch.  
@@ -264,7 +264,7 @@ Mountable on 500px racks.
 **Base Price:** $100 **Base Warranty:** 7.0 days   
 **Port Counts:** 5x `RJ45`, 1x `DC_JACK`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
 5-port ethernet network switch.  
@@ -280,7 +280,7 @@ Suitable for entry-level networks.
 **Base Price:** $466 **Base Warranty:** 14.0 days   
 **Port Counts:** 6x `FIBER_OPTIC_SC`, 6x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc)  
 **Installed Programs:** [bladeos](programs.md/#bladeos)  
 **Description:**  
 12-port mixed media network switch.  
@@ -295,7 +295,7 @@ Mountable on 930px racks.
 **Base Price:** $1088 **Base Warranty:** 35.0 days   
 **Port Counts:** 8x `FIBER_OPTIC_SC`, 8x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_SWITCH`  
-**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-blade-networking-inc)  
+**Merchants:** [Blade Networking Inc.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Blade Networking Inc.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#blade-networking-inc), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut)  
 **Installed Programs:** [vlanfirm](programs.md/#vlanfirm)  
 **Description:**  
 16-port mixed media network managed switch. Supports VLAN port tagging.  
@@ -375,7 +375,7 @@ Suitable for data-heavy application.
 **Base Price:** $1000 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `DEBUGGER`  
-**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Debugging Stuff<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#debugging-stuff), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
+**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Debugging Stuff<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Debugging Stuff.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#debugging-stuff)  
 **Installed Programs:** [netpeeker](programs.md/#netpeeker)  
 **Ownership Unlocks:** [mbox](programs.md/#mbox)  
 **Description:**  
@@ -450,7 +450,7 @@ Allows VLAN subinterfaces. Improved BW performance.
 **Base Price:** $600 **Base Warranty:** 14.0 days   
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 10-port mixed media network router.  
@@ -466,7 +466,7 @@ Suitable for small businesses.
 **Base Price:** $950 **Base Warranty:** 19.0 days   
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 10-port mixed media network router.  
@@ -482,7 +482,7 @@ Improved performance and maximum throughput.
 **Base Price:** $1300 **Base Warranty:** 21.0 days   
 **Port Counts:** 5x `RJ45`, 5x `FIBER_OPTIC_SC`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
 10-port mixed media network router.  
@@ -498,7 +498,7 @@ Mountable on 500px racks.
 **Base Price:** $325 **Base Warranty:** 16.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 8-port ethernet network router.  
@@ -514,7 +514,7 @@ Economical model for medium sized enterprises.
 **Base Price:** $500 **Base Warranty:** 18.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 8-port ethernet network router.  
@@ -530,7 +530,7 @@ Economical model for medium sized enterprises.
 **Base Price:** $800 **Base Warranty:** 21.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
 8-port ethernet network router.  
@@ -546,7 +546,7 @@ Economical model for medium sized enterprises. High-availability support.
 **Base Price:** $1150 **Base Warranty:** 25.0 days   
 **Port Counts:** 8x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
 8-port ethernet network router.  
@@ -562,7 +562,7 @@ Economical model for medium sized enterprises. High-availability support.
 **Base Price:** $220 **Base Warranty:** 17.0 days   
 **Port Counts:** 2x `FIBER_OPTIC_SC`, 3x `RJ45`, 1x `DC_JACK`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 5-port mixed-media network router. Small form factor suitable for routing on the edge.  
@@ -578,7 +578,7 @@ Uses DC power.
 **Base Price:** $180 **Base Warranty:** 21.0 days   
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [rtkernel](programs.md/#rtkernel)  
 **Description:**  
 4-port mixed-media network router. 2nd generation edge routing device with even smaller form factor. Less is more.  
@@ -594,7 +594,7 @@ Uses DC power.
 **Base Price:** $450 **Base Warranty:** 28.0 days   
 **Port Counts:** 2x `RJ45`, 2x `FIBER_OPTIC_SC`, 1x `DC_JACK`  
 **Hardware Class:** `NETWORK_ROUTER`  
-**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems), [Tutortial Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-conduit-systems)  
+**Merchants:** [Conduit Systems<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Conduit Systems.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#conduit-systems)  
 **Installed Programs:** [hakernel](programs.md/#hakernel)  
 **Description:**  
 4-port mixed-media network router. 3rd generation edge routing device with high availability support.  
@@ -610,7 +610,7 @@ Uses DC power.
 **Base Price:** $1000 **Base Warranty:** 7.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `DEFAULT`  
-**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
+**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd)  
 **Installed Programs:** [dnsspam](programs.md/#dnsspam)  
 **Description:**  
 1-port ethernet load tester. Blasts UDP/53 DNS query traffic.  
@@ -712,7 +712,7 @@ Not rack mountable.
 **Base Price:** $1100 **Base Warranty:** 7.0 days   
 **Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
 **Hardware Class:** `DECENTRO_RIGS`  
-**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
+**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd)  
 **Installed Programs:** [decentro-node](programs.md/#decentro-node)  
 **Description:**  
 Decentro mining rig.  
@@ -720,7 +720,7 @@ Specs: 24 CPU, 16 memory and 8 storage.
 Handles up to 40 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 523W.  
-Not rack mountable.  
+Mountable on 500px racks.  
 Provides Decentro transaction verification to the p2p currency network.  
   
   
@@ -1061,7 +1061,7 @@ Specs: 1 CPU, 2 memory and 2 storage.
 Handles up to 6 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 19W.  
-Not rack mountable.  
+Mountable on 500px racks.  
 Homelab equipment.  
   
   
@@ -1122,7 +1122,7 @@ Specs: 2 CPU, 4 memory and 2 storage.
 Handles up to 12 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 35W.  
-Not rack mountable.  
+Mountable on 500px racks.  
 Homelab equipment.  
   
   
@@ -1232,7 +1232,7 @@ Not rack mountable.
 **Base Price:** $450 **Base Warranty:** 14.0 days   
 **Port Counts:** 2x `RJ45`, 1x `A_USB`, 1x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
-**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
+**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd)  
 **Description:**  
 2-port general computing server.  
 Specs: 4 CPU, 4 memory and 6 storage.  
@@ -1248,7 +1248,7 @@ Suitable for small businesses.
 **Base Price:** $850 **Base Warranty:** 14.0 days   
 **Port Counts:** 2x `RJ45`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
-**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
+**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Refurb Hut<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Refurb Hut.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#refurb-hut), [The Server Shoppe<img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/The Server Shoppe.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#the-server-shoppe)  
 **Description:**  
 2-port general computing server.  
 Specs: 6 CPU, 8 memory and 8 storage.  
@@ -1355,6 +1355,17 @@ Mountable on 500px racks.
 Traffic from either front ports are alternated between the back ports.  
   
   
+## Memento Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Memento Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Memento Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
+**Base Price:** $500 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
+**Merchants:** [Vision Grid<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#vision-grid)  
+**Description:**  
+Extra monitor displaying device warranty and reliability, available for sale.  
+Not rack mountable.  
+  
+  
 ## Momento Entries Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Momento Entries Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Momento Entries Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
 **Base Price:** $500 **Base Warranty:** 14.0 days   
@@ -1446,7 +1457,7 @@ Mountable on 500px racks.
 **Base Price:** $2200 **Base Warranty:** 35.0 days   
 **Port Counts:** 2x `RJ45`, 1x `A_USB`, 2x `B_3PIN`  
 **Hardware Class:** `COMPUTE_SERVER`  
-**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org), [Tutortial AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#tutortial-ab-compute-ltd)  
+**Merchants:** [AB compute Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/AB compute Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ab-compute-ltd), [Savannah Org.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Savannah Org.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#savannah-org)  
 **Description:**  
 2-port general computing server.  
 Specs: 6 CPU, 6 memory and 6 storage.  
@@ -1619,6 +1630,16 @@ Extra monitor which can be used to monitor the users under your internet service
 Not rack mountable.  
   
   
+## Tena Monitor<img src="{{ site.baseurl }}/tni-docs/assets/devices/Tena Monitor.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Tena Monitor.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `0` **MEM:** `0` **SIZE:** `0` **BW/t:** `1` **Watts:** 13w  
+**Base Price:** $300 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `B_3PIN`  
+**Hardware Class:** `DISPLAY_MONITOR`  
+**Description:**  
+Extra monitor displaying floor power outages and surges, available for sale.  
+Not rack mountable.  
+  
+  
 ## Test Router<img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Router.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Router.webp" style="max-height: 25vh;" /></wa-tooltip>  
 **CPU:** `8` **MEM:** `4` **SIZE:** `4` **BW/t:** `125` **Watts:** 41w  
 **Base Price:** $1 **Base Warranty:** 7.0 days   
@@ -1635,13 +1656,13 @@ Suitable for small businesses.
   
   
 ## Test Server<img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `32` **MEM:** `32` **SIZE:** `32` **BW/t:** `50` **Watts:** 703w  
+**CPU:** `50` **MEM:** `50` **SIZE:** `50` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
 **Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port general computing server.  
-Specs: 32 CPU, 32 memory and 32 storage.  
+Specs: 50 CPU, 50 memory and 50 storage.  
 Handles up to 50 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 703W.  
@@ -1650,13 +1671,13 @@ High performance model.
   
   
 ## Test Server<img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `50` **MEM:** `50` **SIZE:** `50` **BW/t:** `50` **Watts:** 703w  
+**CPU:** `32` **MEM:** `32` **SIZE:** `32` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
 **Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port general computing server.  
-Specs: 50 CPU, 50 memory and 50 storage.  
+Specs: 32 CPU, 32 memory and 32 storage.  
 Handles up to 50 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 703W.  
