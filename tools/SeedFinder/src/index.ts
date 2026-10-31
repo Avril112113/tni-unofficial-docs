@@ -5,7 +5,7 @@ import { day0Pool, deals, firstBatch, randomSeedText, seedHash, proposalPack, Pr
 
 interface SFKnownSeed { seed: string; first: string[] }
 interface SFScenario { name: string, pack: TniJsonProposalPackId, from_version: string }
-interface SFVerification { game_version: string, revision: number, pack: TniJsonProposalPackId, known: SFKnownSeed[] }
+interface SFVerification { game_versions: string[], revision: number, pack: TniJsonProposalPackId, known: SFKnownSeed[] }
 interface SFConfig { scenarios: SFScenario[], verifications: SFVerification[]  }
 
 const MAX_PICKS = 3;
@@ -170,7 +170,7 @@ async function main() {
 		const versionDataUrl = versionUrls[versionIndex]!;
 		
 		const [, game_version, revision] = /(\d+\.\d+\.\d+)\-(\d+)\.min\.json$/.exec(versionDataUrl)!;
-		if (addedVersions.indexOf(game_version) >= 0)
+		if (!game_version || addedVersions.indexOf(game_version) >= 0)
 			continue;
 
 		for (let scenarioIndex = 0; scenarioIndex < config.scenarios.length; scenarioIndex++) {
@@ -182,7 +182,7 @@ async function main() {
 
 			const knownSeeds: SFKnownSeed[] = [];
 			for (const verification of config.verifications) {
-				if (verification.game_version == game_version && verification.pack == scenario.pack) {
+				if (verification.game_versions.includes(game_version) && verification.pack == scenario.pack) {
 					for (const knownSeed of verification.known) {
 						knownSeeds.push(knownSeed);
 					}

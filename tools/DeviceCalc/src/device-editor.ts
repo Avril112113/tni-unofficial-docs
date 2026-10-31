@@ -679,6 +679,8 @@ export class DeviceEditor extends LitElement {
 			};
 			if (this.device_data_is_original || (programs_cpu <= 0 && programs_mem <= 0 && programs_size <= 0)) {
 				for (const device_id in this._data.devices) {
+					if (device_id.startsWith("units/")) continue;  // Deprecated devices.
+
 					const device = this._data.devices[device_id]!;
 					if (!device.logic_controller) continue;
 					
@@ -716,6 +718,8 @@ export class DeviceEditor extends LitElement {
 
 				const device_templates_scored: [number, number, TemplateResult][] = [];
 				for (const device_id in this._data.devices) {
+					if (device_id.startsWith("units/")) continue;  // Deprecated devices.
+
 					const device = this._data.devices[device_id]!;
 					if (!device.logic_controller) continue;
 
@@ -1074,6 +1078,9 @@ export class DeviceEditor extends LitElement {
 
 		const old_device_id = changedProperties.get("device_id") as TniJsonDeviceId ?? this.device_id;
 		if (changedProperties.has('device_id')) {
+			if (this.device_id && this.device_id.startsWith("units/")) {
+				this.device_id = "standardized_" + this.device_id;
+			}
 			if (this._data && this.device_id) {
 				const device = this.device_data_original;
 				if (!device) {

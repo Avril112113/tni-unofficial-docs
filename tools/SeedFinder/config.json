@@ -13,7 +13,7 @@
 	],
 	"verifications": [
 		{
-			"game_version": "0.13.3",
+			"game_versions": ["0.13.3", "0.13.4"],
 			"revision": 1,
 			"pack": "proposals/packs/standard.tscn",
 			"known": [
@@ -44,7 +44,7 @@
 			]
 		},
 		{
-			"game_version": "0.13.3",
+			"game_versions": ["0.13.3", "0.13.4"],
 			"revision": 1,
 			"pack": "proposals/packs/company_datacenter.tscn",
 			"known": [

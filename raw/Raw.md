@@ -28,6 +28,9 @@ Any change to the game version may bring unexpected breaking changes, as the gam
 	{% endfor %}
 </ul>
 
+# Notes
+Any device ids beginning with `units/` are deprecated by the devs and are only for backwards compatibility. Same with `fixtures/statics/racks/`, however this isn't included in the raw data export as of `0.13.4`.
+
 # Format History
 1. Initial format...
 2. Added theme configs. *(non-breaking)*
