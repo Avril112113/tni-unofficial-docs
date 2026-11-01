@@ -29,7 +29,7 @@ export interface TniJsonData {
 	programs: Record<TniJsonProgramId, TniJsonProgram>,
 	users: Record<TniJsonUserId, TniJsonUser>,
 	devices: Record<TniJsonDeviceId, TniJsonDevice>,
-	proposal_packs: Record<TniJsonProposalPackId, TniJsonProposalPack>,
+	porposal_packs: Record<TniJsonProposalPackId, TniJsonProposalPack>,
 	merchants: Record<TniJsonMerchantId, TniJsonMerchant>,
 	plugs: Record<TniJsonPlugId, TniJsonPlug>,
 	use_configs: Record<TniJsonUseConfigId, TniJsonUseConfig>,
