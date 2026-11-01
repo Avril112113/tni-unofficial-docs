@@ -639,6 +639,7 @@ export class DeviceEditor extends LitElement {
 								<wa-icon id="my_device-use_stack-info" name="circle-question" variant="regular"></wa-icon>
 								<wa-tooltip for="my_device-use_stack-info">
 									<span style="color: var(--wa-color-green-95);">[PRODUCTION/LIMIT] PRODUCE_TYPES</span><br>
+									<span style="color: var(--wa-color-green-95);">[0/+LIMIT] STORAGE_TYPES</span><br>
 									<span style="color: var(--wa-color-red-80);">[-CONSUME] CONSTRAINTS&nbsp;<small><i>(CONSUME_POLICY)</i></small></span><br>
 									<span style="color: var(--wa-color-red-80);"><small><i>(fragmented allowed)</i></small></span> - Can consumes from multiple sources. Partial consumption is wasted. <br>
 									<span style="color: var(--wa-color-red-80);"><small><i>(all or nothing)</i></small></span> - Consumes from a single source only. <br>
@@ -646,7 +647,7 @@ export class DeviceEditor extends LitElement {
 								</wa-tooltip>
 							</div>
 							<table style="margin-left: var(--wa-content-spacing); border-collapse: separate; border-spacing: 10px 0;">
-								${this._generateTemplatesForUseStack(logic_controller.installed_programs, programs_mem)}
+								${this._generateTemplatesForUseStack(logic_controller.installed_programs, programs_mem, programs_size)}
 							</table>
 						</div>
 					`);
@@ -981,13 +982,14 @@ export class DeviceEditor extends LitElement {
 		return templates;
 	}
 
-	private _generateTemplatesForUseStack(programs: TniJsonProgramId[], used_mem: number) {
+	private _generateTemplatesForUseStack(programs: TniJsonProgramId[], used_mem: number, used_sto: number) {
 		if (!this._data) return [];
 
 		const installed_cpu = this.device_data?.logic_controller?.installed_cpu ?? 0;
 		const installed_mem = this.device_data?.logic_controller?.installed_mem ?? 0;
 		const installed_sto = this.device_data?.logic_controller?.installed_sto ?? 0;
 		const free_mem = installed_mem - used_mem;
+		const free_sto = installed_sto - used_sto;
 
 		const templates: TemplateResult[] = [];
 		const addConsumeTemplate = (use_config_id: TniJsonUseConfigId, consume: number, policy: TniTraversalConsumptionPolicy) => {
@@ -1065,6 +1067,15 @@ export class DeviceEditor extends LitElement {
 			if (program.TraversalConsume) {
 				addConsumeTemplate(program.TraversalConsume.consume_use_config, program.TraversalConsume.consume_factor, program.TraversalConsume.consumption_policy);
 				addProduceTemplate(program.TraversalConsume.produce_use_config, program.TraversalConsume.produce_factor, program.TraversalConsume.produce_limit_type, program.TraversalConsume.limit_factor, program.TraversalConsume.produce_factor);
+			}
+			if (program.UseStorage) {
+				const use_config = this._data!.use_configs[program.UseStorage.stored_use_config]!;
+				templates.push(html`
+					<tr style="color: var(--wa-color-green-95);">
+						<td style="float: right;"><b><code>[0/+${Math.max(0, program.UseStorage.storage_factor * free_sto)}]</code></b></td>
+						<td><b><code>${use_config.use_value}</code></b></td>
+					</tr>
+				`)
 			}
 		}
 		return templates;
