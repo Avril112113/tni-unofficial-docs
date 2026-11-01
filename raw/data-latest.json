@@ -1,7 +1,7 @@
 {
 	"game_version": "0.13.4",
-	"revision": 1,
-	"format": 12,
+	"revision": 2,
+	"format": 13,
 	"enums": {
 		"Program.ControllerModifiers": [
 			"ALLOW_REMOTE_DEBUGGING",
@@ -1452,6 +1452,12 @@
 			"TraversalBase": {
 				"traffic_class": "udp/6343",
 				"traffic_weight": 1
+			},
+			"TraversalCountUses": {
+				"counted_use_config": "graph_network_simulation/programs/early_access/dns_censorship/profile_user_behavior.tres"
+			},
+			"PanopMouthpiece": {
+				"influence_per_boost_pct": 2.0
 			}
 		},
 		"graph_network_simulation/programs/early_access/dns_censorship/user_data_mining.tscn": {
@@ -63829,7 +63835,7 @@
 			}
 		}
 	},
-	"porposal_packs": {
+	"proposal_packs": {
 		"proposals/packs/company_datacenter.tscn": {
 			"NewCompanyFloor": {
 				"locked": false,

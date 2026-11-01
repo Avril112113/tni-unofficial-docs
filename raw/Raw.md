@@ -44,3 +44,4 @@ Any device ids beginning with `units/` are deprecated by the devs and are only f
 10. Added program field `pkt_processing_priority`. *(non-breaking)*
 11. Added plug fields `InstallerUSB` and `LiveUSB`. *(non-breaking)*
 12. Removed location fields `surge_immunity` and `outage_immunity`, Added `power_immunity` *(BREAKING)*
+13. Fixed typo of `porposal_packs` to `proposal_packs`, Added program fields `TraversalCountUses` and `PanopMouthpiece` *(BREAKING)*
