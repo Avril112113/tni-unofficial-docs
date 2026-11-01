@@ -16,7 +16,7 @@ export type TniJsonLinkType = "copper"|"fiber";
 
 type integer = number;
 
-export const SPEC_FORMAT_VERSION = 10;
+export const SPEC_FORMAT_VERSION = 11;
 
 
 export interface TniJsonData {
