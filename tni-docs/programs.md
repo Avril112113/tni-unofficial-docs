@@ -161,6 +161,7 @@ Production is limited to 20 compatible uses on the device's use stack.
   
 ## decentro-wallet  
 **CPU:** 1 **MEM:** 2 **SIZE:** 2  
+**<span style="color:YellowGreen;">Stores:</span>** FREE_STO * 10 `access-p2p-currency`  
   
 **Modifiers:** ALLOW_DECENTRO_STORAGE, ALLOW_DECENTROWORM_TARGETING  
   
@@ -516,6 +517,7 @@ Skips consuming from destination if produce target's use stack limit is reached.
   
 ## panop-storage  
 **CPU:** 1 **MEM:** 2 **SIZE:** 2  
+**<span style="color:YellowGreen;">Stores:</span>** FREE_STO * 65 `profile-user-behavior`  
   
 **Modifiers:** ALLOW_SANDWORM_TARGETING  
   
