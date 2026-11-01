@@ -1022,6 +1022,7 @@ export class DeviceEditor extends LitElement {
 				return;
 			}
 			let limit: string;
+			let limit_mul_part = limit_factor != 0 ? ` * ${limit_factor}` : "";
 			switch (limit_type) {
 				case TniProduceLimitType.LIMITED_BY_LIMIT_FACTOR:
 					limit = String(limit_factor);
@@ -1030,19 +1031,19 @@ export class DeviceEditor extends LitElement {
 					limit = String(produce_factor);
 					break;
 				case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_CPU:
-					limit = `${installed_cpu} (cpu)`;
+					limit = `${installed_cpu * limit_factor} (cpu${limit_mul_part})`;
 					break;
 				case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_MEM:
-					limit = `${installed_mem} (mem)`;
+					limit = `${installed_mem * limit_factor} (mem${limit_mul_part})`;
 					break;
 				case TniProduceLimitType.LIMITED_BY_TARGET_TOTAL_STORAGE:
-					limit = `${installed_sto} (sto)`;
+					limit = `${installed_sto * limit_factor} (sto${limit_mul_part})`;
 					break;
 				case TniProduceLimitType.LIMITED_BY_TARGET_FREE_MEMORY:
-					limit = `${free_mem} (free mem)`;
+					limit = `${free_mem * limit_factor} (free mem${limit_mul_part})`;
 					break;
 				default:
-					limit = "?";
+					limit = `?${limit_mul_part}`;
 					break;
 			}
 
