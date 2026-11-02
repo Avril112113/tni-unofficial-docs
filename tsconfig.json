@@ -4,7 +4,7 @@
 		"paths": {
 			"assets/*": ["./assets/*"],
 			// "raw/*": ["./raw/*"],
-			"raw/data-format11-spec": ["./raw/data-format11-spec.ts"],
+			"raw/data-format13-spec": ["./raw/data-format13-spec.ts"],
 			"types/*": ["./types/*"]
 		},
 		

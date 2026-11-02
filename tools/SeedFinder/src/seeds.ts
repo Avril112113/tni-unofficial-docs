@@ -10,7 +10,7 @@
 //      Proposal weights play no part in this first batch.
 // Confirmed: standard KWZ95, TOWER1, kwz95; company_datacenter KWZ95.
 
-import { TniJsonData } from "raw/data-format11-spec";
+import { TniJsonData } from "raw/data-format13-spec";
 
 export const STANDARD_PACK = "proposals/packs/standard.tscn";
 export const BATCH = 3;

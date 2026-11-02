@@ -1,4 +1,4 @@
-import { TniJsonProposalPackId } from "raw/data-format11-spec";
+import { TniJsonProposalPackId } from "raw/data-format13-spec";
 import { day0Pool, deals, firstBatch, randomSeedText, seedHash, proposalPack, ProposalEntry } from "./seeds";
 
 // interface VersionEntry { id: string; data: string; scenario: string; pack: string; known: KnownSeed[] }
