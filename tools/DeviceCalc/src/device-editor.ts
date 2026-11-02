@@ -5,6 +5,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';
 import { live } from 'lit/directives/live.js';
 import { consume } from '@lit/context';
+import { createRef, Ref, ref } from 'lit/directives/ref.js';
 import type WaNumberInput from '@awesome.me/webawesome/dist/components/number-input/number-input.js';
 import _ from "lodash";
 
@@ -13,6 +14,7 @@ import { dataContext } from "./data-context";
 import type { MyCombobox } from 'assets/js/components/my-combobox/my-combobox';
 import { DataCached } from './data-cached';
 import { EditorConfig, editorConfigContext } from './editor-config';
+import { WaIcon, WaTooltip } from '@awesome.me/webawesome/dist/ssr/all.js';
 
 
 const IRRELEVANT_DEVICES = new Set([
@@ -923,18 +925,64 @@ export class DeviceEditor extends LitElement {
 	private _generateTemplatesForPrograms(programs: TniJsonProgramId[], excess_cpu: number, excess_mem: number, excess_sto: number, excess_sto_max: number): TemplateResult[] {
 		if (!this._data) return [];
 
+		const switching_programs_count = programs.filter(( s, i, arr ) => this._data!.programs[s]?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING)).length;
+		const routing_programs_count = programs.filter(( s, i, arr ) => this._data!.programs[s]?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_ROUTING)).length;
+
 		const templates: TemplateResult[] = [];
 		for (let i = 0; i < programs.length; i++) {
 			const program_id = programs[i]!;
 			const program = this._data.programs[program_id];
 			const program_size = (program?.code_size ?? 0) + (program?.data_size ?? 0);
+
+			const warnings = [];
+			if (switching_programs_count >= 2 && program?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING)) {
+				warnings.push("Multiple programs that do switching!");
+			}
+			if (routing_programs_count >= 2 && program?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_ROUTING)) {
+				warnings.push("Multiple programs that do routing!");
+			}
+
+			let tooltipRef: WaTooltip|null = null;
+			let tooltipAnchorRef: WaIcon|null = null;
+			let closeTimeout: number;
+			const openTooltip = () => {
+				clearTimeout(closeTimeout);
+				if (tooltipRef && tooltipAnchorRef) {
+					tooltipRef.anchor = tooltipAnchorRef;
+					tooltipRef.open = true;
+				}
+			};
+			const closeTooltip = () => {
+				clearTimeout(closeTimeout);
+				closeTimeout = window.setTimeout(() => {
+					if (tooltipRef) tooltipRef.open = false;
+				}, 150);
+			};
+
 			templates.push(html`
 				<tr>
 					<th>
+						<wa-tooltip
+							${ref((el) => tooltipRef = el as WaTooltip)}
+							trigger="manual"
+							@mouseenter=${openTooltip}
+							@mouseleave=${closeTooltip}
+						>
+							${warnings.join("<br>")}
+						</wa-tooltip>
 						<my-combobox value=${program_id}
 							@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { programs[i] = e.detail.value ?? ""; this.requestUpdate(); }}
 						>
-							<wa-icon name="code" slot="start"></wa-icon>
+							${warnings.length <= 0
+								? html`<wa-icon slot="start" name="code"></wa-icon>`
+								: html`
+									<wa-icon ${ref((el) => tooltipAnchorRef = el as WaIcon)} slot="start" name="triangle-exclamation" style="color: yellow;"
+										@mouseenter=${openTooltip}
+										@mouseleave=${closeTooltip}
+									></wa-icon>
+								`
+							}
+							
 							${cache(this._generateTemplatesForProgramDropdownItems(
 								excess_cpu + (program?.cpu_load ?? 0),
 								excess_mem + (program?.stack_size ?? 0),
@@ -1024,7 +1072,7 @@ export class DeviceEditor extends LitElement {
 				return;
 			}
 			let limit: string;
-			let limit_mul_part = limit_factor != 0 ? ` * ${limit_factor}` : "";
+			let limit_mul_part = limit_factor != 0 ? `*${limit_factor}` : "";
 			switch (limit_type) {
 				case TniProduceLimitType.LIMITED_BY_LIMIT_FACTOR:
 					limit = String(limit_factor);
