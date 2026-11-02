@@ -1107,7 +1107,11 @@ export class DeviceEditor extends LitElement {
 		for (let i = 0; i < programs.length; i++) {
 			const program_id = programs[i]!;
 			const program = this._data.programs[program_id];
-			if (!program) continue;
+			if (!program) {
+				if (program_id.length > 0)
+					console.warn("Invalid program_id:", program_id);
+				continue;
+			}
 
 			if (program.AlwaysProduce) {
 				addProduceTemplate(program.AlwaysProduce.produce_use_config, program.AlwaysProduce.produce_factor, program.AlwaysProduce.produce_limit_type, program.AlwaysProduce.limit_factor, program.AlwaysProduce.produce_factor);
