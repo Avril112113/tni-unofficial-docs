@@ -76,6 +76,7 @@ export interface TniJsonBalanceCalc {
 }
 
 export interface TniJsonProgram {
+	original_id: TniJsonProgramId|null,
 	cpu_load: integer,
 	code_size: integer,
 	stack_size: integer,
