@@ -1114,7 +1114,10 @@ export class DeviceEditor extends LitElement {
 			}
 			if (program.TraversalConsume) {
 				addConsumeTemplate(program.TraversalConsume.consume_use_config, program.TraversalConsume.consume_factor, program.TraversalConsume.consumption_policy);
-				addProduceTemplate(program.TraversalConsume.produce_use_config, program.TraversalConsume.produce_factor, program.TraversalConsume.produce_limit_type, program.TraversalConsume.limit_factor, program.TraversalConsume.produce_factor);
+				// will_produce
+				if (program.TraversalConsume.produce_use_config) {
+					addProduceTemplate(program.TraversalConsume.produce_use_config, program.TraversalConsume.produce_factor, program.TraversalConsume.produce_limit_type, program.TraversalConsume.limit_factor, program.TraversalConsume.produce_factor);
+				}
 			}
 			if (program.UseStorage) {
 				const use_config = this._data!.use_configs[program.UseStorage.stored_use_config]!;

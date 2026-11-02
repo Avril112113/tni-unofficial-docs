@@ -311,7 +311,7 @@ function print() { __p += __j.call(arguments, '') }
 					<td style="float: right;"><b><code>[${W}/${G}]</code></b></td>
 					<td><b><code>${S.use_value}</code></b></td>
 				</tr>
-			`)};for(let J=0;J<u.length;J++){let W=u[J],E=this._data.programs[W];if(E&&(E.AlwaysProduce&&B(E.AlwaysProduce.produce_use_config,E.AlwaysProduce.produce_factor,E.AlwaysProduce.produce_limit_type,E.AlwaysProduce.limit_factor,E.AlwaysProduce.produce_factor),E.TraversalConsume&&(z(E.TraversalConsume.consume_use_config,E.TraversalConsume.consume_factor,E.TraversalConsume.consumption_policy),B(E.TraversalConsume.produce_use_config,E.TraversalConsume.produce_factor,E.TraversalConsume.produce_limit_type,E.TraversalConsume.limit_factor,E.TraversalConsume.produce_factor)),E.UseStorage)){let C=this._data.use_configs[E.UseStorage.stored_use_config];b.push(V`
+			`)};for(let J=0;J<u.length;J++){let W=u[J],E=this._data.programs[W];if(E&&(E.AlwaysProduce&&B(E.AlwaysProduce.produce_use_config,E.AlwaysProduce.produce_factor,E.AlwaysProduce.produce_limit_type,E.AlwaysProduce.limit_factor,E.AlwaysProduce.produce_factor),E.TraversalConsume&&(z(E.TraversalConsume.consume_use_config,E.TraversalConsume.consume_factor,E.TraversalConsume.consumption_policy),E.TraversalConsume.produce_use_config&&B(E.TraversalConsume.produce_use_config,E.TraversalConsume.produce_factor,E.TraversalConsume.produce_limit_type,E.TraversalConsume.limit_factor,E.TraversalConsume.produce_factor)),E.UseStorage)){let C=this._data.use_configs[E.UseStorage.stored_use_config];b.push(V`
 					<tr style="color: var(--wa-color-green-95);">
 						<td style="float: right;"><b><code>[0/+${Math.max(0,E.UseStorage.storage_factor*L)}]</code></b></td>
 						<td><b><code>${C.use_value}</code></b></td>

@@ -109,7 +109,7 @@ export interface TniJsonProgramTraversalBase {
 }
 /** Program will always have TraversalBase if it has this. */
 export interface TniJsonProgramTraversalConsume {
-	produce_use_config: TniJsonUseConfigId,
+	produce_use_config: TniJsonUseConfigId|null,
 	produce_target: TniTraversalProductTarget,
 	produce_factor: integer,
 	conversion_policy: TniTraversalConversionPolicy,
