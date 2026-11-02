@@ -4,8 +4,9 @@ import { LitElement, PropertyValues, TemplateResult, css, html, nothing } from '
 import { customElement, property, state } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';
 import { live } from 'lit/directives/live.js';
+import { join } from 'lit/directives/join.js';
+import { ref } from 'lit/directives/ref.js';
 import { consume } from '@lit/context';
-import { createRef, Ref, ref } from 'lit/directives/ref.js';
 import type WaNumberInput from '@awesome.me/webawesome/dist/components/number-input/number-input.js';
 import _ from "lodash";
 
@@ -22,6 +23,16 @@ const IRRELEVANT_DEVICES = new Set([
 	"units/servers/test_server.tscn",
 	"units/routers/test_router.tscn",
 ]);
+
+// [[PROGRAM_ID|MODIFIER, ..., WORKS_AS_AND_OP], DESCRIPTION]
+const BAD_PROGRAM_COMBINATIONS: [string[], string|TemplateResult][] = [
+	// Commented out until confirmed that these are bad combinations.
+	[[TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING, TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING], "multiple packet switching programs is redundant and potentially disruptive"],
+	[[TniProgramControllerModifiers.ALLOW_PACKET_ROUTING, TniProgramControllerModifiers.ALLOW_PACKET_ROUTING], "multiple packet routing programs is redundant"],
+	[[TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING, TniProgramControllerModifiers.ALLOW_PACKET_ROUTING], "switching and routing programs do not work well together"],
+	[["vlanfirm", TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING], "switching and routing programs do not work well together"],
+	[["vlanfirm", TniProgramControllerModifiers.ALLOW_PACKET_ROUTING], "switching and routing programs do not work well together"],
+];
 
 
 function _getDeepDiff<T extends Record<string, any>>(object: T, base: Record<string, any>): Partial<T> {
@@ -925,8 +936,34 @@ export class DeviceEditor extends LitElement {
 	private _generateTemplatesForPrograms(programs: TniJsonProgramId[], excess_cpu: number, excess_mem: number, excess_sto: number, excess_sto_max: number): TemplateResult[] {
 		if (!this._data) return [];
 
-		const switching_programs_count = programs.filter(( s, i, arr ) => this._data!.programs[s]?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING)).length;
-		const routing_programs_count = programs.filter(( s, i, arr ) => this._data!.programs[s]?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_ROUTING)).length;
+		const bad_combination_programs: Record<number, (string|TemplateResult)[]> = {};
+		for (const combination of BAD_PROGRAM_COMBINATIONS) {
+			let first_found_indices = new Set<number>();
+			let found_indices = new Set<number>();
+			for (const test of combination[0]) {
+				let found = false;
+				for (let i = 0; i < programs.length; i++) {
+					const program_id = programs[i]!;
+					const program = this._data.programs[program_id];
+					// @ts-ignore: I can not be bothered to appease typescript here...
+					if (program && (program.release_name == test || program.modifiers.includes(test))) {
+						if (!found && !first_found_indices.has(i)) {
+							first_found_indices.add(i);
+							found = true;
+						}
+						found_indices.add(i);
+					}
+				}
+				if (!found) {
+					found_indices.clear();
+					break;
+				}
+			}
+			for (const index of found_indices) {
+				if (!bad_combination_programs[index]) bad_combination_programs[index] = [];
+				bad_combination_programs[index]!.push(html`Combination of; ${combination[0].join(", ")}<br>${combination[1]}`);
+			}
+		}
 
 		const templates: TemplateResult[] = [];
 		for (let i = 0; i < programs.length; i++) {
@@ -935,11 +972,14 @@ export class DeviceEditor extends LitElement {
 			const program_size = (program?.code_size ?? 0) + (program?.data_size ?? 0);
 
 			const warnings = [];
-			if (switching_programs_count >= 2 && program?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING)) {
-				warnings.push("Multiple programs that do switching!");
+			if (bad_combination_programs[i]) {
+				for (const msg of bad_combination_programs[i]!) {
+					warnings.push(msg);
+				}
 			}
-			if (routing_programs_count >= 2 && program?.modifiers.includes(TniProgramControllerModifiers.ALLOW_PACKET_ROUTING)) {
-				warnings.push("Multiple programs that do routing!");
+
+			if (warnings.length > 0) {
+				warnings.push(html`<span style="color: gray;">These warnings are pending proper verification.<br>Please contact @Avril112113 for amendments and additions!</span>`);
 			}
 
 			let tooltipRef: WaTooltip|null = null;
@@ -968,7 +1008,7 @@ export class DeviceEditor extends LitElement {
 							@mouseenter=${openTooltip}
 							@mouseleave=${closeTooltip}
 						>
-							${warnings.join("<br>")}
+							${join(warnings, html`<br><br>`)}
 						</wa-tooltip>
 						<my-combobox value=${program_id}
 							@my-value-confirm=${(e: CustomEvent<MyCombobox>) => { programs[i] = e.detail.value ?? ""; this.requestUpdate(); }}
