@@ -6,7 +6,7 @@ permalink: /data/proposals/Standard
 
 # Proposals for Standard
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.4
+GENERATED FOR TNI VERSION 0.14.1
 
 - TOC
 {:toc}
@@ -606,6 +606,14 @@ Adds a new "sanconf" routine to netshell. Allows configuration of Storage Area N
 Requires at least 1 network storage device(s) deployed in the tower.  
   
   
+## Wireless Research  
+**Price:** $1000  
+**Unlock day:** 0  
+**Lore:** 802.11  
+**Description:**  
+Adds new "wapconf" and "wlanconf" routines to netshell. Unlocks the wireless products at Ubitoq. Funding costs 1000.  
+  
+  
 ## Cereal Warez investment  
 **Price:** $825  
 **Unlock day:** 0  
@@ -703,6 +711,8 @@ Requires 'Secretariat Panopticon Project (2/2)' to be submitted first.
 Initiate contact with the Free Babel movement.  
   
 The movement is run by talented hardware tweakers and heavy decentro users. This will invite more Free Babel folks into the tower.  
+  
+This will trigger tower security issues which require CCTV monitoring setup.  
 **Unlock Description:**  
 Will automatically appear on day 6.  
 Unavailable if you've already accepted the Panopticon Project.  

@@ -6,7 +6,7 @@ permalink: /data/proposals/the_secretariat
 
 # Proposals for the_secretariat
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.4
+GENERATED FOR TNI VERSION 0.14.1
 
 - TOC
 {:toc}

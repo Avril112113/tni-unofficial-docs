@@ -6,7 +6,7 @@ permalink: /data/merchants
 
 # Merchants
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.4
+GENERATED FOR TNI VERSION 0.14.1
 
 - TOC
 {:toc}
@@ -2561,6 +2561,50 @@ Ubitoq builds network devices with SFP ports and their modules. An one-stop merc
   **Description:**  
    Compatible with an SFP port to work as a fiber port  
    Not rack mountable.  
+- **[WaP W1<img src="{{ site.baseurl }}/tni-docs/assets/devices/WaP W1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/WaP W1.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#wap-w1)**  
+  **Listing Starts** day 0  
+  **Price:** $220  
+  **Warranty:** 7 days  
+  **Description:**  
+   Wireless access point.   
+     
+   Connects adapters with the same SSID. Transmits each packet on its configured channels.  
+   Handles up to 15 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 13W.  
+   Not rack mountable.  
+   Wireless connectivity is blocked by dense rebar in the tower floor.  
+   7-day device warranty.  
+- **Wireless Adapter**  
+  **Listing Starts** day 0  
+  **Price:** $25  
+  **Description:**  
+   Connect to an access point's SSID in range. It transmits and receives on its own channel only.  
+- **[WaC W1<img src="{{ site.baseurl }}/tni-docs/assets/devices/WaC W1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/WaC W1.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#wac-w1)**  
+  **Listing Starts** day 0  
+  **Price:** $100  
+  **Warranty:** 14 days  
+  **Description:**  
+   Wireless adapter configurator which sets the SSID and channels of the wireless adapter with broadcast.  
+   Handles up to 15 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 13W.  
+   Mountable on 500px racks.  
+   14-day device warranty.  
+- **[WaR r4<img src="{{ site.baseurl }}/tni-docs/assets/devices/WaR r4.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/WaR r4.webp" style="max-height: 25vh;" /></wa-tooltip>](devices.md/#war-r4)**  
+  **Listing Starts** day 0  
+  **Price:** $420  
+  **Warranty:** 14 days  
+  **Description:**  
+   Wireless access point supporting routing.  
+     
+   Connects adapters with the same SSID. Transmits each packet on its configured channels.  
+   Handles up to 24 traversals per tick.  
+   CPU cycles 1 tick every 2.0 seconds.  
+   Power consumption: 13W.  
+   Not rack mountable.  
+   Wireless connectivity is blocked by dense rebar in the tower floor.  
+   14-day device warranty.  
   
   
 ## Vision Grid<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Vision Grid.svg" style="max-height: 25vh;" /></wa-tooltip>  

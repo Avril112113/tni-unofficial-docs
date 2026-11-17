@@ -6,7 +6,7 @@ permalink: /data/programs
 
 # Programs
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.4
+GENERATED FOR TNI VERSION 0.14.1
 
 - TOC
 {:toc}
@@ -974,6 +974,18 @@ Packet routing with VLAN subinterfaces.
   
   
   
+## wapbin  
+**CPU:** 2 **MEM:** 1 **SIZE:** 1+1=2  
+**<span style="color:LightCoral;">Required Hardware:</span>** WIFI_ACCESS_POINT  
+  
+**Packet Processing Priority:** 52 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
+**Modifiers:** ALLOW_PACKET_SWITCHING  
+  
+**Description:**  
+Wireless access point firmware.  
+  
+  
+  
 ## wirerat  
 **CPU:** 2 **MEM:** 2 **SIZE:** 1  
 **<span style="color:DarkKhaki;">Produces:</span>** 1 `inspect-user-packets`<span style="color:Coral;font-size:85%;white-space:nowrap;"></span> <span style="color:gray;font-size:85%;white-space:nowrap;">(limited by TARGET_TOTAL_MEM)</span>  
@@ -984,6 +996,18 @@ Packet routing with VLAN subinterfaces.
 **Description:**  
 Packet monitoring system.  
 Production is limited to 4 compatible uses per device's installed memory.  
+  
+  
+  
+## wrtkernel  
+**CPU:** 4 **MEM:** 1 **SIZE:** 1+2=3  
+**<span style="color:LightCoral;">Required Hardware:</span>** WIRELESS_ROUTER  
+  
+**Packet Processing Priority:** 20 <span style="color:gray;font-size:85%;white-space:nowrap;">(lower values process first)</span>  
+**Modifiers:** ALLOW_PACKET_ROUTING  
+  
+**Description:**  
+Wireless router firmware.  
   
   
   

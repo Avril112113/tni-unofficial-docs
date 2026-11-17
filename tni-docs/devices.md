@@ -6,7 +6,7 @@ permalink: /data/devices
 
 # Devices
 {: .no_toc }
-GENERATED FOR TNI VERSION 0.13.4
+GENERATED FOR TNI VERSION 0.14.1
 
 - TOC
 {:toc}
@@ -1656,13 +1656,13 @@ Suitable for small businesses.
   
   
 ## Test Server<img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `50` **MEM:** `50` **SIZE:** `50` **BW/t:** `50` **Watts:** 703w  
+**CPU:** `32` **MEM:** `32` **SIZE:** `32` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
 **Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port general computing server.  
-Specs: 50 CPU, 50 memory and 50 storage.  
+Specs: 32 CPU, 32 memory and 32 storage.  
 Handles up to 50 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 703W.  
@@ -1671,13 +1671,13 @@ High performance model.
   
   
 ## Test Server<img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Test Server.webp" style="max-height: 25vh;" /></wa-tooltip>  
-**CPU:** `32` **MEM:** `32` **SIZE:** `32` **BW/t:** `50` **Watts:** 703w  
+**CPU:** `50` **MEM:** `50` **SIZE:** `50` **BW/t:** `50` **Watts:** 703w  
 **Base Price:** $700 **Base Warranty:** 0.0 days   
 **Port Counts:** 2x `RJ45`, 2x `B_3PIN`  
 **Hardware Class:** `DEFAULT`  
 **Description:**  
 2-port general computing server.  
-Specs: 32 CPU, 32 memory and 32 storage.  
+Specs: 50 CPU, 50 memory and 50 storage.  
 Handles up to 50 traversals per tick.  
 CPU cycles 1 tick every 2.0 seconds.  
 Power consumption: 703W.  
@@ -1735,6 +1735,56 @@ Not rack mountable.
 **Description:**  
 Extra monitor displaying visitor count by domain name, available for sale.  
 Not rack mountable.  
+  
+  
+## WaC W1<img src="{{ site.baseurl }}/tni-docs/assets/devices/WaC W1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/WaC W1.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `1` **MEM:** `1` **SIZE:** `1` **BW/t:** `15` **Watts:** 13w  
+**Base Price:** $100 **Base Warranty:** 14.0 days   
+**Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `DEFAULT`  
+**Merchants:** [Ubitoq Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ubitoq-ltd)  
+**Description:**  
+Wireless adapter configurator which sets the SSID and channels of the wireless adapter with broadcast.  
+Handles up to 15 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 13W.  
+Mountable on 500px racks.  
+  
+  
+## WaP W1<img src="{{ site.baseurl }}/tni-docs/assets/devices/WaP W1.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/WaP W1.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `2` **MEM:** `1` **SIZE:** `2` **BW/t:** `15` **Watts:** 13w  
+**Base Price:** $220 **Base Warranty:** 7.0 days   
+**Port Counts:** 1x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `WIFI_ACCESS_POINT`  
+**Merchants:** [Ubitoq Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ubitoq-ltd)  
+**Installed Programs:** [wapbin](programs.md/#wapbin)  
+**Description:**  
+Wireless access point.   
+  
+Connects adapters with the same SSID. Transmits each packet on its configured channels.  
+Handles up to 15 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 13W.  
+Not rack mountable.  
+Wireless connectivity is blocked by dense rebar in the tower floor.  
+  
+  
+## WaR r4<img src="{{ site.baseurl }}/tni-docs/assets/devices/WaR r4.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/WaR r4.webp" style="max-height: 25vh;" /></wa-tooltip>  
+**CPU:** `4` **MEM:** `1` **SIZE:** `3` **BW/t:** `24` **Watts:** 13w  
+**Base Price:** $420 **Base Warranty:** 14.0 days   
+**Port Counts:** 4x `RJ45`, 1x `B_3PIN`  
+**Hardware Class:** `WIRELESS_ROUTER`  
+**Merchants:** [Ubitoq Ltd.<img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/merchants/Ubitoq Ltd.png" style="max-height: 25vh;" /></wa-tooltip>](merchants.md/#ubitoq-ltd)  
+**Installed Programs:** [wrtkernel](programs.md/#wrtkernel)  
+**Description:**  
+Wireless access point supporting routing.  
+  
+Connects adapters with the same SSID. Transmits each packet on its configured channels.  
+Handles up to 24 traversals per tick.  
+CPU cycles 1 tick every 2.0 seconds.  
+Power consumption: 13W.  
+Not rack mountable.  
+Wireless connectivity is blocked by dense rebar in the tower floor.  
   
   
 ## Zodianet Beam Router<img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Beam Router.webp" class="img-1em" /><wa-tooltip style="--max-width: 90vw;"><img src="{{ site.baseurl }}/tni-docs/assets/devices/Zodianet Beam Router.webp" style="max-height: 25vh;" /></wa-tooltip>  
