@@ -57,6 +57,36 @@
 					]
 				}
 			]
+		},
+		{
+			"game_versions": ["0.14.1"],
+			"revision": 1,
+			"pack": "proposals/packs/standard.tscn",
+			"known": [
+				{
+					"seed": "91UG2",
+					"first": [
+						"PoemsDB",
+						"BackupResearch",
+						"WifiResearch"
+					]
+				}
+			]
+		},
+		{
+			"game_versions": ["0.14.1"],
+			"revision": 1,
+			"pack": "proposals/packs/company_datacenter.tscn",
+			"known": [
+				{
+					"seed": "HY5M3",
+					"first": [
+						"PoemsDB",
+						"BackupResearch",
+						"WifiResearch"
+					]
+				}
+			]
 		}
 	]
 }
