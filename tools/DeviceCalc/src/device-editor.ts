@@ -32,6 +32,8 @@ const BAD_PROGRAM_COMBINATIONS: [string[], string|TemplateResult][] = [
 	[[TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING, TniProgramControllerModifiers.ALLOW_PACKET_ROUTING], "switching and routing programs do not work well together"],
 	[["vlanfirm", TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING], "switching and routing programs do not work well together"],
 	[["vlanfirm", TniProgramControllerModifiers.ALLOW_PACKET_ROUTING], "switching and routing programs do not work well together"],
+	[["lbrr", TniProgramControllerModifiers.ALLOW_PACKET_SWITCHING], "switching and routing programs do not work well together"],
+	[["lbrr", TniProgramControllerModifiers.ALLOW_PACKET_ROUTING], "switching and routing programs do not work well together"],
 ];
 
 
