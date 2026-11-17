@@ -85,6 +85,9 @@
 	"tcp/25": [
 		"Mailer traffic."
 	],
+	"udp/5246": [
+		"WiFi management traffic."
+	],
 
 	"udp/16384": [
 		"Missing description."

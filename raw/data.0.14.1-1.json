@@ -44260,6 +44260,9 @@
 						"disable_ingress": false
 					}
 				]
+			},
+			"WifiConfigurator": {
+
 			}
 		},
 		"standardized_units/wifi/wap_w1.tscn": {
@@ -44327,6 +44330,9 @@
 						"disable_ingress": false
 					}
 				]
+			},
+			"WifiAccessPoint": {
+				"wifi_reach_px": 1000.0
 			}
 		},
 		"standardized_units/wifi/war_r4.tscn": {
@@ -44418,6 +44424,9 @@
 						"disable_ingress": false
 					}
 				]
+			},
+			"WifiAccessPoint": {
+				"wifi_reach_px": 1000.0
 			}
 		},
 		"standardized_units/backbone/beam.tscn": {
